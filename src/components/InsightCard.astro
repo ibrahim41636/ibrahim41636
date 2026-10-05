@@ -1,4 +1,5 @@
 ---
+import Picture from "@/components/Picture.astro";
 import { href, t, formatDate, type Lang } from "@/i18n/ui";
 import { insightCategories } from "@/data/taxonomy";
 import { insightSlug, readingTime, type Insight } from "@/lib/content";
@@ -7,7 +8,7 @@ const { lang, post } = Astro.props;
 const d = post.data;
 ---
 <article class="media-card reveal" data-cat={d.category}>
-  <img src={d.heroImage} alt={d.heroAlt} width="800" height="450" loading="lazy" decoding="async" />
+  <Picture src={d.heroImage} alt={d.heroAlt} width={800} height={450} />
   <div class="body">
     <div class="meta"><span class="tag">{insightCategories[d.category][lang]}</span><time datetime={d.date.toISOString()}>{formatDate(lang, d.date)}</time><span>{readingTime(post.body, lang)} {t(lang, "insights.minRead")}</span></div>
     <h3><a href={href(lang, `/insights/${insightSlug(post)}/`)}>{d.title}</a></h3>

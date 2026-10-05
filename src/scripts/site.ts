@@ -85,7 +85,7 @@ document.querySelectorAll<HTMLElement>("[data-tabs]").forEach((root) => {
 });
 
 /* Table of contents scroll-spy + sticky CTA on long pages */
-const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>(".toc a")];
+const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>(".toc a[href^=\"#\"]")];
 if (tocLinks.length && "IntersectionObserver" in window) {
   const spy = new IntersectionObserver((entries) => entries.forEach((en) => {
     if (!en.isIntersecting) return;

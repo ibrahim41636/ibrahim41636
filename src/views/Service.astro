@@ -78,14 +78,14 @@ const toc = [
 
         <section class="block" id="approach" aria-labelledby="h-approach">
           <h2 id="h-approach">{t(lang, "service.approach")}</h2>
-          <ol class="steps" style="list-style:none;padding:0;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+          <ol class="steps" style="list-style:none;padding:0;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
             {d.approach.map((s) => <li class="step"><h3>{s.title}</h3><p>{s.description}</p></li>)}
           </ol>
         </section>
 
         <section class="block" id="deliverables" aria-labelledby="h-deliverables">
           <h2 id="h-deliverables">{t(lang, "service.deliverables")}</h2>
-          <div class="table-wrap">
+          <div class="table-wrap" tabindex="0" role="region" aria-label={`${t(lang, "service.deliverables")} — ${d.name}`}>
             <table class="table">
               <thead><tr><th scope="col">{t(lang, "service.deliverable")}</th><th scope="col">{t(lang, "service.format")}</th><th scope="col">{t(lang, "service.timing")}</th></tr></thead>
               <tbody>{d.deliverables.map((r) => <tr><th scope="row">{r.item}</th><td>{r.format}</td><td>{r.timing}</td></tr>)}</tbody>

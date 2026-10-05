@@ -15,7 +15,7 @@ const d = industry.data[lang];
 const services = await getEntries(industry.data.services);
 const path = `/industries/${industry.id}/`;
 const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.industries"), path: "/industries/" }, { name: d.name, path }];
-const request = href(lang, "/request/");
+const request = `${href(lang, "/request/")}?industry=${industry.id}`;
 ---
 <Base lang={lang} path={path} title={d.seoTitle} description={d.metaDescription} breadcrumbs={crumbs}
   schema={[faqSchema(d.faqs), { "@type": "WebPage", name: d.name, about: { "@type": "Thing", name: d.name }, mentions: services.map((s) => ({ "@id": `https://selorin.co${href(lang, `/services/${s.id}/`)}#service` })) }]}

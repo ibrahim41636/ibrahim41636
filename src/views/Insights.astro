@@ -31,6 +31,7 @@ const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data
         <a class="pill" href={href(lang, "/insights/")} aria-current={!category ? "page" : undefined} style={`text-decoration:none;padding:8px 14px;${!category ? "background:var(--c-forest);color:#fff" : ""}`}>{t(lang, "insights.all")}</a>
         {used.map((c) => <a class="pill" href={href(lang, `/insights/category/${c}/`)} aria-current={category === c ? "page" : undefined} style={`text-decoration:none;padding:8px 14px;${category === c ? "background:var(--c-forest);color:#fff" : ""}`}>{insightCategories[c][lang]}</a>)}
       </nav>
+      <h2 class="sr-only">{ar ? "المقالات" : "Articles"}</h2>
       <div class="grid grid-3">{posts.map((p) => <InsightCard lang={lang} post={p} />)}</div>
     </div>
   </section>

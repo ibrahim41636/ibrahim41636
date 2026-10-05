@@ -1,0 +1,10 @@
+---
+// WebP with JPEG fallback for images in /public/images (WebP files are generated alongside).
+interface Props { src: string; alt: string; width: number; height: number; class?: string; style?: string; loading?: "lazy" | "eager"; fetchpriority?: "high" | "auto"; srcsetWebp?: string; sizes?: string }
+const { src, alt, width, height, class: cls, style, loading = "lazy", fetchpriority, srcsetWebp, sizes } = Astro.props;
+const webp = src.replace(/\.jpe?g$/i, ".webp");
+---
+<picture>
+  {webp !== src && <source type="image/webp" srcset={srcsetWebp ?? webp} sizes={sizes} />}
+  <img src={src} alt={alt} width={width} height={height} class={cls} style={style} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+</picture>

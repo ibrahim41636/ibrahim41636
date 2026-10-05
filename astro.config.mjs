@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import bidiIsolate from "./integrations/bidi-isolate.mjs";
 
 /** Highlights [CONTENT REQUIRED: …] markers in Markdown so placeholders can never pass as final copy. */
 function remarkContentRequired() {
@@ -8,6 +9,8 @@ function remarkContentRequired() {
   /** @param {any} node */
   const walk = (node) => {
     if (!node.children) return;
+    // GFM task lists render disabled, unlabeled checkboxes; publish them as plain list items.
+    if (node.type === "list") node.children.forEach((/** @type {any} */ li) => { if (typeof li.checked === "boolean") li.checked = null; });
     node.children = node.children.flatMap((/** @type {any} */ child) => {
       if (child.type === "text" && RE.test(child.value)) {
         return child.value.split(RE).filter(Boolean).map((/** @type {string} */ part) =>
@@ -33,6 +36,7 @@ export default defineConfig({
   build: { format: "directory", inlineStylesheets: "auto" },
   prefetch: { prefetchAll: false, defaultStrategy: "hover" },
   integrations: [
+    bidiIsolate(),
     sitemap({
       i18n: { defaultLocale: "en", locales: { en: "en", ar: "ar-SA" } },
       // Utility and placeholder pages are noindex and stay out of the sitemap.

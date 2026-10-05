@@ -16,6 +16,7 @@ interface Env {
   LEAD_WEBHOOK_URL?: string; // optional CRM / automation endpoint (receives the Lead JSON)
   LEAD_WEBHOOK_SECRET?: string;
   DB?: D1Database; // optional: lead log + sequential IDs + rate limiting
+  EMAIL_DRY_RUN?: string; // "true" in local development: log emails instead of sending
 }
 
 const MAX_BODY = 12 * 1024 * 1024;
@@ -76,6 +77,10 @@ const b64 = (bytes: Uint8Array) => {
 };
 
 async function sendEmail(env: Env, msg: { to: string; subject: string; text: string; html?: string; replyTo?: string; files?: CheckedFile[] }) {
+  if (env.EMAIL_DRY_RUN === "true") {
+    console.log(`[dry-run email] to=${msg.to} reply-to=${msg.replyTo ?? "-"} subject=${msg.subject} attachments=${msg.files?.map((f) => f.name).join(",") || "none"}\n${msg.text}`);
+    return;
+  }
   if (!env.RESEND_API_KEY) throw new Error("Email provider not configured (RESEND_API_KEY)");
   const res = await fetch("https://api.resend.com/emails", {
     method: "POST",

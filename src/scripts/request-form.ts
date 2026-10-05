@@ -46,6 +46,10 @@ export function initRequestForm(form: HTMLFormElement) {
   const serviceSelect = form.querySelector<HTMLSelectElement>("select[name='service']");
   if (qsService && serviceSelect && [...serviceSelect.options].some((o) => o.value === qsService)) serviceSelect.value = qsService;
 
+  const qsIndustry = new URLSearchParams(location.search).get("industry");
+  const industrySelect = form.querySelector<HTMLSelectElement>("select[name='industry']");
+  if (qsIndustry && industrySelect && [...industrySelect.options].some((o) => o.value === qsIndustry)) industrySelect.value = qsIndustry;
+
   const currentService = () => (form.querySelector<HTMLInputElement | HTMLSelectElement>("[name='service']")?.value ?? "");
   const fields = (): Field[] => fieldsFor(kind, currentService());
 

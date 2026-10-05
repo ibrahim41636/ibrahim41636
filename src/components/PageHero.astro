@@ -1,4 +1,5 @@
 ---
+import Picture from "@/components/Picture.astro";
 import Contours from "./Contours.astro";
 import { href, t, type Lang } from "@/i18n/ui";
 import type { Crumb } from "@/lib/schema";
@@ -6,7 +7,7 @@ interface Props { lang: Lang; eyebrow?: string; title: string; titleHtml?: strin
 const { lang, eyebrow, title, titleHtml, lead, leadHtml, crumbs, image, light = false } = Astro.props;
 ---
 <section class:list={["page-hero", { "page-hero--light": light, "on-dark": !light }]}>
-  {image && <div class="page-hero-media"><img src={image} alt="" width="1600" height="900" fetchpriority="high" decoding="async" /></div>}
+  {image && <div class="page-hero-media"><Picture src={image} alt="" width={1600} height={900} loading="eager" fetchpriority="high" /></div>}
   {!light && <Contours />}
   <div class="container">
     <nav class="breadcrumbs" aria-label={t(lang, "breadcrumb")}>

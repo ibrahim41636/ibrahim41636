@@ -1,0 +1,50 @@
+<!-- meta {"title":"تواصل معنا | اطلب عرض سعر — سيلورين","description":"تواصل مع سيلورين للاستشارات البيئية لطلب عرض سعر لأجهزة رصد الغبار أو نظام رصد VOC لمحطات الوقود أو أي خدمة بيئية.","nav":"contact","keywords":"تواصل اتصال عرض سعر هاتف بريد واتساب عنوان"} -->
+<section class="page-hero">
+  <img src="assets/img/signage.jpg" alt="">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="مسار التنقل"><ol><li><a href="index.html">الرئيسية</a></li><li aria-current="page">تواصل معنا</li></ol></nav>
+    <span class="eyebrow">تواصل معنا</span>
+    <h1>لنتحدث عن مشروعك</h1>
+    <p>اطلب عرض سعر، أو زيارة فنية، أو استشارة سريعة — فريقنا جاهز.</p>
+  </div>
+</section>
+
+<section class="section" id="quote">
+  <div class="container split">
+    <div>
+      <span class="eyebrow">معلومات التواصل</span>
+      <h2 class="display">نحن هنا للمساعدة</h2>
+      <ul class="contact-list mt-2">
+        <li><span class="card-icon"><svg><use href="#i-phone"/></svg></span><div><a href="tel:{{phone_tel}}"><b class="ltr">{{phone}}</b></a><small>الهاتف</small></div></li>
+        <li><span class="card-icon"><svg><use href="#i-whatsapp"/></svg></span><div><a href="https://wa.me/{{whatsapp}}" target="_blank" rel="noopener"><b>واتساب</b></a><small>رد سريع خلال ساعات العمل</small></div></li>
+        <li><span class="card-icon"><svg><use href="#i-mail"/></svg></span><div><a href="mailto:{{email}}"><b>{{email}}</b></a><small>البريد الإلكتروني</small></div></li>
+        <li><span class="card-icon"><svg><use href="#i-map"/></svg></span><div><b>{{address}}</b><small>المقر الرئيسي</small></div></li>
+        <li><span class="card-icon"><svg><use href="#i-clock"/></svg></span><div><b>الأحد – الخميس، 8:00 ص – 5:00 م</b><small>ساعات العمل</small></div></li>
+      </ul>
+    </div>
+    <form class="form form-card" data-lead-form novalidate>
+      <div class="field"><label for="c-service">الخدمة المطلوبة</label>
+        <select id="c-service" name="service">
+          <option value="dust">أجهزة رصد الغبار</option>
+          <option value="voc">نظام رصد VOC لمحطات الوقود</option>
+          <option value="air">محطات رصد جودة الهواء</option>
+          <option value="eia">دراسة تقييم الأثر البيئي</option>
+          <option value="permit">التصاريح والامتثال</option>
+          <option value="calibration">المعايرة والصيانة</option>
+          <option value="other">أخرى</option>
+        </select></div>
+      <div class="form-row">
+        <div class="field"><label for="c-name">الاسم</label><input id="c-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="c-company">الجهة / الشركة</label><input id="c-company" name="company" autocomplete="organization"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label for="c-phone">الجوال</label><input id="c-phone" name="phone" type="tel" required autocomplete="tel" dir="ltr"></div>
+        <div class="field"><label for="c-email">البريد الإلكتروني</label><input id="c-email" name="email" type="email" required autocomplete="email" dir="ltr"></div>
+      </div>
+      <div class="field"><label for="c-msg">رسالتك</label><textarea id="c-msg" name="message" required placeholder="صف مشروعك أو احتياجك…"></textarea></div>
+      <label class="checkbox"><input type="checkbox" required name="consent"> أوافق على <a href="governance.html#privacy">سياسة الخصوصية</a> وتواصل سيلورين معي.</label>
+      <button class="btn btn--primary" type="submit">إرسال <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </div>
+</section>

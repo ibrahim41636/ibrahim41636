@@ -1,0 +1,160 @@
+{
+  "order": 5,
+  "services": [
+    "environmental-permitting",
+    "environmental-impact-assessment",
+    "air-quality-monitoring",
+    "fuel-station-voc-monitoring",
+    "water-quality-monitoring",
+    "environmental-compliance",
+    "ghg-carbon-accounting",
+    "net-zero-advisory",
+    "life-cycle-assessment"
+  ],
+  "en": {
+    "name": "Energy & Utilities",
+    "seoTitle": "Environmental Services for Energy & Utilities | Selorin",
+    "metaDescription": "EIA, permits, emissions and VOC monitoring, GHG accounting and net-zero advisory for power plants, solar and wind projects and fuel retail in Saudi Arabia.",
+    "cardDescription": "Permits, impact studies, emissions and fuel vapour monitoring, and carbon accounting for power generation, renewables and fuel retail operators.",
+    "overview": [
+      "The energy and utilities sector covers very different asset types: thermal power and desalination plants with combustion emissions and cooling water discharges, solar and wind projects spread over large land areas, and fuel retail networks with storage tanks and vapour emissions at hundreds of locations. Each has its own environmental profile, but all operate under the Environmental Law and its Implementing Regulations, with permits and compliance monitoring by the National Center for Environmental Compliance (NCEC).",
+      "Thermal plants focus on stack emissions, ambient air quality, cooling water and brine discharges, and hazardous wastes such as spent oils and chemical residues. Renewable projects need environmental impact assessment that addresses land take, vegetation, wildlife, glare and construction impacts. Fuel stations need controls on vapour emissions, tank and pipe integrity, spills and oily wastewater, which require monitoring across a dispersed network.",
+      "The sector is also central to Saudi Arabia's climate commitments under the Saudi Green Initiative and the 2060 net-zero target. Operators face growing demand for accurate GHG inventories, emissions reduction plans and life cycle data, both for regulators and for investors and offtakers."
+    ],
+    "challenges": [
+      {
+        "title": "Combustion emissions",
+        "description": "Turbines, boilers and engines need continuous or periodic emission measurement, and ambient air monitoring around the plant to show compliance with permit conditions."
+      },
+      {
+        "title": "Cooling water and brine",
+        "description": "Thermal and desalination discharges to the sea affect temperature and salinity near outfalls and require water quality monitoring and reporting."
+      },
+      {
+        "title": "Large renewable sites",
+        "description": "Solar and wind projects occupy wide areas where vegetation, wildlife and drainage must be assessed before layout and construction."
+      },
+      {
+        "title": "Fuel vapour across networks",
+        "description": "Fuel retail operators must monitor VOC emissions, vapour recovery and spill controls at many stations with consistent methods and records."
+      },
+      {
+        "title": "Carbon accountability",
+        "description": "Energy companies hold a large share of national emissions and need robust GHG data and credible reduction pathways for regulators and investors."
+      }
+    ],
+    "requirements": [
+      "Environmental impact assessment and environmental permits for new plants, renewables and major modifications",
+      "Stack emission and ambient air monitoring in line with permit conditions",
+      "Cooling water, brine and wastewater monitoring at discharge points",
+      "VOC and vapour emission monitoring at fuel stations and storage terminals",
+      "Hazardous waste management, including spent oils, chemicals and contaminated soil, under MWAN regulations",
+      "GHG inventory and disclosure aligned with the GHG Protocol, ISO 14064-1 and investor frameworks such as IFRS S2"
+    ],
+    "support": [
+      {
+        "title": "Studies and permits",
+        "description": "We prepare EIAs and permit packages for power, desalination and renewable projects, including baseline surveys and mitigation measures."
+      },
+      {
+        "title": "Emissions and water monitoring",
+        "description": "We monitor stack emissions, ambient air and discharge water quality, and report results against permit conditions."
+      },
+      {
+        "title": "Fuel station VOC programmes",
+        "description": "We design and run VOC monitoring across fuel station networks with consistent methods, calibration records and station-level reports."
+      },
+      {
+        "title": "Carbon and net zero",
+        "description": "We build GHG inventories, set reduction pathways and assess product or project life cycle emissions to support net-zero commitments."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do solar and wind projects need an environmental impact assessment?",
+        "a": "Utility-scale renewable projects usually require environmental assessment because of land take, construction works and possible effects on vegetation, wildlife and drainage. The level of study depends on scale and location; we screen the project and confirm the scope with you early."
+      },
+      {
+        "q": "How do you run VOC monitoring across a large fuel station network?",
+        "a": "We use a standard method, calibrated instruments and a common reporting template for every station, then schedule visits by region. Results are reported per station and consolidated so you can compare sites and prioritise corrective work."
+      },
+      {
+        "q": "Can you help us set a net-zero pathway?",
+        "a": "Yes. We start with a verification-ready GHG inventory, identify the main emission sources, assess reduction options and their costs, and build a pathway with interim targets that can be reported to investors and stakeholders."
+      }
+    ]
+  },
+  "ar": {
+    "name": "الطاقة والمرافق",
+    "seoTitle": "الخدمات البيئية لقطاع الطاقة والمرافق | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي والتصاريح ورصد الانبعاثات والمركبات العضوية المتطايرة وحصر الانبعاثات واستشارات الحياد الصفري لمحطات الطاقة والطاقة المتجددة ومحطات الوقود.",
+    "cardDescription": "تصاريح ودراسات أثر ورصد للانبعاثات وأبخرة الوقود وحصر للكربون لمحطات توليد الكهرباء والطاقة المتجددة وشبكات بيع الوقود.",
+    "overview": [
+      "يضم قطاع الطاقة والمرافق أصولًا شديدة التباين: محطات توليد الكهرباء وتحلية المياه الحرارية بانبعاثات الاحتراق وتصريف مياه التبريد، ومشاريع الطاقة الشمسية وطاقة الرياح الممتدة على مساحات واسعة، وشبكات بيع الوقود بخزاناتها وأبخرتها في مئات المواقع. ولكل منها ملفه البيئي، لكنها جميعًا تعمل وفق نظام البيئة ولوائحه التنفيذية، ويتولى المركز الوطني للرقابة على الالتزام البيئي (NCEC) إصدار التصاريح ومتابعة الالتزام.",
+      "وتركز المحطات الحرارية على انبعاثات المداخن وجودة الهواء المحيط ومياه التبريد والمياه المالحة المرتجعة والنفايات الخطرة كالزيوت المستهلكة وبقايا المواد الكيميائية. وتحتاج مشاريع الطاقة المتجددة إلى تقييم للأثر البيئي يتناول استخدام الأراضي والغطاء النباتي والحياة الفطرية والوهج وآثار الإنشاء. أما محطات الوقود فتحتاج إلى ضوابط لانبعاثات الأبخرة وسلامة الخزانات والأنابيب والانسكابات ومياه الصرف الزيتية، مع رصد يغطي شبكة مواقع متفرقة.",
+      "ويقع القطاع في صميم الالتزامات المناخية للمملكة ضمن مبادرة السعودية الخضراء ومستهدف الحياد الصفري بحلول عام 2060، فيواجه المشغلون طلبًا متزايدًا على قوائم جرد دقيقة لانبعاثات غازات الاحتباس الحراري وخطط لخفضها وبيانات لتقييم دورة الحياة، سواء للجهات التنظيمية أو للمستثمرين والمشترين."
+    ],
+    "challenges": [
+      {
+        "title": "انبعاثات الاحتراق",
+        "description": "تحتاج التوربينات والغلايات والمحركات إلى قياس مستمر أو دوري للانبعاثات، ورصد لجودة الهواء المحيط حول المحطة لإثبات الالتزام بشروط التصريح."
+      },
+      {
+        "title": "مياه التبريد والمياه المالحة",
+        "description": "تؤثر تصريفات المحطات الحرارية ومحطات التحلية في درجة حرارة البحر وملوحته قرب المخارج، فتستلزم رصدًا لجودة المياه ورفع التقارير."
+      },
+      {
+        "title": "مواقع الطاقة المتجددة الواسعة",
+        "description": "تشغل مشاريع الطاقة الشمسية والرياح مساحات واسعة يلزم فيها تقييم الغطاء النباتي والحياة الفطرية والتصريف قبل التخطيط والإنشاء."
+      },
+      {
+        "title": "أبخرة الوقود عبر الشبكات",
+        "description": "على مشغلي محطات الوقود رصد انبعاثات المركبات العضوية المتطايرة واسترجاع الأبخرة وضوابط الانسكاب في محطات كثيرة بأساليب وسجلات موحدة."
+      },
+      {
+        "title": "المساءلة الكربونية",
+        "description": "تتحمل شركات الطاقة حصة كبيرة من الانبعاثات الوطنية، وتحتاج إلى بيانات موثوقة عن غازات الاحتباس الحراري ومسارات خفض ذات مصداقية."
+      }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي والتصاريح البيئية للمحطات الجديدة ومشاريع الطاقة المتجددة والتعديلات الجوهرية",
+      "رصد انبعاثات المداخن وجودة الهواء المحيط وفق شروط التصريح",
+      "رصد مياه التبريد والمياه المالحة ومياه الصرف عند نقاط التصريف",
+      "رصد المركبات العضوية المتطايرة (VOC) والأبخرة في محطات الوقود ومستودعات التخزين",
+      "إدارة النفايات الخطرة كالزيوت المستهلكة والمواد الكيميائية والتربة الملوثة وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "حصر انبعاثات غازات الاحتباس الحراري والإفصاح عنها وفق بروتوكول GHG ومعيار ISO 14064-1 وأطر المستثمرين مثل IFRS S2"
+    ],
+    "support": [
+      {
+        "title": "الدراسات والتصاريح",
+        "description": "نعدّ دراسات تقييم الأثر البيئي وحزم التصاريح لمشاريع التوليد والتحلية والطاقة المتجددة، بما فيها مسوحات خط الأساس وتدابير التخفيف."
+      },
+      {
+        "title": "رصد الانبعاثات والمياه",
+        "description": "نرصد انبعاثات المداخن وجودة الهواء المحيط وجودة مياه التصريف، ونقارن النتائج بشروط التصريح في تقاريرنا."
+      },
+      {
+        "title": "برامج رصد أبخرة محطات الوقود",
+        "description": "نصمم برامج رصد المركبات العضوية المتطايرة وننفذها عبر شبكات محطات الوقود بأساليب موحدة وسجلات معايرة وتقارير لكل محطة."
+      },
+      {
+        "title": "الكربون والحياد الصفري",
+        "description": "نعدّ قوائم جرد الانبعاثات، ونضع مسارات الخفض، ونقيّم انبعاثات دورة حياة المنتجات أو المشاريع دعمًا لالتزامات الحياد الصفري."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "هل تحتاج مشاريع الطاقة الشمسية وطاقة الرياح إلى تقييم للأثر البيئي؟",
+        "a": "تتطلب مشاريع الطاقة المتجددة على مستوى المرافق عادةً تقييمًا بيئيًا بسبب المساحات المستخدمة وأعمال الإنشاء والآثار المحتملة في الغطاء النباتي والحياة الفطرية والتصريف. ويعتمد مستوى الدراسة على الحجم والموقع، ونفحص المشروع ونؤكد النطاق معكم مبكرًا."
+      },
+      {
+        "q": "كيف تنفذون رصد المركبات العضوية المتطايرة عبر شبكة كبيرة من محطات الوقود؟",
+        "a": "نعتمد أسلوبًا موحدًا وأجهزة معايرة ونموذج تقرير مشتركًا لكل محطة، ثم نجدول الزيارات حسب المناطق. وتُعرض النتائج لكل محطة على حدة ثم تُجمع لتتمكنوا من المقارنة بين المواقع وترتيب أولويات الإجراءات التصحيحية."
+      },
+      {
+        "q": "هل يمكنكم مساعدتنا في وضع مسار للحياد الصفري؟",
+        "a": "نعم، نبدأ بقائمة جرد للانبعاثات جاهزة للتحقق، ونحدد مصادر الانبعاث الرئيسة، ونقيّم خيارات الخفض وتكاليفها، ثم نبني مسارًا بمستهدفات مرحلية قابلة للإفصاح للمستثمرين وأصحاب العلاقة."
+      }
+    ]
+  }
+}

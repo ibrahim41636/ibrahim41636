@@ -1,0 +1,127 @@
+{
+  "category": "waste-circular-economy",
+  "order": 1,
+  "formFamily": "waste",
+  "industries": ["industrial-manufacturing", "construction", "healthcare", "oil-gas", "food-beverage", "logistics-warehousing", "hospitality", "commercial-facilities"],
+  "related": ["circular-economy", "environmental-compliance", "environmental-records", "environmental-audits"],
+  "en": {
+    "name": "Waste Management",
+    "seoTitle": "Waste Management Consulting in Saudi Arabia | Selorin",
+    "metaDescription": "Waste management consulting in Saudi Arabia: waste classification, audits, management plans, storage and records that support MWAN compliance.",
+    "valueProp": "Know what waste you generate, how it must be handled and where it goes, with records that stand up to MWAN and NCEC inspections.",
+    "cardDescription": "Waste classification, audits, waste management plans, segregation and storage, transporter and receiver checks, and documentation for MWAN compliance.",
+    "keyBenefit": "Compliant waste handling with a clear, traceable chain of custody",
+    "definition": "Waste management consulting is the assessment and organisation of how a facility or project identifies, classifies, segregates, stores, transports and disposes of its waste. In Saudi Arabia, it ensures that hazardous and non-hazardous waste is handled in line with the Waste Management Law and the requirements of the National Center for Waste Management (MWAN), with documentation that proves each consignment reached an appropriate destination.",
+    "overview": [
+      "The Waste Management Law and its Implementing Regulations have placed clear responsibilities on waste producers in Saudi Arabia. The National Center for Waste Management (MWAN) regulates and licenses waste activities, while the National Center for Environmental Compliance (NCEC) inspects environmental performance at facilities. For a waste producer, compliance starts with knowing exactly which waste streams the site generates, whether each one is hazardous or non-hazardous, and how it is stored, transferred and documented until it reaches a licensed facility.",
+      "In practice, many sites struggle with the same issues: waste streams that were never formally classified, mixed storage that contaminates recyclable material, temporary storage areas without bunding or labelling, and transfer records that cannot be traced to a licensed transporter or receiving facility. These gaps create regulatory exposure and also increase disposal costs, because mixed or poorly described waste is more expensive to handle. A structured approach resolves both problems and gives management a reliable picture of quantities, costs and risks.",
+      "Selorin carries out waste audits and classification, prepares site-specific waste management plans and designs segregation and storage arrangements suited to your operations. We review the licences and scope of your transporters and receiving facilities against the waste types they handle, set up registers and documentation for each consignment, and train site staff on their responsibilities. The result is a waste system that is simpler to operate and easier to demonstrate during inspections. Where audit results show scope to reduce or recover waste, we connect the findings to our circular economy work."
+    ],
+    "whenYouNeed": [
+      "Your facility generates hazardous waste and its classification and storage have never been formally reviewed.",
+      "An NCEC inspection or internal audit found gaps in waste storage, labelling or records.",
+      "You need a waste management plan for a construction project, permit application or tender.",
+      "You cannot confirm that your waste contractors hold valid licences for the waste they collect.",
+      "Waste disposal costs are rising and you do not know which streams drive them.",
+      "A new facility is being commissioned and waste handling arrangements must be defined."
+    ],
+    "deliver": [
+      { "title": "Waste audit", "description": "Site inspection and data review to identify every waste stream, its source, quantity, current handling route and the associated compliance and cost issues." },
+      { "title": "Waste classification", "description": "Classification of each stream as hazardous or non-hazardous, with the basis for the classification documented, including where testing or supplier information is needed." },
+      { "title": "Waste management plan", "description": "A site-specific plan setting out segregation, storage, handling, transfer, responsibilities, training and record keeping for all identified waste streams." },
+      { "title": "Segregation and storage design", "description": "Practical arrangements for containers, labelling, signage, temporary storage areas, containment and access, suited to your site layout and operations." },
+      { "title": "Transporter and receiver checks", "description": "Review of the licences and permitted waste types of your transporters and receiving facilities, with gaps and corrective actions clearly identified." },
+      { "title": "Documentation system", "description": "Waste registers, consignment and transfer records, and periodic summaries that create a traceable chain of custody for inspection and reporting." }
+    ],
+    "approach": [
+      { "title": "Inspect the site", "description": "We walk the site, review existing records and interview operators to identify each waste stream and its handling route." },
+      { "title": "Classify streams", "description": "We classify each stream as hazardous or non-hazardous and document the basis, recommending testing where needed." },
+      { "title": "Assess gaps", "description": "We compare current practice and contractor arrangements with applicable requirements and rank gaps by risk." },
+      { "title": "Prepare the plan", "description": "We prepare the waste management plan, storage arrangements and documentation system tailored to the site." },
+      { "title": "Train and implement", "description": "We brief site staff and supervisors, support set-up of storage areas and registers, and verify records." },
+      { "title": "Review performance", "description": "We review quantities, costs and compliance periodically and update the plan when operations change." }
+    ],
+    "deliverables": [
+      { "item": "Waste audit report", "format": "Report with waste stream inventory (PDF + Excel)", "timing": "After site inspection" },
+      { "item": "Waste classification register", "format": "Register with classification basis (Excel)", "timing": "Audit stage" },
+      { "item": "Waste management plan", "format": "Site-specific plan (PDF + editable Word)", "timing": "After gap assessment" },
+      { "item": "Storage area layout and labelling scheme", "format": "Marked-up layout and signage schedule (PDF)", "timing": "With the plan" },
+      { "item": "Transporter and receiver review", "format": "Licence check summary with actions (PDF + Excel)", "timing": "With the plan" },
+      { "item": "Waste records templates and training", "format": "Registers, transfer forms and briefing slides (Excel + PDF)", "timing": "Implementation stage" }
+    ],
+    "regulatoryContext": [
+      "Waste Management Law and its Implementing Regulations, which set the duties of waste producers, transporters and receiving facilities.",
+      "National Center for Waste Management (MWAN), which regulates and licenses waste management activities.",
+      "Environmental Law (2020) and its Implementing Regulations, including environmental permit conditions relating to waste.",
+      "National Center for Environmental Compliance (NCEC), which carries out compliance monitoring and inspections of facilities.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON, where additional waste requirements apply within their industrial areas."
+    ],
+    "faqs": [
+      { "q": "How do we know whether a waste stream is hazardous?", "a": "Classification depends on the origin of the waste and its properties, such as toxicity, flammability, corrosivity or reactivity. For many streams, process knowledge and safety data sheets are sufficient. For others, laboratory testing is needed to confirm the classification. We review each stream, document the basis for the decision and identify where testing is required, so the classification can be explained clearly to an inspector or a receiving facility." },
+      { "q": "Are we responsible for waste after a contractor collects it?", "a": "As the waste producer, you remain responsible for ensuring your waste is handled by appropriately licensed parties and reaches a suitable destination. This is why it matters to check that transporters and receiving facilities are licensed for the specific waste types they take, and to keep consignment records for each transfer. We review these arrangements and help you build a documentation trail that shows due care at each step." },
+      { "q": "What should a waste management plan contain?", "a": "A useful plan identifies every waste stream, its classification and estimated quantity, and sets out how it is segregated, stored, labelled, transferred and recorded. It names who is responsible for each task, describes training and inspection, and explains how incidents such as spills are handled. For construction projects, it also covers how waste arrangements change as the work progresses and how contractors are controlled." },
+      { "q": "Can better waste management reduce our costs?", "a": "Often, yes. Mixed waste is usually more expensive to handle than segregated waste, and hazardous contamination of a non-hazardous stream increases disposal costs for the whole load. A waste audit shows which streams drive cost and where segregation, storage or contractor arrangements can be improved. Where there is scope to reduce, reuse or recover material, our circular economy service can assess those opportunities in more detail." },
+      { "q": "How often should waste arrangements be reviewed?", "a": "Arrangements should be reviewed whenever processes, raw materials, contractors or site layout change, and after any inspection finding or incident involving waste. Contractor licences should be checked periodically because their scope and validity can change. Outside these events, a regular review of quantities, costs and records helps keep the system working as intended and highlights problems before they appear during an inspection." }
+    ]
+  },
+  "ar": {
+    "name": "إدارة النفايات",
+    "seoTitle": "استشارات إدارة النفايات في السعودية | سيلورين",
+    "metaDescription": "استشارات إدارة النفايات في المملكة: تصنيف النفايات والتدقيق عليها وإعداد خطط إدارتها وتنظيم التخزين والتوثيق، دعمًا للامتثال لمتطلبات موان (MWAN).",
+    "valueProp": "اعرف ما تنتجه منشأتك من نفايات، وكيف يجب التعامل معها، وأين تنتهي، مع سجلات تصمد أمام عمليات التفتيش.",
+    "cardDescription": "تصنيف النفايات والتدقيق عليها، وخطط إدارتها، والفرز والتخزين، والتحقق من الناقلين والمستقبِلين، والتوثيق اللازم للامتثال لمتطلبات موان.",
+    "keyBenefit": "مناولة نظامية للنفايات مع سلسلة حيازة واضحة وقابلة للتتبع",
+    "definition": "استشارات إدارة النفايات هي تقييم الطريقة التي تحدد بها المنشأة أو المشروع نفاياتها وتصنّفها وتفرزها وتخزّنها وتنقلها وتتخلص منها، وإعادة تنظيم هذه الطريقة. وفي المملكة العربية السعودية تضمن هذه الاستشارات مناولة النفايات الخطرة وغير الخطرة وفق نظام إدارة النفايات ومتطلبات المركز الوطني لإدارة النفايات (موان)، مع توثيق يثبت وصول كل شحنة إلى وجهة مناسبة ومرخّصة لاستقبالها.",
+    "overview": [
+      "حمّل نظام إدارة النفايات ولائحته التنفيذية منتجي النفايات في المملكة مسؤوليات واضحة. فالمركز الوطني لإدارة النفايات (موان) ينظّم أنشطة إدارة النفايات ويرخّصها، في حين يتولى المركز الوطني للرقابة على الالتزام البيئي التفتيش على الأداء البيئي للمنشآت. ويبدأ الامتثال لدى منتج النفايات بمعرفة دقيقة لتيارات النفايات التي يولّدها الموقع، وتحديد ما إذا كان كل منها خطرًا أو غير خطر، وكيفية تخزينه ونقله وتوثيقه حتى يصل إلى منشأة مرخّصة لاستقباله ومعالجته أو التخلص منه بطريقة نظامية.",
+      "وتواجه مواقع كثيرة في الواقع المشكلات نفسها: تيارات نفايات لم تُصنَّف رسميًا قط، وتخزين مختلط يلوّث المواد القابلة للتدوير، ومناطق تخزين مؤقت تفتقر إلى الحواجز الاحتوائية والملصقات التعريفية، وسجلات نقل لا يمكن ربطها بناقل أو منشأة استقبال مرخّصة. وتولّد هذه الفجوات مخاطر نظامية، وترفع كذلك تكاليف التخلص، لأن النفايات المختلطة أو غير الموصوفة بدقة أعلى كلفة في مناولتها. ويعالج النهج المنظّم المشكلتين معًا، ويمنح الإدارة صورة موثوقة عن الكميات والتكاليف والمخاطر يمكن البناء عليها في القرارات التشغيلية.",
+      "تنفّذ سيلورين عمليات التدقيق على النفايات وتصنيفها، وتعدّ خطط إدارة نفايات خاصة بكل موقع، وتصمم ترتيبات الفرز والتخزين بما يلائم طبيعة عملياتكم. ونراجع تراخيص الناقلين ومنشآت الاستقبال ونطاقها مقارنةً بأنواع النفايات التي يتعاملون معها، وننشئ السجلات والوثائق الخاصة بكل شحنة، وندرّب العاملين في الموقع على مسؤولياتهم. والنتيجة منظومة نفايات أبسط في التشغيل وأسهل في إثبات الامتثال أثناء التفتيش. وحين تكشف نتائج التدقيق فرصًا لخفض النفايات أو استرداد المواد، نربطها بخدماتنا في الاقتصاد الدائري."
+    ],
+    "whenYouNeed": [
+      "عندما تنتج منشأتك نفايات خطرة لم يُراجَع تصنيفها وتخزينها بصورة رسمية من قبل.",
+      "عندما يكشف تفتيش أو تدقيق داخلي فجوات في تخزين النفايات أو ترميزها أو سجلاتها.",
+      "عند الحاجة إلى خطة إدارة نفايات لمشروع إنشائي أو طلب تصريح أو منافسة.",
+      "عندما لا تستطيع التأكد من حيازة مقاولي النفايات تراخيص سارية للنفايات التي ينقلونها.",
+      "عند ارتفاع تكاليف التخلص من النفايات دون معرفة التيارات المسببة لذلك.",
+      "عند تشغيل منشأة جديدة تتطلب تحديد ترتيبات مناولة النفايات فيها."
+    ],
+    "deliver": [
+      { "title": "التدقيق على النفايات", "description": "فحص ميداني ومراجعة للبيانات لتحديد كل تيار نفايات ومصدره وكميته ومسار مناولته الحالي، وما يرتبط به من مسائل الامتثال والتكلفة." },
+      { "title": "تصنيف النفايات", "description": "تصنيف كل تيار إلى خطر أو غير خطر مع توثيق أساس التصنيف، وتحديد الحالات التي تتطلب تحاليل مخبرية أو معلومات من المورّدين." },
+      { "title": "خطة إدارة النفايات", "description": "خطة خاصة بالموقع تحدد الفرز والتخزين والمناولة والنقل والمسؤوليات والتدريب وحفظ السجلات لجميع تيارات النفايات المحددة." },
+      { "title": "تصميم الفرز والتخزين", "description": "ترتيبات عملية للحاويات والملصقات واللوحات الإرشادية ومناطق التخزين المؤقت والاحتواء والوصول، بما يلائم مخطط الموقع وعملياته." },
+      { "title": "التحقق من الناقلين والمستقبِلين", "description": "مراجعة تراخيص الناقلين ومنشآت الاستقبال وأنواع النفايات المصرّح لهم بها، مع تحديد الفجوات والإجراءات التصحيحية بوضوح." },
+      { "title": "منظومة التوثيق", "description": "سجلات للنفايات ووثائق للشحن والنقل وملخصات دورية تكوّن سلسلة حيازة قابلة للتتبع لأغراض التفتيش وإعداد التقارير." }
+    ],
+    "approach": [
+      { "title": "الفحص الميداني", "description": "نتجول في الموقع ونراجع السجلات القائمة ونقابل المشغّلين لتحديد كل تيار نفايات ومسار مناولته." },
+      { "title": "تصنيف التيارات", "description": "نصنّف كل تيار إلى خطر أو غير خطر ونوثّق أساس التصنيف، ونوصي بالتحاليل حيث يلزم." },
+      { "title": "تحليل الفجوات", "description": "نقارن الممارسات الحالية وترتيبات المقاولين بالمتطلبات المطبقة، ونرتّب الفجوات بحسب درجة خطورتها." },
+      { "title": "إعداد الخطة", "description": "نعدّ خطة إدارة النفايات وترتيبات التخزين ومنظومة التوثيق بما يناسب الموقع." },
+      { "title": "التدريب والتطبيق", "description": "نعرّف العاملين والمشرفين بمسؤولياتهم، وندعم تجهيز مناطق التخزين والسجلات، ونتحقق من صحة القيود." },
+      { "title": "مراجعة الأداء", "description": "نراجع الكميات والتكاليف ومستوى الامتثال دوريًا، ونحدّث الخطة عند تغير العمليات." }
+    ],
+    "deliverables": [
+      { "item": "تقرير التدقيق على النفايات", "format": "تقرير مع حصر لتيارات النفايات (PDF + Excel)", "timing": "بعد الفحص الميداني" },
+      { "item": "سجل تصنيف النفايات", "format": "سجل يتضمن أساس التصنيف (Excel)", "timing": "مرحلة التدقيق" },
+      { "item": "خطة إدارة النفايات", "format": "خطة خاصة بالموقع (PDF + Word قابل للتعديل)", "timing": "بعد تحليل الفجوات" },
+      { "item": "مخطط مناطق التخزين ونظام الترميز", "format": "مخطط موضّح وجدول اللوحات الإرشادية (PDF)", "timing": "مع الخطة" },
+      { "item": "مراجعة الناقلين ومنشآت الاستقبال", "format": "ملخص التحقق من التراخيص مع الإجراءات المطلوبة (PDF + Excel)", "timing": "مع الخطة" },
+      { "item": "نماذج السجلات والتدريب", "format": "سجلات ونماذج نقل وعرض تعريفي (Excel + PDF)", "timing": "مرحلة التطبيق" }
+    ],
+    "regulatoryContext": [
+      "نظام إدارة النفايات ولائحته التنفيذية، اللذان يحددان واجبات منتجي النفايات وناقليها ومنشآت استقبالها.",
+      "المركز الوطني لإدارة النفايات (موان)، الجهة المنظِّمة لأنشطة إدارة النفايات والمرخِّصة لها.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، بما في ذلك اشتراطات التصريح البيئي المتعلقة بالنفايات.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يتولى الرقابة على الالتزام البيئي والتفتيش على المنشآت.",
+      "الهيئة الملكية للجبيل وينبع وهيئة المدن الصناعية ومناطق التقنية (مدن)، حيث تنطبق متطلبات إضافية للنفايات داخل مناطقهما الصناعية."
+    ],
+    "faqs": [
+      { "q": "كيف نعرف إن كان تيار النفايات خطرًا؟", "a": "يعتمد التصنيف على مصدر النفايات وخصائصها، مثل السمية أو القابلية للاشتعال أو التآكل أو التفاعل. وفي كثير من التيارات تكفي المعرفة بالعملية الصناعية وصحائف بيانات السلامة، بينما تتطلب تيارات أخرى تحاليل مخبرية لتأكيد التصنيف. ونراجع كل تيار ونوثّق أساس القرار ونحدد مواضع الحاجة إلى التحليل، حتى يمكن شرح التصنيف بوضوح للمفتش أو لمنشأة الاستقبال." },
+      { "q": "هل نبقى مسؤولين عن النفايات بعد استلام المقاول لها؟", "a": "بصفتكم منتجين للنفايات، تبقى عليكم مسؤولية التأكد من أن نفاياتكم تُناوَل عبر جهات مرخّصة على النحو المناسب وتصل إلى وجهة ملائمة. ولهذا من المهم التحقق من ترخيص الناقلين ومنشآت الاستقبال لأنواع النفايات المحددة التي يستلمونها، والاحتفاظ بوثائق كل عملية نقل. ونراجع هذه الترتيبات ونساعدكم على بناء مسار توثيقي يثبت العناية الواجبة في كل خطوة." },
+      { "q": "ماذا ينبغي أن تتضمن خطة إدارة النفايات؟", "a": "تحدد الخطة الجيدة كل تيار نفايات وتصنيفه وكميته التقديرية، وتوضح طريقة فرزه وتخزينه وترميزه ونقله وتسجيله. كما تسمّي المسؤول عن كل مهمة، وتصف التدريب والتفتيش، وتبيّن طريقة التعامل مع الحوادث كالانسكابات. وفي المشاريع الإنشائية تغطي أيضًا تغيّر ترتيبات النفايات مع تقدم الأعمال، وكيفية ضبط أداء المقاولين في هذا الجانب." },
+      { "q": "هل يمكن أن يخفّض تحسين إدارة النفايات تكاليفنا؟", "a": "في أغلب الأحيان نعم. فالنفايات المختلطة عادةً أعلى كلفة في مناولتها من النفايات المفروزة، وتلوّث تيار غير خطر بمواد خطرة يرفع كلفة التخلص من الحمولة كاملة. ويكشف التدقيق على النفايات التيارات الأكثر كلفة والمواضع التي يمكن فيها تحسين الفرز أو التخزين أو ترتيبات المقاولين. وحين تتوفر فرص لخفض المواد أو إعادة استخدامها أو استردادها، تتولى خدمة الاقتصاد الدائري تقييمها بتفصيل أكبر." },
+      { "q": "كم مرة ينبغي مراجعة ترتيبات إدارة النفايات؟", "a": "ينبغي مراجعة الترتيبات كلما تغيرت العمليات أو المواد الخام أو المقاولون أو مخطط الموقع، وبعد أي ملاحظة تفتيشية أو حادثة تتعلق بالنفايات. كما ينبغي التحقق من تراخيص المقاولين دوريًا لأن نطاقها وسريانها قد يتغيران. وفي غير هذه الحالات تساعد المراجعة المنتظمة للكميات والتكاليف والسجلات على استمرار المنظومة كما صُممت، وتكشف المشكلات قبل أن تظهر أثناء التفتيش." }
+    ]
+  }
+}

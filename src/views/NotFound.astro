@@ -1,0 +1,13 @@
+---
+import Base from "@/layouts/Base.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const links: [string, string][] = [["/services/", t(lang, "nav.services")], ["/industries/", t(lang, "nav.industries")], ["/insights/", t(lang, "nav.insights")], ["/contact/", t(lang, "nav.contact")]];
+---
+<Base lang={lang} path="/404/" noindex title={t(lang, "404.title")} description={t(lang, "404.body")} analytics={{ page_type: "404" }}>
+  <section class="section"><div class="container-narrow">
+    <p class="eyebrow">404</p><h1>{t(lang, "404.title")}</h1><p class="lead">{t(lang, "404.body")}</p>
+    <div class="actions mt-6">{links.map(([p, l]) => <a class="btn btn--ghost" href={href(lang, p)}>{l}</a>)}<a class="btn" href={href(lang, "/request/")}>{t(lang, "cta.consultation")}</a></div>
+  </div></section>
+</Base>

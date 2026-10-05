@@ -1,0 +1,8 @@
+---
+import Request from "@/views/Request.astro";
+import { getServices } from "@/lib/content";
+export async function getStaticPaths() {
+  return (await getServices()).map((s) => ({ params: { slug: s.id }, props: { valueProp: s.data["en"].valueProp } }));
+}
+---
+<Request lang="en" service={Astro.params.slug} serviceDescription={Astro.props.valueProp} />

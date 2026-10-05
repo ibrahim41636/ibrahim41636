@@ -1,0 +1,127 @@
+{
+  "category": "sustainability-climate",
+  "order": 4,
+  "formFamily": "sustainability",
+  "industries": ["real-estate", "construction", "infrastructure", "hospitality", "healthcare", "government-public-sector", "commercial-facilities", "industrial-manufacturing"],
+  "related": ["esg-advisory", "net-zero-advisory", "circular-economy", "green-building-advisory"],
+  "en": {
+    "name": "Sustainability Advisory",
+    "seoTitle": "Sustainability Strategy Advisory in Saudi Arabia | Selorin",
+    "metaDescription": "Sustainability strategy advisory in Saudi Arabia: priorities, policies, targets, KPIs and governance that build sustainability into operations and projects.",
+    "valueProp": "A sustainability strategy built around your business priorities, with clear targets, owners and actions that operations and projects can deliver.",
+    "cardDescription": "Sustainability strategy, policies, targets and KPIs, governance and roadmap, integrated into day-to-day operations and project delivery.",
+    "keyBenefit": "Sustainability goals embedded in how the business operates",
+    "definition": "Sustainability advisory is support for defining and implementing an organisation's sustainability strategy. It establishes priorities across environmental, resource and social topics, translates them into policies, targets and key performance indicators, sets governance and responsibilities, and integrates sustainability requirements into operations, procurement and projects, so that commitments become part of normal management rather than a separate initiative.",
+    "overview": [
+      "Many organisations in Saudi Arabia have made sustainability commitments in response to Vision 2030, the Saudi Green Initiative, investor interest or customer requirements, yet struggle to turn them into daily practice. Commitments sit in a policy document while operations, procurement and project teams continue as before. Sustainability advisory closes that gap. It focuses on what the organisation will do and how it will manage it, while ESG reporting focuses on how performance is disclosed and net-zero planning on emissions specifically. The three work together, but strategy and integration come first.",
+      "We begin by understanding the business: its operating model, environmental footprint, resource use, stakeholder expectations and existing initiatives. From this we define a small number of strategic priorities, such as water efficiency, waste reduction, energy use, sustainable procurement, biodiversity on project sites or community engagement. Each priority is given objectives, targets and key performance indicators with baselines and data sources. We also review existing policies and management systems, including ISO 14001 where in place, so that the strategy builds on what already works instead of creating parallel processes.",
+      "Integration is where most strategies succeed or fail. We define governance roles from board to site level, assign an owner to each target, and build sustainability criteria into the processes that drive decisions: capital approval, procurement specifications, design reviews and project execution plans. For organisations delivering projects, we translate corporate commitments into project-level requirements that contractors can follow and report against. The result is a phased roadmap with initiatives, responsibilities and resources, and a review cycle that keeps the strategy current as the business and its context change."
+    ],
+    "whenYouNeed": [
+      "Leadership wants a sustainability strategy linked to business priorities, not a standalone document.",
+      "Existing sustainability commitments have no targets, owners or way of tracking progress.",
+      "You need to align corporate plans with Vision 2030 and Saudi Green Initiative priorities.",
+      "Project teams need sustainability requirements they can apply in design and construction.",
+      "Procurement wants sustainability criteria for assessing suppliers and contractors.",
+      "Sustainability initiatives across sites or business units are fragmented and inconsistent."
+    ],
+    "deliver": [
+      { "title": "Current state assessment", "description": "A review of your footprint, existing initiatives, policies, management systems and stakeholder expectations, identifying strengths, gaps and priority areas for action." },
+      { "title": "Sustainability strategy", "description": "A concise strategy setting out vision, strategic priorities and objectives, linked to your business plan and to national sustainability priorities." },
+      { "title": "Targets and KPIs", "description": "Measurable targets and key performance indicators for each priority, with baselines, data sources, calculation methods and reporting frequency defined." },
+      { "title": "Policies and governance", "description": "A sustainability policy and supporting policies, with roles from board to site level, committee arrangements and decision rights documented." },
+      { "title": "Operational and project integration", "description": "Sustainability criteria embedded in capital approval, procurement, design review and project execution, including requirements contractors can follow and report against." },
+      { "title": "Implementation roadmap", "description": "A phased roadmap of initiatives with owners, resources, milestones and a review cycle, so progress can be monitored and the strategy updated." }
+    ],
+    "approach": [
+      { "title": "Discovery", "description": "We review documents, interview leadership and functional heads, and visit representative sites to understand operations, impacts and current practices." },
+      { "title": "Prioritisation", "description": "We assess sustainability topics against business relevance and stakeholder expectations, then agree a focused set of strategic priorities with leadership." },
+      { "title": "Strategy design", "description": "We define objectives, targets and KPIs for each priority, test them for feasibility and data availability, and draft the strategy document." },
+      { "title": "Governance", "description": "We set roles, responsibilities and decision rights, and prepare policies and committee terms of reference for approval." },
+      { "title": "Integration", "description": "We work with operations, procurement and project teams to build sustainability criteria into their existing processes, templates and approvals." },
+      { "title": "Roadmap and review", "description": "We finalise the phased roadmap, tracking dashboard structure and annual review process, and support the first progress review if required." }
+    ],
+    "deliverables": [
+      { "item": "Current state assessment report", "format": "Findings, gaps and priority areas (PDF)", "timing": "End of discovery" },
+      { "item": "Sustainability strategy document", "format": "Priorities, objectives and targets (Word + PDF)", "timing": "Strategy design stage" },
+      { "item": "KPI framework", "format": "Indicator definitions, baselines and data sources (Excel)", "timing": "Strategy design stage" },
+      { "item": "Sustainability policy set", "format": "Draft policies and governance terms of reference (Word)", "timing": "Governance stage" },
+      { "item": "Integration toolkit", "format": "Procurement criteria, design review checklist and project requirements (Word/Excel)", "timing": "Integration stage" },
+      { "item": "Implementation roadmap", "format": "Phased plan with owners, resources and milestones (PDF + editable file)", "timing": "Final stage" }
+    ],
+    "regulatoryContext": [
+      "Vision 2030 and the Saudi Green Initiative as the national direction for sustainability",
+      "Environmental Law and its Implementing Regulations as the compliance baseline for operations and projects",
+      "ISO 14001 environmental management systems, where the strategy is integrated with an existing system",
+      "National Center for Waste Management (MWAN) requirements relevant to waste and resource targets",
+      "Mostadam, LEED or Envision where sustainability requirements extend to building and infrastructure projects"
+    ],
+    "faqs": [
+      { "q": "How is sustainability advisory different from ESG advisory?", "a": "Sustainability advisory focuses on what your organisation does: its priorities, targets, policies, governance and how sustainability is built into operations and projects. ESG advisory focuses on how performance is measured and disclosed to investors, lenders and other stakeholders through frameworks such as GRI or IFRS S1/S2. A clear strategy makes ESG reporting easier, and reporting shows whether the strategy is working, so the two are often planned together." },
+      { "q": "Does a sustainability strategy include net-zero targets?", "a": "A sustainability strategy usually includes climate as one priority alongside topics such as water, waste, procurement and people. Where emissions reduction is a major priority, the detailed work of modelling pathways, costing abatement measures and setting science-based targets is done through net zero advisory, and the results are then brought into the overall strategy. This keeps the strategy balanced while giving climate the technical depth it needs." },
+      { "q": "How many targets should a sustainability strategy have?", "a": "Usually fewer than organisations expect. A small number of well-defined targets, each with an owner, a baseline and reliable data, is more useful than a long list that nobody tracks. We typically focus on the priorities with the greatest business and environmental relevance and keep secondary topics under monitoring. The right number depends on your size, sector and how mature your data and management systems are." },
+      { "q": "Can the strategy work with our ISO 14001 system?", "a": "Yes, and it usually should. An ISO 14001 environmental management system already provides processes for identifying environmental aspects, setting objectives, assigning responsibilities and reviewing performance. We align the sustainability strategy with these processes so that targets and initiatives are managed through the existing system rather than a parallel one. This reduces duplication and makes progress easier to track and audit." },
+      { "q": "How do you integrate sustainability into projects?", "a": "We translate corporate commitments into practical project requirements: criteria for design reviews, specifications for materials and equipment, contractor obligations on waste, water, energy and site management, and reporting templates. These are added to existing project documents and approval gates, so project teams apply them as part of normal delivery. Where projects pursue Mostadam, LEED or Envision ratings, the requirements are aligned with those systems." }
+    ]
+  },
+  "ar": {
+    "name": "استشارات الاستدامة",
+    "seoTitle": "استشارات استراتيجية الاستدامة في السعودية | سيلورين",
+    "metaDescription": "استشارات استراتيجية الاستدامة في السعودية: أولويات وسياسات ومستهدفات ومؤشرات أداء وحوكمة تدمج الاستدامة في العمليات اليومية وتنفيذ المشاريع.",
+    "valueProp": "استراتيجية استدامة تنطلق من أولويات أعمالكم، بمستهدفات ومسؤوليات وإجراءات واضحة تستطيع فرق العمليات والمشاريع تنفيذها.",
+    "cardDescription": "استراتيجية الاستدامة وسياساتها ومستهدفاتها ومؤشرات أدائها، مع الحوكمة وخارطة الطريق ودمجها في العمليات اليومية وتنفيذ المشاريع.",
+    "keyBenefit": "استدامة مدمجة في طريقة إدارة الأعمال",
+    "definition": "استشارات الاستدامة دعم مهني لصياغة استراتيجية الاستدامة في المنشأة وتطبيقها. فهي تحدد الأولويات في الموضوعات البيئية وموضوعات الموارد والموضوعات الاجتماعية، وتترجمها إلى سياسات ومستهدفات ومؤشرات أداء رئيسية، وتضع ترتيبات الحوكمة وتوزع المسؤوليات، وتدمج متطلبات الاستدامة في العمليات والمشتريات والمشاريع، لتصبح الالتزامات جزءًا من الإدارة المعتادة لا مبادرة منفصلة عنها.",
+    "overview": [
+      "أعلنت منشآت كثيرة في المملكة التزامات بالاستدامة استجابةً لرؤية 2030 ومبادرة السعودية الخضراء واهتمام المستثمرين ومتطلبات العملاء، لكنها تجد صعوبة في تحويلها إلى ممارسة يومية؛ فتبقى الالتزامات حبيسة وثيقة السياسة، وتواصل فرق العمليات والمشتريات والمشاريع عملها كما كانت. وتعالج استشارات الاستدامة هذه الفجوة، إذ تركز على ما ستفعله المنشأة وكيف ستديره، بينما تُعنى تقارير ESG بطريقة الإفصاح عن الأداء، ويُعنى تخطيط الحياد الصفري بالانبعاثات تحديدًا. والخدمات الثلاث متكاملة، غير أن الاستراتيجية والدمج يأتيان أولًا.",
+      "نبدأ بفهم طبيعة الأعمال: نموذج التشغيل، والأثر البيئي، واستهلاك الموارد، وتوقعات أصحاب المصلحة، والمبادرات القائمة. ومن ذلك نحدد عددًا محدودًا من الأولويات الاستراتيجية، مثل كفاءة استخدام المياه، أو خفض النفايات، أو استهلاك الطاقة، أو المشتريات المستدامة، أو التنوع الحيوي في مواقع المشاريع، أو التواصل مع المجتمع. ونضع لكل أولوية أهدافًا ومستهدفات ومؤشرات أداء رئيسية بخطوط أساس ومصادر بيانات محددة. كما نراجع السياسات وأنظمة الإدارة القائمة، ومنها ISO 14001 حيثما وُجد، لتُبنى الاستراتيجية على ما ينجح فعلًا بدلًا من إنشاء إجراءات موازية.",
+      "الدمج هو ما يحدد نجاح الاستراتيجية أو إخفاقها. لذلك نحدد أدوار الحوكمة من مجلس الإدارة حتى مستوى الموقع، ونسند كل مستهدف إلى مسؤول، وندمج معايير الاستدامة في الإجراءات التي تُتخذ عبرها القرارات: اعتماد المشاريع الرأسمالية، ومواصفات الشراء، ومراجعات التصميم، وخطط تنفيذ المشاريع. وللمنشآت التي تنفذ مشاريع، نترجم الالتزامات المؤسسية إلى متطلبات على مستوى المشروع يلتزم بها المقاولون ويرفعون تقارير عنها. والنتيجة خارطة طريق مرحلية بالمبادرات والمسؤوليات والموارد، ودورة مراجعة تُبقي الاستراتيجية مواكبة لتغير الأعمال وسياقها."
+    ],
+    "whenYouNeed": [
+      "تريد القيادة استراتيجية استدامة مرتبطة بأولويات الأعمال، لا وثيقة قائمة بذاتها.",
+      "التزامات الاستدامة الحالية بلا مستهدفات أو مسؤولين أو وسيلة لمتابعة التقدم.",
+      "تحتاجون إلى مواءمة الخطط المؤسسية مع أولويات رؤية 2030 ومبادرة السعودية الخضراء.",
+      "تحتاج فرق المشاريع إلى متطلبات استدامة قابلة للتطبيق في التصميم والتنفيذ.",
+      "تريد إدارة المشتريات معايير استدامة لتقييم الموردين والمقاولين.",
+      "مبادرات الاستدامة متفرقة وغير متسقة بين المواقع أو وحدات الأعمال."
+    ],
+    "deliver": [
+      { "title": "تقييم الوضع الراهن", "description": "مراجعة الأثر البيئي والمبادرات والسياسات وأنظمة الإدارة القائمة وتوقعات أصحاب المصلحة، مع تحديد نقاط القوة والفجوات ومجالات العمل ذات الأولوية." },
+      { "title": "استراتيجية الاستدامة", "description": "استراتيجية موجزة تحدد الرؤية والأولويات والأهداف الاستراتيجية، وترتبط بخطة أعمالكم وبأولويات الاستدامة الوطنية." },
+      { "title": "المستهدفات ومؤشرات الأداء", "description": "مستهدفات قابلة للقياس ومؤشرات أداء رئيسية لكل أولوية، مع تحديد خطوط الأساس ومصادر البيانات وطرق الاحتساب وتواتر رفع التقارير." },
+      { "title": "السياسات والحوكمة", "description": "سياسة الاستدامة والسياسات الداعمة لها، مع توثيق الأدوار من مجلس الإدارة إلى مستوى الموقع، وترتيبات اللجان وصلاحيات اتخاذ القرار." },
+      { "title": "الدمج في العمليات والمشاريع", "description": "تضمين معايير الاستدامة في اعتماد المشاريع الرأسمالية والمشتريات ومراجعات التصميم وتنفيذ المشاريع، بما في ذلك متطلبات يلتزم بها المقاولون ويرفعون تقارير عنها." },
+      { "title": "خارطة طريق التنفيذ", "description": "خارطة طريق مرحلية للمبادرات بمسؤولين وموارد ومعالم ودورة مراجعة، لمتابعة التقدم وتحديث الاستراتيجية عند الحاجة." }
+    ],
+    "approach": [
+      { "title": "الاستكشاف", "description": "نراجع الوثائق، ونجري مقابلات مع القيادة ورؤساء الإدارات، ونزور مواقع ممثلة لفهم العمليات والآثار والممارسات الحالية." },
+      { "title": "تحديد الأولويات", "description": "نقيّم موضوعات الاستدامة وفق صلتها بالأعمال وتوقعات أصحاب المصلحة، ونتفق مع القيادة على مجموعة مركزة من الأولويات الاستراتيجية." },
+      { "title": "تصميم الاستراتيجية", "description": "نحدد الأهداف والمستهدفات ومؤشرات الأداء لكل أولوية، ونختبر جدواها وتوافر بياناتها، ثم نصوغ وثيقة الاستراتيجية." },
+      { "title": "الحوكمة", "description": "نحدد الأدوار والمسؤوليات وصلاحيات القرار، ونُعد السياسات وشروط عمل اللجان تمهيدًا لاعتمادها." },
+      { "title": "الدمج", "description": "نعمل مع فرق العمليات والمشتريات والمشاريع لتضمين معايير الاستدامة في إجراءاتها ونماذجها ومراحل اعتمادها القائمة." },
+      { "title": "المتابعة والمراجعة", "description": "نعتمد خارطة الطريق المرحلية وهيكل لوحة المتابعة وآلية المراجعة السنوية، وندعم أول مراجعة للتقدم عند الطلب." }
+    ],
+    "deliverables": [
+      { "item": "تقرير تقييم الوضع الراهن", "format": "النتائج والفجوات ومجالات الأولوية (PDF)", "timing": "نهاية مرحلة الاستكشاف" },
+      { "item": "وثيقة استراتيجية الاستدامة", "format": "الأولويات والأهداف والمستهدفات (Word وPDF)", "timing": "مرحلة تصميم الاستراتيجية" },
+      { "item": "إطار مؤشرات الأداء", "format": "تعريفات المؤشرات وخطوط الأساس ومصادر البيانات (Excel)", "timing": "مرحلة تصميم الاستراتيجية" },
+      { "item": "مجموعة سياسات الاستدامة", "format": "مسودات السياسات وشروط عمل لجان الحوكمة (Word)", "timing": "مرحلة الحوكمة" },
+      { "item": "أدوات الدمج", "format": "معايير الشراء وقائمة مراجعة التصميم ومتطلبات المشاريع (Word/Excel)", "timing": "مرحلة الدمج" },
+      { "item": "خارطة طريق التنفيذ", "format": "خطة مرحلية بالمسؤولين والموارد والمعالم (PDF وملف قابل للتحرير)", "timing": "المرحلة الختامية" }
+    ],
+    "regulatoryContext": [
+      "رؤية 2030 ومبادرة السعودية الخضراء بوصفهما التوجه الوطني للاستدامة",
+      "نظام البيئة ولوائحه التنفيذية بوصفه الحد الأدنى للامتثال البيئي في العمليات والمشاريع",
+      "أنظمة الإدارة البيئية وفق ISO 14001 عند دمج الاستراتيجية في نظام قائم",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) ذات الصلة بمستهدفات النفايات والموارد",
+      "أنظمة تقييم مستدام وLEED وEnvision حين تمتد متطلبات الاستدامة إلى مشاريع المباني والبنية التحتية"
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين استشارات الاستدامة واستشارات ESG؟", "a": "تركز استشارات الاستدامة على ما تفعله المنشأة: أولوياتها ومستهدفاتها وسياساتها وحوكمتها وكيفية دمج الاستدامة في العمليات والمشاريع. أما استشارات ESG فتركز على قياس الأداء والإفصاح عنه للمستثمرين والممولين وأصحاب المصلحة وفق أطر مثل GRI وIFRS S1/S2. والاستراتيجية الواضحة تُيسّر إعداد التقارير، والتقارير تبيّن مدى نجاح الاستراتيجية، لذا يُخطط للأمرين معًا في الغالب." },
+      { "q": "هل تتضمن استراتيجية الاستدامة مستهدفات الحياد الصفري؟", "a": "تتضمن استراتيجية الاستدامة عادةً المناخ بوصفه أولوية إلى جانب موضوعات مثل المياه والنفايات والمشتريات والموارد البشرية. وحين يكون خفض الانبعاثات أولوية رئيسية، يُنفذ العمل التفصيلي من نمذجة المسارات وتقدير تكاليف إجراءات الخفض ووضع المستهدفات القائمة على العلم ضمن استشارات الحياد الصفري، ثم تُدمج نتائجه في الاستراتيجية الشاملة، فتبقى متوازنة ويحظى المناخ بالعمق الفني اللازم." },
+      { "q": "كم مستهدفًا ينبغي أن تتضمن استراتيجية الاستدامة؟", "a": "عادةً أقل مما تتوقعه المنشآت. فعدد محدود من المستهدفات المحددة بوضوح، لكل منها مسؤول وخط أساس وبيانات موثوقة، أنفع من قائمة طويلة لا يتابعها أحد. ونركز عادةً على الأولويات الأوثق صلة بالأعمال والبيئة، ونُبقي الموضوعات الثانوية قيد المتابعة. ويتوقف العدد المناسب على حجم المنشأة وقطاعها ومدى نضج بياناتها وأنظمة إدارتها." },
+      { "q": "هل يمكن أن تعمل الاستراتيجية مع نظام ISO 14001 لدينا؟", "a": "نعم، وهذا هو الأصل في الغالب. فنظام الإدارة البيئية وفق ISO 14001 يوفر بالفعل إجراءات لتحديد الجوانب البيئية ووضع الأهداف وإسناد المسؤوليات ومراجعة الأداء. ونواءم استراتيجية الاستدامة مع هذه الإجراءات بحيث تُدار المستهدفات والمبادرات عبر النظام القائم لا عبر نظام موازٍ، مما يقلل الازدواجية ويُيسّر متابعة التقدم وتدقيقه." },
+      { "q": "كيف تدمجون الاستدامة في المشاريع؟", "a": "نترجم الالتزامات المؤسسية إلى متطلبات عملية للمشروع: معايير لمراجعات التصميم، ومواصفات للمواد والمعدات، والتزامات على المقاولين في النفايات والمياه والطاقة وإدارة الموقع، ونماذج لرفع التقارير. وتُضاف هذه المتطلبات إلى وثائق المشروع ومراحل اعتماده القائمة، فتطبقها فرق المشروع ضمن التنفيذ المعتاد. وحين يستهدف المشروع تصنيف مستدام أو LEED أو Envision، نواءم المتطلبات مع تلك الأنظمة." }
+    ]
+  }
+}

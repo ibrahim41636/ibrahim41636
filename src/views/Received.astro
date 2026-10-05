@@ -1,0 +1,36 @@
+---
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import { href, site, t, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<Base lang={lang} path="/request/received/" noindex focused title={t(lang, "received.title")} description={t(lang, "received.body")} analytics={{ page_type: "request_received" }}>
+  <section class="section">
+    <div class="container-narrow">
+      <span class="icon" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-mint);color:var(--c-forest)"><Icon name="check" size={28} /></span>
+      <h1 class="mt-5" style="font-size:var(--fs-h2)">{t(lang, "received.title")}</h1>
+      <p class="lead">{t(lang, "received.body")}</p>
+      <div class="ref-id mt-5" data-ref hidden><small>{t(lang, "received.id")}</small><b data-ref-id></b></div>
+      <p class="muted mt-5">{t(lang, "received.copy")}</p>
+      <h2 class="mt-7" style="font-size:var(--fs-h4)">{t(lang, "received.next")}</h2>
+      <ol class="steps mt-4" style="list-style:none;padding:0">
+        <li class="step"><p>{t(lang, "received.step1")}</p></li>
+        <li class="step"><p>{t(lang, "received.step2")}</p></li>
+        <li class="step"><p>{t(lang, "received.step3")}</p></li>
+      </ol>
+      <div class="actions mt-7">
+        <a class="btn" href={href(lang, "/insights/")}>{t(lang, "nav.insights")}</a>
+        <a class="btn btn--ghost" href={href(lang, "/")}>{t(lang, "nav.home")}</a>
+      </div>
+      <p class="muted mt-6" style="font-size:var(--fs-14)">{site.email} · <span class="ltr">{site.phone}</span></p>
+    </div>
+  </section>
+  <script>
+    const id = new URLSearchParams(location.search).get("id") ?? "";
+    if (/^SEL-\d{4}-\d{6}$/.test(id)) {
+      document.querySelector<HTMLElement>("[data-ref-id]")!.textContent = id;
+      document.querySelector<HTMLElement>("[data-ref]")!.hidden = false;
+    }
+  </script>
+</Base>

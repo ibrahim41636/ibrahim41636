@@ -1,0 +1,70 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import Faq from "@/components/Faq.astro";
+import InsightCard from "@/components/InsightCard.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { render, getEntry, getEntries } from "astro:content";
+import { href, t, formatDate, type Lang } from "@/i18n/ui";
+import { insightCategories } from "@/data/taxonomy";
+import { getInsights, insightSlug, readingTime, type Insight } from "@/lib/content";
+import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
+import { articleSchema, faqSchema } from "@/lib/schema";
+interface Props { lang: Lang; post: Insight }
+const { lang, post } = Astro.props;
+const d = post.data;
+const slug = insightSlug(post);
+const { Content } = await render(post);
+const author = await getEntry(d.author);
+const services = await getEntries(d.relatedServices);
+const industries = await getEntries(d.relatedIndustries);
+const more = (await getInsights(lang)).filter((p) => p.id !== post.id).slice(0, 3);
+const path = `/insights/${slug}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.insights"), path: "/insights/" }, { name: d.title, path }];
+const mins = readingTime(post.body, lang);
+const firstService = services[0]?.id;
+---
+<Base lang={lang} path={path} title={d.title} description={d.description} type="article" image={d.heroImage} imageAlt={d.heroAlt} breadcrumbs={crumbs}
+  schema={[articleSchema(lang, { slug, title: d.title, description: d.description, date: d.date, updated: d.updated, image: d.heroImage, author: { name: author?.data[lang].name ?? "Selorin", type: author?.data.type ?? "Organization" }, about: services.map((s) => s.data[lang].name) }), ...(d.faqs.length ? [faqSchema(d.faqs)] : [])]}
+  analytics={{ page_type: "article", insight_category: d.category, service_slug: firstService ?? "" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={insightCategories[d.category][lang]} title={d.title} lead={d.description}>
+    <p class="meta mt-5" style="color:#a9b2ad;font-size:var(--fs-14)">
+      <span>{t(lang, "insights.by")} <a href={href(lang, `/insights/authors/${d.author.id}/`)} style="color:#fff">{author?.data[lang].name}</a></span>
+      <time datetime={d.date.toISOString()}>{formatDate(lang, d.date)}</time>
+      <span>{mins} {t(lang, "insights.minRead")}</span>
+    </p>
+  </PageHero>
+  <div class="container" style="margin-top:-1px">
+    <img src={d.heroImage} alt={d.heroAlt} width="1600" height="900" style="width:100%;aspect-ratio:21/9;object-fit:cover;border-radius:0 0 16px 16px" decoding="async" />
+  </div>
+  <article class="section">
+    <div class="container with-toc">
+      <aside class="toc" style="display:block">
+        <p class="eyebrow">{t(lang, "insights.relatedServices")}</p>
+        <ul style="list-style:none;padding:0;display:grid;gap:8px">{services.map((s) => <li><a class="link" href={href(lang, `/services/${s.id}/`)} style="font-weight:500"><Icon name={SERVICE_ICON[s.id]} />{s.data[lang].name}</a></li>)}</ul>
+        <a class="btn btn--sm btn--block mt-5" href={href(lang, firstService ? `/request/${firstService}/` : "/request/")} data-cta="article_sidebar_request" data-service={firstService}>{t(lang, "cta.specialist")}</a>
+      </aside>
+      <div>
+        <div class="card mb-6" style="background:var(--c-paper-2);border:0">
+          <h2 style="font-size:var(--fs-18);margin:0">{t(lang, "insights.takeaways")}</h2>
+          <ul class="checklist mt-4">{d.keyTakeaways.map((k) => <li>{k}</li>)}</ul>
+        </div>
+        <div class="prose"><Content /></div>
+        {d.faqs.length > 0 && <section class="block"><h2>{t(lang, "service.faq")}</h2><Faq items={d.faqs} /></section>}
+        {industries.length > 0 && (
+          <section class="block"><h2 style="font-size:var(--fs-18)">{t(lang, "insights.relatedIndustries")}</h2>
+            <div class="grid grid-2" style="gap:12px">{industries.map((i) => <a class="tile" href={href(lang, `/industries/${i.id}/`)}><Icon name={INDUSTRY_ICON[i.id] ?? "factory"} />{i.data[lang].name}<Icon name="arrow" class="arrow" /></a>)}</div>
+          </section>
+        )}
+        <div class="card mt-7" style="flex-direction:row;gap:16px;align-items:start">
+          <div><p class="meta"><span class="tag">{t(lang, "insights.by")}</span></p><h3 style="margin:4px 0"><a href={href(lang, `/insights/authors/${d.author.id}/`)}>{author?.data[lang].name}</a></h3><p>{author?.data[lang].role}</p></div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <CtaBand title={t(lang, "insights.ctaTitle")} body={t(lang, "insights.ctaBody")} label={t(lang, "cta.specialist")} to={href(lang, firstService ? `/request/${firstService}/` : "/request/")} cta="article_final_cta" />
+  {more.length > 0 && (
+    <section class="section bg-white border-top"><div class="container"><div class="section-head"><h2>{t(lang, "insights.more")}</h2></div><div class="grid grid-3">{more.map((p) => <InsightCard lang={lang} post={p} />)}</div></div></section>
+  )}
+</Base>

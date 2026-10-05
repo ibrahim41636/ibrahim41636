@@ -1,0 +1,160 @@
+{
+  "order": 12,
+  "services": [
+    "environmental-permitting",
+    "environmental-impact-assessment",
+    "environmental-compliance",
+    "air-quality-monitoring",
+    "water-quality-monitoring",
+    "environmental-monitoring",
+    "circular-economy",
+    "ghg-carbon-accounting",
+    "environmental-management-plans"
+  ],
+  "en": {
+    "name": "Waste Management & Recycling",
+    "seoTitle": "Environmental Services for Waste & Recycling | Selorin",
+    "metaDescription": "Permits, EIA, odour, air and leachate monitoring, circular economy and GHG advisory for landfills, recycling plants and transfer stations in Saudi Arabia.",
+    "cardDescription": "Permits, impact studies, odour and leachate monitoring, and circular economy advisory for landfills, recycling facilities and waste service providers.",
+    "overview": [
+      "Waste management companies and recyclers sit at the centre of Saudi Arabia's shift toward a circular economy. Landfills, transfer stations, material recovery facilities, composting sites, waste-to-energy plants and specialist recyclers of tyres, oils, plastics, metals and construction waste all operate under the Waste Management Law and regulations administered by the National Center for Waste Management (MWAN), and under the Environmental Law and its Implementing Regulations for environmental permits and monitoring.",
+      "These facilities have environmental aspects of their own: odour, dust and litter; landfill gas and leachate; fire risk in stockpiles; process emissions from shredding, treatment or thermal processes; wastewater from washing and processing; and residues that still need final disposal. Because they handle other organisations' waste, they also carry heavy record-keeping and traceability duties.",
+      "Licensing, contract tenders and investor due diligence increasingly look at both compliance and the environmental benefit the operation delivers. Operators that can show measured diversion rates, emission reductions and clean compliance records are better placed to win contracts and financing."
+    ],
+    "challenges": [
+      {
+        "title": "Licensing and permits",
+        "description": "New and expanding facilities need waste licences and environmental permits, often supported by impact assessment and detailed operating plans."
+      },
+      {
+        "title": "Odour, dust and neighbours",
+        "description": "Waste reception, composting and stockpiles can create odour and dust that lead to complaints and enforcement if not monitored and controlled."
+      },
+      {
+        "title": "Leachate and landfill gas",
+        "description": "Landfills must control and monitor leachate, groundwater and landfill gas throughout operation and after closure."
+      },
+      {
+        "title": "Traceability of materials",
+        "description": "Operators must document what they receive, process, sell and dispose of, with records that reconcile across the chain of custody."
+      },
+      {
+        "title": "Proving environmental benefit",
+        "description": "Clients and investors want measured recycling rates, avoided emissions and output quality rather than general statements."
+      }
+    ],
+    "requirements": [
+      "Waste management licences from MWAN and environmental permits for each facility",
+      "Environmental impact assessment for new or expanded landfills, treatment and recycling plants",
+      "Odour, dust and ambient air monitoring around reception, processing and storage areas",
+      "Leachate, groundwater and landfill gas monitoring for disposal sites",
+      "Records of waste received, processed, sold and disposed of, with full traceability",
+      "Fire prevention and stockpile management for combustible materials"
+    ],
+    "support": [
+      {
+        "title": "Licensing support",
+        "description": "We prepare environmental studies, operating plans and permit packages that support waste licences and environmental permit applications."
+      },
+      {
+        "title": "Site monitoring",
+        "description": "We monitor odour, dust, air, leachate, groundwater and landfill gas and report results against permit conditions."
+      },
+      {
+        "title": "Compliance and management plans",
+        "description": "We prepare environmental management plans and run compliance reviews of operations, records and traceability systems."
+      },
+      {
+        "title": "Circular economy and carbon",
+        "description": "We quantify diversion rates, material recovery and avoided emissions to support tenders, investor reporting and circular economy strategies."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "We are planning a new recycling facility. Which approvals should we expect?",
+        "a": "Typically a waste management licence from MWAN and an environmental permit, which may require an environmental study depending on scale and process. Industrial city or municipal requirements may also apply. We map the approval path for your facility at the start."
+      },
+      {
+        "q": "How do you monitor odour around a waste facility?",
+        "a": "We combine site surveys, odour source identification, meteorological data and, where relevant, measurement of indicator gases at the boundary. The aim is to link odour episodes to specific activities so controls can be targeted."
+      },
+      {
+        "q": "Can you calculate the emissions avoided by our recycling operations?",
+        "a": "Yes. Using recognised methods, we compare the emissions of your recycling process with the disposal and virgin material production it replaces, and document assumptions clearly so the figures can be defended in tenders and reports."
+      }
+    ]
+  },
+  "ar": {
+    "name": "إدارة النفايات وإعادة التدوير",
+    "seoTitle": "الخدمات البيئية لإدارة النفايات وإعادة التدوير | سيلورين",
+    "metaDescription": "التصاريح وتقييم الأثر البيئي ورصد الروائح والهواء والعصارة واستشارات الاقتصاد الدائري والكربون للمرادم ومصانع التدوير ومحطات النقل ومشغلي النفايات.",
+    "cardDescription": "تصاريح ودراسات أثر ورصد للروائح والعصارة واستشارات في الاقتصاد الدائري للمرادم ومنشآت التدوير ومقدمي خدمات النفايات.",
+    "overview": [
+      "تقف شركات إدارة النفايات وإعادة التدوير في قلب تحول المملكة نحو الاقتصاد الدائري؛ إذ تعمل المرادم ومحطات النقل ومنشآت فرز المواد واسترجاعها ومواقع التسميد ومحطات تحويل النفايات إلى طاقة ومصانع تدوير الإطارات والزيوت والبلاستيك والمعادن ومخلفات البناء وفق نظام إدارة النفايات واللوائح التي يشرف عليها المركز الوطني لإدارة النفايات (موان)، ووفق نظام البيئة ولوائحه التنفيذية فيما يخص التصاريح البيئية والرصد.",
+      "ولهذه المنشآت جوانبها البيئية الخاصة: الروائح والغبار والمخلفات المتطايرة، وغاز المرادم والعصارة، ومخاطر الحريق في المخزونات، والانبعاثات الناتجة عن التقطيع أو المعالجة أو العمليات الحرارية، ومياه الغسيل والمعالجة، والمتبقيات التي لا تزال تحتاج إلى تخلص نهائي. ولأنها تتعامل مع نفايات جهات أخرى، فإنها تتحمل واجبات ثقيلة في التوثيق والتتبع.",
+      "وتنظر إجراءات الترخيص والمنافسات وفحص المستثمرين بصورة متزايدة إلى الامتثال وإلى الفائدة البيئية التي تحققها العمليات معًا؛ فالمشغل القادر على إثبات معدلات تحويل مقيسة وانبعاثات مخفضة وسجل امتثال نظيف يكون في موقع أفضل للفوز بالعقود والتمويل."
+    ],
+    "challenges": [
+      {
+        "title": "التراخيص والتصاريح",
+        "description": "تحتاج المنشآت الجديدة والتوسعات إلى تراخيص لإدارة النفايات وتصاريح بيئية، كثيرًا ما تدعمها دراسات تقييم أثر وخطط تشغيل تفصيلية."
+      },
+      {
+        "title": "الروائح والغبار والجوار",
+        "description": "قد تُحدث مناطق الاستقبال والتسميد والمخزونات روائح وغبارًا يؤديان إلى شكاوى وإجراءات رقابية إن لم تُرصد وتُضبط."
+      },
+      {
+        "title": "العصارة وغاز المرادم",
+        "description": "على المرادم ضبط العصارة والمياه الجوفية وغاز المرادم ورصدها طوال التشغيل وبعد الإغلاق."
+      },
+      {
+        "title": "تتبع المواد",
+        "description": "على المشغل توثيق ما يستقبله ويعالجه ويبيعه ويتخلص منه، بسجلات تتطابق على امتداد سلسلة العهدة."
+      },
+      {
+        "title": "إثبات الفائدة البيئية",
+        "description": "يطلب العملاء والمستثمرون معدلات تدوير مقيسة وانبعاثات متجنبة وجودة للمخرجات بدلًا من العبارات العامة."
+      }
+    ],
+    "requirements": [
+      "تراخيص إدارة النفايات من المركز الوطني لإدارة النفايات وتصاريح بيئية لكل منشأة",
+      "تقييم الأثر البيئي للمرادم ومنشآت المعالجة والتدوير الجديدة أو الموسعة",
+      "رصد الروائح والغبار وجودة الهواء المحيط حول مناطق الاستقبال والمعالجة والتخزين",
+      "رصد العصارة والمياه الجوفية وغاز المرادم في مواقع التخلص",
+      "سجلات للنفايات المستقبلة والمعالجة والمبيعة والمتخلص منها مع تتبع كامل",
+      "الوقاية من الحرائق وإدارة مخزونات المواد القابلة للاشتعال"
+    ],
+    "support": [
+      {
+        "title": "دعم الترخيص",
+        "description": "نعدّ الدراسات البيئية وخطط التشغيل وحزم التصاريح الداعمة لطلبات تراخيص إدارة النفايات والتصاريح البيئية."
+      },
+      {
+        "title": "رصد المواقع",
+        "description": "نرصد الروائح والغبار والهواء والعصارة والمياه الجوفية وغاز المرادم، ونقارن النتائج بشروط التصريح."
+      },
+      {
+        "title": "الامتثال وخطط الإدارة",
+        "description": "نعدّ خطط الإدارة البيئية، ونراجع امتثال العمليات والسجلات وأنظمة التتبع."
+      },
+      {
+        "title": "الاقتصاد الدائري والكربون",
+        "description": "نحسب معدلات التحويل واسترجاع المواد والانبعاثات المتجنبة لدعم المنافسات وتقارير المستثمرين واستراتيجيات الاقتصاد الدائري."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "نخطط لإنشاء منشأة تدوير جديدة، فما الموافقات المتوقعة؟",
+        "a": "عادةً ترخيص لإدارة النفايات من المركز الوطني لإدارة النفايات وتصريح بيئي، وقد يتطلب الأخير دراسة بيئية بحسب الحجم وطبيعة العملية، وقد تنطبق كذلك متطلبات المدينة الصناعية أو البلدية. نرسم مسار الموافقات لمنشأتكم منذ البداية."
+      },
+      {
+        "q": "كيف ترصدون الروائح حول منشأة نفايات؟",
+        "a": "نجمع بين المسوحات الميدانية وتحديد مصادر الروائح وبيانات الأرصاد الجوية، وقياس الغازات الدالة عند الحدود حيثما يلزم، بهدف ربط نوبات الروائح بأنشطة بعينها لتوجيه الضوابط بدقة."
+      },
+      {
+        "q": "هل يمكنكم حساب الانبعاثات التي تتجنبها عمليات التدوير لدينا؟",
+        "a": "نعم، نقارن باستخدام أساليب معتمدة انبعاثات عملية التدوير بانبعاثات التخلص وإنتاج المواد الخام التي تحل محلها، ونوثق الافتراضات بوضوح ليمكن الدفاع عن الأرقام في المنافسات والتقارير."
+      }
+    ]
+  }
+}

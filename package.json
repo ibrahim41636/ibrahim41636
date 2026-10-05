@@ -3,7 +3,24 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs",
-    "dev": "node build.mjs --watch & npx --yes serve dist -l 4173"
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "test": "vitest run",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.3.1",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "astro": "^7.3.5",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261005.1",
+    "vitest": "^5.0.3",
+    "wrangler": "^4.147.0"
   }
 }

@@ -1,0 +1,12 @@
+# Legacy URLs from the first version of the site
+/index.html                 /                                          301
+/dust-monitoring.html       /services/dust-monitoring/                 301
+/fuel-stations-voc.html     /services/fuel-station-voc-monitoring/     301
+/services.html              /services/                                 301
+/industries.html            /industries/                               301
+/about.html                 /about/                                    301
+/sustainability.html        /services/sustainability-climate/          301
+/governance.html            /legal/privacy/                            301
+/news.html                  /insights/                                 301
+/careers.html               /contact/                                  301
+/contact.html               /contact/                                  301

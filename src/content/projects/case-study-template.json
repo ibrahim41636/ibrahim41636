@@ -1,0 +1,28 @@
+{
+  "status": "placeholder",
+  "industry": "industrial-manufacturing",
+  "services": ["environmental-permitting", "environmental-monitoring"],
+  "year": "[CONTENT REQUIRED: year]",
+  "en": {
+    "title": "[CONTENT REQUIRED: case study title, e.g. 'Operation permit renewal for a manufacturing facility']",
+    "clientType": "[CONTENT REQUIRED: client name or anonymised client type]",
+    "location": "[CONTENT REQUIRED: city / region]",
+    "summary": "[CONTENT REQUIRED: one-sentence summary of the engagement]",
+    "scope": ["[CONTENT REQUIRED: scope item]", "[CONTENT REQUIRED: scope item]"],
+    "challenge": "[CONTENT REQUIRED: the client's situation and constraint]",
+    "approach": ["[CONTENT REQUIRED: step]", "[CONTENT REQUIRED: step]", "[CONTENT REQUIRED: step]"],
+    "deliverables": ["[CONTENT REQUIRED: deliverable]", "[CONTENT REQUIRED: deliverable]"],
+    "outcome": "[CONTENT REQUIRED: verified outcome — only facts the client has approved]"
+  },
+  "ar": {
+    "title": "[CONTENT REQUIRED: عنوان دراسة الحالة]",
+    "clientType": "[CONTENT REQUIRED: اسم العميل أو وصف مجهّل]",
+    "location": "[CONTENT REQUIRED: المدينة / المنطقة]",
+    "summary": "[CONTENT REQUIRED: ملخص التكليف في جملة واحدة]",
+    "scope": ["[CONTENT REQUIRED: بند من النطاق]", "[CONTENT REQUIRED: بند من النطاق]"],
+    "challenge": "[CONTENT REQUIRED: وضع العميل والقيود]",
+    "approach": ["[CONTENT REQUIRED: خطوة]", "[CONTENT REQUIRED: خطوة]", "[CONTENT REQUIRED: خطوة]"],
+    "deliverables": ["[CONTENT REQUIRED: مخرج]", "[CONTENT REQUIRED: مخرج]"],
+    "outcome": "[CONTENT REQUIRED: نتيجة موثقة وافق عليها العميل]"
+  }
+}

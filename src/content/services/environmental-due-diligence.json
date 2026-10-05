@@ -1,0 +1,127 @@
+{
+  "category": "permitting-compliance",
+  "order": 5,
+  "formFamily": "permitting",
+  "industries": ["industrial-manufacturing", "real-estate", "oil-gas", "energy", "logistics-warehousing", "mining-quarrying", "waste-recycling", "commercial-facilities"],
+  "related": ["environmental-audits", "environmental-compliance", "environmental-impact-assessment", "esg-advisory"],
+  "en": {
+    "name": "Environmental Due Diligence",
+    "seoTitle": "Environmental Due Diligence in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental due diligence in Saudi Arabia for acquisitions, investments and leases: site history, inspection, contamination screening and liability findings.",
+    "valueProp": "We identify the environmental risks and liabilities attached to a site or business before you commit, so they are reflected in your decision.",
+    "cardDescription": "Pre-transaction assessments for acquisitions, investments, leases and land transfers: site history, inspection, contamination risk screening and compliance and liability findings.",
+    "keyBenefit": "Environmental risks known before the deal, not after",
+    "definition": "Environmental due diligence is the assessment of environmental risks and liabilities linked to a site, facility or business before a transaction such as an acquisition, investment, lease or land transfer. It combines a review of site history and records, a site inspection, contamination risk screening and a review of permit and compliance status, and reports findings in terms relevant to value and deal terms.",
+    "overview": [
+      "When a business, facility or plot of land changes hands, its environmental issues often travel with it. Past industrial use, fuel and chemical storage, buried waste, unpermitted discharges or outstanding regulatory findings can translate into remediation costs, operational restrictions or delays after closing. In Saudi Arabia, where industrial, logistics and real estate transactions are active across industrial cities and new development areas, buyers, investors, lenders and tenants increasingly expect environmental questions to be answered before commitments are made.",
+      "Our due diligence follows a phased approach. We start with a desktop review of available records: site history, previous uses, permits, environmental studies, monitoring data and any regulatory correspondence. We then inspect the site to observe current activities, storage areas, drainage, signs of contamination and neighbouring land uses, and interview site personnel. From this we screen contamination risk, identify areas of potential concern, and assess compliance status against permits and the Environmental Law and its Implementing Regulations.",
+      "Findings are reported as a structured environmental risk assessment: each issue is described, rated for likelihood and consequence, and linked to its potential business implication, such as cost, delay or a condition to negotiate. Where screening indicates possible contamination, we recommend whether intrusive investigation, such as soil or groundwater sampling, is warranted before closing. The result is a clear basis for pricing, warranties, indemnities, conditions precedent or a decision to walk away."
+    ],
+    "whenYouNeed": [
+      "You are acquiring a company or facility with industrial, fuel or chemical operations.",
+      "An investor or lender requires an environmental assessment before committing funds.",
+      "You are leasing an industrial or logistics site and want a baseline of its condition.",
+      "Land with past industrial or unknown use is being purchased or transferred.",
+      "You are selling a site and want to understand environmental issues before buyers raise them.",
+      "A tenant is vacating and you need to compare site condition with the original baseline."
+    ],
+    "deliver": [
+      { "title": "Site history and records review", "description": "Review of previous land uses, permits, studies, monitoring data and regulatory correspondence to understand what activities may have affected the site." },
+      { "title": "Site inspection", "description": "A walkover of operational, storage and drainage areas and site boundaries, with photographs, observations of contamination indicators and interviews with site personnel." },
+      { "title": "Contamination risk screening", "description": "Identification of areas of potential concern based on history and inspection, with a recommendation on whether soil or groundwater investigation is warranted." },
+      { "title": "Compliance and permit status review", "description": "Assessment of whether the facility holds the required environmental permits and meets key conditions, highlighting open findings or notices that could transfer." },
+      { "title": "Environmental risk assessment", "description": "Each issue rated by likelihood and consequence and linked to its business implication, such as estimated cost category, delay or operating restriction." },
+      { "title": "Transaction-focused recommendations", "description": "Practical recommendations for deal teams, such as further investigation, conditions precedent, warranties, indemnities or post-closing actions, for discussion with legal advisers." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We confirm the transaction type, site boundaries, timelines and the questions the deal team needs answered." },
+      { "title": "Desktop review", "description": "We review site history, available records, permits, studies and regulatory correspondence provided through the data room or seller." },
+      { "title": "Site inspection", "description": "We inspect the site and surroundings and interview personnel to verify records and identify areas of concern." },
+      { "title": "Risk screening", "description": "We screen contamination and compliance risks and rate each issue by likelihood, consequence and business implication." },
+      { "title": "Reporting", "description": "We issue a red-flag summary early, followed by a full report with findings and recommendations." },
+      { "title": "Further investigation", "description": "Where warranted, we scope intrusive investigation such as soil or groundwater sampling to confirm suspected contamination." }
+    ],
+    "deliverables": [
+      { "item": "Scope and information request", "format": "Scope note and data request list (PDF + Excel)", "timing": "Engagement start" },
+      { "item": "Red-flag summary", "format": "Short memo of material issues (PDF)", "timing": "After site inspection" },
+      { "item": "Environmental due diligence report", "format": "Report with findings, photographs and site plans (PDF)", "timing": "Reporting stage" },
+      { "item": "Environmental risk register", "format": "Rated risk register with business implications (Excel)", "timing": "With full report" },
+      { "item": "Transaction recommendations", "format": "Summary table for deal and legal teams (PDF)", "timing": "With full report" },
+      { "item": "Further investigation scope", "format": "Proposed sampling plan and scope (PDF)", "timing": "If contamination is suspected" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set operator obligations, including responsibilities relating to pollution and environmental damage.",
+      "National Center for Environmental Compliance (NCEC), whose environmental permits and compliance records are reviewed to establish a facility's regulatory status.",
+      "National Center for Waste Management (MWAN) and the Waste Management Law, relevant where waste storage, handling or historical disposal is identified on site.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON requirements, where the site is located within their jurisdictions.",
+      "ESG expectations of investors and lenders, which increasingly call for environmental risk to be assessed and disclosed in investment decisions."
+    ],
+    "faqs": [
+      { "q": "What is the difference between environmental due diligence and an environmental audit?", "a": "Due diligence is carried out for a transaction and answers the question of what environmental risks and liabilities come with a site or business, and how they might affect value or deal terms. An audit is commissioned by an operator to test its own compliance against defined criteria. Due diligence often relies on limited access and a data room, and its report is written for investors, lenders and legal advisers." },
+      { "q": "Does environmental due diligence include soil and groundwater sampling?", "a": "A first-phase due diligence normally does not. It relies on records, site history, inspection and interviews to identify areas of potential concern. If screening indicates possible contamination, we recommend a targeted intrusive investigation, such as soil or groundwater sampling, and define its scope. Deciding whether to proceed with sampling before closing is a decision for the client, often taken with its legal advisers." },
+      { "q": "Can due diligence be done when site access or records are limited?", "a": "Yes, although findings will carry more uncertainty. Transactions often limit site access, interviews or documents. We make the most of what is available, state clearly what could not be reviewed, and explain how those limitations affect confidence in the findings. Where a gap is material, we recommend how it could be closed before signing or covered by deal protections." },
+      { "q": "Who uses the due diligence report?", "a": "Typically the buyer, investor, lender or tenant, together with their legal and financial advisers. Findings feed into valuation, negotiation of warranties and indemnities, conditions precedent and post-closing plans. We write the report for that audience, with a short summary of material issues and a risk register that links each finding to its potential business implication." },
+      { "q": "Can a seller commission environmental due diligence?", "a": "Yes. Vendor due diligence helps a seller identify and address environmental issues before marketing a site, reduces surprises during negotiations, and gives buyers an organised starting point. Buyers and lenders may still carry out their own review, but a clear vendor report can make that process more focused and predictable." }
+    ]
+  },
+  "ar": {
+    "name": "الفحص البيئي النافي للجهالة",
+    "seoTitle": "الفحص البيئي النافي للجهالة في السعودية | سيلورين",
+    "metaDescription": "فحص بيئي نافٍ للجهالة في المملكة قبل الاستحواذ أو الاستثمار أو الاستئجار أو نقل الأراضي: تاريخ الموقع، والمعاينة، وفرز مخاطر التلوث، وتقييم الالتزامات.",
+    "valueProp": "نكشف المخاطر والالتزامات البيئية المرتبطة بالموقع أو المنشأة قبل أن تلتزموا، لتنعكس في قراركم وشروط صفقتكم.",
+    "cardDescription": "تقييم يسبق الصفقات من استحواذ واستثمار واستئجار ونقل أراضٍ، يشمل تاريخ الموقع ومعاينته وفرز مخاطر التلوث ونتائج الامتثال والالتزامات.",
+    "keyBenefit": "معرفة المخاطر البيئية قبل الصفقة لا بعدها",
+    "definition": "الفحص البيئي النافي للجهالة هو تقييم المخاطر والالتزامات البيئية المرتبطة بموقع أو منشأة أو نشاط تجاري قبل إبرام صفقة، كالاستحواذ أو الاستثمار أو الاستئجار أو نقل ملكية الأراضي. ويجمع بين مراجعة تاريخ الموقع وسجلاته، والمعاينة الميدانية، وفرز مخاطر التلوث، ومراجعة حالة التصاريح والامتثال، ثم يعرض النتائج بما يخدم تقدير القيمة وشروط الصفقة.",
+    "overview": [
+      "حين تنتقل ملكية منشأة أو نشاط تجاري أو قطعة أرض، كثيرًا ما تنتقل معها قضاياها البيئية. فالاستخدامات الصناعية السابقة، وتخزين الوقود والمواد الكيميائية، والنفايات المدفونة، والتصريفات غير المرخصة، والملاحظات الرقابية المعلقة، كلها قد تتحول بعد إتمام الصفقة إلى تكاليف معالجة أو قيود تشغيلية أو تأخير. ومع نشاط صفقات القطاعات الصناعية واللوجستية والعقارية في المدن الصناعية ومناطق التطوير الجديدة في المملكة، بات المشترون والمستثمرون والممولون والمستأجرون يتوقعون الإجابة عن الأسئلة البيئية قبل الالتزام.",
+      "نتّبع في الفحص منهجية مرحلية، تبدأ بمراجعة مكتبية للسجلات المتاحة: تاريخ الموقع واستخداماته السابقة، والتصاريح، والدراسات البيئية، وبيانات الرصد، وأي مراسلات مع الجهات الرقابية. ثم نعاين الموقع لرصد الأنشطة الحالية ومناطق التخزين وشبكات التصريف ومؤشرات التلوث واستخدامات الأراضي المجاورة، ونقابل العاملين فيه. وبناءً على ذلك نفرز مخاطر التلوث، ونحدد المناطق المثيرة للقلق، ونقيّم حالة الامتثال مقابل التصاريح ونظام البيئة ولوائحه التنفيذية.",
+      "تُعرض النتائج في صورة تقييم منظم للمخاطر البيئية، يصف كل قضية ويقدّر احتمالها وعواقبها ويربطها بأثرها المحتمل على الأعمال، كالتكلفة أو التأخير أو شرط ينبغي التفاوض عليه. وإذا أشار الفرز إلى احتمال وجود تلوث، نوصي بمدى الحاجة إلى تحريات ميدانية كأخذ عينات التربة أو المياه الجوفية قبل إتمام الصفقة. والنتيجة أساس واضح للتسعير والضمانات والتعويضات والشروط المسبقة، أو لقرار الانسحاب من الصفقة."
+    ],
+    "whenYouNeed": [
+      "تستحوذون على شركة أو منشأة لها أنشطة صناعية أو تتعامل مع الوقود أو المواد الكيميائية.",
+      "يشترط مستثمر أو ممول تقييمًا بيئيًا قبل ضخ التمويل.",
+      "تستأجرون موقعًا صناعيًا أو لوجستيًا وتريدون توثيق حالته الأساسية.",
+      "تُشترى أو تُنقل ملكية أرض ذات استخدام صناعي سابق أو استخدام غير معروف.",
+      "تبيعون موقعًا وتريدون فهم قضاياه البيئية قبل أن يثيرها المشترون.",
+      "يغادر مستأجر الموقع وتحتاجون إلى مقارنة حالته بالوضع الأساسي الموثق."
+    ],
+    "deliver": [
+      { "title": "مراجعة تاريخ الموقع وسجلاته", "description": "مراجعة استخدامات الأرض السابقة والتصاريح والدراسات وبيانات الرصد والمراسلات الرقابية، لفهم الأنشطة التي ربما أثّرت في الموقع." },
+      { "title": "المعاينة الميدانية", "description": "جولة في مناطق التشغيل والتخزين والتصريف وحدود الموقع، مع التصوير ورصد مؤشرات التلوث ومقابلة العاملين في الموقع." },
+      { "title": "فرز مخاطر التلوث", "description": "تحديد المناطق المثيرة للقلق استنادًا إلى تاريخ الموقع والمعاينة، مع توصية بمدى الحاجة إلى تحريات للتربة أو المياه الجوفية." },
+      { "title": "مراجعة حالة التصاريح والامتثال", "description": "تقييم ما إذا كانت المنشأة حاصلة على التصاريح البيئية اللازمة وتفي باشتراطاتها الرئيسية، مع إبراز الملاحظات أو الإشعارات المعلقة القابلة للانتقال." },
+      { "title": "تقييم المخاطر البيئية", "description": "تقدير احتمال كل قضية وعواقبها، وربطها بأثرها على الأعمال كفئة التكلفة التقديرية أو التأخير أو القيود التشغيلية." },
+      { "title": "توصيات موجهة للصفقة", "description": "توصيات عملية لفرق الصفقة، كالتحريات الإضافية أو الشروط المسبقة أو الضمانات أو التعويضات أو إجراءات ما بعد الإتمام، لمناقشتها مع المستشارين القانونيين." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نؤكد نوع الصفقة وحدود الموقع والجدول الزمني والأسئلة التي يحتاج فريق الصفقة إلى إجابتها." },
+      { "title": "المراجعة المكتبية", "description": "نراجع تاريخ الموقع والسجلات والتصاريح والدراسات والمراسلات الرقابية المتاحة في غرفة البيانات أو لدى البائع." },
+      { "title": "المعاينة الميدانية", "description": "نعاين الموقع ومحيطه ونقابل العاملين للتحقق من السجلات وتحديد المناطق المثيرة للقلق." },
+      { "title": "فرز المخاطر", "description": "نفرز مخاطر التلوث والامتثال، ونقدّر كل قضية من حيث الاحتمال والعواقب والأثر على الأعمال." },
+      { "title": "إعداد التقرير", "description": "نصدر ملخصًا مبكرًا بالقضايا الجوهرية، يليه تقرير كامل بالنتائج والتوصيات." },
+      { "title": "التحريات الإضافية", "description": "عند الحاجة، نحدد نطاق التحريات الميدانية كأخذ عينات التربة أو المياه الجوفية لتأكيد التلوث المشتبه به." }
+    ],
+    "deliverables": [
+      { "item": "النطاق وطلب المعلومات", "format": "مذكرة النطاق وقائمة البيانات المطلوبة (PDF + Excel)", "timing": "بداية التكليف" },
+      { "item": "ملخص القضايا الجوهرية", "format": "مذكرة موجزة بالقضايا المؤثرة (PDF)", "timing": "بعد المعاينة الميدانية" },
+      { "item": "تقرير الفحص البيئي النافي للجهالة", "format": "تقرير بالنتائج والصور ومخططات الموقع (PDF)", "timing": "مرحلة إعداد التقرير" },
+      { "item": "سجل المخاطر البيئية", "format": "سجل مخاطر مقيّمة مع آثارها على الأعمال (Excel)", "timing": "مع التقرير الكامل" },
+      { "item": "توصيات الصفقة", "format": "جدول ملخص لفرق الصفقة والفرق القانونية (PDF)", "timing": "مع التقرير الكامل" },
+      { "item": "نطاق التحريات الإضافية", "format": "خطة مقترحة لأخذ العينات ونطاقها (PDF)", "timing": "عند الاشتباه في وجود تلوث" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد التزامات المشغّل، ومنها المسؤوليات المتعلقة بالتلوث والضرر البيئي.",
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، إذ تُراجع التصاريح البيئية وسجلات الامتثال الصادرة عنه لتحديد الوضع النظامي للمنشأة.",
+      "المركز الوطني لإدارة النفايات (موان) ونظام إدارة النفايات، عند رصد تخزين النفايات أو مناولتها أو التخلص منها سابقًا في الموقع.",
+      "متطلبات الهيئة الملكية للجبيل وينبع (RCJY) والهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن)، إذا كان الموقع ضمن نطاقهما.",
+      "توقعات المستثمرين والممولين في مجال الحوكمة البيئية والاجتماعية والمؤسسية (ESG)، التي تتجه بصورة متزايدة إلى تقييم المخاطر البيئية والإفصاح عنها في قرارات الاستثمار."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين الفحص البيئي النافي للجهالة والتدقيق البيئي؟", "a": "يُجرى الفحص النافي للجهالة لغرض صفقة، ويجيب عن سؤال: ما المخاطر والالتزامات البيئية التي تنتقل مع الموقع أو النشاط، وكيف تؤثر في القيمة أو شروط الصفقة؟ أما التدقيق فيكلّف به المشغّل لاختبار امتثاله مقابل معايير محددة. وكثيرًا ما يعتمد الفحص على وصول محدود وغرفة بيانات، ويُكتب تقريره للمستثمرين والممولين والمستشارين القانونيين." },
+      { "q": "هل يشمل الفحص أخذ عينات التربة والمياه الجوفية؟", "a": "لا يشمل ذلك عادةً في مرحلته الأولى، إذ يعتمد على السجلات وتاريخ الموقع والمعاينة والمقابلات لتحديد المناطق المثيرة للقلق. فإذا أشار الفرز إلى احتمال وجود تلوث، نوصي بتحريات ميدانية موجهة كأخذ عينات التربة أو المياه الجوفية، ونحدد نطاقها. ويعود قرار إجراء العينات قبل إتمام الصفقة إلى العميل، وغالبًا ما يتخذه بالتشاور مع مستشاريه القانونيين." },
+      { "q": "هل يمكن إجراء الفحص مع محدودية الوصول إلى الموقع أو السجلات؟", "a": "نعم، وإن كانت النتائج ستحمل قدرًا أكبر من عدم اليقين. فكثيرًا ما تقيّد الصفقات الوصول إلى الموقع أو المقابلات أو المستندات. ونستفيد إلى أقصى حد مما هو متاح، ونبيّن بوضوح ما تعذّرت مراجعته، ونشرح أثر ذلك على درجة الثقة في النتائج. وإذا كانت الفجوة جوهرية، نوصي بكيفية سدّها قبل التوقيع أو تغطيتها بضمانات تعاقدية." },
+      { "q": "من يستخدم تقرير الفحص البيئي النافي للجهالة؟", "a": "يستخدمه عادةً المشتري أو المستثمر أو الممول أو المستأجر، إلى جانب مستشاريهم القانونيين والماليين. وتُبنى على نتائجه تقديرات القيمة، والتفاوض على الضمانات والتعويضات، والشروط المسبقة، وخطط ما بعد إتمام الصفقة. ولذلك نكتب التقرير لهذا الجمهور، مع ملخص موجز بالقضايا الجوهرية وسجل مخاطر يربط كل نتيجة بأثرها المحتمل على الأعمال." },
+      { "q": "هل يمكن للبائع أن يطلب الفحص البيئي النافي للجهالة؟", "a": "نعم. فالفحص الذي يطلبه البائع يساعده على تحديد القضايا البيئية ومعالجتها قبل طرح الموقع، ويقلل المفاجآت أثناء التفاوض، ويمنح المشترين نقطة انطلاق منظمة. وقد يجري المشترون والممولون مراجعتهم الخاصة، لكن تقرير البائع الواضح يجعل هذه المراجعة أكثر تركيزًا وأيسر توقعًا." }
+    ]
+  }
+}

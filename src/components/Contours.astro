@@ -1,0 +1,15 @@
+---
+// Topographic contour field — the brand's line language used as a premium, image-free texture.
+interface Props { class?: string; seed?: number }
+const { class: cls = "hero-contours", seed = 1 } = Astro.props;
+const lines: string[] = [];
+for (let i = 0; i < 18; i++) {
+  const y = 40 + i * 46;
+  const a = 26 + ((i * 37 * seed) % 30);
+  const p = (i * 53 * seed) % 400;
+  lines.push(`M-50 ${y} C ${250 + p / 4} ${y - a}, ${500 - p / 3} ${y + a * 1.6}, ${800} ${y - a / 2} S ${1250 + p / 5} ${y + a}, ${1650} ${y - a / 3}`);
+}
+---
+<svg class={cls} viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false">
+  {lines.map((d) => <path d={d} />)}
+</svg>

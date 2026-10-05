@@ -1,0 +1,125 @@
+{
+  "category": "sustainable-buildings",
+  "order": 1,
+  "formFamily": "buildings",
+  "industries": ["real-estate", "construction", "infrastructure", "hospitality", "healthcare", "commercial-facilities", "government-public-sector"],
+  "related": ["green-building-advisory", "environmental-impact-assessment", "life-cycle-assessment", "net-zero-advisory"],
+  "en": {
+    "name": "Sustainable Buildings",
+    "seoTitle": "Sustainable Building Advisory in Saudi Arabia | Selorin",
+    "metaDescription": "Sustainable building advisory in Saudi Arabia: design-stage reviews of energy, water, materials and indoor quality, and environmental planning for projects.",
+    "valueProp": "Build environmental performance into design decisions early, when improving energy, water and material outcomes costs least.",
+    "cardDescription": "Design-stage advice on energy, water, materials and indoor environmental quality, plus environmental planning and sustainability reviews for developments and infrastructure.",
+    "keyBenefit": "Better building performance decided at design stage, not retrofitted",
+    "definition": "Sustainable building advisory is design-stage support that improves the environmental performance of buildings, developments and infrastructure. It covers energy and water demand, material selection, indoor environmental quality and site-level environmental planning, and it reviews design options against defined performance objectives so that owners and design teams make informed decisions before construction locks in long-term operating costs and impacts.",
+    "overview": [
+      "In Saudi Arabia's hot, arid climate, a building's form, envelope, glazing and services largely determine its energy and water use for decades. Most of these decisions are made in concept and schematic design, often under time pressure and without a clear picture of their long-term consequences. Vision 2030 giga-projects, new communities and public facilities have raised expectations of environmental performance, and owners increasingly want evidence that a design will perform as intended rather than general statements of intent.",
+      "Sustainable design advice is most effective when it is part of the design process rather than an audit at the end. Early environmental planning of a development considers site layout, orientation, landscape and water strategy, mobility, heat island effects and the protection of sensitive features. At building level, the focus moves to envelope performance, cooling demand, efficient systems, water-efficient fixtures and reuse, material choices with lower embodied impact, and indoor air quality, daylight and thermal comfort for occupants.",
+      "Selorin works alongside architects, engineers and owners to set environmental performance objectives, review design options and track decisions through the design stages. We provide structured sustainability design reviews, highlight trade-offs between cost and performance, and document the rationale behind key decisions. Where the project also pursues a green building rating, our green building advisory service builds on this work. Where an environmental impact assessment is required, we align design measures with its commitments, so the project's environmental story stays consistent."
+    ],
+    "whenYouNeed": [
+      "You are starting concept design for a building or development and want clear environmental objectives.",
+      "Owners or investors expect evidence of energy and water performance before approving the design.",
+      "A master plan needs environmental input on layout, landscape, water and heat island effects.",
+      "Design options must be compared for operating cost, comfort and environmental impact.",
+      "An infrastructure project needs sustainability input before design decisions are finalised.",
+      "You want an independent sustainability review of a design at a key stage gate."
+    ],
+    "deliver": [
+      { "title": "Performance objectives", "description": "Agreed environmental objectives for energy, water, materials and indoor quality, set out in a project brief that design teams can work to." },
+      { "title": "Energy and cooling review", "description": "Review of massing, orientation, envelope, glazing and building services to identify measures that reduce cooling and overall energy demand." },
+      { "title": "Water strategy", "description": "Assessment of indoor and landscape water demand, efficient fixtures, irrigation approach and opportunities for treated wastewater or condensate reuse." },
+      { "title": "Materials review", "description": "Guidance on material choices that reduce environmental impact, considering durability, local availability, recycled content and embodied carbon where data allows." },
+      { "title": "Indoor environmental quality", "description": "Review of ventilation, daylight, thermal comfort, acoustics and low-emission materials affecting occupant health and productivity." },
+      { "title": "Sustainability design reviews", "description": "Structured reviews at key design stages, with clear comments, recommended actions and a decision log that records how each issue was resolved." }
+    ],
+    "approach": [
+      { "title": "Set the brief", "description": "We agree environmental objectives, priorities and constraints with the owner and design team at project start." },
+      { "title": "Plan the site", "description": "We review layout, orientation, landscape, water and mobility to reduce site-level environmental impacts." },
+      { "title": "Analyse options", "description": "We assess design options for energy, water, materials and comfort, and highlight cost and performance trade-offs." },
+      { "title": "Review design stages", "description": "We review drawings and specifications at each stage and issue structured comments and recommendations." },
+      { "title": "Document decisions", "description": "We maintain a decision log and summarise the sustainability measures adopted for owners and stakeholders." }
+    ],
+    "deliverables": [
+      { "item": "Sustainability brief and performance objectives", "format": "Brief document (PDF + editable Word)", "timing": "Concept stage" },
+      { "item": "Site environmental planning note", "format": "Technical note with marked-up plans (PDF)", "timing": "Master planning or concept stage" },
+      { "item": "Design options assessment", "format": "Comparison report with recommendations (PDF + Excel)", "timing": "Schematic design" },
+      { "item": "Sustainability design review reports", "format": "Review comment sheets (PDF + Excel)", "timing": "Each design stage gate" },
+      { "item": "Decision log", "format": "Register of measures and rationale (Excel)", "timing": "Maintained through design" },
+      { "item": "Sustainability design summary", "format": "Summary report for owners and stakeholders (PDF)", "timing": "End of detailed design" }
+    ],
+    "regulatoryContext": [
+      "Saudi Building Code requirements, including its energy conservation provisions, which set the baseline that sustainable design builds on.",
+      "Vision 2030 and the Saudi Green Initiative (SGI), which frame national expectations for resource efficiency and environmental quality in new developments.",
+      "Saudi Arabia's net-zero target for 2060, which increases the importance of energy and carbon decisions made at design stage.",
+      "Environmental Law (2020) and its Implementing Regulations, where developments and infrastructure require environmental assessment and permitting.",
+      "Mostadam, LEED and Envision frameworks, which can be used as references for design objectives even where formal rating is not pursued."
+    ],
+    "faqs": [
+      { "q": "Is this the same as getting a green building rating?", "a": "No. This service focuses on improving the actual environmental performance of a design, whether or not a rating is pursued. A rating system such as Mostadam, LEED or Envision provides a structured way to demonstrate performance, and our green building advisory service supports that process. Many projects use both: sustainable design advice to shape decisions, and rating support to document and submit them." },
+      { "q": "When should sustainability advice start?", "a": "As early as possible, ideally at concept or master planning stage. Decisions about orientation, massing, envelope and site layout have the largest effect on energy and water use and are expensive to change later. Advice at detailed design stage is still useful, especially for systems and materials, but the range of affordable improvements becomes narrower as the design develops." },
+      { "q": "Does sustainable design increase construction cost?", "a": "Some measures add cost, while others reduce it, for example smaller cooling plant resulting from a better envelope. The overall effect depends on the project and the objectives set. We highlight trade-offs between capital cost, operating cost and performance for each significant option, so owners can make informed decisions rather than relying on general assumptions about cost premiums." },
+      { "q": "Do you carry out energy modelling?", "a": "We review and interpret design options for energy and cooling demand and specify where detailed modelling is needed to support a decision. Depending on the project, modelling may be carried out by the design team's engineers or arranged as part of our scope. [CONTENT REQUIRED: confirm whether Selorin performs building energy simulation in-house and which tools are used] In all cases, we ensure inputs and assumptions are consistent with the design." },
+      { "q": "Can you help with infrastructure as well as buildings?", "a": "Yes. Infrastructure projects such as roads, utilities and public realm schemes involve environmental decisions on land take, materials, water, energy use, drainage and community impacts. We provide environmental planning and sustainability reviews for these projects, and where a formal framework is wanted, Envision can be used as a reference. Our green building advisory service covers support for formal Envision verification." }
+    ]
+  },
+  "ar": {
+    "name": "المباني المستدامة",
+    "seoTitle": "استشارات تصميم المباني المستدامة في السعودية | سيلورين",
+    "metaDescription": "استشارات المباني المستدامة في المملكة: مراجعة أداء الطاقة والمياه والمواد وجودة البيئة الداخلية في مرحلة التصميم، والتخطيط البيئي للمشاريع التطويرية.",
+    "valueProp": "ادمج الأداء البيئي في قرارات التصميم مبكرًا، حين يكون تحسين نتائج الطاقة والمياه والمواد أقل كلفة.",
+    "cardDescription": "استشارات في مرحلة التصميم للطاقة والمياه والمواد وجودة البيئة الداخلية، مع التخطيط البيئي ومراجعات الاستدامة للمشاريع التطويرية.",
+    "keyBenefit": "أداء أفضل للمبنى يُحسم في التصميم بدلًا من المعالجة اللاحقة",
+    "definition": "استشارات المباني المستدامة دعم متخصص في مرحلة التصميم يهدف إلى تحسين الأداء البيئي للمباني والمشاريع التطويرية ومشاريع البنية التحتية. وتشمل الطلب على الطاقة والمياه، واختيار المواد، وجودة البيئة الداخلية، والتخطيط البيئي على مستوى الموقع، كما تراجع بدائل التصميم مقابل أهداف أداء محددة، ليتخذ الملاك وفرق التصميم قرارات مدروسة قبل أن يثبّت التنفيذ تكاليف التشغيل وآثاره البيئية لعقود طويلة.",
+    "overview": [
+      "في مناخ المملكة الحار والجاف، يحدد شكل المبنى وغلافه ونسب التزجيج وأنظمة الخدمات فيه إلى حد كبير استهلاكه للطاقة والمياه لعقود. وتُتخذ معظم هذه القرارات في مرحلتي التصميم المفاهيمي والتخطيطي، غالبًا تحت ضغط الوقت ودون صورة واضحة عن عواقبها بعيدة المدى. وقد رفعت المشاريع الكبرى ضمن رؤية المملكة 2030، والمجتمعات العمرانية الجديدة، والمرافق العامة سقف التوقعات في الأداء البيئي، وبات الملاك يطلبون أدلة على أن التصميم سيحقق الأداء المستهدف فعلًا، لا مجرد عبارات عامة عن النوايا.",
+      "تبلغ استشارات التصميم المستدام أعلى فاعليتها حين تكون جزءًا من عملية التصميم نفسها، لا تدقيقًا في نهايتها. فالتخطيط البيئي المبكر للمشروع التطويري يتناول مخطط الموقع واتجاه المباني وتنسيق المواقع واستراتيجية المياه والتنقل وظاهرة الجزر الحرارية وحماية العناصر الحساسة. وعلى مستوى المبنى ينتقل التركيز إلى أداء الغلاف، والطلب على التبريد، وكفاءة الأنظمة، والتجهيزات المرشّدة للمياه وإعادة استخدامها، واختيار مواد أقل أثرًا، إلى جانب جودة الهواء الداخلي والإضاءة الطبيعية والراحة الحرارية للمستخدمين.",
+      "تعمل سيلورين جنبًا إلى جنب مع المعماريين والمهندسين والملاك لتحديد أهداف الأداء البيئي، ومراجعة بدائل التصميم، ومتابعة القرارات عبر مراحل التصميم المختلفة. ونقدّم مراجعات منظمة للاستدامة في التصميم، ونوضح المفاضلة بين التكلفة والأداء، ونوثّق مبررات القرارات الرئيسة. وحين يسعى المشروع أيضًا إلى الحصول على تصنيف للمباني الخضراء، تبني خدمتنا الاستشارية في المباني الخضراء على هذا العمل. وحين يتطلب المشروع دراسة تقييم أثر بيئي، نواءم تدابير التصميم مع التزاماتها، حتى يبقى السجل البيئي للمشروع متسقًا."
+    ],
+    "whenYouNeed": [
+      "عند بدء التصميم المفاهيمي لمبنى أو مشروع تطويري مع الحاجة إلى أهداف بيئية واضحة.",
+      "عندما يطلب الملاك أو المستثمرون أدلة على أداء الطاقة والمياه قبل اعتماد التصميم.",
+      "عندما يحتاج المخطط العام إلى مدخلات بيئية في التوزيع وتنسيق المواقع والمياه والجزر الحرارية.",
+      "عند الحاجة إلى مقارنة بدائل التصميم من حيث تكلفة التشغيل والراحة والأثر البيئي.",
+      "عندما يحتاج مشروع بنية تحتية إلى مدخلات الاستدامة قبل اعتماد قرارات التصميم.",
+      "عند الرغبة في مراجعة مستقلة لاستدامة التصميم عند إحدى مراحل الاعتماد الرئيسة."
+    ],
+    "deliver": [
+      { "title": "أهداف الأداء", "description": "أهداف بيئية متفق عليها للطاقة والمياه والمواد وجودة البيئة الداخلية، تُصاغ في وثيقة متطلبات يعمل وفقها فريق التصميم." },
+      { "title": "مراجعة الطاقة والتبريد", "description": "مراجعة الكتلة والاتجاه والغلاف والتزجيج وأنظمة الخدمات لتحديد التدابير التي تخفض الطلب على التبريد والطاقة إجمالًا." },
+      { "title": "استراتيجية المياه", "description": "تقييم الطلب على المياه داخل المبنى وفي تنسيق المواقع، والتجهيزات المرشّدة، وأسلوب الري، وفرص إعادة استخدام المياه المعالجة أو مياه التكثيف." },
+      { "title": "مراجعة المواد", "description": "توجيهات لاختيار مواد أقل أثرًا بيئيًا، مع مراعاة المتانة والتوافر المحلي والمحتوى المعاد تدويره والكربون المتجسد متى توفرت البيانات." },
+      { "title": "جودة البيئة الداخلية", "description": "مراجعة التهوية والإضاءة الطبيعية والراحة الحرارية والصوتيات والمواد منخفضة الانبعاثات المؤثرة في صحة المستخدمين وإنتاجيتهم." },
+      { "title": "مراجعات الاستدامة في التصميم", "description": "مراجعات منظمة في مراحل التصميم الرئيسة، بملاحظات واضحة وإجراءات موصى بها وسجل قرارات يوثّق طريقة معالجة كل مسألة." }
+    ],
+    "approach": [
+      { "title": "تحديد المتطلبات", "description": "نتفق مع المالك وفريق التصميم على الأهداف البيئية والأولويات والقيود في بداية المشروع." },
+      { "title": "تخطيط الموقع", "description": "نراجع التوزيع والاتجاه وتنسيق المواقع والمياه والتنقل لخفض الآثار البيئية على مستوى الموقع." },
+      { "title": "تحليل البدائل", "description": "نقيّم بدائل التصميم من حيث الطاقة والمياه والمواد والراحة، ونوضح المفاضلة بين التكلفة والأداء." },
+      { "title": "مراجعة المراحل", "description": "نراجع المخططات والمواصفات في كل مرحلة، ونصدر ملاحظات وتوصيات منظمة." },
+      { "title": "توثيق القرارات", "description": "نحتفظ بسجل للقرارات، ونلخص تدابير الاستدامة المعتمدة للملاك وأصحاب العلاقة." }
+    ],
+    "deliverables": [
+      { "item": "وثيقة متطلبات الاستدامة وأهداف الأداء", "format": "وثيقة متطلبات (PDF + Word قابل للتعديل)", "timing": "مرحلة التصميم المفاهيمي" },
+      { "item": "مذكرة التخطيط البيئي للموقع", "format": "مذكرة فنية مع مخططات موضّحة (PDF)", "timing": "مرحلة المخطط العام أو التصميم المفاهيمي" },
+      { "item": "تقييم بدائل التصميم", "format": "تقرير مقارنة مع توصيات (PDF + Excel)", "timing": "مرحلة التصميم التخطيطي" },
+      { "item": "تقارير مراجعة الاستدامة في التصميم", "format": "جداول ملاحظات المراجعة (PDF + Excel)", "timing": "عند كل مرحلة اعتماد للتصميم" },
+      { "item": "سجل القرارات", "format": "سجل التدابير ومبرراتها (Excel)", "timing": "يُحدَّث طوال مراحل التصميم" },
+      { "item": "ملخص الاستدامة في التصميم", "format": "تقرير موجز للملاك وأصحاب العلاقة (PDF)", "timing": "نهاية التصميم التفصيلي" }
+    ],
+    "regulatoryContext": [
+      "متطلبات كود البناء السعودي، بما فيها أحكام ترشيد الطاقة، التي تمثل خط الأساس الذي يُبنى عليه التصميم المستدام.",
+      "رؤية المملكة 2030 ومبادرة السعودية الخضراء، اللتان تؤطران التوقعات الوطنية لكفاءة الموارد والجودة البيئية في المشاريع الجديدة.",
+      "مستهدف المملكة للوصول إلى الحياد الصفري بحلول عام 2060، الذي يزيد أهمية قرارات الطاقة والكربون في مرحلة التصميم.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، حين تتطلب المشاريع التطويرية ومشاريع البنية التحتية تقييمًا بيئيًا وتصريحًا بيئيًا.",
+      "أنظمة مستدام وLEED وEnvision، التي يمكن الاستناد إليها مرجعًا لأهداف التصميم حتى دون السعي إلى تصنيف رسمي."
+    ],
+    "faqs": [
+      { "q": "هل هذه الخدمة هي نفسها الحصول على تصنيف المباني الخضراء؟", "a": "لا. تركز هذه الخدمة على تحسين الأداء البيئي الفعلي للتصميم، سواء سعى المشروع إلى تصنيف أم لا. أما أنظمة التصنيف مثل مستدام وLEED وEnvision فتوفر إطارًا منظمًا لإثبات الأداء، وتتولى خدمتنا الاستشارية في المباني الخضراء دعم هذه العملية. وتستفيد مشاريع كثيرة من الخدمتين معًا: استشارات التصميم المستدام لتوجيه القرارات، ودعم التصنيف لتوثيقها وتقديمها." },
+      { "q": "متى ينبغي أن تبدأ استشارات الاستدامة؟", "a": "في أبكر وقت ممكن، ويفضّل أن يكون ذلك في مرحلة التصميم المفاهيمي أو المخطط العام. فالقرارات المتعلقة باتجاه المباني وكتلتها وغلافها وتوزيع الموقع هي الأكبر أثرًا في استهلاك الطاقة والمياه، وتغييرها لاحقًا مكلف. وتبقى الاستشارة في مرحلة التصميم التفصيلي مفيدة، لا سيما في الأنظمة والمواد، لكن نطاق التحسينات الممكنة بتكلفة معقولة يضيق كلما تقدم التصميم." },
+      { "q": "هل يرفع التصميم المستدام تكلفة الإنشاء؟", "a": "بعض التدابير يضيف تكلفة، وبعضها الآخر يخفضها، كتقليص حجم منظومة التبريد نتيجة تحسين غلاف المبنى. ويعتمد الأثر الإجمالي على طبيعة المشروع والأهداف المحددة. ونوضح لكل بديل جوهري المفاضلة بين التكلفة الرأسمالية وتكلفة التشغيل والأداء، ليتخذ الملاك قرارات مدروسة بدلًا من الاعتماد على افتراضات عامة حول التكلفة الإضافية للاستدامة." },
+      { "q": "هل تجرون نمذجة لاستهلاك الطاقة؟", "a": "نراجع بدائل التصميم ونفسّر نتائجها من حيث الطلب على الطاقة والتبريد، ونحدد المواضع التي تتطلب نمذجة تفصيلية لدعم القرار. وبحسب المشروع، قد يتولى مهندسو فريق التصميم إعداد النمذجة أو تُدرج ضمن نطاق عملنا. [CONTENT REQUIRED: تأكيد ما إذا كانت سيلورين تُجري محاكاة الطاقة للمباني داخليًا والأدوات المستخدمة] وفي جميع الأحوال نتحقق من اتساق المدخلات والافتراضات مع التصميم." },
+      { "q": "هل تشمل خدماتكم مشاريع البنية التحتية إلى جانب المباني؟", "a": "نعم. فمشاريع البنية التحتية كالطرق والمرافق والفراغات العامة تنطوي على قرارات بيئية تتعلق بالأراضي المستخدمة والمواد والمياه واستهلاك الطاقة وتصريف السيول والأثر على المجتمعات المحيطة. ونقدّم لهذه المشاريع تخطيطًا بيئيًا ومراجعات للاستدامة، ويمكن الاستناد إلى نظام Envision مرجعًا حين يُرغب في إطار رسمي. أما دعم التحقق الرسمي وفق Envision فتغطيه خدمتنا الاستشارية في المباني الخضراء." }
+    ]
+  }
+}

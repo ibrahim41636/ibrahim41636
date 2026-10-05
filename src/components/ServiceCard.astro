@@ -1,0 +1,16 @@
+---
+import Icon from "./Icon.astro";
+import { SERVICE_ICON } from "@/lib/icons";
+import { href, t, type Lang } from "@/i18n/ui";
+import type { Service } from "@/lib/content";
+interface Props { lang: Lang; service: Service; benefit?: boolean }
+const { lang, service, benefit = true } = Astro.props;
+const d = service.data[lang];
+---
+<article class="card reveal">
+  <span class="icon"><Icon name={SERVICE_ICON[service.id] ?? "doc"} /></span>
+  <h3><a class="card-link" href={href(lang, `/services/${service.id}/`)} data-cta="service_card" data-service={service.id} style="text-decoration:none">{d.name}</a></h3>
+  <p>{d.cardDescription}</p>
+  {benefit && <p class="benefit"><Icon name="check" /><span><span class="sr-only">{t(lang, "service.keyBenefit")}: </span>{d.keyBenefit}</span></p>}
+  <span class="link" aria-hidden="true">{t(lang, "cta.exploreService")} <Icon name="arrow" /></span>
+</article>

@@ -1,0 +1,22 @@
+# Cloudflare Pages project configuration (static site + /functions).
+name = "selorin-website"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-09-01"
+
+[vars]
+SALES_EMAIL = "sales@selorin.co"
+MAIL_FROM = "Selorin Website <website@selorin.co>"
+ALLOWED_ORIGINS = "https://selorin.co,https://www.selorin.co"
+SEND_CONFIRMATION = "true"
+
+# Secrets (set with `npx wrangler pages secret put NAME`): RESEND_API_KEY, TURNSTILE_SECRET,
+# and optionally LEAD_WEBHOOK_URL / LEAD_WEBHOOK_SECRET.
+
+# Lead log + sequential request IDs + rate limiting. Create with:
+#   npx wrangler d1 create selorin-leads   → paste the database_id below
+#   npx wrangler d1 migrations apply selorin-leads --remote
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "selorin-leads"
+# database_id = "[CONTENT REQUIRED]"
+# migrations_dir = "migrations"

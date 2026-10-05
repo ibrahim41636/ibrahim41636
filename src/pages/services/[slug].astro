@@ -1,0 +1,15 @@
+---
+import Service from "@/views/Service.astro";
+import Category from "@/views/Category.astro";
+import { getServices } from "@/lib/content";
+import { categories } from "@/data/taxonomy";
+export async function getStaticPaths() {
+  const services = await getServices();
+  return [
+    ...categories.map((c) => ({ params: { slug: c.id }, props: { kind: "category" as const, id: c.id } })),
+    ...services.map((s) => ({ params: { slug: s.id }, props: { kind: "service" as const, service: s } })),
+  ];
+}
+const p = Astro.props;
+---
+{p.kind === "category" ? <Category lang="en" id={p.id} /> : <Service lang="en" service={p.service} />}

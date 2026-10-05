@@ -1,0 +1,129 @@
+{
+  "category": "sustainability-climate",
+  "order": 5,
+  "formFamily": "sustainability",
+  "industries": ["industrial-manufacturing", "construction", "food-beverage", "oil-gas", "mining-quarrying", "waste-recycling"],
+  "related": ["ghg-carbon-accounting", "circular-economy", "green-building-advisory"],
+  "en": {
+    "name": "Life Cycle Assessment",
+    "seoTitle": "Life Cycle Assessment (LCA) in Saudi Arabia | Selorin",
+    "metaDescription": "Life cycle assessment in Saudi Arabia to ISO 14040/14044: product carbon footprints, comparative studies, EPD data support and hotspot analysis for design.",
+    "valueProp": "Understand the environmental impact of your products across their life cycle and use the results to guide design, sourcing and claims.",
+    "cardDescription": "ISO 14040/14044 life cycle assessments, product carbon footprints, comparative studies and hotspot analysis, with data support for environmental product declarations.",
+    "keyBenefit": "Product decisions based on full life cycle evidence",
+    "definition": "Life cycle assessment (LCA) is a method for quantifying the environmental impacts of a product, material or service across its life cycle, from raw material extraction through manufacturing, transport and use to end of life. Conducted under ISO 14040 and ISO 14044, it supports product carbon footprints, comparisons between alternatives, environmental product declarations and design decisions based on where impacts actually occur.",
+    "overview": [
+      "Customers, specifiers and investors increasingly ask about the environmental performance of products, not only the companies that make them. Construction projects pursuing green building ratings request product data, export customers ask for carbon footprints, and procurement teams compare alternatives on more than price. In Saudi Arabia, where industrial growth is a national priority under Vision 2030, producers of materials such as cement, steel, plastics, chemicals and packaging face these questions more often. A life cycle assessment provides structured, standards-based answers that can withstand technical review.",
+      "We conduct studies in line with ISO 14040 and ISO 14044. Work begins with the goal and scope: the intended use of the results, the functional unit, system boundaries such as cradle-to-gate or cradle-to-grave, and the impact categories to report. We then build the life cycle inventory from your production data on materials, energy, water, emissions and waste, supplemented by recognised background databases where primary data is not available. Impact assessment converts the inventory into results such as global warming potential, and interpretation tests how assumptions affect the conclusions.",
+      "The value of an LCA often lies in the hotspot analysis: identifying which materials, processes or life cycle stages drive most of the impact, and which design or sourcing changes would reduce it. Comparative studies intended for public disclosure require critical review under ISO 14044, and we structure them accordingly. For environmental product declarations, we prepare the LCA model and background report to the relevant product category rules; the EPD itself is verified and published through a programme operator. Organisation-level emissions are covered separately by GHG and carbon accounting."
+    ],
+    "whenYouNeed": [
+      "A customer or project requests a carbon footprint for your product.",
+      "You want to compare materials, designs or suppliers on environmental performance.",
+      "You plan to publish an environmental product declaration and need the underlying LCA.",
+      "Design teams want to know which components or processes drive environmental impact.",
+      "You intend to make environmental claims about a product and need defensible evidence.",
+      "Green building projects request product life cycle data for credits or material selection."
+    ],
+    "deliver": [
+      { "title": "Goal and scope definition", "description": "A documented goal and scope covering intended use, functional unit, system boundary, allocation rules, impact categories and data quality requirements." },
+      { "title": "Life cycle inventory", "description": "A model of material, energy, water, emission and waste flows built from your primary data and recognised background databases, with sources recorded." },
+      { "title": "Product carbon footprint", "description": "Greenhouse gas emissions per unit of product across the agreed life cycle stages, calculated in line with ISO 14067 and ISO 14040/14044 principles." },
+      { "title": "Comparative assessment", "description": "A like-for-like comparison of alternative products, materials or designs on a common functional unit, structured for critical review where results will be disclosed publicly." },
+      { "title": "Hotspot and improvement analysis", "description": "Identification of the stages, materials and processes contributing most to impact, with scenarios showing the effect of design, sourcing or process changes." },
+      { "title": "EPD data support", "description": "An LCA model and background report prepared to the applicable product category rules, ready for independent verification and registration through a programme operator." }
+    ],
+    "approach": [
+      { "title": "Goal and scope", "description": "We agree the purpose of the study, its audience, functional unit, system boundary, impact categories and whether critical review is needed." },
+      { "title": "Data collection", "description": "We issue data templates, collect production data for the reference period, and visit facilities where needed to understand processes and measurement points." },
+      { "title": "Modelling", "description": "We build the life cycle model in LCA software, link primary data to background datasets, and apply allocation and cut-off rules consistently." },
+      { "title": "Impact assessment", "description": "We calculate results for the selected impact categories, including global warming potential, and break them down by life cycle stage and process." },
+      { "title": "Interpretation", "description": "We identify hotspots, run sensitivity and scenario analyses, check completeness and consistency, and state the study's limitations clearly." },
+      { "title": "Reporting", "description": "We prepare the LCA report to ISO 14044 requirements and support critical review or EPD verification where the study requires it." }
+    ],
+    "deliverables": [
+      { "item": "Goal and scope document", "format": "Scope, functional unit and system boundaries (PDF)", "timing": "Start of study" },
+      { "item": "Data collection templates", "format": "Structured templates by process and facility (Excel)", "timing": "Data collection stage" },
+      { "item": "LCA model and inventory", "format": "Inventory tables and model documentation (Excel + PDF)", "timing": "Modelling stage" },
+      { "item": "Hotspot and scenario analysis", "format": "Contribution charts and improvement scenarios (PDF + Excel)", "timing": "Interpretation stage" },
+      { "item": "LCA report", "format": "Report structured to ISO 14044 with results and interpretation (Word + PDF)", "timing": "Reporting stage" },
+      { "item": "Product carbon footprint summary", "format": "Results per functional unit with method notes (PDF)", "timing": "Reporting stage" },
+      { "item": "EPD background report", "format": "Report and data aligned to product category rules (Word + PDF)", "timing": "Where an EPD is pursued" }
+    ],
+    "regulatoryContext": [
+      "ISO 14040 and ISO 14044 for life cycle assessment principles, framework and requirements",
+      "ISO 14067 for quantifying the carbon footprint of products",
+      "ISO 14025, product category rules and programme operator requirements where an environmental product declaration is pursued",
+      "Mostadam, LEED and Envision where product life cycle data supports building or infrastructure ratings",
+      "Vision 2030 industrial development and Saudi Green Initiative priorities as context for lower-carbon products"
+    ],
+    "faqs": [
+      { "q": "What is the difference between an LCA and a product carbon footprint?", "a": "A life cycle assessment evaluates several environmental impact categories, such as global warming, resource depletion, acidification and water use, across a product's life cycle. A product carbon footprint looks only at greenhouse gas emissions. A carbon footprint can be produced as a subset of an LCA using the same model. If customers ask only for carbon data, a footprint may be enough; for EPDs or broader comparisons, a full LCA is usually needed." },
+      { "q": "Can you issue our environmental product declaration (EPD)?", "a": "EPDs are verified independently and published through a programme operator under the applicable product category rules. Our role is to prepare the underlying LCA and background report so they are ready for that process: correct scope, compliant calculation rules, documented data and clear results. We can also help you identify suitable product category rules and respond to the verifier's questions during review." },
+      { "q": "What data do we need to provide?", "a": "Mainly production data for a representative period, usually a year: quantities of raw materials and their suppliers, energy and fuel use, water use, emissions, waste and packaging, and production output. Information on transport distances, product use and end of life may also be needed depending on the system boundary. Where data is not available, we use recognised background databases and report the effect on data quality." },
+      { "q": "What do cradle-to-gate and cradle-to-grave mean?", "a": "These terms describe the system boundary of the study. Cradle-to-gate covers impacts from raw material extraction up to the point where the product leaves the factory gate. Cradle-to-grave adds distribution, use and end-of-life stages. The choice depends on the purpose of the study and on product category rules where an EPD is intended. Business-to-business products are often assessed cradle-to-gate, with optional stages added as needed." },
+      { "q": "Can we use LCA results in marketing claims?", "a": "LCA results can support environmental claims, but claims must be accurate, specific and consistent with the study's scope and limitations. Comparative claims made publicly require the study to meet ISO 14044 requirements for comparative assertions, including critical review by an independent panel. We help you understand what the results do and do not support, so that claims remain defensible and avoid overstatement." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم دورة الحياة",
+    "seoTitle": "تقييم دورة الحياة (LCA) في السعودية | سيلورين",
+    "metaDescription": "تقييم دورة حياة المنتجات في السعودية وفق ISO 14040/14044: البصمة الكربونية للمنتج، والدراسات المقارنة، ودعم بيانات EPD، وتحليل النقاط الساخنة للتصميم.",
+    "valueProp": "اعرفوا الأثر البيئي لمنتجاتكم على امتداد دورة حياتها، واستخدموا النتائج في توجيه التصميم والتوريد والادعاءات البيئية.",
+    "cardDescription": "دراسات تقييم دورة الحياة وفق ISO 14040/14044، والبصمة الكربونية للمنتجات، والدراسات المقارنة، وتحليل النقاط الساخنة، مع دعم بيانات الإقرارات البيئية للمنتجات.",
+    "keyBenefit": "قرارات المنتج مبنية على أدلة دورة الحياة كاملة",
+    "definition": "تقييم دورة الحياة (LCA) منهجية لقياس الآثار البيئية لمنتج أو مادة أو خدمة على امتداد دورة حياتها، من استخراج المواد الخام مرورًا بالتصنيع والنقل والاستخدام حتى نهاية العمر. ويُجرى وفق معياري ISO 14040 وISO 14044، ويدعم حساب البصمة الكربونية للمنتج، والمقارنة بين البدائل، والإقرارات البيئية للمنتجات، وقرارات التصميم المبنية على مواضع الأثر الفعلية.",
+    "overview": [
+      "يتزايد سؤال العملاء والمصممين والمستثمرين عن الأداء البيئي للمنتجات ذاتها، لا عن الشركات المصنّعة لها فحسب. فمشاريع البناء الساعية إلى تصنيفات المباني الخضراء تطلب بيانات المنتجات، وعملاء التصدير يطلبون البصمة الكربونية، وفرق المشتريات تقارن البدائل بمعايير تتجاوز السعر. وفي المملكة، حيث تُعد التنمية الصناعية أولوية وطنية ضمن رؤية 2030، يواجه منتجو مواد مثل الإسمنت والحديد والبلاستيك والكيماويات ومواد التعبئة هذه الأسئلة بصورة متزايدة. ويقدم تقييم دورة الحياة إجابات منهجية مستندة إلى المعايير، قادرة على الصمود أمام المراجعة الفنية.",
+      "نُجري الدراسات وفق معياري ISO 14040 وISO 14044. ويبدأ العمل بتحديد الهدف والنطاق: الغرض من استخدام النتائج، والوحدة الوظيفية، وحدود النظام كأن تكون من المهد إلى البوابة أو من المهد إلى اللحد، وفئات الأثر المطلوب الإفصاح عنها. ثم نبني قائمة جرد دورة الحياة من بيانات الإنتاج لديكم عن المواد والطاقة والمياه والانبعاثات والنفايات، ونستكملها بقواعد بيانات مرجعية معترف بها عند غياب البيانات الأولية. ويحوّل تقييم الأثر قائمة الجرد إلى نتائج مثل إمكانية الاحترار العالمي، فيما تختبر مرحلة التفسير أثر الافتراضات في الاستنتاجات.",
+      "كثيرًا ما تكمن قيمة الدراسة في تحليل النقاط الساخنة: تحديد المواد أو العمليات أو مراحل دورة الحياة المسؤولة عن الجزء الأكبر من الأثر، والتعديلات في التصميم أو التوريد التي تحدّ منه. وتتطلب الدراسات المقارنة المعدّة للإفصاح العام مراجعة نقدية وفق ISO 14044، ولذا نهيكلها على هذا الأساس. أما الإقرارات البيئية للمنتجات (EPD)، فنُعد نموذج التقييم وتقريره الداعم وفق قواعد فئة المنتج المعنية، بينما يُتحقق من الإقرار ويُنشر عبر مشغّل برنامج مختص. وتُعالج انبعاثات المنشأة ككل ضمن خدمة حصر الانبعاثات والمحاسبة الكربونية."
+    ],
+    "whenYouNeed": [
+      "طلب عميل أو مشروع البصمة الكربونية لمنتجكم.",
+      "ترغبون في مقارنة المواد أو التصاميم أو الموردين من حيث الأداء البيئي.",
+      "تخططون لنشر إقرار بيئي للمنتج (EPD) وتحتاجون إلى دراسة تقييم دورة الحياة التي يستند إليها.",
+      "يريد فريق التصميم معرفة المكونات أو العمليات الأكثر تأثيرًا في البيئة.",
+      "تعتزمون تقديم ادعاءات بيئية عن منتج وتحتاجون إلى أدلة يمكن الدفاع عنها.",
+      "تطلب مشاريع المباني الخضراء بيانات دورة حياة المنتجات لاحتساب النقاط أو اختيار المواد."
+    ],
+    "deliver": [
+      { "title": "تحديد الهدف والنطاق", "description": "وثيقة تحدد الغرض من الدراسة، والوحدة الوظيفية، وحدود النظام، وقواعد التوزيع، وفئات الأثر، ومتطلبات جودة البيانات." },
+      { "title": "قائمة جرد دورة الحياة", "description": "نموذج لتدفقات المواد والطاقة والمياه والانبعاثات والنفايات مبني على بياناتكم الأولية وقواعد بيانات مرجعية معترف بها، مع توثيق المصادر." },
+      { "title": "البصمة الكربونية للمنتج", "description": "انبعاثات غازات الاحتباس الحراري لكل وحدة منتج عبر مراحل دورة الحياة المتفق عليها، محسوبة بما يتسق مع ISO 14067 ومبادئ ISO 14040/14044." },
+      { "title": "الدراسات المقارنة", "description": "مقارنة متكافئة بين منتجات أو مواد أو تصاميم بديلة على أساس وحدة وظيفية موحدة، مُهيكلة لتخضع للمراجعة النقدية عند الإفصاح العام عن النتائج." },
+      { "title": "تحليل النقاط الساخنة وفرص التحسين", "description": "تحديد المراحل والمواد والعمليات الأعلى إسهامًا في الأثر، مع سيناريوهات توضح أثر التغييرات في التصميم أو التوريد أو العمليات." },
+      { "title": "دعم بيانات EPD", "description": "نموذج تقييم وتقرير داعم مُعدّان وفق قواعد فئة المنتج المنطبقة، وجاهزان للتحقق المستقل والتسجيل عبر مشغّل البرنامج." }
+    ],
+    "approach": [
+      { "title": "الهدف والنطاق", "description": "نتفق على غرض الدراسة وجمهورها والوحدة الوظيفية وحدود النظام وفئات الأثر، ومدى الحاجة إلى مراجعة نقدية." },
+      { "title": "جمع البيانات", "description": "نرسل نماذج البيانات، ونجمع بيانات الإنتاج للفترة المرجعية، ونزور المرافق عند الحاجة لفهم العمليات ونقاط القياس." },
+      { "title": "النمذجة", "description": "نبني نموذج دورة الحياة في برمجيات التقييم المتخصصة، ونربط البيانات الأولية بمجموعات البيانات المرجعية، ونطبق قواعد التوزيع والاستبعاد باتساق." },
+      { "title": "تقييم الأثر", "description": "نحتسب النتائج لفئات الأثر المختارة، ومنها إمكانية الاحترار العالمي، ونفصّلها حسب مرحلة دورة الحياة والعملية." },
+      { "title": "التفسير", "description": "نحدد النقاط الساخنة، ونجري تحليلات الحساسية والسيناريوهات، ونتحقق من الاكتمال والاتساق، ونبيّن حدود الدراسة بوضوح." },
+      { "title": "إعداد التقرير", "description": "نُعد تقرير الدراسة وفق متطلبات ISO 14044، وندعم المراجعة النقدية أو التحقق من الإقرار البيئي متى تطلبت الدراسة ذلك." }
+    ],
+    "deliverables": [
+      { "item": "وثيقة الهدف والنطاق", "format": "النطاق والوحدة الوظيفية وحدود النظام (PDF)", "timing": "بداية الدراسة" },
+      { "item": "نماذج جمع البيانات", "format": "نماذج منظمة حسب العملية والمرفق (Excel)", "timing": "مرحلة جمع البيانات" },
+      { "item": "نموذج التقييم وقائمة الجرد", "format": "جداول الجرد وتوثيق النموذج (Excel مع PDF)", "timing": "مرحلة النمذجة" },
+      { "item": "تحليل النقاط الساخنة والسيناريوهات", "format": "رسوم الإسهام وسيناريوهات التحسين (PDF مع Excel)", "timing": "مرحلة التفسير" },
+      { "item": "تقرير تقييم دورة الحياة", "format": "تقرير وفق ISO 14044 بالنتائج والتفسير (Word وPDF)", "timing": "مرحلة إعداد التقرير" },
+      { "item": "ملخص البصمة الكربونية للمنتج", "format": "النتائج لكل وحدة وظيفية مع ملاحظات المنهجية (PDF)", "timing": "مرحلة إعداد التقرير" },
+      { "item": "التقرير الداعم للإقرار البيئي", "format": "تقرير وبيانات متوافقة مع قواعد فئة المنتج (Word وPDF)", "timing": "عند السعي إلى إصدار EPD" }
+    ],
+    "regulatoryContext": [
+      "معيارا ISO 14040 وISO 14044 لمبادئ تقييم دورة الحياة وإطاره ومتطلباته",
+      "معيار ISO 14067 لقياس البصمة الكربونية للمنتجات",
+      "معيار ISO 14025 وقواعد فئة المنتج ومتطلبات مشغّلي البرامج عند إصدار إقرار بيئي للمنتج",
+      "أنظمة تقييم مستدام وLEED وEnvision حين تدعم بيانات دورة الحياة تصنيف المباني أو البنية التحتية",
+      "أولويات التنمية الصناعية في رؤية 2030 ومبادرة السعودية الخضراء سياقًا للمنتجات منخفضة الكربون"
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين تقييم دورة الحياة والبصمة الكربونية للمنتج؟", "a": "يقيس تقييم دورة الحياة عدة فئات من الآثار البيئية، كالاحترار العالمي واستنزاف الموارد والتحمض واستهلاك المياه، على امتداد دورة حياة المنتج، بينما تقتصر البصمة الكربونية على انبعاثات غازات الاحتباس الحراري. ويمكن استخراج البصمة الكربونية جزءًا من التقييم باستخدام النموذج نفسه. فإذا اقتصر طلب العملاء على بيانات الكربون قد تكفي البصمة، أما الإقرارات البيئية أو المقارنات الأوسع فتتطلب عادةً تقييمًا كاملًا." },
+      { "q": "هل يمكنكم إصدار الإقرار البيئي لمنتجنا (EPD)؟", "a": "يخضع الإقرار البيئي للمنتج لتحقق مستقل، ويُنشر عبر مشغّل برنامج وفق قواعد فئة المنتج المنطبقة. ودورنا إعداد دراسة تقييم دورة الحياة وتقريرها الداعم بحيث يكونان جاهزين لهذه العملية: نطاق صحيح، وقواعد احتساب مطابقة، وبيانات موثقة، ونتائج واضحة. ويمكننا أيضًا مساعدتكم في تحديد قواعد فئة المنتج المناسبة والرد على استفسارات جهة التحقق أثناء المراجعة." },
+      { "q": "ما البيانات التي نحتاج إلى تقديمها؟", "a": "بيانات الإنتاج لفترة تمثيلية، عادةً سنة: كميات المواد الخام ومورّدوها، واستهلاك الطاقة والوقود والمياه، والانبعاثات، والنفايات، ومواد التعبئة، وكمية الإنتاج. وقد تلزم أيضًا معلومات عن مسافات النقل واستخدام المنتج ونهاية عمره بحسب حدود النظام. وعند عدم توافر البيانات نستخدم قواعد بيانات مرجعية معترف بها، ونبيّن أثر ذلك في جودة البيانات." },
+      { "q": "ما المقصود بحدود «من المهد إلى البوابة» و«من المهد إلى اللحد»؟", "a": "يصف هذان المصطلحان حدود نظام الدراسة. فحدود «من المهد إلى البوابة» تغطي الآثار من استخراج المواد الخام حتى خروج المنتج من بوابة المصنع، بينما تضيف حدود «من المهد إلى اللحد» مراحل التوزيع والاستخدام ونهاية العمر. ويتوقف الاختيار على غرض الدراسة وعلى قواعد فئة المنتج إذا كان الإقرار البيئي مستهدفًا. وكثيرًا ما تُقيَّم المنتجات الموجهة إلى قطاع الأعمال من المهد إلى البوابة، مع إضافة مراحل اختيارية عند الحاجة." },
+      { "q": "هل يمكننا استخدام نتائج تقييم دورة الحياة في الادعاءات التسويقية؟", "a": "يمكن أن تدعم النتائج الادعاءات البيئية، بشرط أن تكون الادعاءات دقيقة ومحددة ومتسقة مع نطاق الدراسة وحدودها. أما الادعاءات المقارنة المعلنة للجمهور فتتطلب أن تستوفي الدراسة متطلبات ISO 14044 الخاصة بالتأكيدات المقارنة، ومنها المراجعة النقدية من لجنة مستقلة. ونساعدكم في فهم ما تدعمه النتائج وما لا تدعمه، لتبقى ادعاءاتكم قابلة للدفاع بعيدًا عن المبالغة." }
+    ]
+  }
+}

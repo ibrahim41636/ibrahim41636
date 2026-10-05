@@ -1,0 +1,125 @@
+{
+  "category": "monitoring-measurement",
+  "order": 5,
+  "formFamily": "monitoring",
+  "industries": ["construction", "infrastructure", "industrial-manufacturing", "energy", "mining-quarrying", "real-estate", "hospitality", "commercial-facilities"],
+  "related": ["environmental-monitoring", "environmental-impact-assessment", "environmental-management-plans", "environmental-compliance"],
+  "en": {
+    "name": "Noise Monitoring",
+    "seoTitle": "Noise & Vibration Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental noise and vibration monitoring in Saudi Arabia: baseline surveys, construction and boundary noise, continuous terminals and mitigation advice.",
+    "valueProp": "Noise and vibration measurement that shows clearly how your site affects its neighbours and workforce, and what to do about it.",
+    "cardDescription": "Baseline, construction, boundary and occupational noise surveys, continuous noise monitoring terminals and vibration measurement, with reports and practical mitigation recommendations.",
+    "keyBenefit": "Fewer noise complaints and clear evidence for authorities",
+    "definition": "Noise monitoring is the measurement of sound levels — and, where relevant, ground-borne vibration — at a site boundary, at nearby sensitive receptors or in the workplace, to assess impacts and compliance with applicable limits. It uses calibrated sound level meters or continuous monitoring terminals and reports indicators such as equivalent continuous level (LAeq), maximum levels and frequency content.",
+    "overview": [
+      "Noise is a common source of complaints about construction sites, industrial plants, power and utility facilities, entertainment venues and transport infrastructure. As development in Saudi Arabia brings industrial, commercial and residential uses closer together, authorities, project owners and communities pay more attention to noise. Environmental permits, EIA approvals and construction environmental management plans often require baseline noise data, limits at site boundaries or receptors, and monitoring during construction and operation.",
+      "Our noise monitoring service covers the main types of environmental and workplace noise assessment. We carry out baseline surveys before a project starts, monitor construction noise and vibration near homes, schools, hospitals and sensitive structures, and measure operational and boundary noise from plant and equipment. For long or sensitive projects we install continuous noise monitoring terminals with remote data access and alerts. We also conduct occupational noise surveys to identify high-noise areas and support hearing conservation measures. All measurements use calibrated instruments, with meteorological conditions and noise sources documented.",
+      "Measured data on its own rarely solves a noise problem. Our reports interpret results against applicable limits and baseline conditions, identify the dominant sources and recommend practical mitigation such as scheduling changes, equipment selection, enclosures, barriers or operating procedures. This helps project managers respond to complaints with evidence, demonstrate compliance to authorities and plan control measures before they become costly. Noise monitoring can run as a stand-alone survey or as part of a wider environmental monitoring programme."
+    ],
+    "whenYouNeed": [
+      "An EIA requires baseline noise levels at nearby residential or sensitive receptors.",
+      "Construction near homes, schools or hospitals requires noise and vibration monitoring.",
+      "Neighbours have complained about noise from your plant, site or venue.",
+      "Your environmental permit sets noise limits at the site boundary or receptors.",
+      "You are installing new equipment such as generators, compressors or cooling towers.",
+      "Workplace areas may expose employees to high noise levels."
+    ],
+    "deliver": [
+      { "title": "Baseline noise surveys", "description": "Measurement of existing noise levels at the site and nearby receptors before a project starts, covering day and night periods as required." },
+      { "title": "Construction noise and vibration", "description": "Monitoring of noise and vibration from construction activities near sensitive receptors and structures, with trigger levels and documented responses." },
+      { "title": "Operational and boundary noise", "description": "Measurement of noise from operating plant and equipment at site boundaries and receptors, with identification of dominant sources and their contribution." },
+      { "title": "Continuous noise monitoring terminals", "description": "Installation and operation of unattended monitoring terminals with remote data access, alerts and, where needed, audio recording to identify noise events." },
+      { "title": "Occupational noise surveys", "description": "Area and personal noise measurements in workplaces to map high-noise zones and support hearing protection and engineering controls." },
+      { "title": "Reports and mitigation recommendations", "description": "Reports interpreting results against applicable limits and baselines, with practical mitigation options for sources, transmission paths and operating practices." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We review the project, noise sources, receptors, applicable limits and permit or specification requirements to define the survey type and scope." },
+      { "title": "Survey design", "description": "We select measurement locations, periods, indicators and instruments, and agree the plan and any trigger levels with your team." },
+      { "title": "Measurement", "description": "We carry out attended surveys or install continuous terminals, record weather and sources, and check calibration before and after measurement." },
+      { "title": "Analysis", "description": "We process data, exclude affected periods, identify dominant sources and compare results with limits and baseline levels." },
+      { "title": "Reporting and mitigation", "description": "We issue reports with findings and practical mitigation recommendations, and review priorities with your project or operations team." }
+    ],
+    "deliverables": [
+      { "item": "Noise monitoring plan", "format": "Plan with locations, periods and indicators (PDF)", "timing": "Before measurement" },
+      { "item": "Baseline noise survey report", "format": "Report with measured levels and location maps (PDF)", "timing": "After baseline survey" },
+      { "item": "Continuous monitoring data access", "format": "Online dashboard with alerts", "timing": "During monitoring period" },
+      { "item": "Periodic noise and vibration report", "format": "Report with charts, exceedance log and source analysis (PDF)", "timing": "Monthly or per agreed cycle" },
+      { "item": "Occupational noise survey report", "format": "Noise map and results by area or job role (PDF)", "timing": "After survey" },
+      { "item": "Mitigation recommendations", "format": "Prioritised measures with expected effect (PDF)", "timing": "With each report" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law and its Implementing Regulations, including requirements relating to environmental noise.",
+      "National Center for Environmental Compliance (NCEC) environmental permit conditions and EIA approval requirements on noise.",
+      "Noise commitments in construction environmental management plans and project specifications.",
+      "Occupational health and safety requirements applicable to noise exposure in the workplace.",
+      "Internationally recognised measurement standards for environmental noise and vibration, selected to suit the project."
+    ],
+    "faqs": [
+      { "q": "What is the difference between environmental and occupational noise monitoring?", "a": "Environmental noise monitoring measures sound levels at site boundaries and at nearby receptors such as homes, schools or hospitals, to assess the effect of a site on its surroundings. Occupational noise monitoring measures noise in the workplace to assess employee exposure and support hearing protection. The methods, indicators and applicable limits differ, so the scope should be defined clearly before the survey starts." },
+      { "q": "How long should a noise survey last?", "a": "It depends on the purpose. A baseline survey usually needs measurements covering representative day and night periods, and sometimes weekdays and weekends. Construction and operational monitoring may continue for the duration of the activity. Short attended measurements can identify sources, while continuous terminals capture variation over time. We propose a duration that fits your permit, project specification and the variability of noise at the site." },
+      { "q": "Do you monitor vibration as well as noise?", "a": "Yes. Construction activities such as piling, compaction, demolition and blasting can cause ground-borne vibration affecting nearby buildings, sensitive equipment or occupants. We measure vibration at agreed locations, set trigger levels where required and report results together with noise data, so project teams can manage both impacts with one monitoring arrangement." },
+      { "q": "How can continuous noise monitoring help with complaints?", "a": "Continuous terminals record noise levels throughout the day and night, and can send alerts and capture short audio recordings when levels rise. When a complaint is received, the data shows what levels occurred at the relevant time and, often, what caused them. This allows a factual response and helps distinguish site noise from other sources such as traffic or neighbouring activities." },
+      { "q": "What kind of mitigation do you recommend?", "a": "Recommendations depend on the source and the receptor. They may include rescheduling noisy activities, selecting quieter equipment, maintaining silencers, relocating plant, installing enclosures or acoustic barriers, and adjusting operating procedures. We prioritise measures by expected effect and practicality, so your team can decide where to act first." }
+    ]
+  },
+  "ar": {
+    "name": "رصد الضوضاء",
+    "seoTitle": "رصد الضوضاء والاهتزازات في السعودية | سيلورين",
+    "metaDescription": "رصد الضوضاء والاهتزازات البيئية في المملكة: مسوحات مرجعية، وضوضاء الإنشاء وحدود المواقع، ومحطات رصد مستمرة، وتوصيات عملية للحد من الضوضاء وآثارها.",
+    "valueProp": "قياس للضوضاء والاهتزازات يوضح أثر موقعكم على الجوار والعاملين، ويحدد الإجراءات العملية اللازمة.",
+    "cardDescription": "مسوحات الضوضاء المرجعية وضوضاء الإنشاء وحدود الموقع وبيئة العمل، ومحطات رصد مستمرة، وقياس الاهتزازات، مع تقارير وتوصيات عملية للتخفيف.",
+    "keyBenefit": "شكاوى ضوضاء أقل وأدلة واضحة للجهات المختصة",
+    "definition": "رصد الضوضاء هو قياس مستويات الصوت، والاهتزازات المنقولة عبر الأرض عند الحاجة، على حدود الموقع أو عند المستقبِلات الحساسة القريبة أو في بيئة العمل، لتقييم الآثار والتحقق من الالتزام بالحدود المعمول بها. ويعتمد على أجهزة قياس مستوى الصوت المعايرة أو محطات الرصد المستمر، ويعرض مؤشرات مثل المستوى المكافئ المستمر (LAeq) والمستويات القصوى والتركيب الترددي.",
+    "overview": [
+      "تُعد الضوضاء من أكثر مصادر الشكاوى شيوعًا تجاه مواقع الإنشاء والمصانع ومرافق الطاقة والخدمات ومنشآت الترفيه ومشروعات النقل. ومع تقارب الاستخدامات الصناعية والتجارية والسكنية في ظل حركة التطوير في المملكة، يزداد اهتمام الجهات المختصة وملاك المشروعات والمجتمعات المحلية بمسألة الضوضاء. وكثيرًا ما تتضمن التصاريح البيئية وموافقات دراسات تقييم الأثر البيئي وخطط الإدارة البيئية لأعمال الإنشاء متطلبات لبيانات الضوضاء المرجعية، وحدودًا عند حدود الموقع أو المستقبِلات، ورصدًا أثناء الإنشاء والتشغيل.",
+      "تغطي خدمتنا لرصد الضوضاء الأنواع الرئيسة لتقييم الضوضاء البيئية وضوضاء بيئة العمل. فنجري المسوحات المرجعية قبل بدء المشروع، ونرصد ضوضاء الإنشاء واهتزازاته قرب المساكن والمدارس والمستشفيات والمنشآت الحساسة، ونقيس ضوضاء التشغيل عند حدود الموقع الصادرة عن المعدات والآلات. وفي المشروعات الطويلة أو الحساسة نركّب محطات رصد مستمر للضوضاء مع إمكانية الاطلاع على البيانات عن بُعد وإرسال التنبيهات. كما نجري مسوحات الضوضاء المهنية لتحديد المناطق عالية الضوضاء ودعم إجراءات المحافظة على السمع. وتُنفذ جميع القياسات بأجهزة معايرة مع توثيق الظروف الجوية ومصادر الضوضاء.",
+      "نادرًا ما تحل البيانات المقيسة وحدها مشكلة الضوضاء. لذلك تفسر تقاريرنا النتائج مقارنةً بالحدود المعمول بها والمستويات المرجعية، وتحدد المصادر الغالبة، وتوصي بإجراءات تخفيف عملية مثل تعديل جداول العمل أو اختيار المعدات أو استخدام الحاويات العازلة أو الحواجز أو تعديل إجراءات التشغيل. ويساعد ذلك مديري المشروعات على الرد على الشكاوى بالأدلة، وإثبات الامتثال أمام الجهات المختصة، والتخطيط لإجراءات الضبط قبل أن تصبح مكلفة. ويمكن تنفيذ رصد الضوضاء مسحًا مستقلًا أو ضمن برنامج رصد بيئي أشمل."
+    ],
+    "whenYouNeed": [
+      "تتطلب دراسة تقييم الأثر البيئي مستويات ضوضاء مرجعية عند المستقبِلات السكنية أو الحساسة القريبة.",
+      "تستلزم أعمال الإنشاء قرب المساكن أو المدارس أو المستشفيات رصد الضوضاء والاهتزازات.",
+      "اشتكى الجيران من الضوضاء الصادرة عن مصنعكم أو موقعكم أو منشأتكم.",
+      "يحدد تصريحكم البيئي حدودًا للضوضاء عند حدود الموقع أو المستقبِلات.",
+      "تركّبون معدات جديدة كالمولدات أو الضواغط أو أبراج التبريد.",
+      "قد تعرّض بعض مناطق العمل الموظفين لمستويات ضوضاء مرتفعة."
+    ],
+    "deliver": [
+      { "title": "مسوحات الضوضاء المرجعية", "description": "قياس مستويات الضوضاء القائمة في الموقع وعند المستقبِلات القريبة قبل بدء المشروع، بما يغطي فترتي النهار والليل حسب المتطلبات." },
+      { "title": "ضوضاء الإنشاء واهتزازاته", "description": "رصد الضوضاء والاهتزازات الناتجة عن أنشطة الإنشاء قرب المستقبِلات والمنشآت الحساسة، مع قيم تنبيه وتوثيق لإجراءات الاستجابة." },
+      { "title": "ضوضاء التشغيل وحدود الموقع", "description": "قياس الضوضاء الصادرة عن المعدات والآلات العاملة عند حدود الموقع والمستقبِلات، مع تحديد المصادر الغالبة ومقدار إسهام كل منها." },
+      { "title": "محطات الرصد المستمر للضوضاء", "description": "تركيب محطات رصد غير مراقبة وتشغيلها، مع الاطلاع على البيانات عن بُعد والتنبيهات، والتسجيل الصوتي عند الحاجة لتحديد أحداث الضوضاء." },
+      { "title": "مسوحات الضوضاء المهنية", "description": "قياسات للضوضاء في مناطق العمل وللتعرض الشخصي، لتحديد المناطق عالية الضوضاء ودعم وسائل حماية السمع والضوابط الهندسية." },
+      { "title": "التقارير وتوصيات التخفيف", "description": "تقارير تفسر النتائج مقارنةً بالحدود المعمول بها والمستويات المرجعية، مع خيارات تخفيف عملية للمصادر ومسارات الانتقال وممارسات التشغيل." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نراجع المشروع ومصادر الضوضاء والمستقبِلات والحدود المعمول بها ومتطلبات التصريح أو المواصفات لتحديد نوع المسح ونطاقه." },
+      { "title": "تصميم المسح", "description": "نختار مواقع القياس وفتراته والمؤشرات والأجهزة، ونتفق مع فريقكم على الخطة وأي قيم تنبيه." },
+      { "title": "القياس", "description": "ننفذ مسوحات بحضور فني أو نركّب محطات مستمرة، ونوثق الطقس والمصادر، ونتحقق من المعايرة قبل القياس وبعده." },
+      { "title": "التحليل", "description": "نعالج البيانات ونستبعد الفترات المتأثرة، ونحدد المصادر الغالبة، ونقارن النتائج بالحدود والمستويات المرجعية." },
+      { "title": "التقارير والتخفيف", "description": "نصدر التقارير بالنتائج وتوصيات التخفيف العملية، ونراجع الأولويات مع فريق المشروع أو التشغيل." }
+    ],
+    "deliverables": [
+      { "item": "خطة رصد الضوضاء", "format": "خطة تحدد المواقع والفترات والمؤشرات (PDF)", "timing": "قبل القياس" },
+      { "item": "تقرير مسح الضوضاء المرجعي", "format": "تقرير بالمستويات المقيسة وخرائط المواقع (PDF)", "timing": "بعد المسح المرجعي" },
+      { "item": "الاطلاع على بيانات الرصد المستمر", "format": "لوحة معلومات إلكترونية مع تنبيهات", "timing": "خلال فترة الرصد" },
+      { "item": "تقرير الضوضاء والاهتزازات الدوري", "format": "تقرير برسوم بيانية وسجل للتجاوزات وتحليل للمصادر (PDF)", "timing": "شهريًا أو وفق الدورة المتفق عليها" },
+      { "item": "تقرير مسح الضوضاء المهنية", "format": "خريطة ضوضاء ونتائج حسب المنطقة أو الوظيفة (PDF)", "timing": "بعد المسح" },
+      { "item": "توصيات التخفيف", "format": "إجراءات مرتبة حسب الأولوية مع الأثر المتوقع (PDF)", "timing": "مع كل تقرير" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة ولوائحه التنفيذية، بما فيها المتطلبات المتعلقة بالضوضاء البيئية.",
+      "اشتراطات التصاريح البيئية الصادرة عن المركز الوطني للرقابة على الالتزام البيئي (NCEC) ومتطلبات موافقات دراسات تقييم الأثر البيئي المتعلقة بالضوضاء.",
+      "التزامات الضوضاء الواردة في خطط الإدارة البيئية لأعمال الإنشاء ومواصفات المشروعات.",
+      "متطلبات الصحة والسلامة المهنية المتعلقة بالتعرض للضوضاء في بيئة العمل.",
+      "معايير القياس المعترف بها دوليًا للضوضاء البيئية والاهتزازات، المختارة بما يناسب المشروع."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين رصد الضوضاء البيئية ورصد الضوضاء المهنية؟", "a": "يقيس رصد الضوضاء البيئية مستويات الصوت عند حدود الموقع وعند المستقبِلات القريبة كالمساكن والمدارس والمستشفيات، لتقييم أثر الموقع على محيطه. أما رصد الضوضاء المهنية فيقيس الضوضاء في بيئة العمل لتقييم تعرض الموظفين ودعم وسائل حماية السمع. وتختلف الطرق والمؤشرات والحدود المعمول بها بين النوعين، لذا ينبغي تحديد النطاق بوضوح قبل بدء المسح." },
+      { "q": "كم يستغرق مسح الضوضاء؟", "a": "يعتمد ذلك على الغرض منه. فالمسح المرجعي يحتاج عادةً إلى قياسات تغطي فترات نهارية وليلية ممثلة، وأحيانًا أيام العمل وعطلة نهاية الأسبوع. وقد يستمر رصد الإنشاء والتشغيل طوال مدة النشاط. وتساعد القياسات القصيرة بحضور فني على تحديد المصادر، بينما تلتقط المحطات المستمرة التغيرات عبر الزمن. ونقترح مدة تناسب تصريحكم ومواصفات مشروعكم ومدى تباين الضوضاء في الموقع." },
+      { "q": "هل ترصدون الاهتزازات إلى جانب الضوضاء؟", "a": "نعم. فأنشطة الإنشاء مثل دق الركائز والدمك والهدم والتفجير قد تُحدث اهتزازات منقولة عبر الأرض تؤثر في المباني المجاورة أو الأجهزة الحساسة أو شاغلي المباني. ونقيس الاهتزازات في مواقع متفق عليها، ونحدد قيم التنبيه عند الحاجة، ونعرض النتائج مع بيانات الضوضاء، ليتمكن فريق المشروع من إدارة الأثرين ضمن ترتيب رصد واحد." },
+      { "q": "كيف يساعد الرصد المستمر للضوضاء في التعامل مع الشكاوى؟", "a": "تسجل المحطات المستمرة مستويات الضوضاء على مدار النهار والليل، ويمكنها إرسال التنبيهات والتقاط تسجيلات صوتية قصيرة عند ارتفاع المستويات. وعند ورود شكوى، تُظهر البيانات المستويات التي سُجلت في التوقيت المعني، وغالبًا مسبباتها. ويتيح ذلك ردًا مبنيًا على الوقائع، ويساعد على تمييز ضوضاء الموقع عن المصادر الأخرى كحركة المرور أو أنشطة الجوار." },
+      { "q": "ما نوع إجراءات التخفيف التي توصون بها؟", "a": "تعتمد التوصيات على المصدر والمستقبِل. وقد تشمل إعادة جدولة الأنشطة عالية الضوضاء، واختيار معدات أهدأ، وصيانة كواتم الصوت، ونقل المعدات، وتركيب حاويات عازلة أو حواجز صوتية، وتعديل إجراءات التشغيل. ونرتب الإجراءات حسب أثرها المتوقع وسهولة تطبيقها، ليقرر فريقكم من أين يبدأ." }
+    ]
+  }
+}

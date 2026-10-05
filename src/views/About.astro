@@ -1,0 +1,54 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { categories, regulators } from "@/data/taxonomy";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.about"), path: "/about/" }];
+const c = ar ? {
+  title: "من نحن | سيلورين للاستشارات والخدمات البيئية",
+  desc: "تعرّف على سيلورين: شركة استشارات وخدمات بيئية في المملكة تجمع التصاريح والامتثال والدراسات والرصد والاستدامة تحت مسؤولية فريق واحد.",
+  h1: "نحوّل المتطلبات البيئية إلى قرارات واضحة",
+  lead: "سيلورين شركة استشارات وخدمات بيئية في المملكة العربية السعودية، تساعد المنشآت والمشاريع على فهم متطلباتها البيئية، والوفاء بها، وإثبات ذلك بالبيانات.",
+  who: ["تعمل سيلورين عند تقاطع الامتثال البيئي والتنفيذ الميداني والاستدامة. نؤمن بأن المشاريع الكبيرة يمكن أن تنمو دون أن تتحمل البيئة الثمن، بشرط أن تُبنى القرارات على فهم دقيق للمتطلبات وبيانات موثوقة.", "نجمع تحت فريق واحد ما تتعامل معه المنشآت عادةً عبر عدة جهات: إعداد ملفات التصاريح، والدراسات البيئية، والرصد الميداني، وإدارة النفايات، واستشارات الاستدامة والحوكمة. هذا يعني مسؤولية واحدة عن النتيجة، وتسليماً أوضح، وتنسيقاً أقل على فرقكم."],
+} : {
+  title: "About Selorin | Environmental Advisory & Services in Saudi Arabia",
+  desc: "Selorin is an environmental advisory and services firm in Saudi Arabia bringing permitting, compliance, studies, monitoring and sustainability under one accountable team.",
+  h1: "We turn environmental requirements into clear decisions",
+  lead: "Selorin is an environmental advisory and services firm in Saudi Arabia. We help facilities and projects understand their environmental requirements, meet them, and prove it with data.",
+  who: ["Selorin works where environmental compliance, field delivery and sustainability meet. We believe major projects can grow without the environment paying the price — provided decisions rest on a precise understanding of requirements and reliable data.", "We bring together under one team what organisations usually manage across several providers: permit applications, environmental studies, field monitoring, waste management and sustainability and ESG advisory. That means one point of accountability, clearer deliverables and less coordination for your teams."],
+};
+const approach = ar
+  ? [["فهم المتطلبات أولاً", "نبدأ كل تكليف بتحديد المتطلبات المنطبقة على نشاطك وموقعك قبل اقتراح أي حل."], ["بيانات قبل الاستنتاجات", "نعتمد على القياس الميداني والتحقق من جودة البيانات بدلاً من الافتراضات."], ["مخرجات يمكن الدفاع عنها", "نكتب تقاريرنا لتصمد أمام المراجعة: منهجية واضحة، ومصادر موثقة، وتوصيات قابلة للتنفيذ."], ["لغة الإدارة ولغة المختص", "ملخص تنفيذي لصناع القرار، وملاحق فنية للمختصين، في كل تقرير."]]
+  : [["Requirements first", "Every engagement starts by establishing what actually applies to your activities and location — before proposing a solution."], ["Data before conclusions", "We rely on field measurement and data quality checks rather than assumptions."], ["Defensible deliverables", "Reports are written to withstand review: clear method, documented sources and actionable recommendations."], ["Two audiences, one report", "An executive summary for decision makers and technical annexes for specialists — in every report."]];
+const values = ar
+  ? [["الدقة", "نتحقق قبل أن نقرر، ونوضح حدود ما نعرفه."], ["النزاهة", "نعرض النتائج كما هي، دون تجميل أو انتقاء."], ["المسؤولية", "نلتزم بما نتفق عليه من نطاق وجدول ومخرجات."], ["الوضوح", "نكتب ونتواصل بلغة يفهمها من سيتخذ القرار."]]
+  : [["Accuracy", "We verify before we conclude, and we are clear about the limits of what we know."], ["Integrity", "We report results as they are — not polished, not selective."], ["Accountability", "We deliver the scope, schedule and deliverables we agree."], ["Clarity", "We write and communicate in language the decision maker can use."]];
+const how = ar
+  ? [["الاستفسار", "تواصل معنا بوصف موجز لمشروعك أو احتياجك."], ["مراجعة النطاق", "يراجع مختص بيئي المتطلبات ويحدد ما يلزم فعلاً."], ["العرض", "تستلم عرضاً يوضح النطاق والمخرجات والجدول الزمني."], ["التنفيذ", "ننفّذ العمل مع تحديثات منتظمة ونقطة تواصل واحدة."], ["التسليم والمتابعة", "نسلّم المخرجات ونتابع ملاحظات الجهات المختصة."]]
+  : [["Inquiry", "Contact us with a short description of your project or need."], ["Scope review", "An environmental specialist reviews requirements and defines what is actually needed."], ["Proposal", "You receive a proposal with scope, deliverables and schedule."], ["Delivery", "We carry out the work with regular updates and one point of contact."], ["Handover & follow-up", "We hand over deliverables and follow up on authority comments."]];
+---
+<Base lang={lang} path="/about/" title={c.title} description={c.desc} breadcrumbs={crumbs} schema={[{ "@type": "AboutPage", mainEntity: { "@id": "https://selorin.co/#organization" } }]} analytics={{ page_type: "about" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.about")} title={c.h1} lead={c.lead} image="/images/hq.jpg" />
+  <nav class="bg-white border-top" aria-label={ar ? "أقسام الصفحة" : "On this page"} style="padding-block:16px">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:8px">
+      {[["who", ar ? "من نحن" : "Who we are"], ["approach", ar ? "منهجيتنا" : "Our approach"], ["expertise", ar ? "خبراتنا" : "Our expertise"], ["values", ar ? "قيمنا" : "Our values"], ["commitment", ar ? "التزامنا" : "Our commitment"], ["saudi", ar ? "فهم السوق السعودي" : "Saudi market understanding"], ["how", ar ? "كيف نعمل" : "How we work"]].map(([id, l]) => <a class="pill" href={`#${id}`} style="text-decoration:none;padding:8px 14px">{l}</a>)}
+    </div>
+  </nav>
+  <section class="section" id="who"><div class="container split"><div><p class="eyebrow">{ar ? "من نحن" : "Who we are"}</p><h2>{ar ? "شريك بيئي واحد، مسؤول عن النتيجة" : "One environmental partner, accountable for the outcome"}</h2></div><div class="prose">{c.who.map((p) => <p>{p}</p>)}<p class="content-required">{ar ? "[CONTENT REQUIRED: سنة التأسيس، والكيان القانوني، ونبذة عن القيادة — تُضاف بعد التأكيد]" : "[CONTENT REQUIRED: founding year, legal entity and leadership profile — to be added once confirmed]"}</p></div></div></section>
+  <section class="section bg-white border-top" id="approach"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "منهجيتنا" : "Our approach"}</p><h2>{ar ? "أربعة مبادئ تحكم كل تكليف" : "Four principles behind every engagement"}</h2></div></div><div class="grid grid-4">{approach.map(([h, p], i) => <div class="card"><span class="card-num">0{i + 1}</span><h3>{h}</h3><p>{p}</p></div>)}</div></div></section>
+  <section class="section" id="expertise"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "خبراتنا" : "Our expertise"}</p><h2>{ar ? "ستة مجالات مترابطة" : "Six connected practice areas"}</h2></div><a class="link" href={href(lang, "/services/")}>{t(lang, "nav.allServices")} <Icon name="arrow" /></a></div>
+    <div class="grid grid-3">{categories.map((cat) => <article class="card"><span class="icon"><Icon name={cat.icon} /></span><h3><a class="card-link" href={href(lang, `/services/${cat.id}/`)} style="text-decoration:none">{cat.name[lang]}</a></h3><p>{cat.summary[lang]}</p></article>)}</div>
+    <p class="placeholder-note mt-6">{ar ? "[CONTENT REQUIRED: مؤهلات الفريق وتخصصاته واعتماداته المهنية — لا تُعرض قبل التأكيد]" : "[CONTENT REQUIRED: team qualifications, disciplines and professional credentials — not shown until confirmed]"}</p></div></section>
+  <section class="section bg-ink on-dark" id="values"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "قيمنا" : "Our values"}</p><h2 style="color:#fff">{ar ? "كيف نعمل مع عملائنا" : "How we work with clients"}</h2></div></div><div class="grid grid-4">{values.map(([h, p]) => <div class="card"><h3>{h}</h3><p>{p}</p></div>)}</div></div></section>
+  <section class="section" id="commitment"><div class="container split"><div><p class="eyebrow">{ar ? "التزامنا" : "Our commitment"}</p><h2>{ar ? "ما يمكن أن تتوقعه منا" : "What you can expect from us"}</h2></div>
+    <ul class="checklist">{(ar ? ["نطاق عمل مكتوب ومخرجات محددة قبل البدء", "نقطة تواصل واحدة طوال المشروع", "منهجيات موثقة ومعايرة قابلة للتتبع في أعمال القياس", "شفافية في النتائج، بما فيها غير المرغوبة", "حماية بيانات عملائنا ومعلوماتهم التشغيلية"] : ["A written scope and defined deliverables before work starts", "One point of contact throughout the engagement", "Documented methods and traceable calibration in measurement work", "Transparent results — including unwelcome ones", "Protection of client data and operational information"]).map((x) => <li>{x}</li>)}</ul></div></section>
+  <section class="section bg-paper-2" id="saudi"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "فهم السوق السعودي" : "Saudi market understanding"}</p><h2>{ar ? "المتطلبات المحلية في صميم عملنا" : "Local requirements at the core of our work"}</h2></div><p class="lead">{ar ? "تتحدد المتطلبات البيئية بحسب النشاط والموقع والجهة المختصة. نبدأ من هذا الإطار في كل تكليف، ونواكب مستهدفات رؤية 2030 ومبادرة السعودية الخضراء." : "Environmental requirements depend on activity, location and the competent authority. We start every engagement from that framework and keep pace with Vision 2030 and the Saudi Green Initiative."}</p></div>
+    <ul class="reg-list" style="padding:0">{regulators.map((r) => <li><b>{r.name[lang]}</b><span>{r.role[lang]}</span></li>)}</ul></div></section>
+  <section class="section" id="how"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "كيف نعمل" : "How we work"}</p><h2>{ar ? "من أول تواصل إلى التسليم" : "From first contact to handover"}</h2></div></div><ol class="steps" style="list-style:none;padding:0">{how.map(([h, p]) => <li class="step"><h3>{h}</h3><p>{p}</p></li>)}</ol></div></section>
+  <CtaBand title={ar ? "لنتحدث عن مشروعك" : "Let's talk about your project"} body={t(lang, "service.finalBody")} label={t(lang, "cta.consultation")} to={href(lang, "/request/")} cta="about_final_cta" />
+</Base>

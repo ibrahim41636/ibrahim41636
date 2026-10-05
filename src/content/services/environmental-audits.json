@@ -1,0 +1,125 @@
+{
+  "category": "permitting-compliance",
+  "order": 4,
+  "formFamily": "permitting",
+  "industries": ["industrial-manufacturing", "oil-gas", "energy", "mining-quarrying", "food-beverage", "waste-recycling", "healthcare", "government-public-sector"],
+  "related": ["environmental-compliance", "environmental-due-diligence", "environmental-management-plans", "environmental-records"],
+  "en": {
+    "name": "Environmental Audits",
+    "seoTitle": "Environmental Audits in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental audits in Saudi Arabia: compliance audits, gap assessments and ISO 14001 internal audit support, with clear reports and prioritised findings.",
+    "valueProp": "We test your environmental performance against defined criteria and give you prioritised, evidence-based findings you can act on.",
+    "cardDescription": "Compliance audits, gap assessments and ISO 14001 internal audit support, with structured reports that rank findings by significance and recommend practical actions.",
+    "keyBenefit": "An objective view of where you stand and what to fix first",
+    "definition": "An environmental audit is a systematic, documented and objective assessment of how a facility or organisation performs against defined environmental criteria, such as permit conditions, regulatory requirements or an ISO 14001 management system. It gathers evidence through document review, site inspection and interviews, then reports findings ranked by significance with recommendations for corrective action.",
+    "overview": [
+      "Environmental audits give management an independent check on whether environmental requirements are actually being met, rather than assumed to be. In Saudi Arabia, the criteria typically include the conditions of environmental permits, the Environmental Law and its Implementing Regulations, waste management requirements, industrial-city rules where relevant, and internal policies or an ISO 14001 environmental management system. Audits are also used before an expected regulatory inspection, after an incident, or as part of a group-wide governance programme.",
+      "We agree the audit type, scope and criteria at the outset: a regulatory compliance audit, a gap assessment against a new requirement or standard, or an internal audit of an environmental management system. We then review documents, inspect operational areas, waste and chemical storage, emission and discharge points, and interview responsible staff. Each finding is supported by objective evidence and classified by significance, so management can see clearly which issues carry regulatory or environmental risk and which are improvement opportunities.",
+      "For organisations with, or working towards, ISO 14001, we support internal audits that test whether the management system is implemented and effective. We are not a certification body, and our internal audit work does not lead to certification; it helps you prepare for and maintain it. Every audit ends with a clear report and a closing discussion, and we can verify corrective actions in a follow-up review."
+    ],
+    "whenYouNeed": [
+      "Management wants an independent check of environmental compliance across one or more sites.",
+      "A new regulation or standard applies and you need to know the gap.",
+      "Your ISO 14001 programme requires internal audits ahead of a certification or surveillance audit.",
+      "An incident, complaint or regulatory finding has raised questions about site controls.",
+      "A group or parent company requires periodic environmental audits of its facilities.",
+      "Corrective actions from a previous audit or inspection need independent verification."
+    ],
+    "deliver": [
+      { "title": "Environmental compliance audit", "description": "A structured audit against permit conditions and applicable regulations, covering documents, site practice and records, with evidence-based findings for each requirement." },
+      { "title": "Gap assessment", "description": "A comparison of current practice with a new or revised requirement, standard or internal policy, showing what exists, what is missing and what must change." },
+      { "title": "ISO 14001 internal audit support", "description": "Planning and conducting internal audits of your environmental management system against ISO 14001 clauses, supporting your certification preparation and maintenance." },
+      { "title": "Multi-site audit programmes", "description": "A consistent audit protocol and scoring approach applied across several facilities, so results can be compared and group-level priorities identified." },
+      { "title": "Prioritised findings and recommendations", "description": "Findings classified by significance, each with evidence, the requirement concerned and a practical recommendation, so effort goes where risk is highest." },
+      { "title": "Corrective action verification", "description": "A follow-up review that checks whether agreed corrective actions have been implemented and are effective, with evidence recorded for each closed item." }
+    ],
+    "approach": [
+      { "title": "Scope and criteria", "description": "We agree audit type, sites, boundaries and the criteria to audit against, and issue an audit plan and document request." },
+      { "title": "Document review", "description": "We review permits, procedures, monitoring data, waste records and previous findings before the site visit." },
+      { "title": "Site audit", "description": "We inspect operations and storage areas, observe practice and interview responsible staff to gather objective evidence." },
+      { "title": "Findings analysis", "description": "We evaluate evidence against each criterion and classify findings by regulatory and environmental significance." },
+      { "title": "Reporting", "description": "We present preliminary findings at a closing meeting, then issue a final report with prioritised recommendations." },
+      { "title": "Follow-up", "description": "On request, we verify implementation and effectiveness of corrective actions in a follow-up review." }
+    ],
+    "deliverables": [
+      { "item": "Audit plan and protocol", "format": "Plan with scope, criteria and schedule (PDF)", "timing": "Before fieldwork" },
+      { "item": "Document request list", "format": "Checklist of records to provide (Excel)", "timing": "Before fieldwork" },
+      { "item": "Closing meeting summary", "format": "Presentation of preliminary findings (PDF)", "timing": "End of site audit" },
+      { "item": "Environmental audit report", "format": "Report with findings, evidence and photographs (PDF)", "timing": "After fieldwork" },
+      { "item": "Findings and action register", "format": "Prioritised register with recommendations (Excel)", "timing": "With final report" },
+      { "item": "Corrective action verification note", "format": "Short verification report (PDF)", "timing": "Follow-up review" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which, together with permit conditions, form the main criteria for a compliance audit.",
+      "National Center for Environmental Compliance (NCEC), whose permits and inspection focus inform what a compliance audit should test.",
+      "ISO 14001, the international standard for environmental management systems, including its requirements for internal audit.",
+      "National Center for Waste Management (MWAN) requirements under the Waste Management Law, commonly included in audit scope for waste generators and handlers."
+    ],
+    "faqs": [
+      { "q": "What is the difference between a compliance audit and a gap assessment?", "a": "A compliance audit tests whether you currently meet a defined set of requirements, such as permit conditions and regulations, and reports findings against each. A gap assessment compares current practice with a requirement you are preparing to meet, such as a new regulation, a revised permit or a standard you plan to adopt, and shows what must change. Both use evidence, but their purpose and timing differ." },
+      { "q": "Can Selorin certify us to ISO 14001?", "a": "No. Certification is granted by certification bodies, and we do not act as one. We support your internal audit programme, which ISO 14001 requires, by planning and conducting internal audits against the standard and reporting findings. This helps you prepare for certification or surveillance audits, but it does not replace them." },
+      { "q": "How are audit findings prioritised?", "a": "Each finding is classified by significance, typically considering whether it represents a regulatory non-compliance, the potential environmental impact, and how widespread or repeated the issue is. Findings that carry clear regulatory or environmental risk are ranked first, followed by system weaknesses and improvement opportunities. We agree the classification scheme with you before the audit so results are consistent and easy to act on." },
+      { "q": "How is an environmental audit different from environmental due diligence?", "a": "An audit is commissioned by the operator to test and improve its own performance against defined criteria. Due diligence is carried out for a transaction, such as an acquisition, investment or lease, to identify environmental risks and liabilities that may affect value or deal terms. The fieldwork can look similar, but the questions, audience and reporting are different." },
+      { "q": "What do you need from us to start an audit?", "a": "We need agreement on scope and criteria, access to the site and to the people responsible for environmental matters, and copies of relevant documents, such as permits, procedures, monitoring results, waste records and previous audit or inspection findings. We send a document request list in advance so the site visit focuses on verification rather than collecting paperwork." }
+    ]
+  },
+  "ar": {
+    "name": "التدقيق البيئي",
+    "seoTitle": "التدقيق البيئي في السعودية | سيلورين",
+    "metaDescription": "تدقيق الامتثال البيئي وتقييم الفجوات ومساندة التدقيق الداخلي وفق ISO 14001 في المملكة، مع تقارير واضحة وملاحظات مرتبة حسب الأولوية ومدعومة بالأدلة.",
+    "valueProp": "نختبر أداءكم البيئي مقابل معايير محددة، ونقدّم لكم ملاحظات مدعومة بالأدلة ومرتبة حسب الأولوية يمكنكم البناء عليها.",
+    "cardDescription": "تدقيق الامتثال وتقييم الفجوات ومساندة التدقيق الداخلي وفق ISO 14001، بتقارير منظمة ترتّب الملاحظات حسب أهميتها وتوصي بإجراءات عملية.",
+    "keyBenefit": "رؤية موضوعية لموقفكم ولما يجب معالجته أولًا",
+    "definition": "التدقيق البيئي تقييم منهجي موثق وموضوعي لأداء المنشأة أو الجهة مقابل معايير بيئية محددة، مثل اشتراطات التصاريح أو المتطلبات النظامية أو نظام الإدارة البيئية وفق ISO 14001. ويجمع الأدلة عبر مراجعة المستندات والتفتيش الميداني والمقابلات، ثم يعرض الملاحظات مرتبة حسب أهميتها مع توصيات بالإجراءات التصحيحية.",
+    "overview": [
+      "يمنح التدقيق البيئي الإدارة فحصًا مستقلًا يبيّن ما إذا كانت المتطلبات البيئية مستوفاة فعلًا لا افتراضًا. وفي المملكة تشمل معايير التدقيق عادةً اشتراطات التصاريح البيئية، ونظام البيئة ولوائحه التنفيذية، ومتطلبات إدارة النفايات، وأنظمة المدن الصناعية عند انطباقها، إضافة إلى السياسات الداخلية أو نظام الإدارة البيئية وفق ISO 14001. ويُلجأ إلى التدقيق أيضًا قبل تفتيش رقابي متوقع، أو بعد وقوع حادث، أو ضمن برنامج حوكمة على مستوى المجموعة.",
+      "نتفق في البداية على نوع التدقيق ونطاقه ومعاييره: تدقيق امتثال نظامي، أو تقييم فجوات مقابل متطلب أو معيار جديد، أو تدقيق داخلي لنظام الإدارة البيئية. ثم نراجع المستندات، ونتفقد مناطق التشغيل ومواقع تخزين النفايات والمواد الكيميائية ونقاط الانبعاث والتصريف، ونقابل المسؤولين. وتستند كل ملاحظة إلى دليل موضوعي وتُصنّف حسب أهميتها، فتتضح للإدارة القضايا التي تحمل مخاطر نظامية أو بيئية وتلك التي تمثل فرصًا للتحسين.",
+      "وللجهات التي تطبّق ISO 14001 أو تعمل على تطبيقه، نساند في التدقيق الداخلي الذي يختبر تطبيق نظام الإدارة وفاعليته. ولسنا جهة منح شهادات، ولا يترتب على عملنا في التدقيق الداخلي منح الشهادة، بل يساعدكم على الاستعداد لها والمحافظة عليها. وينتهي كل تدقيق بتقرير واضح واجتماع ختامي، ويمكننا التحقق من تنفيذ الإجراءات التصحيحية في مراجعة لاحقة، بحيث تُغلق الملاحظات بأدلة موثقة لا بمجرد الإفادة بإنجازها."
+    ],
+    "whenYouNeed": [
+      "تريد الإدارة فحصًا مستقلًا للامتثال البيئي في موقع واحد أو أكثر.",
+      "صدر نظام أو معيار جديد وتحتاجون إلى معرفة الفجوة بين وضعكم ومتطلباته.",
+      "يتطلب برنامجكم وفق ISO 14001 تدقيقًا داخليًا قبل تدقيق الشهادة أو المتابعة.",
+      "أثار حادث أو شكوى أو ملاحظة رقابية تساؤلات حول ضوابط الموقع.",
+      "تشترط الشركة الأم أو المجموعة تدقيقًا بيئيًا دوريًا لمنشآتها.",
+      "تحتاج الإجراءات التصحيحية من تدقيق أو تفتيش سابق إلى تحقق مستقل."
+    ],
+    "deliver": [
+      { "title": "تدقيق الامتثال البيئي", "description": "تدقيق منظم مقابل اشتراطات التصاريح والأنظمة المنطبقة، يشمل المستندات والممارسات الميدانية والسجلات، مع ملاحظات مدعومة بالأدلة لكل متطلب." },
+      { "title": "تقييم الفجوات", "description": "مقارنة الممارسات الحالية بمتطلب أو معيار أو سياسة داخلية جديدة أو معدّلة، توضح ما هو قائم وما ينقص وما يجب تغييره." },
+      { "title": "مساندة التدقيق الداخلي وفق ISO 14001", "description": "تخطيط عمليات التدقيق الداخلي لنظام الإدارة البيئية وتنفيذها مقابل بنود ISO 14001، دعمًا لاستعدادكم للشهادة والمحافظة عليها." },
+      { "title": "برامج التدقيق متعددة المواقع", "description": "بروتوكول تدقيق ومنهجية تقييم موحدان يُطبّقان على عدة منشآت، لتسهل مقارنة النتائج وتحديد الأولويات على مستوى المجموعة." },
+      { "title": "ملاحظات وتوصيات مرتبة حسب الأولوية", "description": "ملاحظات مصنفة حسب أهميتها، لكل منها الدليل والمتطلب المعني وتوصية عملية، ليتجه الجهد أولًا إلى مواطن المخاطر الأعلى." },
+      { "title": "التحقق من الإجراءات التصحيحية", "description": "مراجعة لاحقة تتحقق من تنفيذ الإجراءات التصحيحية المتفق عليها وفاعليتها، مع توثيق الدليل لكل بند مغلق." }
+    ],
+    "approach": [
+      { "title": "النطاق والمعايير", "description": "نتفق على نوع التدقيق والمواقع والحدود والمعايير، ونصدر خطة التدقيق وقائمة المستندات المطلوبة." },
+      { "title": "مراجعة المستندات", "description": "نراجع التصاريح والإجراءات وبيانات الرصد وسجلات النفايات والملاحظات السابقة قبل الزيارة الميدانية." },
+      { "title": "التدقيق الميداني", "description": "نتفقد مناطق التشغيل والتخزين، ونلاحظ الممارسات، ونقابل المسؤولين لجمع أدلة موضوعية." },
+      { "title": "تحليل الملاحظات", "description": "نقيّم الأدلة مقابل كل معيار، ونصنف الملاحظات حسب أهميتها النظامية والبيئية." },
+      { "title": "إعداد التقرير", "description": "نعرض الملاحظات الأولية في اجتماع ختامي، ثم نصدر التقرير النهائي بتوصيات مرتبة حسب الأولوية." },
+      { "title": "المتابعة", "description": "نتحقق عند الطلب من تنفيذ الإجراءات التصحيحية وفاعليتها في مراجعة لاحقة." }
+    ],
+    "deliverables": [
+      { "item": "خطة التدقيق وبروتوكوله", "format": "خطة بالنطاق والمعايير والجدول الزمني (PDF)", "timing": "قبل العمل الميداني" },
+      { "item": "قائمة المستندات المطلوبة", "format": "قائمة تحقق بالسجلات المطلوب توفيرها (Excel)", "timing": "قبل العمل الميداني" },
+      { "item": "ملخص الاجتماع الختامي", "format": "عرض للملاحظات الأولية (PDF)", "timing": "نهاية التدقيق الميداني" },
+      { "item": "تقرير التدقيق البيئي", "format": "تقرير بالملاحظات والأدلة والصور (PDF)", "timing": "بعد العمل الميداني" },
+      { "item": "سجل الملاحظات والإجراءات", "format": "سجل مرتب حسب الأولوية مع التوصيات (Excel)", "timing": "مع التقرير النهائي" },
+      { "item": "مذكرة التحقق من الإجراءات التصحيحية", "format": "تقرير تحقق موجز (PDF)", "timing": "المراجعة اللاحقة" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، وتشكّل مع اشتراطات التصاريح المعايير الرئيسية لتدقيق الامتثال.",
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، إذ تسترشد تصاريحه وأولويات تفتيشه في تحديد ما يختبره تدقيق الامتثال.",
+      "المعيار الدولي ISO 14001 لأنظمة الإدارة البيئية، بما في ذلك متطلباته الخاصة بالتدقيق الداخلي.",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) وفق نظام إدارة النفايات، وتُدرج عادةً في نطاق التدقيق لمنتجي النفايات والجهات المتعاملة معها."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين تدقيق الامتثال وتقييم الفجوات؟", "a": "يختبر تدقيق الامتثال مدى استيفائكم الحالي لمجموعة محددة من المتطلبات، كاشتراطات التصاريح والأنظمة، ويعرض الملاحظات لكل متطلب. أما تقييم الفجوات فيقارن الممارسات الحالية بمتطلب تستعدون للوفاء به، كنظام جديد أو تصريح معدّل أو معيار تنوون تطبيقه، ويبيّن ما يجب تغييره. وكلاهما يعتمد على الأدلة، لكنهما يختلفان في الغرض والتوقيت." },
+      { "q": "هل يمكن لسيلورين منحنا شهادة ISO 14001؟", "a": "لا. فالشهادة تمنحها جهات منح الشهادات، ولسنا واحدة منها. ونساند برنامج التدقيق الداخلي الذي يشترطه ISO 14001 بتخطيط عمليات التدقيق الداخلي وتنفيذها مقابل المعيار وعرض الملاحظات. ويساعدكم ذلك على الاستعداد لتدقيق الشهادة أو تدقيق المتابعة، لكنه لا يغني عنهما، إذ يظل التدقيق الخارجي من اختصاص الجهة المانحة للشهادة." },
+      { "q": "كيف تُرتّب ملاحظات التدقيق حسب الأولوية؟", "a": "تُصنَّف كل ملاحظة حسب أهميتها، مع مراعاة ما إذا كانت تمثل عدم امتثال نظامي، وحجم الأثر البيئي المحتمل، ومدى انتشار المشكلة أو تكرارها. وتأتي أولًا الملاحظات ذات المخاطر النظامية أو البيئية الواضحة، ثم مواطن الضعف في الأنظمة، ثم فرص التحسين. ونتفق معكم على منهجية التصنيف قبل التدقيق لتكون النتائج متسقة وسهلة التنفيذ." },
+      { "q": "ما الفرق بين التدقيق البيئي والفحص البيئي النافي للجهالة؟", "a": "يُكلَّف التدقيق من المشغّل نفسه لاختبار أدائه وتحسينه مقابل معايير محددة. أما الفحص البيئي النافي للجهالة فيُجرى لغرض صفقة، كالاستحواذ أو الاستثمار أو الاستئجار، لتحديد المخاطر والالتزامات البيئية التي قد تؤثر في القيمة أو شروط الصفقة. وقد يتشابه العمل الميداني، لكن الأسئلة والجمهور المستهدف وطريقة التقرير تختلف." },
+      { "q": "ما الذي تحتاجونه منا لبدء التدقيق؟", "a": "نحتاج إلى الاتفاق على النطاق والمعايير، وإتاحة الوصول إلى الموقع وإلى المسؤولين عن الشؤون البيئية، ونسخ من المستندات ذات الصلة كالتصاريح والإجراءات ونتائج الرصد وسجلات النفايات وملاحظات التدقيق أو التفتيش السابقة. ونرسل قائمة المستندات مسبقًا لتتركز الزيارة الميدانية على التحقق لا على جمع الأوراق." }
+    ]
+  }
+}

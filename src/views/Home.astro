@@ -1,0 +1,241 @@
+---
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import Contours from "@/components/Contours.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import InsightCard from "@/components/InsightCard.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { categories, lifecycle, regulators } from "@/data/taxonomy";
+import { getServices, getIndustries, getInsights } from "@/lib/content";
+import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
+import { collectionSchema } from "@/lib/schema";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const services = await getServices();
+const byId = Object.fromEntries(services.map((s) => [s.id, s]));
+const industries = await getIndustries();
+const insights = (await getInsights(lang)).slice(0, 3);
+const monitoring = ["dust-monitoring", "fuel-station-voc-monitoring", "air-quality-monitoring", "noise-monitoring"].map((id) => byId[id]).filter(Boolean);
+
+const copy = ar
+  ? {
+      title: "سيلورين | استشارات وخدمات بيئية في المملكة العربية السعودية",
+      description: "تساعد سيلورين المنشآت في المملكة على استخراج التصاريح البيئية، والامتثال، وتقييم الأثر البيئي، والرصد البيئي، والاستدامة — بدقة فنية في كل مرحلة.",
+      eyebrow: "استشارات وخدمات بيئية · المملكة العربية السعودية",
+      h1: "وضوح بيئي للمشاريع المعقّدة.",
+      lead: "تساعد سيلورين المنشآت في المملكة على استخراج التصاريح البيئية، والوفاء بالمتطلبات التنظيمية، وقياس الأداء البيئي، وبناء برامج استدامة موثوقة — بدقة فنية في كل مرحلة.",
+      example: "مثال توضيحي لبيانات الرصد",
+    }
+  : {
+      title: "Selorin | Environmental Advisory & Services in Saudi Arabia",
+      description: "Selorin helps organizations in Saudi Arabia secure environmental permits, stay compliant, complete EIAs, monitor air, dust, noise and water, and build credible ESG programmes.",
+      eyebrow: "Environmental advisory & services · Saudi Arabia",
+      h1: "Environmental clarity for complex projects.",
+      lead: "Selorin helps organizations across Saudi Arabia secure permits, meet regulatory requirements, measure environmental performance and build credible sustainability programmes — with technical accuracy at every stage.",
+      example: "Illustrative monitoring data",
+    };
+
+const pillars = ar
+  ? [
+      ["ما نقدّمه", "التصاريح والامتثال، والدراسات البيئية، والرصد الميداني، وإدارة النفايات، واستشارات الاستدامة — ضمن فريق واحد مسؤول عن النتيجة."],
+      ["من نخدم", "المنشآت الصناعية، والمقاولون، والمطوّرون العقاريون، ومشاريع البنية التحتية والطاقة، والجهات الحكومية، والمنشآت التجارية."],
+      ["أين نعمل", "في مختلف مناطق المملكة العربية السعودية، وفق المتطلبات التنظيمية الوطنية واشتراطات المدن الصناعية والهيئات المختصة."],
+      ["لماذا يختارنا العملاء", "فهم دقيق للمتطلبات المحلية، ومخرجات واضحة يمكن الدفاع عنها، وربط مباشر بين البيانات الميدانية والقرار."],
+    ]
+  : [
+      ["What we do", "Permitting and compliance, environmental studies, field monitoring, waste management and sustainability advisory — delivered by one accountable team."],
+      ["Who we serve", "Industrial facilities, contractors, real estate developers, infrastructure and energy projects, government entities and commercial operators."],
+      ["Where we operate", "Across Saudi Arabia, working to national environmental requirements and the conditions of industrial cities and competent authorities."],
+      ["Why clients choose us", "Precise understanding of local requirements, clear and defensible deliverables, and a direct line from field data to decisions."],
+    ];
+
+const how = ar
+  ? [["نفهم", "نراجع أنشطتك واشتراطات تصريحك والمخاطر الفعلية في موقعك."], ["نقيّم", "نحدد المتطلبات المنطبقة والفجوات والبيانات اللازمة."], ["ننفّذ", "نُعدّ الدراسات والخطط ونجري القياسات الميدانية."], ["نقدّم", "نجهّز المستندات ونتابع ملاحظات الجهات المختصة."], ["ندعم", "نتابع الامتثال والرصد والتقارير طوال عمر المشروع."]]
+  : [["Understand", "We review your activities, permit conditions and the real risks on site."], ["Assess", "We identify applicable requirements, gaps and the data needed."], ["Deliver", "We prepare studies and plans and carry out field measurements."], ["Submit", "We prepare documentation and follow up on authority comments."], ["Support", "We sustain compliance, monitoring and reporting over the project life."]];
+---
+<Base lang={lang} path="/" title={copy.title} description={copy.description} image="/images/og-default.jpg"
+  schema={[collectionSchema(lang, "/services/", ar ? "خدمات سيلورين" : "Selorin services", services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
+  analytics={{ page_type: "home" }}>
+
+  <section class="hero on-dark">
+    <div class="hero-media"><img src="/images/fields.jpg" alt="" width="1600" height="900" fetchpriority="high" decoding="async" style="opacity:.42" /></div>
+    <Contours />
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">{copy.eyebrow}</p>
+        <h1 class="display">{copy.h1}</h1>
+        <p class="lead">{copy.lead}</p>
+        <div class="actions">
+          <a class="btn btn--light" href={href(lang, "/request/")} data-cta="hero_consultation">{t(lang, "cta.consultation")} <Icon name="arrow" class="arrow" /></a>
+          <a class="btn btn--ghost" href={href(lang, "/services/")} data-cta="hero_services">{t(lang, "cta.explore")}</a>
+        </div>
+      </div>
+      <div class="readings" role="img" aria-label={copy.example}>
+        <div class="reading"><small>PM10 · {ar ? "حدود الموقع" : "Site boundary"}</small><b>42 µg/m³</b><span class="state">{ar ? "ضمن الحد" : "Within limit"}</span>
+          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 20 C20 18 30 9 50 12 S80 22 100 16 S140 6 160 12 S190 18 200 14" /></svg></div>
+        <div class="reading"><small>VOC · {ar ? "جزيرة المضخات" : "Dispenser island"}</small><b>3.1 ppm</b><span class="state">{ar ? "طبيعي" : "Normal"}</span>
+          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 18 C25 17 35 15 55 18 S85 10 105 13 S145 20 165 15 S190 11 200 13" /></svg></div>
+        <div class="reading"><small>{ar ? "الضوضاء · الحد الخارجي" : "Noise · Boundary"}</small><b>58 dB(A)</b><span class="state">{ar ? "ضمن الحد" : "Within limit"}</span>
+          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 14 C20 10 40 20 60 15 S90 8 110 12 S150 19 170 14 S195 12 200 15" /></svg></div>
+        <small style="color:#8f9893;font-size:11px">{copy.example}</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-white">
+    <div class="container">
+      <div class="pillars">
+        {pillars.map(([h, p]) => <div class="pillar reveal"><h2 class="h3-like" style="font-size:var(--fs-14);text-transform:uppercase;letter-spacing:.1em;color:var(--c-forest-2);margin-bottom:12px">{h}</h2><p>{p}</p></div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{t(lang, "nav.services")}</p>
+          <h2>{ar ? "ستة مجالات تغطي دورة الالتزام البيئي كاملة" : "Six practice areas covering the full environmental lifecycle"}</h2>
+        </div>
+        <p class="lead">{ar ? "من أول تقييم للموقع إلى الامتثال المستمر — اختر المجال الأقرب لاحتياجك." : "From the first site assessment to ongoing compliance — start with the area closest to your need."}</p>
+      </div>
+      <div class="grid grid-3">
+        {categories.map((c) => {
+          const items = services.filter((s) => s.data.category === c.id);
+          return (
+            <article class="card reveal">
+              <span class="icon"><Icon name={c.icon} /></span>
+              <h3><a class="card-link" href={href(lang, `/services/${c.id}/`)} style="text-decoration:none" data-cta="home_practice_area">{c.name[lang]}</a></h3>
+              <p>{c.summary[lang]}</p>
+              <ul class="card-list">{items.slice(0, 4).map((s) => <li><a href={href(lang, `/services/${s.id}/`)} data-cta="home_service_link" data-service={s.id}>{s.data[lang].name}</a></li>)}</ul>
+              <p class="benefit"><Icon name="check" /><span>{c.benefit[lang]}</span></p>
+              <span class="link" aria-hidden="true">{t(lang, "cta.exploreService")} <Icon name="arrow" /></span>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-ink on-dark" id="lifecycle">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{ar ? "دليل دورة المشروع" : "Project lifecycle navigator"}</p>
+          <h2 style="color:#fff">{ar ? "أين يقف مشروعك اليوم؟" : "Where is your project today?"}</h2>
+        </div>
+        <p class="lead">{ar ? "اختر المرحلة لترى الخدمات التي تحتاجها المشاريع عادةً في هذه المرحلة." : "Choose a stage to see the support projects typically need at that point."}</p>
+      </div>
+      <div class="navigator" data-tabs>
+        <div role="tablist" aria-label={ar ? "مراحل المشروع" : "Project stages"} aria-orientation="vertical">
+          {lifecycle.map((st, i) => (
+            <button role="tab" type="button" id={`tab-${st.id}`} aria-controls={`panel-${st.id}`} aria-selected={i === 0 ? "true" : "false"} tabindex={i === 0 ? 0 : -1} data-stage={st.id}>
+              <span class="n">0{i + 1}</span><b>{st.name[lang]}</b><small>{st.question[lang]}</small>
+            </button>
+          ))}
+        </div>
+        {lifecycle.map((st, i) => (
+          <div role="tabpanel" id={`panel-${st.id}`} aria-labelledby={`tab-${st.id}`} hidden={i !== 0} tabindex="0">
+            <p class="eyebrow">{st.name[lang]}</p>
+            <h3 style="color:#fff">{st.question[lang]}</h3>
+            <div class="rec">
+              {st.services.map((id) => byId[id] && (
+                <a href={href(lang, `/services/${id}/`)} data-cta="lifecycle_service" data-service={id}><Icon name={SERVICE_ICON[id]} />{byId[id].data[lang].name}</a>
+              ))}
+            </div>
+            <a class="btn btn--light" href={href(lang, "/request/")} data-cta={`lifecycle_request_${st.id}`}>{t(lang, "cta.discuss")} <Icon name="arrow" class="arrow" /></a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split split--even">
+      <div class="reveal">
+        <p class="eyebrow">{ar ? "الرصد والقياس" : "Monitoring & measurement"}</p>
+        <h2>{ar ? "أدلة مقاسة لما تشدّد عليه الجهات الرقابية" : "Measured evidence for what regulators focus on"}</h2>
+        <p class="lead">{ar ? "نصمم برامج رصد للغبار والمركبات العضوية المتطايرة وجودة الهواء والضوضاء، وننفذها ميدانياً، ونقدّم بيانات جاهزة للتقارير التنظيمية." : "We design and run monitoring for dust, VOCs, air quality and noise — and deliver data that is ready for regulatory reporting."}</p>
+        <a class="link" href={href(lang, "/services/monitoring-measurement/")} data-cta="home_monitoring">{ar ? "خدمات الرصد والقياس" : "Monitoring services"} <Icon name="arrow" /></a>
+      </div>
+      <div class="grid grid-2">
+        {monitoring.map((s) => (
+          <article class="card reveal">
+            <span class="icon"><Icon name={SERVICE_ICON[s.id]} /></span>
+            <h3><a class="card-link" href={href(lang, `/services/${s.id}/`)} style="text-decoration:none" data-cta="home_monitoring_card" data-service={s.id}>{s.data[lang].name}</a></h3>
+            <p>{s.data[lang].keyBenefit}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-white border-top" id="industries">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{t(lang, "nav.industries")}</p>
+          <h2>{ar ? "متطلبات مختلفة لكل قطاع" : "Different requirements for every sector"}</h2>
+        </div>
+        <a class="link" href={href(lang, "/industries/")}>{t(lang, "nav.allIndustries")} <Icon name="arrow" /></a>
+      </div>
+      <div class="grid grid-4" style="gap:12px">
+        {industries.map((ind) => (
+          <a class="tile" href={href(lang, `/industries/${ind.id}/`)} data-cta="home_industry_tile"><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} />{ind.data[lang].name}<Icon name="arrow" class="arrow" /></a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{ar ? "كيف نعمل" : "How we work"}</p>
+          <h2>{ar ? "منهجية واضحة من أول اجتماع إلى آخر تقرير" : "A clear method from first meeting to final report"}</h2>
+        </div>
+        <a class="link" href={href(lang, "/about/#approach")}>{ar ? "منهجيتنا" : "Our approach"} <Icon name="arrow" /></a>
+      </div>
+      <ol class="steps" style="list-style:none;padding:0">
+        {how.map(([h, p]) => <li class="step reveal"><h3>{h}</h3><p>{p}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section bg-paper-2">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{ar ? "المشهد التنظيمي في المملكة" : "Saudi regulatory landscape"}</p>
+          <h2>{ar ? "نعمل وفق المتطلبات الوطنية والجهات المختصة" : "Working to national requirements and competent authorities"}</h2>
+        </div>
+        <p class="lead">{ar ? "قائمة تعريفية بالجهات والأطر التي تحكم العمل البيئي عادةً، ولا تمثل شراكة أو اعتماداً." : "An informational overview of bodies and frameworks that typically govern environmental work — not a statement of partnership or accreditation."}</p>
+      </div>
+      <ul class="reg-list" style="padding:0">
+        {regulators.map((r) => <li><b>{r.name[lang]}</b><span>{r.role[lang]}</span></li>)}
+      </ul>
+    </div>
+  </section>
+
+  {insights.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{t(lang, "nav.insights")}</p>
+            <h2>{ar ? "إرشادات عملية للمتطلبات البيئية" : "Practical guidance on environmental requirements"}</h2>
+          </div>
+          <a class="link" href={href(lang, "/insights/")}>{ar ? "جميع المقالات" : "All insights"} <Icon name="arrow" /></a>
+        </div>
+        <div class="grid grid-3">{insights.map((p) => <InsightCard lang={lang} post={p} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <CtaBand title={ar ? "ناقش متطلبات مشروعك مع مختص بيئي" : "Discuss your project with an environmental specialist"}
+    body={ar ? "أخبرنا عن موقعك وأنشطتك والمرحلة التي يمر بها مشروعك، وسنوضح لك المتطلبات المنطبقة والخطوات التالية." : "Tell us about your site, activities and project stage. We will clarify the applicable requirements and the next steps."}
+    label={t(lang, "cta.consultation")} to={href(lang, "/request/")} cta="home_final_cta"
+    secondary={{ label: ar ? "اتصل بنا" : "Call us", to: "tel:+966534302332" }} />
+</Base>

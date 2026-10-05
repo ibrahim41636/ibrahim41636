@@ -1,0 +1,88 @@
+{
+  "order": 11,
+  "services": [
+    "environmental-impact-assessment",
+    "environmental-permitting",
+    "environmental-management-plans",
+    "dust-monitoring",
+    "noise-monitoring",
+    "water-quality-monitoring",
+    "environmental-monitoring",
+    "waste-management",
+    "environmental-audits"
+  ],
+  "en": {
+    "name": "Mining & Quarrying",
+    "seoTitle": "Environmental Services for Mining & Quarrying | Selorin",
+    "metaDescription": "EIA, permits, dust, noise, vibration and water monitoring, waste and rehabilitation planning for mines, quarries and crushing plants in Saudi Arabia.",
+    "cardDescription": "Impact assessments, permits, dust, noise and water monitoring, and rehabilitation planning for mines, quarries, crushers and processing plants.",
+    "overview": [
+      "Mines, quarries, crushers and mineral processing plants change landscapes and generate some of the most visible environmental impacts: dust from blasting, crushing, screening, stockpiles and haul roads; noise and ground vibration from blasting and heavy equipment; large volumes of overburden, waste rock and tailings; and effects on groundwater, wadis, vegetation and wildlife. These operations need environmental approval under the Environmental Law and its Implementing Regulations alongside the conditions attached to their mining licences.",
+      "Quarries supplying aggregates and building materials are often close to growing cities and road corridors, which puts them under close attention for dust and noise. Larger mines and processing plants carry additional obligations for tailings management, water use, process chemicals and emissions, and may require coordination with the National Center for Vegetation Cover Development and Combating Desertification (NCVC) and the National Center for Wildlife (NCW).",
+      "Rehabilitation and closure are part of the licence from the start. Operators that plan progressive rehabilitation, keep monitoring data and maintain good records are better placed during inspections, licence renewals and community engagement, and face lower closure costs at the end of operations."
+    ],
+    "challenges": [
+      { "title": "Dust from multiple sources", "description": "Blasting, crushing, conveyors, stockpiles and haul roads release dust that must be controlled and monitored at site boundaries and nearby receptors." },
+      { "title": "Blasting noise and vibration", "description": "Blasts and heavy plant create noise and vibration that affect neighbours and structures, and need measurement and blast management practices." },
+      { "title": "Overburden, waste rock and tailings", "description": "Large mineral waste volumes need stable storage, drainage control and, for tailings, careful management of seepage and chemistry." },
+      { "title": "Water and wadis", "description": "Dewatering, process water and stormwater can affect groundwater and wadi systems and require monitoring and drainage controls." },
+      { "title": "Rehabilitation and closure", "description": "Disturbed land must be progressively rehabilitated and a credible closure plan maintained throughout the life of the operation." }
+    ],
+    "requirements": [
+      "Environmental impact assessment and environmental permit, aligned with mining licence conditions",
+      "Dust and ambient air monitoring around pits, crushers and stockpiles",
+      "Noise and blast vibration monitoring at sensitive receptors",
+      "Groundwater and surface water monitoring for dewatering, process water and runoff",
+      "Management of mineral wastes, tailings and hazardous wastes such as used oils under MWAN regulations",
+      "Progressive rehabilitation and closure planning"
+    ],
+    "support": [
+      { "title": "EIA and permits", "description": "We prepare impact assessments with baseline surveys of air, noise, water, ecology and land use, and permit packages for new and expanding sites." },
+      { "title": "Dust, noise and vibration monitoring", "description": "We design boundary and receptor monitoring networks, run measurement campaigns and report results with practical control measures." },
+      { "title": "Water and waste management", "description": "We monitor groundwater and runoff and help structure the management of waste rock, tailings and hazardous wastes." },
+      { "title": "Management and closure plans", "description": "We prepare environmental management plans and rehabilitation and closure plans that set out measures, responsibilities and monitoring." }
+    ],
+    "faqs": [
+      { "q": "Our quarry is receiving dust complaints. What should we do first?", "a": "Establish the facts with monitoring at the boundary and at the complainant's location, then identify the main sources. Haul roads, crushing and stockpiles are common contributors. We combine monitoring with a site review and recommend targeted controls." },
+      { "q": "Do we need to monitor blast vibration?", "a": "Where blasting takes place near homes, structures or infrastructure, vibration and air overpressure monitoring provides evidence that blasts are managed responsibly and helps resolve damage claims. We design monitoring around your blast programme and nearest receptors." },
+      { "q": "When should closure planning start?", "a": "At the start of operations. Planning early allows progressive rehabilitation of worked-out areas, which reduces the final closure burden and cost. We prepare closure plans that are updated as the operation develops." }
+    ]
+  },
+  "ar": {
+    "name": "التعدين والمحاجر",
+    "seoTitle": "الخدمات البيئية للتعدين والمحاجر | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي والتصاريح ورصد الغبار والضوضاء والاهتزاز والمياه وتخطيط إدارة النفايات وإعادة التأهيل للمناجم والمحاجر وكسارات الحجر في المملكة.",
+    "cardDescription": "تقييم للأثر وتصاريح ورصد للغبار والضوضاء والمياه وتخطيط لإعادة التأهيل للمناجم والمحاجر والكسارات ومصانع المعالجة.",
+    "overview": [
+      "تغيّر المناجم والمحاجر والكسارات ومصانع معالجة المعادن ملامح الأرض، وتُحدث بعضًا من أوضح الآثار البيئية: الغبار الناتج عن التفجير والتكسير والغربلة والمخزونات والطرق الترابية، والضوضاء والاهتزاز الأرضي من التفجير والمعدات الثقيلة، والكميات الكبيرة من الغطاء الصخري والصخور المهملة ومخلفات المعالجة، والآثار على المياه الجوفية والأودية والغطاء النباتي والحياة الفطرية. وتحتاج هذه العمليات إلى موافقة بيئية وفق نظام البيئة ولوائحه التنفيذية إلى جانب الاشتراطات المرتبطة برخصها التعدينية.",
+      "وكثيرًا ما تقع محاجر الركام ومواد البناء قرب المدن المتنامية وممرات الطرق، فتخضع لمتابعة دقيقة للغبار والضوضاء. أما المناجم الكبيرة ومصانع المعالجة فتتحمل التزامات إضافية تتعلق بإدارة مخلفات المعالجة واستخدام المياه والمواد الكيميائية والانبعاثات، وقد تستلزم التنسيق مع المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر (NCVC) والمركز الوطني لتنمية الحياة الفطرية (NCW).",
+      "وتعدّ إعادة التأهيل والإغلاق جزءًا من الرخصة منذ البداية؛ فالمشغل الذي يخطط لإعادة تأهيل تدريجية ويحتفظ ببيانات الرصد وسجلات منظمة يكون في وضع أفضل خلال التفتيش وتجديد الرخص والتواصل مع المجتمع المحلي، ويواجه تكاليف إغلاق أقل عند انتهاء العمليات."
+    ],
+    "challenges": [
+      { "title": "غبار من مصادر متعددة", "description": "يطلق التفجير والتكسير والسيور الناقلة والمخزونات والطرق الترابية غبارًا يلزم ضبطه ورصده عند حدود الموقع والمستقبِلات القريبة." },
+      { "title": "ضوضاء التفجير واهتزازه", "description": "تُحدث التفجيرات والمعدات الثقيلة ضوضاء واهتزازًا يؤثران في المجاورين والمنشآت، ويتطلبان قياسًا وممارسات لإدارة التفجير." },
+      { "title": "الغطاء الصخري والمخلفات", "description": "تحتاج الكميات الكبيرة من النفايات المعدنية إلى تخزين مستقر وضبط للتصريف، وتتطلب مخلفات المعالجة إدارة دقيقة للتسرب والتركيب الكيميائي." },
+      { "title": "المياه والأودية", "description": "قد يؤثر نزح المياه ومياه المعالجة ومياه الأمطار في المياه الجوفية ومنظومات الأودية، فتحتاج إلى رصد وضوابط للتصريف." },
+      { "title": "إعادة التأهيل والإغلاق", "description": "يجب إعادة تأهيل الأراضي المتأثرة تدريجيًا والاحتفاظ بخطة إغلاق موثوقة طوال عمر العمليات." }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي والتصريح البيئي متوائمين مع اشتراطات الرخصة التعدينية",
+      "رصد الغبار وجودة الهواء المحيط حول الحفر والكسارات والمخزونات",
+      "رصد الضوضاء واهتزاز التفجير عند المستقبِلات الحساسة",
+      "رصد المياه الجوفية والسطحية المرتبطة بالنزح ومياه المعالجة والجريان السطحي",
+      "إدارة النفايات المعدنية ومخلفات المعالجة والنفايات الخطرة كالزيوت المستعملة وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "تخطيط إعادة التأهيل التدريجي والإغلاق"
+    ],
+    "support": [
+      { "title": "تقييم الأثر والتصاريح", "description": "نعدّ دراسات تقييم الأثر البيئي بمسوحات خط أساس للهواء والضوضاء والمياه والبيئة الحيوية واستخدامات الأراضي، وحزم التصاريح للمواقع الجديدة والتوسعات." },
+      { "title": "رصد الغبار والضوضاء والاهتزاز", "description": "نصمم شبكات رصد عند الحدود والمستقبِلات، وننفذ حملات القياس، ونرفع النتائج مع تدابير ضبط عملية." },
+      { "title": "إدارة المياه والنفايات", "description": "نرصد المياه الجوفية والجريان السطحي، ونساعد على تنظيم إدارة الصخور المهملة ومخلفات المعالجة والنفايات الخطرة." },
+      { "title": "خطط الإدارة والإغلاق", "description": "نعدّ خطط الإدارة البيئية وخطط إعادة التأهيل والإغلاق التي تحدد التدابير والمسؤوليات والرصد." }
+    ],
+    "faqs": [
+      { "q": "تصلنا شكاوى من الغبار حول المحجر، فبماذا نبدأ؟", "a": "ابدأوا بإثبات الوقائع عبر الرصد عند حدود الموقع وعند موقع المشتكي، ثم حددوا المصادر الرئيسة؛ فالطرق الترابية والتكسير والمخزونات من أكثر المصادر شيوعًا. نجمع بين الرصد ومراجعة الموقع ونوصي بضوابط موجهة." },
+      { "q": "هل نحتاج إلى رصد اهتزاز التفجير؟", "a": "حيثما يجري التفجير قرب المساكن أو المنشآت أو البنية التحتية، يوفر رصد الاهتزاز وضغط الهواء الزائد دليلًا على إدارة التفجيرات بمسؤولية ويساعد في حسم مطالبات الأضرار. نصمم الرصد وفق برنامج التفجير وأقرب المستقبِلات." },
+      { "q": "متى يبدأ التخطيط للإغلاق؟", "a": "مع بداية العمليات؛ فالتخطيط المبكر يتيح إعادة التأهيل التدريجي للمناطق المستنفدة، مما يقلل عبء الإغلاق النهائي وتكلفته. ونعدّ خطط الإغلاق بحيث تُحدَّث مع تطور العمليات." }
+    ]
+  }
+}

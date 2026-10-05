@@ -1,0 +1,22 @@
+---
+import Contours from "./Contours.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import type { Crumb } from "@/lib/schema";
+interface Props { lang: Lang; eyebrow?: string; title: string; titleHtml?: string; lead?: string; leadHtml?: string; crumbs: Crumb[]; image?: string; light?: boolean }
+const { lang, eyebrow, title, titleHtml, lead, leadHtml, crumbs, image, light = false } = Astro.props;
+---
+<section class:list={["page-hero", { "page-hero--light": light, "on-dark": !light }]}>
+  {image && <div class="page-hero-media"><img src={image} alt="" width="1600" height="900" fetchpriority="high" decoding="async" /></div>}
+  {!light && <Contours />}
+  <div class="container">
+    <nav class="breadcrumbs" aria-label={t(lang, "breadcrumb")}>
+      <ol>
+        {crumbs.map((c, i) => i < crumbs.length - 1 ? <li><a href={href(lang, c.path)}>{c.name}</a></li> : <li aria-current="page">{c.name}</li>)}
+      </ol>
+    </nav>
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    {titleHtml ? <h1 set:html={titleHtml} /> : <h1>{title}</h1>}
+    {leadHtml ? <p class="lead" set:html={leadHtml} /> : lead && <p class="lead">{lead}</p>}
+    <slot />
+  </div>
+</section>

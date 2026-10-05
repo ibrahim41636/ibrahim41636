@@ -1,0 +1,162 @@
+{
+  "order": 6,
+  "services": [
+    "environmental-permitting",
+    "environmental-impact-assessment",
+    "environmental-audits",
+    "environmental-due-diligence",
+    "air-quality-monitoring",
+    "water-quality-monitoring",
+    "waste-management",
+    "ghg-carbon-accounting",
+    "esg-advisory"
+  ],
+  "en": {
+    "name": "Oil & Gas",
+    "seoTitle": "Environmental Services for Oil & Gas | Selorin",
+    "metaDescription": "EIA, permits, audits, air and water monitoring, hazardous waste management and GHG accounting for oil and gas operators and service contractors in KSA.",
+    "cardDescription": "Impact assessments, permits, audits, emissions and water monitoring, and hazardous waste control for operators, contractors and oilfield service companies.",
+    "overview": [
+      "Oil and gas operations carry complex environmental aspects across upstream, midstream and downstream activities: flaring and venting, fugitive hydrocarbon emissions, produced water, drilling muds and cuttings, oily sludges, tank bottoms, contaminated soil and the risk of spills from pipelines and storage. Operators and their contractors work under the Environmental Law and its Implementing Regulations and, in many cases, under detailed company environmental standards that contractors must meet.",
+      "For service companies, fabrication yards and contractors supporting the sector, environmental performance is often a prequalification and contract requirement. They need permits for their own facilities, structured waste and chemical management, monitoring data, and records that satisfy both national requirements and client audits. Facilities in Jubail, Ras Al-Khair and Yanbu also work within the Royal Commission for Jubail and Yanbu (RCJY) environmental framework.",
+      "Methane and flaring reduction, carbon capture and emissions transparency are now central to the sector's sustainability agenda. Reliable GHG data, including methane, and clear reporting aligned with recognised frameworks help companies respond to investors, customers and the national climate commitments."
+    ],
+    "challenges": [
+      {
+        "title": "Flaring and fugitive emissions",
+        "description": "Flares, vents, tanks and leaking components release hydrocarbons and methane that must be quantified, monitored and reduced."
+      },
+      {
+        "title": "Drilling and process wastes",
+        "description": "Muds, cuttings, oily sludges and tank bottoms are hazardous waste streams that need characterisation, approved treatment and full traceability."
+      },
+      {
+        "title": "Produced and oily water",
+        "description": "Produced water and oily wastewater must be treated and monitored before reinjection, reuse or discharge in line with approval conditions."
+      },
+      {
+        "title": "Legacy contamination",
+        "description": "Older sites, yards and pipeline corridors may carry hydrocarbon contamination that affects acquisitions, lease handbacks and remediation planning."
+      },
+      {
+        "title": "Client audits for contractors",
+        "description": "Contractors and service companies face frequent environmental audits from operators and must show permits, procedures and records on demand."
+      }
+    ],
+    "requirements": [
+      "Environmental impact assessment and permits for new facilities, expansions and drilling programmes",
+      "Emission inventories and monitoring for flares, stacks, tanks and fugitive sources",
+      "Produced water and wastewater monitoring for the approved disposal route",
+      "Hazardous waste characterisation, storage, transport and treatment through licensed contractors under MWAN regulations",
+      "Spill prevention, response planning and soil and groundwater assessment",
+      "Contractor compliance with operator environmental standards and audit requirements",
+      "GHG and methane reporting aligned with the GHG Protocol and ISO 14064-1"
+    ],
+    "support": [
+      {
+        "title": "Studies and permits",
+        "description": "We prepare EIAs and permit applications for facilities, yards and expansions, and support responses to authority and client review."
+      },
+      {
+        "title": "Audits and due diligence",
+        "description": "We audit facilities and contractors against regulatory and client requirements, and assess contamination risk for acquisitions and site handback."
+      },
+      {
+        "title": "Air, water and waste programmes",
+        "description": "We monitor emissions and water quality, map hazardous waste streams and set up tracking that supports inspection and client audits."
+      },
+      {
+        "title": "Methane, carbon and ESG",
+        "description": "We quantify GHG and methane emissions, identify reduction opportunities and structure ESG disclosures for investors and customers."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "We are an oilfield service contractor. What environmental documents will operators ask for?",
+        "a": "Typically your environmental permits, an environmental management system or plan, waste and chemical handling procedures, monitoring records and incident reports. We review your current documents against the client's requirements and close the gaps before prequalification or audit."
+      },
+      {
+        "q": "How do you assess hydrocarbon contamination at an old yard?",
+        "a": "We start with site history and a walkover to identify likely source areas, then design targeted soil and groundwater sampling. Results are compared against applicable criteria and used to recommend whether remediation or further investigation is needed."
+      },
+      {
+        "q": "Can you quantify methane emissions from our facilities?",
+        "a": "Yes. We build an emissions inventory covering flaring, venting and fugitive sources using recognised calculation methods, and identify where measurement would improve accuracy. The results support reduction planning and reporting."
+      }
+    ]
+  },
+  "ar": {
+    "name": "النفط والغاز",
+    "seoTitle": "الخدمات البيئية لقطاع النفط والغاز | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي والتصاريح والتدقيق ورصد الهواء والمياه وإدارة النفايات الخطرة وحصر الانبعاثات لمشغلي النفط والغاز ومقاوليهم وشركات الخدمات في المملكة.",
+    "cardDescription": "تقييم للأثر وتصاريح وتدقيق ورصد للانبعاثات والمياه وضبط للنفايات الخطرة للمشغلين والمقاولين وشركات خدمات حقول النفط.",
+    "overview": [
+      "تنطوي عمليات النفط والغاز على جوانب بيئية معقدة في مراحل الاستكشاف والإنتاج والنقل والتكرير: حرق الغاز والتنفيس، والانبعاثات الهيدروكربونية المتسربة، والمياه المصاحبة، وسوائل الحفر وفتاته، والحمأة الزيتية، ورواسب الخزانات، والتربة الملوثة، ومخاطر الانسكاب من خطوط الأنابيب والخزانات. ويعمل المشغلون ومقاولوهم وفق نظام البيئة ولوائحه التنفيذية، وفي حالات كثيرة وفق معايير بيئية تفصيلية للشركات المشغلة يتعين على المقاولين الوفاء بها.",
+      "أما شركات الخدمات وساحات التصنيع والمقاولون الداعمون للقطاع، فكثيرًا ما يكون الأداء البيئي شرطًا للتأهيل المسبق والتعاقد؛ إذ يحتاجون إلى تصاريح لمنشآتهم، وإدارة منظمة للنفايات والمواد الكيميائية، وبيانات رصد، وسجلات تفي بالمتطلبات الوطنية وبمتطلبات تدقيق العملاء. وتعمل المنشآت في الجبيل ورأس الخير وينبع كذلك ضمن الإطار البيئي للهيئة الملكية للجبيل وينبع (RCJY).",
+      "وأصبح خفض انبعاثات الميثان وحرق الغاز، واحتجاز الكربون، والشفافية في الإفصاح عن الانبعاثات، في صميم أجندة الاستدامة للقطاع. وتساعد البيانات الموثوقة عن غازات الاحتباس الحراري، بما فيها الميثان، والتقارير الواضحة المتوائمة مع الأطر المعتمدة، الشركات على الاستجابة للمستثمرين والعملاء والالتزامات المناخية الوطنية."
+    ],
+    "challenges": [
+      {
+        "title": "الحرق والانبعاثات المتسربة",
+        "description": "تطلق الشعلات وفتحات التنفيس والخزانات والمكونات المتسربة هيدروكربونات وميثانًا يلزم قياسها ورصدها وخفضها."
+      },
+      {
+        "title": "نفايات الحفر والعمليات",
+        "description": "تعدّ سوائل الحفر وفتاته والحمأة الزيتية ورواسب الخزانات نفايات خطرة تحتاج إلى توصيف ومعالجة معتمدة وتتبع كامل."
+      },
+      {
+        "title": "المياه المصاحبة والزيتية",
+        "description": "يجب معالجة المياه المصاحبة ومياه الصرف الزيتية ورصدها قبل إعادة الحقن أو إعادة الاستخدام أو التصريف وفق اشتراطات الموافقة."
+      },
+      {
+        "title": "التلوث الموروث",
+        "description": "قد تحمل المواقع والساحات القديمة وممرات الأنابيب تلوثًا هيدروكربونيًا يؤثر في صفقات الاستحواذ وإعادة المواقع المستأجرة وتخطيط المعالجة."
+      },
+      {
+        "title": "تدقيق العملاء على المقاولين",
+        "description": "يخضع المقاولون وشركات الخدمات لعمليات تدقيق بيئي متكررة من المشغلين، وعليهم تقديم التصاريح والإجراءات والسجلات عند الطلب."
+      }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي والتصاريح للمنشآت الجديدة والتوسعات وبرامج الحفر",
+      "قوائم جرد للانبعاثات ورصد للشعلات والمداخن والخزانات والمصادر المتسربة",
+      "رصد المياه المصاحبة ومياه الصرف وفق مسار التخلص المعتمد",
+      "توصيف النفايات الخطرة وتخزينها ونقلها ومعالجتها عبر مقاولين مرخصين وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "منع الانسكابات وتخطيط الاستجابة لها وتقييم التربة والمياه الجوفية",
+      "التزام المقاولين بالمعايير البيئية للمشغلين ومتطلبات التدقيق",
+      "الإفصاح عن غازات الاحتباس الحراري والميثان وفق بروتوكول GHG ومعيار ISO 14064-1"
+    ],
+    "support": [
+      {
+        "title": "الدراسات والتصاريح",
+        "description": "نعدّ دراسات تقييم الأثر البيئي وطلبات التصاريح للمنشآت والساحات والتوسعات، وندعم الرد على مراجعات الجهات المختصة والعملاء."
+      },
+      {
+        "title": "التدقيق والفحص النافي للجهالة",
+        "description": "ندقق المنشآت والمقاولين وفق المتطلبات التنظيمية ومتطلبات العملاء، ونقيّم مخاطر التلوث عند الاستحواذ وإعادة المواقع."
+      },
+      {
+        "title": "برامج الهواء والمياه والنفايات",
+        "description": "نرصد الانبعاثات وجودة المياه، ونحصر تيارات النفايات الخطرة، ونضع آليات تتبع تدعم التفتيش وتدقيق العملاء."
+      },
+      {
+        "title": "الميثان والكربون والحوكمة",
+        "description": "نحسب انبعاثات غازات الاحتباس الحراري والميثان، ونحدد فرص الخفض، وننظم إفصاحات الحوكمة البيئية والاجتماعية والمؤسسية للمستثمرين والعملاء."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "نحن مقاول خدمات نفطية، فما الوثائق البيئية التي سيطلبها المشغلون؟",
+        "a": "عادةً التصاريح البيئية، ونظام أو خطة للإدارة البيئية، وإجراءات مناولة النفايات والمواد الكيميائية، وسجلات الرصد، وتقارير الحوادث. نراجع وثائقكم الحالية مقابل متطلبات العميل ونسد الفجوات قبل التأهيل المسبق أو التدقيق."
+      },
+      {
+        "q": "كيف تقيّمون التلوث الهيدروكربوني في ساحة قديمة؟",
+        "a": "نبدأ بتاريخ الموقع وجولة ميدانية لتحديد مناطق المصادر المحتملة، ثم نصمم برنامج عينات موجهًا للتربة والمياه الجوفية، ونقارن النتائج بالمعايير المنطبقة لنوصي بالمعالجة أو بمزيد من الفحص."
+      },
+      {
+        "q": "هل يمكنكم حساب انبعاثات الميثان من منشآتنا؟",
+        "a": "نعم، نعدّ قائمة جرد للانبعاثات تشمل الحرق والتنفيس والمصادر المتسربة باستخدام أساليب حساب معتمدة، ونحدد المواضع التي يحسّن فيها القياس الدقة، وتدعم النتائج تخطيط الخفض وإعداد التقارير."
+      }
+    ]
+  }
+}

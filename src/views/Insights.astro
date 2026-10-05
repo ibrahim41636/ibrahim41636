@@ -1,0 +1,38 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import InsightCard from "@/components/InsightCard.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { insightCategories } from "@/data/taxonomy";
+import { getInsights, insightSlug } from "@/lib/content";
+import { collectionSchema } from "@/lib/schema";
+interface Props { lang: Lang; category?: string }
+const { lang, category } = Astro.props;
+const ar = lang === "ar";
+const all = await getInsights(lang);
+const posts = category ? all.filter((p) => p.data.category === category) : all;
+const path = category ? `/insights/category/${category}/` : "/insights/";
+const catName = category ? insightCategories[category][lang] : undefined;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.insights"), path: "/insights/" }, ...(category ? [{ name: catName!, path }] : [])];
+const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data.category === c));
+---
+<Base lang={lang} path={path} breadcrumbs={crumbs}
+  title={catName ? `${catName} | ${t(lang, "nav.insights")}` : (ar ? "المعرفة | إرشادات بيئية وتنظيمية — سيلورين" : "Insights | Environmental & Regulatory Guidance")}
+  description={ar ? "مقالات وأدلة عملية من سيلورين حول التصاريح البيئية والامتثال والرصد والحوكمة البيئية والاجتماعية والاستدامة في المملكة." : "Practical guides and technical articles from Selorin on environmental permits, compliance, monitoring, ESG and sustainability in Saudi Arabia."}
+  schema={[collectionSchema(lang, path, catName ?? t(lang, "nav.insights"), posts.map((p) => ({ name: p.data.title, path: `/insights/${insightSlug(p)}/` })))]}
+  analytics={{ page_type: "insights", insight_category: category ?? "all" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.insights")}
+    title={catName ?? (ar ? "إرشادات عملية للمتطلبات البيئية" : "Practical guidance on environmental requirements")}
+    lead={ar ? "شروحات واضحة للمتطلبات التنظيمية وممارسات الرصد والإفصاح، مكتوبة لمديري البيئة والمشاريع وصناع القرار." : "Clear explanations of regulatory requirements, monitoring practice and disclosure — written for environmental, HSE and project leaders."} />
+  <section class="section">
+    <div class="container">
+      <nav aria-label={ar ? "فئات المقالات" : "Insight categories"} style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px">
+        <a class="pill" href={href(lang, "/insights/")} aria-current={!category ? "page" : undefined} style={`text-decoration:none;padding:8px 14px;${!category ? "background:var(--c-forest);color:#fff" : ""}`}>{t(lang, "insights.all")}</a>
+        {used.map((c) => <a class="pill" href={href(lang, `/insights/category/${c}/`)} aria-current={category === c ? "page" : undefined} style={`text-decoration:none;padding:8px 14px;${category === c ? "background:var(--c-forest);color:#fff" : ""}`}>{insightCategories[c][lang]}</a>)}
+      </nav>
+      <div class="grid grid-3">{posts.map((p) => <InsightCard lang={lang} post={p} />)}</div>
+    </div>
+  </section>
+  <CtaBand title={t(lang, "insights.ctaTitle")} body={t(lang, "insights.ctaBody")} label={t(lang, "cta.specialist")} to={href(lang, "/request/")} cta="insights_hub_cta" />
+</Base>

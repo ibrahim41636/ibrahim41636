@@ -1,0 +1,160 @@
+{
+  "order": 8,
+  "services": [
+    "environmental-permitting",
+    "environmental-compliance",
+    "water-quality-monitoring",
+    "air-quality-monitoring",
+    "waste-management",
+    "circular-economy",
+    "ghg-carbon-accounting",
+    "life-cycle-assessment",
+    "esg-advisory"
+  ],
+  "en": {
+    "name": "Food & Beverage",
+    "seoTitle": "Environmental Services for Food & Beverage | Selorin",
+    "metaDescription": "Permits, wastewater monitoring, organic and packaging waste management, product carbon footprints and ESG support for food and beverage producers in KSA.",
+    "cardDescription": "Permits, process wastewater monitoring, organic and packaging waste solutions, and product carbon data for food, dairy, beverage and bottling plants.",
+    "overview": [
+      "Food and beverage plants, including dairies, bakeries, meat and poultry processors, bottling lines and beverage producers, use large amounts of water and energy and produce wastewater with high organic loads, fats, oils and cleaning chemicals. Boilers, refrigeration systems, odour sources and packaging waste add to the facility's environmental profile under the Environmental Law and its Implementing Regulations.",
+      "Many plants operate in MODON industrial cities and discharge to shared treatment systems with their own acceptance conditions, while others run on-site treatment. In both cases, consistent sampling and pre-treatment performance are central to compliance. Food waste, by-products and rejected product also need controlled handling, and many streams can be diverted to animal feed, composting or other recovery routes under the Waste Management Law framework administered by MWAN.",
+      "Retail customers and consumers are paying more attention to packaging, food loss and the carbon footprint of products. Brand owners need reliable data on product footprints, packaging recyclability and water use to respond to customer requirements and to report on ESG performance."
+    ],
+    "challenges": [
+      {
+        "title": "High-strength wastewater",
+        "description": "Process and cleaning water carries organics, fats and chemicals that must meet discharge conditions, often requiring pre-treatment and regular sampling."
+      },
+      {
+        "title": "Organic waste and by-products",
+        "description": "Food waste, rejected product and by-products need controlled storage and recovery routes to avoid odour, pests and disposal costs."
+      },
+      {
+        "title": "Packaging footprint",
+        "description": "Plastic bottles, films and cartons attract customer and regulatory attention on recyclability, recycled content and end-of-life."
+      },
+      {
+        "title": "Odour and refrigerants",
+        "description": "Odour from processing and wastewater, and refrigerant leaks from cold storage, can trigger complaints and add to the facility's emissions."
+      },
+      {
+        "title": "Water and energy intensity",
+        "description": "Water and energy use per unit of product affects both cost and sustainability reporting, and needs metering to manage."
+      }
+    ],
+    "requirements": [
+      "Environmental operating permit, and industrial city requirements where the plant is in a MODON city",
+      "Process wastewater sampling and reporting for the approved discharge route or on-site treatment",
+      "Boiler emission and odour controls in line with permit conditions",
+      "Segregation, storage and recovery or disposal of organic and packaging waste under MWAN regulations",
+      "Refrigerant management records and leak checks",
+      "Environmental registers and records ready for inspection"
+    ],
+    "support": [
+      {
+        "title": "Permits and compliance",
+        "description": "We confirm permit requirements, prepare applications and run compliance reviews against permit and industrial city conditions."
+      },
+      {
+        "title": "Wastewater monitoring",
+        "description": "We sample process and treated effluent, compare results to discharge conditions and identify sources and pre-treatment improvements."
+      },
+      {
+        "title": "Organic and packaging waste",
+        "description": "We map waste and by-product streams, identify recovery routes and support packaging decisions using circular economy principles."
+      },
+      {
+        "title": "Product footprints and ESG",
+        "description": "We calculate plant GHG inventories and product carbon footprints using ISO 14040/14044 and support ESG disclosures for brand owners."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Our effluent sometimes fails the industrial city's acceptance limits. What should we do first?",
+        "a": "Identify when and why. We sample across production and cleaning cycles to find the peaks, link them to specific processes, and recommend operational changes or pre-treatment improvements. Clear data also supports discussions with the treatment operator."
+      },
+      {
+        "q": "Can our food waste be recovered rather than landfilled?",
+        "a": "Often yes. Depending on type and quality, streams can go to animal feed, composting or other recovery routes through licensed operators. We assess each stream, its volumes and storage conditions, and identify practical options."
+      },
+      {
+        "q": "A retailer asked for the carbon footprint of our products. Where do we start?",
+        "a": "We define the product scope and boundaries, collect plant data on ingredients, energy, packaging and transport, and calculate the footprint following ISO 14040/14044 or a recognised product standard. The results also show where reductions matter most."
+      }
+    ]
+  },
+  "ar": {
+    "name": "الأغذية والمشروبات",
+    "seoTitle": "الخدمات البيئية لمصانع الأغذية والمشروبات | سيلورين",
+    "metaDescription": "التصاريح ورصد مياه الصرف وإدارة النفايات العضوية ونفايات التغليف والبصمة الكربونية للمنتجات ودعم الحوكمة البيئية لمنتجي الأغذية والمشروبات في المملكة.",
+    "cardDescription": "تصاريح ورصد لمياه الصرف الصناعي وحلول للنفايات العضوية والتغليف وبيانات كربونية للمنتجات لمصانع الأغذية والألبان والمشروبات والتعبئة.",
+    "overview": [
+      "تستهلك مصانع الأغذية والمشروبات، بما فيها مصانع الألبان والمخابز ومعالجة اللحوم والدواجن وخطوط التعبئة، كميات كبيرة من المياه والطاقة، وتنتج مياه صرف عالية الحمل العضوي تحتوي على الدهون والزيوت ومواد التنظيف. وتضيف الغلايات وأنظمة التبريد ومصادر الروائح ونفايات التغليف جوانب أخرى إلى الملف البيئي للمنشأة وفق نظام البيئة ولوائحه التنفيذية.",
+      "وتعمل مصانع كثيرة في المدن الصناعية التابعة لـ«مدن» (MODON) وتصرّف إلى محطات معالجة مشتركة لها شروط قبول خاصة، بينما تشغّل مصانع أخرى محطات معالجة داخلية، وفي الحالتين يعدّ انتظام أخذ العينات وأداء المعالجة الأولية محورًا للامتثال. كما تحتاج بقايا الأغذية والمنتجات الثانوية والمنتجات المرفوضة إلى مناولة مضبوطة، ويمكن تحويل كثير منها إلى الأعلاف أو التسميد أو مسارات استرجاع أخرى ضمن إطار نظام إدارة النفايات الذي يشرف عليه المركز الوطني لإدارة النفايات (موان).",
+      "ويزداد اهتمام عملاء التجزئة والمستهلكين بالتغليف والفاقد الغذائي والبصمة الكربونية للمنتجات، فيحتاج أصحاب العلامات التجارية إلى بيانات موثوقة عن بصمة منتجاتهم وقابلية تدوير عبواتهم واستهلاكهم للمياه للاستجابة لمتطلبات العملاء والإفصاح عن أدائهم في الحوكمة البيئية والاجتماعية والمؤسسية (ESG)."
+    ],
+    "challenges": [
+      {
+        "title": "مياه صرف عالية التركيز",
+        "description": "تحمل مياه العمليات والتنظيف مواد عضوية ودهونًا وكيماويات يجب أن تستوفي شروط التصريف، وكثيرًا ما تحتاج إلى معالجة أولية وأخذ عينات منتظم."
+      },
+      {
+        "title": "النفايات العضوية والمنتجات الثانوية",
+        "description": "تحتاج بقايا الأغذية والمنتجات المرفوضة والثانوية إلى تخزين مضبوط ومسارات استرجاع لتجنب الروائح والآفات وتكاليف التخلص."
+      },
+      {
+        "title": "بصمة التغليف",
+        "description": "تستقطب العبوات البلاستيكية والأغلفة والكراتين اهتمام العملاء والجهات التنظيمية من حيث قابلية التدوير والمحتوى المعاد تدويره ونهاية العمر."
+      },
+      {
+        "title": "الروائح ووسائط التبريد",
+        "description": "قد تثير الروائح الناتجة عن التصنيع ومياه الصرف، وتسرب وسائط التبريد من المخازن المبردة، شكاوى وتزيد انبعاثات المنشأة."
+      },
+      {
+        "title": "كثافة استهلاك المياه والطاقة",
+        "description": "يؤثر استهلاك المياه والطاقة لكل وحدة إنتاج في التكلفة وتقارير الاستدامة معًا، ويتطلب عدادات لإدارته."
+      }
+    ],
+    "requirements": [
+      "تصريح تشغيل بيئي، ومتطلبات المدينة الصناعية إذا كان المصنع في إحدى مدن «مدن»",
+      "أخذ عينات مياه الصرف الصناعي ورفع تقاريرها وفق مسار التصريف المعتمد أو المعالجة الداخلية",
+      "ضوابط انبعاثات الغلايات والروائح وفق شروط التصريح",
+      "فرز النفايات العضوية ونفايات التغليف وتخزينها واسترجاعها أو التخلص منها وفق لوائح المركز الوطني لإدارة النفايات",
+      "سجلات إدارة وسائط التبريد وفحوص التسرب",
+      "سجلات بيئية جاهزة للتفتيش"
+    ],
+    "support": [
+      {
+        "title": "التصاريح والامتثال",
+        "description": "نحدد متطلبات التصاريح، ونعدّ الطلبات، ونجري مراجعات امتثال مقابل شروط التصريح واشتراطات المدينة الصناعية."
+      },
+      {
+        "title": "رصد مياه الصرف",
+        "description": "نأخذ عينات من مياه العمليات والمياه المعالجة، ونقارن النتائج بشروط التصريف، ونحدد المصادر وتحسينات المعالجة الأولية."
+      },
+      {
+        "title": "النفايات العضوية والتغليف",
+        "description": "نحصر تيارات النفايات والمنتجات الثانوية، ونحدد مسارات الاسترجاع، وندعم قرارات التغليف وفق مبادئ الاقتصاد الدائري."
+      },
+      {
+        "title": "بصمة المنتجات والحوكمة",
+        "description": "نحسب قوائم جرد الانبعاثات للمصانع والبصمة الكربونية للمنتجات وفق معياري ISO 14040/14044، وندعم إفصاحات الحوكمة لأصحاب العلامات التجارية."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "تتجاوز مياه الصرف لدينا أحيانًا حدود القبول في المدينة الصناعية، فبماذا نبدأ؟",
+        "a": "ابدأوا بتحديد التوقيت والسبب؛ نأخذ عينات على امتداد دورات الإنتاج والتنظيف لتحديد الذروات وربطها بعمليات بعينها، ثم نوصي بتعديلات تشغيلية أو تحسينات في المعالجة الأولية، كما تدعم البيانات الواضحة النقاش مع مشغل محطة المعالجة."
+      },
+      {
+        "q": "هل يمكن استرجاع نفاياتنا الغذائية بدل دفنها؟",
+        "a": "في أحيان كثيرة نعم؛ فبحسب النوع والجودة يمكن توجيه التيارات إلى الأعلاف أو التسميد أو مسارات استرجاع أخرى عبر مشغلين مرخصين. نقيّم كل تيار وكمياته وظروف تخزينه ونحدد الخيارات العملية."
+      },
+      {
+        "q": "طلب منا أحد تجار التجزئة البصمة الكربونية لمنتجاتنا، فمن أين نبدأ؟",
+        "a": "نحدد نطاق المنتج وحدوده، ونجمع بيانات المصنع عن المكونات والطاقة والتغليف والنقل، ونحسب البصمة وفق معياري ISO 14040/14044 أو معيار معتمد للمنتجات، وتُظهر النتائج كذلك المواضع الأجدى للخفض."
+      }
+    ]
+  }
+}

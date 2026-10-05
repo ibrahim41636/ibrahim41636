@@ -1,0 +1,93 @@
+---
+import "@/styles/global.css";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { dir, site, href, t, type Lang } from "@/i18n/ui";
+import { organizationSchema, websiteSchema, breadcrumbSchema, type Crumb } from "@/lib/schema";
+
+interface Props {
+  lang: Lang;
+  /** Language-neutral path, e.g. "/services/environmental-permitting/". */
+  path: string;
+  title: string;
+  description: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+  breadcrumbs?: Crumb[];
+  schema?: Record<string, unknown>[];
+  /** Page context for analytics (dataLayer). */
+  analytics?: Record<string, string>;
+  /** Hide header navigation (focused request pages). */
+  focused?: boolean;
+}
+
+const { lang, path, title, description, image = "/images/og-default.jpg", imageAlt = site.name[lang], noindex = false, type = "website", breadcrumbs, schema = [], analytics = {}, focused = false } = Astro.props;
+const canonical = new URL(href(lang, path), site.url).toString();
+const alt = { en: new URL(href("en", path), site.url).toString(), ar: new URL(href("ar", path), site.url).toString() };
+const ogImage = new URL(image, site.url).toString();
+const fullTitle = title.includes("Selorin") || title.includes("سيلورين") ? title : `${title} | ${lang === "ar" ? "سيلورين" : "Selorin"}`;
+
+const graph = [organizationSchema(), websiteSchema(), ...(breadcrumbs ? [breadcrumbSchema(lang, breadcrumbs)] : []), ...schema];
+const pageContext = { page_language: lang, page_path: path, ...analytics };
+---
+<!doctype html>
+<html lang={lang === "ar" ? "ar" : "en"} dir={dir(lang)}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large" />}
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang="en" href={alt.en} />
+  <link rel="alternate" hreflang="ar" href={alt.ar} />
+  <link rel="alternate" hreflang="x-default" href={alt.en} />
+  <meta property="og:type" content={type} />
+  <meta property="og:site_name" content={site.name[lang]} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:alt" content={imageAlt} />
+  <meta property="og:locale" content={lang === "ar" ? "ar_SA" : "en_US"} />
+  <meta property="og:locale:alternate" content={lang === "ar" ? "en_US" : "ar_SA"} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#121614" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />
+  <script is:inline define:vars={{ pageContext }}>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: "page_context" }, pageContext));
+  </script>
+  <script is:inline src="/js/consent.js"></script>
+</head>
+<body data-service={analytics.service_slug} data-category={analytics.service_category} data-industry={analytics.industry_slug}>
+  <a class="skip-link" href="#main">{t(lang, "skip")}</a>
+  <Header lang={lang} path={path} focused={focused} />
+  <main id="main" tabindex="-1">
+    <slot />
+  </main>
+  <Footer lang={lang} focused={focused} />
+  {!focused && (
+    <nav class="action-bar" aria-label={lang === "ar" ? "إجراءات سريعة" : "Quick actions"}>
+      <a href={`tel:${site.phoneHref}`} data-track="phone_click" data-cta="action_bar_call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>{t(lang, "cta.call")}</a>
+      <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener" data-track="whatsapp_click" data-cta="action_bar_whatsapp">{t(lang, "cta.whatsapp")}</a>
+      <a class="primary" href={href(lang, "/request/")} data-cta="action_bar_request">{t(lang, "cta.request")}</a>
+    </nav>
+  )}
+  <div class="cookie" id="cookie-banner" role="dialog" aria-live="polite" aria-label={lang === "ar" ? "ملفات تعريف الارتباط" : "Cookies"} hidden>
+    <p>{t(lang, "cookie.text")} <a href={href(lang, "/legal/cookies/")}>{t(lang, "footer.cookies")}</a></p>
+    <div class="actions">
+      <button class="btn btn--sm" type="button" data-consent="granted">{t(lang, "cookie.accept")}</button>
+      <button class="btn btn--sm btn--ghost" type="button" data-consent="denied">{t(lang, "cookie.reject")}</button>
+    </div>
+  </div>
+  <script>
+    import "@/scripts/site";
+  </script>
+</body>
+</html>

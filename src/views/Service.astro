@@ -1,0 +1,139 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import Icon from "@/components/Icon.astro";
+import Faq from "@/components/Faq.astro";
+import ServiceCard from "@/components/ServiceCard.astro";
+import InsightCard from "@/components/InsightCard.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import { getEntries } from "astro:content";
+import { href, t, type Lang } from "@/i18n/ui";
+import { categoryById } from "@/data/taxonomy";
+import { getInsights, markRequired, type Service } from "@/lib/content";
+import { INDUSTRY_ICON } from "@/lib/icons";
+import { serviceSchema, faqSchema } from "@/lib/schema";
+
+interface Props { lang: Lang; service: Service }
+const { lang, service } = Astro.props;
+const d = service.data[lang];
+const cat = categoryById(service.data.category);
+const industries = await getEntries(service.data.industries);
+const related = await getEntries(service.data.related);
+const insights = (await getInsights(lang)).filter((p) => p.data.relatedServices.some((r) => r.id === service.id)).slice(0, 3);
+const path = `/services/${service.id}/`;
+const requestHref = href(lang, `/request/${service.id}/`);
+const crumbs = [
+  { name: t(lang, "nav.home"), path: "/" },
+  { name: t(lang, "nav.services"), path: "/services/" },
+  { name: cat.name[lang], path: `/services/${cat.id}/` },
+  { name: d.name, path },
+];
+const toc = [
+  ["overview", t(lang, "service.overview")], ["when", t(lang, "service.when")], ["deliver", t(lang, "service.deliver")],
+  ["approach", t(lang, "service.approach")], ["deliverables", t(lang, "service.deliverables")], ["regulatory", t(lang, "service.regulatory")],
+  ["industries", t(lang, "service.industries")], ["faq", t(lang, "service.faq")],
+];
+---
+<Base lang={lang} path={path} title={d.seoTitle} description={d.metaDescription} breadcrumbs={crumbs}
+  schema={[serviceSchema(lang, { slug: service.id, name: d.name, description: d.definition, category: cat.name[lang], industries: industries.map((i) => i.data[lang].name) }), faqSchema(d.faqs)]}
+  analytics={{ page_type: "service", service_slug: service.id, service_category: cat.id }}>
+
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={cat.name[lang]} title={d.name} lead={d.valueProp}>
+    <div class="actions mt-6">
+      <a class="btn btn--light" href={requestHref} data-cta="service_hero_request" data-service={service.id}>{t(lang, "cta.service")} <Icon name="arrow" class="arrow" /></a>
+      <a class="btn btn--ghost" href="#deliverables">{t(lang, "service.deliverables")}</a>
+    </div>
+    <p class="mt-5" style="color:#a9b2ad;font-size:var(--fs-14);display:flex;gap:8px;align-items:center"><Icon name="check" size={16} /> {d.keyBenefit}</p>
+  </PageHero>
+
+  <div class="section">
+    <div class="container with-toc">
+      <nav class="toc" aria-label={t(lang, "service.inThisPage")}>
+        <p class="eyebrow">{t(lang, "service.inThisPage")}</p>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+        <a class="btn btn--sm btn--block mt-6" href={requestHref} data-cta="service_toc_request" data-service={service.id}>{t(lang, "cta.service")}</a>
+      </nav>
+
+      <div>
+        <section class="block" id="overview" aria-labelledby="h-overview">
+          <h2 id="h-overview">{t(lang, "service.overview")}</h2>
+          <p class="definition" set:html={markRequired(d.definition)} />
+          <div class="prose">{d.overview.map((p) => <p set:html={markRequired(p)} />)}</div>
+        </section>
+
+        <section class="block" id="when" aria-labelledby="h-when">
+          <h2 id="h-when">{t(lang, "service.when")}</h2>
+          <p class="muted">{t(lang, "service.whenLead")}</p>
+          <ul class="checklist checklist--2">{d.whenYouNeed.map((w) => <li>{w}</li>)}</ul>
+        </section>
+
+        <section class="block" id="deliver" aria-labelledby="h-deliver">
+          <h2 id="h-deliver">{t(lang, "service.deliver")}</h2>
+          <div class="grid grid-2">
+            {d.deliver.map((x, i) => (
+              <div class="card"><span class="card-num">{String(i + 1).padStart(2, "0")}</span><h3>{x.title}</h3><p set:html={markRequired(x.description)} /></div>
+            ))}
+          </div>
+        </section>
+
+        <section class="block" id="approach" aria-labelledby="h-approach">
+          <h2 id="h-approach">{t(lang, "service.approach")}</h2>
+          <ol class="steps" style="list-style:none;padding:0;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+            {d.approach.map((s) => <li class="step"><h3>{s.title}</h3><p>{s.description}</p></li>)}
+          </ol>
+        </section>
+
+        <section class="block" id="deliverables" aria-labelledby="h-deliverables">
+          <h2 id="h-deliverables">{t(lang, "service.deliverables")}</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <thead><tr><th scope="col">{t(lang, "service.deliverable")}</th><th scope="col">{t(lang, "service.format")}</th><th scope="col">{t(lang, "service.timing")}</th></tr></thead>
+              <tbody>{d.deliverables.map((r) => <tr><th scope="row">{r.item}</th><td>{r.format}</td><td>{r.timing}</td></tr>)}</tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="block" id="regulatory" aria-labelledby="h-regulatory">
+          <h2 id="h-regulatory">{t(lang, "service.regulatory")}</h2>
+          <ul class="checklist">{d.regulatoryContext.map((r) => <li>{r}</li>)}</ul>
+          <p class="muted mt-5" style="font-size:var(--fs-14)">{t(lang, "service.regulatoryNote")}</p>
+        </section>
+
+        <section class="block" id="industries" aria-labelledby="h-industries">
+          <h2 id="h-industries">{t(lang, "service.industries")}</h2>
+          <div class="grid grid-2" style="gap:12px">
+            {industries.map((ind) => <a class="tile" href={href(lang, `/industries/${ind.id}/`)}><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} />{ind.data[lang].name}<Icon name="arrow" class="arrow" /></a>)}
+          </div>
+        </section>
+
+        <section class="block" id="faq" aria-labelledby="h-faq">
+          <h2 id="h-faq">{t(lang, "service.faq")}</h2>
+          <Faq items={d.faqs} />
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="section-head"><h2>{t(lang, "service.related")}</h2></div>
+      <div class="grid grid-3">{related.map((s) => <ServiceCard lang={lang} service={s} />)}</div>
+      {insights.length > 0 && (
+        <>
+          <div class="section-head mt-7"><h2>{t(lang, "service.insights")}</h2></div>
+          <div class="grid grid-3">{insights.map((p) => <InsightCard lang={lang} post={p} />)}</div>
+        </>
+      )}
+    </div>
+  </section>
+
+  <CtaBand title={t(lang, "service.finalTitle")} body={t(lang, "service.finalBody")} label={t(lang, "cta.service")} to={requestHref} cta="service_final_request"
+    secondary={{ label: t(lang, "cta.specialist"), to: "tel:+966534302332" }} />
+
+  <div class="sticky-cta" data-sticky-cta aria-hidden="true">
+    <div class="container">
+      <b>{d.name}</b>
+      <a class="btn btn--light btn--sm" href={requestHref} tabindex="-1" data-cta="service_sticky_request" data-service={service.id}>{t(lang, "cta.service")}</a>
+    </div>
+  </div>
+</Base>

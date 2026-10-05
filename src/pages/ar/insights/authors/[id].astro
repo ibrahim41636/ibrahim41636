@@ -1,0 +1,8 @@
+---
+import Author from "@/views/Author.astro";
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  return (await getCollection("authors")).map((author) => ({ params: { id: author.id }, props: { author } }));
+}
+---
+<Author lang="ar" author={Astro.props.author} />

@@ -1,0 +1,127 @@
+{
+  "category": "waste-circular-economy",
+  "order": 2,
+  "formFamily": "waste",
+  "industries": ["industrial-manufacturing", "food-beverage", "construction", "waste-recycling", "mining-quarrying", "logistics-warehousing", "energy"],
+  "related": ["waste-management", "life-cycle-assessment", "sustainability-advisory", "esg-advisory"],
+  "en": {
+    "name": "Circular Economy",
+    "seoTitle": "Circular Economy Advisory in Saudi Arabia | Selorin",
+    "metaDescription": "Circular economy advisory in Saudi Arabia: material flow analysis, waste reduction, reuse, recycling and by-product valorisation, set out in a clear roadmap.",
+    "valueProp": "Find where materials and value leave your operations, and build a practical roadmap to keep more of both in use.",
+    "cardDescription": "Material flow analysis, waste reduction, reuse and recycling opportunities, by-product valorisation, and a circular economy strategy with a prioritised roadmap.",
+    "keyBenefit": "Lower material losses and new value from existing resource flows",
+    "definition": "Circular economy advisory is the analysis of how materials flow through an organisation and the design of measures that keep them in use for longer, through waste prevention, reuse, recycling and recovery of by-products. It moves beyond compliant disposal to reduce raw material demand, disposal costs and environmental impact, and it produces a prioritised strategy and roadmap that management can fund and track.",
+    "overview": [
+      "Saudi Arabia's Vision 2030 and the Saudi Green Initiative have placed resource efficiency and waste diversion firmly on the national agenda, and the National Center for Waste Management (MWAN) is developing the market for recycling and recovery. For businesses, this creates both pressure and opportunity. Disposal is becoming more regulated and more visible, while materials that were once treated as waste can increasingly be reused within the operation, sold as secondary raw materials or supplied to other industries as inputs.",
+      "Circularity starts with evidence. A material flow analysis follows raw materials, products, packaging, water and by-products through the operation and shows where losses occur and what they cost. This often reveals that a small number of streams account for most of the material lost, and that some of those losses can be prevented through changes in procurement, process settings, packaging or product design. Other streams may have a value as feedstock elsewhere, provided their quality is consistent and the right partners and approvals are in place.",
+      "Selorin works with operations, procurement and finance teams to quantify material flows, identify and screen circular opportunities, and assess their technical, regulatory and commercial feasibility. We look at prevention first, then reuse, recycling and by-product valorisation, and we test each option against practical constraints such as quality, volumes, logistics and market demand. The outcome is a circular economy strategy and roadmap with prioritised initiatives, owners, indicators and expected benefits, linked to your ESG reporting where relevant."
+    ],
+    "whenYouNeed": [
+      "Raw material and disposal costs are significant and you want to know where materials are lost.",
+      "Leadership has set waste diversion or resource efficiency goals without a plan to reach them.",
+      "Your process generates by-products that may have value to other industries.",
+      "Customers or investors ask how your products and operations address circularity.",
+      "You are designing a new plant or product line and want to reduce waste from the start.",
+      "Recycling initiatives exist but results are inconsistent and benefits are not measured."
+    ],
+    "deliver": [
+      { "title": "Material flow analysis", "description": "A quantified map of materials, packaging, water and by-products through your operation, showing inputs, losses, costs and where each stream ends up." },
+      { "title": "Waste prevention review", "description": "Identification of process, procurement, packaging and design changes that reduce the amount of material becoming waste in the first place." },
+      { "title": "Reuse and recycling options", "description": "Assessment of internal reuse and external recycling routes for priority streams, including quality requirements, volumes, logistics and potential partners." },
+      { "title": "By-product valorisation", "description": "Screening of by-products for use as feedstock or secondary raw material, with technical, regulatory and commercial feasibility considerations clearly set out." },
+      { "title": "Business case for initiatives", "description": "Estimated costs, savings, environmental benefits and risks for shortlisted initiatives, presented in a form that supports investment decisions." },
+      { "title": "Circular economy roadmap", "description": "A prioritised, phased plan with initiative owners, milestones and performance indicators, aligned with your sustainability and ESG commitments." }
+    ],
+    "approach": [
+      { "title": "Set objectives", "description": "We agree scope, priorities and constraints with management, and identify the data and teams needed." },
+      { "title": "Map material flows", "description": "We quantify material inputs, losses and outputs using purchasing, production and waste records, verified on site." },
+      { "title": "Identify opportunities", "description": "We generate options across prevention, reuse, recycling and by-product valorisation with operations teams." },
+      { "title": "Screen feasibility", "description": "We assess each option for technical, regulatory and commercial feasibility and estimate its benefits." },
+      { "title": "Build the roadmap", "description": "We prioritise initiatives, define owners, milestones and indicators, and present the strategy for approval." },
+      { "title": "Track progress", "description": "We help set up measurement and review results so the roadmap is adjusted as initiatives mature." }
+    ],
+    "deliverables": [
+      { "item": "Material flow analysis", "format": "Flow diagram and data model (PDF + Excel)", "timing": "Analysis stage" },
+      { "item": "Opportunity long list", "format": "Opportunity register with initial screening (Excel)", "timing": "After workshops" },
+      { "item": "Feasibility assessment of shortlisted options", "format": "Technical and commercial assessment report (PDF)", "timing": "Feasibility stage" },
+      { "item": "Business cases", "format": "Cost-benefit summaries per initiative (Excel + PDF)", "timing": "Feasibility stage" },
+      { "item": "Circular economy strategy and roadmap", "format": "Strategy report and phased roadmap (PDF + presentation)", "timing": "Final stage" },
+      { "item": "Circularity performance indicators", "format": "KPI definitions and tracking template (Excel)", "timing": "With the roadmap" }
+    ],
+    "regulatoryContext": [
+      "Waste Management Law and the role of the National Center for Waste Management (MWAN) in regulating waste activities and developing recycling and recovery.",
+      "Saudi Green Initiative (SGI) and Vision 2030 objectives for resource efficiency and environmental sustainability.",
+      "Environmental Law (2020) and its Implementing Regulations, where changes to processes, by-product use or waste routes affect permit conditions.",
+      "ISO 14040/14044 life cycle assessment principles, where the environmental benefit of circular options needs to be compared.",
+      "GRI Standards and Saudi Exchange ESG Disclosure Guidelines, where circularity results are reported to investors and stakeholders."
+    ],
+    "faqs": [
+      { "q": "How is this different from your waste management service?", "a": "Waste management focuses on handling the waste you generate correctly: classification, storage, licensed transport and records. Circular economy work asks a different question: how to generate less waste and recover more value from the materials you use. It looks upstream at procurement, process and design, and outward at reuse, recycling and by-product markets. Many clients start with waste compliance and then move to circularity." },
+      { "q": "What data do we need to provide?", "a": "Typical inputs include purchasing records for raw materials and packaging, production volumes, waste quantities and disposal invoices, and process information for key lines. Data quality varies, so we combine records with site observations and interviews and state our assumptions clearly. Where measurement gaps are significant, we recommend simple ways to improve data collection so future progress can be tracked reliably." },
+      { "q": "Can we sell our by-products to other companies?", "a": "In many cases, yes, but it depends on the material, its consistency, the volumes available, logistics and whether the receiving use is permitted. Some by-products can move to another industry with little processing, while others need treatment or testing first. We screen the technical, regulatory and commercial conditions for each option, so you understand what is needed before approaching potential partners." },
+      { "q": "How do you prioritise circular initiatives?", "a": "We compare initiatives on expected savings, investment required, environmental benefit, implementation complexity and risk, and on how well they fit your operations and strategy. Prevention measures often rank highly because they reduce both purchasing and disposal costs. The roadmap usually combines quick, low-cost actions with longer-term projects, so early results build support for the larger investments." },
+      { "q": "How does circular economy work support ESG reporting?", "a": "Investors and reporting frameworks increasingly ask about resource use, waste generated, waste diverted from disposal and the initiatives behind those figures. A circular economy programme provides measured data and a documented strategy that can be reported consistently over time. We define indicators that align with the frameworks you use, such as GRI or the Saudi Exchange ESG Disclosure Guidelines, so operational results feed directly into disclosures." }
+    ]
+  },
+  "ar": {
+    "name": "الاقتصاد الدائري",
+    "seoTitle": "استشارات الاقتصاد الدائري في السعودية | سيلورين",
+    "metaDescription": "استشارات الاقتصاد الدائري في المملكة: تحليل تدفق المواد، وخفض النفايات، وفرص إعادة الاستخدام والتدوير، وتثمين المنتجات الثانوية، ضمن خارطة طريق عملية.",
+    "valueProp": "حدّد المواضع التي تتسرب منها المواد والقيمة من عملياتك، وابنِ خارطة طريق عملية تُبقي المزيد منهما قيد الاستخدام.",
+    "cardDescription": "تحليل تدفق المواد، وفرص خفض النفايات وإعادة الاستخدام والتدوير، وتثمين المنتجات الثانوية، واستراتيجية للاقتصاد الدائري بخارطة طريق ذات أولويات.",
+    "keyBenefit": "فاقد أقل في المواد وقيمة جديدة من الموارد المتاحة",
+    "definition": "استشارات الاقتصاد الدائري هي تحليل مسار تدفق المواد داخل المنشأة، وتصميم إجراءات تُبقي هذه المواد قيد الاستخدام لأطول مدة ممكنة، من خلال منع توليد النفايات وإعادة الاستخدام والتدوير واسترداد قيمة المنتجات الثانوية. وتتجاوز هذه الاستشارات التخلص النظامي من النفايات إلى خفض الطلب على المواد الخام وتكاليف التخلص والأثر البيئي، وتنتهي باستراتيجية وخارطة طريق ذات أولويات يمكن للإدارة تمويلها ومتابعة تنفيذها.",
+    "overview": [
+      "وضعت رؤية المملكة 2030 ومبادرة السعودية الخضراء كفاءة استخدام الموارد وتحويل النفايات عن الردم في صدارة الأولويات الوطنية، ويعمل المركز الوطني لإدارة النفايات (موان) على تطوير سوق التدوير والاسترداد. ويخلق ذلك أمام قطاع الأعمال ضغطًا وفرصة في آن واحد؛ فالتخلص من النفايات يخضع لتنظيم ورقابة متزايدين، بينما أصبح بالإمكان على نحو متزايد إعادة استخدام مواد كانت تُعامل نفايات داخل العمليات نفسها، أو بيعها مواد خام ثانوية، أو توريدها مدخلاتٍ لصناعات أخرى تحتاج إليها.",
+      "تبدأ الدائرية بالأدلة. فتحليل تدفق المواد يتتبع المواد الخام والمنتجات ومواد التغليف والمياه والمنتجات الثانوية عبر مراحل التشغيل، ويكشف مواضع الفاقد وتكلفته. وكثيرًا ما يتبين أن عددًا محدودًا من التيارات يستأثر بمعظم المواد المفقودة، وأن جزءًا من هذا الفاقد يمكن منعه بتعديلات في المشتريات أو ضبط العمليات أو التغليف أو تصميم المنتج. وقد تكون لتيارات أخرى قيمة بوصفها لقيمًا في منشآت أخرى، شريطة ثبات جودتها وتوافر الشركاء المناسبين والموافقات اللازمة لاستخدامها.",
+      "تعمل سيلورين مع فرق التشغيل والمشتريات والمالية لقياس تدفقات المواد، وتحديد فرص الدائرية وفرزها، وتقييم جدواها الفنية والتنظيمية والتجارية. ونبدأ بمنع توليد النفايات، ثم ننتقل إلى إعادة الاستخدام والتدوير وتثمين المنتجات الثانوية، ونختبر كل خيار في ضوء قيود عملية كالجودة والكميات والخدمات اللوجستية والطلب في السوق. والنتيجة استراتيجية للاقتصاد الدائري وخارطة طريق تتضمن مبادرات مرتبة بحسب الأولوية، ومسؤولين عن كل منها، ومؤشرات أداء، وفوائد متوقعة، مرتبطة بتقارير الحوكمة البيئية والاجتماعية والمؤسسية (ESG) عند الحاجة."
+    ],
+    "whenYouNeed": [
+      "عندما تكون تكاليف المواد الخام والتخلص كبيرة وتريد معرفة مواضع فقد المواد.",
+      "عندما تضع الإدارة أهدافًا لتحويل النفايات أو كفاءة الموارد دون خطة واضحة لتحقيقها.",
+      "عندما تولّد عملياتك منتجات ثانوية قد تكون ذات قيمة لصناعات أخرى.",
+      "عندما يسأل العملاء أو المستثمرون عن نهجك في الدائرية في منتجاتك وعملياتك.",
+      "عند تصميم مصنع أو خط إنتاج جديد مع الرغبة في خفض النفايات من البداية.",
+      "عند وجود مبادرات تدوير قائمة بنتائج متذبذبة وفوائد غير مقاسة."
+    ],
+    "deliver": [
+      { "title": "تحليل تدفق المواد", "description": "خريطة كمية للمواد ومواد التغليف والمياه والمنتجات الثانوية عبر عملياتك، تبيّن المدخلات والفاقد والتكاليف والوجهة النهائية لكل تيار." },
+      { "title": "مراجعة منع توليد النفايات", "description": "تحديد التعديلات في العمليات والمشتريات والتغليف والتصميم التي تقلل كمية المواد التي تتحول إلى نفايات من الأساس." },
+      { "title": "خيارات إعادة الاستخدام والتدوير", "description": "تقييم مسارات إعادة الاستخدام الداخلي والتدوير الخارجي للتيارات ذات الأولوية، بما يشمل متطلبات الجودة والكميات والخدمات اللوجستية والشركاء المحتملين." },
+      { "title": "تثمين المنتجات الثانوية", "description": "فرز المنتجات الثانوية لاستخدامها لقيمًا أو مواد خام ثانوية، مع توضيح اعتبارات الجدوى الفنية والتنظيمية والتجارية لكل خيار." },
+      { "title": "دراسة الجدوى للمبادرات", "description": "تقدير التكاليف والوفورات والفوائد البيئية والمخاطر للمبادرات المختارة، وعرضها بصورة تدعم قرارات الاستثمار لدى الإدارة." },
+      { "title": "خارطة طريق الاقتصاد الدائري", "description": "خطة مرحلية مرتبة بحسب الأولوية تحدد المسؤولين والمعالم الرئيسة ومؤشرات الأداء، ومتوافقة مع التزاماتك في الاستدامة والحوكمة البيئية والاجتماعية." }
+    ],
+    "approach": [
+      { "title": "تحديد الأهداف", "description": "نتفق مع الإدارة على النطاق والأولويات والقيود، ونحدد البيانات والفرق اللازمة للعمل." },
+      { "title": "رسم التدفقات", "description": "نقيس مدخلات المواد وفاقدها ومخرجاتها من سجلات المشتريات والإنتاج والنفايات، ونتحقق منها ميدانيًا." },
+      { "title": "تحديد الفرص", "description": "نستخلص مع فرق التشغيل خيارات تشمل منع النفايات وإعادة الاستخدام والتدوير وتثمين المنتجات الثانوية." },
+      { "title": "فرز الجدوى", "description": "نقيّم كل خيار من النواحي الفنية والتنظيمية والتجارية، ونقدّر فوائده المتوقعة." },
+      { "title": "بناء خارطة الطريق", "description": "نرتب المبادرات بحسب الأولوية، ونحدد المسؤولين والمعالم والمؤشرات، ونعرض الاستراتيجية للاعتماد." },
+      { "title": "متابعة التقدم", "description": "نساعد على إعداد آليات القياس ومراجعة النتائج، لتُعدَّل خارطة الطريق مع نضج المبادرات." }
+    ],
+    "deliverables": [
+      { "item": "تحليل تدفق المواد", "format": "مخطط تدفق ونموذج بيانات (PDF + Excel)", "timing": "مرحلة التحليل" },
+      { "item": "القائمة الأولية للفرص", "format": "سجل فرص مع فرز أولي (Excel)", "timing": "بعد ورش العمل" },
+      { "item": "تقييم جدوى الخيارات المختارة", "format": "تقرير تقييم فني وتجاري (PDF)", "timing": "مرحلة دراسة الجدوى" },
+      { "item": "دراسات الجدوى للمبادرات", "format": "ملخصات التكلفة والعائد لكل مبادرة (Excel + PDF)", "timing": "مرحلة دراسة الجدوى" },
+      { "item": "استراتيجية الاقتصاد الدائري وخارطة الطريق", "format": "تقرير الاستراتيجية وخارطة مرحلية (PDF + عرض تقديمي)", "timing": "المرحلة النهائية" },
+      { "item": "مؤشرات أداء الدائرية", "format": "تعريفات المؤشرات ونموذج المتابعة (Excel)", "timing": "مع خارطة الطريق" }
+    ],
+    "regulatoryContext": [
+      "نظام إدارة النفايات ودور المركز الوطني لإدارة النفايات (موان) في تنظيم أنشطة النفايات وتطوير قطاع التدوير والاسترداد.",
+      "مبادرة السعودية الخضراء ومستهدفات رؤية المملكة 2030 المتعلقة بكفاءة الموارد والاستدامة البيئية.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، حين تؤثر التعديلات في العمليات أو استخدام المنتجات الثانوية أو مسارات النفايات على اشتراطات التصريح البيئي.",
+      "مبادئ تقييم دورة الحياة وفق ISO 14040/14044، عند الحاجة إلى مقارنة الفائدة البيئية للخيارات الدائرية.",
+      "معايير GRI والمبادئ الإرشادية للإفصاح البيئي والاجتماعي والحوكمة الصادرة عن السوق المالية السعودية (تداول)، عند الإفصاح عن نتائج الدائرية للمستثمرين."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين هذه الخدمة وخدمة إدارة النفايات؟", "a": "تركز إدارة النفايات على المناولة الصحيحة للنفايات التي تولّدها المنشأة: التصنيف والتخزين والنقل عبر جهات مرخّصة وحفظ السجلات. أما الاقتصاد الدائري فيطرح سؤالًا مختلفًا: كيف نولّد نفايات أقل ونسترد قيمة أكبر من المواد المستخدمة؟ فينظر إلى ما قبل التشغيل في المشتريات والعمليات والتصميم، وإلى ما بعده في أسواق إعادة الاستخدام والتدوير والمنتجات الثانوية. ويبدأ كثير من العملاء بالامتثال ثم ينتقلون إلى الدائرية." },
+      { "q": "ما البيانات التي نحتاج إلى توفيرها؟", "a": "تشمل المدخلات المعتادة سجلات مشتريات المواد الخام ومواد التغليف، وكميات الإنتاج، وكميات النفايات وفواتير التخلص منها، ومعلومات العمليات في خطوط الإنتاج الرئيسة. وتتفاوت جودة البيانات عادةً، لذا نجمع بين السجلات والملاحظات الميدانية والمقابلات، ونعلن افتراضاتنا بوضوح. وحين تكون فجوات القياس كبيرة نقترح طرقًا بسيطة لتحسين جمع البيانات حتى يمكن متابعة التقدم مستقبلًا بصورة موثوقة." },
+      { "q": "هل يمكننا بيع منتجاتنا الثانوية لشركات أخرى؟", "a": "في حالات كثيرة نعم، لكن ذلك يعتمد على طبيعة المادة وثبات خصائصها والكميات المتاحة والخدمات اللوجستية، وعلى ما إذا كان الاستخدام المستهدف مسموحًا به نظامًا. فبعض المنتجات الثانوية يمكن نقلها إلى صناعة أخرى بمعالجة محدودة، بينما يحتاج بعضها إلى معالجة أو تحاليل أولًا. ونفرز الشروط الفنية والتنظيمية والتجارية لكل خيار حتى تعرفوا المتطلبات قبل التواصل مع الشركاء المحتملين." },
+      { "q": "كيف تحددون أولويات مبادرات الاقتصاد الدائري؟", "a": "نقارن المبادرات من حيث الوفورات المتوقعة، والاستثمار المطلوب، والفائدة البيئية، وصعوبة التنفيذ، والمخاطر، ومدى ملاءمتها لعملياتكم واستراتيجيتكم. وغالبًا ما تحتل إجراءات منع توليد النفايات مرتبة متقدمة لأنها تخفض تكاليف الشراء والتخلص معًا. وتجمع خارطة الطريق عادة بين إجراءات سريعة منخفضة التكلفة ومشاريع أطول أمدًا، بحيث تعزز النتائج المبكرة الدعم للاستثمارات الأكبر." },
+      { "q": "كيف يدعم الاقتصاد الدائري تقارير الحوكمة البيئية والاجتماعية والمؤسسية؟", "a": "يسأل المستثمرون وأطر الإفصاح بصورة متزايدة عن استخدام الموارد، وكميات النفايات المتولدة، والكميات المحوّلة عن التخلص، والمبادرات التي تقف خلف هذه الأرقام. ويوفّر برنامج الاقتصاد الدائري بيانات مقاسة واستراتيجية موثقة يمكن الإفصاح عنها باتساق عبر الزمن. ونحدد مؤشرات تتوافق مع الأطر التي تعتمدونها، مثل معايير GRI أو المبادئ الإرشادية للسوق المالية السعودية، لتغذي النتائج التشغيلية الإفصاحات مباشرة." }
+    ]
+  }
+}

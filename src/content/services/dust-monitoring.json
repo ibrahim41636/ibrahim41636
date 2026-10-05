@@ -1,0 +1,127 @@
+{
+  "category": "monitoring-measurement",
+  "order": 3,
+  "formFamily": "monitoring",
+  "industries": ["construction", "mining-quarrying", "industrial-manufacturing", "infrastructure", "logistics-warehousing", "real-estate", "waste-recycling"],
+  "related": ["air-quality-monitoring", "environmental-monitoring", "environmental-management-plans", "environmental-compliance"],
+  "en": {
+    "name": "Dust Monitoring",
+    "seoTitle": "Dust Monitoring PM2.5 & PM10 in Saudi Arabia | Selorin",
+    "metaDescription": "Dust monitoring in Saudi Arabia for PM1, PM2.5, PM10 and TSP: upwind/downwind networks, real-time alerts linked to mitigation and compliance reporting.",
+    "valueProp": "Real-time dust monitoring that links particulate readings to site action, so dust is controlled before it becomes a complaint or compliance issue.",
+    "cardDescription": "PM1, PM2.5, PM10 and TSP monitoring for construction, quarries, cement, ports and industrial fence-lines, with real-time alerts and compliance reporting.",
+    "keyBenefit": "Dust controlled on site before it becomes a compliance issue",
+    "definition": "Dust monitoring is the measurement of airborne particulate matter — typically PM1, PM2.5, PM10 and total suspended particulates (TSP) — at and around a site to control dust emissions and demonstrate compliance. It combines fixed or portable monitors, upwind and downwind locations, wind measurement and alert thresholds that trigger mitigation such as water spraying when levels rise.",
+    "overview": [
+      "Dust is often the most visible environmental impact of construction, demolition, quarrying, crushing, cement production, bulk handling at ports and many industrial operations. In Saudi Arabia's dry conditions, with frequent high winds and natural dust events, particulate levels can rise quickly, and it can be difficult to show whether elevated readings come from the site or from regional background. Environmental permits, environmental management plans and project specifications increasingly require continuous particulate monitoring with documented responses to high readings.",
+      "Our dust monitoring service designs and operates particulate networks for PM1, PM2.5, PM10 and TSP. Fixed continuous stations typically use optical light-scattering sensors for real-time indication, while reference or equivalent methods such as beta attenuation or gravimetric sampling are used where data must be directly comparable with standards. Portable monitors support short-term surveys and investigations. Stations are placed upwind and downwind, at fence-lines and near sensitive receptors, and paired with wind speed and direction sensors so readings can be attributed correctly.",
+      "The practical value lies in linking data to action. Real-time alerts notify site teams when particulate levels approach agreed trigger values, so water spraying, activity adjustments or other mitigation can start immediately. A data platform gives managers and consultants access to current and historical readings, while periodic reports document compliance, calibration checks and actions taken. Equipment can be purchased or rented depending on project duration, and the monitoring network can be relocated as construction phases or operations move across the site."
+    ],
+    "whenYouNeed": [
+      "Your construction or demolition project specification requires continuous dust monitoring.",
+      "A quarry, crusher or cement plant needs fence-line particulate data for its environmental permit.",
+      "Neighbours or the authority have raised complaints about dust from your site.",
+      "You need evidence that high readings come from regional dust events, not your operations.",
+      "Your environmental management plan commits to dust trigger levels and documented mitigation.",
+      "A port or bulk handling terminal is expanding storage or loading operations."
+    ],
+    "deliver": [
+      { "title": "Network design", "description": "Upwind and downwind station layout based on dust sources, prevailing winds, site boundaries and sensitive receptors, documented with trigger values and response procedures." },
+      { "title": "Fixed continuous stations", "description": "Real-time PM1, PM2.5, PM10 and TSP monitors using optical light-scattering sensors, with wind speed and direction sensors and remote data transmission." },
+      { "title": "Reference and equivalent methods", "description": "Beta attenuation or gravimetric sampling where results must be directly comparable with standards, or to check and correct optical sensor readings." },
+      { "title": "Real-time alerts", "description": "Configurable alerts by SMS or email when particulate levels approach trigger values, linked to agreed mitigation actions such as water spraying." },
+      { "title": "Data platform and reporting", "description": "Online access to live and historical readings, plus periodic compliance reports with wind analysis, exceedance logs and records of actions taken." },
+      { "title": "Calibration and supply options", "description": "Scheduled calibration checks and maintenance, with monitors available for purchase or rental depending on project duration and ownership preferences." }
+    ],
+    "approach": [
+      { "title": "Site assessment", "description": "We identify dust sources, activities, prevailing winds, receptors and applicable requirements, and review project specifications or permit conditions." },
+      { "title": "Network design", "description": "We define monitor locations, PM fractions, measurement methods, trigger values and the alert and response procedure with your site team." },
+      { "title": "Installation", "description": "We install monitors and wind sensors, set up power and communications, configure the data platform and verify readings at commissioning." },
+      { "title": "Operation and alerts", "description": "We monitor data continuously, maintain equipment, carry out calibration checks and support site teams in responding to alerts." },
+      { "title": "Reporting", "description": "We issue periodic reports showing particulate levels, wind conditions, exceedances, their likely causes and mitigation actions taken." },
+      { "title": "Relocation and review", "description": "We relocate monitors as project phases change and review trigger values and network layout when operations or receptors change." }
+    ],
+    "deliverables": [
+      { "item": "Dust monitoring plan", "format": "Plan with network layout, trigger values and response procedure (PDF)", "timing": "Before mobilisation" },
+      { "item": "Installation and commissioning record", "format": "Commissioning checklist and photos (PDF)", "timing": "At installation" },
+      { "item": "Online data access", "format": "Web dashboard with live and historical data", "timing": "From commissioning" },
+      { "item": "Alert log", "format": "Record of alerts and actions taken (Excel)", "timing": "Ongoing" },
+      { "item": "Calibration check records", "format": "Calibration and maintenance logs (PDF)", "timing": "Per maintenance schedule" },
+      { "item": "Periodic dust monitoring report", "format": "Report with charts, wind roses and exceedance analysis (PDF)", "timing": "Monthly or per permit cycle" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law and its Implementing Regulations, including requirements relating to ambient air quality and particulate emissions.",
+      "National Center for Environmental Compliance (NCEC) environmental permit conditions and inspections covering dust from construction and industrial activities.",
+      "Dust control and monitoring commitments in environmental management plans and construction environmental management plans.",
+      "Requirements of RCJY, MODON and project owners for dust monitoring within industrial cities and major development areas.",
+      "Recognised particulate measurement methods, including beta attenuation and gravimetric reference methods, selected to suit project requirements."
+    ],
+    "faqs": [
+      { "q": "What is the difference between optical and reference dust monitors?", "a": "Optical light-scattering monitors give real-time readings and are well suited to alerts and site control, but their results can be affected by particle type and humidity. Reference or equivalent methods, such as beta attenuation or gravimetric sampling, are designed to produce results directly comparable with standards. Many networks combine both: optical monitors for real-time control and a reference method to check and correct the optical data." },
+      { "q": "How many dust monitors do we need?", "a": "At a minimum, most sites need one upwind and one or more downwind monitors so that site contribution can be separated from background. The final number depends on site size, the spread of dust sources, prevailing winds, the number and location of sensitive receptors and any requirements in your permit or project specification. We propose a layout after reviewing these factors with you." },
+      { "q": "How do real-time alerts work in practice?", "a": "Trigger values are agreed for each monitor, often with an early warning level and an action level. When a reading reaches a trigger, the system sends an SMS or email to named site personnel. The response procedure defines what happens next, such as starting water spraying, pausing a dusty activity or checking wind conditions. Each alert and response is logged and included in reports." },
+      { "q": "Should we buy or rent dust monitoring equipment?", "a": "Rental usually suits construction projects with a defined duration, because equipment can be returned or relocated when work ends. Purchase can make more sense for permanent operations such as quarries, cement plants or ports, where monitoring will continue for many years. We explain the costs and responsibilities of each option, including maintenance and calibration, so you can choose on a clear basis." },
+      { "q": "How do you deal with regional dust storms in the data?", "a": "Natural dust events can raise particulate levels across a wide area. By comparing upwind and downwind monitors and analysing readings against wind speed and direction, we can usually show whether a peak came from the site or from regional conditions. These events are identified in reports so that your compliance record reflects your actual site contribution." }
+    ]
+  },
+  "ar": {
+    "name": "رصد الغبار",
+    "seoTitle": "رصد الغبار PM2.5 وPM10 في السعودية | سيلورين",
+    "metaDescription": "رصد الغبار في المملكة للجسيمات PM1 وPM2.5 وPM10 وTSP: شبكات قبل اتجاه الرياح وبعده، وتنبيهات فورية مرتبطة بإجراءات التخفيف، وتقارير امتثال دورية.",
+    "valueProp": "رصد فوري للغبار يربط قراءات الجسيمات بإجراءات ميدانية، لضبط الغبار قبل أن يتحول إلى شكوى أو مخالفة.",
+    "cardDescription": "رصد الجسيمات PM1 وPM2.5 وPM10 وTSP لمواقع الإنشاء والمحاجر ومصانع الإسمنت والموانئ وحدود المنشآت الصناعية، مع تنبيهات فورية وتقارير امتثال.",
+    "keyBenefit": "ضبط الغبار في الموقع قبل أن يصبح مسألة امتثال",
+    "definition": "رصد الغبار هو قياس الجسيمات العالقة في الهواء، وعادةً PM1 وPM2.5 وPM10 والجسيمات العالقة الكلية (TSP)، داخل الموقع وحوله بهدف ضبط انبعاثات الغبار وإثبات الامتثال. ويجمع بين أجهزة رصد ثابتة أو محمولة، ومواقع قبل اتجاه الرياح وبعده، وقياس الرياح، وقيم تنبيه تستدعي إجراءات تخفيف كالرش بالمياه عند ارتفاع المستويات.",
+    "overview": [
+      "يُعد الغبار في الغالب أوضح الآثار البيئية لأعمال الإنشاء والهدم والمحاجر والكسارات وصناعة الإسمنت ومناولة البضائع السائبة في الموانئ وكثير من العمليات الصناعية. وفي الظروف الجافة السائدة في المملكة، مع الرياح القوية المتكررة والظواهر الغبارية الطبيعية، قد ترتفع مستويات الجسيمات بسرعة، ويصعب أحيانًا إثبات ما إذا كانت القراءات المرتفعة ناتجة عن الموقع أم عن الخلفية الإقليمية. ولذلك تتجه التصاريح البيئية وخطط الإدارة البيئية ومواصفات المشروعات بشكل متزايد إلى اشتراط رصد مستمر للجسيمات مع توثيق الاستجابة للقراءات المرتفعة.",
+      "تصمم خدمتنا لرصد الغبار شبكات رصد الجسيمات PM1 وPM2.5 وPM10 وTSP وتشغّلها. وتعتمد المحطات الثابتة المستمرة عادةً على حساسات بصرية تعمل بتشتت الضوء لتوفير قراءات فورية، بينما تُستخدم الطرق المرجعية أو المكافئة، مثل التوهين الإشعاعي (Beta Attenuation) أو الطريقة الوزنية، حين يلزم أن تكون البيانات قابلة للمقارنة المباشرة بالمعايير. وتدعم الأجهزة المحمولة المسوحات قصيرة المدى والتحقيقات. وتوزَّع المحطات قبل اتجاه الرياح وبعده وعلى حدود الموقع وقرب المستقبِلات الحساسة، مع حساسات لسرعة الرياح واتجاهها لنسبة القراءات إلى مصادرها الصحيحة.",
+      "تتمثل القيمة العملية في ربط البيانات بالإجراء. فالتنبيهات الفورية تُخطر فرق الموقع حين تقترب مستويات الجسيمات من قيم التنبيه المتفق عليها، ليبدأ الرش بالمياه أو تعديل الأنشطة أو غيرها من إجراءات التخفيف فورًا. وتتيح منصة البيانات للمديرين والاستشاريين الاطلاع على القراءات الحالية والسابقة، بينما توثق التقارير الدورية الامتثال وفحوص المعايرة والإجراءات المتخذة. ويمكن شراء الأجهزة أو استئجارها بحسب مدة المشروع، كما يمكن نقل الشبكة مع انتقال مراحل الإنشاء أو العمليات داخل الموقع."
+    ],
+    "whenYouNeed": [
+      "تشترط مواصفات مشروع الإنشاء أو الهدم لديكم رصدًا مستمرًا للغبار.",
+      "تحتاج محجرة أو كسارة أو مصنع إسمنت إلى بيانات الجسيمات عند حدود الموقع لأغراض التصريح البيئي.",
+      "وردت شكاوى من الجيران أو الجهة المختصة بشأن الغبار الصادر من موقعكم.",
+      "تحتاجون إلى إثبات أن القراءات المرتفعة ناتجة عن ظواهر غبارية إقليمية لا عن عملياتكم.",
+      "تتضمن خطة الإدارة البيئية لديكم قيم تنبيه للغبار وإجراءات تخفيف موثقة.",
+      "يتوسع ميناء أو محطة مناولة بضائع سائبة في أعمال التخزين أو التحميل."
+    ],
+    "deliver": [
+      { "title": "تصميم الشبكة", "description": "توزيع المحطات قبل اتجاه الرياح وبعده بناءً على مصادر الغبار والرياح السائدة وحدود الموقع والمستقبِلات الحساسة، مع توثيق قيم التنبيه وإجراءات الاستجابة." },
+      { "title": "محطات ثابتة مستمرة", "description": "أجهزة رصد فوري للجسيمات PM1 وPM2.5 وPM10 وTSP بحساسات بصرية تعمل بتشتت الضوء، مع حساسات لسرعة الرياح واتجاهها ونقل البيانات عن بُعد." },
+      { "title": "الطرق المرجعية والمكافئة", "description": "اعتيان بطريقة التوهين الإشعاعي أو الطريقة الوزنية حين يلزم مقارنة النتائج مباشرة بالمعايير، أو للتحقق من قراءات الحساسات البصرية وتصحيحها." },
+      { "title": "تنبيهات فورية", "description": "تنبيهات قابلة للضبط عبر الرسائل النصية أو البريد الإلكتروني عند اقتراب المستويات من قيم التنبيه، مرتبطة بإجراءات تخفيف متفق عليها كالرش بالمياه." },
+      { "title": "منصة البيانات والتقارير", "description": "اطلاع إلكتروني على القراءات الحية والسابقة، وتقارير امتثال دورية تتضمن تحليل الرياح وسجل التجاوزات وتوثيق الإجراءات المتخذة." },
+      { "title": "المعايرة وخيارات التوريد", "description": "فحوص معايرة وصيانة مجدولة، مع إتاحة الأجهزة للشراء أو الاستئجار بحسب مدة المشروع وتفضيلات الملكية." }
+    ],
+    "approach": [
+      { "title": "تقييم الموقع", "description": "نحدد مصادر الغبار والأنشطة والرياح السائدة والمستقبِلات الحساسة والمتطلبات المنطبقة، ونراجع مواصفات المشروع أو اشتراطات التصريح." },
+      { "title": "تصميم الشبكة", "description": "نحدد مواقع الأجهزة وفئات الجسيمات وطرق القياس وقيم التنبيه وإجراءات التنبيه والاستجابة مع فريق الموقع." },
+      { "title": "التركيب", "description": "نركّب أجهزة الرصد وحساسات الرياح، ونجهز الطاقة والاتصالات، ونهيئ منصة البيانات، ونتحقق من القراءات عند التشغيل." },
+      { "title": "التشغيل والتنبيهات", "description": "نتابع البيانات باستمرار، ونصون الأجهزة، ونجري فحوص المعايرة، وندعم فرق الموقع في الاستجابة للتنبيهات." },
+      { "title": "التقارير", "description": "نصدر تقارير دورية تبيّن مستويات الجسيمات وظروف الرياح والتجاوزات وأسبابها المرجحة وإجراءات التخفيف المتخذة." },
+      { "title": "النقل والمراجعة", "description": "ننقل الأجهزة مع تغيّر مراحل المشروع، ونراجع قيم التنبيه وتوزيع الشبكة عند تغيّر العمليات أو المستقبِلات." }
+    ],
+    "deliverables": [
+      { "item": "خطة رصد الغبار", "format": "خطة تتضمن توزيع الشبكة وقيم التنبيه وإجراءات الاستجابة (PDF)", "timing": "قبل التجهيز" },
+      { "item": "سجل التركيب والتشغيل", "format": "قائمة تحقق التشغيل وصور الموقع (PDF)", "timing": "عند التركيب" },
+      { "item": "الاطلاع الإلكتروني على البيانات", "format": "لوحة معلومات إلكترونية للبيانات الحية والسابقة", "timing": "من بدء التشغيل" },
+      { "item": "سجل التنبيهات", "format": "سجل التنبيهات والإجراءات المتخذة (Excel)", "timing": "بصفة مستمرة" },
+      { "item": "سجلات فحوص المعايرة", "format": "سجلات المعايرة والصيانة (PDF)", "timing": "وفق جدول الصيانة" },
+      { "item": "تقرير رصد الغبار الدوري", "format": "تقرير برسوم بيانية ووردات رياح وتحليل للتجاوزات (PDF)", "timing": "شهريًا أو وفق دورة التصريح" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة ولوائحه التنفيذية، بما فيها المتطلبات المتعلقة بجودة الهواء المحيط وانبعاثات الجسيمات.",
+      "اشتراطات التصاريح البيئية وأعمال التفتيش التي يتولاها المركز الوطني للرقابة على الالتزام البيئي (NCEC) بشأن الغبار الناتج عن أنشطة الإنشاء والصناعة.",
+      "التزامات ضبط الغبار ورصده الواردة في خطط الإدارة البيئية وخطط الإدارة البيئية لأعمال الإنشاء.",
+      "متطلبات الهيئة الملكية للجبيل وينبع وهيئة مدن وملاك المشروعات لرصد الغبار في المدن الصناعية ومناطق التطوير الكبرى.",
+      "طرق قياس الجسيمات المعترف بها، ومنها التوهين الإشعاعي والطريقة الوزنية المرجعية، المختارة بما يناسب متطلبات المشروع."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين أجهزة رصد الغبار البصرية والمرجعية؟", "a": "توفر الأجهزة البصرية العاملة بتشتت الضوء قراءات فورية تناسب التنبيهات وضبط الموقع، لكن نتائجها قد تتأثر بنوع الجسيمات والرطوبة. أما الطرق المرجعية أو المكافئة، كالتوهين الإشعاعي أو الطريقة الوزنية، فمصممة لإنتاج نتائج قابلة للمقارنة المباشرة بالمعايير. وتجمع كثير من الشبكات بين النوعين: أجهزة بصرية للضبط الفوري، وطريقة مرجعية للتحقق من البيانات البصرية وتصحيحها." },
+      { "q": "كم عدد أجهزة رصد الغبار التي نحتاجها؟", "a": "تحتاج معظم المواقع في الحد الأدنى إلى جهاز قبل اتجاه الرياح وجهاز أو أكثر بعده، لفصل إسهام الموقع عن مستوى الخلفية. ويتحدد العدد النهائي وفق مساحة الموقع وتوزع مصادر الغبار والرياح السائدة وعدد المستقبِلات الحساسة ومواقعها، وأي متطلبات في التصريح أو مواصفات المشروع. ونقترح التوزيع المناسب بعد مراجعة هذه العوامل معكم." },
+      { "q": "كيف تعمل التنبيهات الفورية عمليًا؟", "a": "يُتفق على قيم تنبيه لكل جهاز، وغالبًا ما تتضمن مستوى إنذار مبكر ومستوى يستوجب الإجراء. وعندما تبلغ القراءة إحدى هذه القيم، يرسل النظام رسالة نصية أو بريدًا إلكترونيًا إلى المسؤولين المحددين في الموقع. وتحدد إجراءات الاستجابة الخطوة التالية، كبدء الرش بالمياه أو إيقاف نشاط مثير للغبار مؤقتًا أو التحقق من ظروف الرياح. ويُسجَّل كل تنبيه والاستجابة له ويُدرج في التقارير." },
+      { "q": "هل نشتري أجهزة رصد الغبار أم نستأجرها؟", "a": "يناسب الاستئجار عادةً مشروعات الإنشاء محددة المدة، إذ يمكن إعادة الأجهزة أو نقلها عند انتهاء الأعمال. أما الشراء فقد يكون أجدى للعمليات الدائمة كالمحاجر ومصانع الإسمنت والموانئ التي يستمر فيها الرصد سنوات طويلة. ونوضح لكم تكاليف كل خيار ومسؤولياته، بما فيها الصيانة والمعايرة، لتتخذوا القرار على أساس واضح." },
+      { "q": "كيف تتعاملون مع العواصف الغبارية الإقليمية في البيانات؟", "a": "قد ترفع الظواهر الغبارية الطبيعية مستويات الجسيمات على نطاق واسع. ومن خلال مقارنة الأجهزة الواقعة قبل اتجاه الرياح وبعده، وتحليل القراءات وفق سرعة الرياح واتجاهها، يمكن في الغالب إثبات ما إذا كانت القمة صادرة عن الموقع أم عن الظروف الإقليمية. وتُحدَّد هذه الظواهر في التقارير ليعكس سجل امتثالكم الإسهام الفعلي لموقعكم." }
+    ]
+  }
+}

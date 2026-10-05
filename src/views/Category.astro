@@ -1,0 +1,44 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import ServiceCard from "@/components/ServiceCard.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { getEntries } from "astro:content";
+import { href, t, type Lang } from "@/i18n/ui";
+import { categoryById } from "@/data/taxonomy";
+import { getServices, getIndustries } from "@/lib/content";
+import { INDUSTRY_ICON } from "@/lib/icons";
+import { collectionSchema } from "@/lib/schema";
+interface Props { lang: Lang; id: string }
+const { lang, id } = Astro.props;
+const ar = lang === "ar";
+const cat = categoryById(id);
+const services = (await getServices()).filter((s) => s.data.category === id);
+const indIds = [...new Set(services.flatMap((s) => s.data.industries.map((r) => r.id)))];
+const industries = (await getIndustries()).filter((i) => indIds.includes(i.id));
+const path = `/services/${id}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.services"), path: "/services/" }, { name: cat.name[lang], path }];
+---
+<Base lang={lang} path={path} breadcrumbs={crumbs}
+  title={ar ? `${cat.name.ar} | خدمات بيئية في المملكة` : `${cat.name.en} Services in Saudi Arabia`}
+  description={cat.summary[lang]}
+  schema={[collectionSchema(lang, path, cat.name[lang], services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
+  analytics={{ page_type: "service_category", service_category: id }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.services")} title={cat.name[lang]} lead={cat.intro[lang]}>
+    <div class="actions mt-6"><a class="btn btn--light" href={href(lang, "/request/")} data-cta="category_hero_request">{t(lang, "cta.consultation")} <Icon name="arrow" class="arrow" /></a></div>
+  </PageHero>
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>{ar ? "الخدمات في هذا المجال" : "Services in this practice area"}</h2><p class="lead">{cat.benefit[lang]}</p></div>
+      <div class="grid grid-3">{services.map((s) => <ServiceCard lang={lang} service={s} />)}</div>
+    </div>
+  </section>
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="section-head"><h2>{ar ? "القطاعات التي نخدمها" : "Industries we support"}</h2></div>
+      <div class="grid grid-4" style="gap:12px">{industries.map((ind) => <a class="tile" href={href(lang, `/industries/${ind.id}/`)}><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} />{ind.data[lang].name}<Icon name="arrow" class="arrow" /></a>)}</div>
+    </div>
+  </section>
+  <CtaBand title={t(lang, "cta.discuss")} body={t(lang, "service.finalBody")} label={t(lang, "cta.consultation")} to={href(lang, "/request/")} cta="category_final_cta" />
+</Base>

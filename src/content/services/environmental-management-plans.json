@@ -1,0 +1,127 @@
+{
+  "category": "environmental-studies",
+  "order": 2,
+  "formFamily": "studies",
+  "industries": ["construction", "infrastructure", "real-estate", "industrial-manufacturing", "energy", "oil-gas", "mining-quarrying"],
+  "related": ["environmental-impact-assessment", "environmental-compliance", "environmental-monitoring", "environmental-records"],
+  "en": {
+    "name": "Environmental Management Plans",
+    "seoTitle": "Environmental Management Plans (CEMP/OEMP) | Selorin",
+    "metaDescription": "Construction and operational environmental management plans (CEMP and OEMP) in Saudi Arabia that turn EIA and permit commitments into site actions and KPIs.",
+    "valueProp": "Environmental management plans that turn approval commitments into clear site actions, named responsibilities and records your team can actually maintain.",
+    "cardDescription": "Construction and operational environmental management plans that define mitigation, monitoring, responsibilities and KPIs for contractors and operators.",
+    "keyBenefit": "Approval commitments translated into practical, auditable site controls",
+    "definition": "An environmental management plan (EMP) is a project document that sets out how environmental impacts will be controlled, monitored and reported during construction or operation. A construction EMP (CEMP) covers site works and contractors, while an operational EMP (OEMP) covers the running facility. Both translate commitments from the EIA and environmental permit into specific actions, responsibilities, monitoring and records.",
+    "overview": [
+      "Environmental approvals in Saudi Arabia are typically granted on the basis of mitigation and monitoring commitments set out in the environmental impact assessment and reflected in the conditions of the environmental permit. Those commitments only have value if they are carried out on site. The environmental management plan is the operational link between the approval and day-to-day work: it states what must be done, by whom, how often, and what evidence must be kept to demonstrate compliance during inspections by the National Center for Environmental Compliance.",
+      "A construction EMP addresses the period of highest site activity: dust, noise, earthworks, dewatering, fuel and chemical storage, waste, traffic and the protection of nearby receptors. It must work for main contractors and subcontractors who change over the life of the project. An operational EMP addresses the facility once it is running: emissions, effluents, waste streams, maintenance, emergency response and periodic reporting. Both plans need realistic key performance indicators and clear escalation routes, so that non-conformances are identified and closed rather than discovered at audit.",
+      "Selorin prepares CEMPs and OEMPs that are specific to your project, permit conditions and site organisation rather than generic templates. We review the approval documents, map every commitment to a control measure and an owner, define monitoring parameters and frequencies, and set up inspection checklists, registers and reporting formats. Where needed, we brief contractors on their obligations and review their method statements and sub-plans for consistency with the approved EMP, so the plan is understood and implemented by the people doing the work."
+    ],
+    "whenYouNeed": [
+      "Your environmental permit or EIA approval requires a CEMP before construction can start.",
+      "A facility is approaching commissioning and needs an operational EMP aligned with permit conditions.",
+      "The client or developer requires contractors to submit an environmental plan for approval.",
+      "An inspection or audit found gaps between approval commitments and actual site practice.",
+      "Several contractors are working on one site and environmental responsibilities are unclear.",
+      "An existing EMP is outdated after design changes, expansion or a change of operator."
+    ],
+    "deliver": [
+      { "title": "Commitments register", "description": "A traceable list of every mitigation and monitoring commitment from the EIA, permit conditions and client requirements, each linked to a control and an owner." },
+      { "title": "Construction EMP (CEMP)", "description": "A site-specific plan covering dust, noise, water, soil, waste, hazardous materials, traffic and receptor protection during construction, with clear contractor obligations." },
+      { "title": "Operational EMP (OEMP)", "description": "A plan for the running facility covering emissions, effluents, waste, maintenance, emergency response, monitoring and periodic environmental reporting." },
+      { "title": "Roles and responsibilities", "description": "A responsibility matrix defining what the owner, operator, main contractor and subcontractors must do, approve, inspect and record under the plan." },
+      { "title": "KPIs and monitoring schedule", "description": "Measurable environmental performance indicators, with monitoring parameters, locations, frequencies and reporting routes linked to each significant aspect." },
+      { "title": "Implementation tools", "description": "Inspection checklists, registers, incident and non-conformance forms and reporting templates that site teams can use from the first day." }
+    ],
+    "approach": [
+      { "title": "Review approvals", "description": "We review the EIA, permit conditions, client specifications and site layout to identify every environmental obligation." },
+      { "title": "Map commitments", "description": "We map each commitment to an activity, a control measure, a responsible party and the evidence required." },
+      { "title": "Draft the plan", "description": "We prepare the CEMP or OEMP with sub-plans, monitoring schedule, KPIs and escalation procedures specific to the site." },
+      { "title": "Align stakeholders", "description": "We review the draft with the owner, operator and contractors and resolve gaps in roles or resources." },
+      { "title": "Brief and launch", "description": "We brief site teams and contractors, issue the implementation tools and confirm records are being kept correctly." },
+      { "title": "Review and update", "description": "We update the plan after design changes, audits, incidents or new permit conditions, keeping version control." }
+    ],
+    "deliverables": [
+      { "item": "Environmental commitments register", "format": "Register (Excel)", "timing": "Start of preparation" },
+      { "item": "Construction environmental management plan (CEMP)", "format": "Plan with topic sub-plans (PDF + editable Word)", "timing": "Before construction mobilisation" },
+      { "item": "Operational environmental management plan (OEMP)", "format": "Plan with monitoring programme (PDF + editable Word)", "timing": "Before commissioning" },
+      { "item": "Responsibility matrix", "format": "RACI table (Excel + PDF)", "timing": "With the plan" },
+      { "item": "Inspection checklists and registers", "format": "Editable forms (Excel + Word)", "timing": "With the plan" },
+      { "item": "Contractor briefing pack", "format": "Presentation and summary sheet (PDF)", "timing": "At mobilisation or handover" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which link project approval to the implementation of mitigation and monitoring measures.",
+      "National Center for Environmental Compliance (NCEC), which issues environmental permits and carries out compliance monitoring and inspections.",
+      "Waste Management Law and the requirements of the National Center for Waste Management (MWAN) for handling, storage and transfer of waste on site.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON, where site-specific environmental requirements apply within their areas.",
+      "ISO 14001 principles for planning, operational control, monitoring and continual improvement, where the organisation uses an environmental management system."
+    ],
+    "faqs": [
+      { "q": "What is the difference between a CEMP and an OEMP?", "a": "A CEMP covers the construction phase, when the main risks come from earthworks, dust, noise, temporary storage of fuel and chemicals, construction waste and contractor activity. An OEMP covers the facility once it is operating, focusing on process emissions, effluents, waste streams, maintenance, emergency response and routine monitoring and reporting. Many projects need both, prepared at different stages but built on the same approval commitments." },
+      { "q": "Can we use the contractor's standard environmental plan?", "a": "A contractor's standard plan is a useful starting point, but it rarely reflects the specific commitments in your EIA and permit conditions. We review it against your approval documents, identify missing controls, monitoring requirements or responsibilities, and either adapt it or prepare a project plan that the contractor's procedures must comply with. This avoids gaps that may only become visible during an inspection." },
+      { "q": "How detailed should the KPIs be?", "a": "KPIs should be specific enough to show whether controls are working and simple enough for site teams to track. Typical examples include the percentage of inspections closed on time, the number of open non-conformances, monitoring results compared with applicable limits, and waste segregation and transfer records. We select indicators linked to your significant aspects rather than a long list that nobody uses." },
+      { "q": "Who is responsible for implementing the EMP?", "a": "Responsibility is shared, and the plan should say exactly how. The project owner or operator remains accountable for compliance with the permit, while contractors are responsible for the controls within their scope of work. The EMP includes a responsibility matrix that sets out who implements, inspects, approves and records each measure, so obligations can be written into contracts and checked during site inspections." },
+      { "q": "How often should an EMP be updated?", "a": "An EMP should be updated whenever something material changes: the design, construction method, site boundary, contractor, permit conditions or applicable requirements. Audit findings and incidents are also triggers for review. Outside these events, a periodic review keeps the plan aligned with how the site actually works. Each revision should be version-controlled and communicated to the people who rely on it." }
+    ]
+  },
+  "ar": {
+    "name": "خطط الإدارة البيئية",
+    "seoTitle": "خطط الإدارة البيئية للإنشاء والتشغيل | سيلورين",
+    "metaDescription": "إعداد خطط الإدارة البيئية لمرحلتي الإنشاء والتشغيل (CEMP وOEMP) في المملكة، لتحويل التزامات الدراسة والتصريح البيئي إلى إجراءات ومؤشرات أداء واضحة في الموقع.",
+    "valueProp": "خطط إدارة بيئية تحوّل التزامات الموافقة إلى إجراءات ميدانية واضحة ومسؤوليات محددة وسجلات يستطيع فريقك المحافظة عليها فعلًا.",
+    "cardDescription": "خطط إدارة بيئية للإنشاء والتشغيل تحدد تدابير التخفيف والرصد والمسؤوليات ومؤشرات الأداء للمقاولين والمشغّلين.",
+    "keyBenefit": "التزامات الموافقة البيئية مترجمة إلى ضوابط عملية قابلة للتدقيق",
+    "definition": "خطة الإدارة البيئية (EMP) وثيقة خاصة بالمشروع تحدد كيفية ضبط الآثار البيئية ورصدها والإبلاغ عنها خلال مرحلة الإنشاء أو التشغيل. وتغطي خطة الإدارة البيئية للإنشاء (CEMP) أعمال الموقع والمقاولين، في حين تغطي خطة الإدارة البيئية للتشغيل (OEMP) المنشأة بعد تشغيلها. وتحوّل الخطتان التزامات دراسة تقييم الأثر البيئي والتصريح البيئي إلى إجراءات ومسؤوليات وبرامج رصد وسجلات محددة يمكن التحقق منها.",
+    "overview": [
+      "تُمنح الموافقات البيئية في المملكة عادةً بناءً على التزامات التخفيف والرصد الواردة في دراسة تقييم الأثر البيئي، والتي تنعكس بدورها في اشتراطات التصريح البيئي. ولا تكتسب هذه الالتزامات قيمتها إلا بتنفيذها فعليًا في الموقع. وخطة الإدارة البيئية هي حلقة الوصل التشغيلية بين الموافقة والعمل اليومي؛ إذ تحدد ما يجب تنفيذه، ومن المسؤول عنه، وتكراره، والأدلة الواجب الاحتفاظ بها لإثبات الامتثال البيئي أثناء عمليات التفتيش التي يجريها المركز الوطني للرقابة على الالتزام البيئي، وعند مراجعة أداء المشروع من الجهات المعنية.",
+      "تتناول خطة الإدارة البيئية للإنشاء المرحلة الأعلى نشاطًا في الموقع، بما فيها الغبار والضوضاء وأعمال الحفر ونزح المياه وتخزين الوقود والمواد الكيميائية والنفايات وحركة المرور وحماية المستقبِلات المجاورة، ويجب أن تصلح للمقاول الرئيس والمقاولين من الباطن الذين يتغيرون طوال عمر المشروع. أما خطة الإدارة البيئية للتشغيل فتتناول المنشأة بعد تشغيلها، من الانبعاثات والمياه المصرّفة وتيارات النفايات إلى الصيانة والاستجابة للطوارئ والتقارير الدورية. وتحتاج الخطتان إلى مؤشرات أداء واقعية ومسارات تصعيد واضحة، حتى تُكتشف حالات عدم المطابقة وتُعالج مبكرًا بدلًا من أن تظهر عند التدقيق.",
+      "تعدّ سيلورين خطط إدارة بيئية للإنشاء والتشغيل مصممة لمشروعك واشتراطات تصريحك وتنظيم موقعك، لا نماذج عامة. فنراجع وثائق الموافقة، ونربط كل التزام بإجراء ضبط وبجهة مسؤولة، ونحدد معايير الرصد وتكراره، ونجهّز قوائم التفتيش والسجلات ونماذج التقارير. وعند الحاجة نعقد جلسات تعريفية للمقاولين بالتزاماتهم، ونراجع بيانات طرق العمل والخطط الفرعية التي يقدمونها للتأكد من اتساقها مع الخطة المعتمدة، حتى يفهم الخطة وينفذها من يقومون بالعمل فعلًا."
+    ],
+    "whenYouNeed": [
+      "عندما يشترط التصريح البيئي أو موافقة الدراسة تقديم خطة إدارة بيئية للإنشاء قبل بدء الأعمال.",
+      "عند اقتراب المنشأة من التشغيل التجريبي وحاجتها إلى خطة تشغيل متوافقة مع اشتراطات التصريح.",
+      "عندما يطلب المالك أو المطوّر من المقاولين تقديم خطة بيئية لاعتمادها.",
+      "عندما يكشف تفتيش أو تدقيق فجوات بين الالتزامات المعتمدة والممارسة الفعلية في الموقع.",
+      "عند عمل عدة مقاولين في موقع واحد مع عدم وضوح المسؤوليات البيئية بينهم.",
+      "عندما تصبح الخطة القائمة غير محدّثة بعد تعديل التصميم أو التوسعة أو تغيير المشغّل."
+    ],
+    "deliver": [
+      { "title": "سجل الالتزامات البيئية", "description": "قائمة قابلة للتتبع بكل التزامات التخفيف والرصد الواردة في الدراسة واشتراطات التصريح ومتطلبات المالك، يرتبط كل منها بإجراء ضبط وجهة مسؤولة." },
+      { "title": "خطة الإدارة البيئية للإنشاء", "description": "خطة خاصة بالموقع تغطي الغبار والضوضاء والمياه والتربة والنفايات والمواد الخطرة وحركة المرور وحماية المستقبِلات، مع التزامات واضحة للمقاولين." },
+      { "title": "خطة الإدارة البيئية للتشغيل", "description": "خطة للمنشأة العاملة تغطي الانبعاثات والمياه المصرّفة والنفايات والصيانة والاستجابة للطوارئ والرصد وإعداد التقارير البيئية الدورية." },
+      { "title": "الأدوار والمسؤوليات", "description": "مصفوفة مسؤوليات تحدد ما يجب على المالك والمشغّل والمقاول الرئيس والمقاولين من الباطن تنفيذه واعتماده وتفتيشه وتسجيله وفق الخطة." },
+      { "title": "مؤشرات الأداء وجدول الرصد", "description": "مؤشرات أداء بيئي قابلة للقياس، مع معايير الرصد ومواقعه وتكراره ومسارات الإبلاغ المرتبطة بكل جانب بيئي جوهري." },
+      { "title": "أدوات التنفيذ", "description": "قوائم تفتيش وسجلات ونماذج للحوادث وحالات عدم المطابقة وقوالب تقارير يستطيع فريق الموقع استخدامها من اليوم الأول." }
+    ],
+    "approach": [
+      { "title": "مراجعة الموافقات", "description": "نراجع الدراسة واشتراطات التصريح ومواصفات المالك ومخطط الموقع لتحديد جميع الالتزامات البيئية." },
+      { "title": "ربط الالتزامات", "description": "نربط كل التزام بنشاط محدد وإجراء ضبط وجهة مسؤولة والأدلة المطلوبة لإثباته." },
+      { "title": "صياغة الخطة", "description": "نعدّ خطة الإنشاء أو التشغيل مع خططها الفرعية وجدول الرصد ومؤشرات الأداء وإجراءات التصعيد الخاصة بالموقع." },
+      { "title": "مواءمة الأطراف", "description": "نراجع المسودة مع المالك والمشغّل والمقاولين، ونعالج أي فجوات في الأدوار أو الموارد." },
+      { "title": "التعريف والإطلاق", "description": "نعقد جلسات تعريفية لفرق الموقع والمقاولين، ونسلّم أدوات التنفيذ، ونتحقق من صحة حفظ السجلات." },
+      { "title": "المراجعة والتحديث", "description": "نحدّث الخطة بعد تعديلات التصميم أو عمليات التدقيق أو الحوادث أو الاشتراطات الجديدة، مع ضبط الإصدارات." }
+    ],
+    "deliverables": [
+      { "item": "سجل الالتزامات البيئية", "format": "سجل (Excel)", "timing": "بداية الإعداد" },
+      { "item": "خطة الإدارة البيئية للإنشاء (CEMP)", "format": "خطة مع خطط فرعية للمواضيع (PDF + Word قابل للتعديل)", "timing": "قبل تجهيز الموقع وبدء الأعمال" },
+      { "item": "خطة الإدارة البيئية للتشغيل (OEMP)", "format": "خطة مع برنامج الرصد (PDF + Word قابل للتعديل)", "timing": "قبل التشغيل التجريبي" },
+      { "item": "مصفوفة المسؤوليات", "format": "جدول RACI (Excel + PDF)", "timing": "مع الخطة" },
+      { "item": "قوائم التفتيش والسجلات", "format": "نماذج قابلة للتعديل (Excel + Word)", "timing": "مع الخطة" },
+      { "item": "حزمة التعريف للمقاولين", "format": "عرض تقديمي وملخص (PDF)", "timing": "عند بدء الأعمال أو التسليم" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تربط الموافقة على المشروع بتنفيذ تدابير التخفيف والرصد.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يصدر التصاريح البيئية ويتولى الرقابة على الالتزام والتفتيش.",
+      "نظام إدارة النفايات ومتطلبات المركز الوطني لإدارة النفايات (موان) لمناولة النفايات وتخزينها ونقلها من الموقع.",
+      "الهيئة الملكية للجبيل وينبع وهيئة المدن الصناعية ومناطق التقنية (مدن)، حين تنطبق متطلباتهما البيئية الخاصة بالمواقع ضمن نطاقهما.",
+      "مبادئ ISO 14001 في التخطيط والضبط التشغيلي والرصد والتحسين المستمر، للمنشآت التي تطبق نظامًا للإدارة البيئية."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين خطة الإدارة البيئية للإنشاء وخطة التشغيل؟", "a": "تغطي خطة الإنشاء مرحلة البناء، حين تنشأ المخاطر الرئيسة من أعمال الحفر والغبار والضوضاء والتخزين المؤقت للوقود والمواد الكيميائية ونفايات البناء ونشاط المقاولين. أما خطة التشغيل فتغطي المنشأة بعد تشغيلها، وتركز على انبعاثات العمليات والمياه المصرّفة وتيارات النفايات والصيانة والاستجابة للطوارئ والرصد والتقارير الدورية. ويحتاج كثير من المشاريع إلى الخطتين معًا، تُعدّان في مرحلتين مختلفتين لكن على أساس الالتزامات المعتمدة نفسها." },
+      { "q": "هل يمكننا الاعتماد على الخطة البيئية القياسية لدى المقاول؟", "a": "الخطة القياسية لدى المقاول نقطة انطلاق مفيدة، لكنها نادرًا ما تعكس الالتزامات المحددة في دراستكم واشتراطات تصريحكم. لذلك نراجعها مقابل وثائق الموافقة، ونحدد ما ينقصها من إجراءات ضبط أو متطلبات رصد أو مسؤوليات، ثم نعدّلها أو نعدّ خطة للمشروع يلتزم بها المقاول في إجراءاته. وبهذا تُتجنب فجوات قد لا تظهر إلا أثناء التفتيش." },
+      { "q": "ما مستوى التفصيل المناسب لمؤشرات الأداء؟", "a": "ينبغي أن تكون المؤشرات محددة بما يكفي لبيان فاعلية إجراءات الضبط، وبسيطة بما يكفي ليتابعها فريق الموقع. ومن أمثلتها نسبة ملاحظات التفتيش المغلقة في موعدها، وعدد حالات عدم المطابقة المفتوحة، ونتائج الرصد مقارنة بالحدود المطبقة، وسجلات فرز النفايات ونقلها. ونختار مؤشرات مرتبطة بالجوانب البيئية الجوهرية لديكم بدلًا من قائمة طويلة لا يستخدمها أحد." },
+      { "q": "من المسؤول عن تنفيذ خطة الإدارة البيئية؟", "a": "المسؤولية مشتركة، ويجب أن تبيّن الخطة توزيعها بدقة. فمالك المشروع أو مشغّله يبقى مسؤولًا عن الالتزام باشتراطات التصريح، بينما يتحمل المقاولون مسؤولية إجراءات الضبط ضمن نطاق أعمالهم. وتتضمن الخطة مصفوفة مسؤوليات تحدد من ينفذ كل إجراء ومن يفتّشه ويعتمده ويسجّله، بحيث يمكن تضمين هذه الالتزامات في العقود والتحقق منها أثناء التفتيش الميداني." },
+      { "q": "متى ينبغي تحديث خطة الإدارة البيئية؟", "a": "ينبغي تحديث الخطة كلما طرأ تغيير جوهري في التصميم أو طريقة التنفيذ أو حدود الموقع أو المقاول أو اشتراطات التصريح أو المتطلبات المطبقة. كما تُعد نتائج التدقيق والحوادث دافعًا لمراجعتها. وفي غير هذه الحالات تحافظ المراجعة الدورية على توافق الخطة مع واقع العمل في الموقع، على أن يُضبط كل إصدار ويُبلَّغ به من يعتمدون عليه." }
+    ]
+  }
+}

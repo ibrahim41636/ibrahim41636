@@ -1,0 +1,8 @@
+---
+import Article from "@/views/Article.astro";
+import { getInsights, insightSlug } from "@/lib/content";
+export async function getStaticPaths() {
+  return (await getInsights("en")).map((post) => ({ params: { slug: insightSlug(post) }, props: { post } }));
+}
+---
+<Article lang="en" post={Astro.props.post} />

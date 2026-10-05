@@ -1,0 +1,160 @@
+{
+  "order": 14,
+  "services": [
+    "fuel-station-voc-monitoring",
+    "environmental-permitting",
+    "environmental-compliance",
+    "environmental-records",
+    "waste-management",
+    "air-quality-monitoring",
+    "sustainable-buildings",
+    "green-building-advisory",
+    "ghg-carbon-accounting"
+  ],
+  "en": {
+    "name": "Commercial Facilities",
+    "seoTitle": "Environmental Compliance for Commercial Facilities | Selorin",
+    "metaDescription": "Fuel station VOC monitoring, permits, waste management, indoor air and green building advisory for malls, offices, retail and fuel stations in Saudi Arabia.",
+    "cardDescription": "Fuel station VOC monitoring, permits, waste and records management, and building sustainability for malls, offices, retail outlets and service stations.",
+    "overview": [
+      "Commercial facilities such as shopping malls, office towers, retail outlets, service centres and fuel stations are spread across cities and often operated by facility management companies on behalf of owners. Their environmental aspects are less visible than heavy industry but significant in total: fuel vapour emissions, cooking oil and grease from food courts, packaging and general waste, refrigerants, standby generators, car wash and workshop wastewater, and high energy and water use.",
+      "Fuel stations need particular attention. Vapour emissions during tanker unloading and vehicle refuelling, underground tank and pipework integrity, spills and oily wastewater all fall under the Environmental Law and its Implementing Regulations, with compliance monitoring by the National Center for Environmental Compliance (NCEC). Operators with many stations need consistent VOC monitoring methods, records and corrective actions across the network.",
+      "Owners and tenants are also looking at operating costs and sustainability. Energy, water and waste performance affects service charges, tenant expectations and asset value, and green building certification for existing buildings is becoming part of how commercial property is marketed and financed."
+    ],
+    "challenges": [
+      {
+        "title": "Fuel vapour and VOCs",
+        "description": "Tanker unloading and refuelling release VOCs that require vapour recovery, measurement and records at each station."
+      },
+      {
+        "title": "Multi-site consistency",
+        "description": "Retail chains and station networks need the same standards, monitoring methods and documentation at every location."
+      },
+      {
+        "title": "Food court and retail waste",
+        "description": "Malls generate mixed waste, cardboard, food waste and cooking oil that need segregation, grease control and licensed collection."
+      },
+      {
+        "title": "Tenant and contractor behaviour",
+        "description": "Environmental performance depends on tenants and facility contractors, who need clear rules and periodic checks."
+      },
+      {
+        "title": "Energy and water costs",
+        "description": "Cooling, lighting and water use drive operating costs and carbon, but are rarely metered in enough detail to manage."
+      }
+    ],
+    "requirements": [
+      "Environmental permits or registrations for fuel stations and facilities where applicable",
+      "VOC and vapour emission monitoring at fuel stations, with calibration and inspection records",
+      "Spill prevention, tank and pipework integrity checks, and oil interceptor maintenance",
+      "Waste segregation, grease trap and used cooking oil management, and licensed collection under MWAN regulations",
+      "Refrigerant and generator records, and indoor air quality checks in occupied spaces",
+      "Environmental records kept ready for NCEC inspections"
+    ],
+    "support": [
+      {
+        "title": "Fuel station VOC monitoring",
+        "description": "We measure VOC emissions at stations with calibrated instruments, report results per site and recommend corrective actions across the network."
+      },
+      {
+        "title": "Permits and compliance",
+        "description": "We confirm permit requirements, prepare applications and run compliance reviews of stations, malls and commercial buildings."
+      },
+      {
+        "title": "Waste and records",
+        "description": "We set up waste segregation, tenant rules and contractor records so waste and environmental documentation are complete and traceable."
+      },
+      {
+        "title": "Building sustainability",
+        "description": "We assess energy, water and carbon performance and support green building certification for existing and new commercial buildings."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How often should VOC monitoring be carried out at fuel stations?",
+        "a": "The frequency depends on permit conditions and operator standards. We review the requirements that apply to your stations and set a monitoring schedule by region, so every station is covered on time and results are comparable."
+      },
+      {
+        "q": "Who is responsible for environmental compliance in a mall: the owner, the operator or the tenants?",
+        "a": "Responsibilities are shared and defined by permits, leases and facility management contracts. Owners or operators usually hold facility-level obligations, while tenants control their own waste and activities. We map responsibilities and set tenant rules that support compliance."
+      },
+      {
+        "q": "Can an existing office building obtain a green building rating?",
+        "a": "Yes. Rating systems such as LEED and Mostadam include options for existing buildings in operation. We assess current performance, identify improvements needed, and support data collection and documentation for certification."
+      }
+    ]
+  },
+  "ar": {
+    "name": "المنشآت التجارية",
+    "seoTitle": "الامتثال البيئي للمنشآت التجارية | سيلورين",
+    "metaDescription": "رصد المركبات العضوية المتطايرة في محطات الوقود والتصاريح وإدارة النفايات وجودة الهواء الداخلي واستشارات المباني الخضراء للمراكز التجارية والمكاتب ومحطات الوقود.",
+    "cardDescription": "رصد لأبخرة محطات الوقود وتصاريح وإدارة للنفايات والسجلات واستدامة للمباني للمراكز التجارية والمكاتب ومنافذ البيع ومحطات الخدمة.",
+    "overview": [
+      "تنتشر المنشآت التجارية كالمراكز التجارية والأبراج المكتبية ومنافذ البيع ومراكز الخدمة ومحطات الوقود في أرجاء المدن، وكثيرًا ما تديرها شركات إدارة المرافق نيابةً عن الملاك. وجوانبها البيئية أقل ظهورًا من الصناعات الثقيلة لكنها كبيرة في مجموعها: انبعاثات أبخرة الوقود، وزيوت الطهي والشحوم من صالات الطعام، ونفايات التغليف والنفايات العامة، ووسائط التبريد، ومولدات الطوارئ، ومياه صرف مغاسل السيارات والورش، والاستهلاك المرتفع للطاقة والمياه.",
+      "وتستحق محطات الوقود عناية خاصة؛ فانبعاثات الأبخرة أثناء تفريغ الصهاريج وتزويد المركبات بالوقود، وسلامة الخزانات والأنابيب الأرضية، والانسكابات، ومياه الصرف الزيتية، كلها تخضع لنظام البيئة ولوائحه التنفيذية ويتابع الالتزام بها المركز الوطني للرقابة على الالتزام البيئي (NCEC). ويحتاج المشغلون الذين يملكون محطات كثيرة إلى أساليب وسجلات وإجراءات تصحيحية موحدة لرصد المركبات العضوية المتطايرة (VOC) على امتداد الشبكة.",
+      "ويهتم الملاك والمستأجرون كذلك بتكاليف التشغيل والاستدامة؛ إذ يؤثر أداء الطاقة والمياه والنفايات في رسوم الخدمات وتوقعات المستأجرين وقيمة الأصل، وأصبحت شهادات المباني الخضراء للمباني القائمة جزءًا من تسويق العقارات التجارية وتمويلها."
+    ],
+    "challenges": [
+      {
+        "title": "أبخرة الوقود والمركبات العضوية المتطايرة",
+        "description": "يطلق تفريغ الصهاريج والتزود بالوقود مركبات عضوية متطايرة تتطلب استرجاع الأبخرة والقياس والتوثيق في كل محطة."
+      },
+      {
+        "title": "الاتساق بين المواقع",
+        "description": "تحتاج سلاسل البيع وشبكات المحطات إلى المعايير وأساليب الرصد والتوثيق ذاتها في كل موقع."
+      },
+      {
+        "title": "نفايات صالات الطعام والمحلات",
+        "description": "تولّد المراكز التجارية نفايات مختلطة وكراتين وبقايا أغذية وزيوت طهي تحتاج إلى فرز وضبط للشحوم وجمع عبر جهات مرخصة."
+      },
+      {
+        "title": "سلوك المستأجرين والمقاولين",
+        "description": "يعتمد الأداء البيئي على المستأجرين ومقاولي المرافق، الذين يحتاجون إلى قواعد واضحة وعمليات تحقق دورية."
+      },
+      {
+        "title": "تكاليف الطاقة والمياه",
+        "description": "يحدد التبريد والإنارة واستهلاك المياه تكاليف التشغيل والانبعاثات، لكنها نادرًا ما تُقاس بتفصيل كافٍ لإدارتها."
+      }
+    ],
+    "requirements": [
+      "تصاريح بيئية أو تسجيلات لمحطات الوقود والمنشآت عند الاقتضاء",
+      "رصد المركبات العضوية المتطايرة وانبعاثات الأبخرة في محطات الوقود مع سجلات المعايرة والتفتيش",
+      "منع الانسكابات وفحص سلامة الخزانات والأنابيب وصيانة فواصل الزيوت",
+      "فرز النفايات وإدارة مصائد الشحوم وزيوت الطهي المستعملة والجمع عبر جهات مرخصة وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "سجلات وسائط التبريد والمولدات وفحوص جودة الهواء الداخلي في المساحات المشغولة",
+      "سجلات بيئية جاهزة لتفتيش المركز الوطني للرقابة على الالتزام البيئي"
+    ],
+    "support": [
+      {
+        "title": "رصد أبخرة محطات الوقود",
+        "description": "نقيس انبعاثات المركبات العضوية المتطايرة في المحطات بأجهزة معايرة، ونرفع النتائج لكل موقع، ونوصي بإجراءات تصحيحية على مستوى الشبكة."
+      },
+      {
+        "title": "التصاريح والامتثال",
+        "description": "نحدد متطلبات التصاريح، ونعدّ الطلبات، ونراجع امتثال المحطات والمراكز التجارية والمباني التجارية."
+      },
+      {
+        "title": "النفايات والسجلات",
+        "description": "ننظم فرز النفايات وقواعد المستأجرين وسجلات المقاولين لتكون وثائق النفايات والوثائق البيئية مكتملة وقابلة للتتبع."
+      },
+      {
+        "title": "استدامة المباني",
+        "description": "نقيّم أداء الطاقة والمياه والكربون، وندعم الحصول على شهادات المباني الخضراء للمباني التجارية القائمة والجديدة."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "كم مرة ينبغي رصد المركبات العضوية المتطايرة في محطات الوقود؟",
+        "a": "يعتمد عدد مرات الرصد على شروط التصريح ومعايير المشغل. نراجع المتطلبات المنطبقة على محطاتكم ونضع جدول رصد حسب المناطق، لتُغطى كل محطة في موعدها وتكون النتائج قابلة للمقارنة."
+      },
+      {
+        "q": "من المسؤول عن الامتثال البيئي في المركز التجاري: المالك أم المشغل أم المستأجرون؟",
+        "a": "المسؤوليات مشتركة، وتحددها التصاريح وعقود الإيجار وعقود إدارة المرافق؛ فالمالك أو المشغل يتحمل عادةً الالتزامات على مستوى المنشأة، بينما يتحكم المستأجرون في نفاياتهم وأنشطتهم. نحدد المسؤوليات ونضع قواعد للمستأجرين تدعم الامتثال."
+      },
+      {
+        "q": "هل يمكن لمبنى مكتبي قائم الحصول على تصنيف للمباني الخضراء؟",
+        "a": "نعم، تتضمن أنظمة التصنيف مثل LEED ومستدام مسارات للمباني القائمة قيد التشغيل. نقيّم الأداء الحالي، ونحدد التحسينات اللازمة، وندعم جمع البيانات وإعداد الوثائق للحصول على الشهادة."
+      }
+    ]
+  }
+}

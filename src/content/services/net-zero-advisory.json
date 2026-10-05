@@ -1,0 +1,129 @@
+{
+  "category": "sustainability-climate",
+  "order": 3,
+  "formFamily": "sustainability",
+  "industries": ["industrial-manufacturing", "energy", "oil-gas", "real-estate", "logistics-warehousing", "mining-quarrying", "food-beverage"],
+  "related": ["ghg-carbon-accounting", "esg-advisory", "sustainability-advisory"],
+  "en": {
+    "name": "Net Zero Advisory",
+    "seoTitle": "Net Zero and Decarbonisation Advisory in KSA | Selorin",
+    "metaDescription": "Net zero advisory in Saudi Arabia: decarbonisation pathways, emissions targets, abatement cost analysis and a costed roadmap aligned with the 2060 target.",
+    "valueProp": "Turn your emissions baseline into realistic reduction targets and a costed roadmap your board can approve and track.",
+    "cardDescription": "Decarbonisation pathways, science-based target setting, abatement cost analysis and a net-zero roadmap aligned with Saudi Arabia's 2060 net-zero target.",
+    "keyBenefit": "A costed, prioritised path to lower emissions",
+    "definition": "Net zero advisory is the planning work that takes an organisation from a measured emissions baseline to credible reduction targets and a practical plan to achieve them. It covers decarbonisation pathways, target setting using science-based approaches, identification and costing of abatement opportunities, marginal abatement cost analysis, and a phased net-zero roadmap with responsibilities, investment needs and progress indicators.",
+    "overview": [
+      "Saudi Arabia has announced a target of net-zero emissions by 2060, and the Saudi Green Initiative sets the national direction for emissions reduction, renewable energy and environmental restoration. For companies, this translates into questions from boards, investors, lenders and customers: what is your target, how will you achieve it, and what will it cost? A target without a plan quickly loses credibility, and a plan without costs cannot be approved. Net zero advisory connects the two, using your emissions inventory as the starting point.",
+      "We start by modelling a business-as-usual trajectory that reflects expected growth, then identify abatement opportunities across energy efficiency, fuel switching, electrification, on-site or procured renewable electricity, process changes, refrigerant management, fleet and logistics, and supplier engagement for Scope 3. Each measure is assessed for reduction potential, capital and operating cost, timing and technical feasibility. A marginal abatement cost curve then ranks measures by cost per tonne of CO2e avoided, showing which actions save money, which need investment, and where residual emissions remain.",
+      "Targets are set using science-based approaches, such as absolute contraction or sector pathways where they exist, so they can be explained to stakeholders. If you intend to submit targets to the Science Based Targets initiative (SBTi), we prepare the analysis against its published criteria; validation itself is carried out by SBTi. The final roadmap sets out near-term and long-term milestones, owners, investment needs and indicators, and defines how residual emissions and any carbon credits will be treated, so the plan stays transparent rather than relying on offsets."
+    ],
+    "whenYouNeed": [
+      "Your board has committed to net zero and needs a credible plan behind it.",
+      "Investors or lenders ask for emissions targets and evidence of a transition plan.",
+      "You want to set near-term reduction targets using science-based methods.",
+      "Major capital decisions on energy, fuel or equipment should reflect future emissions.",
+      "You need to compare reduction measures by cost per tonne of CO2e avoided.",
+      "Customers or a parent company require suppliers to show decarbonisation targets."
+    ],
+    "deliver": [
+      { "title": "Baseline and trajectory", "description": "A review of your emissions baseline and a business-as-usual projection reflecting planned growth, production changes and known projects." },
+      { "title": "Target options", "description": "Short-, medium- and long-term target options using science-based approaches, with the implications of each for ambition, cost and feasibility." },
+      { "title": "Abatement opportunity register", "description": "A register of reduction measures with estimated emission savings, capital and operating costs, implementation timing, dependencies and technical risks for each measure." },
+      { "title": "Marginal abatement cost analysis", "description": "A marginal abatement cost curve ranking measures by cost per tonne of CO2e, highlighting cost-saving actions and those that need investment or external support." },
+      { "title": "Net-zero roadmap", "description": "A phased roadmap with milestones, owners, investment profile and progress indicators, covering residual emissions and the role, if any, of carbon removals or credits." },
+      { "title": "Board and stakeholder materials", "description": "Concise decision papers and presentations explaining targets, pathways, costs and risks for board approval and external communication." }
+    ],
+    "approach": [
+      { "title": "Baseline review", "description": "We review your GHG inventory for completeness and suitability as a base year, and agree the scopes and boundaries the targets will cover." },
+      { "title": "Trajectory modelling", "description": "We project business-as-usual emissions using growth plans, production forecasts and expected changes in grid electricity and fuel use." },
+      { "title": "Opportunity identification", "description": "Through site visits, data review and workshops, we identify reduction measures across operations, energy supply, fleet and the supply chain." },
+      { "title": "Cost analysis", "description": "We estimate reduction potential, cost and timing for each measure, then build the marginal abatement cost curve and test key sensitivities." },
+      { "title": "Target setting", "description": "We model target options against the pathways, discuss trade-offs with management and agree targets that are ambitious and achievable." },
+      { "title": "Roadmap", "description": "We prepare the phased roadmap, governance arrangements and tracking indicators, and the materials needed for board approval and disclosure." }
+    ],
+    "deliverables": [
+      { "item": "Baseline review memo", "format": "Findings and base-year recommendations (PDF)", "timing": "Start of engagement" },
+      { "item": "Emissions trajectory model", "format": "Business-as-usual and reduction scenarios (Excel)", "timing": "Modelling stage" },
+      { "item": "Abatement opportunity register", "format": "Measures with savings, costs and timing (Excel)", "timing": "Analysis stage" },
+      { "item": "Marginal abatement cost curve", "format": "Chart and supporting calculations (Excel + PDF)", "timing": "Analysis stage" },
+      { "item": "Target-setting report", "format": "Target options, method and recommendation (Word + PDF)", "timing": "Target-setting stage" },
+      { "item": "Net-zero roadmap", "format": "Phased plan with milestones, owners and KPIs (PDF + editable file)", "timing": "Final stage" },
+      { "item": "Board presentation", "format": "Decision deck (PowerPoint)", "timing": "Approval stage" }
+    ],
+    "regulatoryContext": [
+      "Saudi Arabia's target of net-zero emissions by 2060",
+      "Saudi Green Initiative and Vision 2030 as the national direction for emissions reduction and renewable energy",
+      "GHG Protocol standards for the base-year inventory and target boundary",
+      "Science Based Targets initiative (SBTi) criteria, where companies choose to seek target validation",
+      "IFRS S2 (ISSB) disclosures on climate-related targets and transition plans"
+    ],
+    "faqs": [
+      { "q": "What is the difference between net zero and carbon neutrality?", "a": "Carbon neutrality usually means balancing current emissions with an equivalent volume of carbon credits, regardless of how far emissions have fallen. Net zero, as defined by most recognised frameworks, requires deep reductions across the value chain first, with only residual emissions balanced by permanent carbon removals. A net-zero plan therefore focuses on cutting emissions and treats credits as a limited, transparent supplement rather than the main tool." },
+      { "q": "Can you get our targets validated by SBTi?", "a": "Target validation is carried out by the Science Based Targets initiative itself, and companies submit their targets directly. We help you prepare: checking your inventory against the criteria, modelling targets with the relevant methods, and assembling the information needed for submission. We do not represent SBTi or guarantee a validation outcome; our role is to make sure your targets are well founded and properly documented." },
+      { "q": "Does the 2060 target mean our company must reach net zero by 2060?", "a": "The 2060 target is a national commitment. It does not by itself set a company-specific deadline, but it signals the direction of national policy, energy supply and future regulation. Many companies set their own targets based on their sector, investor expectations and customer requirements, which may be earlier or later. We help you choose a target year and interim milestones that you can justify and achieve." },
+      { "q": "Do we need a complete GHG inventory before starting?", "a": "A reliable baseline is needed, but it does not have to be perfect. Scope 1 and 2 data of reasonable quality is usually enough to begin pathway work, while Scope 3 can be estimated through screening and improved later. If no inventory exists, we recommend preparing one first through our GHG and carbon accounting service, since targets set against an unreliable baseline are difficult to defend." },
+      { "q": "What is a marginal abatement cost curve?", "a": "A marginal abatement cost curve is a chart that ranks emission reduction measures by their cost per tonne of CO2e avoided, with the width of each bar showing the volume of emissions reduced. It shows which measures save money over their lifetime, which require net investment, and how much reduction is available at each cost level. It helps management prioritise measures and plan capital spending." }
+    ]
+  },
+  "ar": {
+    "name": "استشارات الحياد الصفري",
+    "seoTitle": "استشارات الحياد الصفري وإزالة الكربون في السعودية | سيلورين",
+    "metaDescription": "استشارات الحياد الصفري في السعودية: مسارات إزالة الكربون، ومستهدفات خفض الانبعاثات، وتحليل تكلفة الخفض، وخارطة طريق متسقة مع مستهدف المملكة 2060.",
+    "valueProp": "حوّلوا خط أساس انبعاثاتكم إلى مستهدفات خفض واقعية وخارطة طريق محددة التكاليف يعتمدها مجلس الإدارة ويتابع تنفيذها.",
+    "cardDescription": "مسارات إزالة الكربون، ووضع المستهدفات بمنهجيات قائمة على العلم، وتحليل تكلفة الخفض، وخارطة طريق للحياد الصفري متسقة مع مستهدف المملكة 2060.",
+    "keyBenefit": "مسار واضح ومحدد التكلفة لخفض الانبعاثات",
+    "definition": "استشارات الحياد الصفري هي العمل التخطيطي الذي ينقل المنشأة من خط أساس مقيس للانبعاثات إلى مستهدفات خفض موثوقة وخطة عملية لتحقيقها. وتشمل مسارات إزالة الكربون، ووضع المستهدفات بمنهجيات قائمة على العلم، وتحديد فرص الخفض وتقدير تكاليفها، وتحليل التكلفة الحدية للخفض، وإعداد خارطة طريق مرحلية تحدد المسؤوليات والاستثمارات المطلوبة ومؤشرات متابعة التقدم.",
+    "overview": [
+      "أعلنت المملكة العربية السعودية مستهدف الوصول إلى الحياد الصفري بحلول عام 2060، وترسم مبادرة السعودية الخضراء التوجه الوطني لخفض الانبعاثات والتوسع في الطاقة المتجددة وإعادة تأهيل البيئة. وينعكس ذلك على الشركات في صورة أسئلة يطرحها مجلس الإدارة والمستثمرون والممولون والعملاء: ما مستهدفكم؟ وكيف ستحققونه؟ وكم سيكلف؟ فالمستهدف بلا خطة يفقد مصداقيته سريعًا، والخطة بلا تكاليف لا يمكن اعتمادها. وتربط استشارات الحياد الصفري بين الأمرين، منطلقةً من حصر الانبعاثات لديكم.",
+      "نبدأ بنمذجة مسار الانبعاثات في ظل استمرار الأعمال كالمعتاد بما يعكس النمو المتوقع، ثم نحدد فرص الخفض في كفاءة الطاقة، والتحول إلى وقود أقل انبعاثًا، والكهربة، والكهرباء المتجددة المولدة في الموقع أو المشتراة، وتعديل العمليات، وإدارة غازات التبريد، والأساطيل والخدمات اللوجستية، وإشراك الموردين في خفض انبعاثات النطاق 3. ونقيّم كل إجراء من حيث إمكانات الخفض والتكلفة الرأسمالية والتشغيلية والتوقيت والجدوى الفنية. ثم يرتب منحنى التكلفة الحدية للخفض الإجراءات حسب تكلفة الطن المتجنب من مكافئ ثاني أكسيد الكربون، فيتضح ما يحقق وفرًا وما يحتاج إلى استثمار وما يتبقى من انبعاثات.",
+      "نضع المستهدفات بمنهجيات قائمة على العلم، مثل نهج الخفض المطلق أو المسارات القطاعية حيثما وُجدت، لتكون قابلة للشرح أمام أصحاب المصلحة. وإذا كنتم تعتزمون تقديم مستهدفاتكم إلى مبادرة الأهداف القائمة على العلم (SBTi)، نُعد التحليل وفق معاييرها المنشورة، علمًا بأن اعتماد المستهدفات تتولاه المبادرة نفسها. وتحدد خارطة الطريق النهائية المعالم المرحلية القريبة والبعيدة، والمسؤولين، والاحتياجات الاستثمارية، ومؤشرات المتابعة، وتوضح كيفية التعامل مع الانبعاثات المتبقية وأي أرصدة كربونية، لتبقى الخطة شفافة لا تعتمد على التعويض."
+    ],
+    "whenYouNeed": [
+      "التزم مجلس الإدارة بالحياد الصفري ويحتاج إلى خطة موثوقة تدعم هذا الالتزام.",
+      "يطلب المستثمرون أو الممولون مستهدفات للانبعاثات وما يثبت وجود خطة تحول.",
+      "ترغبون في وضع مستهدفات خفض قريبة المدى بمنهجيات قائمة على العلم.",
+      "قرارات رأسمالية كبرى في الطاقة أو الوقود أو المعدات ينبغي أن تراعي الانبعاثات المستقبلية.",
+      "تحتاجون إلى مقارنة إجراءات الخفض حسب تكلفة الطن المتجنب من مكافئ ثاني أكسيد الكربون.",
+      "يشترط العملاء أو الشركة الأم أن يقدم الموردون مستهدفات لإزالة الكربون."
+    ],
+    "deliver": [
+      { "title": "خط الأساس والمسار المتوقع", "description": "مراجعة خط أساس الانبعاثات، وإسقاط لمسارها في ظل استمرار الأعمال كالمعتاد يعكس النمو المخطط وتغيرات الإنتاج والمشاريع المعروفة." },
+      { "title": "خيارات المستهدفات", "description": "خيارات لمستهدفات قصيرة ومتوسطة وطويلة المدى بمنهجيات قائمة على العلم، مع بيان أثر كل خيار في مستوى الطموح والتكلفة والجدوى." },
+      { "title": "سجل فرص الخفض", "description": "سجل بإجراءات الخفض يتضمن لكل إجراء الوفر المقدر في الانبعاثات، والتكاليف الرأسمالية والتشغيلية، وتوقيت التنفيذ، والاعتماديات، والمخاطر الفنية." },
+      { "title": "تحليل التكلفة الحدية للخفض", "description": "منحنى للتكلفة الحدية للخفض يرتب الإجراءات حسب تكلفة الطن من مكافئ ثاني أكسيد الكربون، ويبرز ما يحقق وفرًا وما يحتاج إلى استثمار أو دعم خارجي." },
+      { "title": "خارطة طريق الحياد الصفري", "description": "خارطة طريق مرحلية بمعالم ومسؤولين وملف استثماري ومؤشرات تقدم، تغطي الانبعاثات المتبقية ودور عمليات إزالة الكربون أو الأرصدة الكربونية إن وُجد." },
+      { "title": "مواد مجلس الإدارة وأصحاب المصلحة", "description": "أوراق قرار وعروض موجزة تشرح المستهدفات والمسارات والتكاليف والمخاطر، تمهيدًا لاعتماد مجلس الإدارة والتواصل الخارجي." }
+    ],
+    "approach": [
+      { "title": "مراجعة خط الأساس", "description": "نراجع حصر الانبعاثات للتأكد من اكتماله وصلاحيته سنةَ أساس، ونتفق على النطاقات والحدود التي ستغطيها المستهدفات." },
+      { "title": "نمذجة المسار", "description": "نُسقط الانبعاثات في ظل استمرار الأعمال كالمعتاد باستخدام خطط النمو وتوقعات الإنتاج والتغيرات المتوقعة في كهرباء الشبكة واستهلاك الوقود." },
+      { "title": "تحديد الفرص", "description": "من خلال الزيارات الميدانية ومراجعة البيانات وورش العمل، نحدد إجراءات الخفض في العمليات وإمدادات الطاقة والأساطيل وسلسلة الإمداد." },
+      { "title": "تحليل التكلفة", "description": "نقدّر إمكانات الخفض والتكلفة والتوقيت لكل إجراء، ثم نبني منحنى التكلفة الحدية للخفض ونختبر حساسية الافتراضات الرئيسية." },
+      { "title": "وضع المستهدفات", "description": "نقارن خيارات المستهدفات بالمسارات المنمذجة، ونناقش المفاضلات مع الإدارة، ونتفق على مستهدفات طموحة وقابلة للتحقيق." },
+      { "title": "خارطة الطريق", "description": "نُعد خارطة الطريق المرحلية وترتيبات الحوكمة ومؤشرات المتابعة، والمواد اللازمة لاعتماد مجلس الإدارة والإفصاح." }
+    ],
+    "deliverables": [
+      { "item": "مذكرة مراجعة خط الأساس", "format": "النتائج والتوصيات بشأن سنة الأساس (PDF)", "timing": "بداية المشروع" },
+      { "item": "نموذج مسار الانبعاثات", "format": "سيناريو استمرار الأعمال كالمعتاد وسيناريوهات الخفض (Excel)", "timing": "مرحلة النمذجة" },
+      { "item": "سجل فرص الخفض", "format": "الإجراءات مع الوفر والتكاليف والتوقيت (Excel)", "timing": "مرحلة التحليل" },
+      { "item": "منحنى التكلفة الحدية للخفض", "format": "رسم بياني وحسابات داعمة (Excel مع PDF)", "timing": "مرحلة التحليل" },
+      { "item": "تقرير وضع المستهدفات", "format": "خيارات المستهدفات والمنهجية والتوصية (Word وPDF)", "timing": "مرحلة وضع المستهدفات" },
+      { "item": "خارطة طريق الحياد الصفري", "format": "خطة مرحلية بالمعالم والمسؤولين ومؤشرات الأداء (PDF وملف قابل للتحرير)", "timing": "المرحلة الختامية" },
+      { "item": "عرض مجلس الإدارة", "format": "عرض لاتخاذ القرار (PowerPoint)", "timing": "مرحلة الاعتماد" }
+    ],
+    "regulatoryContext": [
+      "مستهدف المملكة العربية السعودية للوصول إلى الحياد الصفري بحلول 2060",
+      "مبادرة السعودية الخضراء ورؤية 2030 بوصفهما التوجه الوطني لخفض الانبعاثات والطاقة المتجددة",
+      "معايير بروتوكول غازات الاحتباس الحراري لحصر سنة الأساس وتحديد حدود المستهدفات",
+      "معايير مبادرة الأهداف القائمة على العلم (SBTi) للشركات التي تختار طلب اعتماد مستهدفاتها",
+      "إفصاحات معيار IFRS S2 (ISSB) المتعلقة بالمستهدفات المناخية وخطط التحول"
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين الحياد الصفري والحياد الكربوني؟", "a": "يُقصد بالحياد الكربوني عادةً موازنة الانبعاثات الحالية بكمية مكافئة من الأرصدة الكربونية، بصرف النظر عن مقدار ما خُفّض منها. أما الحياد الصفري وفق معظم الأطر المعترف بها فيتطلب أولًا خفضًا عميقًا للانبعاثات على امتداد سلسلة القيمة، على ألا يُوازن إلا ما يتبقى منها بعمليات إزالة دائمة للكربون. لذلك تركز خطة الحياد الصفري على الخفض، وتعامل الأرصدة مكمّلًا محدودًا وشفافًا لا أداة رئيسية." },
+      { "q": "هل يمكنكم الحصول على اعتماد مستهدفاتنا من مبادرة SBTi؟", "a": "تتولى مبادرة الأهداف القائمة على العلم بنفسها اعتماد المستهدفات، وتقدم الشركات مستهدفاتها إليها مباشرة. ونحن نساعدكم في الاستعداد: مراجعة حصر الانبعاثات مقابل المعايير، ونمذجة المستهدفات بالمنهجيات المناسبة، وتجهيز المعلومات المطلوبة للتقديم. ولا نمثل المبادرة ولا نضمن نتيجة الاعتماد، وإنما نحرص على أن تكون مستهدفاتكم مبنية على أسس سليمة وموثقة توثيقًا كافيًا." },
+      { "q": "هل يعني مستهدف 2060 أن على شركتنا بلوغ الحياد الصفري بحلول ذلك العام؟", "a": "مستهدف 2060 التزام على المستوى الوطني، ولا يحدد بذاته موعدًا لكل شركة، لكنه يشير إلى اتجاه السياسات الوطنية وإمدادات الطاقة والتنظيمات المستقبلية. وتضع شركات كثيرة مستهدفاتها الخاصة بناءً على قطاعها وتوقعات مستثمريها ومتطلبات عملائها، وقد تكون أبكر من ذلك أو أبعد. ونساعدكم في اختيار سنة مستهدفة ومعالم مرحلية يمكنكم تبريرها وتحقيقها." },
+      { "q": "هل نحتاج إلى حصر كامل للانبعاثات قبل البدء؟", "a": "يلزم خط أساس موثوق، لكن لا يُشترط أن يكون مثاليًا. فبيانات النطاقين 1 و2 بجودة معقولة تكفي عادةً لبدء العمل على المسارات، بينما يمكن تقدير النطاق 3 بالفحص الأولي وتحسينه لاحقًا. وإذا لم يكن لديكم حصر، نوصي بإعداده أولًا من خلال خدمة حصر الانبعاثات والمحاسبة الكربونية، لأن المستهدفات المبنية على خط أساس غير موثوق يصعب الدفاع عنها." },
+      { "q": "ما منحنى التكلفة الحدية للخفض؟", "a": "منحنى التكلفة الحدية للخفض رسم بياني يرتب إجراءات خفض الانبعاثات حسب تكلفة الطن المتجنب من مكافئ ثاني أكسيد الكربون، ويمثل عرض كل عمود حجم الانبعاثات التي يخفضها الإجراء. ويبيّن الإجراءات التي تحقق وفرًا على مدى عمرها، وتلك التي تتطلب استثمارًا صافيًا، وحجم الخفض المتاح عند كل مستوى تكلفة، مما يساعد الإدارة على ترتيب الأولويات وتخطيط الإنفاق الرأسمالي." }
+    ]
+  }
+}

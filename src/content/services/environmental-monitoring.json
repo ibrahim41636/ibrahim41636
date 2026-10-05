@@ -1,0 +1,127 @@
+{
+  "category": "monitoring-measurement",
+  "order": 1,
+  "formFamily": "monitoring",
+  "industries": ["industrial-manufacturing", "construction", "infrastructure", "energy", "oil-gas", "mining-quarrying", "waste-recycling", "government-public-sector"],
+  "related": ["air-quality-monitoring", "water-quality-monitoring", "environmental-management-plans", "environmental-compliance"],
+  "en": {
+    "name": "Environmental Monitoring",
+    "seoTitle": "Environmental Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental monitoring programmes in Saudi Arabia: monitoring plans, field sampling, lab coordination, QA/QC and reports that support permit compliance.",
+    "valueProp": "Monitoring programmes designed around your permit conditions, delivering reliable field data and clear periodic reports you can submit with confidence.",
+    "cardDescription": "Design and delivery of multi-media environmental monitoring programmes: sampling plans, field work, laboratory coordination, data QA/QC and periodic compliance reports.",
+    "keyBenefit": "Defensible environmental data that keeps permit reporting on track",
+    "definition": "Environmental monitoring is the planned, repeated measurement of environmental conditions — such as air, water, soil, groundwater and noise — at a site and its surroundings to track performance against permit conditions and baselines. A monitoring programme defines what is measured, where, how often and by which method, then turns field and laboratory results into verified data and periodic reports.",
+    "overview": [
+      "Most environmental permits and environmental management plans in Saudi Arabia carry monitoring commitments. Facilities are expected to measure their effects on air, water, soil and noise and to report the results to the National Center for Environmental Compliance (NCEC) or the relevant zone authority. In practice, monitoring often grows piecemeal: one contractor for air, another for groundwater, a laboratory chosen on price, and reports assembled at the last minute. The result is data that is hard to compare between periods and difficult to defend when questioned.",
+      "Our environmental monitoring service treats monitoring as one programme rather than a set of separate jobs. We start from your permit conditions, environmental management plan and site risks, then define monitoring locations, parameters, frequency and methods across all relevant media. We carry out field measurements and soil, sediment and groundwater sampling, maintain chain of custody, coordinate laboratory analysis and apply data quality checks before anything is reported. Media-specific work such as air, dust, noise or water quality monitoring is integrated into the same plan and reporting cycle.",
+      "For the business, a single coherent programme means fewer gaps between commitments and what is actually measured, consistent data across reporting periods, and early visibility of trends before they become compliance issues. Periodic reports are structured for submission and for internal decision-making, with clear comparison against baseline and applicable standards. Whether you operate one facility or several sites, the programme can be scaled, adjusted as operations change, and aligned with renewals of environmental permits."
+    ],
+    "whenYouNeed": [
+      "Your environmental permit or approved EIA includes periodic monitoring and reporting commitments.",
+      "You need a baseline of soil, groundwater or air conditions before construction or expansion.",
+      "Monitoring is split between several contractors and results are inconsistent between periods.",
+      "An inspection or audit has raised questions about the reliability of your monitoring data.",
+      "You are renewing a permit and need a consolidated record of monitoring results.",
+      "A spill, complaint or process change requires targeted investigation of potential impacts."
+    ],
+    "deliver": [
+      { "title": "Monitoring programme design", "description": "A monitoring plan defining locations, parameters, frequency, methods and responsibilities, mapped against your permit conditions and environmental management plan commitments." },
+      { "title": "Field measurements", "description": "On-site measurement of field parameters using calibrated instruments, with field records documenting conditions, equipment and any deviations from the plan." },
+      { "title": "Soil and sediment sampling", "description": "Collection of soil and sediment samples using appropriate methods, containers and preservation, with sampling locations recorded and photographed for traceability." },
+      { "title": "Groundwater sampling", "description": "Well purging, field parameter stabilisation and groundwater sample collection, with water level measurements and well condition notes for each monitoring event." },
+      { "title": "Laboratory coordination and QA/QC", "description": "Chain-of-custody management, coordination of laboratory analysis, review of laboratory reports and data validation using blanks, duplicates and consistency checks." },
+      { "title": "Periodic monitoring reports", "description": "Reports presenting results, trends and comparison with baselines and applicable standards, with exceedances flagged and recommended follow-up actions stated clearly." }
+    ],
+    "approach": [
+      { "title": "Requirements review", "description": "We review permit conditions, EIA and environmental management plan commitments, site activities and previous data to identify what must be monitored and why." },
+      { "title": "Programme design", "description": "We define monitoring locations, parameters, frequency, sampling methods and laboratory analysis, and agree the plan and reporting schedule with your team." },
+      { "title": "Mobilisation", "description": "We prepare equipment, calibration records, sample containers and site access arrangements, and confirm health and safety requirements before field work starts." },
+      { "title": "Field execution", "description": "We carry out measurements and sampling according to the plan, maintain chain of custody and dispatch samples to the laboratory within holding times." },
+      { "title": "Data validation", "description": "We check laboratory and field data for completeness, accuracy and consistency, and compare results with baselines, previous rounds and applicable standards." },
+      { "title": "Reporting and review", "description": "We issue periodic reports, discuss findings with your team and adjust the programme where results or operational changes call for it." }
+    ],
+    "deliverables": [
+      { "item": "Environmental monitoring plan", "format": "Plan document with location map and parameter schedule (PDF)", "timing": "Programme start" },
+      { "item": "Field records and calibration logs", "format": "Field sheets and instrument records (PDF)", "timing": "Each monitoring round" },
+      { "item": "Chain-of-custody records", "format": "Signed custody forms (PDF)", "timing": "Each sampling event" },
+      { "item": "Validated monitoring dataset", "format": "Structured data file (Excel)", "timing": "After each round" },
+      { "item": "Periodic monitoring report", "format": "Report with tables, charts and trend analysis (PDF)", "timing": "Per agreed reporting cycle" },
+      { "item": "Programme review memo", "format": "Recommendations for programme adjustments (PDF)", "timing": "Annually or on operational change" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law and its Implementing Regulations, which set monitoring and reporting obligations linked to environmental permits.",
+      "National Center for Environmental Compliance (NCEC), which issues environmental permits and oversees compliance monitoring and inspections.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON environmental requirements for facilities located within their jurisdictions.",
+      "Monitoring commitments in approved environmental impact assessments (EIA) and environmental management plans.",
+      "ISO 14001 requirements for monitoring, measurement and evaluation of environmental performance, where an environmental management system is in place."
+    ],
+    "faqs": [
+      { "q": "What is the difference between environmental monitoring and media-specific monitoring services?", "a": "Environmental monitoring is the overall programme: it decides what needs to be measured across all media, where and how often, and brings the results together in one reporting cycle. Air quality, dust, noise, water quality and VOC monitoring are specific components that can sit inside that programme. Many facilities need both — a programme that covers their permit commitments and specialist measurement for particular sources." },
+      { "q": "How do you decide on monitoring locations and frequency?", "a": "We base them on your permit conditions, EIA and environmental management plan commitments, the location of emission and discharge sources, site layout, receptors such as residential areas or water bodies, and groundwater flow where relevant. Where a permit specifies frequency, we follow it. Where it does not, we propose a frequency that reflects risk and variability, and agree it with your team before field work begins." },
+      { "q": "Do you carry out the laboratory analysis yourselves?", "a": "We coordinate laboratory analysis with an appropriate laboratory selected for the parameters and methods required, and manage sample handling, chain of custody and holding times. We then review laboratory reports and validate the data before it is used. If your permit or the authority requires a laboratory with specific recognition, we confirm that requirement at the planning stage so the selection matches it." },
+      { "q": "Can you take over an existing monitoring programme?", "a": "Yes. We review your current plan, historical data and reports, identify gaps against your permit commitments, and check whether past results are comparable. We then propose any adjustments to locations, parameters or methods, keeping continuity with the existing dataset wherever possible so that trends remain meaningful across the transition." },
+      { "q": "What happens if a result exceeds an applicable standard?", "a": "We flag the exceedance in the data review, check field and laboratory records for possible sampling or analytical issues, and inform your team promptly. Where appropriate we recommend confirmatory sampling and an investigation of likely causes. The periodic report records the exceedance, the checks carried out and the recommended corrective actions, so the response is documented clearly for any regulatory follow-up." }
+    ]
+  },
+  "ar": {
+    "name": "الرصد البيئي",
+    "seoTitle": "الرصد البيئي في المملكة العربية السعودية | سيلورين",
+    "metaDescription": "برامج الرصد البيئي في المملكة: خطط الرصد، والقياسات الميدانية، وعينات التربة والمياه الجوفية، وضبط جودة البيانات، وتقارير دورية تدعم الالتزام بالتصريح.",
+    "valueProp": "برامج رصد بيئي مصممة وفق اشتراطات تصريحكم البيئي، تقدم بيانات ميدانية موثوقة وتقارير دورية واضحة جاهزة للتقديم.",
+    "cardDescription": "تصميم وتنفيذ برامج الرصد البيئي متعددة الأوساط: خطط أخذ العينات، والعمل الميداني، وتنسيق التحاليل المخبرية، وضبط جودة البيانات، والتقارير الدورية.",
+    "keyBenefit": "بيانات بيئية موثوقة تحافظ على انتظام تقارير التصريح",
+    "definition": "الرصد البيئي هو القياس المخطط والمتكرر للظروف البيئية في الموقع ومحيطه، مثل الهواء والمياه والتربة والمياه الجوفية والضوضاء، بهدف متابعة الأداء مقارنةً باشتراطات التصريح البيئي والقيم المرجعية. ويحدد برنامج الرصد ما يُقاس وأين وبأي تكرار وبأي طريقة، ثم يحوّل النتائج الميدانية والمخبرية إلى بيانات موثّقة وتقارير دورية.",
+    "overview": [
+      "تتضمن معظم التصاريح البيئية وخطط الإدارة البيئية في المملكة التزامات بالرصد، إذ يُنتظر من المنشآت قياس آثارها على الهواء والمياه والتربة ومستويات الضوضاء، ورفع النتائج إلى المركز الوطني للرقابة على الالتزام البيئي (NCEC) أو الجهة المختصة في المدينة الصناعية. غير أن الرصد كثيرًا ما يتشكل بصورة مجزأة: مقاول لجودة الهواء، وآخر للمياه الجوفية، ومختبر يُختار على أساس السعر، وتقارير تُجمع في اللحظة الأخيرة. والنتيجة بيانات يصعب مقارنتها بين الفترات ويصعب الدفاع عنها عند المراجعة.",
+      "نتعامل في خدمة الرصد البيئي مع الرصد بوصفه برنامجًا واحدًا متكاملًا لا مجموعة مهام منفصلة. ننطلق من اشتراطات التصريح البيئي وخطة الإدارة البيئية والمخاطر الخاصة بالموقع، ثم نحدد مواقع الرصد والمؤشرات المطلوبة وتكرار القياس وطرقه في جميع الأوساط ذات الصلة. ونجري القياسات الميدانية ونأخذ عينات التربة والرواسب والمياه الجوفية، مع الحفاظ على سلسلة حيازة العينات وتنسيق التحاليل المخبرية وتطبيق ضوابط الجودة على البيانات قبل اعتمادها. كما تُدمج أعمال الرصد المتخصصة، كجودة الهواء والغبار والضوضاء وجودة المياه، في الخطة ذاتها ودورة التقارير نفسها.",
+      "يعني البرنامج المتكامل للمنشأة فجوات أقل بين الالتزامات وما يُقاس فعليًا، وبيانات متسقة بين فترات التقارير، ورؤية مبكرة للاتجاهات قبل أن تتحول إلى مشكلات امتثال. وتُعد التقارير الدورية بصيغة مناسبة للتقديم إلى الجهات المختصة ولدعم القرار الداخلي، مع مقارنة واضحة بالقيم المرجعية والمعايير المعمول بها. وسواء كنتم تديرون منشأة واحدة أو عدة مواقع، يمكن توسيع البرنامج وتعديله مع تغيّر العمليات ومواءمته مع مواعيد تجديد التصاريح البيئية."
+    ],
+    "whenYouNeed": [
+      "يتضمن تصريحكم البيئي أو دراسة تقييم الأثر البيئي المعتمدة التزامات بالرصد والتقارير الدورية.",
+      "تحتاجون إلى بيانات مرجعية لحالة التربة أو المياه الجوفية أو الهواء قبل الإنشاء أو التوسعة.",
+      "تتوزع أعمال الرصد على عدة مقاولين وتتفاوت النتائج من فترة إلى أخرى.",
+      "أثار تفتيش أو تدقيق تساؤلات حول موثوقية بيانات الرصد لديكم.",
+      "تستعدون لتجديد التصريح البيئي وتحتاجون إلى سجل موحد لنتائج الرصد.",
+      "يستدعي تسرب أو شكوى أو تغيير تشغيلي تحقيقًا موجّهًا في الآثار المحتملة."
+    ],
+    "deliver": [
+      { "title": "تصميم برنامج الرصد", "description": "خطة رصد تحدد المواقع والمؤشرات وتكرار القياس والطرق والمسؤوليات، مع ربطها باشتراطات التصريح البيئي والتزامات خطة الإدارة البيئية." },
+      { "title": "القياسات الميدانية", "description": "قياس المؤشرات الميدانية في الموقع بأجهزة معايرة، مع سجلات ميدانية توثق الظروف والأجهزة المستخدمة وأي انحراف عن الخطة المعتمدة." },
+      { "title": "عينات التربة والرواسب", "description": "جمع عينات التربة والرواسب بالطرق والعبوات ووسائل الحفظ المناسبة، مع تسجيل مواقع الاعتيان وتصويرها لضمان إمكانية التتبع." },
+      { "title": "عينات المياه الجوفية", "description": "تطهير الآبار وانتظار استقرار المؤشرات الميدانية ثم جمع العينات، مع قياس منسوب المياه وتوثيق حالة كل بئر في كل جولة رصد." },
+      { "title": "التنسيق المخبري وضبط الجودة", "description": "إدارة سلسلة حيازة العينات وتنسيق التحاليل المخبرية ومراجعة تقارير المختبر، والتحقق من البيانات باستخدام العينات الضابطة والمكررة واختبارات الاتساق." },
+      { "title": "تقارير الرصد الدورية", "description": "تقارير تعرض النتائج والاتجاهات ومقارنتها بالقيم المرجعية والمعايير المعمول بها، مع إبراز التجاوزات وتحديد الإجراءات التصحيحية الموصى بها." }
+    ],
+    "approach": [
+      { "title": "مراجعة المتطلبات", "description": "نراجع اشتراطات التصريح والتزامات دراسة تقييم الأثر وخطة الإدارة البيئية وأنشطة الموقع والبيانات السابقة لتحديد ما يجب رصده وأسبابه." },
+      { "title": "تصميم البرنامج", "description": "نحدد مواقع الرصد والمؤشرات وتكرار القياس وطرق الاعتيان والتحاليل المخبرية، ونتفق مع فريقكم على الخطة وجدول التقارير." },
+      { "title": "التجهيز", "description": "نجهز الأجهزة وسجلات المعايرة وعبوات العينات وترتيبات دخول الموقع، ونتأكد من متطلبات الصحة والسلامة قبل بدء العمل الميداني." },
+      { "title": "التنفيذ الميداني", "description": "ننفذ القياسات وأخذ العينات وفق الخطة، ونحافظ على سلسلة الحيازة، ونرسل العينات إلى المختبر ضمن مدد الحفظ المحددة." },
+      { "title": "التحقق من البيانات", "description": "نفحص البيانات الميدانية والمخبرية من حيث الاكتمال والدقة والاتساق، ونقارنها بالقيم المرجعية والجولات السابقة والمعايير المعمول بها." },
+      { "title": "التقارير والمراجعة", "description": "نصدر التقارير الدورية ونناقش النتائج مع فريقكم، ونعدّل البرنامج متى استدعت النتائج أو التغييرات التشغيلية ذلك." }
+    ],
+    "deliverables": [
+      { "item": "خطة الرصد البيئي", "format": "وثيقة الخطة مع خريطة المواقع وجدول المؤشرات (PDF)", "timing": "بداية البرنامج" },
+      { "item": "السجلات الميدانية وسجلات المعايرة", "format": "نماذج ميدانية وسجلات الأجهزة (PDF)", "timing": "كل جولة رصد" },
+      { "item": "سجلات سلسلة حيازة العينات", "format": "نماذج حيازة موقعة (PDF)", "timing": "كل عملية اعتيان" },
+      { "item": "قاعدة بيانات الرصد المعتمدة", "format": "ملف بيانات منظم (Excel)", "timing": "بعد كل جولة" },
+      { "item": "تقرير الرصد الدوري", "format": "تقرير بجداول ورسوم بيانية وتحليل للاتجاهات (PDF)", "timing": "وفق دورة التقارير المتفق عليها" },
+      { "item": "مذكرة مراجعة البرنامج", "format": "توصيات لتعديل البرنامج (PDF)", "timing": "سنويًا أو عند التغيير التشغيلي" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة ولوائحه التنفيذية، التي تحدد التزامات الرصد ورفع التقارير المرتبطة بالتصاريح البيئية.",
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، الذي يصدر التصاريح البيئية ويتولى رقابة الالتزام والتفتيش.",
+      "المتطلبات البيئية للهيئة الملكية للجبيل وينبع وهيئة المدن الصناعية ومناطق التقنية (مدن) للمنشآت الواقعة ضمن نطاقهما.",
+      "التزامات الرصد الواردة في دراسات تقييم الأثر البيئي (EIA) وخطط الإدارة البيئية المعتمدة.",
+      "متطلبات المواصفة ISO 14001 الخاصة بالرصد والقياس وتقييم الأداء البيئي، عند وجود نظام للإدارة البيئية."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين الرصد البيئي وخدمات الرصد المتخصصة لكل وسط؟", "a": "الرصد البيئي هو البرنامج الشامل الذي يحدد ما يلزم قياسه في جميع الأوساط وأين وبأي تكرار، ويجمع النتائج في دورة تقارير واحدة. أما رصد جودة الهواء والغبار والضوضاء وجودة المياه والمركبات العضوية المتطايرة فهي مكونات متخصصة يمكن إدراجها ضمن هذا البرنامج. وتحتاج كثير من المنشآت إلى الأمرين معًا: برنامج يغطي التزامات التصريح، وقياسات متخصصة لمصادر بعينها." },
+      { "q": "كيف تحددون مواقع الرصد وتكرار القياس؟", "a": "نعتمد على اشتراطات التصريح البيئي والتزامات دراسة تقييم الأثر وخطة الإدارة البيئية، ومواقع مصادر الانبعاثات والتصريف، وتخطيط الموقع، والمستقبِلات الحساسة كالأحياء السكنية والمسطحات المائية، واتجاه جريان المياه الجوفية عند الحاجة. وإذا حدد التصريح تكرار القياس التزمنا به، وإلا اقترحنا تكرارًا يعكس مستوى المخاطر والتباين، ونتفق عليه مع فريقكم قبل بدء العمل الميداني." },
+      { "q": "هل تجرون التحاليل المخبرية بأنفسكم؟", "a": "ننسق التحاليل المخبرية مع مختبر مناسب يُختار وفق المؤشرات والطرق المطلوبة، ونتولى مناولة العينات وسلسلة الحيازة والالتزام بمدد الحفظ، ثم نراجع تقارير المختبر ونتحقق من البيانات قبل اعتمادها. وإذا اشترط التصريح أو الجهة المختصة مختبرًا بصفة اعتماد معينة، نتحقق من هذا الشرط في مرحلة التخطيط ليكون الاختيار مطابقًا له." },
+      { "q": "هل يمكنكم تولي برنامج رصد قائم؟", "a": "نعم. نراجع الخطة الحالية والبيانات والتقارير السابقة، ونحدد الفجوات مقارنةً بالتزامات التصريح، ونتحقق من قابلية مقارنة النتائج السابقة. ثم نقترح ما يلزم من تعديلات على المواقع أو المؤشرات أو الطرق، مع الحفاظ قدر الإمكان على استمرارية سلسلة البيانات حتى تبقى الاتجاهات ذات دلالة خلال مرحلة الانتقال." },
+      { "q": "ماذا يحدث إذا تجاوزت إحدى النتائج المعيار المعمول به؟", "a": "نبرز التجاوز أثناء مراجعة البيانات، ونفحص السجلات الميدانية والمخبرية بحثًا عن أي خلل في الاعتيان أو التحليل، ونبلغ فريقكم دون تأخير. ونوصي عند الحاجة بإعادة الاعتيان للتأكيد والتحقق من الأسباب المحتملة. ويوثق التقرير الدوري التجاوز والفحوص التي أُجريت والإجراءات التصحيحية الموصى بها، بحيث تكون الاستجابة موثقة بوضوح لأي متابعة من الجهات المختصة." }
+    ]
+  }
+}

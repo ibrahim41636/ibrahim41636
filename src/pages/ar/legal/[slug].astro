@@ -1,0 +1,8 @@
+---
+import Legal from "@/views/Legal.astro";
+import { getCollection } from "astro:content";
+export async function getStaticPaths() {
+  return (await getCollection("legal", (d) => d.id.startsWith("ar/"))).map((doc) => ({ params: { slug: doc.data.translationKey }, props: { doc } }));
+}
+---
+<Legal lang="ar" doc={Astro.props.doc} />

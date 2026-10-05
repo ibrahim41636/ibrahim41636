@@ -1,0 +1,21 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import InsightCard from "@/components/InsightCard.astro";
+import type { CollectionEntry } from "astro:content";
+import { t, type Lang } from "@/i18n/ui";
+import { getInsights } from "@/lib/content";
+import { markRequired } from "@/lib/content";
+interface Props { lang: Lang; author: CollectionEntry<"authors"> }
+const { lang, author } = Astro.props;
+const a = author.data[lang];
+const posts = (await getInsights(lang)).filter((p) => p.data.author.id === author.id);
+const path = `/insights/authors/${author.id}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.insights"), path: "/insights/" }, { name: a.name, path }];
+---
+<Base lang={lang} path={path} title={a.name} description={a.bio.replace(/\[CONTENT REQUIRED[^\]]*\]/g, "").slice(0, 160)} breadcrumbs={crumbs}
+  schema={[{ "@type": author.data.type === "Person" ? "ProfilePage" : "AboutPage", mainEntity: { "@type": author.data.type, name: a.name, description: a.bio, ...(author.data.type === "Person" ? { jobTitle: a.role, worksFor: { "@id": "https://selorin.co/#organization" } } : { "@id": "https://selorin.co/#organization" }) } }]}
+  analytics={{ page_type: "author" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={a.role} title={a.name} leadHtml={markRequired(a.bio)} />
+  <section class="section"><div class="container grid grid-3">{posts.map((p) => <InsightCard lang={lang} post={p} />)}</div></section>
+</Base>

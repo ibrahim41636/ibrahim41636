@@ -1,0 +1,129 @@
+{
+  "category": "sustainability-climate",
+  "order": 1,
+  "formFamily": "sustainability",
+  "industries": ["industrial-manufacturing", "energy", "oil-gas", "real-estate", "food-beverage", "logistics-warehousing", "healthcare"],
+  "related": ["ghg-carbon-accounting", "net-zero-advisory", "sustainability-advisory"],
+  "en": {
+    "name": "ESG Advisory",
+    "seoTitle": "ESG Advisory and Reporting in Saudi Arabia | Selorin",
+    "metaDescription": "ESG advisory in Saudi Arabia: materiality assessment, ESG data controls and reporting aligned with GRI, IFRS S1/S2 and Saudi Exchange ESG guidance.",
+    "valueProp": "Build ESG disclosures that investors, lenders and regulators can trace back to reliable data and clear governance.",
+    "cardDescription": "Materiality assessment, ESG data controls and reporting aligned with GRI, IFRS S1/S2 and Saudi Exchange guidance, plus support with investor questionnaires.",
+    "keyBenefit": "Credible ESG disclosures backed by traceable data",
+    "definition": "ESG advisory is professional support that helps an organisation identify its material environmental, social and governance topics, collect reliable data on them, and disclose performance in line with recognised frameworks. It covers materiality assessment, data controls, sustainability reporting under standards such as GRI and IFRS S1/S2, responses to investor and lender questionnaires, and the policies and governance that make ESG commitments credible.",
+    "overview": [
+      "Saudi companies face growing ESG expectations from several directions at once. Listed companies refer to the Saudi Exchange ESG Disclosure Guidelines; lenders and investors send detailed questionnaires; international customers ask suppliers for sustainability data; and Vision 2030 has placed sustainability firmly on the board agenda. The common difficulty is rarely a lack of intent but a lack of structure: data sits in different departments, definitions differ between sites, and nobody owns the final numbers. ESG advisory brings these pieces into one process with clear scope, ownership and evidence.",
+      "Our work starts with materiality, because a report that covers everything says little. We assess which topics matter most to your business and stakeholders, using a double materiality lens where the reporting framework calls for it, and translate them into indicators with defined calculation methods. We then build the data collection process: templates, owners, review steps and an evidence trail for each figure. Where IFRS S1 and S2 are relevant, we map existing disclosures against their requirements on governance, strategy, risk management, metrics and targets, and identify what is missing.",
+      "The outcome is a reporting process you can repeat each year rather than a one-off document. Disclosures are drafted from reviewed data, cross-referenced to the chosen framework, and supported by a policy set and governance structure that show who oversees ESG at board and management level. Greenhouse gas figures are taken from your emissions inventory, and climate targets from your decarbonisation plan, so the ESG report stays consistent with the technical work behind it. This also prepares the ground for external assurance if you choose to pursue it."
+    ],
+    "whenYouNeed": [
+      "You are preparing your first sustainability or ESG report and need a defensible structure.",
+      "A bank, investor or fund has sent an ESG questionnaire or due diligence request.",
+      "Your company is listed or planning to list and is reviewing Saudi Exchange ESG guidance.",
+      "Customers or a parent company ask for ESG data in their supplier assessments.",
+      "You want to assess your readiness for IFRS S1 and IFRS S2 sustainability disclosures.",
+      "ESG data is spread across departments with no clear owners, definitions or review process."
+    ],
+    "deliver": [
+      { "title": "Materiality assessment", "description": "Stakeholder input, impact and financial significance scoring, and a prioritised list of material topics with the rationale documented for reporting and assurance purposes." },
+      { "title": "ESG data framework", "description": "Indicator definitions, calculation methods, data owners, collection templates and review controls, so each reported figure can be traced to its source evidence." },
+      { "title": "Framework gap analysis", "description": "A comparison of your current disclosures against GRI, IFRS S1/S2 or Saudi Exchange guidance, showing gaps, priorities and the effort needed to close them." },
+      { "title": "ESG or sustainability report", "description": "Drafted report content, data tables and a framework content index, written for your audience and consistent with your other public disclosures." },
+      { "title": "Investor and lender questionnaires", "description": "Prepared responses to ESG questionnaires, ratings requests and due diligence lists, drawn from your reviewed data and reusable for future requests." },
+      { "title": "ESG policies and governance", "description": "Draft ESG policy, board and management oversight roles, committee terms of reference and reporting lines that show how ESG is governed in practice." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We confirm reporting purpose, audience, framework, organisational boundary and reporting period, and agree what the first reporting cycle should realistically achieve." },
+      { "title": "Materiality", "description": "We review your business, sector and peers, engage internal and external stakeholders, and score topics to agree a prioritised list of material topics." },
+      { "title": "Data design", "description": "We define indicators and calculation methods, assign owners, issue collection templates and set review and approval steps for each data point." },
+      { "title": "Collection and review", "description": "We collect data, check it for completeness and consistency, follow up on anomalies and record the evidence behind each figure." },
+      { "title": "Reporting", "description": "We draft disclosures, data tables and the content index, then revise them with your management team until the report is ready for approval." },
+      { "title": "Improvement", "description": "We document lessons from the cycle and set out the improvements needed for the next report or for external assurance." }
+    ],
+    "deliverables": [
+      { "item": "Materiality assessment report", "format": "Report with materiality matrix and topic rationale (PDF)", "timing": "End of materiality phase" },
+      { "item": "Framework gap analysis", "format": "Gap register with priorities and actions (Excel + PDF summary)", "timing": "Early in the engagement" },
+      { "item": "ESG indicator and data dictionary", "format": "Definitions, calculation methods and owners (Excel)", "timing": "Data design stage" },
+      { "item": "Data collection templates and evidence log", "format": "Templates and evidence register (Excel)", "timing": "Before data collection" },
+      { "item": "ESG or sustainability report draft", "format": "Editable report text, data tables and content index (Word + PDF)", "timing": "Reporting stage" },
+      { "item": "Questionnaire response pack", "format": "Completed responses with supporting references (Excel/Word)", "timing": "As requests arise" },
+      { "item": "ESG policy and governance documents", "format": "Draft policy and committee terms of reference (Word)", "timing": "Governance stage" }
+    ],
+    "regulatoryContext": [
+      "Saudi Exchange ESG Disclosure Guidelines for listed issuers",
+      "GRI Standards for impact-focused sustainability reporting",
+      "IFRS S1 and IFRS S2 (ISSB) for sustainability-related and climate-related financial disclosures",
+      "GHG Protocol for the emissions figures included in ESG reports",
+      "Vision 2030 and the Saudi Green Initiative as national context for sustainability commitments"
+    ],
+    "faqs": [
+      { "q": "Is ESG reporting mandatory in Saudi Arabia?", "a": "Requirements depend on your company type, listing status and the expectations of your investors and lenders. The Saudi Exchange has published ESG Disclosure Guidelines for listed companies, and disclosure expectations continue to develop. Rather than rely on general statements, we review the requirements and requests that apply to your organisation at the start of the engagement and confirm them with your legal and investor relations teams where needed." },
+      { "q": "Which framework should we report against?", "a": "It depends on who reads the report. GRI suits a broad stakeholder audience and focuses on your impacts on the economy, environment and people. IFRS S1 and S2 focus on sustainability and climate information useful to investors. Listed companies also consider Saudi Exchange guidance. Many organisations combine frameworks, for example GRI for impact disclosures and IFRS S2 for climate. We recommend an approach based on your audience, obligations and data maturity." },
+      { "q": "What is a materiality assessment and why does it matter?", "a": "A materiality assessment identifies the ESG topics that are most significant for your business and stakeholders. It determines what your report covers and what you measure, so effort is not spent on topics that matter little while important ones are missed. Frameworks such as GRI require a documented materiality process, and investors increasingly ask how material topics were selected. We document the method so it can be explained and repeated." },
+      { "q": "How long does a first ESG report take?", "a": "Timing depends on the scope, the number of sites, the framework and how ready your data is. A first report usually takes longer than later cycles because data definitions, owners and controls are being set up for the first time. We agree a realistic plan during scoping, with milestones for materiality, data collection, drafting and approval, and we flag early any data gaps that could affect the timeline." },
+      { "q": "Can you help us prepare for external assurance?", "a": "Yes. We design the data process with assurance in mind: documented calculation methods, clear data owners, review steps and an evidence trail for each reported figure. Before an assurance engagement, we can review your data and documentation against what an assurance provider is likely to request and help close gaps. The assurance itself is carried out by an independent provider, which keeps the process credible." }
+    ]
+  },
+  "ar": {
+    "name": "استشارات الحوكمة البيئية والاجتماعية والمؤسسية (ESG)",
+    "seoTitle": "استشارات ESG وتقارير الاستدامة في السعودية | سيلورين",
+    "metaDescription": "استشارات ESG في السعودية: تقييم الأهمية النسبية، وضوابط البيانات، وتقارير استدامة متوافقة مع GRI وIFRS S1/S2 وإرشادات الإفصاح الصادرة عن تداول السعودية.",
+    "valueProp": "إفصاحات ESG يستطيع المستثمرون والممولون والجهات الرقابية تتبّعها إلى بيانات موثوقة وحوكمة واضحة.",
+    "cardDescription": "تقييم الأهمية النسبية، وضوابط بيانات ESG، وتقارير متوافقة مع GRI وIFRS S1/S2 وإرشادات تداول السعودية، مع دعم الرد على استبيانات المستثمرين.",
+    "keyBenefit": "إفصاحات موثوقة تستند إلى بيانات قابلة للتتبع",
+    "definition": "استشارات الحوكمة البيئية والاجتماعية والمؤسسية (ESG) خدمة مهنية تساعد المنشأة على تحديد الموضوعات البيئية والاجتماعية والحوكمية ذات الأهمية النسبية لأعمالها، وجمع بيانات موثوقة عنها، والإفصاح عن أدائها وفق أطر معترف بها. وتشمل تقييم الأهمية النسبية، وضوابط البيانات، وإعداد تقارير الاستدامة وفق معايير مثل GRI وIFRS S1/S2، والرد على استبيانات المستثمرين والممولين، ووضع السياسات وهياكل الحوكمة التي تمنح التزامات المنشأة مصداقيتها.",
+    "overview": [
+      "تتزايد توقعات الحوكمة البيئية والاجتماعية والمؤسسية على الشركات السعودية من أكثر من جهة في آن واحد؛ فالشركات المدرجة تسترشد بإرشادات الإفصاح الصادرة عن تداول السعودية، والبنوك والمستثمرون يرسلون استبيانات مفصلة، والعملاء الدوليون يطلبون بيانات الاستدامة من مورديهم، فيما جعلت رؤية 2030 الاستدامة بندًا ثابتًا على جدول أعمال مجالس الإدارة. ولا تكمن الصعوبة عادةً في غياب الرغبة، بل في غياب المنهجية: بيانات موزعة بين الإدارات، وتعريفات تختلف من موقع لآخر، وأرقام نهائية بلا مسؤول واضح. ومن هنا تجمع الاستشارات هذه العناصر في عملية واحدة محددة النطاق والمسؤوليات والأدلة.",
+      "نبدأ بتقييم الأهمية النسبية، لأن التقرير الذي يتناول كل شيء لا يقول شيئًا ذا قيمة. فنحدد الموضوعات الأكثر تأثيرًا في أعمالكم وفي أصحاب المصلحة، ونطبّق منهج الأهمية النسبية المزدوجة حين يتطلبه إطار الإفصاح، ثم نحوّل هذه الموضوعات إلى مؤشرات ذات طرق احتساب معرّفة. بعد ذلك نصمم عملية جمع البيانات: نماذج موحدة، ومسؤول عن كل مؤشر، وخطوات مراجعة، وسجل أدلة لكل رقم. وحين يكون معيارا IFRS S1 وS2 ذوي صلة، نطابق الإفصاحات الحالية مع متطلباتهما في الحوكمة والاستراتيجية وإدارة المخاطر والمقاييس والمستهدفات، ونحدد ما ينقصها.",
+      "والنتيجة عملية إفصاح قابلة للتكرار كل عام، لا وثيقة تُعدّ مرة واحدة. تُصاغ الإفصاحات من بيانات مُراجَعة، وتُربط بمتطلبات الإطار المختار، وتستند إلى مجموعة سياسات وهيكل حوكمة يوضح من يشرف على ملف ESG على مستوى مجلس الإدارة والإدارة التنفيذية. وتُستمد أرقام الانبعاثات من حصر غازات الاحتباس الحراري لديكم، والمستهدفات المناخية من خطة إزالة الكربون، فيبقى التقرير متسقًا مع العمل الفني الذي يقوم عليه. كما يمهّد ذلك للحصول على تأكيد خارجي مستقل إن قررتم ذلك."
+    ],
+    "whenYouNeed": [
+      "تستعدون لإصدار أول تقرير استدامة أو تقرير ESG وتحتاجون إلى هيكل يمكن الدفاع عنه.",
+      "تلقيتم استبيان ESG أو طلب فحص نافٍ للجهالة من بنك أو مستثمر أو صندوق.",
+      "شركتكم مدرجة أو تستعد للإدراج وتراجع إرشادات الإفصاح الصادرة عن تداول السعودية.",
+      "يطلب عملاؤكم أو الشركة الأم بيانات ESG ضمن تقييم الموردين.",
+      "ترغبون في تقييم جاهزيتكم للإفصاح وفق معياري IFRS S1 وIFRS S2.",
+      "بيانات ESG موزعة بين الإدارات دون مسؤولين أو تعريفات أو مراجعة واضحة."
+    ],
+    "deliver": [
+      { "title": "تقييم الأهمية النسبية", "description": "استطلاع آراء أصحاب المصلحة، وتقدير الأثر والأهمية المالية لكل موضوع، وقائمة موضوعات مرتبة حسب الأولوية مع توثيق مبررات اختيارها لأغراض الإفصاح والتأكيد." },
+      { "title": "إطار بيانات ESG", "description": "تعريف المؤشرات وطرق احتسابها، وتحديد المسؤولين عنها، ونماذج جمع البيانات وضوابط مراجعتها، بحيث يمكن تتبع كل رقم منشور إلى مصدره." },
+      { "title": "تحليل الفجوات مقابل الأطر", "description": "مقارنة إفصاحاتكم الحالية بمتطلبات GRI أو IFRS S1/S2 أو إرشادات تداول السعودية، مع بيان الفجوات وأولويات معالجتها والجهد المطلوب لذلك." },
+      { "title": "تقرير الاستدامة أو تقرير ESG", "description": "صياغة محتوى التقرير وجداول البيانات وفهرس المحتوى المرتبط بالإطار، بأسلوب يناسب جمهوركم ويتسق مع إفصاحاتكم العامة الأخرى." },
+      { "title": "استبيانات المستثمرين والممولين", "description": "إعداد الردود على استبيانات ESG وطلبات التصنيف وقوائم الفحص النافي للجهالة استنادًا إلى بياناتكم المُراجَعة، مع إمكانية إعادة استخدامها في الطلبات اللاحقة." },
+      { "title": "سياسات ESG والحوكمة", "description": "مسودة سياسة ESG، وأدوار الإشراف لمجلس الإدارة والإدارة التنفيذية، وشروط عمل اللجان وخطوط رفع التقارير التي تبيّن كيف تُمارس الحوكمة فعليًا." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نؤكد الغرض من التقرير وجمهوره والإطار المعتمد وحدود المنشأة وفترة الإفصاح، ونتفق على ما يمكن تحقيقه واقعيًا في الدورة الأولى." },
+      { "title": "الأهمية النسبية", "description": "نراجع طبيعة أعمالكم وقطاعكم ونظراءكم، ونشرك أصحاب المصلحة الداخليين والخارجيين، ثم نقيّم الموضوعات ونتفق على قائمة الموضوعات الجوهرية." },
+      { "title": "تصميم البيانات", "description": "نعرّف المؤشرات وطرق احتسابها، ونحدد المسؤولين، ونوزع نماذج الجمع، ونضع خطوات المراجعة والاعتماد لكل نقطة بيانات." },
+      { "title": "الجمع والمراجعة", "description": "نجمع البيانات ونتحقق من اكتمالها واتساقها، ونتابع القيم غير المعتادة، ونوثق الأدلة الداعمة لكل رقم." },
+      { "title": "إعداد التقرير", "description": "نصوغ الإفصاحات وجداول البيانات وفهرس المحتوى، ونراجعها مع فريق الإدارة حتى يصبح التقرير جاهزًا للاعتماد." },
+      { "title": "التحسين", "description": "نوثق الدروس المستفادة من الدورة، ونحدد التحسينات اللازمة للتقرير التالي أو للحصول على تأكيد خارجي." }
+    ],
+    "deliverables": [
+      { "item": "تقرير تقييم الأهمية النسبية", "format": "تقرير يتضمن مصفوفة الأهمية النسبية ومبررات اختيار الموضوعات (PDF)", "timing": "نهاية مرحلة الأهمية النسبية" },
+      { "item": "تحليل الفجوات مقابل الأطر", "format": "سجل فجوات بالأولويات والإجراءات (Excel مع ملخص PDF)", "timing": "بداية المشروع" },
+      { "item": "قاموس مؤشرات وبيانات ESG", "format": "التعريفات وطرق الاحتساب والمسؤولون (Excel)", "timing": "مرحلة تصميم البيانات" },
+      { "item": "نماذج جمع البيانات وسجل الأدلة", "format": "نماذج وسجل أدلة (Excel)", "timing": "قبل بدء جمع البيانات" },
+      { "item": "مسودة تقرير الاستدامة أو ESG", "format": "نص قابل للتحرير وجداول بيانات وفهرس محتوى (Word وPDF)", "timing": "مرحلة إعداد التقرير" },
+      { "item": "حزمة الردود على الاستبيانات", "format": "ردود مكتملة مع مراجعها الداعمة (Excel/Word)", "timing": "عند ورود الطلبات" },
+      { "item": "وثائق سياسة ESG والحوكمة", "format": "مسودة السياسة وشروط عمل اللجان (Word)", "timing": "مرحلة الحوكمة" }
+    ],
+    "regulatoryContext": [
+      "إرشادات الإفصاح البيئي والاجتماعي والحوكمة الصادرة عن تداول السعودية للشركات المدرجة",
+      "معايير GRI لإعداد تقارير الاستدامة المرتكزة على الأثر",
+      "معيارا IFRS S1 وIFRS S2 الصادران عن مجلس معايير الاستدامة الدولية (ISSB) للإفصاحات المالية المتعلقة بالاستدامة والمناخ",
+      "بروتوكول غازات الاحتباس الحراري (GHG Protocol) لأرقام الانبعاثات الواردة في تقارير ESG",
+      "رؤية 2030 ومبادرة السعودية الخضراء إطارًا وطنيًا لالتزامات الاستدامة"
+    ],
+    "faqs": [
+      { "q": "هل إعداد تقارير ESG إلزامي في المملكة العربية السعودية؟", "a": "تختلف المتطلبات بحسب نوع الشركة ووضع إدراجها وتوقعات مستثمريها وممولّيها. وقد أصدرت تداول السعودية إرشادات للإفصاح البيئي والاجتماعي والحوكمة موجهة للشركات المدرجة، ولا تزال توقعات الإفصاح في تطور مستمر. لذلك لا نكتفي بالتعميمات، بل نراجع في بداية المشروع المتطلبات والطلبات المنطبقة على منشأتكم تحديدًا، ونتحقق منها مع فريقي الشؤون القانونية وعلاقات المستثمرين عند الحاجة." },
+      { "q": "ما الإطار الذي ينبغي أن نعتمده في التقرير؟", "a": "يعتمد ذلك على قارئ التقرير. فمعايير GRI تناسب جمهورًا واسعًا من أصحاب المصلحة وتركز على آثار المنشأة في الاقتصاد والبيئة والمجتمع، بينما يركز معيارا IFRS S1 وS2 على معلومات الاستدامة والمناخ التي تهم المستثمرين. وتراعي الشركات المدرجة أيضًا إرشادات تداول السعودية. وتجمع منشآت كثيرة بين أكثر من إطار، ونوصي بالنهج الأنسب وفق جمهوركم والتزاماتكم ومدى نضج بياناتكم." },
+      { "q": "ما تقييم الأهمية النسبية، ولماذا هو مهم؟", "a": "يحدد تقييم الأهمية النسبية موضوعات ESG الأكثر تأثيرًا في أعمالكم وفي أصحاب المصلحة، وعلى أساسه يتحدد ما يغطيه التقرير وما تقيسونه، فلا يُهدر الجهد في موضوعات محدودة الأثر بينما تُغفل موضوعات جوهرية. وتشترط أطر مثل GRI توثيق منهجية التقييم، كما يسأل المستثمرون بصورة متزايدة عن كيفية اختيار الموضوعات. لذلك نوثق المنهجية بحيث يمكن شرحها وتكرارها." },
+      { "q": "كم يستغرق إعداد أول تقرير ESG؟", "a": "تتوقف المدة على النطاق وعدد المواقع والإطار المعتمد ومدى جاهزية البيانات. وعادةً يستغرق التقرير الأول وقتًا أطول من الدورات اللاحقة، لأن تعريفات البيانات والمسؤوليات والضوابط تُبنى لأول مرة. ونتفق معكم أثناء تحديد النطاق على خطة واقعية بمراحل واضحة للأهمية النسبية وجمع البيانات والصياغة والاعتماد، ونكشف مبكرًا عن أي فجوات في البيانات قد تؤثر في الجدول الزمني." },
+      { "q": "هل يمكنكم مساعدتنا في الاستعداد للتأكيد الخارجي؟", "a": "نعم. نصمم عملية البيانات منذ البداية بما يخدم التأكيد الخارجي: طرق احتساب موثقة، ومسؤولون واضحون، وخطوات مراجعة، وسجل أدلة لكل رقم منشور. وقبل التكليف بالتأكيد، يمكننا مراجعة بياناتكم ووثائقكم مقابل ما يُتوقع أن تطلبه جهة التأكيد والمساعدة في معالجة الفجوات. أما التأكيد نفسه فتتولاه جهة مستقلة، وهو ما يحفظ مصداقية العملية." }
+    ]
+  }
+}

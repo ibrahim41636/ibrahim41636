@@ -1,0 +1,38 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import RequestForm from "@/components/RequestForm.astro";
+import Icon from "@/components/Icon.astro";
+import { href, site, t, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.contact"), path: "/contact/" }];
+---
+<Base lang={lang} path="/contact/" breadcrumbs={crumbs}
+  title={ar ? "تواصل معنا | سيلورين للاستشارات والخدمات البيئية" : "Contact Selorin | Environmental Advisory in Saudi Arabia"}
+  description={ar ? "تواصل مع سيلورين عبر sales@selorin.co أو +966 53 430 2332 لمناقشة التصاريح البيئية والرصد والدراسات والاستدامة لمشروعك." : "Contact Selorin at sales@selorin.co or +966 53 430 2332 to discuss environmental permitting, monitoring, studies and sustainability for your project."}
+  schema={[{ "@type": "ContactPage", mainEntity: { "@id": "https://selorin.co/#organization" } }]}
+  analytics={{ page_type: "contact" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.contact")} title={ar ? "لنتحدث عن مشروعك" : "Let's talk about your project"}
+    lead={ar ? "أرسل استفسارك أو اطلب خدمة محددة، وسيراجع مختص بيئي متطلباتك ويتواصل معك." : "Send an inquiry or request a specific service. An environmental specialist will review your requirements and get back to you."} />
+  <section class="section">
+    <div class="container split">
+      <div>
+        <h2 style="font-size:var(--fs-h3)">{ar ? "معلومات التواصل" : "Contact information"}</h2>
+        <ul class="contact-list mt-5">
+          <li><span class="icon"><Icon name="mail" /></span><div><small>{ar ? "البريد الإلكتروني" : "Email"}</small><a href={`mailto:${site.email}`} data-track="email_click" data-cta="contact_email">{site.email}</a></div></li>
+          <li><span class="icon"><Icon name="phone" /></span><div><small>{ar ? "الهاتف" : "Phone"}</small><a href={`tel:${site.phoneHref}`} class="ltr" data-cta="contact_phone">{site.phone}</a></div></li>
+          <li><span class="icon"><Icon name="whatsapp" /></span><div><small>WhatsApp</small><a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener" data-cta="contact_whatsapp">{ar ? "راسلنا عبر واتساب" : "Message us on WhatsApp"}</a></div></li>
+          <li><span class="icon"><Icon name="pin" /></span><div><small>{ar ? "الموقع" : "Location"}</small><b>{site.country[lang]}</b></div></li>
+        </ul>
+        <div class="card mt-7">
+          <h3>{ar ? "تحتاج خدمة محددة؟" : "Need a specific service?"}</h3>
+          <p>{ar ? "يجمع نموذج طلب الخدمة التفاصيل الفنية التي نحتاجها لإعداد عرض دقيق." : "The service request form captures the technical details we need to prepare an accurate proposal."}</p>
+          <a class="link" href={href(lang, "/request/")} data-cta="contact_to_request">{t(lang, "cta.consultation")} <Icon name="arrow" /></a>
+        </div>
+      </div>
+      <RequestForm lang={lang} kind="contact" />
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,16 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import { render, type CollectionEntry } from "astro:content";
+import { t, formatDate, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang; doc: CollectionEntry<"legal"> }
+const { lang, doc } = Astro.props;
+const { Content } = await render(doc);
+const key = doc.data.translationKey;
+const path = `/legal/${key}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: doc.data.title, path }];
+---
+<Base lang={lang} path={path} title={doc.data.title} description={doc.data.description} breadcrumbs={crumbs} analytics={{ page_type: "legal" }}>
+  <PageHero lang={lang} crumbs={crumbs} title={doc.data.title} lead={`${lang === "ar" ? "آخر تحديث" : "Last updated"}: ${formatDate(lang, doc.data.updated)}`} light />
+  <section class="section"><div class="container-narrow prose"><Content /></div></section>
+</Base>

@@ -1,0 +1,37 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { getIndustries } from "@/lib/content";
+import { INDUSTRY_ICON } from "@/lib/icons";
+import { collectionSchema } from "@/lib/schema";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const industries = await getIndustries();
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.industries"), path: "/industries/" }];
+---
+<Base lang={lang} path="/industries/" breadcrumbs={crumbs}
+  title={ar ? "القطاعات | المتطلبات البيئية حسب القطاع — سيلورين" : "Industries | Environmental Requirements by Sector"}
+  description={ar ? "كيف تدعم سيلورين القطاعات الصناعية والإنشائية والعقارية والطاقة والنفط والغاز والرعاية الصحية وغيرها في الامتثال البيئي والرصد والاستدامة." : "How Selorin supports industrial, construction, real estate, energy, oil and gas, healthcare and other sectors with environmental compliance, monitoring and sustainability."}
+  schema={[collectionSchema(lang, "/industries/", t(lang, "nav.industries"), industries.map((i) => ({ name: i.data[lang].name, path: `/industries/${i.id}/` })))]}
+  analytics={{ page_type: "industries_hub" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.industries")}
+    title={ar ? "المتطلبات البيئية تختلف من قطاع لآخر" : "Environmental requirements differ by sector"}
+    lead={ar ? "لكل قطاع مصادر انبعاث ونفايات واشتراطات مختلفة. اختر قطاعك لترى التحديات المعتادة والخدمات الأكثر صلة." : "Each sector has its own emission sources, wastes and permit conditions. Choose your sector to see the typical challenges and the most relevant services."} />
+  <section class="section">
+    <div class="container grid grid-3">
+      {industries.map((ind) => (
+        <article class="card reveal">
+          <span class="icon"><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} /></span>
+          <h2 style="font-size:var(--fs-h4);margin:0"><a class="card-link" href={href(lang, `/industries/${ind.id}/`)} style="text-decoration:none" data-cta="industry_card">{ind.data[lang].name}</a></h2>
+          <p>{ind.data[lang].cardDescription}</p>
+          <span class="link" aria-hidden="true">{t(lang, "cta.viewIndustry")} <Icon name="arrow" /></span>
+        </article>
+      ))}
+    </div>
+  </section>
+  <CtaBand title={ar ? "قطاعك غير مذكور؟" : "Don't see your sector?"} body={ar ? "نعمل مع أي نشاط يخضع لمتطلبات بيئية. أخبرنا عن منشأتك." : "We work with any activity that carries environmental obligations. Tell us about your facility."} label={t(lang, "cta.discuss")} to={href(lang, "/request/")} cta="industries_final_cta" />
+</Base>

@@ -1,0 +1,41 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import ServiceCard from "@/components/ServiceCard.astro";
+import { getEntry, getEntries, type CollectionEntry } from "astro:content";
+import { href, t, type Lang } from "@/i18n/ui";
+import { markRequired } from "@/lib/content";
+interface Props { lang: Lang; project: CollectionEntry<"projects"> }
+const { lang, project } = Astro.props;
+const d = project.data[lang];
+const industry = await getEntry(project.data.industry);
+const services = await getEntries(project.data.services);
+const path = `/projects/${project.id}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.projects"), path: "/projects/" }, { name: project.data.status === "placeholder" ? "Template" : d.title, path }];
+const M = (s: string) => markRequired(s);
+---
+<Base lang={lang} path={path} title={project.data.status === "placeholder" ? "Case study template" : d.title} description={d.summary.slice(0, 160)} breadcrumbs={crumbs} noindex={project.data.status !== "published"} analytics={{ page_type: "case_study" }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.projects")} title={d.title} titleHtml={M(d.title)} leadHtml={M(d.summary)} />
+  <section class="section">
+    <div class="container split">
+      <aside class="card" style="position:sticky;top:96px">
+        <dl class="dl">
+          <dt>{t(lang, "projects.client")}</dt><dd set:html={M(d.clientType)} />
+          <dt>{t(lang, "projects.industry")}</dt><dd>{industry?.data[lang].name}</dd>
+          <dt>{t(lang, "projects.location")}</dt><dd set:html={M(d.location)} />
+          <dt>{lang === "ar" ? "السنة" : "Year"}</dt><dd set:html={M(project.data.year)} />
+        </dl>
+      </aside>
+      <div class="prose">
+        <h2>{t(lang, "projects.scope")}</h2><ul>{d.scope.map((s) => <li set:html={M(s)} />)}</ul>
+        <h2>{t(lang, "projects.challenge")}</h2><p set:html={M(d.challenge)} />
+        <h2>{t(lang, "projects.approach")}</h2><ol>{d.approach.map((s) => <li set:html={M(s)} />)}</ol>
+        <h2>{t(lang, "projects.deliverables")}</h2><ul>{d.deliverables.map((s) => <li set:html={M(s)} />)}</ul>
+        <h2>{t(lang, "projects.outcome")}</h2><p set:html={M(d.outcome)} />
+      </div>
+    </div>
+  </section>
+  <section class="section bg-white border-top"><div class="container"><div class="section-head"><h2>{t(lang, "projects.services")}</h2></div><div class="grid grid-3">{services.map((s) => <ServiceCard lang={lang} service={s} />)}</div></div></section>
+  <CtaBand title={lang === "ar" ? "هل لديك مشروع مشابه؟" : "Working on a similar project?"} body={t(lang, "service.finalBody")} label={t(lang, "cta.discuss")} to={href(lang, "/request/")} cta="case_study_cta" />
+</Base>

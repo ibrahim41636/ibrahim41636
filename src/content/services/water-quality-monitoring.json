@@ -1,0 +1,127 @@
+{
+  "category": "monitoring-measurement",
+  "order": 6,
+  "formFamily": "monitoring",
+  "industries": ["industrial-manufacturing", "food-beverage", "energy", "oil-gas", "hospitality", "healthcare", "infrastructure", "waste-recycling"],
+  "related": ["environmental-monitoring", "environmental-permitting", "environmental-compliance", "waste-management"],
+  "en": {
+    "name": "Water Quality Monitoring",
+    "seoTitle": "Water Quality Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Water and wastewater quality monitoring in Saudi Arabia: effluent, treated wastewater reuse, groundwater and seawater sampling, lab coordination and reporting.",
+    "valueProp": "Water and wastewater monitoring that gives you reliable results on discharges, reuse and receiving waters, and reports ready for your permit.",
+    "cardDescription": "Sampling and monitoring of effluent, treated wastewater, groundwater and seawater, with on-site measurements, laboratory coordination and compliance reporting.",
+    "keyBenefit": "Confidence that discharges and reuse meet permit conditions",
+    "definition": "Water quality monitoring is the sampling and analysis of water and wastewater — including effluent discharges, treated wastewater for reuse, groundwater and seawater — to determine physical, chemical and biological quality against applicable standards and permit conditions. It combines on-site measurements such as pH, temperature and conductivity with laboratory analysis and validated reporting.",
+    "overview": [
+      "Water is a scarce resource in Saudi Arabia, and the quality of what facilities discharge, reuse or affect is closely regulated. Industrial plants, utilities, hotels, hospitals, food producers and coastal facilities commonly hold environmental permit conditions on effluent quality, treated wastewater reuse or discharges to the sea, and may also need to monitor groundwater beneath their sites. Reliable data depends on representative sampling, correct preservation, timely laboratory analysis and careful review, and errors in any of these steps can lead to misleading results.",
+      "Our water quality monitoring service covers effluent and discharge monitoring at outfalls and treatment plant outlets, treated wastewater intended for reuse such as irrigation or process water, groundwater from monitoring wells, and seawater or marine waters near outfalls and intakes where relevant. We measure on-site parameters such as pH, temperature, conductivity, dissolved oxygen and turbidity, collect grab or composite samples, maintain chain of custody and coordinate laboratory analysis for the chemical and microbiological parameters required by your permit or reuse application.",
+      "Results are validated and reported against applicable standards and permit limits, with trends over time and clear identification of any exceedances. For treatment plant operators, this data supports process optimisation as well as compliance, highlighting performance changes before they lead to non-compliant discharges. Where water monitoring forms part of a wider permit commitment, it can be integrated into a single environmental monitoring programme with consistent scheduling and reporting across air, soil, noise and water."
+    ],
+    "whenYouNeed": [
+      "Your environmental permit sets limits and monitoring frequency for effluent or discharges.",
+      "You plan to reuse treated wastewater for irrigation, cooling or process water.",
+      "A wastewater treatment plant needs independent verification of its performance.",
+      "Your facility discharges to the sea or draws seawater for cooling or desalination.",
+      "Groundwater beneath your site may be affected by storage, spills or past activities.",
+      "An inspection has questioned the reliability of your existing water quality data."
+    ],
+    "deliver": [
+      { "title": "Effluent and discharge monitoring", "description": "Sampling at outfalls and treatment plant outlets according to permit conditions, using grab or composite methods with field measurements and flow records." },
+      { "title": "Treated wastewater reuse monitoring", "description": "Monitoring of treated wastewater intended for irrigation, cooling or process reuse, covering the chemical and microbiological parameters relevant to the intended use." },
+      { "title": "Groundwater monitoring", "description": "Sampling from monitoring wells with water level measurement, purging and field parameter stabilisation, to track groundwater quality beneath and around the site." },
+      { "title": "Seawater and marine sampling", "description": "Sampling of coastal and marine waters near outfalls and intakes where relevant, to assess the effect of discharges on receiving waters." },
+      { "title": "On-site measurement and laboratory coordination", "description": "Field measurement of pH, temperature, conductivity, dissolved oxygen and turbidity, with sample preservation, chain of custody and laboratory analysis coordination." },
+      { "title": "Compliance reporting", "description": "Validated results compared with applicable standards and permit limits, with trend analysis, exceedance identification and recommended follow-up actions." }
+    ],
+    "approach": [
+      { "title": "Requirements review", "description": "We review permit conditions, reuse requirements, treatment processes and existing data to define sampling points and parameters." },
+      { "title": "Sampling plan", "description": "We set sampling locations, methods, frequency, preservation and laboratory analysis, and agree the schedule with your operations team." },
+      { "title": "Field sampling", "description": "We collect samples, measure on-site parameters with calibrated instruments and record conditions, flow and any operational observations." },
+      { "title": "Laboratory coordination", "description": "We dispatch samples under chain of custody within holding times and follow up analysis with an appropriate laboratory." },
+      { "title": "Data validation", "description": "We review laboratory and field results for completeness and consistency and compare them with standards, limits and earlier data." },
+      { "title": "Reporting", "description": "We issue compliance reports, flag exceedances promptly and discuss causes and corrective options with your team." }
+    ],
+    "deliverables": [
+      { "item": "Water quality sampling plan", "format": "Plan with sampling points, parameters and frequency (PDF)", "timing": "Programme start" },
+      { "item": "Field sampling records", "format": "Field sheets with on-site measurements and photos (PDF)", "timing": "Each sampling event" },
+      { "item": "Chain-of-custody forms", "format": "Signed custody records (PDF)", "timing": "Each sampling event" },
+      { "item": "Laboratory results summary", "format": "Validated results table (Excel)", "timing": "After laboratory reports are received" },
+      { "item": "Periodic water quality report", "format": "Report with comparison to limits and trend charts (PDF)", "timing": "Per permit reporting cycle" },
+      { "item": "Exceedance notification", "format": "Short technical note (PDF or email)", "timing": "When a validated exceedance occurs" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law and its Implementing Regulations, including requirements on water quality, wastewater discharges and protection of the marine environment.",
+      "National Center for Environmental Compliance (NCEC) environmental permit conditions on effluent quality, discharge monitoring and reporting.",
+      "Ministry of Environment, Water and Agriculture (MEWA) requirements relating to water resources and the reuse of treated wastewater.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON requirements for discharges from facilities within industrial cities.",
+      "Internationally recognised sampling and analysis methods for water and wastewater, selected to match permit and reuse requirements."
+    ],
+    "faqs": [
+      { "q": "Which parameters do you measure in wastewater effluent?", "a": "Parameters are set by your permit and the type of facility. Effluent monitoring commonly includes pH, temperature, suspended solids, biochemical and chemical oxygen demand, oil and grease, nutrients, metals and microbiological indicators, with additional parameters for specific industrial processes. We review your permit and processes to confirm the list, so analysis covers what is required without unnecessary cost." },
+      { "q": "What is the difference between grab and composite samples?", "a": "A grab sample is collected at a single moment and shows quality at that time. A composite sample combines several portions collected over a period, often in proportion to flow, and represents average quality. Permits sometimes specify which type is required for each parameter. Where they do not, we select the approach that most accurately represents your discharge and its variability." },
+      { "q": "Can you monitor treated wastewater for reuse?", "a": "Yes. We monitor treated wastewater intended for irrigation, landscaping, cooling or process use, covering the chemical and microbiological parameters relevant to that use and to the applicable requirements. Results are reported so you can show that the water meets the conditions for its intended reuse and can track treatment performance over time." },
+      { "q": "Who carries out the laboratory analysis?", "a": "We coordinate analysis with an appropriate laboratory selected for the parameters and methods required, and manage sample preservation, chain of custody and holding times. We review the laboratory reports and validate the data before reporting. Where your permit or the authority specifies requirements for the laboratory, we confirm them at the planning stage so the selection meets them." },
+      { "q": "What happens if our effluent exceeds a permit limit?", "a": "We flag the result promptly, check field and laboratory records for sampling or analytical issues and, where appropriate, recommend confirmatory sampling. We then help your team identify likely causes, such as treatment upsets, process changes or flow variations, and document corrective actions. The report records the exceedance and the response clearly for any regulatory follow-up." }
+    ]
+  },
+  "ar": {
+    "name": "رصد جودة المياه",
+    "seoTitle": "رصد جودة المياه ومياه الصرف في السعودية | سيلورين",
+    "metaDescription": "رصد جودة المياه ومياه الصرف في المملكة: المياه المصرّفة، ومياه الصرف المعالجة لإعادة الاستخدام، والمياه الجوفية، ومياه البحر، مع تنسيق التحاليل والتقارير.",
+    "valueProp": "رصد للمياه ومياه الصرف يقدم نتائج موثوقة عن التصريف وإعادة الاستخدام والمياه المستقبِلة، وتقارير جاهزة لمتطلبات تصريحكم.",
+    "cardDescription": "أخذ عينات المياه المصرّفة ومياه الصرف المعالجة والمياه الجوفية ومياه البحر ورصدها، مع القياسات الميدانية وتنسيق التحاليل المخبرية وتقارير الامتثال.",
+    "keyBenefit": "ثقة بأن التصريف وإعادة الاستخدام يطابقان اشتراطات التصريح",
+    "definition": "رصد جودة المياه هو أخذ عينات المياه ومياه الصرف وتحليلها، بما في ذلك المياه المصرّفة ومياه الصرف المعالجة المعدّة لإعادة الاستخدام والمياه الجوفية ومياه البحر، لتحديد خصائصها الفيزيائية والكيميائية والحيوية مقارنةً بالمعايير المعمول بها واشتراطات التصريح البيئي. ويجمع بين القياسات الميدانية كالأس الهيدروجيني ودرجة الحرارة والتوصيل الكهربائي، والتحاليل المخبرية، والتقارير الموثّقة.",
+    "overview": [
+      "المياه مورد شحيح في المملكة، ولذلك تخضع جودة ما تصرّفه المنشآت أو تعيد استخدامه أو تؤثر فيه لرقابة دقيقة. فالمصانع ومرافق الخدمات والفنادق والمستشفيات ومنشآت الأغذية والمنشآت الساحلية كثيرًا ما تحمل تصاريح بيئية تتضمن اشتراطات على جودة المياه المصرّفة أو إعادة استخدام مياه الصرف المعالجة أو التصريف إلى البحر، وقد تحتاج كذلك إلى رصد المياه الجوفية أسفل مواقعها. وتعتمد موثوقية البيانات على الاعتيان الممثل، والحفظ الصحيح للعينات، والتحليل المخبري في الوقت المناسب، والمراجعة الدقيقة، وأي خطأ في هذه المراحل قد يؤدي إلى نتائج مضللة.",
+      "تغطي خدمتنا لرصد جودة المياه رصد المياه المصرّفة عند نقاط التصريف ومخارج محطات المعالجة، ومياه الصرف المعالجة المعدّة لإعادة الاستخدام في الري أو العمليات، والمياه الجوفية من آبار الرصد، ومياه البحر والبيئة البحرية قرب نقاط التصريف والسحب عند الحاجة. ونقيس في الموقع مؤشرات مثل الأس الهيدروجيني ودرجة الحرارة والتوصيل الكهربائي والأكسجين الذائب والعكارة، ونجمع عينات لحظية أو مركّبة، ونحافظ على سلسلة الحيازة، وننسق التحاليل المخبرية للمؤشرات الكيميائية والميكروبيولوجية التي يتطلبها تصريحكم أو متطلبات إعادة الاستخدام.",
+      "نتحقق من النتائج ونعرضها مقارنةً بالمعايير المعمول بها وحدود التصريح، مع تتبع الاتجاهات عبر الزمن وتحديد أي تجاوزات بوضوح. وبالنسبة لمشغلي محطات المعالجة، تدعم هذه البيانات تحسين العمليات إلى جانب الامتثال، إذ تكشف تغيرات الأداء قبل أن تؤدي إلى تصريف غير مطابق. وعندما يكون رصد المياه جزءًا من التزامات أوسع في التصريح، يمكن دمجه في برنامج رصد بيئي واحد بجدولة وتقارير موحدة تشمل الهواء والتربة والضوضاء والمياه."
+    ],
+    "whenYouNeed": [
+      "يحدد تصريحكم البيئي حدودًا وتكرارًا لرصد المياه المصرّفة أو التصريف.",
+      "تخططون لإعادة استخدام مياه الصرف المعالجة في الري أو التبريد أو العمليات.",
+      "تحتاج محطة معالجة مياه الصرف إلى تحقق مستقل من أدائها.",
+      "تصرّف منشأتكم إلى البحر أو تسحب مياهه للتبريد أو التحلية.",
+      "قد تتأثر المياه الجوفية أسفل موقعكم بالتخزين أو التسربات أو أنشطة سابقة.",
+      "أثار تفتيش تساؤلات حول موثوقية بيانات جودة المياه الحالية لديكم."
+    ],
+    "deliver": [
+      { "title": "رصد المياه المصرّفة والتصريف", "description": "أخذ العينات عند نقاط التصريف ومخارج محطات المعالجة وفق اشتراطات التصريح، بطرق لحظية أو مركّبة مع القياسات الميدانية وسجلات التدفق." },
+      { "title": "رصد مياه الصرف المعالجة لإعادة الاستخدام", "description": "رصد مياه الصرف المعالجة المعدّة للري أو التبريد أو العمليات، بما يغطي المؤشرات الكيميائية والميكروبيولوجية المرتبطة بالاستخدام المقصود." },
+      { "title": "رصد المياه الجوفية", "description": "أخذ العينات من آبار الرصد مع قياس منسوب المياه والتطهير وانتظار استقرار المؤشرات الميدانية، لمتابعة جودة المياه الجوفية أسفل الموقع ومحيطه." },
+      { "title": "اعتيان مياه البحر والبيئة البحرية", "description": "أخذ عينات المياه الساحلية والبحرية قرب نقاط التصريف والسحب عند الحاجة، لتقييم أثر التصريف على المياه المستقبِلة." },
+      { "title": "القياسات الميدانية والتنسيق المخبري", "description": "قياس الأس الهيدروجيني ودرجة الحرارة والتوصيل الكهربائي والأكسجين الذائب والعكارة ميدانيًا، مع حفظ العينات وسلسلة الحيازة وتنسيق التحاليل المخبرية." },
+      { "title": "تقارير الامتثال", "description": "نتائج موثّقة مقارنةً بالمعايير المعمول بها وحدود التصريح، مع تحليل الاتجاهات وتحديد التجاوزات والإجراءات الموصى بها للمتابعة." }
+    ],
+    "approach": [
+      { "title": "مراجعة المتطلبات", "description": "نراجع اشتراطات التصريح ومتطلبات إعادة الاستخدام وعمليات المعالجة والبيانات القائمة لتحديد نقاط الاعتيان والمؤشرات." },
+      { "title": "خطة الاعتيان", "description": "نحدد مواقع الاعتيان وطرقه وتكراره ووسائل الحفظ والتحاليل المخبرية، ونتفق على الجدول مع فريق التشغيل لديكم." },
+      { "title": "الاعتيان الميداني", "description": "نجمع العينات ونقيس المؤشرات الميدانية بأجهزة معايرة، ونوثق الظروف والتدفق وأي ملاحظات تشغيلية." },
+      { "title": "التنسيق المخبري", "description": "نرسل العينات تحت سلسلة الحيازة ضمن مدد الحفظ، ونتابع التحليل مع مختبر مناسب." },
+      { "title": "التحقق من البيانات", "description": "نراجع النتائج المخبرية والميدانية من حيث الاكتمال والاتساق، ونقارنها بالمعايير والحدود والبيانات السابقة." },
+      { "title": "إعداد التقارير", "description": "نصدر تقارير الامتثال، ونبلغ عن التجاوزات فورًا، ونناقش أسبابها وخيارات التصحيح مع فريقكم." }
+    ],
+    "deliverables": [
+      { "item": "خطة اعتيان جودة المياه", "format": "خطة تحدد نقاط الاعتيان والمؤشرات والتكرار (PDF)", "timing": "بداية البرنامج" },
+      { "item": "سجلات الاعتيان الميداني", "format": "نماذج ميدانية بالقياسات والصور (PDF)", "timing": "كل عملية اعتيان" },
+      { "item": "نماذج سلسلة الحيازة", "format": "سجلات حيازة موقعة (PDF)", "timing": "كل عملية اعتيان" },
+      { "item": "ملخص النتائج المخبرية", "format": "جدول نتائج موثّقة (Excel)", "timing": "بعد استلام تقارير المختبر" },
+      { "item": "تقرير جودة المياه الدوري", "format": "تقرير بالمقارنة مع الحدود ورسوم الاتجاهات (PDF)", "timing": "وفق دورة تقارير التصريح" },
+      { "item": "إشعار التجاوز", "format": "مذكرة فنية موجزة (PDF أو بريد إلكتروني)", "timing": "عند ثبوت تجاوز بعد التحقق" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة ولوائحه التنفيذية، بما فيها المتطلبات المتعلقة بجودة المياه وتصريف مياه الصرف وحماية البيئة البحرية.",
+      "اشتراطات التصاريح البيئية الصادرة عن المركز الوطني للرقابة على الالتزام البيئي (NCEC) بشأن جودة المياه المصرّفة ورصد التصريف ورفع التقارير.",
+      "متطلبات وزارة البيئة والمياه والزراعة المتعلقة بالموارد المائية وإعادة استخدام مياه الصرف المعالجة.",
+      "متطلبات الهيئة الملكية للجبيل وينبع وهيئة مدن بشأن التصريف من المنشآت الواقعة في المدن الصناعية.",
+      "طرق الاعتيان والتحليل المعترف بها دوليًا للمياه ومياه الصرف، المختارة بما يتوافق مع متطلبات التصريح وإعادة الاستخدام."
+    ],
+    "faqs": [
+      { "q": "ما المؤشرات التي تقيسونها في مياه الصرف المصرّفة؟", "a": "تُحدَّد المؤشرات وفق تصريحكم ونوع المنشأة. ويشمل رصد المياه المصرّفة عادةً الأس الهيدروجيني ودرجة الحرارة والمواد الصلبة العالقة والطلب الحيوي والكيميائي على الأكسجين والزيوت والشحوم والمغذيات والمعادن والمؤشرات الميكروبيولوجية، مع مؤشرات إضافية لعمليات صناعية بعينها. ونراجع تصريحكم وعملياتكم لتأكيد القائمة، بحيث يغطي التحليل المطلوب دون تكاليف غير ضرورية." },
+      { "q": "ما الفرق بين العينة اللحظية والعينة المركّبة؟", "a": "تُجمع العينة اللحظية في لحظة واحدة وتعكس الجودة في ذلك الوقت. أما العينة المركّبة فتجمع عدة أجزاء مأخوذة على مدى فترة زمنية، وغالبًا بما يتناسب مع التدفق، فتمثل متوسط الجودة. وقد يحدد التصريح النوع المطلوب لكل مؤشر، وإن لم يحدده اخترنا الأسلوب الأكثر تمثيلًا لتصريفكم ومدى تباينه." },
+      { "q": "هل يمكنكم رصد مياه الصرف المعالجة لإعادة الاستخدام؟", "a": "نعم. نرصد مياه الصرف المعالجة المعدّة للري أو تنسيق المواقع أو التبريد أو الاستخدام في العمليات، بما يغطي المؤشرات الكيميائية والميكروبيولوجية المرتبطة بهذا الاستخدام والمتطلبات المنطبقة عليه. وتُعرض النتائج بما يمكّنكم من إثبات مطابقة المياه لشروط إعادة الاستخدام المقصودة ومتابعة أداء المعالجة عبر الزمن." },
+      { "q": "من يجري التحاليل المخبرية؟", "a": "ننسق التحاليل مع مختبر مناسب يُختار وفق المؤشرات والطرق المطلوبة، ونتولى حفظ العينات وسلسلة الحيازة والالتزام بمدد الحفظ. ثم نراجع تقارير المختبر ونتحقق من البيانات قبل إعداد التقرير. وإذا حدد التصريح أو الجهة المختصة اشتراطات معينة للمختبر، نتحقق منها في مرحلة التخطيط ليكون الاختيار مطابقًا لها." },
+      { "q": "ماذا يحدث إذا تجاوزت المياه المصرّفة أحد حدود التصريح؟", "a": "نبرز النتيجة فورًا، ونفحص السجلات الميدانية والمخبرية بحثًا عن أي خلل في الاعتيان أو التحليل، ونوصي بإعادة الاعتيان للتأكيد عند الحاجة. ثم نساعد فريقكم على تحديد الأسباب المحتملة، كاضطراب عملية المعالجة أو تغيّر العمليات أو تفاوت التدفق، ونوثق الإجراءات التصحيحية. ويسجل التقرير التجاوز والاستجابة له بوضوح لأي متابعة من الجهات المختصة." }
+    ]
+  }
+}

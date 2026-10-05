@@ -1,0 +1,87 @@
+{
+  "order": 10,
+  "services": [
+    "environmental-impact-assessment",
+    "environmental-permitting",
+    "environmental-compliance",
+    "water-quality-monitoring",
+    "waste-management",
+    "sustainability-advisory",
+    "green-building-advisory",
+    "ghg-carbon-accounting"
+  ],
+  "en": {
+    "name": "Hospitality & Tourism",
+    "seoTitle": "Environmental Advisory for Hospitality & Tourism | Selorin",
+    "metaDescription": "EIA, permits, water and waste management, green building and sustainability advisory for hotels, resorts and tourism destinations across Saudi Arabia.",
+    "cardDescription": "Impact studies, permits, water and waste management, and sustainability advisory for hotels, resorts and tourism destinations in sensitive settings.",
+    "overview": [
+      "Tourism development in Saudi Arabia is reaching coastlines, islands, mountains, deserts and heritage areas that are environmentally sensitive. Resorts and destination projects must consider coral reefs, mangroves, wildlife, vegetation, dark skies and limited water resources from the planning stage, and typically require environmental impact assessment under the Environmental Law and its Implementing Regulations, with review by the National Center for Environmental Compliance (NCEC).",
+      "Operating hotels and resorts have their own environmental aspects: high water and energy use, food waste, packaging and linen, sewage treatment and treated effluent reuse, swimming pool chemicals, laundries, kitchens and standby generators. Remote properties often run their own desalination, power and wastewater plants, which bring permit and monitoring obligations of their own.",
+      "Guests, operators and investors increasingly expect credible sustainability performance. Destination developers set environmental standards for hotel operators and tenants, and international brands apply their own sustainability programmes. Clear data on water, energy, waste and carbon supports these commitments and avoids claims that cannot be substantiated."
+    ],
+    "challenges": [
+      { "title": "Sensitive locations", "description": "Coastal, island and desert sites require baseline studies and design controls to protect reefs, shorelines, habitats and landscapes." },
+      { "title": "Water and wastewater", "description": "Desalination, sewage treatment and effluent reuse for irrigation need monitoring to protect health, the marine environment and landscaping." },
+      { "title": "Food and operational waste", "description": "Kitchens, banqueting and guest rooms generate food waste, packaging and single-use items that need segregation and recovery." },
+      { "title": "Utility plant obligations", "description": "Remote resorts operating their own power, desalination or wastewater plants take on permit and monitoring duties similar to utilities." },
+      { "title": "Credible sustainability claims", "description": "Guests and investors scrutinise green claims, so sustainability messages must be backed by measured performance data." }
+    ],
+    "requirements": [
+      "Environmental impact assessment for resort and destination developments, reviewed by NCEC",
+      "Environmental permits for on-site desalination, power and wastewater treatment plants where applicable",
+      "Treated effluent and seawater quality monitoring around outfalls and reuse areas",
+      "Waste segregation, food waste management and licensed disposal under MWAN regulations",
+      "Coordination with NCW and NCVC where projects affect protected areas, wildlife or vegetation",
+      "Sustainability and green building commitments set by destination developers or brand standards"
+    ],
+    "support": [
+      { "title": "Destination studies and permits", "description": "We prepare EIAs with marine and terrestrial baselines and permit packages for resorts and their utility plants." },
+      { "title": "Water and effluent monitoring", "description": "We monitor treated effluent, reuse water and receiving waters, and report results against permit and reuse conditions." },
+      { "title": "Hotel waste programmes", "description": "We assess waste by department, set up segregation and food waste reduction measures, and organise records for contractors." },
+      { "title": "Sustainability and green buildings", "description": "We set sustainability targets, track water, energy and carbon, and support Mostadam or LEED for new and existing properties." }
+    ],
+    "faqs": [
+      { "q": "Our resort treats its own wastewater for irrigation. What monitoring is needed?", "a": "Typically regular sampling of treated effluent quality against permit and reuse conditions, plus checks on the receiving environment where relevant. We design a sampling plan around your plant, irrigation areas and conditions, and report results in a format you can share with authorities." },
+      { "q": "How can a hotel reduce food waste?", "a": "Start by measuring it by source: preparation, buffet and plate waste. We run a waste audit, identify the main drivers and recommend practical changes in purchasing, production planning and buffet management, plus recovery routes for unavoidable waste." },
+      { "q": "Can you help us avoid greenwashing in our sustainability messaging?", "a": "Yes. We review claims against your measured data, recommend wording that is accurate and specific, and identify where further data or third-party verification would be needed before a claim is made." }
+    ]
+  },
+  "ar": {
+    "name": "الضيافة والسياحة",
+    "seoTitle": "الاستشارات البيئية للضيافة والسياحة | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي والتصاريح وإدارة المياه والنفايات واستشارات المباني الخضراء والاستدامة للفنادق والمنتجعات والوجهات السياحية في المملكة.",
+    "cardDescription": "دراسات أثر وتصاريح وإدارة للمياه والنفايات واستشارات استدامة للفنادق والمنتجعات والوجهات السياحية في البيئات الحساسة.",
+    "overview": [
+      "تمتد التنمية السياحية في المملكة إلى السواحل والجزر والجبال والصحاري والمناطق التراثية ذات الحساسية البيئية، فيتعين على المنتجعات ومشاريع الوجهات مراعاة الشعاب المرجانية وأشجار المانجروف والحياة الفطرية والغطاء النباتي وظلمة السماء الليلية ومحدودية الموارد المائية منذ مرحلة التخطيط. وتتطلب هذه المشاريع عادةً تقييمًا للأثر البيئي وفق نظام البيئة ولوائحه التنفيذية يراجعه المركز الوطني للرقابة على الالتزام البيئي (NCEC).",
+      "وللفنادق والمنتجعات العاملة جوانبها البيئية: استهلاك مرتفع للمياه والطاقة، وبقايا الأغذية، والتغليف والمفروشات، ومعالجة الصرف الصحي وإعادة استخدام المياه المعالجة، وكيماويات المسابح، والمغاسل والمطابخ ومولدات الطوارئ. وكثيرًا ما تشغّل المنشآت النائية محطات خاصة بها للتحلية والكهرباء ومعالجة مياه الصرف، فتترتب عليها التزامات تصاريح ورصد مستقلة.",
+      "ويتوقع النزلاء والمشغلون والمستثمرون أداءً موثوقًا في الاستدامة؛ إذ يضع مطورو الوجهات معايير بيئية لمشغلي الفنادق والمستأجرين، وتطبق العلامات الدولية برامجها الخاصة. وتدعم البيانات الواضحة عن المياه والطاقة والنفايات والكربون هذه الالتزامات، وتجنّب إطلاق ادعاءات لا يمكن إثباتها."
+    ],
+    "challenges": [
+      { "title": "مواقع حساسة", "description": "تتطلب المواقع الساحلية والجزرية والصحراوية دراسات خط أساس وضوابط تصميم لحماية الشعاب والشواطئ والموائل والمشاهد الطبيعية." },
+      { "title": "المياه ومياه الصرف", "description": "تحتاج التحلية ومعالجة الصرف الصحي وإعادة استخدام المياه المعالجة في الري إلى رصد يحمي الصحة والبيئة البحرية والمسطحات الخضراء." },
+      { "title": "بقايا الأغذية ونفايات التشغيل", "description": "تولّد المطابخ والولائم وغرف النزلاء بقايا أغذية وتغليفًا ومواد أحادية الاستخدام تحتاج إلى فرز واسترجاع." },
+      { "title": "التزامات محطات المرافق", "description": "تتحمل المنتجعات النائية التي تشغّل محطات كهرباء أو تحلية أو معالجة خاصة بها واجبات تصاريح ورصد مماثلة لواجبات شركات المرافق." },
+      { "title": "ادعاءات استدامة موثوقة", "description": "يتفحص النزلاء والمستثمرون الادعاءات الخضراء، فيلزم أن تستند رسائل الاستدامة إلى بيانات أداء مقيسة." }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي لمشاريع المنتجعات والوجهات بمراجعة المركز الوطني للرقابة على الالتزام البيئي",
+      "تصاريح بيئية لمحطات التحلية والكهرباء ومعالجة مياه الصرف الداخلية عند الاقتضاء",
+      "رصد جودة المياه المعالجة ومياه البحر حول المخارج ومناطق إعادة الاستخدام",
+      "فرز النفايات وإدارة بقايا الأغذية والتخلص المرخص وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "التنسيق مع المركز الوطني لتنمية الحياة الفطرية والمركز الوطني لتنمية الغطاء النباتي عند التأثير في المناطق المحمية أو الحياة الفطرية أو الغطاء النباتي",
+      "التزامات الاستدامة والمباني الخضراء التي يضعها مطورو الوجهات أو معايير العلامات الفندقية"
+    ],
+    "support": [
+      { "title": "دراسات الوجهات وتصاريحها", "description": "نعدّ دراسات تقييم الأثر البيئي بخطوط أساس بحرية وبرية، وحزم التصاريح للمنتجعات ومحطات مرافقها." },
+      { "title": "رصد المياه والمياه المعالجة", "description": "نرصد المياه المعالجة ومياه إعادة الاستخدام والمسطحات المائية المستقبِلة، ونقارن النتائج بشروط التصريح وإعادة الاستخدام." },
+      { "title": "برامج النفايات الفندقية", "description": "نقيّم النفايات في كل قسم، ونضع تدابير الفرز والحد من هدر الطعام، وننظم السجلات مع المقاولين." },
+      { "title": "الاستدامة والمباني الخضراء", "description": "نحدد مستهدفات الاستدامة، ونتابع المياه والطاقة والكربون، وندعم الحصول على تصنيف مستدام أو LEED للمنشآت الجديدة والقائمة." }
+    ],
+    "faqs": [
+      { "q": "يعالج منتجعنا مياه الصرف لاستخدامها في الري، فما الرصد المطلوب؟", "a": "عادةً أخذ عينات منتظمة لجودة المياه المعالجة مقابل شروط التصريح وإعادة الاستخدام، إضافةً إلى فحص البيئة المستقبِلة عند الحاجة. نصمم خطة عينات تناسب محطتكم ومناطق الري والاشتراطات، ونعدّ التقارير بصيغة يمكن تقديمها للجهات المختصة." },
+      { "q": "كيف يمكن لفندق أن يقلل هدر الطعام؟", "a": "ابدأوا بقياسه حسب مصدره: التحضير والبوفيه وبقايا الأطباق. ننفذ تدقيقًا للنفايات، ونحدد الأسباب الرئيسة، ونوصي بتغييرات عملية في الشراء وتخطيط الإنتاج وإدارة البوفيه، مع مسارات استرجاع لما لا يمكن تجنبه." },
+      { "q": "هل يمكنكم مساعدتنا على تجنب الادعاءات البيئية المضللة؟", "a": "نعم، نراجع الادعاءات مقابل بياناتكم المقيسة، ونقترح صياغة دقيقة ومحددة، ونبين المواضع التي تتطلب بيانات إضافية أو تحققًا من طرف ثالث قبل إطلاق أي ادعاء." }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "category": "environmental-studies",
+  "order": 1,
+  "formFamily": "studies",
+  "industries": ["industrial-manufacturing", "construction", "real-estate", "infrastructure", "energy", "oil-gas", "mining-quarrying", "waste-recycling"],
+  "related": ["environmental-permitting", "environmental-management-plans", "environmental-monitoring", "environmental-compliance"],
+  "en": {
+    "name": "Environmental Impact Assessment",
+    "seoTitle": "Environmental Impact Assessment in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental impact assessment (EIA) in Saudi Arabia: screening, scoping, baseline studies, impact analysis and mitigation for a report ready for NCEC review.",
+    "valueProp": "A structured, evidence-based EIA that identifies real project risks early and gives the reviewing authority a clear, defensible basis for its decision.",
+    "cardDescription": "Screening, scoping, baseline studies, impact analysis and mitigation, prepared as an EIA report ready for authority review and follow-up comments.",
+    "keyBenefit": "A defensible EIA that keeps your approval path predictable",
+    "definition": "An environmental impact assessment (EIA) is a systematic study that identifies, predicts and evaluates the likely environmental effects of a proposed project before it is approved. In Saudi Arabia, it determines the project's environmental classification, defines mitigation and monitoring measures, and forms the basis of the environmental permit application reviewed by the National Center for Environmental Compliance (NCEC).",
+    "overview": [
+      "Under the Environmental Law and its Implementing Regulations, projects that may affect the environment must be classified and, depending on their category, assessed before construction or operation can begin. The EIA is the document that carries this assessment. It describes the project and its alternatives, establishes the existing environmental and social conditions, and predicts how construction and operation will change them. A well-prepared EIA links each significant impact to a specific mitigation measure and to a monitoring commitment that can be verified later.",
+      "For project owners, the EIA is also a planning tool. Baseline surveys of air, noise, soil, groundwater, ecology and land use often reveal constraints that are far cheaper to address at design stage than after contracts are signed. Early screening shows which studies are needed and which are not, so field work, modelling and specialist input are scoped to the actual risk of the project rather than to a generic checklist. This keeps the study proportionate and the schedule realistic.",
+      "Selorin manages the full EIA process: screening and classification, scoping, baseline data collection, impact prediction, environmental risk assessment, mitigation design and report preparation. Where the project category requires it, we plan and document stakeholder input. After submission, we prepare structured responses to review comments from the NCEC and, where relevant, from bodies such as the Royal Commission for Jubail and Yanbu or MODON, and we translate the approved commitments into the environmental management plans your contractors will implement."
+    ],
+    "whenYouNeed": [
+      "You are planning a new industrial, infrastructure or development project that requires an environmental permit.",
+      "You need to confirm your project's environmental classification under the Implementing Regulations.",
+      "An existing facility is expanding capacity, adding processes or changing its fuel or raw materials.",
+      "The reviewing authority has returned comments on a submitted EIA and requested clarifications.",
+      "Lenders or investors require an independent environmental and social risk assessment of the project.",
+      "Your project site lies near sensitive receptors such as communities, coastlines, wadis or protected areas."
+    ],
+    "deliver": [
+      { "title": "Screening and classification", "description": "Review of project scope, location and activities to determine the likely environmental category and the level of study the Implementing Regulations require." },
+      { "title": "Scoping report", "description": "Definition of study boundaries, key environmental aspects, alternatives to consider, data gaps and the baseline survey programme needed to close them." },
+      { "title": "Baseline studies", "description": "Field surveys and desk studies covering air quality, noise, soil, groundwater, ecology, land use and social conditions within the defined study area." },
+      { "title": "Impact and risk assessment", "description": "Prediction and evaluation of construction and operational impacts, including environmental risk assessment of accidental releases and other non-routine events." },
+      { "title": "Mitigation and monitoring measures", "description": "Practical, costed-in-principle measures for each significant impact, with monitoring parameters, locations and frequencies that can be verified during implementation." },
+      { "title": "EIA report and review support", "description": "A complete EIA report prepared for submission, followed by structured responses to authority review comments until the study is accepted." }
+    ],
+    "approach": [
+      { "title": "Screen and classify", "description": "We review project information, site location and planned activities to confirm the likely classification and the scope of assessment required." },
+      { "title": "Scope the study", "description": "We define key aspects, study area, alternatives and data needs, and agree the baseline programme with your project team." },
+      { "title": "Establish baseline", "description": "We collect field and secondary data on environmental and social conditions, using documented sampling methods and locations." },
+      { "title": "Assess impacts", "description": "We predict impacts for construction and operation, rate their significance and assess environmental risks from non-routine events." },
+      { "title": "Design mitigation", "description": "We define mitigation, monitoring and management measures and, where required, document stakeholder input and how it was addressed." },
+      { "title": "Report and respond", "description": "We prepare the EIA report, support its submission and respond to review comments until the authority closes the review." }
+    ],
+    "deliverables": [
+      { "item": "Screening and classification memo", "format": "Technical memo (PDF)", "timing": "Project start" },
+      { "item": "Scoping report and baseline survey plan", "format": "Report with study area maps (PDF)", "timing": "Scoping stage" },
+      { "item": "Baseline survey results", "format": "Data tables, maps and field records (PDF + Excel)", "timing": "After field work" },
+      { "item": "Impact and environmental risk assessment", "format": "Significance matrices and assessment chapters (PDF)", "timing": "Assessment stage" },
+      { "item": "Environmental impact assessment report", "format": "Full EIA report with appendices (PDF + editable Word)", "timing": "Submission stage" },
+      { "item": "Response to review comments", "format": "Comment-response matrix and revised report sections (PDF)", "timing": "Authority review stage" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, including the requirements for environmental classification and impact assessment of projects.",
+      "National Center for Environmental Compliance (NCEC), which reviews EIA studies and issues environmental permits.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON, where projects are located within their jurisdictions and their environmental requirements apply.",
+      "National Center for Wildlife (NCW) and National Center for Vegetation Cover Development and Combating Desertification (NCVC), where projects may affect habitats or vegetation.",
+      "Lender and investor environmental and social requirements, where the project is externally financed."
+    ],
+    "faqs": [
+      { "q": "Does every project in Saudi Arabia need a full EIA?", "a": "No. The Implementing Regulations classify projects according to their potential environmental impact, and the level of assessment depends on that classification. Some projects need only limited documentation, while others require a detailed study with baseline surveys and impact modelling. Screening at the start of the project confirms which category is likely to apply, so you do not commission more study than the project requires, or less than the authority will expect." },
+      { "q": "What information do you need from us to start?", "a": "We typically need a project description, site location and layout, the main processes and equipment, expected raw materials, utilities, emissions, effluents and wastes, and the construction schedule. Early-stage design information is sufficient for screening and scoping. Where details are not yet fixed, we work with stated assumptions and update the assessment as the design develops, recording each change so the final report remains consistent." },
+      { "q": "How long does an EIA take?", "a": "Duration depends on the project category, the size of the study area, the number of baseline surveys and whether seasonal data is needed. Authority review time also varies by project. We give you a programme after scoping, once the required studies are known, and we identify the activities on the critical path so that your design and procurement schedule can be planned around them." },
+      { "q": "What happens if the authority returns comments on the EIA?", "a": "Review comments are a normal part of the process. We log every comment in a response matrix, prepare a clear technical answer for each one, revise the relevant report sections and, where additional data is needed, explain how and when it will be provided. This keeps the exchange traceable and helps the reviewer close each point without repeated rounds of clarification." },
+      { "q": "How does the EIA connect to construction and operation?", "a": "The mitigation and monitoring measures approved in the EIA become commitments that must be implemented on site. We translate them into a construction environmental management plan and an operational environmental management plan, with clear responsibilities, monitoring schedules and records. This makes it easier to demonstrate compliance during inspections and when renewing or amending environmental permits later in the project life." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم الأثر البيئي",
+    "seoTitle": "تقييم الأثر البيئي في السعودية | سيلورين",
+    "metaDescription": "دراسات تقييم الأثر البيئي (EIA) في المملكة: الفحص الأولي، وتحديد النطاق، والدراسات المرجعية، وتحليل الآثار وتدابير التخفيف، بتقرير جاهز لمراجعة الجهة المختصة.",
+    "valueProp": "دراسة تقييم أثر بيئي منهجية مبنية على الأدلة، تكشف مخاطر المشروع مبكرًا وتمنح الجهة المراجعة أساسًا واضحًا ومتينًا لاتخاذ قرارها.",
+    "cardDescription": "فحص أولي وتحديد نطاق ودراسات مرجعية وتقييم للآثار وتدابير للتخفيف، في تقرير تقييم أثر بيئي جاهز للمراجعة والرد على الملاحظات.",
+    "keyBenefit": "دراسة متينة تجعل مسار الموافقة البيئية أوضح وأكثر قابلية للتنبؤ",
+    "definition": "تقييم الأثر البيئي (EIA) دراسة منهجية تحدد الآثار البيئية المحتملة لمشروع مقترح وتتنبأ بها وتقيّمها قبل اعتماده. وفي المملكة العربية السعودية تُستخدم هذه الدراسة لتحديد التصنيف البيئي للمشروع، ووضع تدابير التخفيف والرصد اللازمة، وتشكّل الأساس الذي يقوم عليه طلب التصريح البيئي الذي يراجعه المركز الوطني للرقابة على الالتزام البيئي، بما يضمن أن تُبنى قرارات المشروع على معلومات بيئية موثوقة.",
+    "overview": [
+      "يُلزم نظام البيئة ولوائحه التنفيذية المشاريع التي قد تؤثر في البيئة بأن تُصنَّف بيئيًا، وأن تخضع بحسب فئتها لتقييم بيئي قبل البدء في الإنشاء أو التشغيل. ودراسة تقييم الأثر البيئي هي الوثيقة التي تحمل هذا التقييم؛ إذ تصف المشروع وبدائله، وترصد الوضع البيئي والاجتماعي القائم، وتتنبأ بالتغيرات التي ستُحدثها مرحلتا الإنشاء والتشغيل. والدراسة الجيدة تربط كل أثر جوهري بتدبير تخفيف محدد، وبالتزام رصد يمكن التحقق منه لاحقًا خلال التنفيذ، فتصبح مرجعًا عمليًا للمشروع لا مجرد متطلب إجرائي.",
+      "وتُعد الدراسة كذلك أداة تخطيط مهمة لملاك المشاريع؛ فالمسوحات المرجعية لجودة الهواء والضوضاء والتربة والمياه الجوفية والتنوع الأحيائي واستخدامات الأراضي كثيرًا ما تكشف قيودًا تكون معالجتها في مرحلة التصميم أقل كلفة بكثير من معالجتها بعد توقيع العقود. ويحدد الفحص الأولي الدراسات المطلوبة فعلًا وتلك التي لا حاجة إليها، فيُوجَّه العمل الميداني والنمذجة والاستشارات التخصصية بحسب المخاطر الفعلية للمشروع لا وفق قائمة عامة، وهو ما يُبقي الدراسة متناسبة مع حجم المشروع والجدول الزمني واقعيًا.",
+      "تتولى سيلورين إدارة دراسة تقييم الأثر البيئي بكامل مراحلها: الفحص الأولي والتصنيف، وتحديد النطاق، وجمع البيانات المرجعية، والتنبؤ بالآثار، وتقييم المخاطر البيئية، وتصميم تدابير التخفيف، وإعداد التقرير. وحين تتطلب فئة المشروع ذلك، نخطط لإشراك أصحاب العلاقة ونوثّق مدخلاتهم. وبعد تقديم الدراسة نعدّ ردودًا منظمة على ملاحظات المركز الوطني للرقابة على الالتزام البيئي، وملاحظات جهات مثل الهيئة الملكية للجبيل وينبع أو مدن عند الاقتضاء، ثم نحوّل الالتزامات المعتمدة إلى خطط إدارة بيئية ينفذها المقاولون في الموقع."
+    ],
+    "whenYouNeed": [
+      "عند التخطيط لمشروع صناعي أو مشروع بنية تحتية أو تطوير عقاري جديد يتطلب تصريحًا بيئيًا.",
+      "عند الحاجة إلى التحقق من التصنيف البيئي للمشروع وفق اللوائح التنفيذية لنظام البيئة.",
+      "عند توسعة منشأة قائمة أو إضافة عمليات جديدة أو تغيير الوقود أو المواد الخام.",
+      "عند ورود ملاحظات من الجهة المراجعة على دراسة مقدمة وطلبها إيضاحات إضافية.",
+      "عند اشتراط الممولين أو المستثمرين تقييمًا مستقلًا للمخاطر البيئية والاجتماعية للمشروع.",
+      "عند وقوع موقع المشروع قرب مستقبِلات حساسة كالتجمعات السكنية أو السواحل أو الأودية أو المناطق المحمية."
+    ],
+    "deliver": [
+      { "title": "الفحص الأولي والتصنيف", "description": "مراجعة نطاق المشروع وموقعه وأنشطته لتحديد الفئة البيئية المرجحة ومستوى الدراسة الذي تتطلبه اللوائح التنفيذية لنظام البيئة." },
+      { "title": "تقرير تحديد النطاق", "description": "تحديد حدود الدراسة والجوانب البيئية الرئيسة والبدائل الواجب دراستها والفجوات في البيانات وبرنامج المسوحات المرجعية اللازم لسدّها." },
+      { "title": "الدراسات المرجعية", "description": "مسوحات ميدانية ودراسات مكتبية تشمل جودة الهواء والضوضاء والتربة والمياه الجوفية والتنوع الأحيائي واستخدامات الأراضي والأوضاع الاجتماعية في منطقة الدراسة." },
+      { "title": "تقييم الآثار والمخاطر", "description": "التنبؤ بآثار مرحلتي الإنشاء والتشغيل وتقييم أهميتها، مع تقييم المخاطر البيئية الناتجة عن التسربات العرضية والأحداث غير الاعتيادية." },
+      { "title": "تدابير التخفيف والرصد", "description": "تدابير عملية لكل أثر جوهري، مع تحديد معايير الرصد ومواقعه وتكراره بصورة يمكن التحقق منها أثناء التنفيذ والتشغيل." },
+      { "title": "التقرير ودعم المراجعة", "description": "إعداد تقرير تقييم أثر بيئي متكامل جاهز للتقديم، ثم إعداد ردود منظمة على ملاحظات الجهة المراجعة حتى قبول الدراسة." }
+    ],
+    "approach": [
+      { "title": "الفحص والتصنيف", "description": "نراجع معلومات المشروع وموقعه وأنشطته المخطط لها لتأكيد التصنيف المرجح ونطاق التقييم المطلوب." },
+      { "title": "تحديد النطاق", "description": "نحدد الجوانب الرئيسة ومنطقة الدراسة والبدائل واحتياجات البيانات، ونتفق مع فريق المشروع على برنامج المسوحات." },
+      { "title": "الوضع المرجعي", "description": "نجمع البيانات الميدانية والثانوية عن الأوضاع البيئية والاجتماعية باستخدام طرق ومواقع اعتيان موثقة." },
+      { "title": "تقييم الآثار", "description": "نتنبأ بآثار الإنشاء والتشغيل ونقيّم أهميتها، ونقيّم المخاطر البيئية للأحداث غير الاعتيادية." },
+      { "title": "تصميم التخفيف", "description": "نحدد تدابير التخفيف والرصد والإدارة، ونوثّق مدخلات أصحاب العلاقة وطريقة معالجتها حين يُشترط ذلك." },
+      { "title": "التقرير والردود", "description": "نعدّ تقرير الدراسة وندعم تقديمه، ونرد على ملاحظات المراجعة حتى تُغلق الجهة المختصة مراجعتها." }
+    ],
+    "deliverables": [
+      { "item": "مذكرة الفحص الأولي والتصنيف", "format": "مذكرة فنية (PDF)", "timing": "بداية المشروع" },
+      { "item": "تقرير تحديد النطاق وخطة المسوحات المرجعية", "format": "تقرير مع خرائط منطقة الدراسة (PDF)", "timing": "مرحلة تحديد النطاق" },
+      { "item": "نتائج المسوحات المرجعية", "format": "جداول بيانات وخرائط وسجلات ميدانية (PDF + Excel)", "timing": "بعد انتهاء العمل الميداني" },
+      { "item": "تقييم الآثار والمخاطر البيئية", "format": "مصفوفات الأهمية وفصول التقييم (PDF)", "timing": "مرحلة التقييم" },
+      { "item": "تقرير تقييم الأثر البيئي", "format": "تقرير كامل مع الملاحق (PDF + Word قابل للتعديل)", "timing": "مرحلة التقديم" },
+      { "item": "الرد على ملاحظات المراجعة", "format": "مصفوفة الملاحظات والردود مع الأقسام المعدّلة (PDF)", "timing": "مرحلة مراجعة الجهة المختصة" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، بما فيها متطلبات التصنيف البيئي للمشاريع وتقييم آثارها.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الجهة التي تراجع دراسات تقييم الأثر البيئي وتصدر التصاريح البيئية.",
+      "الهيئة الملكية للجبيل وينبع وهيئة المدن الصناعية ومناطق التقنية (مدن)، للمشاريع الواقعة ضمن نطاق اختصاصهما ومتطلباتهما البيئية.",
+      "المركز الوطني لتنمية الحياة الفطرية والمركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر، حين قد يؤثر المشروع في الموائل أو الغطاء النباتي.",
+      "المتطلبات البيئية والاجتماعية للممولين والمستثمرين، في المشاريع الممولة من جهات خارجية."
+    ],
+    "faqs": [
+      { "q": "هل يحتاج كل مشروع في المملكة إلى دراسة تقييم أثر بيئي كاملة؟", "a": "لا. تصنّف اللوائح التنفيذية لنظام البيئة المشاريع بحسب أثرها البيئي المحتمل، ويتحدد مستوى التقييم المطلوب وفق هذا التصنيف. فبعض المشاريع تكفيها وثائق محدودة، بينما يتطلب بعضها دراسة تفصيلية تشمل مسوحات مرجعية ونمذجة للآثار. ويؤكد الفحص الأولي في بداية المشروع الفئة المرجحة، فلا تتحمل كلفة دراسات تفوق حاجة المشروع، ولا تقدّم دراسة أقل مما تتوقعه الجهة المختصة." },
+      { "q": "ما المعلومات التي تحتاجونها منا للبدء؟", "a": "نحتاج عادة إلى وصف المشروع وموقعه ومخططه العام، والعمليات والمعدات الرئيسة، والمواد الخام المتوقعة، والمرافق، والانبعاثات والمياه المصرّفة والنفايات المتوقعة، إضافة إلى الجدول الزمني للإنشاء. وتكفي معلومات التصميم الأولية للفحص الأولي وتحديد النطاق، وحين لا تكون بعض التفاصيل نهائية نعمل وفق افتراضات معلنة، ثم نحدّث التقييم مع تطور التصميم ونوثّق كل تغيير ليبقى التقرير النهائي متسقًا." },
+      { "q": "كم تستغرق دراسة تقييم الأثر البيئي؟", "a": "تعتمد المدة على فئة المشروع، ومساحة منطقة الدراسة، وعدد المسوحات المرجعية، والحاجة إلى بيانات موسمية من عدمها. كما تختلف مدة المراجعة لدى الجهة المختصة من مشروع إلى آخر. ونقدّم لكم برنامجًا زمنيًا بعد مرحلة تحديد النطاق، حين تتضح الدراسات المطلوبة، ونحدد الأنشطة الواقعة على المسار الحرج حتى يُخطَّط جدول التصميم والمشتريات بناءً عليها." },
+      { "q": "ماذا يحدث إذا أبدت الجهة المختصة ملاحظات على الدراسة؟", "a": "الملاحظات جزء طبيعي من عملية المراجعة. نسجّل كل ملاحظة في مصفوفة للردود، ونعدّ إجابة فنية واضحة لكل منها، ونعدّل أقسام التقرير ذات العلاقة، وإذا تطلب الأمر بيانات إضافية نوضح طريقة توفيرها وموعده. ويجعل هذا الأسلوب المراسلات قابلة للتتبع، ويساعد المراجع على إغلاق كل نقطة دون الحاجة إلى جولات متكررة من الاستيضاح." },
+      { "q": "كيف ترتبط الدراسة بمرحلتي الإنشاء والتشغيل؟", "a": "تتحول تدابير التخفيف والرصد المعتمدة في الدراسة إلى التزامات واجبة التنفيذ في الموقع. ونترجم هذه الالتزامات إلى خطة إدارة بيئية للإنشاء وخطة إدارة بيئية للتشغيل، تحددان المسؤوليات وجداول الرصد والسجلات المطلوبة بوضوح. وهذا يسهّل إثبات الامتثال البيئي أثناء عمليات التفتيش، وعند تجديد التصاريح البيئية أو تعديلها في المراحل اللاحقة من عمر المشروع." }
+    ]
+  }
+}

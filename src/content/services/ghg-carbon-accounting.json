@@ -1,0 +1,129 @@
+{
+  "category": "sustainability-climate",
+  "order": 2,
+  "formFamily": "sustainability",
+  "industries": ["industrial-manufacturing", "energy", "oil-gas", "logistics-warehousing", "food-beverage", "mining-quarrying", "commercial-facilities"],
+  "related": ["esg-advisory", "net-zero-advisory", "life-cycle-assessment"],
+  "en": {
+    "name": "GHG and Carbon Accounting",
+    "seoTitle": "GHG and Carbon Accounting in Saudi Arabia | Selorin",
+    "metaDescription": "Corporate GHG inventories in Saudi Arabia per the GHG Protocol and ISO 14064-1: Scope 1, 2 and 3 boundaries, documented factors and verification-ready reports.",
+    "valueProp": "A corporate greenhouse gas inventory built on clear boundaries, documented methods and data you can defend to verifiers and investors.",
+    "cardDescription": "Scope 1, 2 and 3 emissions inventories prepared under the GHG Protocol and ISO 14064-1, with documented methods and verification-ready records.",
+    "keyBenefit": "An emissions baseline you can report, verify and reduce",
+    "definition": "GHG and carbon accounting is the process of quantifying an organisation's greenhouse gas emissions over a defined period using recognised standards such as the GHG Protocol Corporate Standard and ISO 14064-1. It sets organisational and operational boundaries, classifies emissions into Scope 1, 2 and 3, applies documented emission factors, and produces an inventory that supports reporting, target setting and independent verification.",
+    "overview": [
+      "A greenhouse gas inventory is the foundation for almost every climate commitment a company makes. ESG reports, IFRS S2 climate disclosures, lender questionnaires, customer requests and net-zero targets all rely on a credible emissions baseline. In Saudi Arabia, where many operations are energy-intensive and fuel-based, the main sources are often clear, but the detail is not: which entities are included, how purchased electricity is treated, how refrigerant losses are estimated, and which value chain categories are significant. Getting these choices right and documenting them is what makes an inventory usable.",
+      "We prepare corporate inventories in line with the GHG Protocol Corporate Standard and Scope 2 Guidance, and structure them to meet ISO 14064-1 where verification against that standard is planned. Work begins with boundary setting, using the equity share or control approach that suits your structure. We then map emission sources across stationary and mobile combustion, process emissions, fugitive emissions and purchased energy, screen the 15 Scope 3 categories for relevance, and select emission factors with documented sources. Each calculation is traceable from activity data to result.",
+      "The inventory is delivered as a working calculation model and a report that explains methods, assumptions, exclusions and uncertainty. We also set up the data management side: data owners, collection frequency, internal review and a base-year recalculation policy, so the inventory can be updated each year without starting again. If you intend to have the inventory verified, we organise evidence and documentation to support the verifier's review. Product-level footprints are a separate exercise covered under life cycle assessment; this service focuses on emissions at organisation and facility level."
+    ],
+    "whenYouNeed": [
+      "You need a first emissions baseline for an ESG report or climate disclosure.",
+      "Investors, lenders or customers request your Scope 1, 2 or 3 emissions.",
+      "You plan to set a reduction or net-zero target and need a base year.",
+      "Your existing inventory has unclear boundaries, outdated factors or undocumented assumptions.",
+      "You intend to seek third-party verification of your inventory against ISO 14064-1.",
+      "Acquisitions, divestments or new facilities require boundary changes or base-year recalculation."
+    ],
+    "deliver": [
+      { "title": "Boundary definition", "description": "An organisational boundary using the equity share or control approach, and an operational boundary listing included sources, scopes and justified exclusions." },
+      { "title": "Source mapping and data collection", "description": "An inventory of emission sources by facility and scope, with activity data requests, collection templates and a named owner for each data stream." },
+      { "title": "Emission factor selection", "description": "Documented emission factors and global warming potentials for fuels, electricity, refrigerants and Scope 3 categories, with sources and update rules recorded." },
+      { "title": "Scope 3 screening", "description": "Relevance screening of the Scope 3 categories, with calculation methods chosen for significant categories and data quality noted for each one." },
+      { "title": "Calculation model and inventory report", "description": "A transparent calculation workbook and a report explaining boundaries, methods, results by scope and source, assumptions, exclusions and uncertainty." },
+      { "title": "Verification readiness", "description": "An evidence pack, inventory management procedure and pre-verification review so the inventory can be checked efficiently by an independent verifier." }
+    ],
+    "approach": [
+      { "title": "Boundaries", "description": "We review your legal and operational structure, agree the consolidation approach, define the base year and reporting period, and confirm which facilities and activities are included." },
+      { "title": "Source mapping", "description": "We identify emission sources at each facility through document review and site discussions, covering combustion, process, fugitive and purchased energy emissions." },
+      { "title": "Data collection", "description": "We issue data requests, collect fuel, electricity, refrigerant and procurement records, and check them for gaps, units and consistency with financial records." },
+      { "title": "Calculation", "description": "We apply the selected emission factors and methods, calculate emissions by scope, source and facility, and test results against prior years and benchmarks." },
+      { "title": "Reporting", "description": "We prepare the inventory report and model, review them with your team, and document assumptions, exclusions and uncertainty in plain terms." },
+      { "title": "Verification readiness", "description": "We compile evidence, write the inventory management procedure and run a pre-verification check before any independent verification begins." }
+    ],
+    "deliverables": [
+      { "item": "Boundary and methodology note", "format": "Consolidation approach, scopes and exclusions (PDF)", "timing": "End of boundary stage" },
+      { "item": "Data request and collection templates", "format": "Structured templates by facility and source (Excel)", "timing": "Data collection stage" },
+      { "item": "GHG calculation model", "format": "Transparent workbook with activity data, factors and results (Excel)", "timing": "Calculation stage" },
+      { "item": "Scope 3 screening summary", "format": "Category relevance assessment and methods (Excel + PDF)", "timing": "Calculation stage" },
+      { "item": "GHG inventory report", "format": "Results by scope, source and facility with methods (Word + PDF)", "timing": "Reporting stage" },
+      { "item": "Inventory management procedure", "format": "Roles, data flows, review and base-year recalculation (Word)", "timing": "Final stage" },
+      { "item": "Verification evidence pack", "format": "Indexed evidence folder and pre-verification findings (digital folder + PDF)", "timing": "Before verification" }
+    ],
+    "regulatoryContext": [
+      "GHG Protocol Corporate Standard, Scope 2 Guidance and Corporate Value Chain (Scope 3) Standard",
+      "ISO 14064-1 for quantifying and reporting greenhouse gas emissions and removals at organisation level",
+      "IFRS S2 (ISSB) climate-related disclosures, which draw on GHG Protocol-based emissions data",
+      "Saudi Exchange ESG Disclosure Guidelines for listed companies reporting environmental metrics",
+      "Saudi Arabia's 2060 net-zero target and the Saudi Green Initiative as national context for emissions reporting"
+    ],
+    "faqs": [
+      { "q": "What is the difference between Scope 1, 2 and 3 emissions?", "a": "Scope 1 covers direct emissions from sources you own or control, such as boilers, generators, vehicles, process equipment and refrigerant leaks. Scope 2 covers indirect emissions from purchased electricity, steam, heating or cooling. Scope 3 covers all other indirect emissions in your value chain, such as purchased goods, transport, business travel, waste and the use of sold products. The GHG Protocol divides Scope 3 into 15 categories." },
+      { "q": "Do we need to include Scope 3 emissions?", "a": "It depends on your reporting purpose. Many frameworks and investors expect Scope 1 and 2 as a minimum, and IFRS S2 includes Scope 3 disclosure. For many companies, Scope 3 is the largest share of the footprint. We usually start by screening all categories to see which are significant, then calculate those with the most suitable data available, improving data quality over successive years." },
+      { "q": "Which emission factors do you use for Saudi Arabia?", "a": "We select factors that suit the source and the reporting purpose, preferring country-specific or supplier-specific data where it is available and documented, and recognised international databases where it is not. For purchased electricity we follow the GHG Protocol Scope 2 Guidance. Every factor is recorded with its source, year and unit so that results can be checked and updated consistently each year." },
+      { "q": "How is a GHG inventory different from a product carbon footprint?", "a": "A GHG inventory measures the emissions of an organisation or facility over a period, usually a year. A product carbon footprint measures emissions across the life cycle of a specific product, from raw materials to end of life, per unit of product. They use different standards and serve different purposes. Product footprints are covered by our life cycle assessment service and can draw on the same activity data." },
+      { "q": "Can you verify our GHG inventory?", "a": "Verification should be carried out by a body independent of the team that prepared the inventory, which is what gives it credibility. Our role is to prepare the inventory so that it is verifiable: documented boundaries, methods and factors, an organised evidence pack and a pre-verification review. This reduces findings and clarification requests during the verifier's work and helps the process run to plan." }
+    ]
+  },
+  "ar": {
+    "name": "حصر الانبعاثات والمحاسبة الكربونية",
+    "seoTitle": "حصر الانبعاثات والمحاسبة الكربونية في السعودية | سيلورين",
+    "metaDescription": "حصر انبعاثات غازات الاحتباس الحراري للمنشآت في السعودية وفق GHG Protocol وISO 14064-1: حدود النطاقات 1 و2 و3، ومعاملات انبعاث موثقة، وتقرير جاهز للتحقق.",
+    "valueProp": "حصر مؤسسي لانبعاثات غازات الاحتباس الحراري يقوم على حدود واضحة ومنهجيات موثقة وبيانات يمكن الدفاع عنها أمام جهات التحقق والمستثمرين.",
+    "cardDescription": "إعداد حصر انبعاثات النطاقات 1 و2 و3 وفق بروتوكول غازات الاحتباس الحراري وISO 14064-1، بمنهجيات موثقة وسجلات جاهزة للتحقق.",
+    "keyBenefit": "خط أساس للانبعاثات قابل للإفصاح والتحقق والخفض",
+    "definition": "المحاسبة الكربونية هي عملية قياس انبعاثات غازات الاحتباس الحراري الصادرة عن المنشأة خلال فترة محددة، وفق معايير معترف بها مثل المعيار المؤسسي لبروتوكول غازات الاحتباس الحراري (GHG Protocol) ومعيار ISO 14064-1. وتشمل تحديد الحدود التنظيمية والتشغيلية، وتصنيف الانبعاثات إلى النطاقات 1 و2 و3، وتطبيق معاملات انبعاث موثقة، وإعداد حصر يدعم الإفصاح ووضع المستهدفات والتحقق المستقل.",
+    "overview": [
+      "يُعد حصر انبعاثات غازات الاحتباس الحراري الأساس الذي تقوم عليه معظم الالتزامات المناخية للشركات؛ فتقارير ESG، وإفصاحات المناخ وفق IFRS S2، واستبيانات الممولين، وطلبات العملاء، ومستهدفات الحياد الصفري، كلها تحتاج إلى خط أساس موثوق. وفي المملكة، حيث تعتمد عمليات كثيرة على الوقود وتستهلك الطاقة بكثافة، تكون المصادر الرئيسية واضحة غالبًا، أما التفاصيل فليست كذلك: ما الكيانات المشمولة؟ وكيف تُعامل الكهرباء المشتراة؟ وكيف تُقدَّر تسربات غازات التبريد؟ وأي فئات سلسلة القيمة جوهرية؟ وحسن الإجابة عن هذه الأسئلة وتوثيقها هو ما يجعل الحصر صالحًا للاستخدام.",
+      "نُعد الحصر المؤسسي وفق المعيار المؤسسي لبروتوكول غازات الاحتباس الحراري وإرشادات النطاق 2، ونهيكله بما يستوفي متطلبات ISO 14064-1 متى كان التحقق وفق هذا المعيار مخططًا له. ونبدأ بتحديد الحدود التنظيمية باستخدام نهج حصة الملكية أو نهج السيطرة بما يناسب هيكل منشأتكم، ثم نحصر مصادر الانبعاث من الاحتراق الثابت والمتنقل والعمليات الصناعية والتسربات والطاقة المشتراة، ونفحص فئات النطاق 3 الخمس عشرة لتحديد ما يتصل منها بأعمالكم، ونختار معاملات انبعاث موثقة المصدر. وتبقى كل عملية حسابية قابلة للتتبع من بيانات النشاط إلى النتيجة.",
+      "يُسلَّم الحصر في صورة نموذج حسابي قابل للاستخدام وتقرير يشرح المنهجيات والافتراضات والاستثناءات ودرجة عدم اليقين. ونرسي كذلك منظومة إدارة البيانات: المسؤول عن كل مصدر، وتواتر الجمع، والمراجعة الداخلية، وسياسة إعادة احتساب سنة الأساس، بحيث يمكن تحديث الحصر سنويًا دون البدء من الصفر. وإذا كنتم تعتزمون التحقق من الحصر، ننظم الأدلة والوثائق بما يُيسّر عمل جهة التحقق. أما البصمة الكربونية للمنتجات فتُعالج ضمن خدمة تقييم دورة الحياة، إذ تركز هذه الخدمة على الانبعاثات على مستوى المنشأة ومرافقها."
+    ],
+    "whenYouNeed": [
+      "تحتاجون إلى خط أساس أولي للانبعاثات لتقرير ESG أو لإفصاح مناخي.",
+      "يطلب المستثمرون أو الممولون أو العملاء بيانات انبعاثات النطاقات 1 أو 2 أو 3.",
+      "تعتزمون وضع مستهدف لخفض الانبعاثات أو للحياد الصفري وتحتاجون إلى سنة أساس.",
+      "حصركم الحالي يفتقر إلى حدود واضحة أو معاملات محدّثة أو افتراضات موثقة.",
+      "تخططون للتحقق من الحصر عبر طرف ثالث وفق ISO 14064-1.",
+      "عمليات استحواذ أو تخارج أو مرافق جديدة تستدعي تعديل الحدود أو إعادة احتساب سنة الأساس."
+    ],
+    "deliver": [
+      { "title": "تحديد الحدود", "description": "تحديد الحدود التنظيمية بنهج حصة الملكية أو السيطرة، والحدود التشغيلية التي تبيّن المصادر والنطاقات المشمولة والاستثناءات مع مبرراتها." },
+      { "title": "حصر المصادر وجمع البيانات", "description": "قائمة بمصادر الانبعاث حسب المرفق والنطاق، مع طلبات بيانات النشاط ونماذج جمعها وتسمية مسؤول عن كل مصدر بيانات." },
+      { "title": "اختيار معاملات الانبعاث", "description": "معاملات انبعاث وقيم إمكانية الاحترار العالمي موثقة للوقود والكهرباء وغازات التبريد وفئات النطاق 3، مع تسجيل مصادرها وقواعد تحديثها." },
+      { "title": "فحص النطاق 3", "description": "تقييم مدى صلة كل فئة من فئات النطاق 3 بأعمالكم، واختيار طرق الاحتساب للفئات الجوهرية، مع بيان جودة البيانات لكل فئة." },
+      { "title": "النموذج الحسابي وتقرير الحصر", "description": "مصنف حسابي شفاف وتقرير يشرح الحدود والمنهجيات والنتائج حسب النطاق والمصدر، والافتراضات والاستثناءات ودرجة عدم اليقين." },
+      { "title": "الجاهزية للتحقق", "description": "ملف أدلة منظم وإجراء لإدارة الحصر ومراجعة تمهيدية، بحيث تتمكن جهة التحقق المستقلة من فحص الحصر بكفاءة." }
+    ],
+    "approach": [
+      { "title": "الحدود", "description": "نراجع الهيكل القانوني والتشغيلي، ونتفق على نهج التوحيد، ونحدد سنة الأساس وفترة الإفصاح، ونؤكد المرافق والأنشطة المشمولة." },
+      { "title": "حصر المصادر", "description": "نحدد مصادر الانبعاث في كل مرفق من خلال مراجعة الوثائق والنقاش مع فرق المواقع، بما يشمل الاحتراق والعمليات والتسربات والطاقة المشتراة." },
+      { "title": "جمع البيانات", "description": "نرسل طلبات البيانات، ونجمع سجلات الوقود والكهرباء وغازات التبريد والمشتريات، ونتحقق من اكتمالها ووحداتها واتساقها مع السجلات المالية." },
+      { "title": "الاحتساب", "description": "نطبّق معاملات الانبعاث والمنهجيات المختارة، ونحتسب الانبعاثات حسب النطاق والمصدر والمرفق، ونقارن النتائج بالسنوات السابقة والمؤشرات المرجعية." },
+      { "title": "إعداد التقرير", "description": "نُعد تقرير الحصر والنموذج الحسابي ونراجعهما مع فريقكم، ونوثق الافتراضات والاستثناءات ودرجة عدم اليقين بلغة واضحة." },
+      { "title": "الجاهزية للتحقق", "description": "نجمع الأدلة، ونكتب إجراء إدارة الحصر، ونجري فحصًا تمهيديًا قبل بدء أي تحقق مستقل." }
+    ],
+    "deliverables": [
+      { "item": "مذكرة الحدود والمنهجية", "format": "نهج التوحيد والنطاقات والاستثناءات (PDF)", "timing": "نهاية مرحلة تحديد الحدود" },
+      { "item": "نماذج طلب البيانات وجمعها", "format": "نماذج منظمة حسب المرفق والمصدر (Excel)", "timing": "مرحلة جمع البيانات" },
+      { "item": "النموذج الحسابي للانبعاثات", "format": "مصنف شفاف يتضمن بيانات النشاط والمعاملات والنتائج (Excel)", "timing": "مرحلة الاحتساب" },
+      { "item": "ملخص فحص النطاق 3", "format": "تقييم صلة الفئات وطرق احتسابها (Excel مع PDF)", "timing": "مرحلة الاحتساب" },
+      { "item": "تقرير حصر الانبعاثات", "format": "النتائج حسب النطاق والمصدر والمرفق مع المنهجيات (Word وPDF)", "timing": "مرحلة إعداد التقرير" },
+      { "item": "إجراء إدارة الحصر", "format": "الأدوار وتدفق البيانات والمراجعة وإعادة احتساب سنة الأساس (Word)", "timing": "المرحلة الختامية" },
+      { "item": "ملف أدلة التحقق", "format": "مجلد أدلة مفهرس ونتائج المراجعة التمهيدية (مجلد رقمي وPDF)", "timing": "قبل التحقق" }
+    ],
+    "regulatoryContext": [
+      "المعيار المؤسسي لبروتوكول غازات الاحتباس الحراري، وإرشادات النطاق 2، ومعيار سلسلة القيمة (النطاق 3)",
+      "معيار ISO 14064-1 لقياس انبعاثات غازات الاحتباس الحراري وعمليات إزالتها والإفصاح عنها على مستوى المنشأة",
+      "معيار IFRS S2 الصادر عن مجلس معايير الاستدامة الدولية (ISSB) للإفصاحات المتعلقة بالمناخ، والمستند إلى بيانات انبعاثات وفق بروتوكول غازات الاحتباس الحراري",
+      "إرشادات الإفصاح البيئي والاجتماعي والحوكمة الصادرة عن تداول السعودية للشركات المدرجة",
+      "مستهدف المملكة للوصول إلى الحياد الصفري بحلول 2060 ومبادرة السعودية الخضراء سياقًا وطنيًا للإفصاح عن الانبعاثات"
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين انبعاثات النطاقات 1 و2 و3؟", "a": "يشمل النطاق 1 الانبعاثات المباشرة من مصادر تملكها المنشأة أو تسيطر عليها، كالغلايات والمولدات والمركبات ومعدات العمليات وتسربات غازات التبريد. ويشمل النطاق 2 الانبعاثات غير المباشرة الناتجة عن الكهرباء أو البخار أو التدفئة أو التبريد المشتراة. أما النطاق 3 فيشمل سائر الانبعاثات غير المباشرة في سلسلة القيمة، كالسلع المشتراة والنقل وسفر الأعمال والنفايات واستخدام المنتجات المبيعة، ويقسمه البروتوكول إلى 15 فئة." },
+      { "q": "هل يلزمنا تضمين انبعاثات النطاق 3؟", "a": "يعتمد ذلك على الغرض من الإفصاح. فكثير من الأطر والمستثمرين يتوقعون النطاقين 1 و2 حدًا أدنى، ويتضمن معيار IFRS S2 الإفصاح عن النطاق 3. وفي كثير من الشركات يمثل النطاق 3 الحصة الأكبر من الانبعاثات. لذلك نبدأ عادةً بفحص جميع الفئات لتحديد الجوهري منها، ثم نحتسبه بأنسب البيانات المتاحة، ونحسّن جودة البيانات تدريجيًا في السنوات التالية." },
+      { "q": "ما معاملات الانبعاث التي تستخدمونها في المملكة؟", "a": "نختار المعاملات المناسبة للمصدر ولغرض الإفصاح، ونفضّل البيانات الخاصة بالمملكة أو بالمورد متى كانت متاحة وموثقة، ونلجأ إلى قواعد البيانات الدولية المعترف بها عند عدم توافرها. وفي الكهرباء المشتراة نتبع إرشادات النطاق 2 في بروتوكول غازات الاحتباس الحراري. ونسجل كل معامل بمصدره وسنته ووحدته، ليتسنى التحقق من النتائج وتحديثها باتساق كل عام." },
+      { "q": "ما الفرق بين حصر الانبعاثات والبصمة الكربونية للمنتج؟", "a": "يقيس حصر الانبعاثات انبعاثات المنشأة أو المرفق خلال فترة زمنية، عادةً سنة. أما البصمة الكربونية للمنتج فتقيس الانبعاثات على امتداد دورة حياة منتج بعينه، من المواد الخام حتى نهاية العمر، لكل وحدة منتج. ولكلٍّ منهما معاييره وأغراضه. وتُعالج البصمة الكربونية للمنتجات ضمن خدمة تقييم دورة الحياة، ويمكن أن تستفيد من بيانات النشاط نفسها." },
+      { "q": "هل يمكنكم التحقق من حصر انبعاثاتنا؟", "a": "ينبغي أن تتولى التحقق جهة مستقلة عن الفريق الذي أعد الحصر، فذلك ما يمنحه مصداقيته. ودورنا أن نُعد الحصر بصورة قابلة للتحقق: حدود ومنهجيات ومعاملات موثقة، وملف أدلة منظم، ومراجعة تمهيدية قبل التحقق. ويقلل ذلك من الملاحظات وطلبات الاستيضاح خلال عمل جهة التحقق، ويساعد على إنجازه وفق الخطة." }
+    ]
+  }
+}

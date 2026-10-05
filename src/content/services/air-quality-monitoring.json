@@ -1,0 +1,127 @@
+{
+  "category": "monitoring-measurement",
+  "order": 2,
+  "formFamily": "monitoring",
+  "industries": ["industrial-manufacturing", "energy", "oil-gas", "infrastructure", "mining-quarrying", "waste-recycling", "government-public-sector"],
+  "related": ["dust-monitoring", "environmental-monitoring", "environmental-impact-assessment", "environmental-permitting"],
+  "en": {
+    "name": "Air Quality Monitoring",
+    "seoTitle": "Air Quality Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Ambient air quality and stack emissions monitoring in Saudi Arabia: gases, particulates and meteorology, with validated data and compliance-ready reports.",
+    "valueProp": "Ambient and source emissions monitoring that shows clearly how your operations affect air quality and where you stand against applicable standards.",
+    "cardDescription": "Ambient air quality monitoring for gases, particulates and meteorology, plus stack emissions measurement, with validated data and compliance-ready reports.",
+    "keyBenefit": "Clear evidence of air quality performance for permits and stakeholders",
+    "definition": "Air quality monitoring is the measurement of pollutant concentrations in ambient air and in emissions from point sources such as stacks, to determine compliance with applicable standards and permit conditions. It typically covers gases such as NO2, SO2, CO, O3, H2S and VOCs, particulate matter and meteorological parameters, using continuous stations or time-limited monitoring campaigns.",
+    "overview": [
+      "Air emissions are among the most closely reviewed aspects of an industrial or infrastructure facility in Saudi Arabia. Environmental permits issued by the National Center for Environmental Compliance (NCEC), and requirements within RCJY and MODON industrial cities, commonly include conditions on ambient air quality around the site and on emissions from stacks and other point sources. Authorities, neighbouring communities and lenders increasingly expect measured data rather than estimates, and expect it to be collected with recognised methods.",
+      "Our air quality monitoring service covers both ambient air and point-source emissions. For ambient air, we design monitoring networks, select analysers and samplers for gases such as NO2, SO2, CO, O3, H2S and VOCs, measure particulates and record wind speed, wind direction, temperature and humidity. Monitoring can run as continuous fixed stations or as campaigns for baseline studies, EIA support or periodic compliance checks. For stacks and process vents, we plan and carry out emissions measurements, including flow and gas concentration, and report results on a consistent basis.",
+      "The value for your business lies in reliable, interpretable data. We apply calibration, data validation and QA/QC procedures, link concentrations to meteorology to help distinguish your contribution from background sources, and report against the standards that apply to your site. Reports are structured for submission and for internal use, so operations and HSE teams can see trends, investigate peaks and plan improvements. Where dust is the main concern, our dedicated dust monitoring service provides a more focused particulate network."
+    ],
+    "whenYouNeed": [
+      "Your environmental permit requires periodic ambient air quality or stack emissions reporting.",
+      "An EIA needs baseline air quality data for the project area before approval.",
+      "Neighbouring communities have raised odour, smoke or air quality complaints.",
+      "You are commissioning a new stack, flare, boiler or process unit with emission limits.",
+      "Previous reports show peaks you cannot explain or attribute to a source.",
+      "Lenders or shareholders request measured air quality data for ESG disclosure."
+    ],
+    "deliver": [
+      { "title": "Monitoring network design", "description": "Selection of station locations, parameters and averaging periods based on emission sources, prevailing winds, receptors and permit conditions, documented in a monitoring plan." },
+      { "title": "Continuous ambient stations", "description": "Fixed stations with gas analysers, particulate monitors and meteorological sensors, including installation, calibration, routine maintenance and remote data collection." },
+      { "title": "Campaign monitoring", "description": "Time-limited ambient monitoring for baseline studies, EIA support or periodic checks, using portable analysers, samplers or passive diffusion tubes as appropriate." },
+      { "title": "Stack emissions measurement", "description": "Planning and measurement of emissions from stacks and point sources, including sampling port review, flow measurement and gas concentration determination." },
+      { "title": "Data validation and QA/QC", "description": "Calibration checks, removal of invalid data, completeness review and verification of averaging, so reported values reflect actual conditions on site." },
+      { "title": "Compliance reporting", "description": "Reports comparing results with applicable standards and permit limits, with trend analysis, wind-direction analysis of peaks and clear recommendations." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We review permit conditions, emission sources, site layout, receptors and previous data to define parameters and the right mix of ambient and source monitoring." },
+      { "title": "Network design", "description": "We select monitoring locations, equipment, methods and data averaging periods, and prepare a monitoring plan for your review." },
+      { "title": "Installation or mobilisation", "description": "We install fixed stations or mobilise campaign equipment, check power, communications and safety, and complete initial calibration." },
+      { "title": "Operation", "description": "We run monitoring, carry out scheduled calibration and maintenance, and perform stack measurements according to the agreed programme." },
+      { "title": "Data validation", "description": "We validate data, review completeness, correlate concentrations with meteorology and investigate unusual readings before results are reported." },
+      { "title": "Reporting", "description": "We issue reports against applicable standards and permit conditions, and review findings and any necessary actions with your team." }
+    ],
+    "deliverables": [
+      { "item": "Air quality monitoring plan", "format": "Plan with locations, parameters and methods (PDF)", "timing": "Before monitoring starts" },
+      { "item": "Calibration and maintenance records", "format": "Instrument logs and calibration certificates (PDF)", "timing": "Ongoing" },
+      { "item": "Validated air quality dataset", "format": "Averaged data with meteorology (Excel)", "timing": "Monthly or per campaign" },
+      { "item": "Stack emissions test report", "format": "Measurement report with results per source (PDF)", "timing": "After each test campaign" },
+      { "item": "Periodic air quality report", "format": "Report with tables, charts and wind roses (PDF)", "timing": "Per permit reporting cycle" },
+      { "item": "Exceedance notification", "format": "Short technical note (PDF or email)", "timing": "When a validated exceedance occurs" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law and its Implementing Regulations, including the requirements applicable to ambient air quality and air emissions.",
+      "National Center for Environmental Compliance (NCEC) environmental permit conditions on air quality monitoring and emissions reporting.",
+      "Royal Commission for Jubail and Yanbu (RCJY) environmental regulations for facilities in Jubail and Yanbu industrial cities.",
+      "Air quality baseline and monitoring commitments in approved environmental impact assessments (EIA).",
+      "Internationally recognised measurement methods for ambient air and stack emissions, selected to match permit and project requirements."
+    ],
+    "faqs": [
+      { "q": "Should we use a continuous station or periodic campaigns?", "a": "It depends on your permit conditions, the variability of your emissions and how the data will be used. Continuous stations capture short-term peaks and long-term trends and are often expected for larger facilities. Campaigns suit baseline studies, EIA support and smaller sites where periodic checks are sufficient. We review your obligations and risks and recommend the option that meets them without unnecessary cost." },
+      { "q": "Which pollutants do you monitor?", "a": "Ambient monitoring commonly covers nitrogen dioxide (NO2), sulphur dioxide (SO2), carbon monoxide (CO), ozone (O3), hydrogen sulphide (H2S), volatile organic compounds (VOCs) and particulate matter, together with wind speed, wind direction, temperature and humidity. The final parameter list is set by your permit, your processes and the pollutants likely to be emitted, so it differs between a refinery, a cement plant and a waste facility." },
+      { "q": "Can you measure emissions from our stacks?", "a": "Yes. We plan stack emissions measurements based on the source, the pollutants of interest and the permit conditions. This includes checking sampling port location and access, measuring flow, temperature and moisture, and determining gas concentrations. Results are reported on a consistent basis so they can be compared with emission limits and with previous tests." },
+      { "q": "How do you tell our contribution apart from background pollution?", "a": "We combine monitoring at upwind and downwind locations with continuous wind data. By analysing concentrations against wind direction and time of day, peaks can often be associated with specific sources or attributed to regional background such as dust events or traffic. This analysis is included in reports and is particularly useful when responding to complaints or unexplained peaks." },
+      { "q": "Can you take over an existing monitoring station?", "a": "Yes. We inspect the station, review the analysers, calibration history and data records, and identify any equipment or data quality issues. We then propose a maintenance and calibration routine and confirm reporting arrangements. Where equipment needs repair or replacement, we explain the options so that continuity of your data record is maintained." }
+    ]
+  },
+  "ar": {
+    "name": "رصد جودة الهواء",
+    "seoTitle": "رصد جودة الهواء في المملكة العربية السعودية | سيلورين",
+    "metaDescription": "رصد جودة الهواء المحيط وانبعاثات المداخن في المملكة: الغازات والجسيمات والأرصاد الجوية، مع بيانات موثّقة وتقارير مقارنة بالمعايير المعمول بها.",
+    "valueProp": "رصد للهواء المحيط وانبعاثات المصادر يوضح أثر عملياتكم على جودة الهواء وموقعكم من المعايير المعمول بها.",
+    "cardDescription": "رصد جودة الهواء المحيط للغازات والجسيمات والأرصاد الجوية، وقياس انبعاثات المداخن، مع بيانات موثّقة وتقارير جاهزة لأغراض الامتثال.",
+    "keyBenefit": "أدلة واضحة على أداء جودة الهواء للتصاريح وأصحاب المصلحة",
+    "definition": "رصد جودة الهواء هو قياس تراكيز الملوثات في الهواء المحيط وفي الانبعاثات الصادرة عن المصادر الثابتة كالمداخن، للتحقق من الالتزام بالمعايير المعمول بها واشتراطات التصريح البيئي. ويشمل عادةً غازات مثل NO2 وSO2 وCO وO3 وH2S والمركبات العضوية المتطايرة (VOCs)، إضافة إلى الجسيمات العالقة ومؤشرات الأرصاد الجوية، عبر محطات مستمرة أو حملات رصد محددة المدة.",
+    "overview": [
+      "تُعد الانبعاثات الهوائية من أكثر الجوانب خضوعًا للمراجعة في المنشآت الصناعية ومشروعات البنية التحتية في المملكة. فالتصاريح البيئية الصادرة عن المركز الوطني للرقابة على الالتزام البيئي (NCEC)، ومتطلبات المدن الصناعية التابعة للهيئة الملكية للجبيل وينبع وهيئة مدن، كثيرًا ما تتضمن اشتراطات تتعلق بجودة الهواء المحيط بالموقع وبالانبعاثات الصادرة من المداخن والمصادر الثابتة الأخرى. كما باتت الجهات الرقابية والمجتمعات المجاورة وجهات التمويل تتوقع بيانات مقيسة لا تقديرات، وأن تُجمع بطرق معترف بها.",
+      "تغطي خدمتنا لرصد جودة الهواء الهواء المحيط وانبعاثات المصادر الثابتة معًا. ففي الهواء المحيط نصمم شبكات الرصد، ونختار أجهزة التحليل وأخذ العينات لغازات مثل NO2 وSO2 وCO وO3 وH2S والمركبات العضوية المتطايرة، ونقيس الجسيمات العالقة، ونسجل سرعة الرياح واتجاهها ودرجة الحرارة والرطوبة. ويمكن أن يجري الرصد عبر محطات ثابتة مستمرة أو حملات لأغراض الدراسات المرجعية ودعم دراسات تقييم الأثر البيئي أو التحقق الدوري من الامتثال. أما المداخن ومنافذ العمليات فنخطط لقياس انبعاثاتها وننفذه، بما في ذلك معدل التدفق وتراكيز الغازات، ونعرض النتائج على أساس موحد.",
+      "تكمن القيمة لمنشأتكم في بيانات موثوقة قابلة للتفسير. إذ نطبق إجراءات المعايرة والتحقق من البيانات وضبط الجودة، ونربط التراكيز ببيانات الأرصاد الجوية للمساعدة في تمييز إسهام منشأتكم عن المصادر الخلفية، ونعد التقارير مقارنةً بالمعايير المنطبقة على موقعكم. وتُصاغ التقارير بما يناسب التقديم للجهات المختصة والاستخدام الداخلي، ليتمكن فريقا التشغيل والصحة والسلامة والبيئة من متابعة الاتجاهات وتحليل القمم وتخطيط التحسينات. وحين يكون الغبار هو مصدر القلق الرئيس، توفر خدمة رصد الغبار شبكة أكثر تركيزًا على الجسيمات."
+    ],
+    "whenYouNeed": [
+      "يشترط تصريحكم البيئي رفع تقارير دورية عن جودة الهواء المحيط أو انبعاثات المداخن.",
+      "تتطلب دراسة تقييم الأثر البيئي بيانات مرجعية لجودة الهواء في منطقة المشروع.",
+      "وردت شكاوى من المجتمعات المجاورة بشأن الروائح أو الدخان أو جودة الهواء.",
+      "تشغّلون مدخنة أو شعلة أو غلاية أو وحدة تشغيلية جديدة خاضعة لحدود انبعاث.",
+      "تُظهر التقارير السابقة قممًا لا تستطيعون تفسيرها أو ربطها بمصدر محدد.",
+      "تطلب جهات التمويل أو المساهمون بيانات مقيسة لجودة الهواء لأغراض إفصاحات ESG."
+    ],
+    "deliver": [
+      { "title": "تصميم شبكة الرصد", "description": "اختيار مواقع المحطات والمؤشرات وفترات حساب المتوسطات بناءً على مصادر الانبعاث والرياح السائدة والمستقبِلات الحساسة واشتراطات التصريح، وتوثيقها في خطة رصد." },
+      { "title": "محطات رصد مستمرة", "description": "محطات ثابتة مزودة بمحللات الغازات وأجهزة رصد الجسيمات وحساسات الأرصاد الجوية، تشمل التركيب والمعايرة والصيانة الدورية وجمع البيانات عن بُعد." },
+      { "title": "حملات الرصد", "description": "رصد للهواء المحيط لمدة محددة لأغراض الدراسات المرجعية أو دعم دراسات تقييم الأثر أو التحقق الدوري، باستخدام محللات محمولة أو أجهزة اعتيان أو أنابيب انتشار سلبية." },
+      { "title": "قياس انبعاثات المداخن", "description": "تخطيط وقياس الانبعاثات الصادرة من المداخن والمصادر الثابتة، بما في ذلك مراجعة فتحات الاعتيان وقياس التدفق وتحديد تراكيز الغازات." },
+      { "title": "التحقق من البيانات وضبط الجودة", "description": "فحوص المعايرة واستبعاد البيانات غير الصالحة ومراجعة اكتمال البيانات والتحقق من حساب المتوسطات، لتعكس القيم المرفوعة الظروف الفعلية في الموقع." },
+      { "title": "تقارير الامتثال", "description": "تقارير تقارن النتائج بالمعايير المعمول بها وحدود التصريح، مع تحليل الاتجاهات وربط القمم باتجاه الرياح وتقديم توصيات واضحة." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نراجع اشتراطات التصريح ومصادر الانبعاث وتخطيط الموقع والمستقبِلات الحساسة والبيانات السابقة لتحديد المؤشرات والمزيج المناسب بين رصد الهواء المحيط ورصد المصادر." },
+      { "title": "تصميم الشبكة", "description": "نختار مواقع الرصد والأجهزة والطرق وفترات حساب المتوسطات، ونعد خطة رصد لمراجعتكم." },
+      { "title": "التركيب والتجهيز", "description": "نركّب المحطات الثابتة أو ننقل أجهزة الحملات إلى الموقع، ونتحقق من الطاقة والاتصالات والسلامة، ونجري المعايرة الأولية." },
+      { "title": "التشغيل", "description": "نشغّل الرصد وننفذ المعايرة والصيانة المجدولة، ونجري قياسات المداخن وفق البرنامج المتفق عليه." },
+      { "title": "التحقق من البيانات", "description": "نتحقق من البيانات ونراجع اكتمالها، ونربط التراكيز ببيانات الأرصاد الجوية، ونحلل القراءات غير المعتادة قبل اعتماد النتائج." },
+      { "title": "إعداد التقارير", "description": "نصدر التقارير مقارنةً بالمعايير المعمول بها واشتراطات التصريح، ونراجع النتائج والإجراءات اللازمة مع فريقكم." }
+    ],
+    "deliverables": [
+      { "item": "خطة رصد جودة الهواء", "format": "خطة تحدد المواقع والمؤشرات والطرق (PDF)", "timing": "قبل بدء الرصد" },
+      { "item": "سجلات المعايرة والصيانة", "format": "سجلات الأجهزة وشهادات المعايرة (PDF)", "timing": "بصفة مستمرة" },
+      { "item": "بيانات جودة الهواء المعتمدة", "format": "متوسطات البيانات مع بيانات الأرصاد الجوية (Excel)", "timing": "شهريًا أو لكل حملة" },
+      { "item": "تقرير قياس انبعاثات المداخن", "format": "تقرير قياس بنتائج كل مصدر (PDF)", "timing": "بعد كل حملة قياس" },
+      { "item": "تقرير جودة الهواء الدوري", "format": "تقرير بجداول ورسوم بيانية ووردات رياح (PDF)", "timing": "وفق دورة تقارير التصريح" },
+      { "item": "إشعار التجاوز", "format": "مذكرة فنية موجزة (PDF أو بريد إلكتروني)", "timing": "عند ثبوت تجاوز بعد التحقق" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة ولوائحه التنفيذية، بما فيها المتطلبات الخاصة بجودة الهواء المحيط والانبعاثات الهوائية.",
+      "اشتراطات التصاريح البيئية الصادرة عن المركز الوطني للرقابة على الالتزام البيئي (NCEC) بشأن رصد جودة الهواء ورفع تقارير الانبعاثات.",
+      "اللوائح البيئية للهيئة الملكية للجبيل وينبع الخاصة بالمنشآت في مدينتي الجبيل وينبع الصناعيتين.",
+      "التزامات البيانات المرجعية والرصد لجودة الهواء الواردة في دراسات تقييم الأثر البيئي (EIA) المعتمدة.",
+      "طرق القياس المعترف بها دوليًا للهواء المحيط وانبعاثات المداخن، المختارة بما يتوافق مع متطلبات التصريح والمشروع."
+    ],
+    "faqs": [
+      { "q": "هل نعتمد محطة رصد مستمرة أم حملات دورية؟", "a": "يعتمد ذلك على اشتراطات تصريحكم، ومدى تباين انبعاثاتكم، والغرض من استخدام البيانات. فالمحطات المستمرة ترصد القمم قصيرة المدى والاتجاهات طويلة المدى، وكثيرًا ما تُطلب من المنشآت الكبيرة. أما الحملات فتناسب الدراسات المرجعية ودعم دراسات تقييم الأثر والمواقع الأصغر التي يكفيها التحقق الدوري. ونراجع التزاماتكم والمخاطر المرتبطة بها لنوصي بالخيار الذي يلبيها دون تكاليف غير ضرورية." },
+      { "q": "ما الملوثات التي ترصدونها؟", "a": "يشمل رصد الهواء المحيط عادةً ثاني أكسيد النيتروجين (NO2) وثاني أكسيد الكبريت (SO2) وأول أكسيد الكربون (CO) والأوزون (O3) وكبريتيد الهيدروجين (H2S) والمركبات العضوية المتطايرة والجسيمات العالقة، إلى جانب سرعة الرياح واتجاهها ودرجة الحرارة والرطوبة. وتُحدَّد القائمة النهائية وفق تصريحكم وعملياتكم والملوثات المتوقع انبعاثها، لذا تختلف بين مصفاة ومصنع إسمنت ومنشأة لمعالجة النفايات." },
+      { "q": "هل يمكنكم قياس انبعاثات مداخننا؟", "a": "نعم. نخطط لقياس انبعاثات المداخن بناءً على طبيعة المصدر والملوثات المستهدفة واشتراطات التصريح. ويشمل ذلك التحقق من موقع فتحات الاعتيان وإمكانية الوصول إليها، وقياس التدفق ودرجة الحرارة والرطوبة، وتحديد تراكيز الغازات. وتُعرض النتائج على أساس موحد يتيح مقارنتها بحدود الانبعاث وبنتائج القياسات السابقة." },
+      { "q": "كيف تميّزون إسهام منشأتنا عن التلوث الخلفي؟", "a": "نجمع بين الرصد في مواقع قبل اتجاه الرياح وبعده وبين بيانات الرياح المستمرة. ومن خلال تحليل التراكيز وفق اتجاه الرياح وأوقات اليوم، يمكن في كثير من الأحيان ربط القمم بمصادر محددة أو إرجاعها إلى خلفية إقليمية كالعواصف الغبارية أو حركة المرور. ويُدرج هذا التحليل في التقارير، وتزداد فائدته عند الرد على الشكاوى أو تفسير القمم غير المبررة." },
+      { "q": "هل يمكنكم تولي تشغيل محطة رصد قائمة؟", "a": "نعم. نفحص المحطة ونراجع المحللات وسجل المعايرة وسجلات البيانات، ونحدد أي مشكلات في الأجهزة أو جودة البيانات. ثم نقترح برنامجًا للصيانة والمعايرة ونؤكد ترتيبات التقارير. وإذا احتاجت بعض الأجهزة إلى إصلاح أو استبدال، نوضح الخيارات المتاحة بما يحافظ على استمرارية سجل بياناتكم." }
+    ]
+  }
+}

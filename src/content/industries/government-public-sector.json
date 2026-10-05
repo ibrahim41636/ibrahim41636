@@ -1,0 +1,160 @@
+{
+  "order": 13,
+  "services": [
+    "environmental-impact-assessment",
+    "environmental-audits",
+    "environmental-monitoring",
+    "air-quality-monitoring",
+    "esg-advisory",
+    "ghg-carbon-accounting",
+    "net-zero-advisory",
+    "sustainability-advisory",
+    "green-building-advisory"
+  ],
+  "en": {
+    "name": "Government & Semi-Government",
+    "seoTitle": "Environmental Advisory for the Public Sector | Selorin",
+    "metaDescription": "Environmental studies, audits, monitoring, carbon accounting and sustainability strategy for ministries, municipalities and state-owned entities in KSA.",
+    "cardDescription": "Environmental studies, audits, monitoring, carbon accounting and sustainability strategy for ministries, municipalities, authorities and government-owned companies.",
+    "overview": [
+      "Government bodies, municipalities, development authorities and government-owned companies play two roles in environmental performance. They own and operate large portfolios of buildings, facilities, fleets and infrastructure that must comply with the Environmental Law and its Implementing Regulations, and they lead programmes that support national objectives under Vision 2030, the Saudi Green Initiative and the 2060 net-zero target.",
+      "Public-sector projects such as roads, parks, public buildings, utilities and urban regeneration often need environmental impact assessment, monitoring programmes and environmental management throughout construction and operation. Entities also commission baseline studies, air quality programmes and environmental audits of the assets and contractors they oversee, and need outputs that are technically sound and easy to use for decision making.",
+      "Government-owned and semi-government companies face the same disclosure expectations as listed companies, including ESG reporting and GHG inventories aligned with recognised frameworks. Clear methods, documented data and practical recommendations help entities report consistently, prioritise investment and demonstrate progress against their sustainability commitments."
+    ],
+    "challenges": [
+      {
+        "title": "Large, diverse portfolios",
+        "description": "Entities manage offices, depots, facilities, fleets and infrastructure with very different environmental aspects and data quality."
+      },
+      {
+        "title": "Contractor oversight",
+        "description": "Many environmental impacts sit with contractors and operators, so entities need audits and reporting that hold them to agreed requirements."
+      },
+      {
+        "title": "Baseline data gaps",
+        "description": "Planning and policy decisions need reliable baseline data on air quality, noise, water and land, which is often incomplete."
+      },
+      {
+        "title": "Net-zero and ESG commitments",
+        "description": "Entities need GHG inventories, targets and roadmaps that are credible, comparable year to year and aligned with national goals."
+      },
+      {
+        "title": "Procurement-ready scopes",
+        "description": "Tenders need clear technical scopes, deliverables and evaluation criteria so environmental services can be procured and compared fairly."
+      }
+    ],
+    "requirements": [
+      "Environmental impact assessment and environmental permits for public projects, reviewed by NCEC",
+      "Environmental management and monitoring during construction and operation of public assets",
+      "Audits of facilities, operators and contractors against regulatory and contract requirements",
+      "Ambient air, noise and water monitoring programmes to support planning and public information",
+      "GHG inventories and ESG disclosures aligned with the GHG Protocol, ISO 14064-1, GRI or IFRS S1/S2",
+      "Sustainability and green building requirements for public buildings and developments"
+    ],
+    "support": [
+      {
+        "title": "Studies and assessments",
+        "description": "We prepare EIAs, baseline studies and environmental assessments for public projects and programmes, with outputs designed for decision makers."
+      },
+      {
+        "title": "Audits and oversight",
+        "description": "We audit facilities, operators and contractors and prepare clear findings, corrective action plans and follow-up reviews."
+      },
+      {
+        "title": "Monitoring programmes",
+        "description": "We design and run air, noise and water monitoring programmes and present the data in reports and dashboards suited to public bodies."
+      },
+      {
+        "title": "Carbon, ESG and sustainability strategy",
+        "description": "We build GHG inventories, set net-zero roadmaps and prepare ESG and sustainability strategies aligned with national objectives."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can you help us prepare the technical scope for an environmental tender?",
+        "a": "Yes. We can draft technical scopes that set out objectives, methods, deliverables and reporting requirements, so bidders respond to the same specification and proposals can be compared fairly."
+      },
+      {
+        "q": "How do you build a GHG inventory for an entity with many sites?",
+        "a": "We define organisational and operational boundaries, collect energy, fuel, refrigerant and other activity data by site, apply recognised emission factors, and document methods and data gaps. The result is an inventory that can be repeated each year."
+      },
+      {
+        "q": "Do you provide air quality monitoring for urban areas?",
+        "a": "Yes. We design monitoring programmes based on objectives, sources and receptors, select appropriate methods and locations, and report data with quality checks so it can support planning and public communication."
+      }
+    ]
+  },
+  "ar": {
+    "name": "القطاع الحكومي وشبه الحكومي",
+    "seoTitle": "الاستشارات البيئية للقطاع الحكومي | سيلورين",
+    "metaDescription": "دراسات بيئية وتدقيق وبرامج رصد وحصر للانبعاثات واستراتيجيات استدامة للوزارات والأمانات والهيئات والشركات المملوكة للدولة في المملكة.",
+    "cardDescription": "دراسات بيئية وتدقيق ورصد وحصر للكربون واستراتيجيات استدامة للوزارات والأمانات والهيئات والشركات المملوكة للدولة.",
+    "overview": [
+      "تؤدي الجهات الحكومية والأمانات وهيئات التطوير والشركات المملوكة للدولة دورين في الأداء البيئي؛ فهي تملك وتشغّل محافظ كبيرة من المباني والمنشآت والأساطيل والبنية التحتية التي يجب أن تلتزم بنظام البيئة ولوائحه التنفيذية، وهي في الوقت ذاته تقود برامج تدعم الأهداف الوطنية ضمن رؤية 2030 ومبادرة السعودية الخضراء ومستهدف الحياد الصفري بحلول عام 2060.",
+      "وكثيرًا ما تحتاج المشاريع العامة كالطرق والحدائق والمباني الحكومية والمرافق ومشاريع التجديد الحضري إلى تقييم للأثر البيئي وبرامج رصد وإدارة بيئية خلال الإنشاء والتشغيل. كما تطلب الجهات دراسات خط أساس وبرامج لجودة الهواء وعمليات تدقيق بيئي للأصول والمقاولين الخاضعين لإشرافها، وتحتاج إلى مخرجات سليمة فنيًا وسهلة الاستخدام في اتخاذ القرار.",
+      "وتواجه الشركات المملوكة للدولة والجهات شبه الحكومية توقعات الإفصاح ذاتها التي تواجهها الشركات المدرجة، بما فيها تقارير الحوكمة البيئية والاجتماعية والمؤسسية (ESG) وقوائم جرد انبعاثات غازات الاحتباس الحراري وفق الأطر المعتمدة. وتساعد المنهجيات الواضحة والبيانات الموثقة والتوصيات العملية هذه الجهات على الإفصاح بصورة متسقة، وترتيب أولويات الاستثمار، وإثبات التقدم في التزاماتها نحو الاستدامة."
+    ],
+    "challenges": [
+      {
+        "title": "محافظ أصول كبيرة ومتنوعة",
+        "description": "تدير الجهات مكاتب ومستودعات ومنشآت وأساطيل وبنية تحتية تتباين جوانبها البيئية وجودة بياناتها تباينًا كبيرًا."
+      },
+      {
+        "title": "الإشراف على المقاولين",
+        "description": "تقع كثير من الآثار البيئية على عاتق المقاولين والمشغلين، فتحتاج الجهات إلى تدقيق وتقارير تُلزمهم بالمتطلبات المتفق عليها."
+      },
+      {
+        "title": "فجوات بيانات خط الأساس",
+        "description": "تحتاج قرارات التخطيط والسياسات إلى بيانات أساس موثوقة عن جودة الهواء والضوضاء والمياه والأراضي، وكثيرًا ما تكون ناقصة."
+      },
+      {
+        "title": "التزامات الحياد الصفري والحوكمة",
+        "description": "تحتاج الجهات إلى قوائم جرد ومستهدفات وخرائط طريق موثوقة وقابلة للمقارنة سنويًا ومتوائمة مع الأهداف الوطنية."
+      },
+      {
+        "title": "نطاقات جاهزة للطرح",
+        "description": "تحتاج المنافسات إلى نطاقات فنية ومخرجات ومعايير تقييم واضحة لطرح الخدمات البيئية والمقارنة بين العروض بعدالة."
+      }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي والتصاريح البيئية للمشاريع العامة بمراجعة المركز الوطني للرقابة على الالتزام البيئي",
+      "الإدارة والرصد البيئي خلال إنشاء الأصول العامة وتشغيلها",
+      "تدقيق المنشآت والمشغلين والمقاولين مقابل المتطلبات التنظيمية والتعاقدية",
+      "برامج رصد جودة الهواء المحيط والضوضاء والمياه دعمًا للتخطيط وإطلاع العموم",
+      "قوائم جرد انبعاثات غازات الاحتباس الحراري وإفصاحات الحوكمة وفق بروتوكول GHG ومعيار ISO 14064-1 ومعايير GRI أو IFRS S1/S2",
+      "متطلبات الاستدامة والمباني الخضراء للمباني والمشاريع الحكومية"
+    ],
+    "support": [
+      {
+        "title": "الدراسات والتقييمات",
+        "description": "نعدّ دراسات تقييم الأثر البيئي ودراسات خط الأساس والتقييمات البيئية للمشاريع والبرامج العامة بمخرجات مصممة لمتخذي القرار."
+      },
+      {
+        "title": "التدقيق والإشراف",
+        "description": "ندقق المنشآت والمشغلين والمقاولين، ونعدّ نتائج واضحة وخطط إجراءات تصحيحية ومراجعات متابعة."
+      },
+      {
+        "title": "برامج الرصد",
+        "description": "نصمم برامج رصد الهواء والضوضاء والمياه وننفذها، ونعرض البيانات في تقارير ولوحات معلومات تناسب الجهات العامة."
+      },
+      {
+        "title": "الكربون والحوكمة واستراتيجية الاستدامة",
+        "description": "نعدّ قوائم جرد الانبعاثات، ونضع خرائط طريق الحياد الصفري، ونعدّ استراتيجيات الحوكمة والاستدامة المتوائمة مع الأهداف الوطنية."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "هل يمكنكم مساعدتنا في إعداد النطاق الفني لمنافسة بيئية؟",
+        "a": "نعم، نعدّ نطاقات فنية تحدد الأهداف والمنهجيات والمخرجات ومتطلبات التقارير، ليستجيب المتنافسون لمواصفات موحدة وتُقارن العروض بعدالة."
+      },
+      {
+        "q": "كيف تعدّون قائمة جرد الانبعاثات لجهة متعددة المواقع؟",
+        "a": "نحدد الحدود التنظيمية والتشغيلية، ونجمع بيانات الطاقة والوقود ووسائط التبريد وغيرها من بيانات الأنشطة لكل موقع، ونطبق معاملات انبعاث معتمدة، ونوثق المنهجيات وفجوات البيانات، لتكون النتيجة قائمة جرد قابلة للتكرار سنويًا."
+      },
+      {
+        "q": "هل تقدمون رصد جودة الهواء في المناطق الحضرية؟",
+        "a": "نعم، نصمم برامج الرصد بناءً على الأهداف والمصادر والمستقبِلات، ونختار الأساليب والمواقع المناسبة، ونرفع البيانات بعد فحوص الجودة لتدعم التخطيط والتواصل مع العموم."
+      }
+    ]
+  }
+}

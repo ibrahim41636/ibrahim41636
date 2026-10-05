@@ -1,0 +1,92 @@
+{
+  "order": 1,
+  "services": [
+    "environmental-permitting",
+    "environmental-compliance",
+    "environmental-records",
+    "environmental-audits",
+    "air-quality-monitoring",
+    "water-quality-monitoring",
+    "waste-management",
+    "ghg-carbon-accounting",
+    "environmental-impact-assessment"
+  ],
+  "en": {
+    "name": "Industrial & Manufacturing",
+    "seoTitle": "Environmental Compliance for Manufacturers | Selorin",
+    "metaDescription": "Environmental permitting, stack and effluent monitoring, waste management and GHG accounting for factories and industrial facilities in Saudi Arabia.",
+    "cardDescription": "Permits, stack and effluent monitoring, industrial waste and carbon data for factories in industrial cities and standalone sites across Saudi Arabia.",
+    "overview": [
+      "Manufacturing plants carry the widest set of environmental obligations of any sector. Process emissions from stacks and boilers, fugitive dust from raw material handling, industrial wastewater, hazardous wastes such as spent solvents, oils and sludges, and noise at the fence line all fall under the Environmental Law and its Implementing Regulations, with permits and compliance monitoring overseen by the National Center for Environmental Compliance (NCEC).",
+      "Location shapes the compliance path. Facilities in Jubail and Yanbu work within the environmental regulations of the Royal Commission for Jubail and Yanbu (RCJY), while factories in MODON industrial cities interact with MODON requirements for effluent discharge to shared treatment systems and site environmental conditions. Standalone plants deal with NCEC directly. Expansions, new production lines and changes in raw materials can all trigger permit amendments or new studies.",
+      "For plant managers and HSE teams, the practical challenge is keeping permits, monitoring data, waste manifests and registers aligned and inspection-ready while production continues. Customers and parent companies increasingly ask for carbon and ESG data as well, so the same environmental data must serve both regulatory and commercial purposes."
+    ],
+    "challenges": [
+      { "title": "Stack and process emissions", "description": "Boilers, furnaces, dryers and process vents need periodic emission measurements against permit conditions, with sampling ports, access and records that hold up during inspection." },
+      { "title": "Industrial wastewater", "description": "Effluent quality must meet the conditions of the discharge route, whether to a shared industrial treatment plant, sewer or on-site treatment, with sampling records to prove it." },
+      { "title": "Hazardous waste streams", "description": "Spent oils, solvents, contaminated packaging and sludges require segregation, labelled storage, licensed transporters and manifests that trace each consignment to its final destination." },
+      { "title": "Permit changes during growth", "description": "New lines, capacity increases or raw material changes can alter the facility's environmental profile and require permit amendments or supporting studies before operation." },
+      { "title": "Customer and group carbon requests", "description": "Export customers and parent companies ask for Scope 1 and 2 emissions and product-level data that many plants have never compiled in a structured way." }
+    ],
+    "requirements": [
+      "Environmental operating permit from NCEC, or from RCJY or under MODON arrangements depending on location",
+      "Periodic stack emission and ambient air monitoring in line with permit conditions",
+      "Industrial wastewater sampling and reporting for the approved discharge route",
+      "Hazardous and non-hazardous waste segregation, storage, manifests and use of licensed contractors under MWAN regulations",
+      "Environmental registers covering chemicals, waste, emissions and incidents, kept ready for inspection",
+      "Environmental studies or permit amendments before expansions or process changes",
+      "Fence-line noise and dust control where the site borders other users"
+    ],
+    "support": [
+      { "title": "Permits and amendments", "description": "We prepare permit applications and amendment packages, compile technical data on processes and emissions, and coordinate responses to authority comments." },
+      { "title": "Stack, air and effluent monitoring", "description": "We plan and carry out emission, ambient air and wastewater sampling, and report results against permit conditions with clear findings and corrective actions." },
+      { "title": "Waste and registers", "description": "We map waste streams, set up segregation and storage arrangements, and structure registers and manifests so records are complete and traceable." },
+      { "title": "Carbon and ESG data", "description": "We build a GHG inventory for the plant and prepare the data customers and parent companies request, using the GHG Protocol and ISO 14064-1." }
+    ],
+    "faqs": [
+      { "q": "Does our factory in a MODON industrial city still need an NCEC environmental permit?", "a": "It depends on the activity and the arrangements that apply in that industrial city. Many facilities deal with both MODON site requirements and national environmental permitting. We review your activity, location and current approvals and confirm which permits and conditions apply before any application is prepared." },
+      { "q": "How often should we measure stack emissions?", "a": "Frequency is set by your permit conditions and the type of source. We read your permit, list every emission point and its parameters, and build a monitoring schedule that matches those conditions, so measurements are neither missed nor duplicated." },
+      { "q": "We are adding a production line. What do we need to do environmentally?", "a": "Start by assessing whether the change alters emissions, effluent, waste or noise. Depending on scale, you may need a permit amendment or an environmental study before commissioning. We screen the change early so approvals do not delay start-up." },
+      { "q": "Can you prepare the carbon data our export customers ask for?", "a": "Yes. We prepare a Scope 1 and 2 inventory, and Scope 3 categories where relevant, following the GHG Protocol and ISO 14064-1. Where customers want product-level figures, we can extend the work to a life cycle assessment." }
+    ]
+  },
+  "ar": {
+    "name": "القطاع الصناعي والتصنيع",
+    "seoTitle": "الامتثال البيئي للمصانع في السعودية | سيلورين",
+    "metaDescription": "التصاريح البيئية ورصد انبعاثات المداخن ومياه الصرف الصناعي وإدارة النفايات وحصر الانبعاثات الكربونية للمصانع والمنشآت الصناعية في المملكة.",
+    "cardDescription": "تصاريح بيئية ورصد للمداخن ومياه الصرف وإدارة للنفايات الصناعية وبيانات كربونية للمصانع داخل المدن الصناعية وخارجها في المملكة.",
+    "overview": [
+      "تتحمل المنشآت الصناعية أوسع نطاق من الالتزامات البيئية بين القطاعات؛ فانبعاثات المداخن والغلايات، والغبار المتطاير من مناولة المواد الخام، ومياه الصرف الصناعي، والنفايات الخطرة كالزيوت والمذيبات المستهلكة والحمأة، والضوضاء عند حدود الموقع، كلها تخضع لنظام البيئة ولوائحه التنفيذية، ويتولى المركز الوطني للرقابة على الالتزام البيئي (NCEC) إصدار التصاريح ومتابعة الالتزام بها.",
+      "ويحدد موقع المنشأة مسار الامتثال؛ إذ تعمل المصانع في الجبيل وينبع وفق اللوائح البيئية للهيئة الملكية للجبيل وينبع (RCJY)، بينما تتعامل المصانع في المدن الصناعية التابعة لـ«مدن» (MODON) مع متطلباتها الخاصة بتصريف المياه إلى محطات المعالجة المشتركة والاشتراطات البيئية للموقع، أما المصانع المستقلة فتتعامل مع المركز مباشرة. وقد تستلزم التوسعات وخطوط الإنتاج الجديدة وتغيير المواد الخام تعديل التصريح أو إعداد دراسات جديدة.",
+      "والتحدي العملي أمام مديري المصانع وفرق الصحة والسلامة والبيئة هو إبقاء التصاريح وبيانات الرصد وبيانات نقل النفايات والسجلات متسقة وجاهزة للتفتيش دون تعطيل الإنتاج، في وقت يطلب فيه العملاء والشركات الأم بيانات الكربون والحوكمة البيئية والاجتماعية والمؤسسية (ESG)، فتصبح البيانات البيئية ذاتها مطلوبة للأغراض التنظيمية والتجارية معًا."
+    ],
+    "challenges": [
+      { "title": "انبعاثات المداخن والعمليات", "description": "تحتاج الغلايات والأفران والمجففات وفتحات التنفيس إلى قياسات دورية للانبعاثات وفق شروط التصريح، مع فتحات أخذ عينات ومنافذ وصول وسجلات تصمد أمام التفتيش." },
+      { "title": "مياه الصرف الصناعي", "description": "يجب أن تستوفي جودة المياه المصرّفة شروط مسار التصريف، سواء إلى محطة معالجة مشتركة أو شبكة صرف أو معالجة داخلية، مع سجلات عينات تثبت ذلك." },
+      { "title": "النفايات الخطرة", "description": "تتطلب الزيوت والمذيبات المستهلكة والعبوات الملوثة والحمأة فرزًا وتخزينًا موسومًا وناقلين مرخصين وبيانات نقل تتتبع كل شحنة حتى وجهتها النهائية." },
+      { "title": "تعديل التصاريح مع التوسع", "description": "قد تغيّر خطوط الإنتاج الجديدة أو زيادة الطاقة أو تغيير المواد الخام الملف البيئي للمنشأة، فتستلزم تعديل التصريح أو دراسات داعمة قبل التشغيل." },
+      { "title": "طلبات العملاء بشأن الكربون", "description": "يطلب عملاء التصدير والشركات الأم بيانات انبعاثات النطاقين 1 و2 وبيانات على مستوى المنتج، ولم تجمعها كثير من المصانع بصورة منظمة من قبل." }
+    ],
+    "requirements": [
+      "تصريح تشغيل بيئي من المركز الوطني للرقابة على الالتزام البيئي، أو من الهيئة الملكية للجبيل وينبع أو وفق ترتيبات «مدن» بحسب الموقع",
+      "رصد دوري لانبعاثات المداخن وجودة الهواء المحيط وفق شروط التصريح",
+      "أخذ عينات مياه الصرف الصناعي ورفع تقاريرها بحسب مسار التصريف المعتمد",
+      "فرز النفايات الخطرة وغير الخطرة وتخزينها وتوثيق نقلها والتعاقد مع مقاولين مرخصين وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "سجلات بيئية للمواد الكيميائية والنفايات والانبعاثات والحوادث جاهزة للتفتيش",
+      "دراسات بيئية أو تعديل للتصريح قبل التوسعات أو تغيير العمليات",
+      "ضبط الضوضاء والغبار عند حدود الموقع المجاورة لاستخدامات أخرى"
+    ],
+    "support": [
+      { "title": "التصاريح وتعديلاتها", "description": "نعدّ طلبات التصاريح وحزم التعديل، ونجمع البيانات الفنية عن العمليات والانبعاثات، وننسق الرد على ملاحظات الجهات المختصة." },
+      { "title": "رصد المداخن والهواء والصرف", "description": "نخطط لأخذ عينات الانبعاثات والهواء المحيط ومياه الصرف وننفذها، ونقارن النتائج بشروط التصريح في تقارير واضحة تتضمن الإجراءات التصحيحية." },
+      { "title": "النفايات والسجلات", "description": "نحصر تيارات النفايات، ونضع ترتيبات الفرز والتخزين، وننظم السجلات وبيانات النقل لتكون مكتملة وقابلة للتتبع." },
+      { "title": "بيانات الكربون والحوكمة", "description": "نعدّ قائمة جرد انبعاثات غازات الاحتباس الحراري للمصنع والبيانات التي يطلبها العملاء والشركات الأم وفق بروتوكول GHG ومعيار ISO 14064-1." }
+    ],
+    "faqs": [
+      { "q": "هل يحتاج مصنعنا في إحدى مدن «مدن» الصناعية إلى تصريح بيئي من المركز الوطني للرقابة على الالتزام البيئي؟", "a": "يعتمد ذلك على طبيعة النشاط والترتيبات المعمول بها في المدينة الصناعية، إذ تتعامل كثير من المنشآت مع اشتراطات «مدن» ومع التصاريح البيئية الوطنية معًا. نراجع نشاطكم وموقعكم وموافقاتكم الحالية ونحدد التصاريح والشروط المنطبقة قبل إعداد أي طلب." },
+      { "q": "كم مرة ينبغي قياس انبعاثات المداخن؟", "a": "تحدد شروط التصريح ونوع المصدر عدد مرات القياس. نقرأ التصريح، ونحصر كل نقاط الانبعاث ومعاييرها، ونضع جدول رصد مطابقًا لتلك الشروط حتى لا يفوتكم قياس أو يتكرر دون حاجة." },
+      { "q": "نضيف خط إنتاج جديدًا، فما المطلوب بيئيًا؟", "a": "ابدأوا بتقييم ما إذا كان التغيير يؤثر في الانبعاثات أو مياه الصرف أو النفايات أو الضوضاء. وبحسب حجمه قد يلزم تعديل التصريح أو إعداد دراسة بيئية قبل التشغيل، ونجري هذا الفحص مبكرًا حتى لا تؤخر الموافقات بدء التشغيل." },
+      { "q": "هل يمكنكم إعداد بيانات الكربون التي يطلبها عملاء التصدير؟", "a": "نعم، نعدّ قائمة جرد لانبعاثات النطاقين 1 و2، وفئات النطاق 3 عند الحاجة، وفق بروتوكول GHG ومعيار ISO 14064-1. وإذا طلب العملاء أرقامًا على مستوى المنتج يمكن توسيع العمل إلى تقييم دورة الحياة." }
+    ]
+  }
+}

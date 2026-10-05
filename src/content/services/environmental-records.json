@@ -1,0 +1,125 @@
+{
+  "category": "permitting-compliance",
+  "order": 3,
+  "formFamily": "permitting",
+  "industries": ["industrial-manufacturing", "oil-gas", "energy", "food-beverage", "healthcare", "waste-recycling", "logistics-warehousing"],
+  "related": ["environmental-compliance", "environmental-monitoring", "waste-management", "ghg-carbon-accounting"],
+  "en": {
+    "name": "Environmental Records and Reporting",
+    "seoTitle": "Environmental Records & Reporting in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental records and reporting in Saudi Arabia: registers, self-monitoring reports, data management and record-keeping systems ready for inspection.",
+    "valueProp": "We organise your environmental data, registers and periodic reports so the information regulators ask for is complete, consistent and easy to find.",
+    "cardDescription": "Environmental registers, periodic and self-monitoring reports, and data management systems that keep your records accurate, traceable and ready for inspection.",
+    "keyBenefit": "Reliable environmental data, available when it is needed",
+    "definition": "Environmental records and reporting is the structured collection, storage and reporting of the environmental data a facility generates, such as monitoring results, waste quantities, chemical inventories and incident logs. It covers the registers required by permits and regulations, the preparation of periodic and self-monitoring reports for authorities, and the record-keeping system that keeps this evidence traceable and inspection-ready.",
+    "overview": [
+      "Permit conditions and environmental regulations in Saudi Arabia typically require operators to keep records and report on their environmental performance: monitoring results, waste generated and transferred, hazardous materials stored, incidents and maintenance of pollution control equipment. These records are what an inspector asks to see and what periodic reports are built from. In practice, the data often sits in scattered spreadsheets, laboratory certificates, contractor manifests and paper logbooks, which makes reports slow to prepare and difficult to defend.",
+      "We start by identifying which records and reports your permits and the applicable regulations require, how often, and in what form. We then design registers and data templates that capture the right fields once, set clear responsibilities for data entry and review, and establish quality checks such as unit consistency, completeness and comparison with permit limits. Where monitoring data comes from laboratories or continuous systems, we define how results are received, verified and filed.",
+      "With the system in place, we prepare periodic environmental reports and self-monitoring reports for submission to the relevant authority, or support your team to prepare them. Each report is traceable back to source records, so figures can be explained if questioned. The business benefit is less time spent assembling data under pressure, fewer reporting errors and a clear evidence trail during inspections and audits."
+    ],
+    "whenYouNeed": [
+      "Your permit requires periodic environmental or self-monitoring reports to be submitted.",
+      "Environmental data is spread across spreadsheets, logbooks and contractor documents.",
+      "An inspector or auditor found records missing, incomplete or inconsistent.",
+      "Monitoring results arrive from laboratories but are not reviewed against permit limits.",
+      "Waste quantities and manifests cannot be reconciled with what left the site.",
+      "Staff changes have left nobody clearly responsible for environmental records."
+    ],
+    "deliver": [
+      { "title": "Records and reporting requirements map", "description": "A list of every record and report required by your permits and applicable regulations, with frequency, format, responsible person and recipient." },
+      { "title": "Environmental registers", "description": "Practical registers for waste, hazardous materials, emissions and discharges, monitoring results, incidents and complaints, designed around your operations." },
+      { "title": "Data templates and quality checks", "description": "Standard templates with defined fields and units, plus checks for completeness, consistency and comparison against permit limits before data is used." },
+      { "title": "Periodic and self-monitoring reports", "description": "Preparation of periodic environmental reports and self-monitoring reports from verified records, structured to the authority's expected format and content." },
+      { "title": "Record-keeping system", "description": "A filing structure and retention approach, digital or hybrid, that links each figure to its source document and keeps evidence retrievable for inspections." },
+      { "title": "Team training and handover", "description": "Practical training for the staff who collect, enter and review data, with written procedures so the system continues to work after handover." }
+    ],
+    "approach": [
+      { "title": "Requirements review", "description": "We review permits, approvals and applicable regulations to list each record and report required, with frequency and format." },
+      { "title": "Current-state check", "description": "We review existing records, data sources and reporting practice to identify gaps, duplication and quality issues." },
+      { "title": "System design", "description": "We design registers, templates, data flows and responsibilities that fit your operations and existing tools." },
+      { "title": "Data consolidation", "description": "We bring historical data into the new structure where practical and flag gaps that cannot be filled." },
+      { "title": "Report preparation", "description": "We prepare or review periodic and self-monitoring reports, with figures traced back to verified source records." },
+      { "title": "Handover", "description": "We train your team, issue written procedures and agree a review cycle to keep records current." }
+    ],
+    "deliverables": [
+      { "item": "Records and reporting requirements matrix", "format": "Matrix of records, reports, frequency and owners (Excel)", "timing": "Initial phase" },
+      { "item": "Records gap assessment", "format": "Short report with recommendations (PDF)", "timing": "After current-state check" },
+      { "item": "Environmental registers and data templates", "format": "Configured registers and templates (Excel or your system)", "timing": "System design stage" },
+      { "item": "Record-keeping procedure", "format": "Written procedure with roles and filing structure (Word/PDF)", "timing": "System design stage" },
+      { "item": "Periodic or self-monitoring report", "format": "Report in the required format with data annexes (PDF)", "timing": "Each reporting period" },
+      { "item": "Training session and materials", "format": "Workshop with slides and quick-reference guide (PDF)", "timing": "Handover" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which include record-keeping and reporting obligations for regulated activities.",
+      "Conditions of the facility's environmental permits issued by the National Center for Environmental Compliance (NCEC), which commonly specify monitoring, records and reporting.",
+      "National Center for Waste Management (MWAN) requirements for documenting waste generation, storage, transport and disposal under the Waste Management Law.",
+      "Reporting requirements of the Royal Commission for Jubail and Yanbu (RCJY) or MODON for facilities located in their areas."
+    ],
+    "faqs": [
+      { "q": "What environmental records does a facility usually need to keep?", "a": "It depends on the permits and activities, but common records include air emission and wastewater monitoring results, waste generation and transfer records with manifests, hazardous materials inventories, maintenance of pollution control equipment, environmental incidents and complaints, and training records. We confirm the exact list by reviewing your permit conditions and the regulations that apply to your activities." },
+      { "q": "What is a self-monitoring report?", "a": "A self-monitoring report is a periodic report in which the operator presents the results of the monitoring it is required to carry out, such as emissions or effluent measurements, and compares them with permit conditions. The required content, frequency and format are defined by the permit and the relevant authority. We prepare these reports from verified records so each figure can be traced to its source." },
+      { "q": "Do we need special software for environmental records?", "a": "Not necessarily. Many facilities manage well with structured spreadsheets and a disciplined filing system, while larger or multi-site operations may benefit from a dedicated environmental data platform. We design the system around your scale and existing tools, and focus on clear fields, responsibilities and quality checks, which matter more than the software itself." },
+      { "q": "Does this service include environmental monitoring and sampling?", "a": "No. This service manages and reports the data. The measurements themselves, such as air quality, emissions, noise or water sampling, are delivered through our environmental monitoring services. The two work well together: monitoring generates results, and the records system verifies, files and reports them against permit conditions." },
+      { "q": "Can you prepare our reports every period, or only set up the system?", "a": "Either. Some clients want the system designed and their team trained to run it independently. Others prefer recurring support in which we review the data and prepare each periodic or self-monitoring report for their approval and submission. The operator remains responsible for the accuracy of the data it provides and for submitting the report." }
+    ]
+  },
+  "ar": {
+    "name": "السجلات والتقارير البيئية",
+    "seoTitle": "السجلات والتقارير البيئية في السعودية | سيلورين",
+    "metaDescription": "السجلات والتقارير البيئية الدورية في المملكة: إعداد السجلات البيئية وتقارير الرصد الذاتي، وإدارة البيانات، وأنظمة حفظ سجلات موثوقة وجاهزة للتفتيش.",
+    "valueProp": "ننظّم بياناتكم وسجلاتكم وتقاريركم البيئية الدورية لتكون المعلومات التي تطلبها الجهات الرقابية مكتملة ومتسقة وسهلة الوصول.",
+    "cardDescription": "سجلات بيئية، وتقارير دورية وتقارير رصد ذاتي، وأنظمة لإدارة البيانات تُبقي سجلاتكم دقيقة وقابلة للتتبع وجاهزة للتفتيش.",
+    "keyBenefit": "بيانات بيئية موثوقة ومتاحة وقت الحاجة",
+    "definition": "السجلات والتقارير البيئية هي الجمع المنظم للبيانات البيئية التي تنتجها المنشأة وحفظها ورفع التقارير عنها، كنتائج الرصد وكميات النفايات وقوائم جرد المواد الكيميائية وسجلات الحوادث. وتشمل السجلات التي تشترطها التصاريح والأنظمة، وإعداد التقارير الدورية وتقارير الرصد الذاتي للجهات المختصة، ونظام الحفظ الذي يُبقي هذه الأدلة قابلة للتتبع وجاهزة للتفتيش.",
+    "overview": [
+      "تُلزم اشتراطات التصاريح والأنظمة البيئية في المملكة المشغّلين عادةً بحفظ السجلات ورفع تقارير عن أدائهم البيئي، بما في ذلك نتائج الرصد، والنفايات المتولدة والمنقولة، والمواد الخطرة المخزنة، والحوادث، وصيانة معدات ضبط التلوث. وهذه السجلات هي أول ما يطلبه المفتش، وعليها تُبنى التقارير الدورية. غير أن البيانات كثيرًا ما تتوزع بين جداول متفرقة وشهادات مختبرات وبيانات نقل لدى المقاولين ودفاتر ورقية، فيصبح إعداد التقارير بطيئًا والدفاع عنها صعبًا.",
+      "نبدأ بتحديد السجلات والتقارير التي تشترطها تصاريحكم والأنظمة المنطبقة، وتكرارها وشكلها المطلوب. ثم نصمم سجلات ونماذج بيانات تلتقط الحقول الصحيحة مرة واحدة، ونحدد بوضوح المسؤول عن إدخال البيانات ومراجعتها، ونضع ضوابط للجودة كاتساق الوحدات واكتمال البيانات ومقارنتها بحدود التصريح. وحين تأتي بيانات الرصد من مختبرات أو أنظمة رصد مستمر، نحدد طريقة استلام النتائج والتحقق منها وحفظها، ومن يراجعها قبل اعتمادها، وكيف يُتعامل مع أي نتيجة تتجاوز حدود التصريح.",
+      "وبعد اكتمال النظام، نُعدّ التقارير البيئية الدورية وتقارير الرصد الذاتي لتقديمها إلى الجهة المختصة، أو نساند فريقكم في إعدادها. وكل تقرير قابل للتتبع حتى سجلاته المصدرية، فيمكن تفسير أي رقم إذا طُلب ذلك. والعائد على المنشأة وقت أقل في تجميع البيانات تحت الضغط، وأخطاء أقل في التقارير، ومسار أدلة واضح أثناء التفتيش والتدقيق، إضافة إلى بيانات يمكن للإدارة الاعتماد عليها في متابعة الأداء البيئي واتخاذ القرار."
+    ],
+    "whenYouNeed": [
+      "يشترط تصريحكم تقديم تقارير بيئية دورية أو تقارير رصد ذاتي.",
+      "بياناتكم البيئية موزعة بين جداول ودفاتر ومستندات المقاولين.",
+      "رصد مفتش أو مدقق سجلات مفقودة أو ناقصة أو غير متسقة.",
+      "تصلكم نتائج الرصد من المختبرات دون مراجعتها مقابل حدود التصريح.",
+      "تعذّرت مطابقة كميات النفايات وبيانات نقلها مع ما خرج فعلًا من الموقع.",
+      "أدى تغيّر الموظفين إلى غياب مسؤول واضح عن السجلات البيئية."
+    ],
+    "deliver": [
+      { "title": "خريطة متطلبات السجلات والتقارير", "description": "حصر لكل سجل وتقرير تشترطه تصاريحكم والأنظمة المنطبقة، مع التكرار والشكل المطلوب والمسؤول عنه والجهة التي يُرفع إليها." },
+      { "title": "السجلات البيئية", "description": "سجلات عملية للنفايات والمواد الخطرة والانبعاثات والتصريفات ونتائج الرصد والحوادث والشكاوى، مصممة وفق طبيعة عملياتكم." },
+      { "title": "نماذج البيانات وضوابط الجودة", "description": "نماذج موحدة بحقول ووحدات محددة، مع ضوابط للتحقق من الاكتمال والاتساق والمقارنة بحدود التصريح قبل استخدام البيانات." },
+      { "title": "التقارير الدورية وتقارير الرصد الذاتي", "description": "إعداد التقارير البيئية الدورية وتقارير الرصد الذاتي من سجلات جرى التحقق منها، وفق الشكل والمحتوى الذي تتوقعه الجهة المختصة." },
+      { "title": "نظام حفظ السجلات", "description": "هيكل للحفظ ونهج للاحتفاظ بالسجلات، رقمي أو مختلط، يربط كل رقم بمستنده المصدري ويُبقي الأدلة متاحة عند التفتيش." },
+      { "title": "تدريب الفريق والتسليم", "description": "تدريب عملي للموظفين المعنيين بجمع البيانات وإدخالها ومراجعتها، مع إجراءات مكتوبة تضمن استمرار عمل النظام بعد التسليم." }
+    ],
+    "approach": [
+      { "title": "مراجعة المتطلبات", "description": "نراجع التصاريح والموافقات والأنظمة المنطبقة لحصر كل سجل وتقرير مطلوب وتكراره وشكله." },
+      { "title": "تقييم الوضع الراهن", "description": "نراجع السجلات ومصادر البيانات وممارسات إعداد التقارير الحالية لتحديد الفجوات والازدواجية ومشكلات الجودة." },
+      { "title": "تصميم النظام", "description": "نصمم السجلات والنماذج وتدفقات البيانات والمسؤوليات بما يلائم عملياتكم وأدواتكم القائمة." },
+      { "title": "توحيد البيانات", "description": "ننقل البيانات التاريخية إلى الهيكل الجديد قدر الإمكان، ونشير إلى الفجوات التي يتعذر استكمالها." },
+      { "title": "إعداد التقارير", "description": "نُعدّ التقارير الدورية وتقارير الرصد الذاتي أو نراجعها، مع ربط كل رقم بسجلات مصدرية موثقة." },
+      { "title": "التسليم", "description": "ندرّب فريقكم ونصدر إجراءات مكتوبة ونتفق على دورة مراجعة تُبقي السجلات محدّثة." }
+    ],
+    "deliverables": [
+      { "item": "مصفوفة متطلبات السجلات والتقارير", "format": "مصفوفة بالسجلات والتقارير والتكرار والمسؤولين (Excel)", "timing": "المرحلة الأولى" },
+      { "item": "تقييم فجوات السجلات", "format": "تقرير موجز بالتوصيات (PDF)", "timing": "بعد تقييم الوضع الراهن" },
+      { "item": "السجلات البيئية ونماذج البيانات", "format": "سجلات ونماذج مهيأة (Excel أو نظامكم الحالي)", "timing": "مرحلة تصميم النظام" },
+      { "item": "إجراء حفظ السجلات", "format": "إجراء مكتوب بالأدوار وهيكل الحفظ (Word/PDF)", "timing": "مرحلة تصميم النظام" },
+      { "item": "التقرير الدوري أو تقرير الرصد الذاتي", "format": "تقرير بالشكل المطلوب مع ملاحق البيانات (PDF)", "timing": "كل فترة تقرير" },
+      { "item": "جلسة التدريب ومواده", "format": "ورشة عمل مع عرض تقديمي ودليل مرجعي سريع (PDF)", "timing": "عند التسليم" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، وتتضمن التزامات بحفظ السجلات ورفع التقارير للأنشطة الخاضعة للتنظيم.",
+      "اشتراطات التصاريح البيئية الصادرة عن المركز الوطني للرقابة على الالتزام البيئي (NCEC)، وكثيرًا ما تحدد متطلبات الرصد والسجلات والتقارير.",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) لتوثيق توليد النفايات وتخزينها ونقلها والتخلص منها وفق نظام إدارة النفايات.",
+      "متطلبات رفع التقارير لدى الهيئة الملكية للجبيل وينبع (RCJY) أو الهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن) للمنشآت الواقعة ضمن نطاقهما."
+    ],
+    "faqs": [
+      { "q": "ما السجلات البيئية التي تحتفظ بها المنشأة عادةً؟", "a": "يتوقف ذلك على التصاريح والأنشطة، لكن السجلات الشائعة تشمل نتائج رصد الانبعاثات الهوائية ومياه الصرف، وسجلات توليد النفايات ونقلها مع بيانات النقل، وقوائم جرد المواد الخطرة، وسجلات صيانة معدات ضبط التلوث، والحوادث والشكاوى البيئية، وسجلات التدريب. ونحدد القائمة الدقيقة بمراجعة اشتراطات تصاريحكم والأنظمة المنطبقة على أنشطتكم." },
+      { "q": "ما المقصود بتقرير الرصد الذاتي؟", "a": "تقرير الرصد الذاتي تقرير دوري يعرض فيه المشغّل نتائج الرصد الذي يلتزم بإجرائه، كقياسات الانبعاثات أو المياه المصرّفة، ويقارنها باشتراطات التصريح. ويحدد التصريح والجهة المختصة محتوى التقرير وتكراره وشكله. ونُعدّ هذه التقارير من سجلات جرى التحقق منها، بحيث يمكن تتبع كل رقم إلى مصدره." },
+      { "q": "هل نحتاج إلى برنامج متخصص لإدارة السجلات البيئية؟", "a": "ليس بالضرورة. فكثير من المنشآت تدير سجلاتها بكفاءة عبر جداول منظمة ونظام حفظ منضبط، بينما قد تستفيد العمليات الكبيرة أو متعددة المواقع من منصة متخصصة للبيانات البيئية. ونصمم النظام وفق حجم منشأتكم وأدواتها الحالية، مع التركيز على وضوح الحقول والمسؤوليات وضوابط الجودة، فهي أهم من البرنامج ذاته." },
+      { "q": "هل تشمل هذه الخدمة الرصد البيئي وأخذ العينات؟", "a": "لا، فهذه الخدمة تُعنى بإدارة البيانات ورفع التقارير عنها. أما القياسات نفسها، كجودة الهواء والانبعاثات والضوضاء وعينات المياه، فتُقدَّم ضمن خدمات الرصد البيئي لدينا. والخدمتان تتكاملان؛ إذ يُنتج الرصد النتائج، ثم يتحقق نظام السجلات منها ويحفظها ويرفع التقارير عنها مقارنةً باشتراطات التصريح." },
+      { "q": "هل تُعدّون تقاريرنا في كل فترة، أم تقتصر الخدمة على إنشاء النظام؟", "a": "الأمران متاحان. فبعض العملاء يرغبون في تصميم النظام وتدريب فريقهم على تشغيله باستقلالية، ويفضّل آخرون مساندة دورية نراجع فيها البيانات ونُعدّ كل تقرير دوري أو تقرير رصد ذاتي لاعتمادهم وتقديمه. ويظل المشغّل مسؤولًا عن دقة البيانات التي يوفرها وعن تقديم التقرير." }
+    ]
+  }
+}

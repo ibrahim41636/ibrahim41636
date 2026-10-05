@@ -1,0 +1,127 @@
+{
+  "category": "monitoring-measurement",
+  "order": 4,
+  "formFamily": "monitoring",
+  "industries": ["energy", "oil-gas", "commercial-facilities", "logistics-warehousing", "infrastructure"],
+  "related": ["air-quality-monitoring", "environmental-permitting", "environmental-compliance"],
+  "en": {
+    "name": "Fuel Station VOC Monitoring",
+    "seoTitle": "Fuel Station VOC Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Fixed continuous VOC monitoring for fuel stations in Saudi Arabia: intrinsically safe PID systems, installation, calibration and reporting to NCEC requirements.",
+    "valueProp": "Intrinsically safe, continuous VOC monitoring for fuel stations, supplied, installed and maintained to meet NCEC methodology and permit requirements.",
+    "cardDescription": "Supply, installation and maintenance of intrinsically safe PID-based VOC monitoring systems for fuel stations, with calibration, data logging and compliance reporting.",
+    "keyBenefit": "Continuous VOC compliance across one station or a whole network",
+    "definition": "Fuel station VOC monitoring is the continuous measurement of volatile organic compounds (VOCs) released from fuel storage, delivery and dispensing at a fuel station, using fixed sensors installed at the main emission points. A typical system uses intrinsically safe photoionization detectors (PID) suitable for hazardous areas, with alarms, data logging and calibration to traceable reference gas.",
+    "overview": [
+      "Fuel stations release volatile organic compounds during tanker offloading, tank breathing through vent pipes and vehicle refuelling at dispensers. These vapours affect local air quality and, in enclosed or busy urban locations, staff and customers. The National Center for Environmental Compliance (NCEC) has placed a focus on fuel stations, and operators are expected to install fixed continuous VOC monitoring that follows the applicable NCEC-approved monitoring methodology and the requirements of each station's environmental permit.",
+      "Our service covers the full scope: supply and installation of an intrinsically safe fixed VOC monitoring system based on photoionization detection (PID) technology, suitable for hazardous areas, with continuous measurement, local display, 4–20 mA and Modbus communication, programmable alarm relays, data logging capability and calibration using traceable calibration gas. Each system is specified for the required VOC monitoring range. We start with a site survey and hazardous-area review, then position sensors at dispenser islands, tank vent pipes and the fill or offloading point, taking account of layout, prevailing wind and ignition-source zoning.",
+      "After installation we commission and calibrate the system, train station staff on alarms, daily checks and basic responses, and offer maintenance contracts covering periodic calibration, sensor servicing and data checks. Logged data is compiled into compliance reports aligned with permit requirements. For operators with many stations, we standardise sensor layouts, equipment and reporting across the network so that data is consistent and management can review performance by station, region or period from a single, comparable dataset."
+    ],
+    "whenYouNeed": [
+      "Your fuel station must install fixed VOC monitoring to meet NCEC requirements or permit conditions.",
+      "You are building a new station or renovating dispensers, tanks or vent systems.",
+      "Your environmental permit renewal requires evidence of continuous VOC monitoring.",
+      "Existing VOC sensors are uncalibrated, faulty or not suitable for hazardous areas.",
+      "You operate a network of stations and need consistent monitoring and reporting.",
+      "Staff or neighbours have raised concerns about fuel vapour odours at the station."
+    ],
+    "deliver": [
+      { "title": "Site survey and hazardous-area review", "description": "Inspection of station layout, tanks, vents, dispensers and offloading point, and review of hazardous-area classification to define compliant sensor locations and cabling routes." },
+      { "title": "Intrinsically safe PID system supply", "description": "Fixed PID-based VOC monitors for hazardous areas with continuous measurement, local display, 4–20 mA and Modbus outputs, programmable alarm relays and data logging." },
+      { "title": "Sensor placement and installation", "description": "Installation of sensors at dispenser islands, tank vent pipes and the fill or offloading point, with controller, cabling and alarm connections." },
+      { "title": "Commissioning and calibration", "description": "System testing, alarm verification and calibration using traceable calibration gas across the required VOC monitoring range, with commissioning records for each station." },
+      { "title": "Staff training and maintenance", "description": "Training for station staff on alarms and routine checks, plus maintenance contracts covering periodic calibration, sensor servicing and fault response." },
+      { "title": "Compliance reporting", "description": "Periodic reports compiled from logged data, aligned with the NCEC-approved monitoring methodology and station permit requirements, with network-level summaries for multi-site operators." }
+    ],
+    "approach": [
+      { "title": "Requirements check", "description": "We confirm the applicable NCEC monitoring methodology, permit conditions and any requirements of the fuel company or station owner." },
+      { "title": "Site survey", "description": "We survey the station, review hazardous-area zoning and agree sensor positions, controller location and power and communication routes." },
+      { "title": "Supply and installation", "description": "We supply intrinsically safe PID monitors suited to the required range and install sensors, controller and alarms with minimal disruption to operations." },
+      { "title": "Commissioning", "description": "We test communications and alarm relays, calibrate with traceable gas, verify data logging and hand over documentation." },
+      { "title": "Training", "description": "We train station staff on reading the display, responding to alarms and carrying out routine checks." },
+      { "title": "Maintenance and reporting", "description": "We carry out scheduled calibration and servicing and issue compliance reports for each station or the whole network." }
+    ],
+    "deliverables": [
+      { "item": "Site survey and sensor layout", "format": "Survey report with marked-up layout drawing (PDF)", "timing": "Before installation" },
+      { "item": "Equipment technical submittal", "format": "Datasheets, hazardous-area documentation and system description (PDF)", "timing": "Before procurement" },
+      { "item": "Installation and commissioning report", "format": "Test sheets, alarm checks and photos (PDF)", "timing": "At handover" },
+      { "item": "Calibration certificates", "format": "Calibration records with gas traceability details (PDF)", "timing": "At commissioning and each calibration" },
+      { "item": "Staff training record", "format": "Attendance sheet and quick-reference guide (PDF)", "timing": "At handover" },
+      { "item": "VOC compliance report", "format": "Report from logged data per station or network (PDF + Excel)", "timing": "Per permit reporting cycle" }
+    ],
+    "regulatoryContext": [
+      "National Center for Environmental Compliance (NCEC), which oversees environmental compliance of fuel stations and the applicable approved VOC monitoring methodology.",
+      "Environmental permit conditions issued for each fuel station, including monitoring, record-keeping and reporting requirements.",
+      "Environmental Law and its Implementing Regulations, including requirements relating to air emissions and ambient air quality.",
+      "Hazardous-area classification and equipment requirements for installations in areas where flammable vapours may be present.",
+      "Requirements of fuel companies, station owners and municipalities that apply to individual stations or networks."
+    ],
+    "faqs": [
+      { "q": "Why use photoionization detection (PID) for fuel station VOC monitoring?", "a": "PID sensors respond quickly to a wide range of volatile organic compounds found in fuel vapour and can measure at low concentrations, which makes them suitable for continuous monitoring around dispensers, vents and offloading points. Used with calibration against traceable reference gas, they provide consistent data for alarms and reporting. The specific sensor and range are selected to match the required VOC monitoring range for the station." },
+      { "q": "Where are the sensors installed at a fuel station?", "a": "Sensors are normally placed at the main vapour release points: dispenser islands, tank vent pipes and the fill or offloading point where tankers deliver fuel. Exact positions depend on station layout, prevailing wind, the applicable monitoring methodology and hazardous-area zoning. We agree positions after a site survey so that sensors are representative, accessible for maintenance and safely installed." },
+      { "q": "Is the equipment safe to install in hazardous areas?", "a": "The system is specified as intrinsically safe and suitable for hazardous areas, which means it is designed to prevent ignition of flammable vapours. As part of the site survey we review the station's hazardous-area classification and select equipment, enclosures and cabling accordingly. Equipment documentation is provided in the technical submittal so it can be reviewed by your safety team." },
+      { "q": "How often does the system need calibration?", "a": "Calibration frequency depends on the manufacturer's recommendations, the monitoring methodology and any permit conditions. Calibration is carried out using traceable calibration gas, and each event is recorded with a certificate. Our maintenance contracts schedule calibration and sensor servicing in advance, so records stay complete and the system remains reliable between inspections." },
+      { "q": "Can you deliver monitoring across a network of fuel stations?", "a": "Yes. For multi-site operators we standardise the equipment, sensor layout principles, calibration routine and report format across all stations, while adapting each installation to its layout and permit. This gives management comparable data by station, region or period, and simplifies maintenance planning, spare parts and staff training across the network." }
+    ]
+  },
+  "ar": {
+    "name": "رصد المركبات العضوية المتطايرة في محطات الوقود",
+    "seoTitle": "رصد المركبات العضوية المتطايرة بمحطات الوقود | سيلورين",
+    "metaDescription": "رصد مستمر للمركبات العضوية المتطايرة في محطات الوقود بالمملكة: أنظمة PID آمنة ذاتيًا، مع التركيب والمعايرة والتقارير وفق متطلبات الرقابة على الالتزام البيئي.",
+    "valueProp": "رصد مستمر وآمن ذاتيًا للمركبات العضوية المتطايرة في محطات الوقود، يشمل التوريد والتركيب والصيانة وفق منهجية الرصد المعتمدة واشتراطات التصريح البيئي.",
+    "cardDescription": "توريد وتركيب وصيانة أنظمة رصد المركبات العضوية المتطايرة بتقنية PID الآمنة ذاتيًا لمحطات الوقود، مع المعايرة وتسجيل البيانات وتقارير الامتثال.",
+    "keyBenefit": "امتثال مستمر في محطة واحدة أو شبكة محطات كاملة",
+    "definition": "رصد المركبات العضوية المتطايرة في محطات الوقود هو القياس المستمر للمركبات العضوية المتطايرة (VOCs) المنبعثة أثناء تخزين الوقود وتفريغه وتعبئته، باستخدام حساسات ثابتة مركّبة عند نقاط الانبعاث الرئيسة. ويعتمد النظام عادةً على كواشف التأين الضوئي (PID) الآمنة ذاتيًا والمناسبة للمناطق الخطرة، مع إنذارات وتسجيل للبيانات ومعايرة بغاز مرجعي قابل للتتبع.",
+    "overview": [
+      "تنبعث المركبات العضوية المتطايرة من محطات الوقود أثناء تفريغ الصهاريج، ومن تنفس الخزانات عبر أنابيب التهوية، وأثناء تزويد المركبات بالوقود عند المضخات. وتؤثر هذه الأبخرة في جودة الهواء المحلي، وفي العاملين والعملاء في المواقع الحضرية المزدحمة أو شبه المغلقة. وقد أولى المركز الوطني للرقابة على الالتزام البيئي (NCEC) محطات الوقود اهتمامًا خاصًا، إذ يُنتظر من المشغلين تركيب أنظمة ثابتة للرصد المستمر للمركبات العضوية المتطايرة وفق منهجية الرصد المعتمدة من المركز واشتراطات التصريح البيئي لكل محطة.",
+      "تغطي خدمتنا النطاق كاملًا: توريد وتركيب نظام ثابت لرصد المركبات العضوية المتطايرة قائم على تقنية الكشف بالتأين الضوئي (PID)، آمن ذاتيًا ومناسب للمناطق الخطرة، يوفر قياسًا مستمرًا وشاشة عرض محلية ومخرجات 4–20 mA واتصال Modbus ومرحلات إنذار قابلة للبرمجة وإمكانية تسجيل البيانات، مع معايرته بغاز معايرة قابل للتتبع. ويُحدَّد كل نظام بما يناسب نطاق الرصد المطلوب. ونبدأ بمسح للموقع ومراجعة لتصنيف المناطق الخطرة، ثم نحدد مواقع الحساسات عند جزر المضخات وأنابيب تهوية الخزانات ونقطة التعبئة أو التفريغ، مع مراعاة تخطيط المحطة والرياح السائدة وتصنيف مناطق مصادر الاشتعال.",
+      "وبعد التركيب نشغّل النظام ونعايره، وندرب العاملين في المحطة على الإنذارات والفحوص اليومية وإجراءات الاستجابة الأساسية، ونقدم عقود صيانة تشمل المعايرة الدورية وخدمة الحساسات ومراجعة البيانات. وتُجمع البيانات المسجلة في تقارير امتثال متوافقة مع اشتراطات التصريح. أما المشغلون الذين يديرون عددًا كبيرًا من المحطات، فنوحّد لهم توزيع الحساسات والأجهزة وصيغ التقارير على مستوى الشبكة، لتكون البيانات متسقة وتتمكن الإدارة من مراجعة الأداء حسب المحطة أو المنطقة أو الفترة من قاعدة بيانات واحدة قابلة للمقارنة."
+    ],
+    "whenYouNeed": [
+      "يتعين على محطتكم تركيب نظام ثابت لرصد المركبات العضوية المتطايرة وفق متطلبات المركز أو اشتراطات التصريح.",
+      "تنشئون محطة جديدة أو تجددون المضخات أو الخزانات أو أنظمة التهوية.",
+      "يتطلب تجديد تصريحكم البيئي إثبات وجود رصد مستمر للمركبات العضوية المتطايرة.",
+      "الحساسات الحالية غير معايرة أو معطلة أو غير مناسبة للمناطق الخطرة.",
+      "تديرون شبكة محطات وتحتاجون إلى رصد وتقارير موحدة.",
+      "أبدى العاملون أو الجيران قلقًا من روائح أبخرة الوقود في المحطة."
+    ],
+    "deliver": [
+      { "title": "مسح الموقع ومراجعة المناطق الخطرة", "description": "معاينة تخطيط المحطة والخزانات وأنابيب التهوية والمضخات ونقطة التفريغ، ومراجعة تصنيف المناطق الخطرة لتحديد مواقع الحساسات ومسارات الكابلات المطابقة." },
+      { "title": "توريد نظام PID آمن ذاتيًا", "description": "أجهزة ثابتة لرصد المركبات العضوية المتطايرة بتقنية PID للمناطق الخطرة، بقياس مستمر وشاشة محلية ومخرجات 4–20 mA وModbus ومرحلات إنذار قابلة للبرمجة وتسجيل للبيانات." },
+      { "title": "تحديد مواقع الحساسات وتركيبها", "description": "تركيب الحساسات عند جزر المضخات وأنابيب تهوية الخزانات ونقطة التعبئة أو التفريغ، مع وحدة التحكم والكابلات وتوصيلات الإنذار." },
+      { "title": "التشغيل التجريبي والمعايرة", "description": "اختبار النظام والتحقق من الإنذارات والمعايرة بغاز معايرة قابل للتتبع على كامل نطاق الرصد المطلوب، مع سجلات تشغيل لكل محطة." },
+      { "title": "تدريب العاملين والصيانة", "description": "تدريب العاملين في المحطة على الإنذارات والفحوص الروتينية، وعقود صيانة تشمل المعايرة الدورية وخدمة الحساسات والاستجابة للأعطال." },
+      { "title": "تقارير الامتثال", "description": "تقارير دورية مستخلصة من البيانات المسجلة، متوافقة مع منهجية الرصد المعتمدة من المركز واشتراطات تصريح المحطة، مع ملخصات على مستوى الشبكة للمشغلين متعددي المواقع." }
+    ],
+    "approach": [
+      { "title": "التحقق من المتطلبات", "description": "نتأكد من منهجية الرصد المعتمدة من المركز واشتراطات التصريح وأي متطلبات لشركة الوقود أو مالك المحطة." },
+      { "title": "مسح الموقع", "description": "نمسح المحطة ونراجع تصنيف المناطق الخطرة، ونتفق على مواقع الحساسات ووحدة التحكم ومسارات الطاقة والاتصالات." },
+      { "title": "التوريد والتركيب", "description": "نورّد أجهزة PID آمنة ذاتيًا تناسب نطاق الرصد المطلوب، ونركّب الحساسات ووحدة التحكم والإنذارات بأقل تأثير على التشغيل." },
+      { "title": "التشغيل التجريبي", "description": "نختبر الاتصالات ومرحلات الإنذار، ونعاير بغاز قابل للتتبع، ونتحقق من تسجيل البيانات، ونسلّم الوثائق." },
+      { "title": "التدريب", "description": "ندرب العاملين في المحطة على قراءة الشاشة والاستجابة للإنذارات وإجراء الفحوص الروتينية." },
+      { "title": "الصيانة والتقارير", "description": "ننفذ المعايرة والخدمة المجدولة، ونصدر تقارير الامتثال لكل محطة أو للشبكة كاملة." }
+    ],
+    "deliverables": [
+      { "item": "مسح الموقع وتوزيع الحساسات", "format": "تقرير المسح مع مخطط يوضح مواقع الحساسات (PDF)", "timing": "قبل التركيب" },
+      { "item": "المستندات الفنية للأجهزة", "format": "نشرات البيانات ووثائق المناطق الخطرة ووصف النظام (PDF)", "timing": "قبل التوريد" },
+      { "item": "تقرير التركيب والتشغيل التجريبي", "format": "نماذج الاختبار وفحوص الإنذار والصور (PDF)", "timing": "عند التسليم" },
+      { "item": "شهادات المعايرة", "format": "سجلات المعايرة مع بيانات تتبع الغاز المرجعي (PDF)", "timing": "عند التشغيل وفي كل معايرة" },
+      { "item": "سجل تدريب العاملين", "format": "كشف حضور ودليل مرجعي مختصر (PDF)", "timing": "عند التسليم" },
+      { "item": "تقرير امتثال المركبات العضوية المتطايرة", "format": "تقرير من البيانات المسجلة لكل محطة أو للشبكة (PDF + Excel)", "timing": "وفق دورة تقارير التصريح" }
+    ],
+    "regulatoryContext": [
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، الذي يتولى رقابة الالتزام البيئي لمحطات الوقود ومنهجية رصد المركبات العضوية المتطايرة المعتمدة.",
+      "اشتراطات التصريح البيئي الصادر لكل محطة وقود، بما فيها متطلبات الرصد وحفظ السجلات ورفع التقارير.",
+      "نظام البيئة ولوائحه التنفيذية، بما فيها المتطلبات المتعلقة بالانبعاثات الهوائية وجودة الهواء المحيط.",
+      "متطلبات تصنيف المناطق الخطرة والأجهزة المستخدمة في المواقع التي قد توجد فيها أبخرة قابلة للاشتعال.",
+      "متطلبات شركات الوقود وملاك المحطات والأمانات المنطبقة على المحطات منفردة أو على مستوى الشبكة."
+    ],
+    "faqs": [
+      { "q": "لماذا تُستخدم تقنية التأين الضوئي (PID) لرصد المركبات العضوية المتطايرة في محطات الوقود؟", "a": "تستجيب حساسات PID بسرعة لطيف واسع من المركبات العضوية المتطايرة الموجودة في أبخرة الوقود، وتقيس التراكيز المنخفضة، ما يجعلها مناسبة للرصد المستمر حول المضخات وأنابيب التهوية ونقاط التفريغ. ومع معايرتها بغاز مرجعي قابل للتتبع، توفر بيانات متسقة للإنذارات والتقارير. ويُختار الحساس ونطاقه بما يطابق نطاق الرصد المطلوب للمحطة." },
+      { "q": "أين تُركّب الحساسات في محطة الوقود؟", "a": "تُركّب الحساسات عادةً عند نقاط انبعاث الأبخرة الرئيسة: جزر المضخات، وأنابيب تهوية الخزانات، ونقطة التعبئة أو التفريغ حيث تفرّغ الصهاريج حمولتها. وتعتمد المواقع الدقيقة على تخطيط المحطة والرياح السائدة ومنهجية الرصد المعمول بها وتصنيف المناطق الخطرة. ونتفق على المواقع بعد مسح الموقع لتكون الحساسات ممثلة للظروف الفعلية، ويسهل الوصول إليها للصيانة، ومركّبة بصورة آمنة." },
+      { "q": "هل الأجهزة آمنة للتركيب في المناطق الخطرة؟", "a": "يُحدَّد النظام بمواصفة الأمان الذاتي والملاءمة للمناطق الخطرة، أي أنه مصمم لمنع اشتعال الأبخرة القابلة للاشتعال. وضمن مسح الموقع نراجع تصنيف المناطق الخطرة في المحطة ونختار الأجهزة والحاويات والكابلات وفقًا له. وتُقدَّم وثائق الأجهزة ضمن المستندات الفنية ليتمكن فريق السلامة لديكم من مراجعتها." },
+      { "q": "كم مرة يحتاج النظام إلى المعايرة؟", "a": "يعتمد تكرار المعايرة على توصيات الشركة المصنعة ومنهجية الرصد وأي اشتراطات في التصريح. وتُجرى المعايرة بغاز معايرة قابل للتتبع، وتُوثَّق كل عملية بشهادة. وتتضمن عقود الصيانة لدينا جدولة مسبقة للمعايرة وخدمة الحساسات، لتبقى السجلات مكتملة ويظل النظام موثوقًا بين زيارات التفتيش." },
+      { "q": "هل يمكنكم تنفيذ الرصد على مستوى شبكة من محطات الوقود؟", "a": "نعم. نوحّد للمشغلين متعددي المواقع الأجهزة ومبادئ توزيع الحساسات وبرنامج المعايرة وصيغة التقارير في جميع المحطات، مع تكييف كل تركيب وفق تخطيط المحطة وتصريحها. ويتيح ذلك للإدارة بيانات قابلة للمقارنة حسب المحطة أو المنطقة أو الفترة، ويبسّط تخطيط الصيانة وقطع الغيار وتدريب العاملين على مستوى الشبكة." }
+    ]
+  }
+}

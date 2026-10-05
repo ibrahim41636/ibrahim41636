@@ -1,0 +1,21 @@
+---
+import Contours from "./Contours.astro";
+import Icon from "./Icon.astro";
+interface Props { title: string; body: string; label: string; to: string; cta: string; secondary?: { label: string; to: string } }
+const { title, body, label, to, cta, secondary } = Astro.props;
+---
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band on-dark reveal">
+      <Contours seed={3} />
+      <div>
+        <h2>{title}</h2>
+        <p>{body}</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn--light" href={to} data-cta={cta}>{label} <Icon name="arrow" class="arrow" /></a>
+        {secondary && <a class="btn btn--ghost" href={secondary.to} data-cta={`${cta}_secondary`}>{secondary.label}</a>}
+      </div>
+    </div>
+  </div>
+</section>

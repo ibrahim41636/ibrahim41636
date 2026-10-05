@@ -1,0 +1,159 @@
+{
+  "order": 7,
+  "services": [
+    "environmental-permitting",
+    "environmental-compliance",
+    "environmental-records",
+    "waste-management",
+    "circular-economy",
+    "ghg-carbon-accounting",
+    "noise-monitoring",
+    "sustainable-buildings"
+  ],
+  "en": {
+    "name": "Logistics & Warehousing",
+    "seoTitle": "Environmental Compliance for Logistics | Selorin",
+    "metaDescription": "Environmental permits, chemical storage compliance, packaging waste and fleet and Scope 3 carbon accounting for warehouses and logistics operators in KSA.",
+    "cardDescription": "Permits, storage compliance, packaging waste and fleet carbon data for warehouses, distribution centres, logistics parks and transport operators.",
+    "overview": [
+      "Warehouses, distribution centres and logistics parks may look low-impact, but their environmental aspects are real: storage of chemicals and dangerous goods, fuel for forklifts and fleets, workshop wastes, large volumes of packaging, stormwater from yards, and noise from 24-hour truck movements near residential areas. Operators that store client goods also inherit the environmental requirements attached to those goods.",
+      "Facilities in special economic zones, ports or MODON logistics areas must align with the requirements of the zone operator as well as national environmental regulations under the Environmental Law and its Implementing Regulations. Third-party logistics (3PL) providers handling hazardous materials need storage arrangements, spill controls and records that hold up during inspections and client audits.",
+      "Transport and warehousing are also a significant part of customers' Scope 3 emissions. Retailers, manufacturers and e-commerce businesses increasingly ask logistics partners for emissions data per shipment or per client, and for plans to reduce fleet and building energy use."
+    ],
+    "challenges": [
+      {
+        "title": "Chemical and dangerous goods storage",
+        "description": "Stored chemicals need segregation, bunding, spill kits and inventories that match what is actually in the racks."
+      },
+      {
+        "title": "Packaging waste volumes",
+        "description": "Cardboard, plastic film, pallets and damaged goods create large waste streams that can be recovered if segregated properly."
+      },
+      {
+        "title": "Fleet and workshop wastes",
+        "description": "Maintenance generates used oil, filters, batteries and tyres that must be stored and handed over to licensed contractors with records."
+      },
+      {
+        "title": "Night operations and neighbours",
+        "description": "Truck movements, reversing alarms and refrigeration units can create noise complaints where logistics sites border homes."
+      },
+      {
+        "title": "Customer carbon requests",
+        "description": "Shippers ask for emissions per client or shipment, which requires fuel, distance and energy data that many operators do not yet collect."
+      }
+    ],
+    "requirements": [
+      "Environmental permit or registration for the facility, aligned with zone operator requirements where applicable",
+      "Safe storage, segregation and secondary containment for chemicals and dangerous goods",
+      "Waste segregation, recycling and licensed disposal under MWAN regulations, including hazardous workshop wastes",
+      "Environmental records covering stored materials, waste transfers and incidents",
+      "Stormwater and oil interceptor maintenance for yards and fuelling areas",
+      "Emissions data for customers' Scope 3 reporting in line with the GHG Protocol"
+    ],
+    "support": [
+      {
+        "title": "Permits and storage compliance",
+        "description": "We confirm permit requirements, review storage arrangements for chemicals and dangerous goods, and close compliance gaps."
+      },
+      {
+        "title": "Waste and packaging recovery",
+        "description": "We map waste streams, set segregation and recovery routes for packaging and pallets, and organise records for licensed transfers."
+      },
+      {
+        "title": "Fleet and facility carbon",
+        "description": "We build GHG inventories for fleets and buildings and develop methods to allocate emissions per customer or shipment."
+      },
+      {
+        "title": "Sustainable facilities",
+        "description": "We advise on energy, water and material efficiency for new and existing warehouses, including green building ratings where relevant."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do warehouses need an environmental permit?",
+        "a": "It depends on the activity, what is stored and where the facility is. Warehouses storing chemicals, fuel or hazardous goods are more likely to have specific requirements. We review your operations and location and confirm the permits and registrations that apply."
+      },
+      {
+        "q": "A customer wants emissions data per shipment. Can you help?",
+        "a": "Yes. We identify the data you already hold, such as fuel, distance, load and energy use, design an allocation method consistent with the GHG Protocol, and set up a simple process to produce the figures regularly."
+      },
+      {
+        "q": "How can we reduce packaging waste costs?",
+        "a": "Start by measuring what you generate by type. Clean, segregated cardboard, film and pallets often have recovery value. We set up segregation points, identify recovery routes and track volumes so you can see the change."
+      }
+    ]
+  },
+  "ar": {
+    "name": "الخدمات اللوجستية والمستودعات",
+    "seoTitle": "الامتثال البيئي للخدمات اللوجستية | سيلورين",
+    "metaDescription": "التصاريح البيئية وامتثال تخزين المواد الكيميائية ونفايات التغليف وحصر انبعاثات الأساطيل والنطاق 3 للمجمعات اللوجستية والمستودعات ومقدمي الخدمات اللوجستية.",
+    "cardDescription": "تصاريح وامتثال للتخزين وإدارة لنفايات التغليف وبيانات كربون للأساطيل لصالح المستودعات ومراكز التوزيع والمجمعات اللوجستية وشركات النقل.",
+    "overview": [
+      "قد تبدو المستودعات ومراكز التوزيع والمجمعات اللوجستية منخفضة الأثر، غير أن جوانبها البيئية حقيقية: تخزين المواد الكيميائية والبضائع الخطرة، ووقود الرافعات الشوكية والأساطيل، ونفايات الورش، والكميات الكبيرة من مواد التغليف، ومياه الأمطار من الساحات، والضوضاء الناتجة عن حركة الشاحنات على مدار الساعة قرب الأحياء السكنية. كما يرث المشغل الذي يخزن بضائع عملائه المتطلبات البيئية المرتبطة بتلك البضائع.",
+      "وعلى المنشآت الواقعة في المناطق الاقتصادية الخاصة والموانئ والمناطق اللوجستية التابعة لـ«مدن» (MODON) أن تتوافق مع متطلبات مشغل المنطقة إلى جانب الأنظمة البيئية الوطنية وفق نظام البيئة ولوائحه التنفيذية. ويحتاج مقدمو الخدمات اللوجستية (3PL) الذين يتعاملون مع مواد خطرة إلى ترتيبات تخزين وضوابط انسكاب وسجلات تصمد أمام التفتيش وتدقيق العملاء.",
+      "ويمثل النقل والتخزين جزءًا مهمًا من انبعاثات النطاق 3 لدى العملاء؛ إذ يطلب تجار التجزئة والمصنعون وشركات التجارة الإلكترونية من شركائهم اللوجستيين بيانات الانبعاثات لكل شحنة أو لكل عميل، وخططًا لخفض استهلاك الطاقة في الأساطيل والمباني."
+    ],
+    "challenges": [
+      {
+        "title": "تخزين المواد الكيميائية والخطرة",
+        "description": "تحتاج المواد الكيميائية المخزنة إلى فصل وأحواض احتواء وأدوات للانسكاب وقوائم جرد تطابق ما هو موجود فعلًا على الرفوف."
+      },
+      {
+        "title": "كميات نفايات التغليف",
+        "description": "تنتج الكراتين وأغلفة البلاستيك والمنصات الخشبية والبضائع التالفة تيارات نفايات كبيرة يمكن استرجاعها إذا فُرزت جيدًا."
+      },
+      {
+        "title": "نفايات الأسطول والورش",
+        "description": "تولّد الصيانة زيوتًا مستعملة وفلاتر وبطاريات وإطارات يجب تخزينها وتسليمها لمقاولين مرخصين مع توثيق ذلك."
+      },
+      {
+        "title": "العمل الليلي والجوار",
+        "description": "قد تسبب حركة الشاحنات وأجهزة التنبيه عند الرجوع ووحدات التبريد شكاوى من الضوضاء حيث تجاور المواقع اللوجستية المساكن."
+      },
+      {
+        "title": "طلبات العملاء بشأن الكربون",
+        "description": "يطلب الشاحنون بيانات الانبعاثات لكل عميل أو شحنة، مما يتطلب بيانات الوقود والمسافات والطاقة التي لا يجمعها كثير من المشغلين بعد."
+      }
+    ],
+    "requirements": [
+      "تصريح بيئي أو تسجيل للمنشأة متوائم مع متطلبات مشغل المنطقة عند الاقتضاء",
+      "تخزين آمن للمواد الكيميائية والبضائع الخطرة مع الفصل والاحتواء الثانوي",
+      "فرز النفايات وإعادة تدويرها والتخلص منها عبر جهات مرخصة وفق لوائح المركز الوطني لإدارة النفايات (موان)، بما فيها نفايات الورش الخطرة",
+      "سجلات بيئية تغطي المواد المخزنة وعمليات تسليم النفايات والحوادث",
+      "صيانة تصريف مياه الأمطار وفواصل الزيوت في الساحات ومناطق التزود بالوقود",
+      "بيانات انبعاثات لتقارير النطاق 3 لدى العملاء وفق بروتوكول GHG"
+    ],
+    "support": [
+      {
+        "title": "التصاريح وامتثال التخزين",
+        "description": "نحدد متطلبات التصاريح، ونراجع ترتيبات تخزين المواد الكيميائية والبضائع الخطرة، ونسد فجوات الامتثال."
+      },
+      {
+        "title": "النفايات واسترجاع التغليف",
+        "description": "نحصر تيارات النفايات، ونحدد مسارات الفرز والاسترجاع للتغليف والمنصات، وننظم سجلات التسليم للجهات المرخصة."
+      },
+      {
+        "title": "كربون الأساطيل والمنشآت",
+        "description": "نعدّ قوائم جرد الانبعاثات للأساطيل والمباني، ونطوّر أساليب لتوزيع الانبعاثات على كل عميل أو شحنة."
+      },
+      {
+        "title": "منشآت مستدامة",
+        "description": "نقدم المشورة في كفاءة الطاقة والمياه والمواد للمستودعات الجديدة والقائمة، بما في ذلك تصنيفات المباني الخضراء عند الحاجة."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "هل تحتاج المستودعات إلى تصريح بيئي؟",
+        "a": "يعتمد ذلك على النشاط وطبيعة المواد المخزنة وموقع المنشأة؛ فالمستودعات التي تخزن مواد كيميائية أو وقودًا أو بضائع خطرة أكثر عرضة لمتطلبات خاصة. نراجع عملياتكم وموقعكم ونحدد التصاريح والتسجيلات المنطبقة."
+      },
+      {
+        "q": "يطلب أحد عملائنا بيانات الانبعاثات لكل شحنة، فهل يمكنكم المساعدة؟",
+        "a": "نعم، نحدد البيانات المتوفرة لديكم كالوقود والمسافات والحمولة واستهلاك الطاقة، ونصمم أسلوب توزيع متسقًا مع بروتوكول GHG، ونضع آلية بسيطة لاستخراج الأرقام بانتظام."
+      },
+      {
+        "q": "كيف نخفض تكاليف نفايات التغليف؟",
+        "a": "ابدأوا بقياس ما تولدونه حسب النوع؛ فالكراتين والأغلفة والمنصات النظيفة المفروزة كثيرًا ما تكون لها قيمة استرجاع. نجهز نقاط الفرز، ونحدد مسارات الاسترجاع، ونتابع الكميات لتروا أثر التغيير."
+      }
+    ]
+  }
+}

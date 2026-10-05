@@ -1,0 +1,8 @@
+---
+import Industry from "@/views/Industry.astro";
+import { getIndustries } from "@/lib/content";
+export async function getStaticPaths() {
+  return (await getIndustries()).map((industry) => ({ params: { slug: industry.id }, props: { industry } }));
+}
+---
+<Industry lang="en" industry={Astro.props.industry} />

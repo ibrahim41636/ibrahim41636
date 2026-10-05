@@ -1,0 +1,127 @@
+{
+  "category": "permitting-compliance",
+  "order": 2,
+  "formFamily": "permitting",
+  "industries": ["industrial-manufacturing", "oil-gas", "energy", "food-beverage", "healthcare", "logistics-warehousing", "mining-quarrying", "commercial-facilities"],
+  "related": ["environmental-permitting", "environmental-records", "environmental-audits", "environmental-monitoring"],
+  "en": {
+    "name": "Environmental Compliance",
+    "seoTitle": "Environmental Compliance in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental compliance in Saudi Arabia: obligation registers, inspection readiness, responses to notices and violations, and corrective action plans.",
+    "valueProp": "We help you understand, meet and demonstrate your environmental obligations day to day, so inspections and notices are handled with confidence.",
+    "cardDescription": "Ongoing compliance management: obligation registers, inspection readiness, responses to regulatory notices and violations, and corrective action plans that close gaps.",
+    "keyBenefit": "Lower exposure to violations and operational disruption",
+    "definition": "Environmental compliance is the ongoing work of meeting the environmental obligations that apply to a facility or project, from permit conditions to regulatory requirements, and being able to prove it. It involves identifying obligations, assigning responsibilities, checking performance, preparing for inspections, and correcting gaps when a notice, violation or internal finding shows that requirements are not being met.",
+    "overview": [
+      "Once a facility holds its environmental permits, the focus shifts to living with them. Permit conditions, the Environmental Law and its Implementing Regulations, waste management requirements and any industrial-city rules together create a set of obligations that must be met continuously. The National Center for Environmental Compliance (NCEC) monitors compliance and conducts inspections. For many organisations, the challenge is not willingness to comply but knowing exactly what is required, who owns each obligation, and whether current practice actually meets it.",
+      "We build that clarity with a compliance register that translates permit conditions and regulatory requirements into specific, assignable obligations, each with an owner, a frequency and the evidence that demonstrates it. We then review site practice against the register, prepare teams for inspections with walk-throughs and document checks, and set up a simple review cycle so compliance status is visible to management rather than discovered during an inspection.",
+      "When a notice or violation is received, response speed and quality matter. We review the finding, establish the facts on site, identify root causes and prepare a corrective action plan with realistic actions, owners and target dates. We also help draft the formal response to the authority. The result is a compliance position you can explain, defend and improve, with fewer surprises for operations and management."
+    ],
+    "whenYouNeed": [
+      "Your facility holds permits but nobody has a consolidated list of the conditions to meet.",
+      "An NCEC or other authority inspection is expected or has been announced.",
+      "You have received a regulatory notice, warning or violation and need to respond.",
+      "Environmental responsibilities are spread across departments without clear ownership.",
+      "New regulations or revised permit conditions affect how the site must operate.",
+      "Management needs a regular, reliable view of environmental compliance status."
+    ],
+    "deliver": [
+      { "title": "Compliance obligations register", "description": "Permit conditions and applicable regulatory requirements broken down into specific obligations, each with an owner, frequency, evidence required and current status." },
+      { "title": "Compliance status review", "description": "A site-based check of current practice against each obligation, identifying what is met, partly met or not met, with supporting observations." },
+      { "title": "Inspection readiness", "description": "Pre-inspection walk-throughs, document checks and briefings so site teams know what inspectors typically review and where evidence is kept." },
+      { "title": "Notice and violation response", "description": "Review of the authority's finding, fact-finding on site, and a clear, factual draft response that sets out the actions being taken." },
+      { "title": "Corrective action plans", "description": "Root-cause based actions with owners, target dates and verification steps, tracked until each action is closed and evidence is filed." },
+      { "title": "Compliance reporting to management", "description": "A concise periodic summary of compliance status, open actions and emerging regulatory changes, designed for management review and decision making." }
+    ],
+    "approach": [
+      { "title": "Obligation mapping", "description": "We collect permits, approvals and applicable regulations and convert them into a structured register of specific obligations." },
+      { "title": "Site review", "description": "We visit the site, interview responsible staff and compare current practice and evidence with each obligation." },
+      { "title": "Gap prioritisation", "description": "We rank gaps by regulatory significance and environmental risk so effort goes first where exposure is highest." },
+      { "title": "Corrective actions", "description": "We agree practical actions, owners and dates with your team and set up a tracker to follow them to closure." },
+      { "title": "Inspection preparation", "description": "We run readiness checks and brief site teams before inspections, and support responses to any findings raised." },
+      { "title": "Ongoing review", "description": "We update the register for regulatory and permit changes and report compliance status to management on an agreed cycle." }
+    ],
+    "deliverables": [
+      { "item": "Compliance obligations register", "format": "Structured register with owners and evidence (Excel)", "timing": "Initial phase" },
+      { "item": "Compliance status report", "format": "Report with findings and photographs (PDF)", "timing": "After site review" },
+      { "item": "Corrective action plan", "format": "Action tracker with owners and target dates (Excel)", "timing": "After gap prioritisation" },
+      { "item": "Inspection readiness checklist", "format": "Checklist and evidence index (PDF + Excel)", "timing": "Before inspections" },
+      { "item": "Draft response to notice or violation", "format": "Formal letter with supporting evidence (Word/PDF)", "timing": "On receipt of a notice" },
+      { "item": "Periodic compliance summary", "format": "Management dashboard and short report (PDF)", "timing": "Agreed reporting cycle" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which define operator obligations and the consequences of non-compliance.",
+      "National Center for Environmental Compliance (NCEC), responsible for compliance monitoring, inspections and enforcement of environmental requirements.",
+      "Conditions attached to the facility's environmental permits, which are often the most specific and most frequently inspected obligations.",
+      "National Center for Waste Management (MWAN) requirements under the Waste Management Law and its regulations for waste generators and handlers.",
+      "Environmental requirements of the Royal Commission for Jubail and Yanbu (RCJY) or MODON for facilities located within their jurisdictions."
+    ],
+    "faqs": [
+      { "q": "What is the difference between environmental compliance management and an environmental audit?", "a": "Compliance management is continuous: it keeps obligations, owners, evidence and corrective actions under control throughout the year. An audit is a structured, point-in-time assessment that tests compliance against defined criteria and reports findings. Many organisations use both, with periodic audits providing an independent check on how well day-to-day compliance management is working." },
+      { "q": "We have received a violation notice. What should we do first?", "a": "Read the notice carefully, note any response deadline stated in it, and preserve relevant records. Then establish the facts on site before replying. We can review the notice with you, investigate what happened, identify the root cause and prepare a factual response together with a corrective action plan. Responses that address the finding directly and show concrete actions are generally easier for the authority to assess." },
+      { "q": "How do we prepare for an environmental inspection?", "a": "Start by confirming which permits and conditions apply, then check that the evidence for each one is current and easy to retrieve: monitoring results, waste records, maintenance logs and training records. Walk the site to identify visible issues such as spills, poorly stored chemicals or uncontrolled waste. We run this readiness review with your team and brief the people likely to accompany inspectors." },
+      { "q": "Can you act as our outsourced environmental compliance function?", "a": "We can support your team on a recurring basis by maintaining the compliance register, reviewing status, tracking corrective actions and preparing for inspections. Responsibility for compliance remains with the facility operator, so we work alongside your nominated environmental or HSE lead rather than replacing internal accountability. The scope and frequency of support are agreed for each engagement." },
+      { "q": "How do we keep up with regulatory changes?", "a": "Saudi environmental regulations and authority requirements continue to develop. As part of ongoing compliance support, we review relevant regulatory updates, assess whether they affect your obligations or permit conditions, and update the compliance register accordingly. Where a change requires action, such as a permit modification or a new monitoring requirement, we flag it to management with a recommended response." }
+    ]
+  },
+  "ar": {
+    "name": "الامتثال البيئي",
+    "seoTitle": "إدارة الامتثال البيئي في السعودية | سيلورين",
+    "metaDescription": "إدارة الامتثال البيئي في المملكة: سجلات الالتزامات، والاستعداد للتفتيش، والرد على الإشعارات والمخالفات، وخطط الإجراءات التصحيحية لمعالجة الفجوات.",
+    "valueProp": "نساعدكم على فهم التزاماتكم البيئية والوفاء بها وإثباتها يومًا بيوم، فتتعاملون مع التفتيش والإشعارات بثقة.",
+    "cardDescription": "إدارة مستمرة للامتثال تشمل سجل الالتزامات، والاستعداد للتفتيش، والرد على الإشعارات والمخالفات، وخطط إجراءات تصحيحية تسدّ الفجوات.",
+    "keyBenefit": "تقليل التعرض للمخالفات وتعطّل العمليات",
+    "definition": "الامتثال البيئي هو الوفاء المستمر بالالتزامات البيئية المفروضة على المنشأة أو المشروع، من اشتراطات التصاريح إلى المتطلبات النظامية، مع القدرة على إثبات ذلك. ويشمل تحديد الالتزامات وإسناد مسؤولياتها، والتحقق من الأداء، والاستعداد للتفتيش، ومعالجة الفجوات حين يكشف إشعار أو مخالفة أو ملاحظة داخلية عن عدم استيفاء المتطلبات.",
+    "overview": [
+      "بعد حصول المنشأة على تصاريحها البيئية، يصبح التحدي هو الالتزام بها في التشغيل اليومي. فاشتراطات التصاريح ونظام البيئة ولوائحه التنفيذية ومتطلبات إدارة النفايات وأنظمة المدن الصناعية تشكّل معًا منظومة التزامات يجب الوفاء بها باستمرار، ويتولى المركز الوطني للرقابة على الالتزام البيئي (NCEC) مراقبة الالتزام وإجراء عمليات التفتيش. والمشكلة لدى كثير من المنشآت ليست في الرغبة في الامتثال، بل في معرفة المطلوب بدقة، ومن المسؤول عن كل التزام، وهل الممارسة الحالية تفي به فعلًا.",
+      "نوفّر هذا الوضوح من خلال سجل امتثال يحوّل اشتراطات التصاريح والمتطلبات النظامية إلى التزامات محددة قابلة للإسناد، لكل منها مسؤول وتكرار ودليل يثبت الوفاء به. ثم نراجع الممارسات الميدانية في ضوء السجل، ونهيّئ الفرق للتفتيش بجولات ميدانية ومراجعة للمستندات، ونضع دورة مراجعة بسيطة تجعل حالة الامتثال واضحة أمام الإدارة بدلًا من أن تُكتشف أثناء التفتيش. كما نربط كل التزام بموقع حفظ دليله، فيسهل على الفريق استرجاعه عند الحاجة دون بحث أو اجتهاد.",
+      "وعند ورود إشعار أو مخالفة، تكون سرعة الرد وجودته عاملًا حاسمًا. فنراجع الملاحظة، ونتحقق من الوقائع في الموقع، ونحدد الأسباب الجذرية، ونُعدّ خطة إجراءات تصحيحية واقعية محددة المسؤوليات والمواعيد، ونساعد في صياغة الرد الرسمي على الجهة المختصة، ثم نتابع تنفيذ الإجراءات ونتحقق من فاعليتها حتى لا تتكرر الملاحظة ذاتها في التفتيش التالي. والنتيجة موقف امتثال يمكنكم شرحه والدفاع عنه وتحسينه، مع مفاجآت أقل للعمليات والإدارة."
+    ],
+    "whenYouNeed": [
+      "لدى منشأتكم تصاريح بيئية دون قائمة موحدة بالاشتراطات الواجب الوفاء بها.",
+      "يُتوقع تفتيش من المركز الوطني للرقابة على الالتزام البيئي أو جهة أخرى، أو أُعلن عنه.",
+      "تلقيتم إشعارًا أو إنذارًا أو مخالفة من جهة رقابية وتحتاجون إلى الرد.",
+      "المسؤوليات البيئية موزعة بين الإدارات دون تحديد واضح لمن يتولى كل منها.",
+      "صدرت أنظمة جديدة أو عُدّلت اشتراطات التصريح بما يؤثر في طريقة التشغيل.",
+      "تحتاج الإدارة إلى صورة دورية موثوقة عن حالة الامتثال البيئي."
+    ],
+    "deliver": [
+      { "title": "سجل الالتزامات البيئية", "description": "تفكيك اشتراطات التصاريح والمتطلبات النظامية المنطبقة إلى التزامات محددة، لكل منها مسؤول وتكرار ودليل مطلوب وحالة امتثال حالية." },
+      { "title": "مراجعة حالة الامتثال", "description": "تحقق ميداني من الممارسات الحالية مقابل كل التزام، يبيّن ما هو مستوفى أو مستوفى جزئيًا أو غير مستوفى، مع الملاحظات الداعمة." },
+      { "title": "الاستعداد للتفتيش", "description": "جولات ميدانية ومراجعة للمستندات وإحاطات قبل التفتيش، حتى تعرف فرق الموقع ما يراجعه المفتشون عادة وأين تُحفظ الأدلة." },
+      { "title": "الرد على الإشعارات والمخالفات", "description": "مراجعة ملاحظة الجهة المختصة، والتحقق من الوقائع في الموقع، وصياغة رد واقعي واضح يعرض الإجراءات المتخذة لمعالجتها." },
+      { "title": "خطط الإجراءات التصحيحية", "description": "إجراءات مبنية على الأسباب الجذرية، محددة المسؤولين والمواعيد وخطوات التحقق، تُتابع حتى إغلاق كل إجراء وحفظ دليله." },
+      { "title": "تقارير الامتثال للإدارة", "description": "ملخص دوري موجز لحالة الامتثال والإجراءات المفتوحة والمستجدات التنظيمية، مصمم لدعم مراجعة الإدارة واتخاذ القرار." }
+    ],
+    "approach": [
+      { "title": "حصر الالتزامات", "description": "نجمع التصاريح والموافقات والأنظمة المنطبقة، ونحوّلها إلى سجل منظم من الالتزامات المحددة." },
+      { "title": "المراجعة الميدانية", "description": "نزور الموقع ونقابل المسؤولين، ونقارن الممارسات والأدلة الحالية بكل التزام." },
+      { "title": "ترتيب الأولويات", "description": "نرتّب الفجوات حسب أهميتها النظامية وخطورتها البيئية، ليبدأ العمل حيث يكون التعرض للمخاطر أعلى." },
+      { "title": "الإجراءات التصحيحية", "description": "نتفق مع فريقكم على إجراءات عملية ومسؤولين ومواعيد، ونُعدّ أداة لمتابعتها حتى الإغلاق." },
+      { "title": "التهيئة للتفتيش", "description": "نجري مراجعات الجاهزية ونُطلع فرق الموقع قبل التفتيش، ونساند في الرد على أي ملاحظات تُثار." },
+      { "title": "المراجعة المستمرة", "description": "نحدّث السجل وفق تغيّر الأنظمة والتصاريح، ونرفع حالة الامتثال إلى الإدارة وفق دورة متفق عليها." }
+    ],
+    "deliverables": [
+      { "item": "سجل الالتزامات البيئية", "format": "سجل منظم بالمسؤولين والأدلة (Excel)", "timing": "المرحلة الأولى" },
+      { "item": "تقرير حالة الامتثال", "format": "تقرير بالملاحظات والصور (PDF)", "timing": "بعد المراجعة الميدانية" },
+      { "item": "خطة الإجراءات التصحيحية", "format": "أداة متابعة بالمسؤولين والمواعيد المستهدفة (Excel)", "timing": "بعد ترتيب الأولويات" },
+      { "item": "قائمة التحقق من الجاهزية للتفتيش", "format": "قائمة تحقق وفهرس للأدلة (PDF + Excel)", "timing": "قبل التفتيش" },
+      { "item": "مسودة الرد على الإشعار أو المخالفة", "format": "خطاب رسمي مع الأدلة الداعمة (Word/PDF)", "timing": "عند ورود الإشعار" },
+      { "item": "ملخص الامتثال الدوري", "format": "لوحة متابعة للإدارة وتقرير موجز (PDF)", "timing": "وفق دورة التقارير المتفق عليها" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد التزامات المشغّل وما يترتب على عدم الامتثال.",
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، المسؤول عن مراقبة الالتزام البيئي والتفتيش وتطبيق المتطلبات البيئية.",
+      "الاشتراطات المرفقة بالتصاريح البيئية للمنشأة، وهي غالبًا أكثر الالتزامات تحديدًا وأكثرها خضوعًا للتفتيش.",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) وفق نظام إدارة النفايات ولوائحه، المنطبقة على منتجي النفايات والجهات المتعاملة معها.",
+      "المتطلبات البيئية للهيئة الملكية للجبيل وينبع أو الهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن) للمنشآت الواقعة ضمن نطاقهما."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين إدارة الامتثال البيئي والتدقيق البيئي؟", "a": "إدارة الامتثال عمل مستمر يُبقي الالتزامات والمسؤوليات والأدلة والإجراءات التصحيحية تحت السيطرة طوال العام. أما التدقيق فهو تقييم منهجي في وقت محدد يختبر الامتثال مقابل معايير معينة ويرفع نتائجه في تقرير. وتجمع منشآت كثيرة بين الأمرين، فيكون التدقيق الدوري فحصًا مستقلًا لمدى فاعلية إدارة الامتثال اليومية." },
+      { "q": "تلقينا إشعار مخالفة، فما أول ما ينبغي فعله؟", "a": "اقرؤوا الإشعار بعناية، ودوّنوا أي مهلة للرد منصوص عليها فيه، واحتفظوا بالسجلات ذات الصلة. ثم تحققوا من الوقائع في الموقع قبل الرد. ويمكننا مراجعة الإشعار معكم، والتحقيق فيما حدث، وتحديد السبب الجذري، وإعداد رد واقعي مرفق بخطة إجراءات تصحيحية؛ فالرد الذي يعالج الملاحظة مباشرة ويعرض إجراءات ملموسة يكون عادة أيسر على الجهة المختصة في تقييمه." },
+      { "q": "كيف نستعد للتفتيش البيئي؟", "a": "ابدؤوا بتأكيد التصاريح والاشتراطات المنطبقة، ثم تحققوا من أن دليل كل منها محدّث وسهل الوصول إليه، كنتائج الرصد وسجلات النفايات وسجلات الصيانة والتدريب. ثم قوموا بجولة في الموقع لرصد الملاحظات الظاهرة كالانسكابات وسوء تخزين المواد الكيميائية والنفايات غير المضبوطة. ونجري هذه المراجعة مع فريقكم، ونُطلع الأشخاص المرجح أن يرافقوا المفتشين." },
+      { "q": "هل يمكنكم أداء دور إدارة الامتثال البيئي لدينا بنظام الإسناد الخارجي؟", "a": "يمكننا مساندة فريقكم بصفة دورية عبر تحديث سجل الامتثال، ومراجعة حالته، ومتابعة الإجراءات التصحيحية، والاستعداد للتفتيش. وتبقى مسؤولية الامتثال على مشغّل المنشأة، لذا نعمل إلى جانب مسؤول البيئة أو الصحة والسلامة والبيئة المعيَّن لديكم دون أن نحل محل المساءلة الداخلية. ويُتفق على نطاق المساندة وتكرارها في كل تكليف." },
+      { "q": "كيف نواكب التغييرات التنظيمية؟", "a": "تتطور الأنظمة البيئية السعودية ومتطلبات الجهات المختصة باستمرار. وضمن المساندة المستمرة في الامتثال، نراجع المستجدات التنظيمية ذات الصلة، ونقيّم أثرها في التزاماتكم أو اشتراطات تصاريحكم، ونحدّث سجل الامتثال تبعًا لذلك. وإذا استلزم التغيير إجراءً كتعديل التصريح أو متطلب رصد جديد، نرفعه إلى الإدارة مع توصية بكيفية التعامل معه." }
+    ]
+  }
+}

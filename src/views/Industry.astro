@@ -1,0 +1,63 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import ServiceCard from "@/components/ServiceCard.astro";
+import Faq from "@/components/Faq.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { getEntries } from "astro:content";
+import { href, t, type Lang } from "@/i18n/ui";
+import { markRequired, type Industry } from "@/lib/content";
+import { faqSchema } from "@/lib/schema";
+interface Props { lang: Lang; industry: Industry }
+const { lang, industry } = Astro.props;
+const d = industry.data[lang];
+const services = await getEntries(industry.data.services);
+const path = `/industries/${industry.id}/`;
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.industries"), path: "/industries/" }, { name: d.name, path }];
+const request = href(lang, "/request/");
+---
+<Base lang={lang} path={path} title={d.seoTitle} description={d.metaDescription} breadcrumbs={crumbs}
+  schema={[faqSchema(d.faqs), { "@type": "WebPage", name: d.name, about: { "@type": "Thing", name: d.name }, mentions: services.map((s) => ({ "@id": `https://selorin.co${href(lang, `/services/${s.id}/`)}#service` })) }]}
+  analytics={{ page_type: "industry", industry_slug: industry.id }}>
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.industries")} title={d.name} lead={d.cardDescription}>
+    <div class="actions mt-6"><a class="btn btn--light" href={request} data-cta="industry_hero_request">{t(lang, "cta.discuss")} <Icon name="arrow" class="arrow" /></a></div>
+  </PageHero>
+  <section class="section">
+    <div class="container split">
+      <div><p class="eyebrow">{t(lang, "industry.overview")}</p><h2>{d.name}</h2></div>
+      <div class="prose">{d.overview.map((p) => <p set:html={markRequired(p)} />)}</div>
+    </div>
+  </section>
+  <section class="section bg-ink on-dark">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">{t(lang, "industry.challenges")}</p><h2 style="color:#fff">{t(lang, "industry.challenges")}</h2></div></div>
+      <div class="grid grid-3">{d.challenges.map((c, i) => <div class="card"><span class="card-num" style="color:var(--c-mint-2)">{String(i + 1).padStart(2, "0")}</span><h3>{c.title}</h3><p>{c.description}</p></div>)}</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container split">
+      <div><p class="eyebrow">{t(lang, "industry.requirements")}</p><h2>{t(lang, "industry.requirements")}</h2><p class="muted">{t(lang, "service.regulatoryNote")}</p></div>
+      <ul class="checklist">{d.requirements.map((r) => <li>{r}</li>)}</ul>
+    </div>
+  </section>
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">{t(lang, "industry.support")}</p><h2>{t(lang, "industry.support")}</h2></div></div>
+      <ol class="steps" style="list-style:none;padding:0">{d.support.map((s) => <li class="step"><h3>{s.title}</h3><p>{s.description}</p></li>)}</ol>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><h2>{t(lang, "industry.services")}</h2></div>
+      <div class="grid grid-3">{services.map((s) => <ServiceCard lang={lang} service={s} />)}</div>
+    </div>
+  </section>
+  <section class="section bg-white border-top">
+    <div class="container split">
+      <h2>{t(lang, "service.faq")}</h2>
+      <Faq items={d.faqs} />
+    </div>
+  </section>
+  <CtaBand title={t(lang, "industry.ctaTitle")} body={t(lang, "service.finalBody")} label={t(lang, "cta.discuss")} to={request} cta="industry_final_cta" secondary={{ label: t(lang, "cta.specialist"), to: "tel:+966534302332" }} />
+</Base>

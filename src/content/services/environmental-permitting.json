@@ -1,0 +1,127 @@
+{
+  "category": "permitting-compliance",
+  "order": 1,
+  "formFamily": "permitting",
+  "industries": ["industrial-manufacturing", "construction", "energy", "oil-gas", "food-beverage", "mining-quarrying", "waste-recycling", "logistics-warehousing"],
+  "related": ["environmental-impact-assessment", "environmental-compliance", "environmental-management-plans"],
+  "en": {
+    "name": "Environmental Permitting",
+    "seoTitle": "Environmental Permitting in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental permitting in Saudi Arabia: permit strategy, application documents, submission and follow-up on authority comments for new and existing sites.",
+    "valueProp": "We plan, prepare and follow through your environmental permit applications so projects and operations can proceed on a clear regulatory footing.",
+    "cardDescription": "Construction and operating permits, renewals and modifications — from permit strategy and document preparation to submission and responses to authority comments.",
+    "keyBenefit": "Fewer resubmissions and a clearer path to permit decisions",
+    "definition": "Environmental permitting is the process of obtaining, renewing and amending the environmental permits a project or facility needs before it is built and while it operates. It covers identifying which permits apply, preparing the technical and administrative documents the regulator expects, submitting the application, and responding to authority comments until a decision is issued.",
+    "overview": [
+      "In Saudi Arabia, activities with potential environmental impact are regulated under the Environmental Law and its Implementing Regulations, with the National Center for Environmental Compliance (NCEC) responsible for environmental permits. Depending on location and activity, other bodies may also be involved, such as the Royal Commission for Jubail and Yanbu or MODON within industrial cities. Working out which permits apply, in what sequence, and what evidence each one needs is the first decision that shapes a project schedule.",
+      "Our work starts with a permit strategy: we review the project description, processes, emissions, discharges and waste streams, then map them against the applicable permit requirements. From there we prepare the application package — technical descriptions, site and process information, environmental controls and supporting studies — and check it for consistency before submission. Where a permit depends on an environmental impact assessment or a management plan, we align those documents so the regulator sees one coherent picture.",
+      "Permits are not a one-time event. Expansions, new production lines, changes in raw materials or a change of operator can all require a permit modification, and operating permits must be renewed before they lapse. We track these triggers with you, prepare renewal and modification submissions, and draft clear responses when the authority requests clarification or additional information. The business outcome is predictable approvals planning and fewer delays caused by incomplete or inconsistent applications."
+    ],
+    "whenYouNeed": [
+      "You are planning a new facility and need to know which environmental permits apply.",
+      "Construction is scheduled and the environmental construction permit is not yet secured.",
+      "An existing operating permit is approaching its renewal date.",
+      "You are adding production lines, increasing capacity or changing processes or raw materials.",
+      "The authority has returned your application with comments or requests for more information.",
+      "Ownership or operation of a permitted facility is transferring to another entity."
+    ],
+    "deliver": [
+      { "title": "Permit applicability review", "description": "A clear list of the environmental permits and approvals your project or facility needs, with the authority responsible and the information each one requires." },
+      { "title": "Permit strategy and sequence", "description": "A recommended order of applications aligned with your design, construction and commissioning schedule, highlighting dependencies on studies or other approvals." },
+      { "title": "Application package preparation", "description": "Technical descriptions, process and site information, emissions and discharge details, and environmental controls compiled into a consistent, submission-ready package." },
+      { "title": "Submission support", "description": "Assistance with completing forms and uploading documents through the relevant authority channels, with a record of what was submitted and when." },
+      { "title": "Responses to authority comments", "description": "Structured replies to clarification requests, with revised documents or additional information prepared so each comment is answered directly and completely." },
+      { "title": "Renewals and modifications", "description": "Preparation of renewal applications and permit modification requests when activities, capacity, processes or operators change during the life of the facility." }
+    ],
+    "approach": [
+      { "title": "Scope review", "description": "We review project documents, processes, site layout and schedule to understand the activities that trigger permit requirements." },
+      { "title": "Permit mapping", "description": "We identify applicable permits, responsible authorities and supporting documents, and agree a permit strategy and sequence with your team." },
+      { "title": "Information gathering", "description": "We issue a focused data request and work with your engineers to collect process, emissions, discharge and waste information." },
+      { "title": "Package preparation", "description": "We draft the application, cross-check it against supporting studies and your design, and resolve inconsistencies before submission." },
+      { "title": "Submission", "description": "We support form completion and submission through the relevant channel and log the submission for tracking." },
+      { "title": "Follow-up", "description": "We monitor the application status, prepare responses to authority comments and update documents until a decision is issued." }
+    ],
+    "deliverables": [
+      { "item": "Permit applicability and strategy memo", "format": "Report with permit register (PDF + Excel)", "timing": "Project start" },
+      { "item": "Data request and information checklist", "format": "Structured checklist (Excel)", "timing": "Project start" },
+      { "item": "Permit application package", "format": "Completed forms + supporting documents (PDF)", "timing": "Submission stage" },
+      { "item": "Submission record", "format": "Submission log with references and dates (Excel)", "timing": "On submission" },
+      { "item": "Response to authority comments", "format": "Comment-response matrix + revised documents (Word/PDF)", "timing": "As comments are received" },
+      { "item": "Renewal and modification tracker", "format": "Permit tracker with key dates and triggers (Excel)", "timing": "After permit issue" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set the framework for environmental permits for construction and operation.",
+      "National Center for Environmental Compliance (NCEC), responsible for issuing environmental permits and reviewing environmental impact assessments.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and MODON, which may apply their own environmental requirements to facilities in their jurisdictions.",
+      "National Center for Waste Management (MWAN), where waste-related activities require licensing under the Waste Management Law and its regulations.",
+      "Ministry of Environment, Water and Agriculture (MEWA), which sets environmental policy and oversees the wider environmental sector."
+    ],
+    "faqs": [
+      { "q": "Which environmental permits does my project need?", "a": "It depends on the activity, its scale, its location and the emissions, discharges and waste it will generate. A facility inside an industrial city or a Royal Commission area may also face that authority's own requirements. We start with an applicability review of your project documents and processes, then give you a list of the permits that apply, the authority for each, and the information you will need to provide." },
+      { "q": "Do we need an environmental impact assessment before applying for a permit?", "a": "Many projects do, but not all. Whether an environmental impact assessment is required, and at what level of detail, depends on how the activity is classified under the Implementing Regulations. We confirm this during the permit strategy stage and, where a study is needed, coordinate it with the permit application so the two documents are consistent." },
+      { "q": "What happens if our operations change after the permit is issued?", "a": "Changes such as new production lines, higher capacity, different raw materials or new emission points can require a permit modification before the change takes effect. We review planned changes against the conditions of your existing permit, advise whether a modification is needed, and prepare the request with updated technical information." },
+      { "q": "How long does the permitting process take?", "a": "Timing depends on the type of permit, the completeness of the application, whether supporting studies are required, and how many rounds of comments the authority raises. We cannot guarantee an authority's review time. What we can do is reduce avoidable delays by submitting complete, consistent packages and answering comments promptly and directly." },
+      { "q": "Can you deal with the authority on our behalf?", "a": "We prepare the documents, support the submission and draft responses to comments, and we can join technical meetings with the authority alongside your team. The permit holder remains the applicant and signs the application. The exact arrangement for submission access is agreed at the start of each engagement." }
+    ]
+  },
+  "ar": {
+    "name": "التصاريح البيئية",
+    "seoTitle": "التصاريح البيئية في السعودية | سيلورين",
+    "metaDescription": "دعم استخراج التصاريح البيئية في المملكة: تحديد التصاريح المطلوبة، وإعداد مستندات الطلب، والمساندة في التقديم، ومتابعة ملاحظات الجهة المختصة حتى صدور القرار.",
+    "valueProp": "نخطط لطلبات تصاريحكم البيئية ونعدّها ونتابعها حتى تمضي مشاريعكم وعملياتكم على أساس نظامي واضح.",
+    "cardDescription": "تصاريح الإنشاء والتشغيل وتجديدها وتعديلها، بدءًا من وضع استراتيجية التصاريح وإعداد المستندات وصولًا إلى التقديم والرد على ملاحظات الجهة المختصة.",
+    "keyBenefit": "طلبات أكثر اكتمالًا ومسار أوضح نحو قرار التصريح",
+    "definition": "التصريح البيئي هو الإذن النظامي الذي يلزم الحصول عليه قبل إنشاء المشروع أو تشغيل المنشأة، وتشمل خدمة التصاريح البيئية الحصول عليه وتجديده وتعديله. وتبدأ الخدمة بتحديد التصاريح المنطبقة، ثم إعداد المستندات الفنية والإدارية التي تطلبها الجهة المختصة، وتقديم الطلب، والرد على ملاحظاتها حتى صدور القرار.",
+    "overview": [
+      "تخضع الأنشطة ذات الأثر البيئي المحتمل في المملكة العربية السعودية لنظام البيئة ولوائحه التنفيذية، ويتولى المركز الوطني للرقابة على الالتزام البيئي (NCEC) إصدار التصاريح البيئية. وقد تشارك جهات أخرى بحسب موقع النشاط وطبيعته، كالهيئة الملكية للجبيل وينبع أو الهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن) داخل المدن الصناعية. ولذلك فإن معرفة التصاريح المطلوبة وترتيبها والأدلة اللازمة لكل منها هي أول قرار يؤثر في الجدول الزمني للمشروع.",
+      "نبدأ العمل بوضع استراتيجية للتصاريح، فندرس وصف المشروع وعملياته وانبعاثاته وتصريفاته ومخلفاته، ونطابقها مع متطلبات التصاريح المنطبقة. ثم نُعدّ ملف الطلب بما يتضمنه من وصف فني ومعلومات عن الموقع والعمليات وإجراءات الضبط البيئي والدراسات الداعمة، ونراجع اتساقه قبل التقديم. وحين يرتبط التصريح بدراسة تقييم الأثر البيئي أو بخطة إدارة بيئية، نوائم بين هذه الوثائق لتطّلع الجهة المختصة على صورة واحدة متكاملة.",
+      "لا يقتصر التصريح البيئي على إجراء يُنجز مرة واحدة؛ فالتوسعات وخطوط الإنتاج الجديدة وتغيير المواد الخام أو تغيير الجهة المشغّلة قد تستلزم تعديل التصريح، كما يجب تجديد تصاريح التشغيل قبل انتهائها. ونتابع معكم هذه المستجدات، ونُعدّ طلبات التجديد والتعديل، ونصوغ ردودًا واضحة حين تطلب الجهة المختصة إيضاحات أو معلومات إضافية. والنتيجة تخطيط أدق لمواعيد الموافقات وتأخير أقل بسبب الطلبات الناقصة أو غير المتسقة."
+    ],
+    "whenYouNeed": [
+      "تخططون لإنشاء منشأة جديدة وتحتاجون إلى معرفة التصاريح البيئية المطلوبة لها.",
+      "اقترب موعد بدء الإنشاء ولم يصدر تصريح الإنشاء البيئي بعد.",
+      "اقترب موعد تجديد تصريح التشغيل البيئي لمنشأة قائمة.",
+      "تضيفون خطوط إنتاج أو ترفعون الطاقة الإنتاجية أو تغيّرون العمليات أو المواد الخام.",
+      "أعادت الجهة المختصة طلبكم مع ملاحظات أو طلب معلومات إضافية.",
+      "تنتقل ملكية منشأة حاصلة على تصريح أو تشغيلها إلى جهة أخرى."
+    ],
+    "deliver": [
+      { "title": "مراجعة انطباق التصاريح", "description": "قائمة واضحة بالتصاريح والموافقات البيئية التي يحتاجها مشروعكم أو منشأتكم، مع تحديد الجهة المسؤولة عن كل منها والمعلومات المطلوبة لها." },
+      { "title": "استراتيجية التصاريح وتسلسلها", "description": "ترتيب مقترح لتقديم الطلبات يتوافق مع جدول التصميم والإنشاء والتشغيل التجريبي، مع إبراز ارتباط كل طلب بالدراسات أو الموافقات الأخرى." },
+      { "title": "إعداد ملف الطلب", "description": "تجميع الوصف الفني ومعلومات العمليات والموقع وبيانات الانبعاثات والتصريفات وإجراءات الضبط البيئي في ملف متسق جاهز للتقديم." },
+      { "title": "المساندة في التقديم", "description": "المساعدة في تعبئة النماذج ورفع المستندات عبر القنوات المعتمدة لدى الجهة المختصة، مع توثيق ما قُدّم وتاريخ تقديمه." },
+      { "title": "الرد على ملاحظات الجهة المختصة", "description": "ردود منظمة على طلبات الإيضاح، مع إعداد المستندات المعدّلة أو المعلومات الإضافية بحيث تُعالَج كل ملاحظة معالجة مباشرة وكاملة." },
+      { "title": "التجديد والتعديل", "description": "إعداد طلبات تجديد التصاريح وطلبات تعديلها عند تغيّر الأنشطة أو الطاقة الإنتاجية أو العمليات أو الجهة المشغّلة طوال عمر المنشأة." }
+    ],
+    "approach": [
+      { "title": "دراسة النطاق", "description": "نراجع وثائق المشروع وعملياته ومخطط الموقع وجدوله الزمني لفهم الأنشطة التي تستوجب الحصول على تصاريح." },
+      { "title": "تحديد التصاريح", "description": "نحدد التصاريح المنطبقة والجهات المسؤولة والمستندات الداعمة، ونتفق مع فريقكم على استراتيجية التصاريح وتسلسلها." },
+      { "title": "جمع المعلومات", "description": "نرسل قائمة بيانات مركّزة، ونعمل مع مهندسيكم على جمع معلومات العمليات والانبعاثات والتصريفات والمخلفات." },
+      { "title": "إعداد الملف", "description": "نصوغ الطلب ونطابقه مع الدراسات الداعمة ومع تصميم المشروع، ونعالج أي تعارض قبل التقديم." },
+      { "title": "التقديم", "description": "نساند في تعبئة النماذج وتقديمها عبر القناة المعتمدة، ونسجّل بيانات التقديم لأغراض المتابعة." },
+      { "title": "المتابعة", "description": "نتابع حالة الطلب، ونُعدّ الردود على ملاحظات الجهة المختصة، ونحدّث المستندات حتى صدور القرار." }
+    ],
+    "deliverables": [
+      { "item": "مذكرة انطباق التصاريح واستراتيجيتها", "format": "تقرير مع سجل التصاريح (PDF + Excel)", "timing": "بداية المشروع" },
+      { "item": "قائمة طلب البيانات والمعلومات", "format": "قائمة تحقق منظمة (Excel)", "timing": "بداية المشروع" },
+      { "item": "ملف طلب التصريح", "format": "نماذج مكتملة ومستندات داعمة (PDF)", "timing": "مرحلة التقديم" },
+      { "item": "سجل التقديم", "format": "سجل بأرقام المراجع وتواريخ التقديم (Excel)", "timing": "عند التقديم" },
+      { "item": "الرد على ملاحظات الجهة المختصة", "format": "مصفوفة الملاحظات والردود مع المستندات المعدّلة (Word/PDF)", "timing": "عند ورود الملاحظات" },
+      { "item": "أداة متابعة التجديد والتعديل", "format": "متتبع للتصاريح بالمواعيد الرئيسية ومسببات التعديل (Excel)", "timing": "بعد صدور التصريح" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد الإطار المنظم للتصاريح البيئية للإنشاء والتشغيل.",
+      "المركز الوطني للرقابة على الالتزام البيئي (NCEC)، المسؤول عن إصدار التصاريح البيئية ومراجعة دراسات تقييم الأثر البيئي.",
+      "الهيئة الملكية للجبيل وينبع (RCJY) والهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن)، وقد تطبّق كل منهما متطلبات بيئية خاصة على المنشآت الواقعة ضمن نطاقها.",
+      "المركز الوطني لإدارة النفايات (موان)، حين تتطلب الأنشطة المتعلقة بالنفايات ترخيصًا وفق نظام إدارة النفايات ولوائحه.",
+      "وزارة البيئة والمياه والزراعة (MEWA)، الجهة المعنية برسم السياسات البيئية والإشراف على القطاع البيئي."
+    ],
+    "faqs": [
+      { "q": "ما التصاريح البيئية التي يحتاجها مشروعنا؟", "a": "يعتمد ذلك على طبيعة النشاط وحجمه وموقعه، وعلى الانبعاثات والتصريفات والنفايات التي سيُنتجها. وقد تخضع المنشأة الواقعة داخل مدينة صناعية أو ضمن نطاق الهيئة الملكية لمتطلبات تلك الجهة أيضًا. نبدأ بمراجعة انطباق التصاريح استنادًا إلى وثائق مشروعكم وعملياته، ثم نقدّم لكم قائمة بالتصاريح المنطبقة والجهة المسؤولة عن كل منها والمعلومات التي ستحتاجون إلى توفيرها." },
+      { "q": "هل نحتاج إلى دراسة تقييم الأثر البيئي قبل التقدم بطلب التصريح؟", "a": "تحتاجها مشاريع كثيرة وليس جميعها. فوجوب الدراسة ومستوى تفصيلها يتحددان وفق تصنيف النشاط في اللوائح التنفيذية. ونتحقق من ذلك في مرحلة وضع استراتيجية التصاريح، وإذا لزمت الدراسة ننسّقها مع طلب التصريح حتى تأتي الوثيقتان متسقتين في المعلومات والالتزامات، فلا تضطر الجهة المختصة إلى طلب إيضاحات بسبب تعارض البيانات." },
+      { "q": "ماذا يحدث إذا تغيّرت عملياتنا بعد صدور التصريح؟", "a": "قد تستلزم بعض التغييرات تعديل التصريح قبل تنفيذها، مثل إضافة خطوط إنتاج أو رفع الطاقة الإنتاجية أو تغيير المواد الخام أو استحداث مصادر انبعاث جديدة. ونراجع التغييرات المخطط لها في ضوء اشتراطات تصريحكم الحالي، ونبيّن ما إذا كان التعديل لازمًا، ثم نُعدّ الطلب مع المعلومات الفنية المحدّثة." },
+      { "q": "كم يستغرق الحصول على التصريح البيئي؟", "a": "تتوقف المدة على نوع التصريح، واكتمال الطلب، والحاجة إلى دراسات داعمة، وعدد جولات الملاحظات التي تبديها الجهة المختصة. ولا يمكننا ضمان مدة المراجعة لدى أي جهة حكومية، لكننا نحدّ من التأخير الذي يمكن تفاديه عبر تقديم ملفات مكتملة ومتسقة والرد على الملاحظات بسرعة ووضوح." },
+      { "q": "هل يمكنكم التعامل مع الجهة المختصة نيابةً عنا؟", "a": "نتولى إعداد المستندات والمساندة في التقديم وصياغة الردود على الملاحظات، ويمكننا حضور الاجتماعات الفنية مع الجهة المختصة إلى جانب فريقكم. ويظل صاحب المنشأة هو مقدّم الطلب والموقّع عليه، ويُتفق على ترتيبات الوصول إلى منصات التقديم وتوزيع المسؤوليات بين الطرفين في بداية كل تكليف." }
+    ]
+  }
+}

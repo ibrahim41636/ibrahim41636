@@ -1,0 +1,159 @@
+{
+  "order": 2,
+  "services": [
+    "environmental-permitting",
+    "environmental-management-plans",
+    "dust-monitoring",
+    "noise-monitoring",
+    "air-quality-monitoring",
+    "waste-management",
+    "environmental-compliance",
+    "environmental-audits"
+  ],
+  "en": {
+    "name": "Construction & Contracting",
+    "seoTitle": "Construction Environmental Services in KSA | Selorin",
+    "metaDescription": "Construction environmental management plans, dust and noise monitoring, site permits and C&D waste control for contractors and project teams in Saudi Arabia.",
+    "cardDescription": "Environmental management plans, dust and noise monitoring, permits and construction waste control that keep site works compliant and on programme.",
+    "overview": [
+      "Construction sites generate environmental impacts from the first day of mobilisation: dust from earthworks, haul roads and stockpiles, noise and vibration from piling and heavy plant, exhaust emissions from generators, dewatering discharges, fuel and chemical storage, and large volumes of construction and demolition waste. On large projects these impacts are controlled through a Construction Environmental Management Plan (CEMP) that the client, consultant and authorities expect to see implemented on site, not just filed.",
+      "Contractors typically inherit environmental conditions from the project's environmental approval and from the developer's own requirements. Those conditions must be translated into site rules, monitoring programmes and reporting that site engineers can follow. Projects near homes, schools or sensitive habitats face closer attention to dust and noise, and complaints can quickly become stop-work risks.",
+      "For project managers and HSE leads, environmental compliance is part of programme risk. Clear plans, objective monitoring data and organised records reduce disputes with clients and authorities, support payment milestones linked to HSE performance, and simplify handover at project close."
+    ],
+    "challenges": [
+      {
+        "title": "Dust from earthworks",
+        "description": "Excavation, haul roads, crushing and stockpiles create dust that must be controlled and measured, especially near occupied areas and in high-wind periods."
+      },
+      {
+        "title": "Noise and vibration",
+        "description": "Piling, breaking, compaction and night works need baseline and ongoing noise measurements and practical controls to manage complaints from neighbours."
+      },
+      {
+        "title": "Construction and demolition waste",
+        "description": "Concrete, steel, packaging, excavated soil and hazardous items such as oily waste must be segregated, tracked and sent to approved destinations with documented transfers."
+      },
+      {
+        "title": "Turning conditions into site practice",
+        "description": "Approval conditions and client requirements often sit in documents that site teams do not read; they need plans, checklists and responsibilities that work in practice."
+      },
+      {
+        "title": "Fuel, chemicals and dewatering",
+        "description": "Generator fuel, chemical storage and groundwater discharges carry spill and contamination risk that must be controlled, inspected and recorded."
+      }
+    ],
+    "requirements": [
+      "Construction Environmental Management Plan aligned with the project's environmental approval and client requirements",
+      "Dust monitoring and control measures at site boundaries and near sensitive receptors",
+      "Baseline and periodic noise monitoring, with controls for night and high-impact works",
+      "Construction and demolition waste segregation, licensed transport and records under MWAN regulations",
+      "Spill prevention, secondary containment and inspection of fuel and chemical storage",
+      "Environmental inspections, incident records and periodic compliance reports to the client"
+    ],
+    "support": [
+      {
+        "title": "CEMP preparation",
+        "description": "We prepare site-specific environmental management plans that convert approval conditions into controls, responsibilities, inspection checklists and reporting routines."
+      },
+      {
+        "title": "Dust and noise monitoring",
+        "description": "We design monitoring locations around receptors, run measurement campaigns or continuous monitoring, and report results with practical corrective actions."
+      },
+      {
+        "title": "Site waste management",
+        "description": "We set up segregation areas, waste tracking registers and contractor checks so construction waste is handled and documented correctly."
+      },
+      {
+        "title": "Inspections and compliance reporting",
+        "description": "We carry out periodic site environmental inspections and prepare the compliance reports clients and project consultants require."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Who is responsible for the CEMP, the developer or the contractor?",
+        "a": "Usually the developer holds the environmental approval and sets requirements, while the main contractor prepares and implements the CEMP for its works. The contract defines the split. We can prepare the plan for either party and align it with the approval conditions."
+      },
+      {
+        "q": "Do we need dust monitoring on every site?",
+        "a": "Not every site needs a continuous programme. Requirements depend on approval conditions, client specifications, project scale and the proximity of homes or sensitive uses. We assess these factors and propose a proportionate programme, from periodic surveys to continuous boundary monitoring."
+      },
+      {
+        "q": "How do we handle neighbour complaints about noise?",
+        "a": "Objective data helps. We measure noise at the receptor and at the boundary, identify the activities responsible, and recommend controls such as scheduling, screening or equipment changes. The results also give you a documented response if the complaint escalates."
+      }
+    ]
+  },
+  "ar": {
+    "name": "قطاع الإنشاءات والمقاولات",
+    "seoTitle": "الخدمات البيئية لمشاريع الإنشاءات في السعودية | سيلورين",
+    "metaDescription": "خطط الإدارة البيئية للإنشاءات ورصد الغبار والضوضاء والتصاريح وإدارة نفايات البناء والهدم للمقاولين وفرق المشاريع في المملكة.",
+    "cardDescription": "خطط إدارة بيئية ورصد للغبار والضوضاء وتصاريح وإدارة لنفايات البناء تحافظ على امتثال أعمال الموقع وانتظام جدول المشروع.",
+    "overview": [
+      "تبدأ الآثار البيئية لمواقع الإنشاء منذ اليوم الأول للتجهيز؛ فالحفريات والطرق الترابية ومخزونات المواد تثير الغبار، وأعمال الخوازيق والمعدات الثقيلة تُحدث الضوضاء والاهتزاز، وتطلق المولدات عوادمها، فضلًا عن تصريف مياه نزح المياه الجوفية وتخزين الوقود والمواد الكيميائية والكميات الكبيرة من نفايات البناء والهدم. وفي المشاريع الكبرى تُضبط هذه الآثار عبر خطة الإدارة البيئية للإنشاء (CEMP) التي ينتظر المالك والاستشاري والجهات المختصة رؤيتها مطبقة في الموقع لا محفوظة في الملفات.",
+      "ويرث المقاول عادةً الاشتراطات البيئية من الموافقة البيئية للمشروع ومن متطلبات المطوّر، ويلزم تحويلها إلى قواعد عمل وبرامج رصد وتقارير يستطيع مهندسو الموقع تطبيقها. وتخضع المشاريع القريبة من المساكن والمدارس والمواطن الحساسة لمتابعة أدق للغبار والضوضاء، وقد تتحول الشكاوى سريعًا إلى خطر إيقاف العمل.",
+      "ويعدّ الامتثال البيئي لمديري المشاريع وقادة الصحة والسلامة والبيئة جزءًا من مخاطر الجدول الزمني؛ فالخطط الواضحة وبيانات الرصد الموضوعية والسجلات المنظمة تقلل النزاعات مع المالك والجهات المختصة، وتدعم الدفعات المرتبطة بأداء السلامة والبيئة، وتيسّر التسليم عند إقفال المشروع."
+    ],
+    "challenges": [
+      {
+        "title": "غبار أعمال الحفر",
+        "description": "تثير الحفريات والطرق الترابية والتكسير ومخزونات المواد غبارًا يلزم ضبطه وقياسه، لا سيما قرب المناطق المأهولة وفي فترات الرياح الشديدة."
+      },
+      {
+        "title": "الضوضاء والاهتزاز",
+        "description": "تحتاج أعمال الخوازيق والتكسير والدك والعمل الليلي إلى قياسات أساسية ودورية للضوضاء وضوابط عملية لمعالجة شكاوى المجاورين."
+      },
+      {
+        "title": "نفايات البناء والهدم",
+        "description": "يجب فرز الخرسانة والحديد والعبوات وناتج الحفر والمخلفات الخطرة كالمخلفات الزيتية، وتتبعها ونقلها إلى وجهات معتمدة مع توثيق التسليم."
+      },
+      {
+        "title": "تحويل الاشتراطات إلى ممارسة",
+        "description": "كثيرًا ما تبقى اشتراطات الموافقة ومتطلبات المالك في وثائق لا يطلع عليها فريق الموقع، فيحتاج إلى خطط وقوائم تحقق ومسؤوليات قابلة للتطبيق."
+      },
+      {
+        "title": "الوقود والكيماويات ونزح المياه",
+        "description": "ينطوي وقود المولدات وتخزين المواد الكيميائية وتصريف المياه الجوفية على مخاطر انسكاب وتلوث تستلزم الضبط والتفتيش والتوثيق."
+      }
+    ],
+    "requirements": [
+      "خطة إدارة بيئية للإنشاء متوائمة مع الموافقة البيئية للمشروع ومتطلبات المالك",
+      "رصد الغبار وتدابير الحد منه عند حدود الموقع وقرب المستقبِلات الحساسة",
+      "قياسات أساسية ودورية للضوضاء مع ضوابط للعمل الليلي والأعمال عالية التأثير",
+      "فرز نفايات البناء والهدم ونقلها عبر ناقلين مرخصين وتوثيقها وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "منع الانسكابات وتوفير الاحتواء الثانوي وتفتيش مخازن الوقود والمواد الكيميائية",
+      "تفتيش بيئي وسجلات للحوادث وتقارير امتثال دورية للمالك"
+    ],
+    "support": [
+      {
+        "title": "إعداد خطة الإدارة البيئية",
+        "description": "نعدّ خطط إدارة بيئية خاصة بالموقع تحوّل اشتراطات الموافقة إلى ضوابط ومسؤوليات وقوائم تفتيش وإجراءات تقارير."
+      },
+      {
+        "title": "رصد الغبار والضوضاء",
+        "description": "نحدد مواقع الرصد حول المستقبِلات، وننفذ حملات قياس أو رصدًا مستمرًا، ونرفع النتائج مع إجراءات تصحيحية عملية."
+      },
+      {
+        "title": "إدارة نفايات الموقع",
+        "description": "نجهز مناطق الفرز وسجلات تتبع النفايات وآليات التحقق من المقاولين لضمان مناولة نفايات البناء وتوثيقها على الوجه الصحيح."
+      },
+      {
+        "title": "التفتيش وتقارير الامتثال",
+        "description": "ننفذ جولات تفتيش بيئي دورية في الموقع ونعدّ تقارير الامتثال التي يطلبها المالك واستشاري المشروع."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "من المسؤول عن خطة الإدارة البيئية للإنشاء: المطوّر أم المقاول؟",
+        "a": "غالبًا ما يحمل المطوّر الموافقة البيئية ويحدد المتطلبات، بينما يعدّ المقاول الرئيس الخطة وينفذها لأعماله، ويحدد العقد توزيع المسؤوليات. ويمكننا إعداد الخطة لأي من الطرفين ومواءمتها مع اشتراطات الموافقة."
+      },
+      {
+        "q": "هل يلزم رصد الغبار في كل موقع؟",
+        "a": "لا يحتاج كل موقع إلى برنامج رصد مستمر؛ فالمتطلبات تعتمد على اشتراطات الموافقة ومواصفات المالك وحجم المشروع وقربه من المساكن والاستخدامات الحساسة. نقيّم هذه العوامل ونقترح برنامجًا متناسبًا يتراوح بين المسوحات الدورية والرصد المستمر عند الحدود."
+      },
+      {
+        "q": "كيف نتعامل مع شكاوى الجيران من الضوضاء؟",
+        "a": "البيانات الموضوعية هي نقطة البداية؛ نقيس الضوضاء عند موقع المشتكي وعند حدود الموقع، ونحدد الأنشطة المسببة، ونوصي بضوابط مثل إعادة الجدولة أو الحواجز أو تغيير المعدات، وتوفر النتائج ردًا موثقًا إذا تصاعدت الشكوى."
+      }
+    ]
+  }
+}

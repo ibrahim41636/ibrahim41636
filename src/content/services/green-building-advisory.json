@@ -1,0 +1,125 @@
+{
+  "category": "sustainable-buildings",
+  "order": 2,
+  "formFamily": "buildings",
+  "industries": ["real-estate", "construction", "infrastructure", "hospitality", "healthcare", "commercial-facilities", "government-public-sector"],
+  "related": ["sustainable-buildings", "environmental-management-plans", "life-cycle-assessment", "esg-advisory"],
+  "en": {
+    "name": "Green Building Advisory",
+    "seoTitle": "Green Building Advisory: LEED, Mostadam, Envision | Selorin",
+    "metaDescription": "Green building advisory in Saudi Arabia: support for LEED, Mostadam and Envision, covering gap analysis, credit strategy, documentation and submissions.",
+    "valueProp": "Structured support through LEED, Mostadam or Envision, so credits are planned early, evidence is complete and submissions stay on track.",
+    "cardDescription": "Support for LEED, Mostadam and Envision: gap analysis, credit strategy, documentation management and submission coordination from design to construction completion.",
+    "keyBenefit": "A clear route to your target rating, without documentation surprises",
+    "definition": "Green building advisory is support for projects pursuing a recognised sustainability rating, such as LEED, Mostadam or Envision. It covers selecting the appropriate system and target level, analysing gaps against credit requirements, planning a credit strategy, and managing the documentation and submissions needed for review. The aim is a predictable rating process in which every claimed credit is backed by complete, consistent evidence.",
+    "overview": [
+      "Green building rating systems give owners, tenants and investors an independent, recognised way to demonstrate environmental performance. In Saudi Arabia, projects most commonly use Mostadam, the national rating system; LEED, developed by the US Green Building Council; and, for infrastructure, Envision from the Institute for Sustainable Infrastructure. Each system has its own structure, prerequisites, credit requirements and review process, and the right choice depends on the project type, the owner's objectives and the expectations of tenants, funders or the public client.",
+      "Most rating difficulties are procedural rather than technical. Credits are targeted without a clear owner, evidence is collected late or in the wrong form, design changes quietly remove compliance, and contractors are unaware of the construction-stage requirements they must document. These problems tend to appear at submission, when they are hardest to fix. A structured credit strategy, clear responsibilities and documentation that is tracked from the start reduce the risk of losing credits and shorten the review cycle.",
+      "Selorin supports project teams through the rating process. We assess the project against the chosen system, identify gaps and realistic credit opportunities, and agree a target level and credit strategy with the owner. We then coordinate responsibilities across the design team and contractors, track the status of every credit, review documentation for completeness and consistency, and coordinate submissions and responses to reviewer comments. Our design-stage sustainability work can feed directly into this process. [CONTENT REQUIRED: confirm accredited professionals on the team]"
+    ],
+    "whenYouNeed": [
+      "Your owner, tenant or funder requires a LEED, Mostadam or Envision rating for the project.",
+      "You need to choose the most suitable rating system and a realistic target level.",
+      "The project has registered for a rating, but credit ownership and documentation are unclear.",
+      "Construction is starting and contractors must collect evidence for construction-stage credits.",
+      "A submission has received reviewer comments that need coordinated technical responses.",
+      "Design changes may have affected credits that were previously considered achieved."
+    ],
+    "deliver": [
+      { "title": "Rating system selection", "description": "Comparison of applicable rating systems and certification levels against your project type, objectives, budget and stakeholder expectations, with a clear recommendation." },
+      { "title": "Gap analysis", "description": "Review of the current design and project arrangements against prerequisites and credit requirements, showing what is achieved, achievable and unrealistic." },
+      { "title": "Credit strategy", "description": "A target scorecard with selected credits, responsible parties, required evidence and cost or design implications, agreed with the owner and design team." },
+      { "title": "Documentation management", "description": "A credit tracker and document register, with templates and guidance so design teams and contractors provide evidence in the required form." },
+      { "title": "Contractor requirements", "description": "Construction-stage requirements for credits such as waste, materials, indoor air quality and commissioning, translated into contractor responsibilities and records." },
+      { "title": "Submission coordination", "description": "Compilation and quality review of submission packages, coordination with the rating body's review process and structured responses to reviewer comments." }
+    ],
+    "approach": [
+      { "title": "Confirm objectives", "description": "We confirm why the rating is needed, which system fits and what level is realistic for the project." },
+      { "title": "Analyse gaps", "description": "We assess the design against prerequisites and credits and identify gaps, risks and opportunities." },
+      { "title": "Agree strategy", "description": "We agree a target scorecard, credit owners and evidence requirements with the owner and design team." },
+      { "title": "Track evidence", "description": "We track credit status and review documentation through design and construction, flagging risks early." },
+      { "title": "Coordinate submissions", "description": "We compile submission packages, coordinate reviews and prepare responses to reviewer comments until closure." }
+    ],
+    "deliverables": [
+      { "item": "Rating system and target level recommendation", "format": "Technical memo (PDF)", "timing": "Project start" },
+      { "item": "Gap analysis report", "format": "Report with preliminary scorecard (PDF + Excel)", "timing": "Concept or schematic design" },
+      { "item": "Credit strategy and target scorecard", "format": "Scorecard with credit owners and evidence list (Excel)", "timing": "After gap analysis" },
+      { "item": "Credit tracker and document register", "format": "Live tracker (Excel or shared workspace)", "timing": "Maintained through design and construction" },
+      { "item": "Contractor green building requirements", "format": "Requirements document and record templates (PDF + Word)", "timing": "Before construction starts" },
+      { "item": "Submission packages and review responses", "format": "Compiled documentation and comment-response matrix (PDF)", "timing": "Design and construction submissions" }
+    ],
+    "regulatoryContext": [
+      "Mostadam, the Saudi green building rating system, used for residential and commercial buildings and communities.",
+      "LEED, developed by the US Green Building Council (USGBC), widely used for commercial, hospitality and mixed-use projects.",
+      "Envision, from the Institute for Sustainable Infrastructure (ISI), used to assess the sustainability of infrastructure projects.",
+      "Saudi Building Code requirements, including energy conservation provisions, which apply regardless of the rating pursued.",
+      "Vision 2030 and the Saudi Green Initiative (SGI), which shape owner and public-sector expectations for sustainable development."
+    ],
+    "faqs": [
+      { "q": "Should we choose Mostadam, LEED or Envision?", "a": "It depends on the project type and who the rating is for. Mostadam is the Saudi national system and may be preferred or required by some owners and public clients. LEED is widely recognised by international tenants, operators and investors. Envision is designed for infrastructure rather than buildings. Some projects pursue more than one system. We compare the options against your objectives and recommend the most suitable route." },
+      { "q": "Do you certify buildings?", "a": "No. Ratings are awarded by the organisation that operates each system after its own review of the project documentation. Our role is to support the project team: planning the credit strategy, coordinating responsibilities, managing documentation and preparing submissions and responses. This independence from the rating body is normal for advisers and keeps the review process objective." },
+      { "q": "When should we start the rating process?", "a": "Ideally at concept or early schematic design, before key decisions on site, envelope, systems and materials are fixed. Many credits depend on design choices that are expensive to change later, and some require studies or commitments early in the project. Starting late is possible, but the range of achievable credits narrows and the risk of missing prerequisites increases." },
+      { "q": "What do contractors need to do?", "a": "Contractors are responsible for several construction-stage requirements, typically covering construction waste, material documentation, indoor air quality during works, erosion and dust control, and support for commissioning. They must keep records in a specific form. We translate these requirements into clear contractor obligations and templates, review their records during construction and flag gaps before they put credits at risk." },
+      { "q": "How do you handle reviewer comments?", "a": "We log each comment, identify the responsible team member, and prepare a clear response with any additional evidence or clarification required. Where a comment reveals a genuine gap, we advise on the options to resolve it or on the effect of withdrawing the credit. Coordinated, complete responses help close the review efficiently and protect the target rating level." }
+    ]
+  },
+  "ar": {
+    "name": "استشارات المباني الخضراء",
+    "seoTitle": "استشارات المباني الخضراء: مستدام وLEED وEnvision | سيلورين",
+    "metaDescription": "استشارات المباني الخضراء في المملكة: دعم مشاريع مستدام وLEED وEnvision، من تحليل الفجوات واستراتيجية النقاط إلى إدارة الوثائق وتنسيق التقديم والردود.",
+    "valueProp": "دعم منظّم عبر أنظمة مستدام أو LEED أو Envision، لتُخطَّط النقاط مبكرًا وتكتمل الأدلة ويسير التقديم وفق الخطة.",
+    "cardDescription": "دعم مشاريع مستدام وLEED وEnvision: تحليل الفجوات، واستراتيجية النقاط، وإدارة الوثائق، وتنسيق التقديم من التصميم حتى انتهاء الإنشاء.",
+    "keyBenefit": "مسار واضح نحو التصنيف المستهدف دون مفاجآت في التوثيق",
+    "definition": "استشارات المباني الخضراء دعم متخصص للمشاريع التي تسعى إلى الحصول على تصنيف استدامة معترف به، مثل مستدام أو LEED أو Envision. وتشمل اختيار نظام التصنيف المناسب والمستوى المستهدف، وتحليل الفجوات مقابل متطلبات النقاط، ووضع استراتيجية النقاط، وإدارة الوثائق وملفات التقديم اللازمة للمراجعة. والهدف عملية تصنيف يمكن التنبؤ بمسارها، تستند فيها كل نقطة مطالب بها إلى أدلة مكتملة ومتسقة.",
+    "overview": [
+      "توفر أنظمة تصنيف المباني الخضراء للملاك والمستأجرين والمستثمرين وسيلة مستقلة ومعترفًا بها لإثبات الأداء البيئي. وفي المملكة تستخدم المشاريع في الغالب نظام مستدام، وهو نظام التصنيف الوطني، ونظام LEED الذي طوّره مجلس المباني الخضراء الأمريكي (USGBC)، ونظام Envision الصادر عن معهد البنية التحتية المستدامة (ISI) لمشاريع البنية التحتية. ولكل نظام هيكله ومتطلباته الأساسية ومتطلبات نقاطه وآلية مراجعته، ويعتمد الاختيار المناسب على نوع المشروع وأهداف المالك وتوقعات المستأجرين أو الممولين أو الجهة الحكومية المالكة.",
+      "معظم الصعوبات في عمليات التصنيف إجرائية لا فنية؛ إذ تُستهدف نقاط دون تحديد مسؤول عنها، وتُجمع الأدلة متأخرة أو بصيغة غير مطابقة، وتُلغي تعديلات التصميم الامتثال لبعض المتطلبات دون أن يلاحظ أحد، ولا يعلم المقاولون بمتطلبات مرحلة الإنشاء التي عليهم توثيقها. وتظهر هذه المشكلات عادة عند التقديم، حين يكون إصلاحها أصعب ما يكون. وتقلل استراتيجية النقاط المنظّمة، والمسؤوليات الواضحة، والوثائق المتابَعة منذ البداية من خطر خسارة النقاط، وتختصر دورات المراجعة لدى الجهة المانحة للتصنيف.",
+      "تدعم سيلورين فرق المشاريع خلال عملية التصنيف. فنقيّم المشروع مقابل النظام المختار، ونحدد الفجوات وفرص النقاط الواقعية، ونتفق مع المالك على المستوى المستهدف واستراتيجية النقاط. ثم ننسّق المسؤوليات بين فريق التصميم والمقاولين، ونتابع حالة كل نقطة، ونراجع الوثائق للتحقق من اكتمالها واتساقها، وننسّق ملفات التقديم والردود على ملاحظات المراجعين. ويمكن أن يغذّي عملنا في استدامة التصميم هذه العملية مباشرة. [CONTENT REQUIRED: تأكيد وجود مختصين معتمدين في أنظمة التصنيف ضمن الفريق]"
+    ],
+    "whenYouNeed": [
+      "عندما يشترط المالك أو المستأجر أو الممول حصول المشروع على تصنيف مستدام أو LEED أو Envision.",
+      "عند الحاجة إلى اختيار نظام التصنيف الأنسب ومستوى مستهدف واقعي.",
+      "عندما يكون المشروع مسجلًا للتصنيف لكن مسؤوليات النقاط والتوثيق غير واضحة.",
+      "عند بدء الإنشاء وحاجة المقاولين إلى جمع أدلة نقاط مرحلة الإنشاء.",
+      "عند ورود ملاحظات من المراجعين على ملف مقدّم تتطلب ردودًا فنية منسقة.",
+      "عندما قد تكون تعديلات التصميم أثرت في نقاط اعتُبرت محققة سابقًا."
+    ],
+    "deliver": [
+      { "title": "اختيار نظام التصنيف", "description": "مقارنة أنظمة التصنيف ومستويات الشهادة المناسبة مقابل نوع المشروع وأهدافه وميزانيته وتوقعات أصحاب العلاقة، مع توصية واضحة بالمسار الأنسب." },
+      { "title": "تحليل الفجوات", "description": "مراجعة التصميم الحالي وترتيبات المشروع مقابل المتطلبات الأساسية ومتطلبات النقاط، مع بيان ما تحقق وما يمكن تحقيقه وما هو غير واقعي." },
+      { "title": "استراتيجية النقاط", "description": "بطاقة نقاط مستهدفة تحدد النقاط المختارة والجهات المسؤولة والأدلة المطلوبة وانعكاساتها على التكلفة أو التصميم، بالاتفاق مع المالك وفريق التصميم." },
+      { "title": "إدارة الوثائق", "description": "سجل لمتابعة النقاط وسجل للوثائق، مع نماذج وإرشادات تضمن تقديم فرق التصميم والمقاولين للأدلة بالصيغة المطلوبة." },
+      { "title": "متطلبات المقاولين", "description": "ترجمة متطلبات مرحلة الإنشاء، كالنفايات والمواد وجودة الهواء الداخلي والتشغيل التجريبي، إلى مسؤوليات وسجلات واضحة على المقاولين." },
+      { "title": "تنسيق التقديم", "description": "تجميع ملفات التقديم ومراجعة جودتها، والتنسيق مع آلية المراجعة لدى الجهة المانحة للتصنيف، وإعداد ردود منظمة على ملاحظات المراجعين." }
+    ],
+    "approach": [
+      { "title": "تأكيد الأهداف", "description": "نتأكد من دواعي التصنيف، والنظام الملائم، والمستوى الواقعي للمشروع." },
+      { "title": "تحليل الفجوات", "description": "نقيّم التصميم مقابل المتطلبات الأساسية والنقاط، ونحدد الفجوات والمخاطر والفرص." },
+      { "title": "اعتماد الاستراتيجية", "description": "نتفق مع المالك وفريق التصميم على بطاقة النقاط المستهدفة ومسؤولي النقاط ومتطلبات الأدلة." },
+      { "title": "متابعة الأدلة", "description": "نتابع حالة النقاط ونراجع الوثائق خلال التصميم والإنشاء، وننبّه إلى المخاطر مبكرًا." },
+      { "title": "تنسيق التقديم", "description": "نجمّع ملفات التقديم وننسّق المراجعات ونعدّ الردود على ملاحظات المراجعين حتى الإغلاق." }
+    ],
+    "deliverables": [
+      { "item": "توصية بنظام التصنيف والمستوى المستهدف", "format": "مذكرة فنية (PDF)", "timing": "بداية المشروع" },
+      { "item": "تقرير تحليل الفجوات", "format": "تقرير مع بطاقة نقاط أولية (PDF + Excel)", "timing": "مرحلة التصميم المفاهيمي أو التخطيطي" },
+      { "item": "استراتيجية النقاط وبطاقة النقاط المستهدفة", "format": "بطاقة نقاط مع المسؤولين وقائمة الأدلة (Excel)", "timing": "بعد تحليل الفجوات" },
+      { "item": "سجل متابعة النقاط وسجل الوثائق", "format": "سجل محدّث باستمرار (Excel أو مساحة عمل مشتركة)", "timing": "طوال مرحلتي التصميم والإنشاء" },
+      { "item": "متطلبات المباني الخضراء للمقاولين", "format": "وثيقة متطلبات ونماذج سجلات (PDF + Word)", "timing": "قبل بدء الإنشاء" },
+      { "item": "ملفات التقديم والردود على المراجعة", "format": "وثائق مجمّعة ومصفوفة الملاحظات والردود (PDF)", "timing": "تقديمات مرحلتي التصميم والإنشاء" }
+    ],
+    "regulatoryContext": [
+      "نظام مستدام، نظام التصنيف السعودي للمباني الخضراء، المستخدم في المباني السكنية والتجارية والمجتمعات العمرانية.",
+      "نظام LEED الصادر عن مجلس المباني الخضراء الأمريكي (USGBC)، والمستخدم على نطاق واسع في المشاريع التجارية والفندقية ومتعددة الاستخدامات.",
+      "نظام Envision الصادر عن معهد البنية التحتية المستدامة (ISI)، لتقييم استدامة مشاريع البنية التحتية.",
+      "متطلبات كود البناء السعودي، بما فيها أحكام ترشيد الطاقة، التي تنطبق أيًا كان نظام التصنيف المختار.",
+      "رؤية المملكة 2030 ومبادرة السعودية الخضراء، اللتان تشكّلان توقعات الملاك والجهات الحكومية في مجال التنمية المستدامة."
+    ],
+    "faqs": [
+      { "q": "أي الأنظمة نختار: مستدام أم LEED أم Envision؟", "a": "يعتمد ذلك على نوع المشروع والجهة التي يُطلب التصنيف من أجلها. فنظام مستدام هو النظام الوطني السعودي، وقد يفضّله بعض الملاك والجهات الحكومية أو يشترطونه. ونظام LEED معروف على نطاق واسع لدى المستأجرين والمشغّلين والمستثمرين الدوليين. أما Envision فمصمم لمشاريع البنية التحتية لا للمباني. وتسعى بعض المشاريع إلى أكثر من تصنيف، ونقارن الخيارات بأهدافكم ونوصي بالمسار الأنسب." },
+      { "q": "هل تمنحون شهادات التصنيف للمباني؟", "a": "لا. تُمنح التصنيفات من الجهة المشغّلة لكل نظام بعد مراجعتها لوثائق المشروع. ويتمثل دورنا في دعم فريق المشروع: التخطيط لاستراتيجية النقاط، وتنسيق المسؤوليات، وإدارة الوثائق، وإعداد ملفات التقديم والردود. وهذا الفصل بين المستشار والجهة المانحة أمر معتاد في هذا المجال، ويحافظ على موضوعية عملية المراجعة." },
+      { "q": "متى ينبغي أن نبدأ عملية التصنيف؟", "a": "يُفضّل البدء في مرحلة التصميم المفاهيمي أو بدايات التصميم التخطيطي، قبل تثبيت القرارات الرئيسة المتعلقة بالموقع والغلاف والأنظمة والمواد. فكثير من النقاط يعتمد على خيارات تصميمية يكون تغييرها لاحقًا مكلفًا، وبعضها يتطلب دراسات أو التزامات في وقت مبكر من المشروع. والبدء المتأخر ممكن، لكن نطاق النقاط القابلة للتحقيق يضيق ويزداد خطر عدم استيفاء المتطلبات الأساسية." },
+      { "q": "ما المطلوب من المقاولين؟", "a": "يتحمل المقاولون عددًا من متطلبات مرحلة الإنشاء، تشمل عادةً نفايات البناء، وتوثيق المواد، وجودة الهواء الداخلي أثناء الأعمال، والحد من الانجراف والغبار، ودعم التشغيل التجريبي، ويجب عليهم حفظ السجلات بصيغة محددة. ونترجم هذه المتطلبات إلى التزامات ونماذج واضحة للمقاولين، ونراجع سجلاتهم خلال الإنشاء، وننبّه إلى الفجوات قبل أن تعرّض النقاط للخطر." },
+      { "q": "كيف تتعاملون مع ملاحظات المراجعين؟", "a": "نسجّل كل ملاحظة، ونحدد عضو الفريق المسؤول عنها، ونعدّ ردًا واضحًا مع ما يلزم من أدلة أو إيضاحات إضافية. وحين تكشف الملاحظة فجوة حقيقية، نوضح الخيارات المتاحة لمعالجتها أو أثر سحب النقطة على المستوى المستهدف. وتساعد الردود المنسّقة والمكتملة على إغلاق المراجعة بكفاءة وحماية مستوى التصنيف المستهدف." }
+    ]
+  }
+}

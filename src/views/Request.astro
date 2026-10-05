@@ -1,0 +1,32 @@
+---
+import Base from "@/layouts/Base.astro";
+import RequestForm from "@/components/RequestForm.astro";
+import Icon from "@/components/Icon.astro";
+import { href, site, t, type Lang } from "@/i18n/ui";
+import { SERVICES } from "@/lib/forms";
+interface Props { lang: Lang; service?: string; serviceDescription?: string }
+const { lang, service, serviceDescription } = Astro.props;
+const ar = lang === "ar";
+const name = service ? SERVICES[service]?.[lang] : undefined;
+const path = service ? `/request/${service}/` : "/request/";
+const title = name ? (ar ? `اطلب خدمة ${name}` : `Request ${name}`) : (ar ? "اطلب استشارة بيئية" : "Request a Consultation");
+---
+<Base lang={lang} path={path} focused title={title}
+  description={ar ? `أرسل طلبك إلى سيلورين${name ? ` بخصوص ${name}` : ""}، وسيراجع مختص بيئي متطلباتك ويتواصل معك.` : `Send your ${name ?? "environmental"} request to Selorin. An environmental specialist will review your requirements and contact you.`}
+  analytics={{ page_type: "request_form", service_slug: service ?? "" }}>
+  <section class="section" style="padding-top:48px">
+    <div class="container split" style="grid-template-columns:minmax(0,4fr) minmax(0,8fr)">
+      <div style="position:sticky;top:96px">
+        {service && <a class="link mb-5" href={href(lang, `/services/${service}/`)} style="flex-direction:row-reverse;justify-content:flex-end"><span>{name}</span></a>}
+        <p class="eyebrow">{ar ? "طلب خدمة" : "Service request"}</p>
+        <h1 style="font-size:var(--fs-h2)">{title}</h1>
+        <p class="lead">{serviceDescription ?? (ar ? "ثلاث خطوات قصيرة. كلما شاركت تفاصيل أكثر، كان ردّنا أدق." : "Three short steps. The more detail you share, the more precise our response.")}</p>
+        <ul class="checklist mt-6">
+          {(ar ? ["يراجع طلبك مختص بيئي", "نتواصل معك لتوضيح النطاق", "تستلم عرضاً بالنطاق والمخرجات والجدول"] : ["An environmental specialist reviews your request", "We contact you to clarify scope", "You receive a proposal with scope, deliverables and schedule"]).map((x) => <li>{x}</li>)}
+        </ul>
+        <p class="muted mt-6" style="font-size:var(--fs-14)">{ar ? "تفضّل التواصل مباشرة؟" : "Prefer to talk directly?"} <a href={`tel:${site.phoneHref}`} class="ltr" data-cta="request_phone">{site.phone}</a> · <a href={`mailto:${site.email}`} data-cta="request_email">{site.email}</a></p>
+      </div>
+      <RequestForm lang={lang} kind="request" service={service} />
+    </div>
+  </section>
+</Base>

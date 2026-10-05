@@ -1,0 +1,95 @@
+---
+import Logo from "./Logo.astro";
+import Icon from "./Icon.astro";
+import { href, basePath, t, type Lang } from "@/i18n/ui";
+import { categories } from "@/data/taxonomy";
+import { getServices, getIndustries } from "@/lib/content";
+import { INDUSTRY_ICON } from "@/lib/icons";
+
+interface Props { lang: Lang; path: string; focused?: boolean }
+const { lang, path, focused = false } = Astro.props;
+const other: Lang = lang === "en" ? "ar" : "en";
+const services = await getServices();
+const industries = await getIndustries();
+const section = basePath(path).split("/")[1] ?? "";
+const cur = (s: string) => (section === s ? "is-current" : undefined);
+---
+<header class="site-header" data-header>
+  <div class="container bar">
+    <a class="brand" href={href(lang, "/")} aria-label={lang === "ar" ? "سيلورين — الصفحة الرئيسية" : "Selorin — Home"}>
+      <Logo />
+      <span class="brand-text"><b>Selorin</b><small>ENVIRONMENTAL ADVISORY & SERVICES</small></span>
+    </a>
+
+    {!focused && (
+      <nav class="nav" id="site-nav" aria-label={lang === "ar" ? "القائمة الرئيسية" : "Main navigation"} data-nav>
+        <ul>
+          <li><a class:list={["nav-link", cur("about")]} href={href(lang, "/about/")}>{t(lang, "nav.about")}</a></li>
+          <li>
+            <button class:list={["nav-link", cur("services")]} type="button" aria-expanded="false" aria-controls="mega-services" data-mega>
+              {t(lang, "nav.services")} <Icon name="chev" class="chev" />
+            </button>
+            <div class="mega" id="mega-services" hidden>
+              <div class="container mega-inner">
+                {categories.map((c) => (
+                  <div>
+                    <h3><a href={href(lang, `/services/${c.id}/`)}>{c.name[lang]}</a></h3>
+                    <ul>
+                      {services.filter((s) => s.data.category === c.id).map((s) => (
+                        <li><a href={href(lang, `/services/${s.id}/`)}>{s.data[lang].name}</a></li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+                <aside class="mega-aside" style="grid-column: 4; grid-row: 1 / span 2">
+                  <h3>{t(lang, "nav.notSure")}</h3>
+                  <p>{t(lang, "nav.notSureBody")}</p>
+                  <a class="link" href={href(lang, "/#lifecycle")}>{t(lang, "nav.findSupport")} <Icon name="arrow" /></a>
+                  <hr style="border:0;border-top:1px solid var(--c-line);margin:20px 0" />
+                  <a class="link" href={href(lang, "/services/")}>{t(lang, "nav.allServices")} <Icon name="arrow" /></a>
+                </aside>
+              </div>
+            </div>
+          </li>
+          <li>
+            <button class:list={["nav-link", cur("industries")]} type="button" aria-expanded="false" aria-controls="mega-industries" data-mega>
+              {t(lang, "nav.industries")} <Icon name="chev" class="chev" />
+            </button>
+            <div class="mega" id="mega-industries" hidden>
+              <div class="container mega-inner mega-inner--industries">
+                {[0, 1, 2, 3].map((col) => (
+                  <ul>
+                    {industries.filter((_, i) => i % 4 === col).map((ind) => (
+                      <li><a href={href(lang, `/industries/${ind.id}/`)} style="display:flex;gap:10px;align-items:center"><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} size={18} />{ind.data[lang].name}</a></li>
+                    ))}
+                  </ul>
+                ))}
+                <aside class="mega-aside">
+                  <h3>{t(lang, "nav.industries")}</h3>
+                  <p>{lang === "ar" ? "المتطلبات البيئية تختلف بين القطاعات. اطّلع على ما ينطبق على منشأتك." : "Environmental requirements differ by sector. See what typically applies to your facility."}</p>
+                  <a class="link" href={href(lang, "/industries/")}>{t(lang, "nav.allIndustries")} <Icon name="arrow" /></a>
+                </aside>
+              </div>
+            </div>
+          </li>
+          <li><a class:list={["nav-link", cur("projects")]} href={href(lang, "/projects/")}>{t(lang, "nav.projects")}</a></li>
+          <li><a class:list={["nav-link", cur("insights")]} href={href(lang, "/insights/")}>{t(lang, "nav.insights")}</a></li>
+          <li><a class:list={["nav-link", cur("contact")]} href={href(lang, "/contact/")}>{t(lang, "nav.contact")}</a></li>
+          <li class="nav-cta"><a class="btn btn--block" href={href(lang, "/request/")} data-cta="mobile_nav_consultation">{t(lang, "cta.consultation")}</a></li>
+        </ul>
+      </nav>
+    )}
+
+    <div class="header-tools" style={focused ? "margin-inline-start:auto" : undefined}>
+      <a class="lang-switch" href={href(other, basePath(path))} hreflang={other} lang={other} aria-label={t(lang, "lang.switchLabel")} data-track="language_switch">
+        <span aria-hidden="true" class="ltr"><span class:list={[{ "is-on": lang === "en" }]}>EN</span> | <span class:list={[{ "is-on": lang === "ar" }]}>AR</span></span>
+      </a>
+      {!focused && <a class="btn btn--sm" href={href(lang, "/request/")} data-cta="header_consultation">{t(lang, "cta.consultation")}</a>}
+      {!focused && (
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label={t(lang, "nav.menu")} data-label-close={t(lang, "nav.close")} data-menu-toggle>
+          <Icon name="menu" />
+        </button>
+      )}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,87 @@
+{
+  "order": 3,
+  "services": [
+    "environmental-impact-assessment",
+    "environmental-permitting",
+    "environmental-due-diligence",
+    "environmental-management-plans",
+    "green-building-advisory",
+    "sustainable-buildings",
+    "esg-advisory",
+    "noise-monitoring"
+  ],
+  "en": {
+    "name": "Real Estate Development",
+    "seoTitle": "Environmental Advisory for Real Estate Developers | Selorin",
+    "metaDescription": "EIA, environmental permits, due diligence, Mostadam and LEED advisory and ESG support for master-planned communities and real estate developers in Saudi Arabia.",
+    "cardDescription": "Environmental studies, permits, due diligence and green building advisory that support approvals, financing and long-term asset value for developments.",
+    "overview": [
+      "Real estate developers meet environmental requirements at three points in a project's life: when land is acquired, when the development is approved and built, and when the completed asset is operated, financed or sold. Each stage carries different questions, from historic contamination and site constraints to impact assessment conditions and the environmental performance of the finished buildings.",
+      "Large residential, mixed-use and master-planned communities typically require an environmental impact assessment (EIA) under the Environmental Law and its Implementing Regulations, with review by the National Center for Environmental Compliance (NCEC). Sites near coastlines, wadis, protected areas or existing communities raise additional issues such as habitat, drainage, traffic noise and construction disturbance that the design team must address early.",
+      "Investors, lenders and buyers increasingly look at green building ratings and ESG performance. Mostadam, LEED and similar systems influence design choices on energy, water, materials and indoor environment, so bringing environmental advice into the design stage avoids costly late changes and supports the asset's commercial positioning."
+    ],
+    "challenges": [
+      { "title": "Unknown site history", "description": "Land acquired for development may carry fill material, old dumping or contamination that affects cost, programme and design if found late." },
+      { "title": "EIA scope and timing", "description": "Impact assessment work must start early enough to inform the master plan and avoid holding up permits, design approvals and construction start." },
+      { "title": "Sensitive surroundings", "description": "Coastal zones, wadis, vegetation and nearby residents bring requirements on drainage, habitat, noise and visual impact that shape the layout." },
+      { "title": "Green rating targets", "description": "Mostadam or LEED targets set late in design often lead to redesign; credits need to be planned with the architect and engineers from concept." },
+      { "title": "Investor and lender expectations", "description": "Funds and banks ask for environmental and ESG information on assets, which developers need to provide consistently across a portfolio." }
+    ],
+    "requirements": [
+      "Environmental impact assessment for qualifying developments, reviewed by NCEC",
+      "Environmental permit conditions carried into design, construction and operation",
+      "Environmental due diligence on land and assets during acquisition or financing",
+      "Construction and operational environmental management plans",
+      "Green building rating requirements where set by the authority, master developer or the client brief",
+      "ESG disclosures to investors and lenders in line with recognised frameworks such as GRI or IFRS S1/S2"
+    ],
+    "support": [
+      { "title": "EIA and permits", "description": "We scope and prepare environmental impact assessments and permit packages, and coordinate baseline studies and responses to review comments." },
+      { "title": "Site and asset due diligence", "description": "We assess land and existing assets for contamination, regulatory gaps and environmental liabilities before acquisition, financing or sale." },
+      { "title": "Green building advisory", "description": "We set Mostadam or LEED targets with the design team, track credits through design and construction and prepare documentation." },
+      { "title": "ESG reporting", "description": "We help developers structure environmental and ESG data across assets for investors, lenders and annual reporting." }
+    ],
+    "faqs": [
+      { "q": "When should we start the EIA for a new development?", "a": "As early as concept master planning. Baseline surveys and impact findings can change layout, drainage and access decisions, and starting late usually means redesign or delayed approvals. We help define the scope early so the study runs alongside design." },
+      { "q": "Should we choose Mostadam or LEED?", "a": "It depends on the authority or master developer requirements, the target market and investor expectations. Some projects pursue both. We compare the requirements against your design and business goals and recommend the rating approach that fits." },
+      { "q": "What does environmental due diligence cover for a land purchase?", "a": "It typically covers site history, current and past uses, visible contamination, regulatory status and constraints such as drainage or protected areas. Where the desktop review and site visit raise concerns, we recommend targeted soil or groundwater investigation." }
+    ]
+  },
+  "ar": {
+    "name": "التطوير العقاري",
+    "seoTitle": "الاستشارات البيئية للتطوير العقاري | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي والتصاريح والفحص البيئي النافي للجهالة واستشارات مستدام وLEED ودعم الحوكمة البيئية للمطورين العقاريين والمجتمعات المخططة في المملكة.",
+    "cardDescription": "دراسات بيئية وتصاريح وفحص نافٍ للجهالة واستشارات للمباني الخضراء تدعم الموافقات والتمويل والقيمة طويلة الأمد للمشاريع العقارية.",
+    "overview": [
+      "يواجه المطور العقاري المتطلبات البيئية في ثلاث مراحل من عمر المشروع: عند الاستحواذ على الأرض، وعند اعتماد المشروع وتنفيذه، وعند تشغيل الأصل المكتمل أو تمويله أو بيعه. ولكل مرحلة أسئلتها، بدءًا بالتلوث التاريخي وقيود الموقع، ومرورًا باشتراطات تقييم الأثر البيئي، وانتهاءً بالأداء البيئي للمباني بعد اكتمالها.",
+      "وتتطلب المشاريع السكنية الكبيرة ومتعددة الاستخدامات والمجتمعات المخططة عادةً تقييمًا للأثر البيئي (EIA) وفق نظام البيئة ولوائحه التنفيذية، يراجعه المركز الوطني للرقابة على الالتزام البيئي (NCEC). وتثير المواقع القريبة من السواحل والأودية والمناطق المحمية والأحياء القائمة قضايا إضافية كالموائل وتصريف السيول وضوضاء المرور وإزعاج أعمال الإنشاء، وعلى فريق التصميم معالجتها مبكرًا.",
+      "ويهتم المستثمرون والممولون والمشترون بتصنيفات المباني الخضراء والأداء في الحوكمة البيئية والاجتماعية والمؤسسية (ESG). وتؤثر أنظمة مثل مستدام وLEED في قرارات التصميم المتعلقة بالطاقة والمياه والمواد وجودة البيئة الداخلية، لذا فإن إدخال الاستشارة البيئية في مرحلة التصميم يجنّب تعديلات متأخرة مكلفة ويدعم الموقع التسويقي للأصل."
+    ],
+    "challenges": [
+      { "title": "تاريخ الموقع غير المعروف", "description": "قد تحمل الأرض المستحوذ عليها ردميات أو مكبات قديمة أو تلوثًا يؤثر في التكلفة والجدول والتصميم إذا اكتُشف متأخرًا." },
+      { "title": "نطاق تقييم الأثر وتوقيته", "description": "يجب أن يبدأ تقييم الأثر البيئي مبكرًا بما يكفي ليُثري المخطط العام ولا يؤخر التصاريح واعتماد التصاميم وبدء الإنشاء." },
+      { "title": "المحيط الحساس", "description": "تفرض المناطق الساحلية والأودية والغطاء النباتي والسكان المجاورون متطلبات تخص التصريف والموائل والضوضاء والأثر البصري تؤثر في تخطيط الموقع." },
+      { "title": "مستهدفات التصنيف الأخضر", "description": "يؤدي تحديد مستهدفات مستدام أو LEED في مرحلة متأخرة إلى إعادة التصميم، ويلزم تخطيط النقاط مع المعماريين والمهندسين منذ المفهوم الأولي." },
+      { "title": "توقعات المستثمرين والممولين", "description": "تطلب الصناديق والبنوك معلومات بيئية ومعلومات حوكمة عن الأصول، ويحتاج المطور إلى تقديمها بصورة متسقة على مستوى المحفظة." }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي للمشاريع الخاضعة له بمراجعة المركز الوطني للرقابة على الالتزام البيئي",
+      "نقل اشتراطات التصريح البيئي إلى مراحل التصميم والإنشاء والتشغيل",
+      "الفحص البيئي النافي للجهالة للأراضي والأصول عند الاستحواذ أو التمويل",
+      "خطط الإدارة البيئية لمرحلتي الإنشاء والتشغيل",
+      "متطلبات تصنيف المباني الخضراء حيثما تفرضها الجهة المختصة أو المطور الرئيس أو متطلبات المالك",
+      "إفصاحات الحوكمة البيئية والاجتماعية والمؤسسية للمستثمرين والممولين وفق أطر معتمدة مثل GRI أو IFRS S1/S2"
+    ],
+    "support": [
+      { "title": "تقييم الأثر والتصاريح", "description": "نحدد نطاق دراسات تقييم الأثر البيئي ونعدّها مع حزم التصاريح، وننسق دراسات خط الأساس والرد على ملاحظات المراجعة." },
+      { "title": "الفحص النافي للجهالة", "description": "نقيّم الأراضي والأصول القائمة من حيث التلوث والفجوات التنظيمية والالتزامات البيئية قبل الاستحواذ أو التمويل أو البيع." },
+      { "title": "استشارات المباني الخضراء", "description": "نحدد مع فريق التصميم مستهدفات مستدام أو LEED، ونتابع النقاط خلال التصميم والإنشاء، ونعدّ الوثائق المطلوبة." },
+      { "title": "تقارير الحوكمة البيئية", "description": "نساعد المطورين على تنظيم البيانات البيئية وبيانات الحوكمة لأصولهم لتقديمها للمستثمرين والممولين وفي التقارير السنوية." }
+    ],
+    "faqs": [
+      { "q": "متى نبدأ تقييم الأثر البيئي لمشروع جديد؟", "a": "منذ مرحلة المخطط العام المبدئي؛ فمسوحات خط الأساس ونتائج تقييم الآثار قد تغيّر قرارات التخطيط والتصريف والمداخل، والتأخر غالبًا يعني إعادة التصميم أو تأخر الموافقات. نساعدكم على تحديد النطاق مبكرًا لتسير الدراسة بالتوازي مع التصميم." },
+      { "q": "هل نختار نظام مستدام أم LEED؟", "a": "يعتمد ذلك على متطلبات الجهة المختصة أو المطور الرئيس، والسوق المستهدفة، وتوقعات المستثمرين، وبعض المشاريع تسعى إلى الاثنين. نقارن متطلبات كل نظام بتصميمكم وأهدافكم التجارية ونوصي بالنهج الأنسب." },
+      { "q": "ماذا يشمل الفحص البيئي النافي للجهالة عند شراء أرض؟", "a": "يشمل عادةً تاريخ الموقع واستخداماته الحالية والسابقة، ومظاهر التلوث الظاهرة، والوضع التنظيمي، والقيود مثل مجاري السيول أو المناطق المحمية. وإذا أثارت المراجعة المكتبية والزيارة الميدانية مخاوف، نوصي بفحص موجه للتربة أو المياه الجوفية." }
+    ]
+  }
+}

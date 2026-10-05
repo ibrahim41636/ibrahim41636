@@ -1,0 +1,88 @@
+{
+  "order": 4,
+  "services": [
+    "environmental-impact-assessment",
+    "environmental-permitting",
+    "environmental-management-plans",
+    "environmental-monitoring",
+    "dust-monitoring",
+    "noise-monitoring",
+    "water-quality-monitoring",
+    "green-building-advisory",
+    "ghg-carbon-accounting"
+  ],
+  "en": {
+    "name": "Infrastructure",
+    "seoTitle": "Environmental Services for Infrastructure | Selorin",
+    "metaDescription": "EIA, environmental management plans and noise, dust and water monitoring for roads, rail, utilities, ports and linear infrastructure projects in Saudi Arabia.",
+    "cardDescription": "Impact assessments, management plans and field monitoring for roads, rail, water, ports and utility networks from route selection to operation.",
+    "overview": [
+      "Infrastructure projects such as highways, rail lines, pipelines, water and wastewater networks, ports and utility corridors cross long distances and many types of land. A single alignment can pass farmland, wadis, vegetation cover, wildlife habitat and settlements, which makes route selection and baseline data central to the environmental assessment.",
+      "These projects usually require an environmental impact assessment under the Environmental Law and its Implementing Regulations, with review by the National Center for Environmental Compliance (NCEC). Depending on location, interactions with the National Center for Vegetation Cover Development and Combating Desertification (NCVC), the National Center for Wildlife (NCW) and municipal or utility owners may also be needed. Construction then brings dust, noise, borrow pits, camps, water crossings and large earthworks spread over many work fronts.",
+      "Owners and EPC contractors need environmental controls that work across multiple sites and contractors at once. Consistent management plans, monitoring at representative receptors and a single reporting structure make it easier to show compliance, manage complaints and close out conditions at handover. Envision and carbon assessment are also used increasingly to show the sustainability of infrastructure investment."
+    ],
+    "challenges": [
+      { "title": "Long, varied alignments", "description": "Routes cross habitats, vegetation, wadis and communities, each with different sensitivities that baseline studies must capture before design is fixed." },
+      { "title": "Many work fronts", "description": "Simultaneous sites, camps, batching plants and borrow areas make it hard to apply consistent environmental controls and inspections." },
+      { "title": "Water crossings and drainage", "description": "Works in or near wadis and coastal areas risk sedimentation, flow obstruction and contamination that require specific controls and water monitoring." },
+      { "title": "Community impacts", "description": "Noise, dust and traffic diversions affect nearby residents and businesses, and complaints can escalate quickly without monitoring data." },
+      { "title": "Reinstatement and handover", "description": "Temporary areas, borrow pits and camps must be reinstated and approval conditions closed out with evidence before handover." }
+    ],
+    "requirements": [
+      "Environmental impact assessment with alternatives and route analysis, reviewed by NCEC",
+      "Coordination with NCVC, NCW and other bodies where vegetation, protected areas or wildlife are affected",
+      "Construction environmental management plans covering every work front, camp and ancillary facility",
+      "Dust, noise and surface or groundwater monitoring at representative receptors",
+      "Waste, wastewater and hazardous material controls at camps and plant yards",
+      "Reinstatement plans and closure evidence for temporary works"
+    ],
+    "support": [
+      { "title": "EIA and route studies", "description": "We prepare impact assessments with baseline surveys, alternatives comparison and mitigation measures that feed into alignment and design decisions." },
+      { "title": "Programme-wide management plans", "description": "We prepare environmental management plans and inspection routines that apply consistently across contractors and work fronts." },
+      { "title": "Field monitoring", "description": "We run dust, noise and water monitoring at representative locations and consolidate results into a single reporting structure." },
+      { "title": "Sustainability and carbon", "description": "We support Envision-aligned sustainability assessment and estimate construction and operational carbon to inform design and procurement choices." }
+    ],
+    "faqs": [
+      { "q": "Do linear projects need baseline surveys along the whole route?", "a": "The survey effort is focused on sensitive sections and representative points rather than every kilometre. We use desktop screening to identify sensitive areas such as wadis, vegetation and settlements, then concentrate field work there." },
+      { "q": "How do you keep environmental controls consistent across several contractors?", "a": "We set common requirements in a programme-level management plan, give each contractor site-specific checklists, and run inspections and reporting to the same format, so the owner sees one consolidated picture." },
+      { "q": "Can you assess the carbon footprint of an infrastructure project?", "a": "Yes. We estimate embodied carbon in materials and construction activities and, where needed, operational emissions. This helps compare design options and supports sustainability reporting to funders and stakeholders." }
+    ]
+  },
+  "ar": {
+    "name": "البنية التحتية",
+    "seoTitle": "الخدمات البيئية لمشاريع البنية التحتية | سيلورين",
+    "metaDescription": "تقييم الأثر البيئي وخطط الإدارة البيئية ورصد الضوضاء والغبار والمياه لمشاريع الطرق والسكك الحديدية والمرافق والموانئ في المملكة.",
+    "cardDescription": "تقييم للأثر وخطط إدارة ورصد ميداني لمشاريع الطرق والسكك والمياه والموانئ وشبكات المرافق من اختيار المسار حتى التشغيل.",
+    "overview": [
+      "تمتد مشاريع البنية التحتية كالطرق السريعة والسكك الحديدية وخطوط الأنابيب وشبكات المياه والصرف الصحي والموانئ وممرات المرافق لمسافات طويلة وعبر أنواع متعددة من الأراضي؛ فقد يمر مسار واحد بأراضٍ زراعية وأودية وغطاء نباتي وموائل للحياة الفطرية وتجمعات سكانية، مما يجعل اختيار المسار وبيانات خط الأساس محور التقييم البيئي.",
+      "وتتطلب هذه المشاريع عادةً تقييمًا للأثر البيئي وفق نظام البيئة ولوائحه التنفيذية، يراجعه المركز الوطني للرقابة على الالتزام البيئي (NCEC). وبحسب الموقع قد يلزم التنسيق مع المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر (NCVC) والمركز الوطني لتنمية الحياة الفطرية (NCW) والبلديات وملاك المرافق. ثم تأتي مرحلة الإنشاء بالغبار والضوضاء والمحاجر والمخيمات وعبور الأودية وأعمال الحفر الواسعة الموزعة على جبهات عمل كثيرة.",
+      "ويحتاج الملاك ومقاولو الهندسة والمشتريات والإنشاء إلى ضوابط بيئية تعمل في مواقع ومقاولين متعددين في آن واحد؛ فتوحيد خطط الإدارة، والرصد عند مستقبِلات ممثلة، وهيكل تقارير واحد، كلها تسهّل إثبات الامتثال ومعالجة الشكاوى وإقفال الاشتراطات عند التسليم. ويتزايد كذلك استخدام نظام Envision وتقييم الكربون لإبراز استدامة الاستثمار في البنية التحتية."
+    ],
+    "challenges": [
+      { "title": "مسارات طويلة ومتنوعة", "description": "تعبر المسارات موائل وغطاءً نباتيًا وأودية وتجمعات سكانية، لكل منها حساسيات مختلفة يجب أن ترصدها دراسات خط الأساس قبل اعتماد التصميم." },
+      { "title": "تعدد جبهات العمل", "description": "تصعّب المواقع المتزامنة والمخيمات ومحطات الخرسانة ومناطق الاقتراض تطبيق ضوابط بيئية وجولات تفتيش موحدة." },
+      { "title": "عبور الأودية والتصريف", "description": "تنطوي الأعمال في الأودية والمناطق الساحلية أو قربها على مخاطر الترسيب وإعاقة الجريان والتلوث، فتحتاج إلى ضوابط خاصة ورصد لجودة المياه." },
+      { "title": "الأثر على المجتمعات", "description": "تؤثر الضوضاء والغبار وتحويلات المرور في السكان والأنشطة المجاورة، وقد تتصاعد الشكاوى سريعًا في غياب بيانات الرصد." },
+      { "title": "إعادة التأهيل والتسليم", "description": "يجب إعادة تأهيل المواقع المؤقتة ومناطق الاقتراض والمخيمات، وإقفال اشتراطات الموافقة بالأدلة قبل التسليم." }
+    ],
+    "requirements": [
+      "تقييم الأثر البيئي متضمنًا تحليل البدائل والمسارات بمراجعة المركز الوطني للرقابة على الالتزام البيئي",
+      "التنسيق مع المركز الوطني لتنمية الغطاء النباتي والمركز الوطني لتنمية الحياة الفطرية عند التأثير في الغطاء النباتي أو المناطق المحمية أو الحياة الفطرية",
+      "خطط إدارة بيئية للإنشاء تغطي كل جبهات العمل والمخيمات والمرافق المساندة",
+      "رصد الغبار والضوضاء والمياه السطحية أو الجوفية عند مستقبِلات ممثلة",
+      "ضوابط للنفايات ومياه الصرف والمواد الخطرة في المخيمات وساحات المعدات",
+      "خطط لإعادة التأهيل وأدلة إقفال للأعمال المؤقتة"
+    ],
+    "support": [
+      { "title": "تقييم الأثر ودراسات المسار", "description": "نعدّ دراسات تقييم الأثر البيئي متضمنة مسوحات خط الأساس ومقارنة البدائل وتدابير التخفيف التي تُثري قرارات المسار والتصميم." },
+      { "title": "خطط إدارة على مستوى البرنامج", "description": "نعدّ خطط الإدارة البيئية وإجراءات التفتيش لتُطبق بصورة موحدة على جميع المقاولين وجبهات العمل." },
+      { "title": "الرصد الميداني", "description": "ننفذ رصد الغبار والضوضاء والمياه في مواقع ممثلة، ونجمع النتائج في هيكل تقارير موحد." },
+      { "title": "الاستدامة والكربون", "description": "ندعم تقييم الاستدامة المتوائم مع نظام Envision، ونقدّر الكربون في مرحلتي الإنشاء والتشغيل لدعم قرارات التصميم والمشتريات." }
+    ],
+    "faqs": [
+      { "q": "هل تحتاج المشاريع الخطية إلى مسوحات خط أساس على طول المسار كاملًا؟", "a": "يُركَّز جهد المسح على المقاطع الحساسة والنقاط الممثلة لا على كل كيلومتر. نستخدم الفحص المكتبي لتحديد المناطق الحساسة كالأودية والغطاء النباتي والتجمعات السكانية، ثم نركز العمل الميداني فيها." },
+      { "q": "كيف تحافظون على اتساق الضوابط البيئية بين عدة مقاولين؟", "a": "نضع متطلبات مشتركة في خطة إدارة على مستوى البرنامج، ونزود كل مقاول بقوائم تحقق خاصة بموقعه، وننفذ التفتيش والتقارير بنموذج موحد، فيرى المالك صورة مجمعة واحدة." },
+      { "q": "هل يمكنكم تقييم البصمة الكربونية لمشروع بنية تحتية؟", "a": "نعم، نقدّر الكربون المتجسد في المواد وأنشطة الإنشاء، والانبعاثات التشغيلية عند الحاجة، مما يساعد على المقارنة بين بدائل التصميم ويدعم تقارير الاستدامة للممولين وأصحاب العلاقة." }
+    ]
+  }
+}

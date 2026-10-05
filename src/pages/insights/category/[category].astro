@@ -1,0 +1,9 @@
+---
+import Insights from "@/views/Insights.astro";
+import { getInsights } from "@/lib/content";
+export async function getStaticPaths() {
+  const cats = [...new Set((await getInsights("en")).map((p) => p.data.category))];
+  return cats.map((category) => ({ params: { category } }));
+}
+---
+<Insights lang="en" category={Astro.params.category} />

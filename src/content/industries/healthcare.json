@@ -1,0 +1,160 @@
+{
+  "order": 9,
+  "services": [
+    "waste-management",
+    "environmental-permitting",
+    "environmental-compliance",
+    "environmental-records",
+    "environmental-audits",
+    "water-quality-monitoring",
+    "air-quality-monitoring",
+    "sustainable-buildings",
+    "ghg-carbon-accounting"
+  ],
+  "en": {
+    "name": "Healthcare Facilities",
+    "seoTitle": "Healthcare Waste & Environmental Compliance | Selorin",
+    "metaDescription": "Healthcare waste management, environmental permits, audits, wastewater and emissions monitoring for hospitals, clinics and laboratories in Saudi Arabia.",
+    "cardDescription": "Healthcare waste management, permits, audits and monitoring that help hospitals, clinics and laboratories control risk and stay inspection-ready.",
+    "overview": [
+      "Hospitals, clinics, laboratories and dialysis or diagnostic centres generate waste streams that need strict control: infectious and sharps waste, pharmaceutical and cytotoxic waste, chemical and laboratory waste, and in some facilities radioactive materials handled under separate regulation. Alongside these, facilities produce large volumes of general waste, wastewater from clinical and laboratory areas, and emissions from boilers, standby generators and on-site treatment equipment.",
+      "Healthcare waste is regulated under the Waste Management Law and the regulations administered by the National Center for Waste Management (MWAN), together with the Environmental Law and its Implementing Regulations and health-sector requirements. Facilities must segregate waste at the point of generation, store it in controlled areas, use licensed transporters and treatment providers, and keep manifests that trace each consignment.",
+      "For facility managers and infection control teams, the challenge is consistency across wards, shifts and contractors. Good segregation reduces the volume and cost of hazardous waste, protects staff and waste handlers, and gives clear evidence during inspections and accreditation reviews. Energy and water use in hospitals also make them a natural focus for efficiency and carbon reduction."
+    ],
+    "challenges": [
+      {
+        "title": "Segregation at source",
+        "description": "Mixing general and hazardous waste at ward level increases costs and risk; colour coding, containers and training must work on every shift."
+      },
+      {
+        "title": "Storage and collection",
+        "description": "Central storage areas need appropriate conditions, access control and collection frequency matched to the volume and type of waste."
+      },
+      {
+        "title": "Contractor chain of custody",
+        "description": "Each consignment must move through licensed transporters and treatment facilities with manifests that close the loop back to the hospital."
+      },
+      {
+        "title": "Laboratory and pharmaceutical waste",
+        "description": "Chemicals, expired medicines and cytotoxic materials need separate handling routes that general clinical waste systems do not cover."
+      },
+      {
+        "title": "Wastewater and emissions",
+        "description": "Clinical and laboratory wastewater, boilers, generators and incinerators where present need monitoring against permit and discharge conditions."
+      }
+    ],
+    "requirements": [
+      "Healthcare waste segregation, labelling, storage and transport in line with MWAN regulations",
+      "Use of licensed healthcare waste transporters and treatment facilities, with complete manifests",
+      "Environmental permit for the facility and for any on-site treatment equipment, where applicable",
+      "Wastewater monitoring for discharges from clinical and laboratory areas",
+      "Emission controls for boilers, generators and any on-site treatment units",
+      "Waste registers, training records and periodic internal audits"
+    ],
+    "support": [
+      {
+        "title": "Healthcare waste management plans",
+        "description": "We assess waste generation by department and prepare a waste management plan covering segregation, containers, storage, collection and contractors."
+      },
+      {
+        "title": "Audits and contractor checks",
+        "description": "We audit wards, storage areas and contractor documentation against regulatory requirements and report gaps with corrective actions."
+      },
+      {
+        "title": "Permits and records",
+        "description": "We confirm permit requirements, prepare applications and structure waste registers and manifests so records are complete and traceable."
+      },
+      {
+        "title": "Monitoring and efficiency",
+        "description": "We monitor wastewater and emissions and assess energy, water and carbon performance to support sustainable hospital operations."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How can we reduce our hazardous healthcare waste costs?",
+        "a": "The main lever is segregation. When general waste is kept out of hazardous containers, hazardous volumes fall. We audit current practice by department, identify where mixing happens, and recommend container placement, signage and training changes."
+      },
+      {
+        "q": "What should we check before appointing a healthcare waste contractor?",
+        "a": "Confirm the contractor's licences for transport and treatment, the treatment method and facility used, vehicle and container standards, and how manifests are returned to you. We can review contractor documentation as part of an audit."
+      },
+      {
+        "q": "Do clinics and small medical centres have the same obligations as hospitals?",
+        "a": "The core duties of segregation, safe storage, licensed contractors and records apply to all generators, but the scale of arrangements differs. We help smaller facilities set up proportionate systems that meet the requirements without unnecessary complexity."
+      }
+    ]
+  },
+  "ar": {
+    "name": "المنشآت الصحية",
+    "seoTitle": "النفايات الطبية والامتثال البيئي للمنشآت الصحية | سيلورين",
+    "metaDescription": "إدارة النفايات الطبية والتصاريح البيئية والتدقيق ورصد مياه الصرف والانبعاثات للمستشفيات والعيادات والمختبرات والمنشآت الطبية في المملكة.",
+    "cardDescription": "إدارة للنفايات الطبية وتصاريح وتدقيق ورصد تساعد المستشفيات والعيادات والمختبرات على ضبط المخاطر والجاهزية الدائمة للتفتيش.",
+    "overview": [
+      "تولّد المستشفيات والعيادات والمختبرات ومراكز الغسيل الكلوي والتشخيص تيارات نفايات تستوجب ضبطًا صارمًا: النفايات المعدية والأدوات الحادة، والنفايات الدوائية والسامة للخلايا، والنفايات الكيميائية ونفايات المختبرات، وفي بعض المنشآت مواد مشعة تخضع لتنظيم مستقل. ويضاف إلى ذلك كميات كبيرة من النفايات العامة، ومياه الصرف من المناطق السريرية والمختبرات، والانبعاثات من الغلايات ومولدات الطوارئ ووحدات المعالجة الداخلية.",
+      "وتخضع النفايات الطبية لنظام إدارة النفايات واللوائح التي يشرف عليها المركز الوطني لإدارة النفايات (موان)، إلى جانب نظام البيئة ولوائحه التنفيذية ومتطلبات القطاع الصحي. وعلى المنشآت فرز النفايات عند نقطة توليدها، وتخزينها في مناطق مضبوطة، والتعامل مع ناقلين ومعالجين مرخصين، والاحتفاظ ببيانات نقل تتتبع كل شحنة.",
+      "والتحدي أمام مديري المرافق وفرق مكافحة العدوى هو الاتساق بين الأقسام والمناوبات والمقاولين؛ فالفرز الجيد يقلل حجم النفايات الخطرة وتكلفتها، ويحمي العاملين ومناولي النفايات، ويوفر أدلة واضحة أثناء التفتيش ومراجعات الاعتماد. كما يجعل استهلاك المستشفيات للطاقة والمياه منها مجالًا طبيعيًا لتحسين الكفاءة وخفض الكربون."
+    ],
+    "challenges": [
+      {
+        "title": "الفرز عند المصدر",
+        "description": "يرفع خلط النفايات العامة بالخطرة في الأقسام التكاليف والمخاطر، ولا بد أن تعمل الألوان والحاويات والتدريب في كل مناوبة."
+      },
+      {
+        "title": "التخزين والجمع",
+        "description": "تحتاج مناطق التخزين المركزية إلى ظروف مناسبة وضبط للدخول ومعدل جمع يتناسب مع حجم النفايات ونوعها."
+      },
+      {
+        "title": "سلسلة العهدة لدى المقاولين",
+        "description": "يجب أن تمر كل شحنة عبر ناقلين ومنشآت معالجة مرخصة ببيانات نقل تُغلق الدورة بالعودة إلى المنشأة الصحية."
+      },
+      {
+        "title": "نفايات المختبرات والأدوية",
+        "description": "تحتاج المواد الكيميائية والأدوية منتهية الصلاحية والمواد السامة للخلايا إلى مسارات مناولة مستقلة لا تغطيها أنظمة النفايات الطبية العامة."
+      },
+      {
+        "title": "مياه الصرف والانبعاثات",
+        "description": "تحتاج مياه الصرف السريرية ومياه المختبرات والغلايات والمولدات والمحارق إن وجدت إلى رصد مقابل شروط التصريح والتصريف."
+      }
+    ],
+    "requirements": [
+      "فرز النفايات الطبية ووسمها وتخزينها ونقلها وفق لوائح المركز الوطني لإدارة النفايات (موان)",
+      "التعامل مع ناقلي النفايات الطبية ومنشآت معالجتها المرخصة مع بيانات نقل مكتملة",
+      "تصريح بيئي للمنشأة ولأي وحدات معالجة داخلية عند الاقتضاء",
+      "رصد مياه الصرف الناتجة عن المناطق السريرية والمختبرات",
+      "ضوابط انبعاثات الغلايات والمولدات وأي وحدات معالجة داخلية",
+      "سجلات النفايات والتدريب وعمليات تدقيق داخلي دورية"
+    ],
+    "support": [
+      {
+        "title": "خطط إدارة النفايات الطبية",
+        "description": "نقيّم توليد النفايات في كل قسم، ونعدّ خطة إدارة تشمل الفرز والحاويات والتخزين والجمع والمقاولين."
+      },
+      {
+        "title": "التدقيق والتحقق من المقاولين",
+        "description": "ندقق الأقسام ومناطق التخزين ووثائق المقاولين مقابل المتطلبات التنظيمية، ونرفع الفجوات مع الإجراءات التصحيحية."
+      },
+      {
+        "title": "التصاريح والسجلات",
+        "description": "نحدد متطلبات التصاريح، ونعدّ الطلبات، وننظم سجلات النفايات وبيانات النقل لتكون مكتملة وقابلة للتتبع."
+      },
+      {
+        "title": "الرصد والكفاءة",
+        "description": "نرصد مياه الصرف والانبعاثات، ونقيّم أداء الطاقة والمياه والكربون دعمًا لتشغيل مستدام للمستشفيات."
+      }
+    ],
+    "faqs": [
+      {
+        "q": "كيف نخفض تكاليف النفايات الطبية الخطرة؟",
+        "a": "الفرز هو العامل الأهم؛ فعندما تُبعد النفايات العامة عن حاويات النفايات الخطرة تنخفض كمياتها. ندقق الممارسات الحالية في كل قسم، ونحدد مواضع الخلط، ونوصي بتعديلات في توزيع الحاويات واللوحات الإرشادية والتدريب."
+      },
+      {
+        "q": "ما الذي ينبغي التحقق منه قبل التعاقد مع مقاول للنفايات الطبية؟",
+        "a": "تحققوا من تراخيص المقاول للنقل والمعالجة، وأسلوب المعالجة والمنشأة المستخدمة، ومواصفات المركبات والحاويات، وآلية إعادة بيانات النقل إليكم. ويمكننا مراجعة وثائق المقاول ضمن عملية التدقيق."
+      },
+      {
+        "q": "هل تتحمل العيادات والمراكز الطبية الصغيرة الالتزامات نفسها التي تتحملها المستشفيات؟",
+        "a": "تنطبق الواجبات الأساسية من فرز وتخزين آمن وتعامل مع مقاولين مرخصين وتوثيق على جميع مولدي النفايات، لكن حجم الترتيبات يختلف. نساعد المنشآت الصغيرة على إعداد أنظمة متناسبة تفي بالمتطلبات دون تعقيد غير ضروري."
+      }
+    ]
+  }
+}

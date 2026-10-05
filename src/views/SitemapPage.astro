@@ -1,0 +1,25 @@
+---
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { categories } from "@/data/taxonomy";
+import { getServices, getIndustries, getInsights, insightSlug } from "@/lib/content";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const services = await getServices();
+const industries = await getIndustries();
+const insights = await getInsights(lang);
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "footer.sitemap"), path: "/sitemap/" }];
+---
+<Base lang={lang} path="/sitemap/" title={t(lang, "footer.sitemap")} description={lang === "ar" ? "جميع صفحات موقع سيلورين." : "All pages on the Selorin website."} breadcrumbs={crumbs} analytics={{ page_type: "sitemap" }}>
+  <PageHero lang={lang} crumbs={crumbs} title={t(lang, "footer.sitemap")} light />
+  <section class="section"><div class="container grid grid-3 prose" style="max-width:none">
+    <div><h2>{t(lang, "footer.company")}</h2><ul>
+      {[["/", "nav.home"], ["/about/", "nav.about"], ["/projects/", "nav.projects"], ["/insights/", "nav.insights"], ["/contact/", "nav.contact"], ["/request/", "cta.consultation"]].map(([p, k]) => <li><a href={href(lang, p)}>{t(lang, k as any)}</a></li>)}
+      <li><a href={href(lang, "/legal/privacy/")}>{t(lang, "footer.privacy")}</a></li><li><a href={href(lang, "/legal/terms/")}>{t(lang, "footer.terms")}</a></li><li><a href={href(lang, "/legal/cookies/")}>{t(lang, "footer.cookies")}</a></li>
+    </ul>
+    <h2>{t(lang, "nav.industries")}</h2><ul>{industries.map((i) => <li><a href={href(lang, `/industries/${i.id}/`)}>{i.data[lang].name}</a></li>)}</ul></div>
+    <div><h2>{t(lang, "nav.services")}</h2>{categories.map((c) => <><h3><a href={href(lang, `/services/${c.id}/`)}>{c.name[lang]}</a></h3><ul>{services.filter((s) => s.data.category === c.id).map((s) => <li><a href={href(lang, `/services/${s.id}/`)}>{s.data[lang].name}</a></li>)}</ul></>)}</div>
+    <div><h2>{t(lang, "nav.insights")}</h2><ul>{insights.map((p) => <li><a href={href(lang, `/insights/${insightSlug(p)}/`)}>{p.data.title}</a></li>)}</ul></div>
+  </div></section>
+</Base>

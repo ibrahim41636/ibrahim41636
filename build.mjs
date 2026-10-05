@@ -52,6 +52,8 @@ function build() {
   writeFileSync(join(OUT, "assets", "js", "config.js"), `window.SELORIN = ${JSON.stringify({ formEndpoint: config.formEndpoint, email: config.email, whatsapp: config.whatsapp })};\n`);
   const urls = pages.map((p) => `  <url><loc>${config.siteUrl}/${p === "index.html" ? "" : p}</loc></url>`).join("\n");
   writeFileSync(join(OUT, "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
+  // Custom domain for GitHub Pages (also harmless on other static hosts).
+  writeFileSync(join(OUT, "CNAME"), new URL(config.siteUrl).hostname + "\n");
   writeFileSync(join(OUT, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${config.siteUrl}/sitemap.xml\n`);
   console.log(`Built ${pages.length} pages → ${OUT}/`);
 }

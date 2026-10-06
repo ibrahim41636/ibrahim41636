@@ -3,7 +3,6 @@ import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import Icon from "@/components/Icon.astro";
-import BrandReel from "@/components/BrandReel.astro";
 import { href, site, t, type Lang } from "@/i18n/ui";
 import { categories, regulators } from "@/data/taxonomy";
 import { COMPANY, TEAM } from "@/data/team";
@@ -55,7 +54,6 @@ const how = ar
         <p>{m.bio[lang]}</p>
       </article>
     ))}</div></div></section>
-  <section class="section" id="identity"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "هويتنا" : "Our identity"}</p><h2>{ar ? "سيلورين في لقطات" : "Selorin in motion"}</h2></div><p class="lead">{ar ? "هوية بصرية مستوحاة من الشمس والماء والأرض، تعكس عملنا عند التقاء الطبيعة بالتنمية." : "A visual identity drawn from sun, water and land — reflecting our work where nature and development meet."}</p></div><BrandReel lang={lang} /></div></section>
   <section class="section bg-ink on-dark" id="values"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "قيمنا" : "Our values"}</p><h2 style="color:#fff">{ar ? "كيف نعمل مع عملائنا" : "How we work with clients"}</h2></div></div><div class="grid grid-4">{values.map(([h, p]) => <div class="card"><h3>{h}</h3><p>{p}</p></div>)}</div></div></section>
   <section class="section" id="commitment"><div class="container split"><div><p class="eyebrow">{ar ? "التزامنا" : "Our commitment"}</p><h2>{ar ? "ما يمكن أن تتوقعه منا" : "What you can expect from us"}</h2></div>
     <ul class="checklist">{(ar ? ["نطاق عمل مكتوب ومخرجات محددة قبل البدء", "نقطة تواصل واحدة طوال المشروع", "منهجيات موثقة ومعايرة قابلة للتتبع في أعمال القياس", "شفافية في النتائج، بما فيها غير المرغوبة", "حماية بيانات عملائنا ومعلوماتهم التشغيلية"] : ["A written scope and defined deliverables before work starts", "One point of contact throughout the engagement", "Documented methods and traceable calibration in measurement work", "Transparent results — including unwelcome ones", "Protection of client data and operational information"]).map((x) => <li>{x}</li>)}</ul></div></section>

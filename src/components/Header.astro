@@ -24,6 +24,7 @@ const cur = (s: string) => (section === s ? "is-current" : undefined);
     {!focused && (
       <nav class="nav" id="site-nav" aria-label={lang === "ar" ? "القائمة الرئيسية" : "Main navigation"} data-nav>
         <ul>
+          <li><a class:list={["nav-link", { "is-current": basePath(path) === "/" }]} href={href(lang, "/")} aria-current={basePath(path) === "/" ? "page" : undefined}>{t(lang, "nav.home")}</a></li>
           <li><a class:list={["nav-link", cur("about")]} href={href(lang, "/about/")}>{t(lang, "nav.about")}</a></li>
           <li>
             <button class:list={["nav-link", cur("services")]} type="button" aria-expanded="false" aria-controls="mega-services" data-mega>

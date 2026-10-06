@@ -1,14 +1,14 @@
 ---
-// Continuous strip of organisation wordmarks. Direction follows the reading direction:
+// Continuous strip of client logos. Direction follows the reading direction:
 // Arabic scrolls right-to-left, English left-to-right. Pauses on hover/focus; static for reduced motion.
-import { ORGANISATIONS } from "@/data/team";
+import { CLIENTS } from "@/data/clients";
 import type { Lang } from "@/i18n/ui";
 interface Props { lang: Lang; label: string }
 const { lang, label } = Astro.props;
 ---
 <div class="marquee" data-dir={lang === "ar" ? "rtl" : "ltr"} role="region" aria-label={label}>
   <div class="marquee-track">
-    <ul class="marquee-list">{ORGANISATIONS.map((o) => <li><span class="mark">{o[lang]}</span></li>)}</ul>
-    <ul class="marquee-list" aria-hidden="true">{ORGANISATIONS.map((o) => <li><span class="mark">{o[lang]}</span></li>)}</ul>
+    <ul class="marquee-list">{CLIENTS.map((c) => <li><span class="mark"><img src={`/images/clients/${c.file}.webp`} alt={c[lang]} title={c[lang]} height="48" loading="lazy" decoding="async" /></span></li>)}</ul>
+    <ul class="marquee-list" aria-hidden="true">{CLIENTS.map((c) => <li><span class="mark"><img src={`/images/clients/${c.file}.webp`} alt="" height="48" loading="lazy" decoding="async" /></span></li>)}</ul>
   </div>
 </div>

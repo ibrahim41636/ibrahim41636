@@ -1,0 +1,38 @@
+// Client logos from the Selorin company profile ("Organisations we support"), in the profile's
+// order. Files: /public/images/clients/<file>.webp (transparent, 112 px tall). Names are alt text.
+export interface Client { file: string; en: string; ar: string }
+
+export const CLIENTS: Client[] = [
+  { file: "alomaier", en: "Alomaier Trading and Contracting Co.", ar: "شركة الأومير للتجارة والمقاولات" },
+  { file: "king-khalid-airport", en: "King Khalid International Airport", ar: "مطار الملك خالد الدولي" },
+  { file: "yamama-cement", en: "Yamama Cement", ar: "أسمنت اليمامة" },
+  { file: "ceer", en: "CEER", ar: "سير" },
+  { file: "egyptair", en: "EgyptAir", ar: "مصر للطيران" },
+  { file: "wabra-water-works", en: "Wabra Water Works", ar: "وبرة لأعمال المياه" },
+  { file: "totalenergies", en: "TotalEnergies", ar: "توتال إنرجيز" },
+  { file: "al-khumasia", en: "Al Khumasia for Feed and Animal Products", ar: "الخماسية للأعلاف والإنتاج الحيواني" },
+  { file: "hassan-allam", en: "Hassan Allam Holding", ar: "حسن علام القابضة" },
+  { file: "aljomaih-automotive", en: "Aljomaih Automotive", ar: "الجميح للسيارات" },
+  { file: "rafal", en: "Rafal", ar: "رافال" },
+  { file: "jazeera-paints", en: "Jazeera Paints", ar: "دهانات الجزيرة" },
+  { file: "marsa-alam-airport", en: "Marsa Alam International Airport", ar: "مطار مرسى علم الدولي" },
+  { file: "saudi-binladin-group", en: "Saudi Binladin Group", ar: "مجموعة بن لادن السعودية" },
+  { file: "rabigh-power-company", en: "Rabigh Power Company", ar: "شركة رابغ للكهرباء" },
+  { file: "radisson-blu", en: "Radisson Blu", ar: "راديسون بلو" },
+  { file: "al-hayat-national-hospitals", en: "Al Hayat National Hospitals", ar: "مستشفيات الحياة الوطني" },
+  { file: "starlinks", en: "Starlinks", ar: "ستارلينكس" },
+  { file: "jdco", en: "JDCO", ar: "جدكو" },
+  { file: "metito", en: "Metito Utilities", ar: "ميتيتو للمرافق" },
+  { file: "jeddah-airports", en: "Jeddah Airports Company", ar: "شركة مطارات جدة" },
+  { file: "sama-industrial-city", en: "Sama Private Industrial City", ar: "مدينة سما الصناعية" },
+  { file: "jazan-university", en: "Jazan University", ar: "جامعة جازان" },
+  { file: "alsafi-danone", en: "Al Safi Danone", ar: "الصافي دانون" },
+  { file: "roshn-group", en: "ROSHN Group", ar: "مجموعة روشن" },
+  { file: "kafd", en: "King Abdullah Financial District", ar: "مركز الملك عبدالله المالي" },
+  { file: "aljazirah-vehicles", en: "AlJazirah Vehicles", ar: "الجزيرة للسيارات" },
+  { file: "nadec", en: "NADEC", ar: "نادك" },
+  { file: "almarai", en: "Almarai", ar: "المراعي" },
+  { file: "sports-boulevard", en: "Sports Boulevard", ar: "المسار الرياضي" },
+  { file: "jeddah-second-health-cluster", en: "Jeddah Second Health Cluster", ar: "تجمع جدة الصحي الثاني" },
+  { file: "addoha-poultry", en: "Addoha Poultry Company", ar: "شركة دواجن الدوحة" },
+];

@@ -58,27 +58,3 @@ export const TEAM: Member[] = [
     },
   },
 ];
-
-// Organisations and projects that Selorin team members have worked on (from team experience).
-// Shown as text wordmarks: no third-party logo files are used until Selorin confirms the right to use them.
-export const ORGANISATIONS: { en: string; ar: string }[] = [
-  { en: "King Khalid International Airport", ar: "مطار الملك خالد الدولي" },
-  { en: "Sports Boulevard", ar: "المسار الرياضي" },
-  { en: "Rabigh Power Plant", ar: "محطة رابغ لتوليد الطاقة" },
-  { en: "Saudi Tabreed", ar: "تبريد السعودية" },
-  { en: "CEER Motors", ar: "سير للسيارات" },
-  { en: "Amazon", ar: "أمازون" },
-  { en: "TotalEnergies", ar: "توتال إنرجيز" },
-  { en: "Hassan Allam", ar: "حسن علام" },
-  { en: "NADEC", ar: "نادك" },
-  { en: "Jazan University", ar: "جامعة جازان" },
-  { en: "Al-Omair Contracting", ar: "العمير للمقاولات" },
-  { en: "Sama Industrial City", ar: "مدينة سما الصناعية" },
-  { en: "Cairo International Airport", ar: "مطار القاهرة الدولي" },
-  { en: "Marsa Alam International Airport", ar: "مطار مرسى علم الدولي" },
-  { en: "Al Hayat National Hospital", ar: "مستشفى الحياة الوطني" },
-  { en: "Al Aziziyah Children's Hospital", ar: "مستشفى العزيزية للأطفال" },
-  { en: "Mental Health Hospital", ar: "مستشفى الصحة النفسية" },
-  { en: "Doha Poultry", ar: "الدوحة للدواجن" },
-  { en: "Al-Khumasia Poultry", ar: "الخماسية للدواجن" },
-];

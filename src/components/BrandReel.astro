@@ -1,0 +1,39 @@
+---
+// Four short brand films (4:5, silent). They load nothing until near the viewport, then
+// autoplay muted in a loop while visible; reduced-motion users get the poster frame only.
+import type { Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const films = [
+  { file: "brand-nature-progress", label: ar ? "حيث تلتقي الطبيعة بالتقدّم" : "Where nature meets progress" },
+  { file: "brand-engineering", label: ar ? "هندسة مستقبل أذكى" : "Engineering a smarter future" },
+  { file: "brand-intelligent-systems", label: ar ? "أنظمة ذكية لمستقبل مستدام" : "Intelligent systems for sustainable futures" },
+  { file: "brand-identity", label: ar ? "هوية مستوحاة من الطبيعة" : "An identity built around nature" },
+];
+---
+<div class="reel" data-reel>
+  {films.map((f) => (
+    <figure class="reel-item">
+      <video muted loop playsinline preload="none" poster={`/media/${f.file}.webp`} data-src={`/media/${f.file}`} aria-label={f.label}></video>
+      <figcaption>{f.label}</figcaption>
+    </figure>
+  ))}
+</div>
+<script>
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const videos = document.querySelectorAll<HTMLVideoElement>("[data-reel] video");
+  const ext = document.createElement("video").canPlayType('video/mp4; codecs="avc1.4D401E"') ? "mp4" : "webm";
+  if (!reduce && "IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        const v = e.target as HTMLVideoElement;
+        if (e.isIntersecting) {
+          if (!v.src) v.src = `${v.dataset.src}.${ext}`;
+          v.play().catch(() => {});
+        } else v.pause();
+      }
+    }, { rootMargin: "200px 0px", threshold: 0.25 });
+    videos.forEach((v) => io.observe(v));
+  }
+</script>

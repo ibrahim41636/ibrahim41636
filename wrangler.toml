@@ -4,6 +4,10 @@
 name = "ibrahim41636"
 main = "worker/index.ts"
 compatibility_date = "2026-09-01"
+# Keep the *.workers.dev URL and per-version preview URLs on (used for checks before
+# selorin.co is active); custom domains are added in the dashboard.
+workers_dev = true
+preview_urls = true
 
 # Workers Builds runs `npx wrangler deploy`, which runs this build first.
 [build]

@@ -118,18 +118,6 @@ const how = ar
     </div>
   </section>
 
-  <section class="section-tight bg-white border-top" aria-labelledby="h-orgs">
-    <div class="container">
-      <div class="section-head" style="margin-bottom:var(--space-5)">
-        <div>
-          <p class="eyebrow">{ar ? "عملاؤنا" : "Our clients"}</p>
-          <h2 id="h-orgs">{ar ? "جهات نعتز بخدمتها" : "Organisations we support"}</h2>
-        </div>
-      </div>
-    </div>
-    <OrgMarquee lang={lang} label={ar ? "شعارات عملائنا" : "Client logos"} />
-  </section>
-
   <section class="section" id="services">
     <div class="container">
       <div class="section-head">
@@ -307,6 +295,18 @@ const how = ar
       </div>
     </section>
   )}
+
+  <section class="section-tight bg-white border-top" aria-labelledby="h-orgs">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:var(--space-5)">
+        <div>
+          <p class="eyebrow">{ar ? "عملاؤنا" : "Our clients"}</p>
+          <h2 id="h-orgs">{ar ? "جهات نعتز بخدمتها" : "Organisations we support"}</h2>
+        </div>
+      </div>
+    </div>
+    <OrgMarquee lang={lang} label={ar ? "شعارات عملائنا" : "Client logos"} />
+  </section>
 
   <CtaBand title={ar ? "ناقش متطلبات مشروعك مع مختص بيئي" : "Discuss your project with an environmental specialist"}
     body={ar ? "أخبرنا عن موقعك وأنشطتك والمرحلة التي يمر بها مشروعك، وسنوضح لك المتطلبات المنطبقة والخطوات التالية." : "Tell us about your site, activities and project stage. We will clarify the applicable requirements and the next steps."}

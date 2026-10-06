@@ -1,5 +1,4 @@
 ---
-import { pageImage } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import CtaBand from "@/components/CtaBand.astro";
@@ -35,7 +34,7 @@ const how = ar
   : [["Inquiry", "Contact us with a short description of your project or need."], ["Scope review", "An environmental specialist reviews requirements and defines what is actually needed."], ["Proposal", "You receive a proposal with scope, deliverables and schedule."], ["Delivery", "We carry out the work with regular updates and one point of contact."], ["Handover & follow-up", "We hand over deliverables and follow up on authority comments."]];
 ---
 <Base lang={lang} path="/about/" title={c.title} description={c.desc} breadcrumbs={crumbs} schema={[{ "@type": "AboutPage", mainEntity: { "@id": "https://selorin.co/#organization" } }, ...TEAM.map((m) => ({ "@type": "Person", "@id": `https://selorin.co/about/#${m.id}`, name: m.name[lang], jobTitle: m.focus[lang], description: m.bio[lang], worksFor: { "@id": "https://selorin.co/#organization" } }))]} analytics={{ page_type: "about" }}>
-  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.about")} title={c.h1} lead={c.lead} photo={pageImage("about")} />
+  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.about")} title={c.h1} lead={c.lead} image="/images/hq.jpg" />
   <nav class="bg-white border-top" aria-label={ar ? "أقسام الصفحة" : "On this page"} style="padding-block:16px">
     <div class="container" style="display:flex;flex-wrap:wrap;gap:8px">
       {[["who", ar ? "من نحن" : "Who we are"], ["approach", ar ? "منهجيتنا" : "Our approach"], ["expertise", ar ? "خبراتنا" : "Our expertise"], ["team", ar ? "الكادر الفني" : "Our team"], ["values", ar ? "قيمنا" : "Our values"], ["commitment", ar ? "التزامنا" : "Our commitment"], ["saudi", ar ? "فهم السوق السعودي" : "Saudi market understanding"], ["how", ar ? "كيف نعمل" : "How we work"]].map(([id, l]) => <a class="pill" href={`#${id}`} style="text-decoration:none;padding:8px 14px">{l}</a>)}
@@ -47,15 +46,12 @@ const how = ar
     <div class="grid grid-3">{categories.map((cat) => <article class="card"><span class="icon"><Icon name={cat.icon} /></span><h3><a class="card-link" href={href(lang, `/services/${cat.id}/`)} style="text-decoration:none">{cat.name[lang]}</a></h3><p>{cat.summary[lang]}</p></article>)}</div>
 </div></section>
   <section class="section bg-paper-2" id="team"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "الكادر الفني" : "Technical team"}</p><h2>{ar ? "الفريق الذي يقف خلف مشاريعنا" : "The team behind our projects"}</h2></div><p class="lead">{ar ? `خبرة الشركة تمتد إلى ${COMPANY.yearsExperience} سنوات، وتضاف إليها الخبرات الفردية لأعضاء فريقنا في قطاعات متعددة.` : `Selorin brings ${COMPANY.yearsExperience} years of company experience, built on the individual experience of our team members across several sectors.`}</p></div>
-    <div class="team">{TEAM.map((m) => (
-      <article class="member" id={m.id}>
+    <div class="grid grid-4">{TEAM.map((m) => (
+      <article class="card team-card" id={m.id}>
         <span class="avatar" aria-hidden="true">{m.initials[lang]}</span>
-        <div>
-          <h3>{m.name[lang]}</h3>
-          <p class="focus">{m.focus[lang]}</p>
-          <p>{m.bio[lang]}</p>
-          {m.highlights && <><p style="margin-top:16px;font-weight:600">{ar ? "من أبرز الجهات والمشاريع التي شارك فيها:" : "Selected organisations and projects:"}</p><ul class="tags" lang="en" dir="ltr">{m.highlights.map((h) => <li>{h}</li>)}</ul></>}
-        </div>
+        <h3>{m.name[lang]}</h3>
+        <p class="focus">{m.focus[lang]}</p>
+        <p>{m.bio[lang]}</p>
       </article>
     ))}</div></div></section>
   <section class="section bg-ink on-dark" id="values"><div class="container"><div class="section-head"><div><p class="eyebrow">{ar ? "قيمنا" : "Our values"}</p><h2 style="color:#fff">{ar ? "كيف نعمل مع عملائنا" : "How we work with clients"}</h2></div></div><div class="grid grid-4">{values.map(([h, p]) => <div class="card"><h3>{h}</h3><p>{p}</p></div>)}</div></div></section>

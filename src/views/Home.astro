@@ -250,10 +250,10 @@ const how = ar
       </div>
       <div class="grid grid-4">
         {TEAM.map((m) => (
-          <article class="card reveal">
-            <span class="avatar" aria-hidden="true" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-forest);color:var(--c-mint);font-weight:600;margin-bottom:16px">{m.initials[lang]}</span>
+          <article class="card team-card reveal">
+            <span class="avatar" aria-hidden="true">{m.initials[lang]}</span>
             <h3>{m.name[lang]}</h3>
-            <p style="color:var(--c-forest-2);font-weight:600;margin-bottom:8px">{m.focus[lang]}</p>
+            <p class="focus">{m.focus[lang]}</p>
             <p>{m.bio[lang]}</p>
           </article>
         ))}

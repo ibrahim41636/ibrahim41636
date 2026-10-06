@@ -18,6 +18,8 @@ directory = "./dist"
 binding = "ASSETS"
 html_handling = "auto-trailing-slash"
 not_found_handling = "404-page"
+# Run the Worker before assets so www.selorin.co → selorin.co is a single 301 for every path.
+run_worker_first = true
 
 [observability]
 enabled = true

@@ -85,10 +85,9 @@ const PAGE: Record<string, Key> = {
   services: "windFarm",
   industries: "refinery",
   insights: "monitoringStation",
-  projects: "fieldTeam",
-  contact: "office",
+  projects: "windFarm",
+  contact: "windHills",
   request: "handheld",
-  about: "hq",
 };
 
 export const categoryImage = (id: string) => IMAGES[CATEGORY[id] ?? "landscape"];

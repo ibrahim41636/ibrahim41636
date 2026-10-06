@@ -617,9 +617,3 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .intro.is-handoff .intro-video { opacity: 0; }
 .intro.is-flying { background-color: rgba(0, 53, 29, 0); pointer-events: none; }
 
-/* Brand films (BrandReel.astro) */
-.reel { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-4); }
-.reel-item { margin: 0; }
-.reel-item video { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius-lg); background: var(--c-forest-deep); }
-.reel-item figcaption { margin-top: var(--space-3); font-size: var(--fs-14); color: var(--c-muted); }
-@media (max-width: 960px) { .reel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

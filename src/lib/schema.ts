@@ -3,6 +3,10 @@
 import { site, href, type Lang } from "@/i18n/ui";
 
 const ORG_ID = `${site.url}/#organization`;
+// Primary market first: Saudi Arabia, then the other GCC states.
+const GCC = [["SA", "Saudi Arabia"], ["AE", "United Arab Emirates"], ["KW", "Kuwait"], ["QA", "Qatar"], ["BH", "Bahrain"], ["OM", "Oman"]] as const;
+const AREA_SERVED = GCC.map(([code, name]) => ({ "@type": "Country", name, identifier: code }));
+
 const abs = (lang: Lang, path: string) => new URL(href(lang, path), site.url).toString();
 
 export interface Crumb { name: string; path: string }
@@ -13,22 +17,25 @@ export function organizationSchema() {
     "@type": ["Organization", "ProfessionalService"],
     "@id": ORG_ID,
     name: site.name.en,
+    legalName: "Selorin Company",
+    identifier: { "@type": "PropertyValue", propertyID: "SA Unified National Number", value: "7054829457" },
     alternateName: [site.name.ar, "Selorin"],
     url: site.url,
     logo: { "@type": "ImageObject", url: `${site.url}/icons/selorin-mark.svg` },
     image: `${site.url}/images/og-default.jpg`,
-    description: "Environmental advisory and services firm in Saudi Arabia providing environmental permitting and compliance, environmental impact assessment, environmental monitoring, waste management and sustainability advisory.",
+    description: "Environmental advisory and services firm in Saudi Arabia serving the GCC, providing environmental permitting and compliance, environmental impact assessment, environmental monitoring, waste management and sustainability advisory.",
     email: site.email,
     telephone: site.phone,
     address: { "@type": "PostalAddress", addressCountry: "SA" },
-    areaServed: { "@type": "Country", name: "Saudi Arabia" },
+    location: { "@type": "Place", address: { "@type": "PostalAddress", addressCountry: "SA" } },
+    areaServed: AREA_SERVED,
     knowsLanguage: ["en", "ar"],
     knowsAbout: [
       "Environmental permitting", "Environmental compliance", "Environmental impact assessment", "Environmental monitoring",
       "Air quality monitoring", "Dust monitoring", "VOC monitoring", "Noise monitoring", "Water quality monitoring",
       "Waste management", "Circular economy", "ESG", "Greenhouse gas accounting", "Net zero", "Life cycle assessment", "Green buildings",
     ],
-    contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: site.email, telephone: site.phone, areaServed: "SA", availableLanguage: ["English", "Arabic"] }],
+    contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: site.email, telephone: site.phone, areaServed: GCC.map(([code]) => code), availableLanguage: ["English", "Arabic"] }],
     ...(sameAs.length ? { sameAs } : {}),
   };
 }
@@ -53,7 +60,7 @@ export function serviceSchema(lang: Lang, s: { slug: string; name: string; descr
     description: s.description,
     category: s.category,
     provider: { "@id": ORG_ID },
-    areaServed: { "@type": "Country", name: "Saudi Arabia" },
+    areaServed: AREA_SERVED,
     audience: s.industries.map((n) => ({ "@type": "BusinessAudience", audienceType: n })),
     url: abs(lang, `/services/${s.slug}/`),
     inLanguage: lang,

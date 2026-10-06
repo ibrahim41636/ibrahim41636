@@ -20,7 +20,7 @@ npm install
 npm run dev            # local dev server (http://localhost:4321)
 npm test               # unit tests (forms, lead email, uploads, RTL)
 npm run build          # type-check + build to dist/
-npx wrangler pages dev dist   # run the site WITH the /api/request function locally
+npx wrangler dev              # build + run the site WITH the /api/request endpoint locally
                               # (.dev.vars sets EMAIL_DRY_RUN=true → emails are printed, not sent)
 node scripts/validate-content.mjs services     # content QA (schema, lengths, banned hype words)
 ```

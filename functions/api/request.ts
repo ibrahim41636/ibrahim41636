@@ -6,7 +6,7 @@ import { validate, type FormKind, type Values } from "../../src/lib/forms";
 import { buildLead, confirmationEmail, emailHtml, emailSubject, emailText, formatLeadId, type Lead } from "../../src/lib/lead";
 import { checkUploads, type CheckedFile } from "../../src/lib/uploads";
 
-interface Env {
+export interface Env {
   SALES_EMAIL?: string; // default sales@selorin.co
   MAIL_FROM?: string; // e.g. "Selorin Website <website@selorin.co>" — domain must be verified with the provider
   RESEND_API_KEY?: string;
@@ -30,7 +30,7 @@ function originAllowed(request: Request, env: Env) {
   if (!origin) return false;
   const allowed = (env.ALLOWED_ORIGINS ?? "https://selorin.co,https://www.selorin.co").split(",").map((s) => s.trim());
   const url = new URL(origin);
-  return allowed.includes(origin) || url.hostname.endsWith(".pages.dev") || url.hostname === "localhost" || url.hostname === "127.0.0.1";
+  return allowed.includes(origin) || url.hostname.endsWith(".pages.dev") || url.hostname.endsWith(".workers.dev") || url.hostname === "localhost" || url.hostname === "127.0.0.1";
 }
 
 async function sha256(s: string) {
@@ -115,7 +115,8 @@ function respond(request: Request, status: number, body: Record<string, unknown>
   return new Response(`Your request could not be sent (${body.error}). Please go back and check the form, or email sales@selorin.co.`, { status, headers: { "content-type": "text/plain; charset=utf-8" } });
 }
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
+// Shared by the Worker entry (worker/index.ts) and the Pages Functions export below.
+export async function handleRequestPost(request: Request, env: Env, waitUntil: (p: Promise<unknown>) => void): Promise<Response> {
   if (!originAllowed(request, env)) return json(403, { ok: false, error: "forbidden_origin" });
   const length = Number(request.headers.get("content-length") ?? 0);
   if (length > MAX_BODY) return json(413, { ok: false, error: "too_large" });
@@ -181,6 +182,9 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   // If email failed and there is no database copy either, the lead would be lost: tell the user.
   if (!delivered && !env.DB) return respond(request, 502, { ok: false, error: "delivery", lang });
   return respond(request, 200, { ok: true, requestId: leadId, lang });
-};
+}
 
-export const onRequest: PagesFunction<Env> = async () => json(405, { ok: false, error: "method_not_allowed" });
+export const methodNotAllowed = () => json(405, { ok: false, error: "method_not_allowed" });
+
+export const onRequestPost: PagesFunction<Env> = ({ request, env, waitUntil }) => handleRequestPost(request, env, waitUntil);
+export const onRequest: PagesFunction<Env> = async () => methodNotAllowed();

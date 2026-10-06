@@ -1,7 +1,22 @@
-# Cloudflare Pages project configuration (static site + /functions).
-name = "selorin-website"
-pages_build_output_dir = "dist"
+# Cloudflare Worker with static assets: the Astro build (dist/) plus the form endpoint
+# POST /api/request (worker/index.ts → functions/api/request.ts).
+# `name` must match the Worker's name in the Cloudflare dashboard (Workers Builds checks it).
+name = "ibrahim41636"
+main = "worker/index.ts"
 compatibility_date = "2026-09-01"
+
+# Workers Builds runs `npx wrangler deploy`, which runs this build first.
+[build]
+command = "npm run build"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
+
+[observability]
+enabled = true
 
 [vars]
 SALES_EMAIL = "sales@selorin.co"
@@ -9,7 +24,8 @@ MAIL_FROM = "Selorin Website <website@selorin.co>"
 ALLOWED_ORIGINS = "https://selorin.co,https://www.selorin.co"
 SEND_CONFIRMATION = "true"
 
-# Secrets (set with `npx wrangler pages secret put NAME`): RESEND_API_KEY, TURNSTILE_SECRET,
+# Secrets (dashboard → Worker → Settings → Variables and Secrets, type "Secret", or
+# `npx wrangler secret put NAME`): RESEND_API_KEY, TURNSTILE_SECRET,
 # and optionally LEAD_WEBHOOK_URL / LEAD_WEBHOOK_SECRET.
 
 # Lead log + sequential request IDs + rate limiting. Create with:

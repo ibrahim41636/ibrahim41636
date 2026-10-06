@@ -15,6 +15,7 @@
   },
   "include": [
     "./**/*.ts",
+    "../worker/**/*.ts",
     "../src/lib/forms.ts",
     "../src/lib/lead.ts",
     "../src/lib/uploads.ts"

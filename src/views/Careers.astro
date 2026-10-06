@@ -1,0 +1,73 @@
+---
+import { IMAGES } from "@/data/imagery";
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import RequestForm from "@/components/RequestForm.astro";
+import Icon from "@/components/Icon.astro";
+import { CAREER_AREAS } from "@/lib/forms";
+import { href, t, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const careersLabel = ar ? "الوظائف" : "Careers";
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: careersLabel, path: "/careers/" }];
+const why = ar
+  ? [
+      ["مشاريع حقيقية ومتنوعة", "تعمل على متطلبات بيئية فعلية لمنشآت ومشاريع في قطاعات الإنشاء والصناعة والطاقة والتطوير العقاري وغيرها."],
+      ["بين المكتب والميدان", "تجمع أعمالنا بين الدراسات وإعداد التقارير من جهة، والرصد والقياس في المواقع من جهة أخرى."],
+      ["فريق متعدد التخصصات", "تعمل جنباً إلى جنب مع مختصين في الاستشارات البيئية والهندسة وإدارة المخلفات والطاقة المتجددة."],
+      ["أثر يمكن قياسه", "تسهم في مساعدة المشاريع على النمو دون أن تتحمل البيئة الثمن، وبقرارات مبنية على بيانات موثوقة."],
+    ]
+  : [
+      ["Real, varied projects", "Work on real environmental requirements for facilities and projects across construction, industry, energy, real estate and more."],
+      ["Office and field", "Our work combines studies and reporting with monitoring and measurement on site."],
+      ["A multidisciplinary team", "Work alongside specialists in environmental consulting, engineering, waste management and renewable energy."],
+      ["Measurable impact", "Help projects grow without the environment paying the price, through decisions based on reliable data."],
+    ];
+const steps = ar
+  ? [["أرسل طلبك", "عبّئ النموذج وأرفق سيرتك الذاتية."], ["المراجعة", "يراجع فريقنا خبراتك مقارنةً باحتياجات المشاريع الحالية والقادمة."], ["المقابلة", "نتواصل مع المرشحين المناسبين لترتيب مقابلة."], ["الانضمام", "نتفق على الدور وموعد البدء."]]
+  : [["Apply", "Complete the form and attach your CV."], ["Review", "Our team reviews your experience against current and upcoming project needs."], ["Interview", "We contact shortlisted candidates to arrange an interview."], ["Join", "We agree the role and your start date."]];
+---
+<Base lang={lang} path="/careers/" breadcrumbs={crumbs}
+  title={ar ? "الوظائف | انضم إلى فريق سيلورين" : "Careers | Join the Selorin team"}
+  description={ar ? "انضم إلى سيلورين للاستشارات والخدمات البيئية في المملكة العربية السعودية. قدّم طلبك في الاستشارات البيئية والرصد والاستدامة وإدارة المخلفات والطاقة المتجددة." : "Join Selorin Environmental Advisory & Services in Saudi Arabia. Apply for roles in environmental consulting, monitoring, sustainability, waste management and renewable energy."}
+  analytics={{ page_type: "careers" }}>
+  <PageHero lang={lang} crumbs={crumbs} photo={IMAGES.fieldTeam} eyebrow={careersLabel}
+    title={ar ? "انضم إلى فريق سيلورين" : "Join the Selorin team"}
+    lead={ar ? "نبحث عن مختصين يجمعون بين الدقة الفنية والاهتمام الحقيقي بالبيئة، للعمل على مشاريع تُحدث فرقاً في المملكة." : "We are looking for people who combine technical precision with genuine care for the environment, to work on projects that make a difference in Saudi Arabia."}>
+    <div class="actions"><a class="btn btn--light" href="#apply" data-cta="careers_hero_apply">{ar ? "قدّم الآن" : "Apply now"} <Icon name="arrow" class="arrow" /></a></div>
+  </PageHero>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">{ar ? "لماذا سيلورين" : "Why Selorin"}</p><h2>{ar ? "بيئة عمل تُبنى على الخبرة والأثر" : "Work built on expertise and impact"}</h2></div></div>
+      <div class="grid grid-4">{why.map(([h, p], i) => <div class="card"><span class="card-num">0{i + 1}</span><h3>{h}</h3><p>{p}</p></div>)}</div>
+    </div>
+  </section>
+
+  <section class="section bg-white border-top">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">{ar ? "مجالات العمل" : "Where you could work"}</p><h2>{ar ? "المجالات التي نستقبل فيها الطلبات" : "Areas we recruit for"}</h2></div><p class="lead">{ar ? "نستقبل طلبات التوظيف على مدار العام، ونتواصل مع المرشحين عند توفر فرصة تناسب خبراتهم." : "We accept applications all year round and contact candidates when an opportunity matches their experience."}</p></div>
+      <ul class="area-list">{CAREER_AREAS.filter((a) => a.value !== "other").map((a) => <li><Icon name="check" /><span>{a[lang]}</span></li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">{ar ? "آلية التقديم" : "How it works"}</p><h2>{ar ? "من الطلب إلى الانضمام" : "From application to joining"}</h2></div></div>
+      <ol class="steps" style="list-style:none;padding:0">{steps.map(([h, p]) => <li class="step"><h3>{h}</h3><p>{p}</p></li>)}</ol>
+    </div>
+  </section>
+
+  <section class="section bg-paper-2" id="apply">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">{ar ? "التقديم" : "Apply"}</p>
+        <h2>{ar ? "قدّم طلبك للانضمام" : "Send your application"}</h2>
+        <p class="lead">{ar ? "أخبرنا عن خبراتك والمجال الذي تتطلع إلى العمل فيه، وأرفق سيرتك الذاتية." : "Tell us about your experience and the area you would like to work in, and attach your CV."}</p>
+        <p class="muted" style="font-size:var(--fs-14)">{ar ? "نعالج بيانات المتقدمين لغرض تقييم طلبات التوظيف فقط، وفق " : "We process applicant data only to assess applications, as described in our "}<a href={href(lang, "/legal/privacy/")}>{t(lang, "form.privacy")}</a>.</p>
+      </div>
+      <RequestForm lang={lang} kind="careers" />
+    </div>
+  </section>
+</Base>

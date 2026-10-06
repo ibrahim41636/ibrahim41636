@@ -1,25 +1,23 @@
 ---
 title: "Terms of use"
 description: "The terms that govern your use of selorin.co, including website content, form submissions, intellectual property and limitation of liability."
-updated: 2026-10-05
+updated: 2026-10-06
 translationKey: terms
 ---
-
-> **Draft pending legal review.** These terms are a working draft prepared for review by qualified legal counsel. They are not final and may change before publication. Items marked `[CONTENT REQUIRED: …]` must be completed and verified.
 
 These terms of use govern your access to and use of https://selorin.co (the "website"), operated by Selorin Environmental Advisory & Services ("Selorin", "we", "us"). By using the website, you agree to these terms. If you do not agree, please do not use the website.
 
 ## 1. About us
 
-- **Legal entity:** [CONTENT REQUIRED: registered legal name of the entity]
-- **Commercial Registration (CR) number:** [CONTENT REQUIRED: CR number]
-- **Registered address:** [CONTENT REQUIRED: registered address]
+- **Legal entity:** Selorin Company (شركة سيلورين), a single-person holding limited liability company
+- **Commercial Registration (Unified National Number):** 7054829457
+- **Address:** Kingdom of Saudi Arabia
 - **Email:** sales@selorin.co
 - **Phone:** +966 53 430 2332
 
 ## 2. Purpose of the website
 
-The website provides general information about Selorin and its environmental advisory and services, and allows you to contact us and submit service requests. It is available in English and Arabic. If there is any inconsistency between the two language versions of these terms, [CONTENT REQUIRED: which language version prevails].
+The website provides general information about Selorin and its environmental advisory and services, and allows you to contact us and submit service requests. It is available in English and Arabic. If there is any inconsistency between the two language versions of these terms, the Arabic version prevails.
 
 ## 3. Information on the website is not professional advice
 
@@ -77,15 +75,13 @@ To the extent permitted by applicable law:
 
 Nothing in these terms limits or excludes liability that cannot be limited or excluded under applicable law.
 
-[CONTENT REQUIRED: legal review of the limitation of liability wording under Saudi law]
-
 ## 10. Changes to these terms
 
 We may update these terms from time to time. The date at the top of this page shows when they were last updated. Your continued use of the website after changes are published means you accept the updated terms.
 
 ## 11. Governing law and disputes
 
-These terms are governed by the laws of the Kingdom of Saudi Arabia. Any dispute arising from or in connection with these terms or the use of the website will be subject to the jurisdiction of [CONTENT REQUIRED: competent courts or dispute resolution forum, and city].
+These terms are governed by the laws of the Kingdom of Saudi Arabia. Any dispute arising from or in connection with these terms or the use of the website will be subject to the jurisdiction of the competent courts of the Kingdom of Saudi Arabia.
 
 ## 12. Contact us
 
@@ -93,4 +89,4 @@ For questions about these terms:
 
 - **Email:** sales@selorin.co
 - **Phone:** +966 53 430 2332
-- **Address:** [CONTENT REQUIRED: registered address]
+- **Address:** Kingdom of Saudi Arabia

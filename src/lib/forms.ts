@@ -423,11 +423,35 @@ export function validateField(field: Field, raw: string | string[] | undefined):
   }
 }
 
-export type FormKind = "request" | "contact";
+export type FormKind = "request" | "contact" | "careers";
+
+/** Areas candidates can apply for on the careers page. */
+export const CAREER_AREAS: Option[] = [
+  o("environmental-consulting", "Environmental consulting & permitting", "الاستشارات والتصاريح البيئية"),
+  o("environmental-studies", "Environmental studies & EIA", "الدراسات البيئية وتقييم الأثر"),
+  o("field-monitoring", "Field monitoring & measurement", "الرصد والقياس الميداني"),
+  o("waste-management", "Waste management & circular economy", "إدارة المخلفات والاقتصاد الدائري"),
+  o("sustainability-esg", "Sustainability, ESG & climate", "الاستدامة والحوكمة والمناخ"),
+  o("renewable-energy", "Renewable energy & engineering", "الطاقة المتجددة والهندسة"),
+  o("business-development", "Business development & project management", "تطوير الأعمال وإدارة المشاريع"),
+  o("other", "Other", "أخرى"),
+];
+
+const CAREERS_FIELDS: Field[] = [
+  { ...COMMON.contactName, label: { en: "Full name", ar: "الاسم الكامل" } },
+  { ...COMMON.email, label: { en: "Email", ar: "البريد الإلكتروني" } },
+  COMMON.phone,
+  { ...COMMON.location, label: { en: "City of residence", ar: "مدينة الإقامة" } },
+  { name: "careerArea", type: "select", required: true, label: { en: "Area of interest", ar: "المجال الذي تتقدّم له" }, options: CAREER_AREAS },
+  { name: "experience", type: "number", required: true, min: 0, max: 50, label: { en: "Years of experience", ar: "سنوات الخبرة" } },
+  { name: "linkedin", type: "text", maxLength: 300, autocomplete: "url", label: { en: "LinkedIn profile", ar: "حسابك على لينكد إن" } },
+  { ...COMMON.message, required: false, label: { en: "About you", ar: "نبذة عنك" }, hint: { en: "Your background, qualifications and the kind of work you are looking for.", ar: "خلفيتك ومؤهلاتك ونوع العمل الذي تبحث عنه." } },
+];
 
 /** Full field list for a submission, in display order. */
 export function fieldsFor(kind: FormKind, serviceSlug: string | undefined): Field[] {
   const serviceField: Field = { ...COMMON.service, options: [...Object.entries(SERVICES).map(([v, s]) => o(v, s.en, s.ar)), o("other", "Other / not sure", "أخرى / غير متأكد")] };
+  if (kind === "careers") return CAREERS_FIELDS;
   if (kind === "contact") {
     return [COMMON.contactName, COMMON.company, COMMON.email, COMMON.phone, { ...serviceField, required: false }, COMMON.message];
   }

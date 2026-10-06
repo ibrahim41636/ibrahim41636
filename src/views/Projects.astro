@@ -4,7 +4,7 @@ import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import Icon from "@/components/Icon.astro";
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import { href, t, type Lang } from "@/i18n/ui";
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -14,7 +14,6 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.p
 const engagementTypes = ar
   ? [["ملفات التصاريح البيئية", "تجهيز ملفات تصاريح الإنشاء والتشغيل والتجديد ومتابعة ملاحظات الجهات المختصة.", "environmental-permitting"], ["برامج الرصد الميداني", "تصميم شبكات رصد الغبار وجودة الهواء والضوضاء وتشغيلها وإعداد تقاريرها.", "environmental-monitoring"], ["دراسات تقييم الأثر البيئي", "دراسات خط الأساس وتقييم الآثار وخطط الإدارة البيئية للمشاريع الجديدة.", "environmental-impact-assessment"], ["رصد VOC لمحطات الوقود", "توريد وتركيب ومعايرة أنظمة الرصد الثابت للمركبات العضوية المتطايرة.", "fuel-station-voc-monitoring"], ["الجاهزية للتفتيش", "تدقيق ما قبل التفتيش وخطط الإجراءات التصحيحية وتنظيم السجلات.", "environmental-compliance"], ["حصر الانبعاثات والإفصاح", "جرد غازات الاحتباس الحراري وإعداد بيانات الإفصاح البيئي والاجتماعي.", "ghg-carbon-accounting"]]
   : [["Environmental permit applications", "Preparing construction, operation and renewal permit files and following up on authority comments.", "environmental-permitting"], ["Field monitoring programmes", "Designing, running and reporting dust, air quality and noise monitoring networks.", "environmental-monitoring"], ["Environmental impact assessments", "Baseline studies, impact assessment and environmental management plans for new projects.", "environmental-impact-assessment"], ["Fuel station VOC monitoring", "Supplying, installing and calibrating fixed continuous VOC monitoring systems.", "fuel-station-voc-monitoring"], ["Inspection readiness", "Pre-inspection audits, corrective action plans and organised environmental records.", "environmental-compliance"], ["GHG inventories and disclosure", "Greenhouse gas inventories and data preparation for ESG disclosure.", "ghg-carbon-accounting"]];
-const template = await getEntry("projects", "case-study-template");
 ---
 <Base lang={lang} path="/projects/" breadcrumbs={crumbs}
   title={ar ? "المشاريع ودراسات الحالة | سيلورين" : "Projects & Case Studies | Selorin"}
@@ -25,12 +24,7 @@ const template = await getEntry("projects", "case-study-template");
     lead={ar ? "نعرض دراسات الحالة بموافقة عملائنا، مع توضيح النطاق والتحدي والمنهجية والمخرجات." : "We publish case studies with our clients' approval, setting out scope, challenge, approach and deliverables."} />
   <section class="section">
     <div class="container">
-      {projects.length === 0 ? (
-        <div class="placeholder-note mb-6">
-          <b>[CONTENT REQUIRED]</b> {ar ? "لا توجد دراسات حالة منشورة بعد. أضف المشاريع الحقيقية (باسم العميل أو بصيغة مجهّلة) لتظهر هنا تلقائياً." : "No case studies are published yet. Add real projects (named or anonymised) and they will appear here automatically."}
-          {template && <> <a href={href(lang, "/projects/case-study-template/")}>{ar ? "معاينة قالب دراسة الحالة" : "Preview the case study template"}</a></>}
-        </div>
-      ) : (
+      {projects.length > 0 && (
         <div class="grid grid-3 mb-6">
           {projects.map((p) => (
             <article class="card"><p class="meta"><span class="tag">{p.data[lang].clientType}</span><span>{p.data[lang].location}</span></p>
@@ -38,7 +32,7 @@ const template = await getEntry("projects", "case-study-template");
           ))}
         </div>
       )}
-      <div class="section-head mt-7"><div><p class="eyebrow">{ar ? "نوعية التكليفات" : "Types of engagement"}</p><h2>{ar ? "ما الذي نعمل عليه عادةً" : "What we typically work on"}</h2></div><p class="lead">{ar ? "أمثلة على نطاقات العمل، وليست دراسات حالة لعملاء محددين." : "Examples of engagement scopes — not case studies of specific clients."}</p></div>
+      <div class:list={["section-head", { "mt-7": projects.length > 0 }]}><div><p class="eyebrow">{ar ? "نوعية التكليفات" : "Types of engagement"}</p><h2>{ar ? "ما الذي نعمل عليه عادةً" : "What we typically work on"}</h2></div><p class="lead">{ar ? "أمثلة على نطاقات العمل، وليست دراسات حالة لعملاء محددين." : "Examples of engagement scopes — not case studies of specific clients."}</p></div>
       <div class="grid grid-3">
         {engagementTypes.map(([h, p, s]) => (
           <article class="card"><h3>{h}</h3><p>{p}</p><a class="link" href={href(lang, `/services/${s}/`)}>{t(lang, "cta.exploreService")} <Icon name="arrow" /></a></article>

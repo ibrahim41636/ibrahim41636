@@ -14,7 +14,6 @@ export interface Member {
   name: T;
   focus: T; // area of expertise (not a job title)
   bio: T;
-  highlights?: string[]; // proper names, shown as tags (kept in their original form)
 }
 
 export const TEAM: Member[] = [
@@ -37,11 +36,6 @@ export const TEAM: Member[] = [
       en: "Has worked with a number of prominent organisations on demanding, precision-critical projects in Saudi Arabia and Egypt, spanning airports, power generation, district cooling, healthcare, industry and food production.",
       ar: "شارك مع عدة جهات بارزة في مشاريع دقيقة في المملكة العربية السعودية ومصر، تشمل المطارات ومحطات توليد الطاقة وتبريد المناطق والرعاية الصحية والصناعة والإنتاج الغذائي.",
     },
-    highlights: [
-      "King Khalid International Airport (KKIA)", "Sports Boulevard", "Rabigh Power Plant", "Saudi Tabreed", "CEER Motors", "Amazon", "TotalEnergies", "Hassan Allam",
-      "NADEC", "Jazan University", "Al-Omair Contracting", "Sama Industrial City", "Cairo International Airport", "Marsa Alam International Airport",
-      "Al Hayat National Hospital", "Al Aziziyah Children's Hospital", "Mental Health Hospital", "Doha Poultry", "Al-Khumasia Poultry",
-    ],
   },
   {
     id: "sultan-alfadl",

@@ -579,16 +579,11 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .on-dark .stat b { color: var(--c-mint); }
 .on-dark .stat span { color: #c4ccc7; }
 @media (max-width: 760px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.team { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-5); }
-.member { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: var(--space-5); align-items: start; padding: var(--space-6); background: var(--c-white); border: 1px solid var(--c-line); border-radius: var(--radius-lg); }
-.member .avatar { width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; background: var(--c-forest); color: var(--c-mint); font-weight: 600; letter-spacing: .04em; font-family: "Inter Variable", Inter, sans-serif; }
-.member h3 { margin: 0 0 4px; }
-.member .focus { margin: 0 0 var(--space-4); color: var(--c-forest-2); font-weight: 600; font-size: var(--fs-14, 14px); text-transform: uppercase; letter-spacing: .06em; }
-[dir="rtl"] .member .focus { text-transform: none; letter-spacing: 0; }
-.member p { margin: 0; }
-.member .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: var(--space-4) 0 0; padding: 0; list-style: none; }
-.member .tags li { padding: 4px 10px; border-radius: 999px; background: var(--c-paper-2); font-size: 13px; color: var(--c-ink-2); }
-@media (max-width: 860px) { .team { grid-template-columns: 1fr; } .member { grid-template-columns: 1fr; } }
+.team-card { padding: var(--space-5); }
+.team-card .avatar { width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; margin-bottom: var(--space-4); background: var(--c-forest); color: var(--c-mint); font-weight: 600; font-size: var(--fs-14); }
+.team-card h3 { margin: 0 0 4px; font-size: var(--fs-18); }
+.team-card .focus { margin: 0 0 var(--space-3); color: var(--c-forest-2); font-weight: 600; font-size: var(--fs-14); }
+.team-card p:last-child { margin: 0; font-size: var(--fs-14); color: var(--c-muted); }
 
 /* Photo band (Home) */
 .photo-band { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: var(--space-4); }

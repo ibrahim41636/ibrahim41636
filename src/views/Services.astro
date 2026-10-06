@@ -1,4 +1,5 @@
 ---
+import { pageImage } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import ServiceCard from "@/components/ServiceCard.astro";
@@ -19,7 +20,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
   description={ar ? "خدمات سيلورين البيئية: التصاريح والامتثال، وتقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والاستدامة والحوكمة البيئية، والمباني المستدامة." : "Selorin's environmental services: permitting and compliance, EIA, environmental monitoring, waste management, ESG and climate, and sustainable buildings in Saudi Arabia."}
   schema={[collectionSchema(lang, "/services/", t(lang, "nav.services"), services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
   analytics={{ page_type: "services_hub" }}>
-  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.services")}
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("services")} eyebrow={t(lang, "nav.services")}
     title={ar ? "خدمات بيئية مترابطة، من الدراسة إلى الامتثال المستمر" : "Connected environmental services, from first study to ongoing compliance"}
     lead={ar ? "22 خدمة ضمن ستة مجالات، يربط بينها فريق واحد يفهم متطلباتك التنظيمية ويحوّلها إلى مخرجات واضحة." : "22 services across six practice areas, connected by one team that understands your regulatory requirements and turns them into clear deliverables."} />
   <nav class="section-tight bg-white border-top" aria-label={ar ? "المجالات" : "Practice areas"} style="padding-block:20px">

@@ -10,6 +10,9 @@ import { categories, lifecycle, regulators } from "@/data/taxonomy";
 import { getServices, getIndustries, getInsights } from "@/lib/content";
 import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
 import { collectionSchema } from "@/lib/schema";
+import OrgMarquee from "@/components/OrgMarquee.astro";
+import { COMPANY, TEAM } from "@/data/team";
+import { IMAGES } from "@/data/imagery";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -52,6 +55,18 @@ const pillars = ar
       ["Why clients choose us", "Precise understanding of local requirements, clear and defensible deliverables, and a direct line from field data to decisions."],
     ];
 
+const stats = [
+  [`${COMPANY.yearsExperience}`, ar ? "سنوات من الخبرة في الخدمات البيئية" : "years of environmental services experience"],
+  [`${categories.length}`, ar ? "مجالات خدمات مترابطة" : "connected practice areas"],
+  [`${services.length}`, ar ? "خدمة بيئية متخصصة" : "specialist environmental services"],
+  [`${industries.length}`, ar ? "قطاعاً نخدمه في المملكة" : "sectors served across Saudi Arabia"],
+];
+const sectors = [
+  { img: IMAGES.windFarm, id: "energy", kicker: ar ? "الطاقة المتجددة" : "Renewable energy", title: ar ? "مشاريع طاقة نظيفة تبدأ بدراسات بيئية سليمة" : "Clean-energy projects built on sound environmental studies" },
+  { img: IMAGES.openPitMine, id: "mining-quarrying", kicker: ar ? "التعدين والمحاجر" : "Mining & quarrying", title: ar ? "رصد الغبار وضبطه في المواقع المفتوحة" : "Dust monitoring and control on open sites" },
+  { img: IMAGES.refinery, id: "oil-gas", kicker: ar ? "النفط والغاز" : "Oil & gas", title: ar ? "امتثال الانبعاثات والمركبات العضوية المتطايرة" : "Emissions and VOC compliance" },
+];
+
 const how = ar
   ? [["نفهم", "نراجع أنشطتك واشتراطات تصريحك والمخاطر الفعلية في موقعك."], ["نقيّم", "نحدد المتطلبات المنطبقة والفجوات والبيانات اللازمة."], ["ننفّذ", "نُعدّ الدراسات والخطط ونجري القياسات الميدانية."], ["نقدّم", "نجهّز المستندات ونتابع ملاحظات الجهات المختصة."], ["ندعم", "نتابع الامتثال والرصد والتقارير طوال عمر المشروع."]]
   : [["Understand", "We review your activities, permit conditions and the real risks on site."], ["Assess", "We identify applicable requirements, gaps and the data needed."], ["Deliver", "We prepare studies and plans and carry out field measurements."], ["Submit", "We prepare documentation and follow up on authority comments."], ["Support", "We sustain compliance, monitoring and reporting over the project life."]];
@@ -93,6 +108,26 @@ const how = ar
     </div>
   </section>
 
+  <section class="section-tight" aria-labelledby="h-experience">
+    <div class="container">
+      <h2 id="h-experience" class="sr-only">{ar ? "سيلورين في أرقام" : "Selorin at a glance"}</h2>
+      <div class="stats">{stats.map(([n, l]) => <div class="stat reveal"><b>{n}</b><span>{l}</span></div>)}</div>
+    </div>
+  </section>
+
+  <section class="section-tight bg-white border-top" aria-labelledby="h-orgs">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:var(--space-5)">
+        <div>
+          <p class="eyebrow">{ar ? "خبرة فريقنا" : "Our team's track record"}</p>
+          <h2 id="h-orgs">{ar ? "جهات ومشاريع عمل معها فريقنا" : "Organisations and projects our team has worked with"}</h2>
+        </div>
+      </div>
+    </div>
+    <OrgMarquee lang={lang} label={ar ? "جهات ومشاريع عمل معها فريقنا" : "Organisations and projects our team has worked with"} />
+    <div class="container"><p class="small" style="color:var(--c-muted);margin:var(--space-4) 0 0;font-size:var(--fs-14)">{ar ? "تعكس هذه القائمة خبرات أعضاء فريقنا الفنية، والأسماء مملوكة لأصحابها ولا تعني شراكة أو اعتماداً." : "This list reflects the experience of our team members. Names belong to their owners and do not imply partnership or endorsement."}</p></div>
+  </section>
+
   <section class="section" id="services">
     <div class="container">
       <div class="section-head">
@@ -116,6 +151,20 @@ const how = ar
             </article>
           );
         })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" aria-labelledby="h-sectors-visual">
+    <div class="container">
+      <h2 id="h-sectors-visual" class="sr-only">{ar ? "قطاعات رئيسية" : "Key sectors"}</h2>
+      <div class="photo-band">
+        {sectors.map((x) => (
+          <a class="photo-card reveal" href={href(lang, `/industries/${x.id}/`)} data-cta="home_sector_photo">
+            <Picture src={x.img.src} alt={x.img.alt[lang]} width={x.img.width} height={x.img.height} sizes="(max-width: 900px) 100vw, 40vw" />
+            <span class="cap"><small>{x.kicker}</small><b>{x.title}</b></span>
+          </a>
+        ))}
       </div>
     </div>
   </section>
@@ -185,6 +234,28 @@ const how = ar
       <div class="grid grid-4" style="gap:12px">
         {industries.map((ind) => (
           <a class="tile" href={href(lang, `/industries/${ind.id}/`)} data-cta="home_industry_tile"><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} />{ind.data[lang].name}<Icon name="arrow" class="arrow" /></a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-paper-2" id="team">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{ar ? "الكادر الفني" : "Technical team"}</p>
+          <h2>{ar ? "خبرات متكاملة خلف كل مشروع" : "Complementary expertise behind every project"}</h2>
+        </div>
+        <a class="link" href={href(lang, "/about/#team")}>{ar ? "تعرّف على الفريق" : "Meet the team"} <Icon name="arrow" /></a>
+      </div>
+      <div class="grid grid-4">
+        {TEAM.map((m) => (
+          <article class="card reveal">
+            <span class="avatar" aria-hidden="true" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-forest);color:var(--c-mint);font-weight:600;margin-bottom:16px">{m.initials[lang]}</span>
+            <h3>{m.name[lang]}</h3>
+            <p style="color:var(--c-forest-2);font-weight:600;margin-bottom:8px">{m.focus[lang]}</p>
+            <p>{m.bio[lang]}</p>
+          </article>
         ))}
       </div>
     </div>

@@ -111,7 +111,7 @@ function respond(request: Request, status: number, body: Record<string, unknown>
   const wantsJson = request.headers.get("accept")?.includes("application/json");
   if (wantsJson) return json(status, body);
   const lang = body.lang === "ar" ? "/ar" : "";
-  if (status === 200) return Response.redirect(new URL(`${lang}/request/received/?id=${body.requestId}`, request.url).toString(), 303);
+  if (status === 200) return Response.redirect(new URL(`${lang}/${body.kind === "careers" ? "careers" : "request"}/received/?id=${body.requestId}`, request.url).toString(), 303);
   return new Response(`Your request could not be sent (${body.error}). Please go back and check the form, or email sales@selorin.co.`, { status, headers: { "content-type": "text/plain; charset=utf-8" } });
 }
 
@@ -132,13 +132,13 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
     const prev = values[k];
     values[k] = prev === undefined ? v : Array.isArray(prev) ? [...prev, v] : [prev, v];
   }
-  const kind: FormKind = values.kind === "contact" ? "contact" : "request";
+  const kind: FormKind = values.kind === "contact" || values.kind === "careers" ? values.kind : "request";
   const lang = values.lang === "ar" ? "ar" : "en";
 
   // Bots: hidden honeypot field filled, or submitted faster than a human could.
   const startedAt = Number(values.startedAt);
   if (values.website || (startedAt && Date.now() - startedAt < 3000)) {
-    return respond(request, 200, { ok: true, requestId: formatLeadId(new Date().getUTCFullYear(), 0), lang }); // silently drop
+    return respond(request, 200, { ok: true, requestId: formatLeadId(new Date().getUTCFullYear(), 0), lang, kind }); // silently drop
   }
 
   const ip = request.headers.get("cf-connecting-ip") ?? "";
@@ -181,7 +181,7 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
 
   // If email failed and there is no database copy either, the lead would be lost: tell the user.
   if (!delivered && !env.DB) return respond(request, 502, { ok: false, error: "delivery", lang });
-  return respond(request, 200, { ok: true, requestId: leadId, lang });
+  return respond(request, 200, { ok: true, requestId: leadId, lang, kind });
 }
 
 export const methodNotAllowed = () => json(405, { ok: false, error: "method_not_allowed" });

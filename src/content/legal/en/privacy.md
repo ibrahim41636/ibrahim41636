@@ -1,11 +1,9 @@
 ---
 title: "Privacy policy"
 description: "How Selorin collects, uses, shares and protects personal data submitted through selorin.co, and how to exercise your rights under the Saudi PDPL."
-updated: 2026-10-05
+updated: 2026-10-06
 translationKey: privacy
 ---
-
-> **Draft pending legal review.** This policy is a working draft prepared for review by qualified legal counsel. It is not final and may change before publication. Items marked `[CONTENT REQUIRED: …]` must be completed and verified.
 
 This privacy policy explains how Selorin Environmental Advisory & Services ("Selorin", "we", "us") collects, uses, shares and protects personal data when you visit https://selorin.co (the "website") or contact us through it. It applies to the English and Arabic versions of the website.
 
@@ -15,12 +13,12 @@ We process personal data in accordance with the Saudi Personal Data Protection L
 
 The controller responsible for personal data collected through the website is:
 
-- **Legal entity:** [CONTENT REQUIRED: registered legal name of the entity]
-- **Commercial Registration (CR) number:** [CONTENT REQUIRED: CR number]
-- **Registered address:** [CONTENT REQUIRED: registered address]
+- **Legal entity:** Selorin Company (شركة سيلورين), a single-person holding limited liability company
+- **Commercial Registration (Unified National Number):** 7054829457
+- **Address:** Kingdom of Saudi Arabia
 - **Email:** sales@selorin.co
 - **Phone:** +966 53 430 2332
-- **Data protection contact:** [CONTENT REQUIRED: name or role and contact details of the data protection officer or privacy contact]
+- **Data review and protection contact:** Ahmed Fathy, IT@selorin.co
 
 ## 2. Personal data we collect
 
@@ -37,6 +35,10 @@ When you submit a service request or contact form, we collect:
 - Your consent confirmation
 
 Please include in your message and attachments only the information we need to respond to your enquiry. Avoid sending sensitive personal data, or personal data about other people, unless it is necessary and you are entitled to share it.
+
+### Job applicant data
+
+When you apply through the careers page, we collect your full name, email, phone number, city of residence, area of interest, years of experience, LinkedIn profile if you add one, your message, and your CV and any other files you attach. We use this data only to assess your application and to contact you about job opportunities, and we keep it for two years from the date you apply unless you ask us to delete it sooner.
 
 ### Technical information collected with a form submission
 
@@ -55,11 +57,12 @@ If you accept analytics cookies, Google Analytics 4 collects information about h
 
 | Purpose | Data used | Basis for processing |
 |---|---|---|
-| Responding to your enquiry or service request, preparing proposals and following up | Form details and attachments | Your consent and steps taken at your request before entering into a contract [CONTENT REQUIRED: legal review of the processing basis] |
-| Keeping a record of enquiries for follow-up and customer relationship management | Minimal lead record (without attachments) | Your consent / our legitimate interest in managing business enquiries [CONTENT REQUIRED: legal review of the processing basis] |
-| Protecting the website and our forms against spam, abuse and automated submissions | IP address, Cloudflare Turnstile verification result, hidden spam-detection field, submission time | Our legitimate interest in keeping the website secure [CONTENT REQUIRED: legal review of the processing basis] |
-| Understanding which pages and campaigns bring enquiries | Source page, UTM parameters | Our legitimate interest in improving the website [CONTENT REQUIRED: legal review of the processing basis] |
+| Responding to your enquiry or service request, preparing proposals and following up | Form details and attachments | Your consent and steps taken at your request before entering into a contract |
+| Keeping a record of enquiries for follow-up and customer relationship management | Minimal lead record (without attachments) | Your consent / our legitimate interest in managing business enquiries |
+| Protecting the website and our forms against spam, abuse and automated submissions | IP address, Cloudflare Turnstile verification result, hidden spam-detection field, submission time | Our legitimate interest in keeping the website secure |
+| Understanding which pages and campaigns bring enquiries | Source page, UTM parameters | Our legitimate interest in improving the website |
 | Measuring website usage | Analytics data | Your consent, which you can withdraw at any time |
+| Scientific research and developing environmental solutions suited to each sector | Request data that has been aggregated or stripped of anything that identifies you, such as sector, service type and region | Our legitimate interest in developing our services, limited to aggregated or de-identified data |
 | Complying with legal obligations and responding to lawful requests from competent authorities | Data as required | Legal obligation |
 
 We do not sell personal data, and we do not use form submissions for automated decision-making that has legal or similarly significant effects on you.
@@ -78,28 +81,28 @@ We share personal data only with service providers that process it on our behalf
 
 - **Cloudflare** — website hosting, content delivery network (CDN), serverless processing of form submissions, and spam protection (Cloudflare Turnstile)
 - **Google** — Google Tag Manager and Google Analytics 4, loaded only after you consent to analytics
-- **Transactional email provider** — delivery of form submissions to our sales team: [CONTENT REQUIRED: name of the transactional email provider]
-- **Lead storage and CRM** — storage of the minimal lead record and CRM integration: [CONTENT REQUIRED: name(s) of the lead storage and CRM provider(s)]
-- **Email hosting** — the mailbox that receives submissions: [CONTENT REQUIRED: name of the email hosting provider]
+- **Resend** — transactional email provider that delivers form submissions to our sales team and sends confirmation emails
+- **Lead storage and CRM** — records are stored in the cloud using Google services (Google Workspace and Google Cloud) for customer relationship management and file storage, with a minimal lead record in Cloudflare D1
+- **Email hosting** — the mailboxes that receive submissions are hosted in the cloud by Google (Google Workspace)
 
 We may also disclose personal data where required by law, by a court order, or by a competent government authority, or where necessary to establish, exercise or defend legal claims.
 
-[CONTENT REQUIRED: complete and verified list of processors and sub-processors]
+The list above covers all parties that process personal data on our behalf through the website. We will update it if we add a new provider.
 
 ## 6. Transfers outside the Kingdom
 
 Some of our service providers may process personal data outside the Kingdom of Saudi Arabia. Where this happens, we transfer personal data only in accordance with the requirements of the PDPL and its regulations on cross-border transfers, and we take appropriate measures to protect it.
 
-[CONTENT REQUIRED: countries or regions where data is processed, and the transfer mechanism or safeguards relied on]
+Our team reviews and processes data in **Saudi Arabia** and **Egypt**, for scientific research and to develop solutions suited to each sector. Data is also stored in the cloud by Google, Cloudflare and Resend, which may process it in data centres outside Saudi Arabia. We rely on the contractual data-protection safeguards these providers commit to, and we limit any transfer to what is necessary for the purpose, as required by the regulation on transferring personal data outside the Kingdom.
 
 ## 7. How long we keep personal data
 
 We keep personal data only for as long as needed for the purposes described in this policy, or as required by law:
 
-- **Lead records and form submissions:** [CONTENT REQUIRED: retention period]
-- **Emails containing submissions and attachments:** [CONTENT REQUIRED: retention period]
-- **Spam-prevention and rate-limiting data (including IP addresses):** [CONTENT REQUIRED: retention period]
-- **Analytics data:** [CONTENT REQUIRED: Google Analytics 4 data retention setting]
+- **Lead records and form submissions:** three years from our last contact with you, unless a contract requires a longer period
+- **Emails containing submissions and attachments:** three years from our last contact with you
+- **Spam-prevention and rate-limiting data:** IP addresses are stored only as a one-way hash that does not reveal the address, for no longer than 12 months
+- **Analytics data:** 14 months, under our Google Analytics 4 retention setting
 
 When personal data is no longer needed, we delete it or anonymise it securely.
 
@@ -117,11 +120,11 @@ Subject to the conditions set out in the PDPL and its regulations, you have the 
 - **Request deletion** of personal data that is no longer needed, subject to any legal obligation to retain it
 - **Withdraw your consent** at any time, where processing is based on consent. Withdrawal does not affect processing carried out before it.
 
-To exercise any of these rights, contact us at sales@selorin.co or [CONTENT REQUIRED: data protection contact email]. We may need to verify your identity before acting on your request. We will respond within the period required by law.
+To exercise any of these rights, contact us at IT@selorin.co (data review contact: Ahmed Fathy) or sales@selorin.co. We may need to verify your identity before acting on your request. We will respond within the period required by law.
 
 You can withdraw consent to analytics cookies at any time through the cookie settings on the website.
 
-If you are not satisfied with our response, you may lodge a complaint with the competent authority, the Saudi Data & AI Authority (SDAIA). [CONTENT REQUIRED: confirm the competent authority and complaint channel]
+If you are not satisfied with our response, you may lodge a complaint with the competent authority, the Saudi Data & AI Authority (SDAIA), through the official channels published on its website.
 
 ## 10. Children
 
@@ -141,5 +144,5 @@ For questions about this policy or about how we handle personal data:
 
 - **Email:** sales@selorin.co
 - **Phone:** +966 53 430 2332
-- **Data protection contact:** [CONTENT REQUIRED: DPO or privacy contact details]
-- **Address:** [CONTENT REQUIRED: registered address]
+- **Personal data enquiries:** Ahmed Fathy, IT@selorin.co
+- **Address:** Kingdom of Saudi Arabia

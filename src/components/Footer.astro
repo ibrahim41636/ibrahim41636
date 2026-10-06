@@ -50,6 +50,7 @@ const industries = (await getIndustries()).slice(0, 8);
           <ul>
             <li><a href={href(lang, "/about/")}>{t(lang, "nav.about")}</a></li>
             <li><a href={href(lang, "/projects/")}>{t(lang, "nav.projects")}</a></li>
+            <li><a href={href(lang, "/careers/")}>{lang === "ar" ? "الوظائف" : "Careers"}</a></li>
             <li><a href={href(lang, "/contact/")}>{t(lang, "nav.contact")}</a></li>
             <li><a href={href(lang, "/request/")}>{t(lang, "cta.consultation")}</a></li>
           </ul>
@@ -66,7 +67,7 @@ const industries = (await getIndustries()).slice(0, 8);
       </div>
     )}
     <div class="footer-bottom">
-      <span>{t(lang, "footer.copyright")}</span>
+      <span>{t(lang, "footer.copyright")} · {lang === "ar" ? "شركة سيلورين، الرقم الوطني الموحد" : "Selorin Company, CR"} <span class="ltr">7054829457</span></span>
       <nav aria-label={t(lang, "footer.legal")}>
         <a href={href(lang, "/legal/privacy/")}>{t(lang, "footer.privacy")}</a>
         <a href={href(lang, "/legal/terms/")}>{t(lang, "footer.terms")}</a>

@@ -85,6 +85,10 @@ export function buildLead(args: {
 }
 
 export function emailSubject(lead: Lead) {
+  if (lead.kind === "careers") {
+    const area = lead.details.find((d) => d.field === "careerArea")?.value ?? "General";
+    return oneLine(`[New Job Application] – ${area} – ${lead.contactName}`, 180);
+  }
   const tag = lead.kind === "contact" ? "New Inquiry" : "New Service Request";
   const prefix = lead.urgent ? "[URGENT] " : "";
   return oneLine(`${prefix}[${tag}] – ${lead.service.name} – ${lead.company || lead.contactName}`, 180);
@@ -93,6 +97,18 @@ export function emailSubject(lead: Lead) {
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
 function sections(lead: Lead): [string, [string, string][]][] {
+  if (lead.kind === "careers") {
+    return [
+      ["Job Application", [["Reference", lead.leadId], ...lead.details.map((d) => [d.label, d.value] as [string, string])]],
+      ["Candidate", [["Full Name", lead.contactName], ["Email", lead.email], ["Phone", lead.phone], ["City", lead.location || "—"]]],
+      ["About the Candidate", [["Message", lead.message || "—"]]],
+      ["Additional Information", [
+        ["CV / Attachments", lead.attachments.length ? lead.attachments.map((a) => `${a.name} (${Math.ceil(a.size / 1024)} KB)`).join(", ") : "None"],
+        ["Language", lead.lang === "ar" ? "Arabic" : "English"],
+        ["Submission Date", `${lead.date} ${lead.time} (Riyadh)`], ["Source Page", lead.sourcePage || "—"],
+      ]],
+    ];
+  }
   return [
     ["Service Requested", [["Service", lead.service.name], ["Request ID", lead.leadId], ["Priority", lead.urgent ? "URGENT — regulatory notice or inspection date" : "Standard"]]],
     ["Client", [["Company Name", lead.company], ["Contact Person", lead.contactName], ["Job Title", lead.jobTitle || "—"], ["Email", lead.email], ["Phone", lead.phone], ["Preferred Contact", lead.preferredContact]]],
@@ -130,6 +146,14 @@ export function emailHtml(lead: Lead) {
 /** Short confirmation sent to the client (no internal data, no attachments). */
 export function confirmationEmail(lead: Lead) {
   const ar = lead.lang === "ar";
+  if (lead.kind === "careers") {
+    return {
+      subject: ar ? `استلمنا طلب التوظيف — ${lead.leadId}` : `We have received your application — ${lead.leadId}`,
+      text: ar
+        ? `مرحباً ${lead.contactName}،\n\nشكراً لاهتمامك بالانضمام إلى سيلورين. استلمنا طلبك، وسنراجع خبراتك ونتواصل معك عند توفر فرصة تناسبها.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية`
+        : `Dear ${lead.contactName},\n\nThank you for your interest in joining Selorin. We have received your application and will contact you when an opportunity matches your experience.\n\nReference: ${lead.leadId}\n\nSelorin Environmental Advisory & Services`,
+    };
+  }
   const subject = ar ? `استلمنا طلبك — ${lead.leadId}` : `We have received your request — ${lead.leadId}`;
   const text = ar
     ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 53 430 2332`

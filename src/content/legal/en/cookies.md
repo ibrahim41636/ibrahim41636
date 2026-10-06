@@ -1,11 +1,9 @@
 ---
 title: "Cookie policy"
 description: "Which cookies selorin.co uses, why, and how to manage your consent. Analytics cookies load only after you accept them."
-updated: 2026-10-05
+updated: 2026-10-06
 translationKey: cookies
 ---
-
-> **Draft pending legal review.** This policy is a working draft prepared for review by qualified legal counsel. It is not final and may change before publication. Items marked `[CONTENT REQUIRED: …]` must be completed and verified.
 
 This cookie policy explains how Selorin Environmental Advisory & Services ("Selorin", "we", "us") uses cookies and similar technologies on https://selorin.co (the "website"). It should be read together with our privacy policy.
 
@@ -21,8 +19,8 @@ We use two categories of cookies.
 
 These cookies are needed for the website to work and to remember the choices you make. They do not require your consent and cannot be switched off in our cookie settings.
 
-- **Consent and language preference:** a cookie that stores your cookie consent choice and your preferred language (English or Arabic), so we do not ask you again on every visit. [CONTENT REQUIRED: cookie name(s) and duration]
-- **Security and spam protection:** Cloudflare, which hosts and delivers the website, and Cloudflare Turnstile, which protects our forms against automated submissions, may set or read cookies or similar technologies needed to distinguish genuine visitors from automated traffic. [CONTENT REQUIRED: confirm which Cloudflare cookies, if any, are set, with names and durations]
+- **Consent choice:** we store your cookie choice in your browser's local storage under the name `selorin_consent`, so we do not ask you again on every visit. It stays until you clear it from your browser. We also use session storage to keep the visit source and campaign parameters (`selorin_utm`, `selorin_referrer`), the reference of your last request, and whether the intro has been shown; this data is deleted automatically when you close the browser. We do not store a language preference: the language is set by the page address.
+- **Security and spam protection:** Cloudflare, which hosts and delivers the website, and Cloudflare Turnstile, which protects our forms against automated submissions, may set or read cookies or similar technologies needed to distinguish genuine visitors from automated traffic, such as `__cf_bm` (30 minutes) and `cf_clearance` (per the challenge setting, 30 minutes by default). These are not used to track you or for marketing.
 
 ### Analytics cookies (only with your consent)
 
@@ -32,16 +30,16 @@ These tools are **not loaded until you give consent**. We use Google Consent Mod
 
 | Cookie | Provider | Purpose | Duration |
 |---|---|---|---|
-| `_ga` | Google Analytics 4 | Distinguishes visitors | [CONTENT REQUIRED: duration] |
-| `_ga_<container-id>` | Google Analytics 4 | Maintains session state | [CONTENT REQUIRED: duration] |
+| `_ga` | Google Analytics 4 | Distinguishes visitors | 2 years |
+| `_ga_<container-id>` | Google Analytics 4 | Maintains session state | 2 years |
 
-[CONTENT REQUIRED: confirm the full list of analytics cookies set by the configured Google Tag Manager container]
+The Google Tag Manager container used on the website sets no analytics cookies other than those listed above.
 
-We do not use advertising or marketing cookies on the website. [CONTENT REQUIRED: confirm before publication]
+We do not use advertising or marketing cookies on the website.
 
 ## 3. Managing your choices
 
-When you first visit the website, you can accept or decline analytics cookies. You can change your choice at any time through the cookie settings link on the website. [CONTENT REQUIRED: location of the cookie settings link, e.g. the website footer]
+When you first visit the website, you can accept or decline analytics cookies. You can change your choice at any time through the "Cookie settings" button in the footer of every page.
 
 You can also block or delete cookies through your browser settings. If you block strictly necessary cookies, some parts of the website, such as remembering your language and consent choice, may not work as intended.
 

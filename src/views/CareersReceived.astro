@@ -1,0 +1,30 @@
+---
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+---
+<Base lang={lang} path="/careers/received/" noindex focused title={ar ? "استلمنا طلب التوظيف" : "Application received"} description={ar ? "شكراً لاهتمامك بالانضمام إلى سيلورين." : "Thank you for your interest in joining Selorin."} analytics={{ page_type: "careers_received" }}>
+  <section class="section">
+    <div class="container-narrow">
+      <span class="icon" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-mint);color:var(--c-forest)"><Icon name="check" size={28} /></span>
+      <h1 class="mt-5" style="font-size:var(--fs-h2)">{ar ? "استلمنا طلبك، شكراً لك" : "Thank you — we have your application"}</h1>
+      <p class="lead">{ar ? "سنراجع خبراتك ونتواصل معك عند توفر فرصة تناسبها." : "We will review your experience and contact you when an opportunity matches it."}</p>
+      <div class="ref-id mt-5" data-ref hidden><small>{ar ? "رقم الطلب" : "Reference"}</small><b data-ref-id></b></div>
+      <div class="actions mt-7">
+        <a class="btn" href={href(lang, "/about/")}>{t(lang, "nav.about")}</a>
+        <a class="btn btn--ghost" href={href(lang, "/")}>{t(lang, "nav.home")}</a>
+      </div>
+    </div>
+  </section>
+  <script>
+    const id = new URLSearchParams(location.search).get("id") ?? "";
+    if (/^SEL-\d{4}-\d{6}$/.test(id)) {
+      const box = document.querySelector<HTMLElement>("[data-ref]")!;
+      box.querySelector("[data-ref-id]")!.textContent = id;
+      box.hidden = false;
+    }
+  </script>
+</Base>

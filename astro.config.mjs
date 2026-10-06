@@ -40,7 +40,7 @@ export default defineConfig({
     sitemap({
       i18n: { defaultLocale: "en", locales: { en: "en", ar: "ar-SA" } },
       // Utility and placeholder pages are noindex and stay out of the sitemap.
-      filter: (page) => !/\/(request\/received|projects\/case-study-template)\//.test(page),
+      filter: (page) => !/\/((request|careers)\/received|projects\/case-study-template)\//.test(page),
     }),
   ],
 });

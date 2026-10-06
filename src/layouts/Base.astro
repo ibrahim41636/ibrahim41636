@@ -27,6 +27,9 @@ interface Props {
 const { lang, path, title, description, image = "/images/og-default.jpg", imageAlt = site.name[lang], noindex = false, type = "website", breadcrumbs, schema = [], analytics = {}, focused = false } = Astro.props;
 const canonical = new URL(href(lang, path), site.url).toString();
 const alt = { en: new URL(href("en", path), site.url).toString(), ar: new URL(href("ar", path), site.url).toString() };
+// Target markets: Saudi Arabia first, then the GCC. Regional hreflang tells search engines
+// these pages are meant for searchers there (same URLs; no separate regional copies).
+const GULF = ["SA", "AE", "KW", "QA", "BH", "OM"];
 const ogImage = new URL(image, site.url).toString();
 const fullTitle = title.includes("Selorin") || title.includes("سيلورين") ? title : `${title} | ${lang === "ar" ? "سيلورين" : "Selorin"}`;
 
@@ -42,9 +45,13 @@ const pageContext = { page_language: lang, page_path: path, ...analytics };
   <meta name="description" content={description} />
   {noindex ? <meta name="robots" content="noindex, follow" /> : <meta name="robots" content="index, follow, max-image-preview:large" />}
   <link rel="canonical" href={canonical} />
-  <link rel="alternate" hreflang="en" href={alt.en} />
   <link rel="alternate" hreflang="ar" href={alt.ar} />
-  <link rel="alternate" hreflang="x-default" href={alt.en} />
+  <link rel="alternate" hreflang="en" href={alt.en} />
+  {GULF.map((c) => <link rel="alternate" hreflang={`ar-${c}`} href={alt.ar} />)}
+  {GULF.map((c) => <link rel="alternate" hreflang={`en-${c}`} href={alt.en} />)}
+  <link rel="alternate" hreflang="x-default" href={alt.ar} />
+  <meta name="geo.region" content="SA" />
+  <meta name="geo.placename" content={lang === "ar" ? "المملكة العربية السعودية" : "Saudi Arabia"} />
   <link rel="alternate" type="application/rss+xml" title={lang === "ar" ? "مركز المعرفة — سيلورين" : "Selorin Knowledge Centre"} href={lang === "ar" ? "/ar/insights/rss.xml" : "/insights/rss.xml"} />
   <meta property="og:type" content={type} />
   <meta property="og:site_name" content={site.name[lang]} />

@@ -5,7 +5,7 @@ import Icon from "@/components/Icon.astro";
 import Contours from "@/components/Contours.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import InsightCard from "@/components/InsightCard.astro";
-import { href, t, type Lang } from "@/i18n/ui";
+import { href, site, t, type Lang } from "@/i18n/ui";
 import { categories, lifecycle, regulators } from "@/data/taxonomy";
 import { getServices, getIndustries, getInsights } from "@/lib/content";
 import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
@@ -62,9 +62,11 @@ const stats = [
   [`${industries.length}`, ar ? "قطاعاً نخدمه في المملكة" : "sectors served across Saudi Arabia"],
 ];
 const sectors = [
-  { img: IMAGES.windFarm, id: "energy", kicker: ar ? "الطاقة المتجددة" : "Renewable energy", title: ar ? "مشاريع طاقة نظيفة تبدأ بدراسات بيئية سليمة" : "Clean-energy projects built on sound environmental studies" },
-  { img: IMAGES.openPitMine, id: "mining-quarrying", kicker: ar ? "التعدين والمحاجر" : "Mining & quarrying", title: ar ? "رصد الغبار وضبطه في المواقع المفتوحة" : "Dust monitoring and control on open sites" },
-  { img: IMAGES.refinery, id: "oil-gas", kicker: ar ? "النفط والغاز" : "Oil & gas", title: ar ? "امتثال الانبعاثات والمركبات العضوية المتطايرة" : "Emissions and VOC compliance" },
+  { img: IMAGES.offshoreWind, to: "/services/net-zero-advisory/", kicker: ar ? "الاستدامة والمناخ" : "Sustainability & climate", title: ar ? "خرائط طريق عملية نحو الحياد الصفري" : "Practical roadmaps to net zero" },
+  { img: IMAGES.powerPlant, to: "/industries/energy/", kicker: ar ? "الطاقة والمرافق" : "Energy & utilities", title: ar ? "امتثال بيئي لمحطات التوليد والمرافق" : "Environmental compliance for power and utilities" },
+  { img: IMAGES.refinery, to: "/industries/oil-gas/", kicker: ar ? "النفط والغاز" : "Oil & gas", title: ar ? "امتثال الانبعاثات والمركبات العضوية المتطايرة" : "Emissions and VOC compliance" },
+  { img: IMAGES.openPitMine, to: "/industries/mining-quarrying/", kicker: ar ? "التعدين والمحاجر" : "Mining & quarrying", title: ar ? "رصد الغبار وضبطه في المواقع المفتوحة" : "Dust monitoring and control on open sites" },
+  { img: IMAGES.windAerial, to: "/services/environmental-impact-assessment/", kicker: ar ? "الطاقة المتجددة" : "Renewable energy", title: ar ? "دراسات بيئية لمشاريع الرياح والشمس" : "Environmental studies for wind and solar" },
 ];
 
 const how = ar
@@ -86,6 +88,7 @@ const how = ar
         <div class="actions">
           <a class="btn btn--light" href={href(lang, "/request/")} data-cta="hero_consultation">{t(lang, "cta.consultation")} <Icon name="arrow" class="arrow" /></a>
           <a class="btn btn--ghost" href={href(lang, "/services/")} data-cta="hero_services">{t(lang, "cta.explore")}</a>
+          <a class="btn btn--ghost" href={site.profilePdf} download data-cta="hero_profile"><Icon name="download" /> {ar ? "الملف التعريفي" : "Company profile"}</a>
         </div>
       </div>
       <div class="readings" role="img" aria-label={copy.example}>
@@ -160,7 +163,7 @@ const how = ar
       <h2 id="h-sectors-visual" class="sr-only">{ar ? "قطاعات رئيسية" : "Key sectors"}</h2>
       <div class="photo-band">
         {sectors.map((x) => (
-          <a class="photo-card reveal" href={href(lang, `/industries/${x.id}/`)} data-cta="home_sector_photo">
+          <a class="photo-card reveal" href={href(lang, x.to)} data-cta="home_sector_photo">
             <Picture src={x.img.src} alt={x.img.alt[lang]} width={x.img.width} height={x.img.height} sizes="(max-width: 900px) 100vw, 40vw" />
             <span class="cap"><small>{x.kicker}</small><b>{x.title}</b></span>
           </a>

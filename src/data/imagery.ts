@@ -13,6 +13,9 @@ export const IMAGES = {
   monitoringStation: img("monitoring-station.jpg", 736, 736, "Solar-powered environmental monitoring station with weather and air sensors", "محطة رصد بيئي تعمل بالطاقة الشمسية مزوّدة بحساسات للطقس وجودة الهواء"),
   openPitMine: img("open-pit-mine.jpg", 736, 1301, "Open-pit mine with haul trucks and drilling rigs", "منجم مفتوح تعمل فيه شاحنات النقل ومعدات الحفر"),
   refinery: img("refinery.jpg", 720, 1100, "Process columns of an industrial plant at dusk", "أبراج المعالجة في منشأة صناعية عند الغروب"),
+  powerPlant: img("power-plant.jpg", 736, 1308, "Power plant exhaust stacks and access stairways under a clear sky", "مداخن محطة توليد طاقة وسلالمها تحت سماء صافية"),
+  windAerial: img("wind-aerial.jpg", 236, 419, "Aerial view of a single wind turbine above the clouds", "منظر جوي لتوربين رياح فوق السحب"),
+  offshoreWind: img("offshore-wind.jpg", 728, 408, "Offshore wind turbines over turquoise sea", "توربينات رياح بحرية فوق مياه فيروزية"),
   construction: img("construction.jpg", 1600, 900, "Construction site hoarding with Selorin branding", "سياج موقع إنشائي يحمل هوية سيلورين"),
   engineer: img("engineer.jpg", 800, 900, "Environmental engineer in a hard hat and safety glasses", "مهندسة بيئية بخوذة ونظارات سلامة"),
   fieldTeam: img("field-team.jpg", 612, 390, "Selorin field team on site", "فريق سيلورين الميداني في الموقع"),
@@ -35,7 +38,7 @@ const CATEGORY: Record<string, Key> = {
   "environmental-studies": "fields",
   "monitoring-measurement": "monitoringStation",
   "waste-circular-economy": "landscape",
-  "sustainability-climate": "windFarm",
+  "sustainability-climate": "offshoreWind",
   "sustainable-buildings": "hq",
 };
 
@@ -55,7 +58,7 @@ const SERVICE: Record<string, Key> = {
   "environmental-management-plans": "fieldTeam",
   "waste-management": "construction",
   "circular-economy": "landscape",
-  "net-zero-advisory": "windHills",
+  "net-zero-advisory": "offshoreWind",
   "ghg-carbon-accounting": "sky",
   "life-cycle-assessment": "sky",
   "esg-advisory": "windFarm",
@@ -67,7 +70,7 @@ const SERVICE: Record<string, Key> = {
 const INDUSTRY: Record<string, Key> = {
   "oil-gas": "refinery",
   "mining-quarrying": "openPitMine",
-  energy: "windFarm",
+  energy: "powerPlant",
   construction: "construction",
   infrastructure: "windHills",
   "logistics-warehousing": "windHills",

@@ -23,6 +23,7 @@ const industries = (await getIndustries()).slice(0, 8);
             <li><a href={`mailto:${site.email}`} data-track="email_click" data-cta="footer_email">{site.email}</a></li>
             <li><a href={`tel:${site.phoneHref}`} class="ltr" data-track="phone_click" data-cta="footer_phone">{site.phone}</a></li>
             <li>{site.country[lang]}</li>
+            <li><a href={site.profilePdf} download data-cta="footer_profile">{lang === "ar" ? "تحميل الملف التعريفي (PDF)" : "Download company profile (PDF)"}</a></li>
           </ul>
           {(site.social.linkedin || site.social.x) && (
             <div class="socials">

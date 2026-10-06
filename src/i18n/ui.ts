@@ -11,7 +11,8 @@ export const site = {
   whatsapp: "966534302332",
   country: { en: "Saudi Arabia", ar: "المملكة العربية السعودية" },
   // [CONTENT REQUIRED] Replace with the company's real profiles; empty values are hidden.
-  social: { linkedin: "", x: "" },
+  social: { linkedin: "https://www.linkedin.com/company/selorin/", x: "" },
+  profilePdf: "/files/selorin-company-profile.pdf",
 };
 
 /** Prefix a site path for the given language. Paths are written without the /ar prefix. */

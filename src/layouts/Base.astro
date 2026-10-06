@@ -69,7 +69,7 @@ const pageContext = { page_language: lang, page_path: path, ...analytics };
 </head>
 <body data-service={analytics.service_slug} data-category={analytics.service_category} data-industry={analytics.industry_slug}>
   <a class="skip-link" href="#main">{t(lang, "skip")}</a>
-  {path === "/" && <Intro lang={lang} />}
+  {path === "/" && <Intro />}
   <Header lang={lang} path={path} focused={focused} />
   <main id="main" tabindex="-1">
     <slot />

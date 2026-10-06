@@ -14,3 +14,9 @@
 
 /api/*
   Cache-Control: no-store
+
+/media/*
+  Cache-Control: public, max-age=2592000
+
+/files/*
+  Cache-Control: public, max-age=86400

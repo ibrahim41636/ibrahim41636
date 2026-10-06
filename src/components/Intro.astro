@@ -1,9 +1,10 @@
 ---
-// Home-page intro: the Selorin mark draws itself in the centre, the wordmark appears, then the
-// mark flies into the header logo position. Shown once per browser session; skipped for
-// reduced-motion users, on click/keypress, and (via the CSS fallback) if scripts fail.
-interface Props { lang: "en" | "ar" }
-const { lang } = Astro.props;
+// Home-page intro: the brand logo-reveal video plays until the mark is complete and centred
+// (~4.4 s), then an identical SVG mark takes its place and flies into the header logo.
+// Shown once per browser session; skipped for reduced-motion users, on click/keypress, if the
+// video cannot play, and (via the CSS fallback) if scripts fail.
+const HANDOFF = 4.4; // seconds: the mark is complete and centred in intro-logo.mp4
+const MARK_RATIO = 0.457; // SVG box width ÷ video width at the handoff frame (circle = 314 / 720 px)
 ---
 <script is:inline>
   (function () {
@@ -13,32 +14,34 @@ const { lang } = Astro.props;
     } catch (e) {}
   })();
 </script>
-<div class="intro" aria-hidden="true" data-intro>
+<div class="intro" aria-hidden="true" data-intro data-handoff={HANDOFF} data-ratio={MARK_RATIO}>
   <div class="intro-stage">
+    <video class="intro-video" muted playsinline preload="auto" disablepictureinpicture><source src="/media/intro-logo.mp4" type="video/mp4" /><source src="/media/intro-logo.webm" type="video/webm" /></video>
     <svg class="intro-mark" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round">
       <defs><clipPath id="intro-clip"><circle cx="50" cy="50" r="43.5" /></clipPath></defs>
-      <circle class="d d0" cx="50" cy="50" r="45.5" pathLength="1" />
+      <circle cx="50" cy="50" r="45.5" />
       <g clip-path="url(#intro-clip)">
-        <path class="d d1" pathLength="1" d="M50 30V2M36 33 22 6M64 33 78 6M25 39 0 18M75 39 100 18" />
-        <path class="d d2" pathLength="1" d="M6 46c12 0 20-4 28-11 9-8 23-8 32 0 8 7 16 11 28 11" />
-        <path class="d d3" pathLength="1" d="M4 59c9-6 17-6 25 0s16 6 22-1 15-8 23 0 14 6 22 0" />
-        <path class="d d4" pathLength="1" d="M50 98C46 82 30 72 2 71M50 98c4-16 20-26 48-27" />
-        <path class="d d5" pathLength="1" d="M36 98C32 88 20 83 2 83M64 98c4-10 16-15 34-15" />
+        <path d="M50 30V2M36 33 22 6M64 33 78 6M25 39 0 18M75 39 100 18" />
+        <path d="M6 46c12 0 20-4 28-11 9-8 23-8 32 0 8 7 16 11 28 11" />
+        <path d="M4 59c9-6 17-6 25 0s16 6 22-1 15-8 23 0 14 6 22 0" />
+        <path d="M50 98C46 82 30 72 2 71M50 98c4-16 20-26 48-27" />
+        <path d="M36 98C32 88 20 83 2 83M64 98c4-10 16-15 34-15" />
       </g>
     </svg>
-    <div class="intro-word">
-      <b>Selorin</b>
-      <small>{lang === "ar" ? "سيلورين للاستشارات والخدمات البيئية" : "ENVIRONMENTAL ADVISORY & SERVICES"}</small>
-    </div>
   </div>
 </div>
 <script>
   const root = document.documentElement;
   const intro = document.querySelector<HTMLElement>("[data-intro]");
   if (intro && root.classList.contains("intro-on")) {
+    const video = intro.querySelector<HTMLVideoElement>(".intro-video")!;
     const mark = intro.querySelector<SVGSVGElement>(".intro-mark")!;
     const target = document.querySelector<SVGSVGElement>(".site-header .brand svg");
+    const handoff = Number(intro.dataset.handoff);
+    const ratio = Number(intro.dataset.ratio);
     let done = false;
+    let flying = false;
+
     const finish = () => {
       if (done) return;
       done = true;
@@ -46,21 +49,35 @@ const { lang } = Astro.props;
       root.classList.remove("intro-on");
       intro.remove();
     };
+
     const fly = () => {
-      if (done) return;
-      if (!target) return finish();
-      const from = mark.getBoundingClientRect();
-      const to = target.getBoundingClientRect();
-      const dx = to.left + to.width / 2 - (from.left + from.width / 2);
-      const dy = to.top + to.height / 2 - (from.top + from.height / 2);
-      const scale = to.width / from.width;
-      intro.classList.add("is-flying");
-      mark.style.color = getComputedStyle(target).color;
-      mark.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
-      setTimeout(finish, 900);
+      if (flying || done) return;
+      flying = true;
+      video.pause();
+      const size = (video.clientWidth || 320) * ratio;
+      mark.style.width = mark.style.height = `${size}px`;
+      intro.classList.add("is-handoff");
+      if (!target) return void setTimeout(finish, 300);
+      requestAnimationFrame(() => {
+        const from = mark.getBoundingClientRect();
+        const to = target.getBoundingClientRect();
+        const dx = to.left + to.width / 2 - (from.left + from.width / 2);
+        const dy = to.top + to.height / 2 - (from.top + from.height / 2);
+        intro.classList.add("is-flying");
+        mark.style.color = getComputedStyle(target).color;
+        mark.style.transform = `translate(${dx}px, ${dy}px) scale(${to.width / from.width})`;
+        setTimeout(finish, 950);
+      });
     };
-    const timer = setTimeout(fly, 2000);
-    const skip = () => { clearTimeout(timer); finish(); };
+
+    video.addEventListener("timeupdate", () => { if (video.currentTime >= handoff) fly(); });
+    video.addEventListener("ended", fly);
+    video.querySelector("source:last-of-type")?.addEventListener("error", fly);
+    video.play().catch(fly);
+    // If the video stalls (slow network), do not hold the visitor: hand off anyway.
+    const guard = setTimeout(fly, (handoff + 2.5) * 1000);
+
+    const skip = () => { clearTimeout(guard); finish(); };
     intro.addEventListener("click", skip);
     addEventListener("keydown", skip, { once: true });
   }

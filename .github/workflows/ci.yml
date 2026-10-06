@@ -33,8 +33,11 @@ jobs:
           path: dist
 
   deploy:
-    # Deploys to Cloudflare Pages (static site + /functions) on every push to main.
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    # Optional: deploy from Actions instead of Cloudflare's Git integration (the recommended path,
+    # see docs/deploy-guide-ar.html). Enable by setting the repository variable
+    # DEPLOY_WITH_ACTIONS=true plus the CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID secrets.
+    # Off by default so the site is never deployed twice.
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.DEPLOY_WITH_ACTIONS == 'true'
     needs: build
     runs-on: ubuntu-latest
     permissions:

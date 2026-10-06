@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دليل نشر موقع سيلورين</title>
+<!--FONTS-->
+<style>
+  :root{
+    --paper:#f7f6f2; --white:#fff; --line:#e3e0d8; --line2:#cfcac0; --ink:#121614; --muted:#5d625f;
+    --forest:#0b3b2a; --forest2:#135139; --mint:#cdefd3; --mint2:#a6e6b0; --alert:#b42318; --pin:#e8590c;
+    --gh:#1f883d; --cf:#f38020;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans Arabic","Inter",system-ui,sans-serif;font-size:16px;line-height:1.75}
+  .en{direction:ltr;unicode-bidi:isolate}
+  .en,code,.win{font-family:"Inter","IBM Plex Sans Arabic",system-ui,sans-serif}
+  code{background:#ece9e1;border-radius:5px;padding:1px 6px;font-size:.88em;direction:ltr;unicode-bidi:isolate}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+  header.cover{background:var(--forest);color:#fff;padding:56px 0 48px}
+  header.cover .tag{display:inline-block;background:var(--mint);color:var(--forest);border-radius:99px;padding:2px 14px;font-weight:600;font-size:14px}
+  header.cover h1{font-size:40px;line-height:1.3;margin:16px 0 8px}
+  header.cover p{opacity:.88;max-width:760px;margin:0}
+  section.step{background:var(--white);border:1px solid var(--line);border-radius:18px;margin:28px 0;padding:30px 32px;break-inside:avoid;page-break-inside:avoid}
+  .num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:var(--forest);color:#fff;font-weight:700;font-size:19px;margin-inline-end:12px;flex:none}
+  h2{display:flex;align-items:center;font-size:24px;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 18px}
+  .grid{display:grid;grid-template-columns:1fr 1.35fr;gap:26px;align-items:start}
+  .grid.one{grid-template-columns:1fr}
+  ol.do{margin:0;padding-inline-start:22px}
+  ol.do li{margin:0 0 8px}
+  .note{background:#fff6e6;border:1px solid #f5d9a8;border-radius:12px;padding:10px 14px;font-size:14.5px;margin-top:14px}
+  .warn{background:#fdecea;border:1px solid #f3c1bb;border-radius:12px;padding:10px 14px;font-size:14.5px;margin-top:14px}
+  .ok{background:#ecf8ee;border:1px solid var(--mint2);border-radius:12px;padding:10px 14px;font-size:14.5px;margin-top:14px}
+  .illus{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+  /* mock windows */
+  .win{direction:ltr;text-align:left;border:1px solid var(--line2);border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(18,22,20,.10);font-size:13px;line-height:1.45}
+  .bar{display:flex;align-items:center;gap:8px;background:#eceae4;padding:8px 10px;border-bottom:1px solid var(--line2)}
+  .dots i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:5px;background:#d9534f}
+  .dots i:nth-child(2){background:#f0ad4e}.dots i:nth-child(3){background:#5cb85c}
+  .url{flex:1;background:#fff;border-radius:7px;padding:4px 10px;color:#444;font-size:12px}
+  .wb{padding:14px 16px}
+  .top{display:flex;align-items:center;gap:10px;padding:8px 14px;color:#fff;font-weight:600}
+  .top.gh{background:#24292f}.top.cf{background:#fff;color:#222;border-bottom:1px solid #e5e5e5}
+  .logo-cf{display:inline-block;width:22px;height:12px;border-radius:12px 12px 0 0;background:var(--cf)}
+  .btn{display:inline-block;border-radius:7px;padding:6px 12px;font-weight:600;font-size:12.5px;border:1px solid #d0d7de;background:#f6f8fa;color:#24292f}
+  .btn.g{background:var(--gh);border-color:var(--gh);color:#fff}
+  .btn.b{background:#0051c3;border-color:#0051c3;color:#fff}
+  .btn.o{background:var(--cf);border-color:var(--cf);color:#fff}
+  .hl{outline:3px solid var(--pin);outline-offset:3px;border-radius:7px}
+  .pin{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:var(--pin);color:#fff;font-weight:700;font-size:12px;margin:0 6px;vertical-align:middle;font-family:Inter,sans-serif}
+  .field{margin:8px 0}
+  .field label{display:block;font-size:11.5px;color:#555;margin-bottom:3px;font-weight:600}
+  .field .in{border:1px solid #c9ced4;border-radius:6px;padding:5px 9px;background:#fff;min-height:28px}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .side{display:flex}
+  .side nav{width:150px;background:#fafafa;border-right:1px solid #eee;padding:10px 8px;font-size:12px}
+  .side nav div{padding:5px 8px;border-radius:6px;color:#333}
+  .side nav div.on{background:#e8f0fe;color:#0051c3;font-weight:600}
+  .side main{flex:1;padding:14px 16px}
+  .tbl{width:100%;border-collapse:collapse;font-size:12px}
+  .tbl td,.tbl th{border-bottom:1px solid #eee;padding:5px 6px;text-align:left}
+  .tbl th{color:#666;font-weight:600}
+  /* flow */
+  .flow{display:flex;align-items:stretch;gap:10px;direction:rtl}
+  .node{flex:1;border:1.5px solid var(--line2);border-radius:14px;padding:14px 12px;text-align:center;background:#fff}
+  .node b{display:block;font-size:17px}
+  .node small{color:var(--muted);display:block;line-height:1.5}
+  .node.k{border-color:var(--forest);background:#f1f8f3}
+  .arrow{align-self:center;font-size:26px;color:var(--forest);font-family:Inter,sans-serif}
+  .toc{columns:2;column-gap:30px;margin:0;padding-inline-start:20px}
+  .toc li{margin-bottom:4px}
+  table.env{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+  table.env th,table.env td{border:1px solid var(--line);padding:6px 10px;text-align:right;vertical-align:top}
+  table.env th{background:#f1efe9}
+  table.env td code{white-space:nowrap}
+  footer{color:var(--muted);font-size:13px;text-align:center;padding:10px 0 40px}
+  @media (max-width:760px){.grid{grid-template-columns:1fr}.flow{flex-direction:column}.arrow{transform:rotate(-90deg)}.toc{columns:1}}
+  @media print{body{background:#fff}section.step{box-shadow:none}}
+</style>
+</head>
+<body>
+<header class="cover">
+  <div class="wrap">
+    <span class="tag">دليل تنفيذي مصوَّر · أكتوبر 2026</span>
+    <h1>رفع موقع سيلورين عبر GitHub ونشره على النطاق selorin.co</h1>
+    <p>من الكود إلى موقع يعمل على <span class="en">https://selorin.co</span> مع نماذج طلب الخدمة التي تُرسَل إلى <span class="en">sales@selorin.co</span>. الصور في هذا الدليل توضيحية مبسطة، وقد تختلف تفاصيل واجهات GitHub وCloudflare قليلًا عند التنفيذ، لكن أسماء الأزرار والخطوات مطابقة.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="step" id="step-0">
+  <h2><span class="num">0</span>الصورة الكاملة: كيف يصل الموقع إلى selorin.co؟</h2>
+  <p class="sub">ثلاث محطات فقط. بعد الإعداد الأول يصبح كل تحديث تلقائيًا.</p>
+  <div class="flow">
+    <div class="node"><b>الكود</b><small>ملفات الموقع (Astro)<br>جاهزة في هذه الجلسة</small></div>
+    <div class="arrow">←</div>
+    <div class="node k"><b>GitHub</b><small>المستودع<br><span class="en">ibrahim41636/ibrahim41636</span><br>الفرع <span class="en">main</span></small></div>
+    <div class="arrow">←</div>
+    <div class="node k"><b>Cloudflare Pages</b><small>يبني الموقع تلقائيًا<br>ويشغّل خادم النماذج <span class="en">/api/request</span></small></div>
+    <div class="arrow">←</div>
+    <div class="node k"><b>selorin.co</b><small>النطاق مع شهادة HTTPS<br>مجانية وتلقائية</small></div>
+  </div>
+  <div class="note"><b>لماذا Cloudflare Pages وليس GitHub Pages؟</b> لأن GitHub Pages يستضيف صفحات ثابتة فقط. أما نماذج طلب الخدمة فتحتاج خادمًا صغيرًا يتحقق من الطلب ويحمي من الرسائل المزعجة ويرسل البريد إلى <span class="en">sales@selorin.co</span>، وهذا ما توفره Cloudflare Pages Functions مجانًا. يبقى GitHub مكان حفظ الكود، وCloudflare مكان التشغيل.</div>
+  <h3 style="margin:22px 0 6px;font-size:18px">خطوات الدليل</h3>
+  <ol class="toc">
+    <li>إيصال الكود إلى GitHub (الطريقة الأسهل أو اليدوية)</li>
+    <li>دمج التعديلات في الفرع الرئيسي <span class="en">main</span></li>
+    <li>إضافة النطاق selorin.co إلى Cloudflare</li>
+    <li>تغيير خوادم الأسماء (Nameservers) لدى مسجّل النطاق</li>
+    <li>إنشاء مشروع Cloudflare Pages وربطه بـ GitHub</li>
+    <li>ربط selorin.co وwww بالمشروع</li>
+    <li>قاعدة بيانات الطلبات D1</li>
+    <li>تفعيل الإرسال إلى البريد عبر Resend</li>
+    <li>الحماية من الرسائل المزعجة (Turnstile)</li>
+    <li>الاختبار النهائي وطريقة التحديث لاحقًا</li>
+  </ol>
+</section>
+
+<section class="step" id="step-1">
+  <h2><span class="num">1</span>إيصال الكود إلى GitHub: الطريقة الأسهل (موصى بها)</h2>
+  <p class="sub">امنح Claude صلاحية الكتابة على المستودع، وسأرفع كل شيء بنفسي وأفتح طلب دمج (Pull Request).</p>
+  <div class="grid">
+    <ol class="do">
+      <li>افتح الرابط <code>claude.ai/connect-github</code> وسجّل الدخول بحساب GitHub المالك للمستودع.</li>
+      <li>إذا ظهرت صفحة <b>Install Claude</b>: اختر <b>Only select repositories</b>، ثم حدد المستودع <code>ibrahim41636/ibrahim41636</code>.</li>
+      <li>اضغط <b>Install</b> (أو <b>Save</b> إن كان التطبيق مثبتًا مسبقًا).</li>
+      <li>عُد إلى هذه المحادثة واكتب: <b>«تم منح الصلاحية»</b>. سأرفع الفرع وأفتح Pull Request جاهزًا للدمج.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">github.com/apps/claude/installations/new</span></div>
+        <div class="top gh">● GitHub</div>
+        <div class="wb">
+          <div style="font-size:16px;font-weight:700;margin-bottom:6px">Install Claude</div>
+          <div style="color:#555;margin-bottom:10px">Install on your personal account <b>ibrahim41636</b></div>
+          <div class="row" style="margin:4px 0"><span>○ All repositories</span></div>
+          <div class="row hl" style="padding:4px 6px;margin:6px 0"><span class="pin">1</span><span>● <b>Only select repositories</b></span></div>
+          <div class="row" style="margin:8px 0 12px 24px"><span class="pin">2</span><span class="btn">📁 ibrahim41636/ibrahim41636 ✓</span></div>
+          <div class="row"><span class="pin">3</span><span class="btn g hl">Install</span><span class="btn">Cancel</span></div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <div class="ok">هذه الطريقة تُنجز الخطوة 1 كاملة وتوفر عليك الرفع اليدوي. وتسمح لي لاحقًا برفع كل مرحلة من مراحل المنصة مباشرة.</div>
+</section>
+
+<section class="step" id="step-1b">
+  <h2><span class="num">1ب</span>الطريقة اليدوية: الرفع عبر GitHub Desktop</h2>
+  <p class="sub">استخدمها فقط إذا لم ترغب في منح الصلاحية. ستحتاج ملف الكود المضغوط <span class="en">selorin-website-source.zip</span> المرسل مع هذا الدليل.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>نزّل البرنامج من <code>desktop.github.com</code> وسجّل الدخول بحسابك.</li>
+      <li>من القائمة <b>File ← Clone repository</b> اختر <code>ibrahim41636/ibrahim41636</code> ومجلدًا على جهازك.</li>
+      <li>احذف محتويات المجلد ما عدا المجلد المخفي <code>.git</code>، ثم فك ضغط الملف داخله.</li>
+      <li>سيعرض البرنامج كل الملفات المتغيرة. اكتب في خانة <b>Summary</b> وصفًا مثل «موقع سيلورين v2»، ثم اضغط <b>Commit to main</b>.</li>
+      <li>اضغط <b>Push origin</b> في الأعلى. انتقل بعدها مباشرة إلى الخطوة 3.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">GitHub Desktop</span></div>
+        <div class="row" style="background:#24292f;color:#fff;padding:7px 12px;gap:18px;font-size:12px">
+          <span>Current repository<br><b>ibrahim41636</b></span><span>Current branch<br><b>main</b></span>
+          <span class="hl" style="padding:2px 6px"><span class="pin">5</span>⬆ <b>Push origin</b></span>
+        </div>
+        <div class="side">
+          <nav style="width:220px">
+            <div class="on">Changes (214)</div>
+            <div>☑ astro.config.mjs</div><div>☑ functions/api/request.ts</div><div>☑ src/views/Home.astro</div><div>☑ wrangler.toml</div><div>…</div>
+            <div class="hl" style="margin-top:10px;background:#fff"><span class="pin">4</span>Summary: <b>موقع سيلورين v2</b></div>
+            <div style="margin-top:8px"><span class="btn b" style="display:block;text-align:center">Commit to <b>main</b></span></div>
+          </nav>
+          <main style="font-family:monospace;font-size:11.5px;color:#1a7f37">+ name = "selorin-website"<br>+ pages_build_output_dir = "dist"<br>+ …</main>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <div class="warn">لا تستخدم زر <b>Upload files</b> في موقع GitHub لهذا المشروع، لأنه يرفع 100 ملف كحد أقصى في المرة الواحدة ولا يحافظ على المجلدات المخفية مثل <code>.github</code>.</div>
+</section>
+
+<section class="step" id="step-2">
+  <h2><span class="num">2</span>دمج التعديلات في الفرع الرئيسي main</h2>
+  <p class="sub">إذا رفعتُ الكود أنا (الطريقة الأسهل)، سيصلك Pull Request. Cloudflare تنشر فرع <span class="en">main</span> فقط على selorin.co.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>افتح المستودع على GitHub، ثم تبويب <b>Pull requests</b>.</li>
+      <li>افتح الطلب القادم من الفرع <code>claude/zealous-lamport-2pcmr7</code>.</li>
+      <li>إن كان بحالة <b>Draft</b> فاضغط <b>Ready for review</b> أولًا.</li>
+      <li>اضغط <b>Merge pull request</b> ثم <b>Confirm merge</b>.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">github.com/ibrahim41636/ibrahim41636/pull/…</span></div>
+        <div class="top gh">● ibrahim41636 / ibrahim41636 &nbsp;&nbsp;<span style="font-weight:400;opacity:.8">Code · <u>Pull requests</u> · Actions · Settings</span></div>
+        <div class="wb">
+          <div style="font-size:15px;font-weight:700">Selorin website v2 + Phase 01 architecture</div>
+          <div style="color:#555;margin:4px 0 12px"><span class="btn" style="background:#1f883d;color:#fff;border:0;padding:2px 8px">Open</span> claude wants to merge into <code style="font-size:11px">main</code> from <code style="font-size:11px">claude/zealous-lamport-2pcmr7</code></div>
+          <div style="border:1px solid #d0d7de;border-radius:8px;padding:10px">
+            <div style="color:#1a7f37;font-weight:600">✓ All checks have passed</div>
+            <div style="color:#1a7f37;font-weight:600;margin-bottom:10px">✓ This branch has no conflicts with the base branch</div>
+            <div class="row"><span class="pin">4</span><span class="btn g hl">Merge pull request ▾</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <div class="note">إن كان GitHub Pages مفعّلًا سابقًا على هذا المستودع فأوقفه: <b>Settings ← Pages ← Source: None</b>، حتى لا يتعارض مع Cloudflare على النطاق نفسه.</div>
+</section>
+
+<section class="step" id="step-3">
+  <h2><span class="num">3</span>إضافة النطاق selorin.co إلى Cloudflare</h2>
+  <p class="sub">حساب Cloudflare مجاني. هذه الخطوة تجعل Cloudflare مسؤولًا عن إعدادات DNS للنطاق.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>أنشئ حسابًا في <code>dash.cloudflare.com</code> (يُفضَّل ببريد الشركة).</li>
+      <li>اضغط <b>Add a domain</b> (أو <b>Onboard a domain</b>) واكتب <code>selorin.co</code>.</li>
+      <li>اختر <b>Quick scan for DNS records</b> ثم الخطة <b>Free</b>.</li>
+      <li><b>مهم جدًا:</b> راجع قائمة السجلات المكتشفة وتأكد من وجود سجلات <b>MX</b> الخاصة بالبريد (التي يعمل بها <span class="en">sales@selorin.co</span> حاليًا) قبل المتابعة.</li>
+      <li>ستعرض Cloudflare خادمَي أسماء (Nameservers) خاصين بك. انسخهما للخطوة التالية.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/add-site</span></div>
+        <div class="top cf"><span class="logo-cf"></span> Cloudflare</div>
+        <div class="wb">
+          <div class="field"><label>Enter an existing domain</label><div class="in hl"><span class="pin">2</span>selorin.co</div></div>
+          <div style="margin:10px 0 4px;font-weight:600">Review DNS records</div>
+          <table class="tbl">
+            <tr><th>Type</th><th>Name</th><th>Content</th></tr>
+            <tr style="background:#fff3e0"><td><span class="pin">4</span><b>MX</b></td><td>selorin.co</td><td>mail server of your email provider</td></tr>
+            <tr style="background:#fff3e0"><td><b>TXT</b></td><td>selorin.co</td><td>v=spf1 …</td></tr>
+            <tr><td>A</td><td>selorin.co</td><td>(old hosting — will be replaced)</td></tr>
+          </table>
+          <div style="margin-top:10px;font-weight:600">Your assigned Cloudflare nameservers <span class="pin">5</span></div>
+          <div class="in" style="border:1px dashed #f38020;border-radius:6px;padding:6px 9px;margin-top:4px;background:#fff8f1">xxxx.ns.cloudflare.com<br>yyyy.ns.cloudflare.com</div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · الأسماء الفعلية لخوادمك تختلف</div>
+    </div>
+  </div>
+  <div class="warn">إذا لم تظهر سجلات MX فأضفها يدويًا قبل تغيير خوادم الأسماء، تمامًا كما هي لدى مزوّد البريد الحالي، وإلا سيتوقف استقبال البريد على <span class="en">sales@selorin.co</span>.</div>
+</section>
+
+<section class="step" id="step-4">
+  <h2><span class="num">4</span>تغيير خوادم الأسماء لدى مسجّل النطاق</h2>
+  <p class="sub">مسجّل النطاق هو الجهة التي اشتريت منها selorin.co (مثل GoDaddy أو Namecheap أو غيرها).</p>
+  <div class="grid">
+    <ol class="do">
+      <li>سجّل الدخول لدى المسجّل وافتح إدارة النطاق <code>selorin.co</code>.</li>
+      <li>ابحث عن <b>Nameservers</b> واختر <b>Custom</b> (خوادم مخصصة).</li>
+      <li>احذف الخوادم القديمة وألصق خادمَي Cloudflare من الخطوة 3، ثم احفظ.</li>
+      <li>ارجع إلى Cloudflare واضغط <b>Check nameservers</b>. التفعيل عادة يستغرق من دقائق إلى 24 ساعة، وتصلك رسالة عند اكتماله.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">your-registrar.com/domains/selorin.co/dns</span></div>
+        <div class="top gh" style="background:#3b4a5a">Domain Registrar · selorin.co</div>
+        <div class="wb">
+          <div style="font-weight:600;margin-bottom:6px">Nameservers</div>
+          <div class="row" style="margin-bottom:8px"><span>○ Default nameservers</span><span class="hl" style="padding:2px 6px"><span class="pin">2</span>● <b>Custom nameservers</b></span></div>
+          <div class="field"><label>Nameserver 1</label><div class="in hl"><span class="pin">3</span>xxxx.ns.cloudflare.com</div></div>
+          <div class="field"><label>Nameserver 2</label><div class="in">yyyy.ns.cloudflare.com</div></div>
+          <span class="btn b">Save</span>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · تختلف الواجهة حسب المسجّل</div>
+    </div>
+  </div>
+  <div class="note">يمكنك تنفيذ الخطوات 5 إلى 9 أثناء انتظار التفعيل، لأن Cloudflare ستعطيك رابطًا مؤقتًا مثل <span class="en">selorin-website.pages.dev</span> للمعاينة.</div>
+</section>
+
+<section class="step" id="step-5">
+  <h2><span class="num">5</span>إنشاء مشروع Cloudflare Pages وربطه بـ GitHub</h2>
+  <p class="sub">هنا تربط Cloudflare بالمستودع، فتبني الموقع وتنشره تلقائيًا مع كل تحديث على <span class="en">main</span>.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>من القائمة الجانبية: <b>Workers &amp; Pages ← Create</b>، ثم تبويب <b>Pages</b> و <b>Connect to Git</b>.</li>
+      <li>اختر <b>GitHub</b>، ثم امنح Cloudflare الوصول إلى المستودع <code>ibrahim41636/ibrahim41636</code>.</li>
+      <li>أدخل الإعدادات كما في الجدول أدناه.</li>
+      <li>اضغط <b>Save and Deploy</b> وانتظر دقيقتين تقريبًا حتى يظهر <b>Success</b>.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/pages/new/provider/github</span></div>
+        <div class="top cf"><span class="logo-cf"></span> Set up builds and deployments</div>
+        <div class="wb">
+          <div class="field"><label>Project name</label><div class="in">selorin-website</div></div>
+          <div class="field"><label>Production branch</label><div class="in">main</div></div>
+          <div class="field"><label>Framework preset</label><div class="in hl"><span class="pin">3</span>Astro</div></div>
+          <div class="row"><div class="field" style="flex:1"><label>Build command</label><div class="in">npm run build</div></div><div class="field" style="flex:1"><label>Build output directory</label><div class="in">dist</div></div></div>
+          <div class="field"><label>Environment variables</label><div class="in">NODE_VERSION = 22</div></div>
+          <span class="btn b hl"><span class="pin" style="margin-left:0">4</span>Save and Deploy</span>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <table class="env">
+    <tr><th>الحقل</th><th>القيمة</th></tr>
+    <tr><td>Project name</td><td><code>selorin-website</code> (يجب أن يطابق الاسم الموجود في <code>wrangler.toml</code>)</td></tr>
+    <tr><td>Production branch</td><td><code>main</code></td></tr>
+    <tr><td>Framework preset</td><td><code>Astro</code></td></tr>
+    <tr><td>Build command / Output</td><td><code>npm run build</code> · <code>dist</code></td></tr>
+    <tr><td>Root directory</td><td>اتركه فارغًا</td></tr>
+    <tr><td>Environment variable</td><td><code>NODE_VERSION = 22</code></td></tr>
+  </table>
+</section>
+
+<section class="step" id="step-6">
+  <h2><span class="num">6</span>ربط selorin.co و www.selorin.co بالمشروع</h2>
+  <p class="sub">بعد تفعيل خوادم الأسماء (الخطوة 4) تُنشئ Cloudflare السجلات وشهادة HTTPS تلقائيًا.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>افتح مشروع <b>selorin-website</b>، ثم تبويب <b>Custom domains</b>.</li>
+      <li>اضغط <b>Set up a custom domain</b>، واكتب <code>selorin.co</code>، ثم <b>Continue ← Activate domain</b>.</li>
+      <li>كرّر الخطوة نفسها مع <code>www.selorin.co</code>.</li>
+      <li>انتظر حتى تصبح الحالة <b>Active</b> لكليهما.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/pages/view/selorin-website/domains</span></div>
+        <div class="top cf"><span class="logo-cf"></span> selorin-website</div>
+        <div class="side">
+          <nav><div>Deployments</div><div class="on"><span class="pin" style="margin-left:0">1</span>Custom domains</div><div>Integrations</div><div>Settings</div></nav>
+          <main>
+            <div class="row" style="justify-content:space-between;margin-bottom:8px"><b>Custom domains</b><span class="btn b hl"><span class="pin" style="margin-left:0">2</span>Set up a custom domain</span></div>
+            <table class="tbl">
+              <tr><th>Domain</th><th>Status</th></tr>
+              <tr><td>selorin.co</td><td style="color:#1a7f37;font-weight:600">● Active</td></tr>
+              <tr><td>www.selorin.co</td><td style="color:#1a7f37;font-weight:600">● Active</td></tr>
+              <tr><td style="color:#888">selorin-website.pages.dev</td><td style="color:#888">default</td></tr>
+            </table>
+          </main>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+</section>
+
+<section class="step" id="step-7">
+  <h2><span class="num">7</span>قاعدة بيانات الطلبات D1</h2>
+  <p class="sub">تحفظ كل طلب برقم متسلسل (SEL-…)، وتحدّ من الإرسال المتكرر. تبقى النماذج ترسل البريد حتى بدونها، لكنها موصى بها.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>من القائمة: <b>Storage &amp; Databases ← D1 SQL Database ← Create</b>، والاسم <code>selorin-leads</code>.</li>
+      <li>انسخ <b>Database ID</b> وأرسله لي في المحادثة. سأضعه في <code>wrangler.toml</code> وأفعّل الربط باسم <code>DB</code>.</li>
+      <li>افتح تبويب <b>Console</b> في قاعدة البيانات، وألصق محتوى الملف <code>migrations/0001_leads.sql</code> كاملًا، ثم <b>Execute</b>.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/workers/d1/databases/…</span></div>
+        <div class="top cf"><span class="logo-cf"></span> selorin-leads</div>
+        <div class="wb">
+          <div class="row" style="gap:14px;margin-bottom:10px"><span>Overview</span><span class="hl" style="padding:1px 6px"><span class="pin" style="margin-left:0">3</span><b>Console</b></span><span>Metrics</span></div>
+          <div class="field"><label>Database ID <span class="pin">2</span></label><div class="in hl" style="font-family:monospace">1a2b3c4d-xxxx-xxxx-xxxx-xxxxxxxxxxxx ⧉</div></div>
+          <div class="in" style="font-family:monospace;font-size:11px;min-height:70px;background:#fbfbfb;margin-top:8px">CREATE TABLE IF NOT EXISTS leads (…);<br>CREATE TABLE IF NOT EXISTS lead_counters (…);<br>…</div>
+          <div style="margin-top:8px"><span class="btn b">Execute</span></div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · المعرّف الفعلي يختلف</div>
+    </div>
+  </div>
+  <div class="note">بسبب وجود ملف <code>wrangler.toml</code> في المشروع، تُقرأ ربطات قاعدة البيانات منه وليس من لوحة التحكم. لذلك أرسل لي المعرّف ولا تضف الربط يدويًا.</div>
+</section>
+
+<section class="step" id="step-8">
+  <h2><span class="num">8</span>تفعيل الإرسال إلى sales@selorin.co عبر Resend</h2>
+  <p class="sub">Resend خدمة إرسال بريد (الخطة المجانية تكفي في البداية). يُرسَل الطلب من <span class="en">website@selorin.co</span> إلى <span class="en">sales@selorin.co</span>، مع رسالة تأكيد للعميل.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>أنشئ حسابًا في <code>resend.com</code>، ثم <b>Domains ← Add Domain</b>، وأدخل <code>selorin.co</code>. اختر منطقة قريبة إن أمكن.</li>
+      <li>ستظهر سجلات DNS (‏TXT للتحقق وDKIM، وMX/TXT لنطاق فرعي مثل <code>send</code>). إن ظهر زر <b>Auto configure</b> مع Cloudflare فاستخدمه، وإلا انسخ كل سجل إلى <b>Cloudflare ← DNS ← Records ← Add record</b>.</li>
+      <li>انتظر حتى تصبح الحالة <b>Verified</b>.</li>
+      <li><b>API Keys ← Create API Key</b> بصلاحية <b>Sending access</b>، وانسخ المفتاح (يظهر مرة واحدة).</li>
+      <li>في Cloudflare: مشروع <b>selorin-website ← Settings ← Variables and Secrets ← Add</b>، النوع <b>Secret</b>، الاسم <code>RESEND_API_KEY</code>، والقيمة هي المفتاح.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/pages/view/selorin-website/settings</span></div>
+        <div class="top cf"><span class="logo-cf"></span> Settings · Variables and Secrets</div>
+        <div class="wb">
+          <div class="row" style="justify-content:space-between"><b>Production</b><span class="btn b">+ Add</span></div>
+          <div class="row hl" style="margin-top:10px;padding:6px"><span class="pin">5</span>
+            <div class="field" style="width:80px"><label>Type</label><div class="in">Secret</div></div>
+            <div class="field" style="flex:1"><label>Variable name</label><div class="in">RESEND_API_KEY</div></div>
+            <div class="field" style="flex:1"><label>Value</label><div class="in">re_••••••••••••</div></div>
+          </div>
+          <table class="tbl" style="margin-top:10px">
+            <tr><th>Name</th><th>Type</th></tr>
+            <tr><td>RESEND_API_KEY</td><td>Secret</td></tr>
+            <tr><td>TURNSTILE_SECRET</td><td>Secret</td></tr>
+            <tr><td>PUBLIC_TURNSTILE_SITE_KEY</td><td>Plaintext</td></tr>
+            <tr><td>NODE_VERSION</td><td>Plaintext</td></tr>
+          </table>
+          <div style="margin-top:10px"><span class="btn b">Save</span></div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <div class="warn">لا تحذف سجلات MX الخاصة بـ <span class="en">sales@selorin.co</span> الموجودة على النطاق الرئيسي. سجلات Resend تُضاف إلى جانبها ولا تحل محلها. وإن وُجد سجل SPF سابق فلا تُنشئ سجلًا ثانيًا على النطاق نفسه.</div>
+</section>
+
+<section class="step" id="step-9">
+  <h2><span class="num">9</span>الحماية من الرسائل المزعجة (Cloudflare Turnstile)</h2>
+  <p class="sub">بديل مجاني وغير مزعج لـ CAPTCHA يحمي نماذج طلب الخدمة.</p>
+  <div class="grid">
+    <ol class="do">
+      <li>في Cloudflare: <b>Turnstile ← Add widget</b>. الاسم <code>Selorin forms</code>، والنطاقات <code>selorin.co</code> و <code>www.selorin.co</code>، والنوع <b>Managed</b>.</li>
+      <li>ستحصل على مفتاحين. أضفهما في <b>Variables and Secrets</b> (الخطوة 8):
+        <br>• <b>Site Key</b> ← متغير عادي (Plaintext) باسم <code>PUBLIC_TURNSTILE_SITE_KEY</code>
+        <br>• <b>Secret Key</b> ← سر (Secret) باسم <code>TURNSTILE_SECRET</code></li>
+      <li>أعد النشر من <b>Deployments ← ⋯ ← Retry deployment</b> لأن مفتاح الموقع يُضمَّن وقت البناء.</li>
+    </ol>
+    <div>
+      <div class="win">
+        <div class="bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">dash.cloudflare.com/…/turnstile</span></div>
+        <div class="top cf"><span class="logo-cf"></span> Turnstile · Selorin forms</div>
+        <div class="wb">
+          <div class="field"><label>Hostnames</label><div class="in">selorin.co · www.selorin.co</div></div>
+          <div class="field"><label>Widget mode</label><div class="in">Managed</div></div>
+          <div class="field"><label>Site Key → PUBLIC_TURNSTILE_SITE_KEY</label><div class="in hl" style="font-family:monospace"><span class="pin" style="margin-left:0">2</span>0x4AAAAAAA•••••••• ⧉</div></div>
+          <div class="field"><label>Secret Key → TURNSTILE_SECRET</label><div class="in" style="font-family:monospace">0x4AAAAAAA•••••••• ⧉</div></div>
+        </div>
+      </div>
+      <div class="illus">صورة توضيحية · قد تختلف الواجهة الفعلية</div>
+    </div>
+  </div>
+  <table class="env">
+    <tr><th>الاسم</th><th>النوع</th><th>المصدر</th></tr>
+    <tr><td><code>NODE_VERSION</code></td><td>Plaintext</td><td>القيمة <code>22</code></td></tr>
+    <tr><td><code>RESEND_API_KEY</code></td><td>Secret</td><td>Resend ← API Keys</td></tr>
+    <tr><td><code>TURNSTILE_SECRET</code></td><td>Secret</td><td>Turnstile ← Secret Key</td></tr>
+    <tr><td><code>PUBLIC_TURNSTILE_SITE_KEY</code></td><td>Plaintext</td><td>Turnstile ← Site Key</td></tr>
+  </table>
+  <p style="font-size:14px;color:var(--muted);margin:8px 0 0">قيم البريد (<span class="en">SALES_EMAIL, MAIL_FROM, ALLOWED_ORIGINS</span>) معرّفة مسبقًا في <code>wrangler.toml</code> ولا تحتاج إلى إدخال.</p>
+</section>
+
+<section class="step" id="step-10">
+  <h2><span class="num">10</span>الاختبار النهائي، وطريقة التحديث لاحقًا</h2>
+  <div class="grid">
+    <div>
+      <b>قائمة التحقق</b>
+      <ol class="do">
+        <li><code>https://selorin.co</code> يفتح بقفل HTTPS، و <code>www</code> يعمل أيضًا.</li>
+        <li><code>https://selorin.co/ar/</code> يفتح النسخة العربية من اليمين إلى اليسار.</li>
+        <li>أرسل طلبًا تجريبيًا من <b>طلب خدمة ← أجهزة رصد الغبار</b>.</li>
+        <li>تصل رسالة بعنوان <span class="en">[New Service Request] – …</span> إلى <span class="en">sales@selorin.co</span>، ورسالة تأكيد إلى بريد المرسل.</li>
+        <li>الروابط القديمة للموقع السابق تُحوَّل تلقائيًا إلى الصفحات الجديدة.</li>
+      </ol>
+    </div>
+    <div>
+      <b>بعد الإطلاق: كل تحديث تلقائي</b>
+      <div class="flow" style="margin-top:10px">
+        <div class="node"><b>تعديل</b><small>مني أو من فريقك</small></div><div class="arrow">←</div>
+        <div class="node"><b>Pull Request</b><small>رابط معاينة تلقائي</small></div><div class="arrow">←</div>
+        <div class="node k"><b>Merge</b><small>نشر على selorin.co خلال دقيقتين</small></div>
+      </div>
+      <div class="ok">لإلغاء نشر خاطئ: <b>Deployments</b> ← اختر نسخة سابقة ← <b>Rollback to this deployment</b>. يعود الموقع خلال ثوانٍ.</div>
+    </div>
+  </div>
+</section>
+
+<footer>Selorin Environmental Advisory &amp; Services · sales@selorin.co · ‎+966 53 430 2332<br>الصور الواردة في هذا الدليل رسومات توضيحية مبسطة وليست لقطات شاشة رسمية من GitHub أو Cloudflare أو Resend.</footer>
+</main>
+</body>
+</html>

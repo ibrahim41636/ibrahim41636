@@ -44,6 +44,7 @@ const pageContext = { page_language: lang, page_path: path, ...analytics };
   <link rel="alternate" hreflang="en" href={alt.en} />
   <link rel="alternate" hreflang="ar" href={alt.ar} />
   <link rel="alternate" hreflang="x-default" href={alt.en} />
+  <link rel="alternate" type="application/rss+xml" title={lang === "ar" ? "مركز المعرفة — سيلورين" : "Selorin Knowledge Centre"} href={lang === "ar" ? "/ar/insights/rss.xml" : "/insights/rss.xml"} />
   <meta property="og:type" content={type} />
   <meta property="og:site_name" content={site.name[lang]} />
   <meta property="og:title" content={fullTitle} />

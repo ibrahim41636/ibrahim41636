@@ -1,11 +1,13 @@
 ---
+import { pageImage } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import InsightCard from "@/components/InsightCard.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import { href, t, type Lang } from "@/i18n/ui";
-import { insightCategories } from "@/data/taxonomy";
-import { getInsights, insightSlug } from "@/lib/content";
+import { insightCategories, categories } from "@/data/taxonomy";
+import Icon from "@/components/Icon.astro";
+import { getInsights, insightSlug, getServices } from "@/lib/content";
 import { collectionSchema } from "@/lib/schema";
 interface Props { lang: Lang; category?: string }
 const { lang, category } = Astro.props;
@@ -15,6 +17,13 @@ const posts = category ? all.filter((p) => p.data.category === category) : all;
 const path = category ? `/insights/category/${category}/` : "/insights/";
 const catName = category ? insightCategories[category][lang] : undefined;
 const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.insights"), path: "/insights/" }, ...(category ? [{ name: catName!, path }] : [])];
+const services = await getServices();
+const serviceCat = Object.fromEntries(services.map((s) => [s.id, s.data.category]));
+// Topic clusters: each practice area is a pillar; articles attach to it through their related services.
+const clusters = categories.map((c) => ({
+  cat: c,
+  posts: all.filter((p) => p.data.relatedServices.some((r) => serviceCat[r.id] === c.id)).slice(0, 4),
+}));
 const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data.category === c));
 ---
 <Base lang={lang} path={path} breadcrumbs={crumbs}
@@ -22,7 +31,7 @@ const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data
   description={ar ? "مقالات وأدلة عملية من سيلورين حول التصاريح البيئية والامتثال والرصد والحوكمة البيئية والاجتماعية والاستدامة في المملكة." : "Practical guides and technical articles from Selorin on environmental permits, compliance, monitoring, ESG and sustainability in Saudi Arabia."}
   schema={[collectionSchema(lang, path, catName ?? t(lang, "nav.insights"), posts.map((p) => ({ name: p.data.title, path: `/insights/${insightSlug(p)}/` })))]}
   analytics={{ page_type: "insights", insight_category: category ?? "all" }}>
-  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.insights")}
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("insights")} eyebrow={t(lang, "nav.insights")}
     title={catName ?? (ar ? "إرشادات عملية للمتطلبات البيئية" : "Practical guidance on environmental requirements")}
     lead={ar ? "شروحات واضحة للمتطلبات التنظيمية وممارسات الرصد والإفصاح، مكتوبة لمديري البيئة والمشاريع وصناع القرار." : "Clear explanations of regulatory requirements, monitoring practice and disclosure — written for environmental, HSE and project leaders."} />
   <section class="section">
@@ -35,5 +44,30 @@ const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data
       <div class="grid grid-3">{posts.map((p) => <InsightCard lang={lang} post={p} />)}</div>
     </div>
   </section>
+  {!category && (
+    <section class="section bg-white border-top" aria-labelledby="h-clusters">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{ar ? "محاور المعرفة" : "Knowledge topics"}</p>
+            <h2 id="h-clusters">{ar ? "تصفّح المعرفة حسب مجال الخدمة" : "Browse guidance by practice area"}</h2>
+          </div>
+          <p class="lead">{ar ? "ننشر محتوى جديداً بشكل دوري ضمن ستة محاور، يرتبط كل منها بخدماتنا، لتجد الإجابة ثم الخطوة التالية في مكان واحد." : "We publish new guidance regularly across six topics, each linked to our services, so you can find the answer and the next step in one place."}</p>
+        </div>
+        <div class="grid grid-3">
+          {clusters.map(({ cat, posts: cp }) => (
+            <article class="card">
+              <span class="icon"><Icon name={cat.icon} /></span>
+              <h3><a class="card-link" href={href(lang, `/services/${cat.id}/`)} style="text-decoration:none">{cat.name[lang]}</a></h3>
+              {cp.length > 0
+                ? <ul class="card-list">{cp.map((p) => <li><a href={href(lang, `/insights/${insightSlug(p)}/`)}>{p.data.title}</a></li>)}</ul>
+                : <p>{cat.summary[lang]}</p>}
+            </article>
+          ))}
+        </div>
+        <p style="margin-top:var(--space-6)"><a class="link" href={ar ? "/ar/insights/rss.xml" : "/insights/rss.xml"}>{ar ? "تابع الجديد عبر خلاصة RSS" : "Follow new articles via RSS"} <Icon name="arrow" /></a></p>
+      </div>
+    </section>
+  )}
   <CtaBand title={t(lang, "insights.ctaTitle")} body={t(lang, "insights.ctaBody")} label={t(lang, "cta.specialist")} to={href(lang, "/request/")} cta="insights_hub_cta" />
 </Base>

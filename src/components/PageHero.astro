@@ -3,10 +3,11 @@ import Picture from "@/components/Picture.astro";
 import Contours from "./Contours.astro";
 import { href, t, type Lang } from "@/i18n/ui";
 import type { Crumb } from "@/lib/schema";
-interface Props { lang: Lang; eyebrow?: string; title: string; titleHtml?: string; lead?: string; leadHtml?: string; crumbs: Crumb[]; image?: string; light?: boolean }
-const { lang, eyebrow, title, titleHtml, lead, leadHtml, crumbs, image, light = false } = Astro.props;
+import type { Img } from "@/data/imagery";
+interface Props { lang: Lang; eyebrow?: string; title: string; titleHtml?: string; lead?: string; leadHtml?: string; crumbs: Crumb[]; image?: string; photo?: Img; light?: boolean }
+const { lang, eyebrow, title, titleHtml, lead, leadHtml, crumbs, image, photo, light = false } = Astro.props;
 ---
-<section class:list={["page-hero", { "page-hero--light": light, "on-dark": !light }]}>
+<section class:list={["page-hero", { "page-hero--light": light, "on-dark": !light, "page-hero--photo": photo }]}>
   {image && <div class="page-hero-media"><Picture src={image} alt="" width={1600} height={900} loading="eager" fetchpriority="high" /></div>}
   {!light && <Contours />}
   <div class="container">
@@ -15,9 +16,18 @@ const { lang, eyebrow, title, titleHtml, lead, leadHtml, crumbs, image, light = 
         {crumbs.map((c, i) => i < crumbs.length - 1 ? <li><a href={href(lang, c.path)}>{c.name}</a></li> : <li aria-current="page">{c.name}</li>)}
       </ol>
     </nav>
-    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
-    {titleHtml ? <h1 set:html={titleHtml} /> : <h1>{title}</h1>}
-    {leadHtml ? <p class="lead" set:html={leadHtml} /> : lead && <p class="lead">{lead}</p>}
-    <slot />
+    <div class="page-hero-grid">
+      <div class="page-hero-text">
+        {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+        {titleHtml ? <h1 set:html={titleHtml} /> : <h1>{title}</h1>}
+        {leadHtml ? <p class="lead" set:html={leadHtml} /> : lead && <p class="lead">{lead}</p>}
+        <slot />
+      </div>
+      {photo && (
+        <figure class="page-hero-photo">
+          <Picture src={photo.src} alt={photo.alt[lang]} width={photo.width} height={photo.height} loading="eager" fetchpriority="high" sizes="(max-width: 960px) 100vw, 440px" />
+        </figure>
+      )}
+    </div>
   </div>
 </section>

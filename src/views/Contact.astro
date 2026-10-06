@@ -1,4 +1,5 @@
 ---
+import { pageImage } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import RequestForm from "@/components/RequestForm.astro";
@@ -14,7 +15,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.c
   description={ar ? "تواصل مع سيلورين عبر sales@selorin.co أو +966 53 430 2332 لمناقشة التصاريح البيئية والرصد والدراسات والاستدامة لمشروعك." : "Contact Selorin at sales@selorin.co or +966 53 430 2332 to discuss environmental permitting, monitoring, studies and sustainability for your project."}
   schema={[{ "@type": "ContactPage", mainEntity: { "@id": "https://selorin.co/#organization" } }]}
   analytics={{ page_type: "contact" }}>
-  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.contact")} title={ar ? "لنتحدث عن مشروعك" : "Let's talk about your project"}
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("contact")} eyebrow={t(lang, "nav.contact")} title={ar ? "لنتحدث عن مشروعك" : "Let's talk about your project"}
     lead={ar ? "أرسل استفسارك أو اطلب خدمة محددة، وسيراجع مختص بيئي متطلباتك ويتواصل معك." : "Send an inquiry or request a specific service. An environmental specialist will review your requirements and get back to you."} />
   <section class="section">
     <div class="container split">

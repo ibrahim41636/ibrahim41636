@@ -1,4 +1,5 @@
 ---
+import { pageImage } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import CtaBand from "@/components/CtaBand.astro";
@@ -19,7 +20,7 @@ const template = await getEntry("projects", "case-study-template");
   title={ar ? "المشاريع ودراسات الحالة | سيلورين" : "Projects & Case Studies | Selorin"}
   description={ar ? "دراسات حالة لأعمال سيلورين في التصاريح البيئية والرصد والدراسات والاستدامة، ونوعية التكليفات التي ننفذها في المملكة." : "Case studies of Selorin's environmental permitting, monitoring, studies and sustainability work, and the types of engagements we deliver in Saudi Arabia."}
   analytics={{ page_type: "projects" }}>
-  <PageHero lang={lang} crumbs={crumbs} eyebrow={t(lang, "nav.projects")}
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("projects")} eyebrow={t(lang, "nav.projects")}
     title={ar ? "أعمال تُقاس بمخرجاتها" : "Work measured by its deliverables"}
     lead={ar ? "نعرض دراسات الحالة بموافقة عملائنا، مع توضيح النطاق والتحدي والمنهجية والمخرجات." : "We publish case studies with our clients' approval, setting out scope, challenge, approach and deliverables."} />
   <section class="section">

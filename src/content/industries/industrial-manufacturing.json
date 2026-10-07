@@ -9,7 +9,9 @@
     "water-quality-monitoring",
     "waste-management",
     "ghg-carbon-accounting",
-    "environmental-impact-assessment"
+    "environmental-impact-assessment",
+    "solar-energy-systems",
+    "battery-energy-storage"
   ],
   "en": {
     "name": "Industrial & Manufacturing",

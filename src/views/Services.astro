@@ -17,7 +17,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
 ---
 <Base lang={lang} path="/services/" breadcrumbs={crumbs}
   title={ar ? "الخدمات البيئية في المملكة | التصاريح والدراسات والرصد والاستدامة" : "Environmental Services in Saudi Arabia | Selorin"}
-  description={ar ? "خدمات سيلورين البيئية: التصاريح والامتثال، وتقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والاستدامة والحوكمة البيئية، والمباني المستدامة." : "Selorin's environmental services: permitting and compliance, EIA, environmental monitoring, waste management, ESG and climate, and sustainable buildings in Saudi Arabia."}
+  description={ar ? "خدمات سيلورين البيئية: التصاريح والامتثال، وتقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والاستدامة والحوكمة البيئية، والمباني المستدامة، والطاقة المتجددة." : "Selorin's environmental services: permitting and compliance, EIA, environmental monitoring, waste management, ESG and climate, sustainable buildings and renewable energy in Saudi Arabia."}
   schema={[collectionSchema(lang, "/services/", t(lang, "nav.services"), services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
   analytics={{ page_type: "services_hub" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("services")} eyebrow={t(lang, "nav.services")}

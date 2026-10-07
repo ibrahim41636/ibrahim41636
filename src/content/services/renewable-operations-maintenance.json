@@ -1,0 +1,269 @@
+{
+  "category": "renewable-energy",
+  "order": 4,
+  "formFamily": "energy",
+  "industries": [
+    "energy",
+    "industrial-manufacturing",
+    "real-estate",
+    "commercial-facilities",
+    "government-public-sector",
+    "infrastructure"
+  ],
+  "related": [
+    "solar-energy-systems",
+    "battery-energy-storage",
+    "ev-charging-stations",
+    "renewable-energy-feasibility"
+  ],
+  "en": {
+    "name": "Renewable Energy Operation & Maintenance",
+    "seoTitle": "Solar & Renewable Energy O&M in Saudi Arabia | Selorin",
+    "metaDescription": "O&M for solar plants, rooftop systems, batteries and EV chargers in Saudi Arabia: panel cleaning, inspections, fault response and performance reports.",
+    "valueProp": "Field services that keep solar plants, batteries and chargers producing as designed: cleaning, inspections, fast fault response and transparent performance reporting.",
+    "cardDescription": "Operation and maintenance for rooftop and ground-mounted solar, battery storage and EV chargers: cleaning, preventive inspections, thermal imaging, fault response and performance reports.",
+    "keyBenefit": "Higher, more predictable output over the life of your assets",
+    "definition": "Operation and maintenance (O&M) covers the field and technical services that keep renewable energy assets producing safely and efficiently after commissioning. It includes panel cleaning, preventive inspections, testing of electrical equipment, thermal imaging, corrective repairs, spare-parts management, remote monitoring and performance reporting against expected production.",
+    "overview": [
+      "A solar system's output is decided not only by its design but by how it is looked after. In Saudi conditions, dust accumulates quickly, high temperatures stress electrical components, and small faults such as a tripped string, a failed inverter or a damaged connector can go unnoticed for weeks while production quietly falls.",
+      "Many owners have no clear view of how their system is performing. Monitoring data is not reviewed, cleaning is irregular, warranty claims are missed and there is no baseline to compare against. The result is lost energy, shorter equipment life and savings that never match the original business case.",
+      "Selorin's field teams provide planned and corrective maintenance for rooftop and ground-mounted solar systems, battery storage and EV chargers. We set a cleaning and inspection schedule matched to site conditions, monitor production remotely, respond to faults, manage spare parts and warranty claims, and report performance against the expected yield, so you always know what your assets are delivering."
+    ],
+    "whenYouNeed": [
+      "Your solar system's production has dropped or you are not sure how it is performing.",
+      "You need a regular panel cleaning and inspection programme suited to dusty conditions.",
+      "You own several sites, such as compounds, branches or factories, and want one maintenance partner.",
+      "Your installer's warranty or maintenance period has ended.",
+      "You need documented performance reports for management, investors or lenders.",
+      "Your batteries or EV chargers need preventive maintenance and fault response."
+    ],
+    "deliver": [
+      {
+        "title": "Panel cleaning programmes",
+        "description": "Cleaning frequency and method matched to dust levels, water availability and panel manufacturer guidance."
+      },
+      {
+        "title": "Preventive inspections",
+        "description": "Scheduled mechanical and electrical inspections of modules, structures, cabling, inverters, protection and earthing."
+      },
+      {
+        "title": "Thermal imaging and testing",
+        "description": "Thermographic surveys and electrical testing to find hot spots, failing strings and connection faults early."
+      },
+      {
+        "title": "Remote monitoring",
+        "description": "Continuous review of production and alarms, with alerts when output falls below expected levels."
+      },
+      {
+        "title": "Corrective maintenance",
+        "description": "Fault diagnosis, repairs, spare-parts management and coordination of warranty claims with manufacturers."
+      },
+      {
+        "title": "Performance reporting",
+        "description": "Reports comparing actual and expected production, availability, losses and recommended improvements."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Baseline the asset",
+        "description": "We inspect the system, review its documentation and set expected production as a baseline."
+      },
+      {
+        "title": "Plan maintenance",
+        "description": "We agree a cleaning, inspection and response schedule for each site."
+      },
+      {
+        "title": "Monitor continuously",
+        "description": "We follow production and alarms remotely and act on deviations."
+      },
+      {
+        "title": "Maintain and repair",
+        "description": "Our teams carry out planned work and fix faults, keeping full records."
+      },
+      {
+        "title": "Report and improve",
+        "description": "We report performance and recommend upgrades that increase output."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "Initial condition assessment",
+        "format": "Inspection report with findings and priorities (PDF)",
+        "timing": "Contract start"
+      },
+      {
+        "item": "Maintenance plan",
+        "format": "Cleaning and inspection schedule per site (PDF + Excel)",
+        "timing": "Contract start"
+      },
+      {
+        "item": "Inspection and service records",
+        "format": "Checklists, photos and test results",
+        "timing": "After each visit"
+      },
+      {
+        "item": "Thermal imaging report",
+        "format": "Thermographic report (PDF)",
+        "timing": "Periodic"
+      },
+      {
+        "item": "Performance report",
+        "format": "Monthly or quarterly report",
+        "timing": "Throughout the contract"
+      }
+    ],
+    "regulatoryContext": [
+      "Manufacturer warranty conditions for modules, inverters and batteries, which typically require documented maintenance.",
+      "Electrical safety requirements of the Saudi Building Code and safe working practices for live electrical systems.",
+      "Water-efficiency expectations when planning panel cleaning in a water-scarce environment.",
+      "National Center for Waste Management (MWAN) requirements for disposal of failed panels, batteries and electronic components."
+    ],
+    "faqs": [
+      {
+        "q": "How often should solar panels be cleaned in Saudi Arabia?",
+        "a": "It depends on local dust levels, nearby activities and the season. Some sites need frequent cleaning while others need less. We set the schedule from site conditions and production data rather than a fixed rule."
+      },
+      {
+        "q": "Can you maintain a system installed by another company?",
+        "a": "Yes. We start with a condition assessment and documentation review, then take over maintenance and monitoring under a clear plan."
+      },
+      {
+        "q": "How do you know if my system is underperforming?",
+        "a": "We compare actual production with expected production for the same weather conditions. A gap triggers investigation through monitoring data, inspections and thermal imaging."
+      },
+      {
+        "q": "Do you also maintain batteries and EV chargers?",
+        "a": "Yes. Our O&M services cover battery storage and EV chargers as well as solar systems, so connected assets are maintained by one team."
+      },
+      {
+        "q": "Do you serve several sites under one contract?",
+        "a": "Yes. Multi-site owners such as compounds, retail branches and industrial groups can have all sites under one plan with consolidated reporting."
+      }
+    ]
+  },
+  "ar": {
+    "name": "تشغيل وصيانة مشاريع الطاقة المتجددة",
+    "seoTitle": "تشغيل وصيانة الطاقة الشمسية والمتجددة في السعودية | سيلورين",
+    "metaDescription": "تشغيل وصيانة محطات الطاقة الشمسية والأنظمة على الأسطح والبطاريات وشواحن السيارات في السعودية: تنظيف وفحوص واستجابة للأعطال وتقارير أداء.",
+    "valueProp": "خدمات ميدانية تبقي محطات الطاقة الشمسية والبطاريات والشواحن تنتج كما صُممت: تنظيف وفحوص واستجابة سريعة للأعطال وتقارير أداء شفافة.",
+    "cardDescription": "تشغيل وصيانة أنظمة الطاقة الشمسية على الأسطح والأرض وأنظمة التخزين وشواحن السيارات: تنظيف وفحوص وقائية وتصوير حراري واستجابة للأعطال وتقارير أداء.",
+    "keyBenefit": "إنتاج أعلى وأكثر استقراراً طوال عمر أصولك",
+    "definition": "التشغيل والصيانة هي الخدمات الميدانية والفنية التي تبقي أصول الطاقة المتجددة تنتج بأمان وكفاءة بعد التشغيل. وتشمل تنظيف الألواح، والفحوص الوقائية، واختبار المعدات الكهربائية، والتصوير الحراري، والإصلاحات، وإدارة قطع الغيار، والمراقبة عن بُعد، وتقارير الأداء مقارنة بالإنتاج المتوقع.",
+    "overview": [
+      "لا يتحدد إنتاج النظام الشمسي بتصميمه فقط، بل بطريقة العناية به. ففي ظروف المملكة يتراكم الغبار بسرعة، وتجهد الحرارة المرتفعة المكونات الكهربائية، وقد تمر أعطال صغيرة مثل خروج سلسلة ألواح أو تعطل عاكس أو تلف موصل لأسابيع دون ملاحظة بينما ينخفض الإنتاج بصمت.",
+      "كثير من الملاك لا يملكون رؤية واضحة لأداء أنظمتهم؛ فبيانات المراقبة لا تُراجع، والتنظيف غير منتظم، ومطالبات الضمان تفوت، ولا يوجد خط أساس للمقارنة. والنتيجة طاقة مفقودة وعمر أقصر للمعدات ووفورات لا تطابق دراسة الجدوى الأصلية.",
+      "تقدم فرق سيلورين الميدانية الصيانة المخططة والتصحيحية لأنظمة الطاقة الشمسية على الأسطح والأرض وأنظمة التخزين وشواحن السيارات. نضع برنامج تنظيف وفحص يناسب ظروف الموقع، ونراقب الإنتاج عن بُعد، ونستجيب للأعطال، وندير قطع الغيار ومطالبات الضمان، ونقارن الأداء بالإنتاج المتوقع في تقارير دورية، لتعرف دائماً ما تقدمه أصولك."
+    ],
+    "whenYouNeed": [
+      "انخفض إنتاج نظامك الشمسي أو لست متأكداً من أدائه.",
+      "تحتاج إلى برنامج منتظم لتنظيف الألواح وفحصها يناسب الأجواء المغبرة.",
+      "تملك عدة مواقع مثل كمباوندات أو فروع أو مصانع وتريد شريك صيانة واحداً.",
+      "انتهت فترة الضمان أو الصيانة لدى المقاول الذي ركّب النظام.",
+      "تحتاج إلى تقارير أداء موثقة للإدارة أو المستثمرين أو الممولين.",
+      "بطارياتك أو شواحن السيارات تحتاج إلى صيانة وقائية واستجابة للأعطال."
+    ],
+    "deliver": [
+      {
+        "title": "برامج تنظيف الألواح",
+        "description": "تكرار وطريقة تنظيف تناسب مستويات الغبار وتوفر المياه وإرشادات الشركة المصنعة."
+      },
+      {
+        "title": "الفحوص الوقائية",
+        "description": "فحوص ميكانيكية وكهربائية مجدولة للألواح والهياكل والكابلات والعواكس والحماية والتأريض."
+      },
+      {
+        "title": "التصوير الحراري والاختبارات",
+        "description": "مسوح حرارية واختبارات كهربائية لاكتشاف النقاط الساخنة والسلاسل المتعطلة وأعطال التوصيل مبكراً."
+      },
+      {
+        "title": "المراقبة عن بُعد",
+        "description": "متابعة مستمرة للإنتاج والإنذارات، مع تنبيه عند انخفاض الإنتاج عن المتوقع."
+      },
+      {
+        "title": "الصيانة التصحيحية",
+        "description": "تشخيص الأعطال وإصلاحها، وإدارة قطع الغيار، وتنسيق مطالبات الضمان مع المصنّعين."
+      },
+      {
+        "title": "تقارير الأداء",
+        "description": "تقارير تقارن الإنتاج الفعلي بالمتوقع، ونسبة الجاهزية، والفقد، والتحسينات الموصى بها."
+      }
+    ],
+    "approach": [
+      {
+        "title": "تحديد خط الأساس",
+        "description": "نفحص النظام ونراجع وثائقه ونحدد الإنتاج المتوقع كخط أساس."
+      },
+      {
+        "title": "تخطيط الصيانة",
+        "description": "نتفق على جدول التنظيف والفحص والاستجابة لكل موقع."
+      },
+      {
+        "title": "المراقبة المستمرة",
+        "description": "نتابع الإنتاج والإنذارات عن بُعد ونتصرف عند أي انحراف."
+      },
+      {
+        "title": "الصيانة والإصلاح",
+        "description": "تنفذ فرقنا الأعمال المخططة وتعالج الأعطال مع سجلات كاملة."
+      },
+      {
+        "title": "التقارير والتحسين",
+        "description": "نرفع تقارير الأداء ونوصي بتحسينات ترفع الإنتاج."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "تقييم الحالة الأولي",
+        "format": "تقرير فحص بالملاحظات والأولويات (PDF)",
+        "timing": "بداية العقد"
+      },
+      {
+        "item": "خطة الصيانة",
+        "format": "جدول تنظيف وفحص لكل موقع (PDF + Excel)",
+        "timing": "بداية العقد"
+      },
+      {
+        "item": "سجلات الفحص والخدمة",
+        "format": "قوائم تحقق وصور ونتائج اختبارات",
+        "timing": "بعد كل زيارة"
+      },
+      {
+        "item": "تقرير التصوير الحراري",
+        "format": "تقرير حراري (PDF)",
+        "timing": "دوري"
+      },
+      {
+        "item": "تقرير الأداء",
+        "format": "تقرير شهري أو ربع سنوي",
+        "timing": "طوال مدة العقد"
+      }
+    ],
+    "regulatoryContext": [
+      "شروط ضمان الشركات المصنعة للألواح والعواكس والبطاريات، والتي تتطلب عادةً صيانة موثقة.",
+      "متطلبات السلامة الكهربائية في كود البناء السعودي وممارسات العمل الآمن على الأنظمة الكهربائية الحية.",
+      "توقعات ترشيد استهلاك المياه عند تخطيط تنظيف الألواح في بيئة شحيحة المياه.",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) للتخلص من الألواح والبطاريات والمكونات الإلكترونية التالفة."
+    ],
+    "faqs": [
+      {
+        "q": "كم مرة يجب تنظيف الألواح الشمسية في السعودية؟",
+        "a": "يعتمد ذلك على مستويات الغبار المحلية والأنشطة المجاورة والموسم؛ فبعض المواقع تحتاج تنظيفاً متكرراً وأخرى أقل. نحدد الجدول من ظروف الموقع وبيانات الإنتاج لا بقاعدة ثابتة."
+      },
+      {
+        "q": "هل تصونون نظاماً ركّبته شركة أخرى؟",
+        "a": "نعم. نبدأ بتقييم الحالة ومراجعة الوثائق، ثم نتولى الصيانة والمراقبة وفق خطة واضحة."
+      },
+      {
+        "q": "كيف تعرفون أن نظامي أداؤه أقل من المتوقع؟",
+        "a": "نقارن الإنتاج الفعلي بالإنتاج المتوقع في الظروف الجوية نفسها. وأي فجوة تستدعي التحقق عبر بيانات المراقبة والفحوص والتصوير الحراري."
+      },
+      {
+        "q": "هل تصونون البطاريات وشواحن السيارات أيضاً؟",
+        "a": "نعم. تشمل خدماتنا أنظمة التخزين وشواحن السيارات إلى جانب الأنظمة الشمسية، لتُصان الأصول المترابطة من فريق واحد."
+      },
+      {
+        "q": "هل تخدمون عدة مواقع بعقد واحد؟",
+        "a": "نعم. يمكن للملاك متعددي المواقع كالكمباوندات وفروع التجزئة والمجموعات الصناعية جمع كل مواقعهم في خطة واحدة مع تقارير موحدة."
+      }
+    ]
+  }
+}

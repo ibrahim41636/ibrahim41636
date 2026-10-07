@@ -46,6 +46,13 @@ export const ICONS: Record<string, string> = {
   city: '<path d="M3 21h18M5 21V8h6v13M11 21V3h8v18M8 11h.01M8 15h.01M14 7h2M14 11h2M14 15h2"/>',
   bridge: '<path d="M2 17h20M4 17v4M20 17v4M2 9c4 0 6 4 10 4s6-4 10-4M7 11v6M12 13v4M17 11v6"/>',
   bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+  solar: '<circle cx="12" cy="5" r="2.5"/><path d="M12 0.8v.7M7.8 2.6l.5.5M16.2 2.6l-.5.5M4 11h16l2 9H2zM12 11v9M3 15.5h18M7.7 11l-1 9M16.3 11l1 9"/>',
+  ev: '<path d="M5 17V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14H3M15 10h2a2 2 0 0 1 2 2v4a1.5 1.5 0 0 0 3 0V9l-2-2"/><path d="M10.5 8L8 12h3l-2.5 4"/>',
+  battery: '<rect x="3" y="7" width="16" height="10" rx="2"/><path d="M21 10.5v3M7 10.5v3M10 10.5v3M13 10.5v3"/>',
+  wrench: '<path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5zM14.5 6.5L17 4a4 4 0 0 1 3 3l-2.5 2.5"/><path d="M5 5l3 3M4 8l4-4"/>',
+  study: '<path d="M4 20V10M10 20V4M16 20v-7M2 20h20"/><circle cx="19" cy="6" r="2.5"/>',
+  home: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10M10 20v-5h4v5"/>',
+  compound: '<path d="M2 21h20M3 21V11l4-3 4 3v10M13 21V8l4-3 4 3v13"/><path d="M6 14h2M16 11h2M16 15h2"/>',
   oil: '<path d="M8 21l4-14 4 14M6 21h12M9.5 14h5M12 7V3M9 3h6"/>',
   truck: '<path d="M2 6h11v10H2zM13 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
   food: '<path d="M7 3v8a2 2 0 0 0 4 0V3M9 11v10M17 3c-2 0-3 2-3 5s1 4 3 4v9"/>',
@@ -65,6 +72,8 @@ export const SERVICE_ICON: Record<string, string> = {
   "waste-management": "waste", "circular-economy": "circular", "esg-advisory": "esg", "ghg-carbon-accounting": "ghg",
   "net-zero-advisory": "netzero", "sustainability-advisory": "strategy", "life-cycle-assessment": "lca",
   "sustainable-buildings": "building", "green-building-advisory": "greenbuilding",
+  "solar-energy-systems": "solar", "ev-charging-stations": "ev", "battery-energy-storage": "battery",
+  "renewable-operations-maintenance": "wrench", "renewable-energy-feasibility": "study",
 };
 
 export const INDUSTRY_ICON: Record<string, string> = {

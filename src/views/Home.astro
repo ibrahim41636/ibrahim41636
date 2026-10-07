@@ -123,7 +123,7 @@ const how = ar
       <div class="section-head">
         <div>
           <p class="eyebrow">{t(lang, "nav.services")}</p>
-          <h2>{ar ? "ستة مجالات تغطي دورة الالتزام البيئي كاملة" : "Six practice areas covering the full environmental lifecycle"}</h2>
+          <h2>{ar ? "سبعة مجالات تغطي دورة الالتزام البيئي والطاقة النظيفة" : "Seven practice areas covering the environmental lifecycle and clean energy"}</h2>
         </div>
         <p class="lead">{ar ? "من أول تقييم للموقع إلى الامتثال المستمر — اختر المجال الأقرب لاحتياجك." : "From the first site assessment to ongoing compliance — start with the area closest to your need."}</p>
       </div>
@@ -131,11 +131,11 @@ const how = ar
         {categories.map((c) => {
           const items = services.filter((s) => s.data.category === c.id);
           return (
-            <article class="card reveal">
+            <article class:list={["card reveal", c.id === "renewable-energy" && "card--span"]}>
               <span class="icon"><Icon name={c.icon} /></span>
               <h3><a class="card-link" href={href(lang, `/services/${c.id}/`)} style="text-decoration:none" data-cta="home_practice_area">{c.name[lang]}</a></h3>
               <p>{c.summary[lang]}</p>
-              <ul class="card-list">{items.slice(0, 4).map((s) => <li><a href={href(lang, `/services/${s.id}/`)} data-cta="home_service_link" data-service={s.id}>{s.data[lang].name}</a></li>)}</ul>
+              <ul class="card-list">{items.slice(0, c.id === "renewable-energy" ? 6 : 4).map((s) => <li><a href={href(lang, `/services/${s.id}/`)} data-cta="home_service_link" data-service={s.id}>{s.data[lang].name}</a></li>)}</ul>
               <p class="benefit"><Icon name="check" /><span>{c.benefit[lang]}</span></p>
               <span class="link" aria-hidden="true">{t(lang, "cta.exploreService")} <Icon name="arrow" /></span>
             </article>

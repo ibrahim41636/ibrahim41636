@@ -1,0 +1,269 @@
+{
+  "category": "renewable-energy",
+  "order": 5,
+  "formFamily": "energy",
+  "industries": [
+    "energy",
+    "real-estate",
+    "industrial-manufacturing",
+    "infrastructure",
+    "government-public-sector",
+    "mining-quarrying"
+  ],
+  "related": [
+    "solar-energy-systems",
+    "battery-energy-storage",
+    "environmental-impact-assessment",
+    "net-zero-advisory"
+  ],
+  "en": {
+    "name": "Renewable Energy Feasibility & Environmental Studies",
+    "seoTitle": "Solar & Wind Feasibility and Environmental Studies | Selorin",
+    "metaDescription": "Feasibility, yield and environmental studies for solar and wind projects in Saudi Arabia: site screening, energy yield, financial model, EIA and permitting support.",
+    "valueProp": "Clear, bankable answers before you invest: how much energy a site can produce, what it will cost, and what environmental approvals it needs.",
+    "cardDescription": "Site screening, solar and wind resource and yield assessment, financial modelling, environmental impact assessment and permitting support for renewable energy projects.",
+    "keyBenefit": "Investment decisions built on credible technical, financial and environmental evidence",
+    "definition": "A renewable energy feasibility study tests whether a solar, wind or hybrid project is technically possible, financially viable and environmentally acceptable at a given site. It combines resource and yield assessment, grid and land constraints, cost and revenue modelling, and environmental and social screening, and it identifies the studies and permits the project will need.",
+    "overview": [
+      "From factory rooftops to utility-scale plants, renewable energy projects are being planned across the Kingdom. Before committing capital, owners, developers and lenders need confidence in three things: the energy the site will really produce, the cost and return of the project, and the environmental conditions it must meet.",
+      "Weak early studies are expensive. Optimistic yield assumptions undermine the financial case, unsuitable land or grid constraints are discovered late, and environmental issues such as habitats, drainage, dust or visual impact can delay approvals. For wind projects, effects on birds and on nearby communities also need careful assessment.",
+      "Selorin combines renewable energy engineering with our core environmental expertise. We screen sites, assess solar and wind resources and expected yield, model costs and returns, and identify grid and land constraints. Our environmental team prepares baseline surveys, environmental impact assessments and management plans, and supports the permitting process, so the project moves from feasibility to approval on one consistent evidence base."
+    ],
+    "whenYouNeed": [
+      "You are evaluating land or rooftops for a solar or wind project.",
+      "You need a feasibility study for management, investors or a lender.",
+      "You must compare solar, wind, storage or hybrid options for a site.",
+      "Your project requires an environmental impact assessment or environmental permit.",
+      "You need independent review of a developer's or contractor's yield and cost estimates.",
+      "You are setting renewable energy targets as part of a net-zero plan."
+    ],
+    "deliver": [
+      {
+        "title": "Site screening",
+        "description": "Comparison of candidate sites by resource, land, access, grid proximity and environmental sensitivity."
+      },
+      {
+        "title": "Resource and yield assessment",
+        "description": "Solar irradiation or wind resource analysis and energy yield modelling with clearly stated losses and uncertainty."
+      },
+      {
+        "title": "Technical concept",
+        "description": "Preliminary layout, technology options, storage and grid connection concept."
+      },
+      {
+        "title": "Financial model",
+        "description": "Capital and operating costs, savings or revenue, payback, internal rate of return and sensitivity analysis."
+      },
+      {
+        "title": "Environmental impact assessment",
+        "description": "Baseline surveys, impact assessment and mitigation for land, ecology, drainage, dust, noise and visual effects."
+      },
+      {
+        "title": "Permitting support",
+        "description": "Environmental management plans and coordination of submissions to the relevant authorities."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Frame the decision",
+        "description": "We confirm objectives, scale and the questions the study must answer."
+      },
+      {
+        "title": "Screen and measure",
+        "description": "We screen sites and assess resources, constraints and environmental sensitivities."
+      },
+      {
+        "title": "Model options",
+        "description": "We model yield, costs and returns for each option and compare them."
+      },
+      {
+        "title": "Assess impacts",
+        "description": "We assess environmental and social impacts and define mitigation."
+      },
+      {
+        "title": "Recommend and approve",
+        "description": "We recommend the preferred option and support permitting through to approval."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "Site screening memo",
+        "format": "Memo with comparison matrix (PDF)",
+        "timing": "Early stage"
+      },
+      {
+        "item": "Feasibility report",
+        "format": "Technical and financial report (PDF + Excel model)",
+        "timing": "Feasibility stage"
+      },
+      {
+        "item": "Energy yield report",
+        "format": "Yield assessment report (PDF)",
+        "timing": "Feasibility stage"
+      },
+      {
+        "item": "Environmental impact assessment",
+        "format": "EIA report and management plan (PDF)",
+        "timing": "Before permitting"
+      },
+      {
+        "item": "Submission support",
+        "format": "Submission package and comment responses",
+        "timing": "Permitting stage"
+      }
+    ],
+    "regulatoryContext": [
+      "The National Renewable Energy Program and Saudi Vision 2030 targets for renewable electricity.",
+      "Environmental Law and its implementing regulations, including environmental impact assessment requirements administered by the National Center for Environmental Compliance (NCEC).",
+      "Water and Electricity Regulatory Authority requirements for generation and grid connection.",
+      "Requirements of the Saudi Green Initiative and the Kingdom's net-zero ambition for 2060."
+    ],
+    "faqs": [
+      {
+        "q": "What is included in a solar feasibility study?",
+        "a": "Typically site and resource assessment, energy yield, system concept, grid connection, capital and operating costs, financial returns and an environmental screening. The depth depends on project size and on who will rely on the study."
+      },
+      {
+        "q": "Do renewable energy projects need an environmental impact assessment?",
+        "a": "Larger solar and wind projects usually require environmental assessment because of land take, construction works and possible effects on habitats, drainage and communities. Small rooftop systems usually do not. We screen the project and confirm the requirement early."
+      },
+      {
+        "q": "How accurate are energy yield estimates?",
+        "a": "Yield estimates carry uncertainty from weather data, equipment performance and losses. We state assumptions and uncertainty clearly so lenders and decision-makers can see the range of likely outcomes."
+      },
+      {
+        "q": "Can you compare solar, wind and storage options?",
+        "a": "Yes. We model each option and hybrid combinations against your demand, site and budget, and recommend the one with the best balance of cost, output and risk."
+      },
+      {
+        "q": "Can you review a contractor's proposal?",
+        "a": "Yes. We provide independent review of yield, design and cost assumptions in proposals before you sign."
+      }
+    ]
+  },
+  "ar": {
+    "name": "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة",
+    "seoTitle": "دراسات جدوى مشاريع الطاقة الشمسية والرياح ودراساتها البيئية | سيلورين",
+    "metaDescription": "دراسات جدوى وإنتاج ودراسات بيئية لمشاريع الطاقة الشمسية وطاقة الرياح في السعودية: فرز المواقع وتقدير الإنتاج والنموذج المالي وتقييم الأثر البيئي والتصاريح.",
+    "valueProp": "إجابات واضحة وموثوقة قبل أن تستثمر: كم ينتج الموقع من طاقة، وكم سيكلف المشروع، وما الموافقات البيئية التي يحتاجها.",
+    "cardDescription": "فرز المواقع، وتقييم موارد الشمس والرياح والإنتاج المتوقع، والنمذجة المالية، وتقييم الأثر البيئي، ودعم التصاريح لمشاريع الطاقة المتجددة.",
+    "keyBenefit": "قرارات استثمار مبنية على أدلة فنية ومالية وبيئية موثوقة",
+    "definition": "دراسة جدوى مشروع الطاقة المتجددة تختبر ما إذا كان مشروع الطاقة الشمسية أو الرياح أو المشروع الهجين ممكناً فنياً ومجدياً مالياً ومقبولاً بيئياً في موقع معين. وتجمع بين تقييم الموارد والإنتاج، وقيود الشبكة والأرض، ونمذجة التكاليف والعوائد، والفرز البيئي والاجتماعي، وتحدد الدراسات والتصاريح التي يحتاجها المشروع.",
+    "overview": [
+      "من أسطح المصانع إلى المحطات الكبرى، تُخطَّط مشاريع الطاقة المتجددة في أنحاء المملكة. وقبل الالتزام برأس المال يحتاج الملاك والمطورون والممولون إلى الثقة في ثلاثة أمور: الطاقة التي سينتجها الموقع فعلاً، وتكلفة المشروع وعائده، والاشتراطات البيئية التي يجب أن يستوفيها.",
+      "الدراسات المبكرة الضعيفة مكلفة؛ فافتراضات الإنتاج المتفائلة تُضعف الجدوى المالية، وتُكتشف عدم ملاءمة الأرض أو قيود الشبكة متأخراً، وقد تؤخر القضايا البيئية مثل الموائل وتصريف المياه والغبار والأثر البصري الموافقات. وفي مشاريع الرياح يجب أيضاً تقييم الآثار على الطيور والمجتمعات المجاورة بعناية.",
+      "تجمع سيلورين بين هندسة الطاقة المتجددة وخبرتها الأساسية في البيئة. نفرز المواقع، ونقيّم موارد الشمس والرياح والإنتاج المتوقع، ونمذج التكاليف والعوائد، ونحدد قيود الشبكة والأرض. ويعد فريقنا البيئي المسوحات المرجعية ودراسات تقييم الأثر البيئي وخطط الإدارة البيئية، ويدعم إجراءات التصاريح، لينتقل المشروع من الجدوى إلى الاعتماد على قاعدة أدلة واحدة متسقة."
+    ],
+    "whenYouNeed": [
+      "تقيّم أرضاً أو أسطحاً لمشروع طاقة شمسية أو رياح.",
+      "تحتاج إلى دراسة جدوى للإدارة أو المستثمرين أو جهة تمويل.",
+      "عليك المقارنة بين خيارات الطاقة الشمسية والرياح والتخزين والأنظمة الهجينة لموقع ما.",
+      "مشروعك يتطلب دراسة تقييم أثر بيئي أو تصريحاً بيئياً.",
+      "تحتاج إلى مراجعة مستقلة لتقديرات الإنتاج والتكلفة المقدمة من مطور أو مقاول.",
+      "تضع أهدافاً للطاقة المتجددة ضمن خطة للحياد الصفري."
+    ],
+    "deliver": [
+      {
+        "title": "فرز المواقع",
+        "description": "مقارنة المواقع المرشحة من حيث الموارد والأرض والوصول والقرب من الشبكة والحساسية البيئية."
+      },
+      {
+        "title": "تقييم الموارد والإنتاج",
+        "description": "تحليل الإشعاع الشمسي أو موارد الرياح ونمذجة الإنتاج مع توضيح الفقد ونطاق عدم اليقين."
+      },
+      {
+        "title": "المفهوم الفني",
+        "description": "تخطيط مبدئي، وخيارات التقنية، ومفهوم التخزين والربط بالشبكة."
+      },
+      {
+        "title": "النموذج المالي",
+        "description": "التكاليف الرأسمالية والتشغيلية، والوفورات أو الإيرادات، وفترة الاسترداد، ومعدل العائد الداخلي، وتحليل الحساسية."
+      },
+      {
+        "title": "تقييم الأثر البيئي",
+        "description": "مسوحات مرجعية وتقييم للآثار وتدابير تخفيف تشمل الأرض والبيئة الطبيعية وتصريف المياه والغبار والضوضاء والأثر البصري."
+      },
+      {
+        "title": "دعم التصاريح",
+        "description": "خطط الإدارة البيئية وتنسيق التقديم إلى الجهات المختصة."
+      }
+    ],
+    "approach": [
+      {
+        "title": "تحديد القرار",
+        "description": "نؤكد الأهداف والحجم والأسئلة التي يجب أن تجيب عنها الدراسة."
+      },
+      {
+        "title": "الفرز والقياس",
+        "description": "نفرز المواقع ونقيّم الموارد والقيود والحساسيات البيئية."
+      },
+      {
+        "title": "نمذجة الخيارات",
+        "description": "ننمذج الإنتاج والتكاليف والعوائد لكل خيار ونقارن بينها."
+      },
+      {
+        "title": "تقييم الآثار",
+        "description": "نقيّم الآثار البيئية والاجتماعية ونحدد تدابير التخفيف."
+      },
+      {
+        "title": "التوصية والاعتماد",
+        "description": "نوصي بالخيار الأفضل وندعم إجراءات التصاريح حتى الاعتماد."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "مذكرة فرز المواقع",
+        "format": "مذكرة مع مصفوفة مقارنة (PDF)",
+        "timing": "مرحلة مبكرة"
+      },
+      {
+        "item": "تقرير الجدوى",
+        "format": "تقرير فني ومالي (PDF + نموذج Excel)",
+        "timing": "مرحلة الجدوى"
+      },
+      {
+        "item": "تقرير تقدير الإنتاج",
+        "format": "تقرير تقييم الإنتاج (PDF)",
+        "timing": "مرحلة الجدوى"
+      },
+      {
+        "item": "دراسة تقييم الأثر البيئي",
+        "format": "تقرير الدراسة وخطة الإدارة البيئية (PDF)",
+        "timing": "قبل التصاريح"
+      },
+      {
+        "item": "دعم التقديم",
+        "format": "ملف التقديم والردود على الملاحظات",
+        "timing": "مرحلة التصاريح"
+      }
+    ],
+    "regulatoryContext": [
+      "البرنامج الوطني للطاقة المتجددة ومستهدفات رؤية المملكة 2030 للكهرباء من مصادر متجددة.",
+      "نظام البيئة ولوائحه التنفيذية، بما فيها متطلبات تقييم الأثر البيئي التي يديرها المركز الوطني للرقابة على الالتزام البيئي.",
+      "متطلبات هيئة تنظيم المياه والكهرباء للتوليد والربط بالشبكة.",
+      "مستهدفات مبادرة السعودية الخضراء وطموح المملكة للوصول إلى الحياد الصفري بحلول 2060."
+    ],
+    "faqs": [
+      {
+        "q": "ماذا تشمل دراسة جدوى الطاقة الشمسية؟",
+        "a": "تشمل عادةً تقييم الموقع والموارد، والإنتاج المتوقع، ومفهوم النظام، والربط بالشبكة، والتكاليف الرأسمالية والتشغيلية، والعوائد المالية، وفرزاً بيئياً. ويعتمد عمقها على حجم المشروع والجهة التي ستعتمد عليها."
+      },
+      {
+        "q": "هل تحتاج مشاريع الطاقة المتجددة إلى دراسة تقييم أثر بيئي؟",
+        "a": "تحتاج مشاريع الطاقة الشمسية والرياح الكبيرة عادةً إلى تقييم بيئي بسبب مساحة الأرض وأعمال الإنشاء والآثار المحتملة على الموائل وتصريف المياه والمجتمعات. أما الأنظمة الصغيرة على الأسطح فلا تحتاجها غالباً. نفرز المشروع ونؤكد المتطلب مبكراً."
+      },
+      {
+        "q": "ما دقة تقديرات الإنتاج؟",
+        "a": "تحمل تقديرات الإنتاج قدراً من عدم اليقين بسبب بيانات الطقس وأداء المعدات والفقد. نوضح الافتراضات ونطاق عدم اليقين حتى يرى الممولون وصناع القرار نطاق النتائج المحتملة."
+      },
+      {
+        "q": "هل يمكنكم المقارنة بين الطاقة الشمسية والرياح والتخزين؟",
+        "a": "نعم. ننمذج كل خيار والتركيبات الهجينة مقابل احتياجك وموقعك وميزانيتك، ونوصي بالخيار الذي يحقق أفضل توازن بين التكلفة والإنتاج والمخاطر."
+      },
+      {
+        "q": "هل تراجعون عرض مقاول؟",
+        "a": "نعم. نقدم مراجعة مستقلة لافتراضات الإنتاج والتصميم والتكلفة في العروض قبل التوقيع."
+      }
+    ]
+  }
+}

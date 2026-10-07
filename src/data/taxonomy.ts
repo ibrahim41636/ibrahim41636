@@ -9,6 +9,10 @@ export interface Category {
   summary: L;
   benefit: L;
   intro: L;
+  /** Optional richer hub content (rendered on the category page when present). */
+  segments?: { icon: string; title: L; body: L }[];
+  facts?: { value: string; label: L }[];
+  process?: { title: L; body: L }[];
 }
 
 export const categories: Category[] = [
@@ -95,6 +99,38 @@ export const categories: Category[] = [
       en: "Most of a building's or asset's environmental performance is fixed by early design decisions. We bring environmental performance into design reviews and support certification under recognised rating systems.",
       ar: "يتحدد معظم الأداء البيئي للمبنى أو الأصل بقرارات التصميم المبكرة. ندمج الأداء البيئي في مراجعات التصميم، وندعم الحصول على الشهادات وفق أنظمة التقييم المعترف بها.",
     },
+  },
+  {
+    id: "renewable-energy",
+    icon: "solar",
+    name: { en: "Renewable Energy", ar: "الطاقة المتجددة" },
+    summary: {
+      en: "Solar energy systems, EV charging stations, battery storage, operation and maintenance, and feasibility and environmental studies for renewable projects.",
+      ar: "أنظمة الطاقة الشمسية، ومحطات شحن السيارات الكهربائية، وتخزين الطاقة، والتشغيل والصيانة، ودراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة.",
+    },
+    benefit: { en: "Clean energy that lowers your bills, from study to maintenance.", ar: "طاقة نظيفة تخفض فواتيرك، من الدراسة حتى الصيانة." },
+    intro: {
+      en: "We deliver solar, storage and EV charging projects for homes, residential compounds, factories and charging sites across Saudi Arabia, from the first consumption study and design to installation, grid connection, operation and maintenance, backed by our environmental expertise.",
+      ar: "ننفّذ مشاريع الطاقة الشمسية وتخزين الطاقة وشحن السيارات الكهربائية للوحدات السكنية والكمباوندات والمصانع ومواقع الشحن في أنحاء المملكة، من أول دراسة للاستهلاك والتصميم إلى التركيب والربط بالشبكة والتشغيل والصيانة، مدعومين بخبرتنا البيئية.",
+    },
+    segments: [
+      { icon: "home", title: { en: "Homes & residential units", ar: "الفلل والوحدات السكنية" }, body: { en: "Rooftop solar sized to household consumption, with optional batteries for backup and evening use, and home EV chargers.", ar: "طاقة شمسية على الأسطح بحجم استهلاك المنزل، مع بطاريات اختيارية للطاقة الاحتياطية والاستخدام المسائي، وشواحن منزلية للسيارات." } },
+      { icon: "compound", title: { en: "Residential compounds", ar: "الكمباوندات والمجمعات السكنية" }, body: { en: "Shared solar for common areas and units, solar carports, resident EV charging and one maintenance plan for the whole compound.", ar: "طاقة شمسية مشتركة للمرافق والوحدات، ومظلات مواقف شمسية، وشحن سيارات للسكان، وخطة صيانة واحدة للكمباوند بالكامل." } },
+      { icon: "factory", title: { en: "Factories & industrial facilities", ar: "المصانع والمنشآت الصناعية" }, body: { en: "Large rooftop and ground-mounted systems matched to daytime production loads, storage for peak reduction and critical equipment.", ar: "أنظمة كبيرة على الأسطح والأراضي تتوافق مع أحمال الإنتاج النهارية، وتخزين لخفض الذروة وحماية المعدات الحرجة." } },
+      { icon: "ev", title: { en: "EV charging stations", ar: "محطات شحن السيارات الكهربائية" }, body: { en: "AC and fast DC charging for buildings, hotels, fleets and public sites, with load management and solar-powered carports.", ar: "شحن AC وشحن DC سريع للمباني والفنادق والأساطيل والمواقع العامة، مع إدارة الأحمال ومظلات مواقف تعمل بالطاقة الشمسية." } },
+    ],
+    facts: [
+      { value: "2030", label: { en: "Vision 2030 makes renewables a central part of the Kingdom's electricity mix", ar: "تجعل رؤية 2030 الطاقة المتجددة جزءاً رئيساً من مزيج الكهرباء في المملكة" } },
+      { value: "2060", label: { en: "The Kingdom's target year for net-zero emissions", ar: "العام المستهدف لوصول المملكة إلى الحياد الصفري" } },
+      { value: "1", label: { en: "One accountable partner from study and design to operation and maintenance", ar: "شريك واحد مسؤول من الدراسة والتصميم حتى التشغيل والصيانة" } },
+    ],
+    process: [
+      { title: { en: "Study", ar: "الدراسة" }, body: { en: "Bills, load profile and site survey define the right solution and size.", ar: "الفواتير ونمط الأحمال والمعاينة الميدانية تحدد الحل والحجم المناسبين." } },
+      { title: { en: "Design", ar: "التصميم" }, body: { en: "Engineering design and production estimate, with clear costs and savings.", ar: "تصميم هندسي وتقدير للإنتاج، مع تكاليف ووفورات واضحة." } },
+      { title: { en: "Approvals", ar: "الموافقات" }, body: { en: "Technical files, grid connection and the permits the project needs.", ar: "الملفات الفنية والربط بالشبكة والتصاريح التي يحتاجها المشروع." } },
+      { title: { en: "Installation", ar: "التركيب" }, body: { en: "Conformant equipment installed, tested and handed over with full records.", ar: "معدات مطابقة للمواصفات تُركَّب وتُختبر وتُسلَّم بسجلات كاملة." } },
+      { title: { en: "Operation & maintenance", ar: "التشغيل والصيانة" }, body: { en: "Monitoring, cleaning and maintenance that keep output at its best.", ar: "مراقبة وتنظيف وصيانة تبقي الإنتاج في أفضل مستوياته." } },
+    ],
   },
 ];
 

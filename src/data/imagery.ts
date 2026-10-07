@@ -40,6 +40,7 @@ const CATEGORY: Record<string, Key> = {
   "waste-circular-economy": "landscape",
   "sustainability-climate": "offshoreWind",
   "sustainable-buildings": "hq",
+  "renewable-energy": "windFarm",
 };
 
 const SERVICE: Record<string, Key> = {
@@ -65,6 +66,11 @@ const SERVICE: Record<string, Key> = {
   "sustainability-advisory": "windFarm",
   "green-building-advisory": "hq",
   "sustainable-buildings": "hq",
+  "solar-energy-systems": "monitoringStation",
+  "ev-charging-stations": "windHills",
+  "battery-energy-storage": "powerPlant",
+  "renewable-operations-maintenance": "fieldTeam",
+  "renewable-energy-feasibility": "offshoreWind",
 };
 
 const INDUSTRY: Record<string, Key> = {

@@ -9,7 +9,12 @@
     "environmental-compliance",
     "ghg-carbon-accounting",
     "net-zero-advisory",
-    "life-cycle-assessment"
+    "life-cycle-assessment",
+    "solar-energy-systems",
+    "battery-energy-storage",
+    "renewable-operations-maintenance",
+    "renewable-energy-feasibility",
+    "ev-charging-stations"
   ],
   "en": {
     "name": "Energy & Utilities",

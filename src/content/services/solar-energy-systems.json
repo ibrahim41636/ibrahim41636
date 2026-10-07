@@ -1,0 +1,271 @@
+{
+  "category": "renewable-energy",
+  "order": 1,
+  "formFamily": "energy",
+  "industries": [
+    "real-estate",
+    "industrial-manufacturing",
+    "commercial-facilities",
+    "hospitality",
+    "logistics-warehousing",
+    "food-beverage",
+    "energy",
+    "government-public-sector"
+  ],
+  "related": [
+    "battery-energy-storage",
+    "ev-charging-stations",
+    "renewable-operations-maintenance",
+    "renewable-energy-feasibility"
+  ],
+  "en": {
+    "name": "Solar Energy Systems",
+    "seoTitle": "Solar Energy Systems for Homes, Compounds & Factories | Selorin",
+    "metaDescription": "Rooftop, ground-mounted and carport solar PV systems in Saudi Arabia for homes, residential compounds and factories: study, design, installation and grid connection.",
+    "valueProp": "Solar PV systems sized to your actual consumption, designed for Saudi heat and dust, and delivered from site survey to grid connection.",
+    "cardDescription": "Rooftop, ground-mounted and carport solar PV for villas, residential compounds, factories and commercial buildings, from site study and design to installation and grid connection.",
+    "keyBenefit": "Lower electricity bills from a system designed around your real load",
+    "definition": "A solar energy system converts sunlight into electricity using photovoltaic (PV) panels, inverters and protection equipment. It can be installed on roofs, on the ground or over car parks, and can be connected to the grid, combined with batteries, or both. A well-designed system is sized to the site's consumption profile, its available area and the applicable connection rules, so that the energy it produces is actually used and the investment pays back as planned.",
+    "overview": [
+      "Saudi Arabia has some of the strongest solar resources in the world, and the national energy programme places renewables at the centre of the future electricity mix. For property owners and industrial operators this creates a practical opportunity: generate part of your own electricity on your roofs, land or car parks, reduce what you buy from the grid, and show measurable progress on sustainability commitments.",
+      "The results depend on decisions made before any panel is installed. Oversized systems export energy with little value, undersized systems leave savings on the table, and designs that ignore heat, dust, roof condition or shading underperform for their whole life. Connection approvals, equipment conformity and safe electrical integration also need to be planned from the start rather than solved on site.",
+      "Selorin delivers solar projects for villas and residential units, residential compounds, factories and commercial buildings. We analyse your consumption and bills, survey the site, model the expected production, and design a system that fits your roof or land and your budget. We then manage approvals and grid connection, procure conformant equipment, supervise installation and commission the system, and can remain responsible for operation and maintenance afterwards."
+    ],
+    "whenYouNeed": [
+      "Your electricity bills are high and you want to generate part of your own consumption.",
+      "You are developing or operating a residential compound and want shared solar for common areas or units.",
+      "Your factory has large roofs or land and daytime loads that match solar production.",
+      "You need to show tenants, investors or authorities a credible renewable energy contribution.",
+      "You want shaded parking that also produces electricity (solar carports).",
+      "An existing system is underperforming and you need an independent review."
+    ],
+    "deliver": [
+      {
+        "title": "Consumption and bill analysis",
+        "description": "Review of your electricity bills and load profile to establish how much solar energy the site can use and the realistic savings."
+      },
+      {
+        "title": "Site survey and shading study",
+        "description": "Inspection of roofs, land or car parks, including structure, orientation, obstructions, access and the point of connection."
+      },
+      {
+        "title": "System design and yield model",
+        "description": "Panel layout, inverter and protection design, cabling and earthing, with a production estimate that accounts for heat and dust losses."
+      },
+      {
+        "title": "Approvals and grid connection",
+        "description": "Preparation of the technical file and coordination of the connection process and bidirectional metering with the electricity provider."
+      },
+      {
+        "title": "Supply, installation and commissioning",
+        "description": "Procurement of conformant equipment, supervised installation by qualified electrical teams, testing and handover."
+      },
+      {
+        "title": "Monitoring and performance follow-up",
+        "description": "Remote production monitoring and periodic performance reports, so losses are detected early."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Understand your demand",
+        "description": "We analyse bills and operating hours to define the target share of solar and the right system size."
+      },
+      {
+        "title": "Survey and design",
+        "description": "We survey the site and prepare the design and production model, with clear options and costs."
+      },
+      {
+        "title": "Approve and connect",
+        "description": "We prepare the technical file and manage the connection and metering process."
+      },
+      {
+        "title": "Install and commission",
+        "description": "We supply and install the system, test it against the design and hand it over with full documentation."
+      },
+      {
+        "title": "Operate and improve",
+        "description": "We monitor production, clean and maintain the system, and report performance against the model."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "Consumption analysis and preliminary sizing",
+        "format": "Technical memo (PDF)",
+        "timing": "Within one week of receiving bills"
+      },
+      {
+        "item": "Design package and production estimate",
+        "format": "Drawings, single-line diagram and yield report (PDF)",
+        "timing": "Design stage"
+      },
+      {
+        "item": "Connection application file",
+        "format": "Technical file for the electricity provider",
+        "timing": "Before installation"
+      },
+      {
+        "item": "Commissioning and test records",
+        "format": "Test reports and as-built drawings (PDF)",
+        "timing": "At handover"
+      },
+      {
+        "item": "Performance report",
+        "format": "Monthly or quarterly report",
+        "timing": "During operation"
+      }
+    ],
+    "regulatoryContext": [
+      "Saudi Vision 2030 and the National Renewable Energy Program, which target a large share of electricity from renewable sources.",
+      "Water and Electricity Regulatory Authority (WERA) rules for small-scale grid-connected solar PV systems and the related billing arrangements.",
+      "Connection requirements and bidirectional metering of the Saudi Electricity Company.",
+      "SASO conformity requirements for PV modules, inverters and electrical equipment, and the electrical and fire-safety provisions of the Saudi Building Code."
+    ],
+    "faqs": [
+      {
+        "q": "How much can a solar system reduce my electricity bill?",
+        "a": "It depends on how much of your consumption happens during daylight hours, the area available and the system size. We calculate the expected savings from your actual bills and site survey before you decide, and show the assumptions behind the estimate."
+      },
+      {
+        "q": "Can solar be installed on villas and residential compounds?",
+        "a": "Yes. For villas we usually design rooftop systems sized to the household's daytime consumption. For compounds we can supply common areas, individual units or shared car-park structures, depending on the metering arrangement and the owner's objectives."
+      },
+      {
+        "q": "Does the heat and dust in Saudi Arabia affect the panels?",
+        "a": "High temperatures reduce panel efficiency and dust reduces the light reaching the cells. We account for both in the design and production model, select suitable equipment and plan a cleaning and maintenance schedule that keeps losses low."
+      },
+      {
+        "q": "Do I need approval to connect a solar system to the grid?",
+        "a": "Grid-connected systems require approval and a connection process with the electricity provider, including suitable metering. We prepare the technical file and coordinate the process as part of the project."
+      },
+      {
+        "q": "Can solar be combined with batteries or EV chargers?",
+        "a": "Yes. Batteries allow solar energy to be used in the evening or during peaks, and solar carports can supply EV chargers. We design these combinations as one integrated system."
+      }
+    ]
+  },
+  "ar": {
+    "name": "أنظمة الطاقة الشمسية",
+    "seoTitle": "أنظمة الطاقة الشمسية للمنازل والكمباوندات والمصانع | سيلورين",
+    "metaDescription": "أنظمة طاقة شمسية على الأسطح والأرض ومظلات المواقف في السعودية للفلل والكمباوندات والمصانع: دراسة وتصميم وتركيب وربط بالشبكة.",
+    "valueProp": "أنظمة طاقة شمسية بحجم استهلاكك الفعلي، مصممة لحرارة المملكة وغبارها، ومنفّذة من الزيارة الميدانية حتى الربط بالشبكة.",
+    "cardDescription": "أنظمة كهروضوئية على الأسطح والأرض ومظلات المواقف للفلل والكمباوندات والمصانع والمباني التجارية، من دراسة الموقع والتصميم إلى التركيب والربط بالشبكة.",
+    "keyBenefit": "خفض فاتورة الكهرباء بنظام مصمم على أحمالك الفعلية",
+    "definition": "نظام الطاقة الشمسية هو نظام يحوّل أشعة الشمس إلى كهرباء باستخدام ألواح كهروضوئية وعواكس ومعدات حماية. ويمكن تركيبه على الأسطح أو على الأرض أو فوق مواقف السيارات، وربطه بالشبكة أو بالبطاريات أو بكليهما. والنظام الجيد يُصمَّم وفق نمط استهلاك الموقع ومساحته المتاحة واشتراطات الربط، حتى تُستهلك الطاقة المنتجة فعلاً ويسترد الاستثمار كما هو مخطط.",
+    "overview": [
+      "تمتلك المملكة العربية السعودية من أقوى موارد الإشعاع الشمسي في العالم، وتضع برامج الطاقة الوطنية الطاقة المتجددة في قلب مزيج الكهرباء المستقبلي. وهذا يمنح ملاك العقارات والمنشآت الصناعية فرصة عملية: إنتاج جزء من الكهرباء على الأسطح أو الأراضي أو المواقف، وتقليل ما يُشترى من الشبكة، وإظهار تقدم ملموس في التزامات الاستدامة.",
+      "تعتمد النتائج على قرارات تُتخذ قبل تركيب أي لوح. فالنظام الأكبر من الحاجة يصدّر طاقة بقيمة محدودة، والأصغر منها يضيّع وفورات ممكنة، والتصميم الذي يتجاهل الحرارة والغبار وحالة السطح والتظليل يبقى ضعيف الأداء طوال عمره. كما يجب التخطيط مبكراً لموافقات الربط ومطابقة المعدات والتكامل الكهربائي الآمن بدلاً من حلها في الموقع.",
+      "تنفّذ سيلورين مشاريع الطاقة الشمسية للفلل والوحدات السكنية والكمباوندات والمصانع والمباني التجارية. نحلل استهلاكك وفواتيرك، ونزور الموقع، ونقدّر الإنتاج المتوقع، ونصمم نظاماً يناسب سطحك أو أرضك وميزانيتك. ثم ندير الموافقات والربط بالشبكة، ونورّد معدات مطابقة للمواصفات، ونشرف على التركيب ونشغّل النظام، ويمكننا تولي التشغيل والصيانة بعد ذلك."
+    ],
+    "whenYouNeed": [
+      "فواتير الكهرباء مرتفعة وتريد إنتاج جزء من استهلاكك بنفسك.",
+      "تطوّر أو تشغّل كمباونداً سكنياً وتريد طاقة شمسية للمرافق المشتركة أو للوحدات.",
+      "مصنعك يملك أسطحاً أو أراضي واسعة وأحمالاً نهارية تتوافق مع إنتاج الشمس.",
+      "تحتاج إلى إثبات مساهمة حقيقية للطاقة المتجددة أمام المستأجرين أو المستثمرين أو الجهات الرسمية.",
+      "تريد مظلات مواقف تنتج الكهرباء في الوقت نفسه.",
+      "لديك نظام قائم بأداء أقل من المتوقع وتحتاج إلى مراجعة مستقلة."
+    ],
+    "deliver": [
+      {
+        "title": "تحليل الاستهلاك والفواتير",
+        "description": "مراجعة فواتير الكهرباء ونمط الأحمال لتحديد كمية الطاقة الشمسية التي يستطيع الموقع استهلاكها والوفر الواقعي."
+      },
+      {
+        "title": "الزيارة الميدانية ودراسة التظليل",
+        "description": "معاينة الأسطح أو الأراضي أو المواقف، بما في ذلك الإنشاء والاتجاه والعوائق ومداخل الوصول ونقطة الربط."
+      },
+      {
+        "title": "تصميم النظام ونموذج الإنتاج",
+        "description": "توزيع الألواح وتصميم العواكس والحماية والكابلات والتأريض، مع تقدير للإنتاج يراعي فقد الحرارة والغبار."
+      },
+      {
+        "title": "الموافقات والربط بالشبكة",
+        "description": "إعداد الملف الفني وتنسيق إجراءات الربط والعداد ثنائي الاتجاه مع مزوّد الكهرباء."
+      },
+      {
+        "title": "التوريد والتركيب والتشغيل",
+        "description": "توريد معدات مطابقة للمواصفات، وتركيب بإشراف فرق كهربائية مؤهلة، ثم الاختبار والتسليم."
+      },
+      {
+        "title": "المراقبة ومتابعة الأداء",
+        "description": "مراقبة الإنتاج عن بُعد وتقارير أداء دورية، لاكتشاف أي فقد مبكراً."
+      }
+    ],
+    "approach": [
+      {
+        "title": "فهم احتياجك",
+        "description": "نحلل الفواتير وساعات التشغيل لتحديد نسبة الطاقة الشمسية المستهدفة وحجم النظام المناسب."
+      },
+      {
+        "title": "المعاينة والتصميم",
+        "description": "نعاين الموقع ونعد التصميم ونموذج الإنتاج، مع خيارات وتكاليف واضحة."
+      },
+      {
+        "title": "الموافقة والربط",
+        "description": "نجهز الملف الفني وندير إجراءات الربط والعدادات."
+      },
+      {
+        "title": "التركيب والتشغيل",
+        "description": "نورّد النظام ونركّبه ونختبره مقابل التصميم ونسلّمه بوثائق كاملة."
+      },
+      {
+        "title": "التشغيل والتحسين",
+        "description": "نراقب الإنتاج وننظف النظام ونصونه، ونقارن الأداء بالنموذج في تقارير دورية."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "تحليل الاستهلاك والتحجيم المبدئي",
+        "format": "مذكرة فنية (PDF)",
+        "timing": "خلال أسبوع من استلام الفواتير"
+      },
+      {
+        "item": "حزمة التصميم وتقدير الإنتاج",
+        "format": "مخططات ومخطط أحادي الخط وتقرير إنتاج (PDF)",
+        "timing": "مرحلة التصميم"
+      },
+      {
+        "item": "ملف طلب الربط",
+        "format": "ملف فني لمزوّد الكهرباء",
+        "timing": "قبل التركيب"
+      },
+      {
+        "item": "سجلات التشغيل والاختبار",
+        "format": "تقارير اختبار ومخططات تنفيذية (PDF)",
+        "timing": "عند التسليم"
+      },
+      {
+        "item": "تقرير الأداء",
+        "format": "تقرير شهري أو ربع سنوي",
+        "timing": "خلال التشغيل"
+      }
+    ],
+    "regulatoryContext": [
+      "رؤية المملكة 2030 والبرنامج الوطني للطاقة المتجددة، اللذان يستهدفان حصة كبيرة من الكهرباء من مصادر متجددة.",
+      "تنظيمات هيئة تنظيم المياه والكهرباء للأنظمة الكهروضوئية الصغيرة المربوطة بالشبكة وترتيبات الفوترة المرتبطة بها.",
+      "اشتراطات الربط والعدادات ثنائية الاتجاه لدى الشركة السعودية للكهرباء.",
+      "متطلبات المطابقة من الهيئة السعودية للمواصفات والمقاييس والجودة للألواح والعواكس والمعدات الكهربائية، واشتراطات كود البناء السعودي الكهربائية والوقائية."
+    ],
+    "faqs": [
+      {
+        "q": "كم يمكن أن يخفض النظام الشمسي فاتورة الكهرباء؟",
+        "a": "يعتمد ذلك على نسبة استهلاكك خلال ساعات النهار، والمساحة المتاحة، وحجم النظام. نحسب الوفر المتوقع من فواتيرك الفعلية ومعاينة الموقع قبل أن تتخذ القرار، ونوضح الافتراضات التي بُني عليها التقدير."
+      },
+      {
+        "q": "هل يمكن تركيب الطاقة الشمسية في الفلل والكمباوندات؟",
+        "a": "نعم. في الفلل نصمم غالباً أنظمة على الأسطح بحجم الاستهلاك النهاري للمنزل. وفي الكمباوندات يمكن تغذية المرافق المشتركة أو الوحدات أو مظلات المواقف، بحسب ترتيبات العدادات وأهداف المالك."
+      },
+      {
+        "q": "هل تؤثر الحرارة والغبار في المملكة على الألواح؟",
+        "a": "ارتفاع الحرارة يقلل كفاءة الألواح، والغبار يحجب جزءاً من الإشعاع. نأخذ الاثنين في الحسبان في التصميم ونموذج الإنتاج، ونختار معدات مناسبة، ونضع برنامج تنظيف وصيانة يبقي الفقد منخفضاً."
+      },
+      {
+        "q": "هل أحتاج إلى موافقة لربط النظام بالشبكة؟",
+        "a": "نعم، تتطلب الأنظمة المربوطة بالشبكة موافقة وإجراءات ربط مع مزوّد الكهرباء، بما في ذلك العداد المناسب. نعد الملف الفني وننسق الإجراءات ضمن المشروع."
+      },
+      {
+        "q": "هل يمكن دمج الطاقة الشمسية مع البطاريات أو شواحن السيارات؟",
+        "a": "نعم. تتيح البطاريات استخدام الطاقة الشمسية مساءً أو وقت الذروة، ويمكن لمظلات المواقف الشمسية تغذية شواحن السيارات الكهربائية. نصمم هذه الحلول كنظام واحد متكامل."
+      }
+    ]
+  }
+}

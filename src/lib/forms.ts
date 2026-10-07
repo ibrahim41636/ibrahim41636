@@ -3,7 +3,7 @@
 // (authoritative server-side validation), so both always agree on fields and rules.
 
 export type FormLang = "en" | "ar";
-export type Family = "permitting" | "studies" | "monitoring" | "waste" | "sustainability" | "buildings";
+export type Family = "permitting" | "studies" | "monitoring" | "waste" | "sustainability" | "buildings" | "energy";
 type L = { en: string; ar: string };
 
 export interface Option { value: string; en: string; ar: string }
@@ -48,6 +48,11 @@ export const SERVICES: Record<string, { en: string; ar: string; family: Family }
   "life-cycle-assessment": { en: "Life Cycle Assessment", ar: "تقييم دورة الحياة", family: "sustainability" },
   "sustainable-buildings": { en: "Sustainable Buildings", ar: "المباني المستدامة", family: "buildings" },
   "green-building-advisory": { en: "Green Building Advisory", ar: "استشارات المباني الخضراء", family: "buildings" },
+  "solar-energy-systems": { en: "Solar Energy Systems", ar: "أنظمة الطاقة الشمسية", family: "energy" },
+  "ev-charging-stations": { en: "EV Charging Stations", ar: "محطات شحن السيارات الكهربائية", family: "energy" },
+  "battery-energy-storage": { en: "Battery Energy Storage Systems", ar: "أنظمة تخزين الطاقة بالبطاريات", family: "energy" },
+  "renewable-operations-maintenance": { en: "Renewable Energy O&M", ar: "تشغيل وصيانة مشاريع الطاقة المتجددة", family: "energy" },
+  "renewable-energy-feasibility": { en: "Renewable Energy Feasibility & Environmental Studies", ar: "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة", family: "energy" },
 };
 
 export const INDUSTRIES: Option[] = [
@@ -259,6 +264,37 @@ const FAMILY_FIELDS: Record<Family, Field[]> = {
       options: [o("leed", "LEED", "LEED"), o("mostadam", "Mostadam", "مستدام"), o("envision", "Envision", "Envision"), o("none", "No certification target", "لا يوجد هدف شهادة"), o("not-sure", "Not sure", "غير متأكد")],
     },
     { name: "grossArea", type: "text", maxLength: 80, label: { en: "Gross floor area / size", ar: "إجمالي المساحة أو الحجم" } },
+  ],
+  energy: [
+    {
+      name: "siteType", type: "select", required: true,
+      label: { en: "Site type", ar: "نوع الموقع" },
+      options: [
+        o("villa", "Villa / residential unit", "فيلا / وحدة سكنية"),
+        o("compound", "Residential compound", "كمباوند / مجمع سكني"),
+        o("factory", "Factory / industrial facility", "مصنع / منشأة صناعية"),
+        o("commercial", "Commercial building / hotel / mall", "مبنى تجاري / فندق / مركز تجاري"),
+        o("ev-site", "EV charging site / fleet depot", "موقع شحن سيارات / مستودع أسطول"),
+        o("farm", "Farm / agricultural site", "مزرعة / موقع زراعي"),
+        o("plant", "Solar or wind plant", "محطة طاقة شمسية أو رياح"),
+        o("other", "Other", "أخرى"),
+      ],
+    },
+    {
+      name: "energySolution", type: "multi", required: true,
+      label: { en: "Solutions you are interested in", ar: "الحلول التي تهمك" },
+      options: [
+        o("rooftop-solar", "Rooftop solar", "طاقة شمسية على الأسطح"),
+        o("ground-solar", "Ground-mounted solar / solar carports", "طاقة شمسية أرضية / مظلات مواقف شمسية"),
+        o("storage", "Battery storage", "تخزين بالبطاريات"),
+        o("ev-charging", "EV charging", "شحن السيارات الكهربائية"),
+        o("om", "O&M of an existing system", "تشغيل وصيانة نظام قائم"),
+        o("study", "Feasibility / environmental study", "دراسة جدوى / دراسة بيئية"),
+      ],
+    },
+    projectStatus,
+    { name: "monthlyBill", type: "number", min: 0, max: 100000000, label: { en: "Average monthly electricity bill (SAR)", ar: "متوسط فاتورة الكهرباء الشهرية (ريال)" }, hint: { en: "Optional; helps us estimate savings", ar: "اختياري؛ يساعدنا على تقدير الوفر" } },
+    { name: "availableArea", type: "text", maxLength: 200, label: { en: "Available area or required capacity", ar: "المساحة المتاحة أو القدرة المطلوبة" }, hint: { en: "e.g. roof area, land area, number of parking bays or chargers", ar: "مثل مساحة السطح أو الأرض أو عدد المواقف أو الشواحن" } },
   ],
 };
 

@@ -1,0 +1,270 @@
+{
+  "category": "renewable-energy",
+  "order": 3,
+  "formFamily": "energy",
+  "industries": [
+    "industrial-manufacturing",
+    "real-estate",
+    "commercial-facilities",
+    "hospitality",
+    "healthcare",
+    "energy",
+    "food-beverage"
+  ],
+  "related": [
+    "solar-energy-systems",
+    "ev-charging-stations",
+    "renewable-operations-maintenance",
+    "renewable-energy-feasibility"
+  ],
+  "en": {
+    "name": "Battery Energy Storage Systems",
+    "seoTitle": "Battery Energy Storage Systems (BESS) in Saudi Arabia | Selorin",
+    "metaDescription": "Battery energy storage for homes, compounds, factories and solar plants in Saudi Arabia: sizing, safety design, installation and monitoring for backup and peak shaving.",
+    "valueProp": "Battery storage sized for a clear purpose, whether backup, peak reduction or using more of your solar energy, and designed safely for Saudi conditions.",
+    "cardDescription": "Battery storage for villas, compounds, factories, EV charging and solar plants: sizing, safety design, installation, monitoring and end-of-life planning.",
+    "keyBenefit": "Use more of your solar energy and protect critical loads",
+    "definition": "A battery energy storage system (BESS) stores electricity, from solar panels or the grid, and releases it when needed. It combines battery modules, a power conversion system, a battery management system, cooling and fire protection. Storage is used to keep critical loads running during outages, reduce peak demand, shift solar energy to the evening and support EV charging where grid capacity is limited.",
+    "overview": [
+      "Solar panels produce during the day, while many homes, compounds and facilities still need power in the evening or during peaks. Battery storage closes that gap. It increases the share of solar energy you actually use, provides backup for critical equipment and can reduce the peak demand that drives connection size and costs.",
+      "Storage is only valuable when it is sized for a specific purpose. A battery chosen for backup is configured differently from one meant for peak shaving or for supporting fast chargers. Battery chemistry, heat, ventilation, fire safety and the rules for operating alongside the grid all affect performance, lifetime and risk, especially in hot climates.",
+      "Selorin designs and delivers storage systems for residential, commercial and industrial sites and alongside solar and EV charging projects. We analyse load data to define the use case, size capacity and power, select suitable technology, and design cooling, fire protection and controls. We then install, commission and monitor the system, and plan for responsible collection and recycling of batteries at end of life."
+    ],
+    "whenYouNeed": [
+      "You have, or are planning, a solar system and want to use its energy after sunset.",
+      "Critical loads such as cold rooms, servers or medical equipment need backup power.",
+      "Peak demand charges or limited connection capacity are constraining your site.",
+      "You are adding EV fast chargers on a connection with limited capacity.",
+      "You need a safe, compliant design for batteries in a building or compound.",
+      "You want a plan for monitoring battery health and managing end-of-life batteries."
+    ],
+    "deliver": [
+      {
+        "title": "Use-case and load analysis",
+        "description": "Analysis of consumption data to define whether storage is for backup, peak reduction, solar self-consumption or EV support."
+      },
+      {
+        "title": "Sizing and technology selection",
+        "description": "Energy and power sizing, battery chemistry and configuration selected for performance, lifetime and safety in high temperatures."
+      },
+      {
+        "title": "Safety and integration design",
+        "description": "Cooling, ventilation, fire detection and suppression, protection and control integration with solar, generators and the grid."
+      },
+      {
+        "title": "Installation and commissioning",
+        "description": "Supervised installation, functional testing of operating modes and handover with operating procedures."
+      },
+      {
+        "title": "Monitoring and health tracking",
+        "description": "Remote monitoring of state of charge, temperature and degradation, with alerts and periodic reports."
+      },
+      {
+        "title": "End-of-life planning",
+        "description": "A plan for collection, reuse or recycling of batteries through licensed channels."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Define the purpose",
+        "description": "We confirm what the storage must achieve and how its value will be measured."
+      },
+      {
+        "title": "Size and select",
+        "description": "We size the system and compare technology options, costs and lifetime."
+      },
+      {
+        "title": "Design safely",
+        "description": "We design cooling, fire protection and controls for the location and climate."
+      },
+      {
+        "title": "Install and test",
+        "description": "We install the system and test every operating mode before handover."
+      },
+      {
+        "title": "Monitor and maintain",
+        "description": "We track performance and battery health and maintain the system over its life."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "Use-case and sizing study",
+        "format": "Technical report (PDF)",
+        "timing": "Project start"
+      },
+      {
+        "item": "System specification and safety design",
+        "format": "Specification, layout and protection design (PDF)",
+        "timing": "Design stage"
+      },
+      {
+        "item": "Operating and emergency procedures",
+        "format": "Procedures document (PDF)",
+        "timing": "At handover"
+      },
+      {
+        "item": "Commissioning records",
+        "format": "Test reports (PDF)",
+        "timing": "At handover"
+      },
+      {
+        "item": "Battery health report",
+        "format": "Periodic report",
+        "timing": "During operation"
+      }
+    ],
+    "regulatoryContext": [
+      "Water and Electricity Regulatory Authority requirements for equipment operating in parallel with the grid.",
+      "Civil Defense and Saudi Building Code fire-safety provisions for battery installations in buildings and sites.",
+      "SASO conformity requirements for batteries, inverters and electrical equipment.",
+      "National Center for Waste Management (MWAN) requirements for handling and recycling batteries and electronic waste."
+    ],
+    "faqs": [
+      {
+        "q": "Do I need batteries with a solar system?",
+        "a": "Not always. If most of your consumption happens during the day, a grid-connected solar system without batteries can be the most economical choice. Batteries add value when you need backup, use most energy in the evening, or face peak demand or capacity limits."
+      },
+      {
+        "q": "How long can a battery power my home or facility?",
+        "a": "It depends on the battery's stored energy and the loads connected. We size the system for the loads and duration you need, for example keeping essential circuits running during an outage, rather than the whole building."
+      },
+      {
+        "q": "Are batteries safe in hot climates?",
+        "a": "Yes, when the chemistry, cooling and enclosure are chosen for the climate and the installation follows fire-safety requirements. Temperature management is a central part of our design."
+      },
+      {
+        "q": "How long do battery systems last?",
+        "a": "Lifetime depends on chemistry, temperature and how deeply and often the battery is cycled. We estimate expected degradation at design stage and monitor battery health during operation."
+      },
+      {
+        "q": "What happens to batteries at end of life?",
+        "a": "Batteries must be collected and recycled through licensed channels. We include an end-of-life plan in the project so this is arranged responsibly."
+      }
+    ]
+  },
+  "ar": {
+    "name": "أنظمة تخزين الطاقة بالبطاريات",
+    "seoTitle": "أنظمة تخزين الطاقة بالبطاريات (BESS) في السعودية | سيلورين",
+    "metaDescription": "أنظمة تخزين الطاقة بالبطاريات للمنازل والكمباوندات والمصانع ومحطات الطاقة الشمسية في السعودية: تحجيم وتصميم آمن وتركيب ومراقبة للطاقة الاحتياطية وخفض الذروة.",
+    "valueProp": "تخزين بالبطاريات بحجم يخدم غرضاً واضحاً، سواء الطاقة الاحتياطية أو خفض الذروة أو الاستفادة أكثر من الطاقة الشمسية، بتصميم آمن لظروف المملكة.",
+    "cardDescription": "تخزين الطاقة للفلل والكمباوندات والمصانع وشواحن السيارات ومحطات الطاقة الشمسية: التحجيم والتصميم الآمن والتركيب والمراقبة وخطة نهاية العمر.",
+    "keyBenefit": "استفادة أكبر من الطاقة الشمسية وحماية للأحمال الحرجة",
+    "definition": "نظام تخزين الطاقة بالبطاريات (BESS) يخزّن الكهرباء القادمة من الألواح الشمسية أو الشبكة ويعيد إطلاقها عند الحاجة. ويتكون من وحدات البطاريات ونظام تحويل الطاقة ونظام إدارة البطاريات والتبريد والحماية من الحريق. ويُستخدم لإبقاء الأحمال الحرجة تعمل عند انقطاع الكهرباء، وخفض الأحمال القصوى، ونقل الطاقة الشمسية إلى المساء، ودعم شحن السيارات حيث تكون قدرة الشبكة محدودة.",
+    "overview": [
+      "تنتج الألواح الشمسية نهاراً، بينما تحتاج كثير من المنازل والكمباوندات والمنشآت إلى الكهرباء مساءً أو وقت الذروة. ويسد التخزين بالبطاريات هذه الفجوة؛ فيرفع نسبة الطاقة الشمسية المستهلكة فعلاً، ويوفر طاقة احتياطية للمعدات الحرجة، ويخفض الأحمال القصوى التي تحدد حجم التوصيل وتكلفته.",
+      "لا تتحقق قيمة التخزين إلا عندما يُحجَّم لغرض محدد. فالبطارية المخصصة للطاقة الاحتياطية تُهيأ بشكل مختلف عن تلك المخصصة لخفض الذروة أو لدعم الشواحن السريعة. كما تؤثر كيمياء البطارية والحرارة والتهوية والسلامة من الحريق وقواعد التشغيل المتوازي مع الشبكة في الأداء والعمر والمخاطر، خاصة في المناخ الحار.",
+      "تصمم سيلورين أنظمة التخزين وتنفذها للمواقع السكنية والتجارية والصناعية، وإلى جانب مشاريع الطاقة الشمسية وشحن السيارات. نحلل بيانات الأحمال لتحديد الاستخدام، ونحجّم السعة والقدرة، ونختار التقنية المناسبة، ونصمم التبريد والحماية من الحريق وأنظمة التحكم. ثم نركّب النظام ونشغّله ونراقبه، ونخطط لجمع البطاريات وإعادة تدويرها بشكل مسؤول في نهاية عمرها."
+    ],
+    "whenYouNeed": [
+      "لديك نظام طاقة شمسية أو تخطط له وتريد استخدام طاقته بعد الغروب.",
+      "أحمال حرجة مثل غرف التبريد أو الخوادم أو المعدات الطبية تحتاج إلى طاقة احتياطية.",
+      "رسوم الأحمال القصوى أو محدودية قدرة التوصيل تقيّد موقعك.",
+      "تضيف شواحن سريعة للسيارات على توصيل محدود القدرة.",
+      "تحتاج إلى تصميم آمن ومطابق للبطاريات داخل مبنى أو كمباوند.",
+      "تريد خطة لمراقبة صحة البطاريات وإدارتها في نهاية عمرها."
+    ],
+    "deliver": [
+      {
+        "title": "تحليل الاستخدام والأحمال",
+        "description": "تحليل بيانات الاستهلاك لتحديد ما إذا كان التخزين للطاقة الاحتياطية أو خفض الذروة أو الاستهلاك الذاتي للطاقة الشمسية أو دعم الشحن."
+      },
+      {
+        "title": "التحجيم واختيار التقنية",
+        "description": "تحديد السعة والقدرة، واختيار كيمياء البطارية وتهيئتها بما يحقق الأداء والعمر والسلامة في درجات الحرارة المرتفعة."
+      },
+      {
+        "title": "تصميم السلامة والتكامل",
+        "description": "التبريد والتهوية وكشف الحريق وإطفاؤه والحماية، وربط التحكم مع الطاقة الشمسية والمولدات والشبكة."
+      },
+      {
+        "title": "التركيب والتشغيل",
+        "description": "تركيب بإشراف، واختبار وظيفي لأوضاع التشغيل، وتسليم مع إجراءات التشغيل."
+      },
+      {
+        "title": "المراقبة وتتبع الصحة",
+        "description": "مراقبة عن بُعد لحالة الشحن والحرارة والتدهور، مع تنبيهات وتقارير دورية."
+      },
+      {
+        "title": "خطة نهاية العمر",
+        "description": "خطة لجمع البطاريات وإعادة استخدامها أو تدويرها عبر قنوات مرخّصة."
+      }
+    ],
+    "approach": [
+      {
+        "title": "تحديد الغرض",
+        "description": "نحدد ما يجب أن يحققه التخزين وكيف تُقاس قيمته."
+      },
+      {
+        "title": "التحجيم والاختيار",
+        "description": "نحجّم النظام ونقارن خيارات التقنية وتكلفتها وعمرها."
+      },
+      {
+        "title": "التصميم الآمن",
+        "description": "نصمم التبريد والحماية من الحريق والتحكم بما يناسب الموقع والمناخ."
+      },
+      {
+        "title": "التركيب والاختبار",
+        "description": "نركّب النظام ونختبر كل أوضاع التشغيل قبل التسليم."
+      },
+      {
+        "title": "المراقبة والصيانة",
+        "description": "نتابع الأداء وصحة البطاريات ونصون النظام طوال عمره."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "دراسة الاستخدام والتحجيم",
+        "format": "تقرير فني (PDF)",
+        "timing": "بداية المشروع"
+      },
+      {
+        "item": "مواصفات النظام وتصميم السلامة",
+        "format": "مواصفات ومخطط وتصميم حماية (PDF)",
+        "timing": "مرحلة التصميم"
+      },
+      {
+        "item": "إجراءات التشغيل والطوارئ",
+        "format": "وثيقة إجراءات (PDF)",
+        "timing": "عند التسليم"
+      },
+      {
+        "item": "سجلات التشغيل",
+        "format": "تقارير اختبار (PDF)",
+        "timing": "عند التسليم"
+      },
+      {
+        "item": "تقرير صحة البطاريات",
+        "format": "تقرير دوري",
+        "timing": "خلال التشغيل"
+      }
+    ],
+    "regulatoryContext": [
+      "متطلبات هيئة تنظيم المياه والكهرباء للمعدات التي تعمل بالتوازي مع الشبكة.",
+      "اشتراطات الدفاع المدني وكود البناء السعودي للسلامة من الحريق في منشآت البطاريات داخل المباني والمواقع.",
+      "متطلبات المطابقة من الهيئة السعودية للمواصفات والمقاييس والجودة للبطاريات والعواكس والمعدات الكهربائية.",
+      "متطلبات المركز الوطني لإدارة النفايات (موان) لمناولة البطاريات والنفايات الإلكترونية وإعادة تدويرها."
+    ],
+    "faqs": [
+      {
+        "q": "هل أحتاج إلى بطاريات مع النظام الشمسي؟",
+        "a": "ليس دائماً. إذا كان معظم استهلاكك نهارياً، فقد يكون النظام الشمسي المربوط بالشبكة دون بطاريات هو الخيار الأوفر. وتضيف البطاريات قيمة عندما تحتاج إلى طاقة احتياطية، أو يتركز استهلاكك مساءً، أو تواجه أحمالاً قصوى أو قيوداً في القدرة."
+      },
+      {
+        "q": "كم يمكن أن تشغّل البطارية منزلي أو منشأتي؟",
+        "a": "يعتمد ذلك على الطاقة المخزنة والأحمال الموصولة. نحجّم النظام للأحمال والمدة التي تحتاجها، مثل إبقاء الدوائر الأساسية تعمل أثناء الانقطاع، وليس المبنى بالكامل."
+      },
+      {
+        "q": "هل البطاريات آمنة في المناخ الحار؟",
+        "a": "نعم، عندما تُختار الكيمياء والتبريد والحاوية بما يناسب المناخ، ويتبع التركيب اشتراطات السلامة من الحريق. وإدارة الحرارة جزء أساسي من تصميمنا."
+      },
+      {
+        "q": "ما عمر أنظمة البطاريات؟",
+        "a": "يعتمد العمر على الكيمياء ودرجة الحرارة وعمق الشحن والتفريغ وتكراره. نقدّر التدهور المتوقع في مرحلة التصميم ونراقب صحة البطاريات أثناء التشغيل."
+      },
+      {
+        "q": "ماذا يحدث للبطاريات في نهاية عمرها؟",
+        "a": "يجب جمعها وإعادة تدويرها عبر قنوات مرخّصة. ونضمّن المشروع خطة لنهاية العمر حتى يتم ذلك بشكل مسؤول."
+      }
+    ]
+  }
+}

@@ -92,7 +92,7 @@ export const SUB_SERVICES: SubService[] = [
   s("sustainability-climate", "sustainable-buildings", "Sustainable Buildings", "المباني المستدامة", "sustainable building design advisory", "Design-stage environmental performance of buildings."),
   s("sustainability-climate", "green-building-advisory", "Green Building Certification", "شهادات المباني الخضراء", "LEED Mostadam certification consultant", "LEED / Mostadam / Envision certification support."),
 
-  // D. Renewable Energy (12)
+  // D. Renewable Energy (16)
   s("renewable-energy", "solar-energy", "Solar Energy Advisory", "استشارات الطاقة الشمسية", "solar energy consultant Saudi Arabia", "Technology-neutral solar strategy (PV, thermal) for organisations."),
   s("renewable-energy", "solar-pv", "Solar PV Systems", "أنظمة الطاقة الشمسية الكهروضوئية", "rooftop solar PV commercial industrial", "Rooftop/ground-mount PV technical advisory, design review and owner's engineering."),
   s("renewable-energy", "solar-feasibility-studies", "Solar Feasibility Studies", "دراسات جدوى الطاقة الشمسية", "solar feasibility study", "Yield, sizing, grid, financial model and environmental screening."),
@@ -105,6 +105,10 @@ export const SUB_SERVICES: SubService[] = [
   s("renewable-energy", "renewable-energy-integration", "Renewable Energy Integration", "دمج الطاقة المتجددة", "renewable energy integration grid industrial", "Integrating renewables into sites: grid, load, hybrid systems."),
   s("renewable-energy", "clean-energy-strategy", "Clean Energy Strategy", "استراتيجية الطاقة النظيفة", "clean energy transition strategy", "Organisation-level energy transition and procurement strategy."),
   s("renewable-energy", "waste-to-energy", "Waste-to-Energy", "تحويل النفايات إلى طاقة", "waste to energy feasibility Saudi Arabia", "WtE feasibility, technology selection and environmental permitting.", { alsoIn: ["waste-management"] }),
+  s("renewable-energy", "solar-energy-systems", "Solar Energy Systems", "أنظمة الطاقة الشمسية", "solar energy systems homes compounds factories Saudi Arabia", "Delivered rooftop/ground/carport PV for villas, compounds and factories: study to grid connection."),
+  s("renewable-energy", "ev-charging-stations", "EV Charging Stations", "محطات شحن السيارات الكهربائية", "EV charging stations Saudi Arabia", "AC/DC charging for compounds, buildings, fleets and public sites, with load management and solar."),
+  s("renewable-energy", "renewable-operations-maintenance", "Renewable Energy O&M", "تشغيل وصيانة مشاريع الطاقة المتجددة", "solar O&M panel cleaning maintenance Saudi Arabia", "Field services for solar, storage and chargers: cleaning, inspections, faults and performance reports."),
+  s("renewable-energy", "renewable-energy-feasibility", "Renewable Energy Feasibility & Environmental Studies", "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة", "solar wind feasibility and environmental study", "Site screening, yield, financial model, EIA and permitting for solar and wind projects."),
 
   // E. Waste Management (15) — "solid waste" merged (see merges)
   s("waste-management", "industrial-waste", "Industrial Waste Management", "إدارة النفايات الصناعية", "industrial waste management Saudi Arabia", "Process wastes from manufacturing: inventory, routes, compliance."),

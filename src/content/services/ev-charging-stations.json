@@ -1,0 +1,270 @@
+{
+  "category": "renewable-energy",
+  "order": 2,
+  "formFamily": "energy",
+  "industries": [
+    "real-estate",
+    "commercial-facilities",
+    "hospitality",
+    "logistics-warehousing",
+    "energy",
+    "government-public-sector",
+    "infrastructure"
+  ],
+  "related": [
+    "solar-energy-systems",
+    "battery-energy-storage",
+    "renewable-operations-maintenance",
+    "renewable-energy-feasibility"
+  ],
+  "en": {
+    "name": "EV Charging Stations",
+    "seoTitle": "EV Charging Stations for Compounds, Businesses & Fleets | Selorin",
+    "metaDescription": "Electric vehicle charging in Saudi Arabia for compounds, buildings, hotels, fleets and public sites: load study, charger selection, solar integration and installation.",
+    "valueProp": "Electric vehicle charging that fits your site's electrical capacity, your users and your growth, with the option to run it on solar power.",
+    "cardDescription": "AC and DC charging stations for residential compounds, buildings, hotels, fleets and public sites, from load study and charger selection to installation, solar integration and maintenance.",
+    "keyBenefit": "Chargers ready for today's users and tomorrow's demand",
+    "definition": "An EV charging station supplies electricity to electric vehicles through AC chargers, suited to longer stays such as homes, offices and hotels, or DC fast chargers, suited to short stops and fleets. A charging project covers more than the chargers themselves: it includes the site's electrical capacity, cabling and protection, parking layout, user access and payment, and, increasingly, on-site solar generation and batteries to manage cost and peak demand.",
+    "overview": [
+      "Electric vehicles are a growing part of the Kingdom's transport plans, and the charging network is expanding in cities, along highways and inside private sites. Residential compounds, office buildings, hotels, malls and fleet operators are increasingly expected to provide charging for residents, guests, employees and their own vehicles.",
+      "The main constraint is usually electrical, not the charger. Adding several chargers can exceed the capacity of an existing connection, trigger costly upgrades or overload transformers at peak times. Choosing the wrong mix of AC and DC chargers, or ignoring how users will park, pay and wait, leads to stations that are either idle or overloaded. Safety, conformity and municipal requirements also need to be addressed before installation.",
+      "Selorin plans and delivers charging projects from the first load study. We assess your electrical capacity and expected usage, recommend the number and type of chargers, design the electrical works and parking layout, and integrate load management so chargers share capacity intelligently. Where it makes sense, we combine charging with solar carports and battery storage to reduce grid demand and running costs, then install, commission and maintain the station."
+    ],
+    "whenYouNeed": [
+      "Residents in your compound or building are asking for home charging.",
+      "Your hotel, mall or office wants to offer charging to guests, visitors or employees.",
+      "You are electrifying a vehicle fleet and need depot charging.",
+      "You plan a public or semi-public fast-charging site.",
+      "Your existing electrical connection may not support the chargers you need.",
+      "You want chargers powered partly by solar carports and batteries."
+    ],
+    "deliver": [
+      {
+        "title": "Demand and load study",
+        "description": "Estimate of charging demand from users, vehicles and dwell times, checked against the site's available electrical capacity."
+      },
+      {
+        "title": "Charger selection",
+        "description": "Recommended mix of AC and DC chargers, power ratings and connectors, with conformity and network compatibility in mind."
+      },
+      {
+        "title": "Electrical and site design",
+        "description": "Cabling, protection, earthing and distribution design, parking bay layout, signage and accessibility."
+      },
+      {
+        "title": "Load management",
+        "description": "Smart charging that shares available capacity between chargers and avoids costly peaks or connection upgrades."
+      },
+      {
+        "title": "Solar and storage integration",
+        "description": "Optional solar carports and batteries sized to offset charging energy and smooth demand on the grid connection."
+      },
+      {
+        "title": "Installation, commissioning and support",
+        "description": "Supervised installation, testing, user and operator handover, and preventive maintenance."
+      }
+    ],
+    "approach": [
+      {
+        "title": "Assess demand and capacity",
+        "description": "We estimate charging demand and confirm how much capacity the site can provide."
+      },
+      {
+        "title": "Design the station",
+        "description": "We select chargers and design the electrical works, layout and load management."
+      },
+      {
+        "title": "Secure approvals",
+        "description": "We prepare the documents needed for the applicable approvals and any connection change."
+      },
+      {
+        "title": "Install and commission",
+        "description": "We install, test and hand over the station, including operator training."
+      },
+      {
+        "title": "Operate and expand",
+        "description": "We maintain the chargers, monitor usage and plan additional capacity as demand grows."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "Demand and capacity assessment",
+        "format": "Technical memo (PDF)",
+        "timing": "Project start"
+      },
+      {
+        "item": "Charger specification and site layout",
+        "format": "Specification and layout drawings (PDF)",
+        "timing": "Design stage"
+      },
+      {
+        "item": "Electrical design package",
+        "format": "Single-line diagram, cable schedules and protection settings (PDF)",
+        "timing": "Before installation"
+      },
+      {
+        "item": "Commissioning records",
+        "format": "Test reports and as-built drawings (PDF)",
+        "timing": "At handover"
+      },
+      {
+        "item": "Usage and maintenance report",
+        "format": "Periodic report",
+        "timing": "During operation"
+      }
+    ],
+    "regulatoryContext": [
+      "National plans to expand electric mobility and the public charging network in the Kingdom.",
+      "Municipal requirements for EV charging stations in buildings, car parks and public sites.",
+      "SASO technical requirements and conformity for EV chargers and related electrical equipment.",
+      "Connection and capacity requirements of the electricity provider, and the electrical and fire-safety provisions of the Saudi Building Code."
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between AC and DC chargers?",
+        "a": "AC chargers are slower and lower cost, and suit places where cars stay for hours, such as homes, compounds, offices and hotels. DC fast chargers deliver much higher power for short stops and fleets, but need more electrical capacity and investment. Most sites use a mix based on how long users stay."
+      },
+      {
+        "q": "Can my building's current electrical supply handle EV chargers?",
+        "a": "Often it can support some chargers, especially with load management that shares available capacity. We check your connection and peak demand first and only recommend an upgrade where it is genuinely needed."
+      },
+      {
+        "q": "Can EV chargers run on solar energy?",
+        "a": "Yes. Solar carports can produce a large share of the energy used for charging, and batteries can store it for evening use or to reduce peaks. We size these together with the chargers."
+      },
+      {
+        "q": "Do you serve residential compounds?",
+        "a": "Yes. Compounds are a strong fit for AC charging in residents' parking, often combined with shared fast chargers and solar carports. We also help define how charging is allocated and billed between residents."
+      },
+      {
+        "q": "Do you maintain the chargers after installation?",
+        "a": "Yes. We offer preventive maintenance, fault response and usage reporting, and plan additional chargers as demand grows."
+      }
+    ]
+  },
+  "ar": {
+    "name": "محطات شحن السيارات الكهربائية",
+    "seoTitle": "محطات شحن السيارات الكهربائية للكمباوندات والمنشآت | سيلورين",
+    "metaDescription": "محطات شحن السيارات الكهربائية في السعودية للكمباوندات والمباني والفنادق وأساطيل المركبات: دراسة الأحمال واختيار الشواحن والربط بالطاقة الشمسية والتركيب.",
+    "valueProp": "شحن للسيارات الكهربائية يناسب القدرة الكهربائية لموقعك ومستخدميك ونموك المستقبلي، مع إمكانية تشغيله بالطاقة الشمسية.",
+    "cardDescription": "محطات شحن AC وDC للكمباوندات السكنية والمباني والفنادق والأساطيل والمواقع العامة، من دراسة الأحمال واختيار الشواحن إلى التركيب والدمج مع الطاقة الشمسية والصيانة.",
+    "keyBenefit": "شواحن جاهزة لمستخدمي اليوم وطلب الغد",
+    "definition": "محطة شحن السيارات الكهربائية تزوّد المركبات بالكهرباء عبر شواحن متناوبة (AC) تناسب فترات التوقف الطويلة كالمنازل والمكاتب والفنادق، أو شواحن سريعة مستمرة (DC) تناسب التوقفات القصيرة والأساطيل. ولا يقتصر المشروع على الشواحن؛ بل يشمل القدرة الكهربائية للموقع، والكابلات والحماية، وتخطيط المواقف، ووصول المستخدمين والدفع، ويشمل بشكل متزايد الطاقة الشمسية والبطاريات لإدارة التكلفة والأحمال.",
+    "overview": [
+      "أصبحت السيارات الكهربائية جزءاً متنامياً من خطط النقل في المملكة، وتتوسع شبكة الشحن في المدن وعلى الطرق وداخل المواقع الخاصة. ويُنتظر من الكمباوندات والمباني المكتبية والفنادق والمراكز التجارية ومشغلي الأساطيل توفير الشحن للسكان والضيوف والموظفين ومركباتهم.",
+      "العائق الرئيس غالباً كهربائي وليس في الشاحن نفسه. فإضافة عدة شواحن قد تتجاوز قدرة التوصيل القائم، أو تستلزم ترقيات مكلفة، أو تُحمّل المحولات فوق طاقتها وقت الذروة. واختيار مزيج خاطئ من شواحن AC وDC، أو إغفال طريقة وقوف المستخدمين ودفعهم وانتظارهم، ينتج محطات إما خاملة أو مزدحمة. كما يجب استيفاء متطلبات السلامة والمطابقة والاشتراطات البلدية قبل التركيب.",
+      "تخطط سيلورين مشاريع الشحن وتنفذها بدءاً من دراسة الأحمال. نقيّم القدرة الكهربائية والاستخدام المتوقع، ونوصي بعدد الشواحن ونوعها، ونصمم الأعمال الكهربائية وتخطيط المواقف، وندمج إدارة الأحمال لتتقاسم الشواحن القدرة بذكاء. وحيث يكون ذلك مجدياً، نجمع الشحن مع مظلات شمسية وبطاريات لتقليل السحب من الشبكة وتكاليف التشغيل، ثم نركّب المحطة ونشغّلها ونصونها."
+    ],
+    "whenYouNeed": [
+      "سكان الكمباوند أو المبنى يطلبون إمكانية الشحن في مواقفهم.",
+      "فندقك أو مركزك التجاري أو مكتبك يريد تقديم الشحن للضيوف أو الزوار أو الموظفين.",
+      "تتحول إلى أسطول مركبات كهربائية وتحتاج إلى شحن في المستودع.",
+      "تخطط لموقع شحن سريع عام أو شبه عام.",
+      "قد لا يكفي التوصيل الكهربائي الحالي للشواحن التي تحتاجها.",
+      "تريد شواحن تعمل جزئياً بالطاقة الشمسية والبطاريات."
+    ],
+    "deliver": [
+      {
+        "title": "دراسة الطلب والأحمال",
+        "description": "تقدير طلب الشحن من المستخدمين والمركبات ومدد التوقف، ومقارنته بالقدرة الكهربائية المتاحة في الموقع."
+      },
+      {
+        "title": "اختيار الشواحن",
+        "description": "مزيج موصى به من شواحن AC وDC وقدراتها وموصلاتها، مع مراعاة المطابقة والتوافق مع شبكات التشغيل."
+      },
+      {
+        "title": "التصميم الكهربائي والموقعي",
+        "description": "تصميم الكابلات والحماية والتأريض والتوزيع، وتخطيط مواقف الشحن واللوحات الإرشادية وسهولة الوصول."
+      },
+      {
+        "title": "إدارة الأحمال",
+        "description": "شحن ذكي يوزع القدرة المتاحة على الشواحن ويتجنب الذروات المكلفة أو ترقيات التوصيل."
+      },
+      {
+        "title": "الدمج مع الطاقة الشمسية والتخزين",
+        "description": "مظلات شمسية وبطاريات اختيارية بحجم يعوّض طاقة الشحن ويخفف الأحمال على نقطة الربط."
+      },
+      {
+        "title": "التركيب والتشغيل والدعم",
+        "description": "تركيب بإشراف، واختبار، وتسليم للمستخدمين والمشغلين، وصيانة وقائية."
+      }
+    ],
+    "approach": [
+      {
+        "title": "تقييم الطلب والقدرة",
+        "description": "نقدّر طلب الشحن ونتحقق من القدرة التي يستطيع الموقع توفيرها."
+      },
+      {
+        "title": "تصميم المحطة",
+        "description": "نختار الشواحن ونصمم الأعمال الكهربائية والتخطيط وإدارة الأحمال."
+      },
+      {
+        "title": "استكمال الموافقات",
+        "description": "نعد المستندات اللازمة للموافقات المطلوبة وأي تعديل على التوصيل."
+      },
+      {
+        "title": "التركيب والتشغيل",
+        "description": "نركّب المحطة ونختبرها ونسلّمها مع تدريب المشغلين."
+      },
+      {
+        "title": "التشغيل والتوسع",
+        "description": "نصون الشواحن ونتابع الاستخدام ونخطط لقدرات إضافية مع نمو الطلب."
+      }
+    ],
+    "deliverables": [
+      {
+        "item": "تقييم الطلب والقدرة",
+        "format": "مذكرة فنية (PDF)",
+        "timing": "بداية المشروع"
+      },
+      {
+        "item": "مواصفات الشواحن وتخطيط الموقع",
+        "format": "مواصفات ومخططات تخطيط (PDF)",
+        "timing": "مرحلة التصميم"
+      },
+      {
+        "item": "حزمة التصميم الكهربائي",
+        "format": "مخطط أحادي الخط وجداول الكابلات وإعدادات الحماية (PDF)",
+        "timing": "قبل التركيب"
+      },
+      {
+        "item": "سجلات التشغيل",
+        "format": "تقارير اختبار ومخططات تنفيذية (PDF)",
+        "timing": "عند التسليم"
+      },
+      {
+        "item": "تقرير الاستخدام والصيانة",
+        "format": "تقرير دوري",
+        "timing": "خلال التشغيل"
+      }
+    ],
+    "regulatoryContext": [
+      "الخطط الوطنية لتوسيع التنقل الكهربائي وشبكة الشحن العامة في المملكة.",
+      "الاشتراطات البلدية لمحطات شحن السيارات الكهربائية في المباني والمواقف والمواقع العامة.",
+      "المتطلبات الفنية للهيئة السعودية للمواصفات والمقاييس والجودة ومطابقة شواحن السيارات الكهربائية والمعدات المرتبطة بها.",
+      "اشتراطات التوصيل والقدرة لدى مزوّد الكهرباء، والأحكام الكهربائية والوقائية في كود البناء السعودي."
+    ],
+    "faqs": [
+      {
+        "q": "ما الفرق بين شواحن AC وDC؟",
+        "a": "شواحن AC أبطأ وأقل تكلفة، وتناسب الأماكن التي تبقى فيها السيارة ساعات كالمنازل والكمباوندات والمكاتب والفنادق. أما شواحن DC السريعة فتوفر قدرة أعلى بكثير للتوقفات القصيرة والأساطيل، لكنها تحتاج إلى قدرة كهربائية واستثمار أكبر. ومعظم المواقع تستخدم مزيجاً بحسب مدة بقاء المستخدمين."
+      },
+      {
+        "q": "هل يتحمل التوصيل الكهربائي الحالي لمبناي الشواحن؟",
+        "a": "غالباً يمكنه دعم عدد من الشواحن، خاصة مع إدارة الأحمال التي توزع القدرة المتاحة. نفحص التوصيل والأحمال القصوى أولاً، ولا نوصي بالترقية إلا عند الحاجة الفعلية."
+      },
+      {
+        "q": "هل يمكن تشغيل الشواحن بالطاقة الشمسية؟",
+        "a": "نعم. يمكن لمظلات المواقف الشمسية إنتاج جزء كبير من طاقة الشحن، ويمكن للبطاريات تخزينها للاستخدام المسائي أو لتخفيف الذروة. نحدد أحجامها مع الشواحن معاً."
+      },
+      {
+        "q": "هل تخدمون الكمباوندات السكنية؟",
+        "a": "نعم. الكمباوندات مناسبة جداً لشواحن AC في مواقف السكان، وغالباً مع شواحن سريعة مشتركة ومظلات شمسية. ونساعد كذلك في تحديد طريقة توزيع الشحن ومحاسبته بين السكان."
+      },
+      {
+        "q": "هل تصونون الشواحن بعد التركيب؟",
+        "a": "نعم. نقدم الصيانة الوقائية والاستجابة للأعطال وتقارير الاستخدام، ونخطط لشواحن إضافية مع نمو الطلب."
+      }
+    ]
+  }
+}

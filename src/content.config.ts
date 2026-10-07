@@ -12,9 +12,10 @@ export const SERVICE_CATEGORIES = [
   "waste-circular-economy",
   "sustainability-climate",
   "sustainable-buildings",
+  "renewable-energy",
 ] as const;
 
-export const FORM_FAMILIES = ["permitting", "studies", "monitoring", "waste", "sustainability", "buildings"] as const;
+export const FORM_FAMILIES = ["permitting", "studies", "monitoring", "waste", "sustainability", "buildings", "energy"] as const;
 
 export const INSIGHT_CATEGORIES = [
   "regulatory-updates",

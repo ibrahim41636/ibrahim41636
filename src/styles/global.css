@@ -246,7 +246,26 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 .reading b { font-size: 1.25rem; font-weight: 600; font-variant-numeric: tabular-nums; direction: ltr; }
 .reading .state { grid-column: 2; grid-row: 1 / span 2; display: inline-flex; align-items: center; gap: 6px; font-size: var(--fs-12); color: var(--c-mint-2); }
 .reading .state::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--c-mint-2); box-shadow: 0 0 0 4px rgba(166,230,176,.18); }
-.reading svg { grid-column: 1 / -1; height: 28px; width: 100%; color: var(--c-mint-2); margin-top: 6px; }
+.reading svg { grid-column: 1 / -1; height: 28px; width: 100%; color: var(--c-mint-2); margin-top: 6px; overflow: visible; }
+/* Live episode states (LiveReadings): amber when elevated, red above the limit line */
+.reading { transition: border-color .4s, background-color .4s, box-shadow .4s; }
+.reading .state, .reading svg { transition: color .4s; }
+.reading .state::before { transition: background-color .4s, box-shadow .4s; }
+.reading .limit-line { stroke: rgba(255,255,255,.28); stroke-width: 1; stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
+.reading path { vector-effect: non-scaling-stroke; }
+.reading[data-state="high"], .reading[data-state="falling"] { border-color: rgba(246,196,92,.45); }
+.reading[data-state="high"] .state, .reading[data-state="high"] svg, .reading[data-state="falling"] .state, .reading[data-state="falling"] svg { color: #f6c45c; }
+.reading[data-state="high"] .state::before, .reading[data-state="falling"] .state::before { background: #f6c45c; box-shadow: 0 0 0 4px rgba(246,196,92,.2); }
+.reading[data-state="over"] { border-color: rgba(255,120,104,.6); background: rgba(255,90,70,.12); box-shadow: 0 0 0 1px rgba(255,120,104,.25), 0 10px 30px -12px rgba(255,90,70,.45); }
+.reading[data-state="over"] .state, .reading[data-state="over"] svg { color: #ff8a7a; }
+.reading[data-state="over"] .state::before { background: #ff8a7a; animation: reading-pulse 1s ease-in-out infinite; }
+@keyframes reading-pulse { 0%, 100% { box-shadow: 0 0 0 3px rgba(255,138,122,.35); } 50% { box-shadow: 0 0 0 7px rgba(255,138,122,0); } }
+.readings-ticker { display: none; margin: 2px 0 0; font-size: var(--fs-12); color: var(--c-mint-2); min-height: 1.4em; transition: color .4s; }
+.readings.is-live .readings-ticker { display: block; }
+.readings-ticker[data-tone="alert"] { color: #ff8a7a; }
+.readings-ticker[data-tone="recover"] { color: #f6c45c; }
+.readings-note { color: #8f9893; font-size: 11px; }
+.hero-haze { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; mix-blend-mode: screen; }
 @media (max-width: 960px) { .readings { justify-self: start; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; } .reading svg { display: none; } }
 @media (max-width: 560px) { .readings { grid-template-columns: 1fr; } .readings .reading:nth-child(n+2) { display: none; } }
 

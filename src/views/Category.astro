@@ -1,11 +1,12 @@
 ---
-import { categoryImage } from "@/data/imagery";
+import { categoryImage, IMAGES } from "@/data/imagery";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import ServiceCard from "@/components/ServiceCard.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import Icon from "@/components/Icon.astro";
-import { getEntries } from "astro:content";
+import Logo from "@/components/Logo.astro";
+import BrandedPhoto from "@/components/BrandedPhoto.astro";
 import { href, t, type Lang } from "@/i18n/ui";
 import { categoryById } from "@/data/taxonomy";
 import { getServices, getIndustries } from "@/lib/content";
@@ -29,20 +30,44 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
   <PageHero lang={lang} crumbs={crumbs} photo={categoryImage(cat.id)} eyebrow={t(lang, "nav.services")} title={cat.name[lang]} lead={cat.intro[lang]}>
     <div class="actions mt-6"><a class="btn btn--light" href={href(lang, "/request/")} data-cta="category_hero_request">{t(lang, "cta.consultation")} <Icon name="arrow" class="arrow" /></a></div>
   </PageHero>
-  {cat.segments && (
-    <section class="section">
-      <div class="container">
-        <div class="section-head"><p class="eyebrow">{ar ? "لمن نقدم حلولنا" : "Who we serve"}</p><h2>{ar ? "حلول مصممة لكل نوع من المواقع" : "Solutions designed for every type of site"}</h2></div>
-        <div class="grid grid-4">{cat.segments.map((sg) => <article class="card"><span class="icon"><Icon name={sg.icon} /></span><h3>{sg.title[lang]}</h3><p>{sg.body[lang]}</p></article>)}</div>
+  {cat.sectors && (
+    <nav class="sector-tabs" aria-label={ar ? "أقسام الصفحة" : "Page sections"}>
+      <div class="container">{cat.sectors.map((sc) => <a href={`#${sc.id}`}><Icon name={sc.icon} />{sc.title[lang]}</a>)}</div>
+    </nav>
+  )}
+  {cat.sectors?.map((sc, i) => (
+    <section class:list={["section sector", i % 2 === 1 && "bg-white border-top", i > 0 && i % 2 === 0 && "border-top"]} id={sc.id}>
+      <div class:list={["container split split--even sector-grid", i % 2 === 1 && "sector-grid--flip"]}>
+        <div class="sector-media">
+          {sc.image ? <BrandedPhoto img={IMAGES[sc.image as keyof typeof IMAGES]} lang={lang} /> : (
+            <div class="sector-panel">
+              <span class="sector-panel-icon"><Icon name={sc.icon} /></span>
+              {sc.extra && <ul>{sc.extra.items.map((it) => <li><b>{it.name[lang]}</b><span>{it.note[lang]}</span></li>)}</ul>}
+              <span class="photo-badge" aria-hidden="true"><Logo /><b>Selorin</b></span>
+            </div>
+          )}
+        </div>
+        <div>
+          <p class="eyebrow">{String(i + 1).padStart(2, "0")} · {cat.name[lang]}</p>
+          <h2>{sc.title[lang]}</h2>
+          <p class="lead">{sc.lead[lang]}</p>
+          <ul class="check-list">{sc.points.map((pt) => <li><Icon name="check" /><span>{pt[lang]}</span></li>)}</ul>
+          {sc.extra && sc.image && <p><b>{sc.extra.title[lang]}</b></p>}
+          <div class="sector-links">{sc.services.map((slug) => {
+            const sv = services.find((x) => x.id === slug);
+            return sv && <a class="pill" href={href(lang, `/services/${slug}/`)}>{sv.data[lang].name}</a>;
+          })}</div>
+          <div class="actions mt-6"><a class="btn" href={href(lang, `/request/?service=${sc.services[0]}`)} data-cta={`sector_${sc.id}`}>{ar ? "اطلب عرض سعر" : "Request a quote"} <Icon name="arrow" class="arrow" /></a></div>
+        </div>
       </div>
     </section>
-  )}
+  ))}
   {cat.facts && (
     <section class="section bg-white border-top">
       <div class="container"><div class="stats stats--3">{cat.facts.map((f) => <div class="stat"><b>{f.value}</b><span>{f.label[lang]}</span></div>)}</div></div>
     </section>
   )}
-  <section class:list={["section", cat.segments && "border-top"]}>
+  <section class:list={["section", cat.sectors && "border-top"]}>
     <div class="container">
       <div class="section-head"><h2>{ar ? "الخدمات في هذا المجال" : "Services in this practice area"}</h2><p class="lead">{cat.benefit[lang]}</p></div>
       <div class="grid grid-3">{services.map((s) => <ServiceCard lang={lang} service={s} />)}</div>

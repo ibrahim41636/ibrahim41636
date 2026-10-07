@@ -627,3 +627,35 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 /* Home practice areas: the seventh card spans the row as a featured card. */
 .card--span { grid-column: 1 / -1; }
 @media (min-width: 641px) { .card--span .card-list { columns: 2; column-gap: var(--space-6); } }
+
+/* Category hub sectors (Renewable Energy): tabs, alternating photo/text rows, Selorin badge */
+.sector-tabs { position: sticky; top: var(--header-h, 72px); z-index: 5; background: var(--c-white); border-bottom: 1px solid var(--c-line); }
+.sector-tabs .container { display: flex; gap: var(--space-2); overflow-x: auto; padding-block: 10px; scrollbar-width: none; }
+.sector-tabs a { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--c-line); font-size: var(--fs-14); font-weight: 600; color: var(--c-ink); text-decoration: none; }
+.sector-tabs a:hover { border-color: var(--c-forest); color: var(--c-forest); }
+.sector-tabs svg { width: 18px; height: 18px; }
+.sector { scroll-margin-top: calc(var(--header-h, 72px) + 60px); }
+.sector-grid--flip > .sector-media { order: 2; }
+.sector h2 { margin-bottom: var(--space-3); }
+.check-list { list-style: none; padding: 0; margin: var(--space-5) 0; display: grid; gap: 10px; }
+.check-list li { display: flex; gap: 10px; align-items: flex-start; }
+.check-list svg { flex: none; width: 20px; height: 20px; color: var(--c-forest); margin-top: 3px; }
+.sector-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.sector-links .pill { text-decoration: none; padding: 6px 12px; }
+.sector-links .pill:hover { background: var(--c-forest); color: var(--c-white); }
+.branded-photo { position: relative; margin: 0; border-radius: var(--radius-lg, 16px); overflow: hidden; aspect-ratio: 4 / 5; background: var(--c-paper-2); }
+.branded-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.photo-badge { position: absolute; inset-inline-start: 14px; inset-block-end: 14px; display: inline-flex; align-items: center; gap: 8px; padding: 7px 12px 7px 9px; border-radius: 999px; background: rgba(255,255,255,.92); color: var(--c-forest); box-shadow: 0 6px 18px -8px rgba(0,0,0,.35); backdrop-filter: blur(4px); }
+.photo-badge svg { width: 22px; height: 22px; }
+.photo-badge b { font-size: 14px; letter-spacing: -.01em; font-family: inherit; }
+.sector-panel { position: relative; aspect-ratio: 4 / 5; border-radius: var(--radius-lg, 16px); padding: clamp(24px, 4vw, 40px); color: #fff; background: radial-gradient(120% 90% at 85% 10%, #2f7a4f 0%, #0f3d27 55%, #0a2a1b 100%); display: flex; flex-direction: column; gap: var(--space-5); overflow: hidden; }
+.sector-panel-icon svg { width: 72px; height: 72px; color: #a8e0bd; }
+.sector-panel ul { list-style: none; padding: 0; margin: auto 0 48px; display: grid; gap: 14px; }
+.sector-panel li { display: grid; gap: 4px; padding: 14px 16px; border-radius: 12px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.14); }
+.sector-panel li b { font-size: var(--fs-18); }
+.sector-panel li span { font-size: var(--fs-14); color: #cfe3d7; }
+@media (max-width: 960px) {
+  .sector-grid--flip > .sector-media { order: 0; }
+  .branded-photo, .sector-panel { aspect-ratio: auto; }
+  .branded-photo { aspect-ratio: 4 / 3; }
+}

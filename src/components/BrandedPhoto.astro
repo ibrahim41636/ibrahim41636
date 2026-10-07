@@ -1,0 +1,13 @@
+---
+// Photo with the Selorin badge in the corner (the only brand shown on our imagery).
+import Picture from "@/components/Picture.astro";
+import Logo from "@/components/Logo.astro";
+import type { Img } from "@/data/imagery";
+import type { Lang } from "@/i18n/ui";
+interface Props { img: Img; lang: Lang; sizes?: string }
+const { img, lang, sizes = "(max-width: 960px) 100vw, 560px" } = Astro.props;
+---
+<figure class="branded-photo">
+  <Picture src={img.src} alt={img.alt[lang]} width={img.width} height={img.height} loading="lazy" sizes={sizes} />
+  <span class="photo-badge" aria-hidden="true"><Logo /><b>Selorin</b></span>
+</figure>

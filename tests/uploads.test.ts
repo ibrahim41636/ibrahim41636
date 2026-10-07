@@ -1,7 +1,12 @@
 import { describe, expect, it } from "vitest";
 import { checkUploads, safeName } from "../src/lib/uploads";
 
-const file = (name: string, bytes: number[], size = bytes.length) => new File([new Uint8Array([...bytes, ...new Array(Math.max(0, size - bytes.length)).fill(0)])], name);
+// Allocate the buffer directly: building an 11 MB plain array and spreading it took seconds and timed the test out.
+const file = (name: string, bytes: number[], size = bytes.length) => {
+  const buf = new Uint8Array(Math.max(size, bytes.length));
+  buf.set(bytes);
+  return new File([buf], name);
+};
 const PDF = [0x25, 0x50, 0x44, 0x46, 0x2d];
 
 describe("uploads", () => {

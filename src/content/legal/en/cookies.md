@@ -1,7 +1,7 @@
 ---
 title: "Cookie policy"
 description: "Which cookies selorin.co uses, why, and how to manage your consent. Analytics cookies load only after you accept them."
-updated: 2026-10-06
+updated: 2026-10-07
 translationKey: cookies
 ---
 
@@ -35,7 +35,16 @@ These tools are **not loaded until you give consent**. We use Google Consent Mod
 
 The Google Tag Manager container used on the website sets no analytics cookies other than those listed above.
 
-We do not use advertising or marketing cookies on the website.
+### Advertising measurement cookies (only with your consent)
+
+We advertise on Google Search. With the same consent, Google Ads tags loaded through Google Tag Manager record whether a visit that came from one of our ads led to a request, call or WhatsApp message, and may let us show our ads again to past visitors on Google. If you decline, these cookies are not set and ad storage stays denied under Consent Mode v2.
+
+| Cookie | Provider | Purpose | Duration |
+|---|---|---|---|
+| `_gcl_au` | Google Ads | Links an ad click to a later request (conversion measurement) | 90 days |
+| `_gcl_aw` | Google Ads | Stores the ad click identifier | 90 days |
+
+We do not sell personal data or share form contents with advertisers.
 
 ## 3. Managing your choices
 

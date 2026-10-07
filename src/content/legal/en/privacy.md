@@ -1,7 +1,7 @@
 ---
 title: "Privacy policy"
 description: "How Selorin collects, uses, shares and protects personal data submitted through selorin.co, and how to exercise your rights under the Saudi PDPL."
-updated: 2026-10-06
+updated: 2026-10-07
 translationKey: privacy
 ---
 
@@ -62,6 +62,7 @@ If you accept analytics cookies, Google Analytics 4 collects information about h
 | Protecting the website and our forms against spam, abuse and automated submissions | IP address, Cloudflare Turnstile verification result, hidden spam-detection field, submission time | Our legitimate interest in keeping the website secure |
 | Understanding which pages and campaigns bring enquiries | Source page, UTM parameters | Our legitimate interest in improving the website |
 | Measuring website usage | Analytics data | Your consent, which you can withdraw at any time |
+| Measuring and improving our Google ads | Ad click identifiers and conversion events (no form contents) | Your consent, which you can withdraw at any time |
 | Scientific research and developing environmental solutions suited to each sector | Request data that has been aggregated or stripped of anything that identifies you, such as sector, service type and region | Our legitimate interest in developing our services, limited to aggregated or de-identified data |
 | Complying with legal obligations and responding to lawful requests from competent authorities | Data as required | Legal obligation |
 
@@ -80,7 +81,7 @@ We do not sell personal data, and we do not use form submissions for automated d
 We share personal data only with service providers that process it on our behalf and under our instructions, and only to the extent needed for the purposes above:
 
 - **Cloudflare** — website hosting, content delivery network (CDN), serverless processing of form submissions, and spam protection (Cloudflare Turnstile)
-- **Google** — Google Tag Manager and Google Analytics 4, loaded only after you consent to analytics
+- **Google** — Google Tag Manager, Google Analytics 4 and Google Ads conversion measurement, loaded only after you consent to cookies
 - **Resend** — transactional email provider that delivers form submissions to our sales team and sends confirmation emails
 - **Lead storage and CRM** — records are stored in the cloud using Google services (Google Workspace and Google Cloud) for customer relationship management and file storage, with a minimal lead record in Cloudflare D1
 - **Email hosting** — the mailboxes that receive submissions are hosted in the cloud by Google (Google Workspace)

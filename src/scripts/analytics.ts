@@ -32,7 +32,8 @@ export function initConsent() {
   const set = (state: "granted" | "denied") => {
     try { localStorage.setItem("selorin_consent", state); } catch {}
     window.__consentState = state;
-    window.gtag?.("consent", "update", { analytics_storage: state });
+    // One choice covers analytics and ad measurement (Google Ads conversions and remarketing).
+    window.gtag?.("consent", "update", { analytics_storage: state, ad_storage: state, ad_user_data: state, ad_personalization: state });
     if (state === "granted") window.__loadGTM?.();
     if (banner) banner.hidden = true;
   };

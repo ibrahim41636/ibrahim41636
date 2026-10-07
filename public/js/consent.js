@@ -8,7 +8,9 @@
   var stored = null;
   try { stored = localStorage.getItem("selorin_consent"); } catch (e) {}
   gtag("consent", "default", {
-    ad_storage: "denied", ad_user_data: "denied", ad_personalization: "denied",
+    ad_storage: stored === "granted" ? "granted" : "denied",
+    ad_user_data: stored === "granted" ? "granted" : "denied",
+    ad_personalization: stored === "granted" ? "granted" : "denied",
     analytics_storage: stored === "granted" ? "granted" : "denied",
     wait_for_update: 500,
   });

@@ -26,16 +26,16 @@ const monitoring = ["dust-monitoring", "fuel-station-voc-monitoring", "air-quali
 
 const copy = ar
   ? {
-      title: "سيلورين | استشارات وخدمات بيئية في السعودية ودول الخليج",
-      description: "تساعد سيلورين المنشآت في المملكة العربية السعودية ودول الخليج على استخراج التصاريح البيئية، والامتثال، وتقييم الأثر البيئي، والرصد البيئي، والاستدامة — بدقة فنية في كل مرحلة.",
+      title: "سيلورين | مكتب استشارات بيئية في السعودية ودول الخليج",
+      description: "مكتب استشارات بيئية في السعودية يخدم الرياض وجدة والدمام وجميع المناطق: استخراج التصريح البيئي، ودراسات تقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والطاقة الشمسية.",
       eyebrow: "استشارات وخدمات بيئية · المملكة العربية السعودية",
       h1: "وضوح بيئي للمشاريع المعقّدة.",
       lead: "تساعد سيلورين المنشآت في المملكة العربية السعودية ودول الخليج على استخراج التصاريح البيئية، والوفاء بالمتطلبات التنظيمية، وقياس الأداء البيئي، وبناء برامج استدامة موثوقة — بدقة فنية في كل مرحلة.",
       example: "مثال توضيحي لبيانات الرصد",
     }
   : {
-      title: "Selorin | Environmental Consulting in Saudi Arabia & the GCC",
-      description: "Selorin helps organizations in Saudi Arabia and the GCC secure environmental permits, stay compliant, complete EIAs, monitor air, dust, noise and water, and build credible ESG programmes.",
+      title: "Selorin | Environmental Consultants in Saudi Arabia & the GCC",
+      description: "Environmental consultants in Saudi Arabia serving Riyadh, Jeddah, Dammam and every region: environmental permits, EIA, monitoring, waste management and solar energy.",
       eyebrow: "Environmental advisory & services · Saudi Arabia",
       h1: "Environmental clarity for complex projects.",
       lead: "Selorin helps organizations across Saudi Arabia secure permits, meet regulatory requirements, measure environmental performance and build credible sustainability programmes — with technical accuracy at every stage.",
@@ -73,6 +73,10 @@ const sectors = [
 const how = ar
   ? [["نفهم", "نراجع أنشطتك واشتراطات تصريحك والمخاطر الفعلية في موقعك."], ["نقيّم", "نحدد المتطلبات المنطبقة والفجوات والبيانات اللازمة."], ["ننفّذ", "نُعدّ الدراسات والخطط ونجري القياسات الميدانية."], ["نقدّم", "نجهّز المستندات ونتابع ملاحظات الجهات المختصة."], ["ندعم", "نتابع الامتثال والرصد والتقارير طوال عمر المشروع."]]
   : [["Understand", "We review your activities, permit conditions and the real risks on site."], ["Assess", "We identify applicable requirements, gaps and the data needed."], ["Deliver", "We prepare studies and plans and carry out field measurements."], ["Submit", "We prepare documentation and follow up on authority comments."], ["Support", "We sustain compliance, monitoring and reporting over the project life."]];
+const CITIES: [string, string][] = [
+  ["Riyadh", "الرياض"], ["Jeddah", "جدة"], ["Makkah", "مكة المكرمة"], ["Madinah", "المدينة المنورة"], ["Dammam & Khobar", "الدمام والخبر"],
+  ["Jubail", "الجبيل"], ["Yanbu", "ينبع"], ["Tabuk & NEOM", "تبوك ونيوم"], ["Abha", "أبها"], ["Qassim", "القصيم"], ["Hail", "حائل"], ["Jazan", "جازان"],
+];
 ---
 <Base lang={lang} path="/" title={copy.title} description={copy.description} image="/images/og-default.jpg"
   schema={[collectionSchema(lang, "/services/", ar ? "خدمات سيلورين" : "Selorin services", services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
@@ -271,6 +275,19 @@ const how = ar
       <ul class="reg-list" style="padding:0">
         {regulators.map((r) => <li><b>{r.name[lang]}</b><span>{r.role[lang]}</span></li>)}
       </ul>
+    </div>
+  </section>
+
+  <section class="section-tight" aria-labelledby="h-coverage">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">{ar ? "مناطق الخدمة" : "Service coverage"}</p>
+          <h2 id="h-coverage">{ar ? "مكتب استشارات بيئية يخدم جميع مناطق المملكة" : "Environmental consultants serving every region of Saudi Arabia"}</h2>
+        </div>
+        <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى، ونخدم دول الخليج." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects, and support clients across the GCC."}</p>
+      </div>
+      <ul class="city-list">{CITIES.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
     </div>
   </section>
 

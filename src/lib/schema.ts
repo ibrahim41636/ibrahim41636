@@ -5,7 +5,11 @@ import { site, href, type Lang } from "@/i18n/ui";
 const ORG_ID = `${site.url}/#organization`;
 // Primary market first: Saudi Arabia, then the other GCC states.
 const GCC = [["SA", "Saudi Arabia"], ["AE", "United Arab Emirates"], ["KW", "Kuwait"], ["QA", "Qatar"], ["BH", "Bahrain"], ["OM", "Oman"]] as const;
-const AREA_SERVED = GCC.map(([code, name]) => ({ "@type": "Country", name, identifier: code }));
+const SA_CITIES = ["Riyadh", "Jeddah", "Makkah", "Madinah", "Dammam", "Khobar", "Jubail", "Yanbu", "Tabuk", "NEOM", "Abha", "Buraidah", "Hail", "Jazan"];
+const AREA_SERVED = [
+  ...GCC.map(([code, name]) => ({ "@type": "Country", name, identifier: code })),
+  ...SA_CITIES.map((name) => ({ "@type": "City", name, containedInPlace: { "@type": "Country", name: "Saudi Arabia" } })),
+];
 
 const abs = (lang: Lang, path: string) => new URL(href(lang, path), site.url).toString();
 

@@ -678,3 +678,8 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .branded-photo, .sector-panel { aspect-ratio: auto; }
   .branded-photo { aspect-ratio: 4 / 3; }
 }
+
+/* Home: service coverage cities */
+.city-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.city-list li { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--c-white); border: 1px solid var(--c-line); font-weight: 600; font-size: var(--fs-14); }
+.city-list svg { width: 16px; height: 16px; color: var(--c-forest); }

@@ -1,0 +1,147 @@
+---
+// Home hero: illustrative monitoring cards that play a short pollution episode on a loop.
+// A dust/gas plume drifts across the hero, readings climb past their limit line and the status
+// turns amber then red; as the plume clears the readings ease back down to normal.
+// Static (first frame values) for reduced-motion users and when scripts are off.
+import type { Lang } from "@/i18n/ui";
+interface Props { lang: Lang; label: string }
+const { lang, label } = Astro.props;
+const ar = lang === "ar";
+
+const metrics = [
+  { key: "pm10", name: ar ? "PM10 · حدود الموقع" : "PM10 · Site boundary", unit: "µg/m³", base: 42, peak: 186, limit: 150, decimals: 0, delay: 0, calm: ar ? "ضمن الحد" : "Within limit" },
+  { key: "voc", name: ar ? "VOC · جزيرة المضخات" : "VOC · Dispenser island", unit: "ppm", base: 3.1, peak: 13.6, limit: 10, decimals: 1, delay: 0.9, calm: ar ? "طبيعي" : "Normal" },
+  { key: "noise", name: ar ? "الضوضاء · الحد الخارجي" : "Noise · Boundary", unit: "dB(A)", base: 58, peak: 76, limit: 70, decimals: 0, delay: 1.8, calm: ar ? "ضمن الحد" : "Within limit" },
+];
+const i18n = {
+  high: ar ? "مرتفع" : "Elevated",
+  over: ar ? "تجاوز الحد" : "Above limit",
+  falling: ar ? "ينخفض" : "Falling",
+  limit: ar ? "الحد" : "Limit",
+  ok: ar ? "جميع القراءات ضمن الحدود" : "All readings within limits",
+  alert: ar ? "تنبيه: ارتفاع الانبعاثات — تفعيل إجراءات التخفيف" : "Alert: emissions rising — mitigation activated",
+  recover: ar ? "انخفاض التلوث — القراءات تعود تدريجياً إلى الطبيعي" : "Pollution easing — readings returning to normal",
+};
+---
+<canvas class="hero-haze" aria-hidden="true" data-haze></canvas>
+<div class="readings" role="img" aria-label={label} data-live-readings data-i18n={JSON.stringify(i18n)}>
+  {metrics.map((m) => (
+    <div class="reading" data-state="ok" data-metric={JSON.stringify(m)}>
+      <small>{m.name}</small>
+      <b><span data-value>{m.base.toFixed(m.decimals)}</span> {m.unit}</b>
+      <span class="state" data-status>{m.calm}</span>
+      <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <line class="limit-line" x1="0" x2="200" y1="6" y2="6" data-limit-line />
+        <path d="M0 20 C40 18 60 16 100 18 S160 17 200 18" data-spark />
+      </svg>
+    </div>
+  ))}
+  <p class="readings-ticker" data-ticker aria-hidden="true">{i18n.ok}</p>
+  <small class="readings-note">{label}</small>
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>("[data-live-readings]");
+  const haze = document.querySelector<HTMLCanvasElement>("[data-haze]");
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (root && !reduce) {
+    type M = { key: string; unit: string; base: number; peak: number; limit: number; decimals: number; delay: number; calm: string };
+    const t = JSON.parse(root.dataset.i18n!) as Record<string, string>;
+    const ticker = root.querySelector<HTMLElement>("[data-ticker]")!;
+    const PERIOD = 16; // seconds per episode
+    const POINTS = 48;
+
+    // Pollution level 0..1 over one episode: calm → plume arrives → peak → plume clears → calm.
+    const ease = (x: number) => x * x * (3 - 2 * x);
+    const level = (s: number) => {
+      const p = ((s % PERIOD) + PERIOD) % PERIOD;
+      if (p < 3.5) return 0;
+      if (p < 6.5) return ease((p - 3.5) / 3);
+      if (p < 8) return 1;
+      if (p < 14) return Math.pow(1 - (p - 8) / 6, 1.6);
+      return 0;
+    };
+
+    const cards = [...root.querySelectorAll<HTMLElement>(".reading")].map((el) => {
+      const m = JSON.parse(el.dataset.metric!) as M;
+      const lo = m.base * 0.7, hi = m.peak * 1.08;
+      const y = (v: number) => 26 - ((v - lo) / (hi - lo)) * 24;
+      el.querySelector("[data-limit-line]")!.setAttribute("y1", String(y(m.limit)));
+      el.querySelector("[data-limit-line]")!.setAttribute("y2", String(y(m.limit)));
+      return { el, m, y, buf: Array<number>(POINTS).fill(m.base), value: el.querySelector<HTMLElement>("[data-value]")!, status: el.querySelector<HTMLElement>("[data-status]")!, spark: el.querySelector<SVGPathElement>("[data-spark]")! };
+    });
+
+    const start = performance.now();
+    let running = true, plume = 0;
+    const tick = () => {
+      if (!running) return;
+      const s = (performance.now() - start) / 1000;
+      let anyOver = false, falling = false;
+      plume = 0;
+      for (const c of cards) {
+        const L = level(s - c.m.delay);
+        plume = Math.max(plume, L);
+        const noise = (Math.random() - 0.5) * (c.m.peak - c.m.base) * (0.03 + 0.05 * L);
+        const v = Math.max(c.m.base * 0.85, c.m.base + (c.m.peak - c.m.base) * L + noise);
+        c.buf.push(v); c.buf.shift();
+        c.value.textContent = v.toFixed(c.m.decimals);
+        // Trend from the episode curve, not the noisy value, so the status never flickers.
+        const goingDown = L > 0.03 && L < level(s - c.m.delay - 0.4) - 0.005;
+        const state = v >= c.m.limit ? "over" : v >= c.m.base + (c.m.limit - c.m.base) * 0.55 ? (goingDown ? "falling" : "high") : "ok";
+        if (state === "over") anyOver = true;
+        if (goingDown) falling = true;
+        if (c.el.dataset.state !== state) {
+          c.el.dataset.state = state;
+          c.status.textContent = state === "ok" ? c.m.calm : t[state];
+        }
+        const step = 200 / (POINTS - 1);
+        c.spark.setAttribute("d", c.buf.map((b, i) => `${i ? "L" : "M"}${(i * step).toFixed(1)} ${c.y(b).toFixed(1)}`).join(" "));
+      }
+      const msg = anyOver ? t.alert : falling ? t.recover : plume > 0.05 ? t.alert : t.ok;
+      if (ticker.textContent !== msg) { ticker.textContent = msg; ticker.dataset.tone = msg === t.ok ? "ok" : msg === t.alert ? "alert" : "recover"; }
+      setTimeout(tick, 160);
+    };
+
+    // Dust / gas plume: soft particles drifting across the hero; density follows the pollution level.
+    const ctx = haze?.getContext("2d");
+    type P = { x: number; y: number; r: number; vx: number; vy: number; a: number; hue: number };
+    let parts: P[] = [], w = 0, h = 0;
+    const resize = () => {
+      if (!haze) return;
+      const dpr = Math.min(devicePixelRatio || 1, 2);
+      w = haze.clientWidth; h = haze.clientHeight;
+      haze.width = w * dpr; haze.height = h * dpr;
+      ctx?.setTransform(dpr, 0, 0, dpr, 0, 0);
+      const n = Math.round(Math.min(90, (w * h) / 14000));
+      parts = Array.from({ length: n }, () => ({ x: Math.random() * w, y: Math.random() * h, r: 20 + Math.random() * 70, vx: 0.15 + Math.random() * 0.5, vy: (Math.random() - 0.5) * 0.15, a: Math.random(), hue: Math.random() < 0.7 ? 38 : 95 }));
+    };
+    const draw = () => {
+      if (!running || !ctx) return;
+      ctx.clearRect(0, 0, w, h);
+      const dir = document.documentElement.dir === "rtl" ? -1 : 1;
+      for (const p of parts) {
+        p.x += p.vx * dir * (0.6 + plume * 1.6); p.y += p.vy;
+        if (p.x - p.r > w) p.x = -p.r; if (p.x + p.r < 0) p.x = w + p.r;
+        if (p.y - p.r > h) p.y = -p.r; if (p.y + p.r < 0) p.y = h + p.r;
+        const alpha = plume * (0.1 + 0.16 * p.a);
+        if (alpha < 0.004) continue;
+        const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r);
+        g.addColorStop(0, `hsla(${p.hue}, 32%, 66%, ${alpha})`);
+        g.addColorStop(1, `hsla(${p.hue}, 28%, 62%, 0)`);
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2); ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    };
+
+    const play = () => { if (running) return; running = true; tick(); draw(); };
+    const pause = () => { running = false; };
+    resize(); addEventListener("resize", resize);
+    root.classList.add("is-live");
+    tick(); draw();
+    // Only animate while the hero is on screen and the tab is visible.
+    new IntersectionObserver(([e]) => (e.isIntersecting && !document.hidden ? play() : pause())).observe(root);
+    document.addEventListener("visibilitychange", () => (document.hidden ? pause() : play()));
+  }
+</script>

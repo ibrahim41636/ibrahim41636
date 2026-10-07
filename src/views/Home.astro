@@ -2,6 +2,7 @@
 import Picture from "@/components/Picture.astro";
 import Base from "@/layouts/Base.astro";
 import Icon from "@/components/Icon.astro";
+import LiveReadings from "@/components/LiveReadings.astro";
 import Contours from "@/components/Contours.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import InsightCard from "@/components/InsightCard.astro";
@@ -91,15 +92,7 @@ const how = ar
           <a class="btn btn--ghost" href={site.profilePdf} download data-cta="hero_profile"><Icon name="download" /> {ar ? "الملف التعريفي" : "Company profile"}</a>
         </div>
       </div>
-      <div class="readings" role="img" aria-label={copy.example}>
-        <div class="reading"><small>PM10 · {ar ? "حدود الموقع" : "Site boundary"}</small><b>42 µg/m³</b><span class="state">{ar ? "ضمن الحد" : "Within limit"}</span>
-          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 20 C20 18 30 9 50 12 S80 22 100 16 S140 6 160 12 S190 18 200 14" /></svg></div>
-        <div class="reading"><small>VOC · {ar ? "جزيرة المضخات" : "Dispenser island"}</small><b>3.1 ppm</b><span class="state">{ar ? "طبيعي" : "Normal"}</span>
-          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 18 C25 17 35 15 55 18 S85 10 105 13 S145 20 165 15 S190 11 200 13" /></svg></div>
-        <div class="reading"><small>{ar ? "الضوضاء · الحد الخارجي" : "Noise · Boundary"}</small><b>58 dB(A)</b><span class="state">{ar ? "ضمن الحد" : "Within limit"}</span>
-          <svg viewBox="0 0 200 28" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M0 14 C20 10 40 20 60 15 S90 8 110 12 S150 19 170 14 S195 12 200 15" /></svg></div>
-        <small style="color:#8f9893;font-size:11px">{copy.example}</small>
-      </div>
+      <LiveReadings lang={lang} label={copy.example} />
     </div>
   </section>
 

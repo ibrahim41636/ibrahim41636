@@ -81,7 +81,7 @@ We do not sell personal data, and we do not use form submissions for automated d
 We share personal data only with service providers that process it on our behalf and under our instructions, and only to the extent needed for the purposes above:
 
 - **Cloudflare** — website hosting, content delivery network (CDN), serverless processing of form submissions, and spam protection (Cloudflare Turnstile)
-- **Google** — Google Tag Manager, Google Analytics 4 and Google Ads conversion measurement, loaded only after you consent to cookies
+- **Google** — Google Tag Manager, Google Analytics 4 and Google Ads conversion measurement, under Consent Mode v2: no Google cookies or identifiers are stored until you consent
 - **Resend** — transactional email provider that delivers form submissions to our sales team and sends confirmation emails
 - **Lead storage and CRM** — records are stored in the cloud using Google services (Google Workspace and Google Cloud) for customer relationship management and file storage, with a minimal lead record in Cloudflare D1
 - **Email hosting** — the mailboxes that receive submissions are hosted in the cloud by Google (Google Workspace)

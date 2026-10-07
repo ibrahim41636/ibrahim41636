@@ -1,5 +1,6 @@
-/* Google Consent Mode v2 defaults + lazy GTM. Runs before anything else in <head>.
-   Set the container ID below to enable GTM; nothing loads until analytics consent is granted. */
+/* Google Consent Mode v2 (advanced) + GTM. Runs before anything else in <head>.
+   GTM loads on every page, but all storage defaults to "denied": Google tags set no cookies and
+   store no identifiers until the visitor accepts in the cookie banner (analytics.ts updates consent). */
 (function () {
   var GTM_ID = "GTM-KBQP5SKQ";
   window.dataLayer = window.dataLayer || [];
@@ -23,5 +24,5 @@
     document.head.appendChild(s);
   };
   window.__consentState = stored;
-  if (stored === "granted") window.__loadGTM();
+  window.__loadGTM();
 })();

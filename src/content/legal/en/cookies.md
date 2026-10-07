@@ -26,7 +26,7 @@ These cookies are needed for the website to work and to remember the choices you
 
 We use Google Tag Manager and Google Analytics 4 to understand how visitors use the website, for example which pages are viewed and which sources bring visitors to the website. This helps us improve the content and structure of the website.
 
-These tools are **not loaded until you give consent**. We use Google Consent Mode v2, so that analytics storage stays denied unless you accept analytics cookies. If you decline, Google Analytics cookies are not set.
+We use **Google Consent Mode v2**. Google Tag Manager loads on every page, but analytics and advertising storage stay **denied until you accept**: no Google cookies are set and no identifiers are stored before your consent. Until then, Google tags may only send cookieless, aggregated signals (for example, that a page was viewed) that Google uses for modelled measurement. If you decline, Google Analytics and Google Ads cookies are not set.
 
 | Cookie | Provider | Purpose | Duration |
 |---|---|---|---|

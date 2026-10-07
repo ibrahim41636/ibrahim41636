@@ -1,7 +1,7 @@
 /* Google Consent Mode v2 defaults + lazy GTM. Runs before anything else in <head>.
    Set the container ID below to enable GTM; nothing loads until analytics consent is granted. */
 (function () {
-  var GTM_ID = ""; // [CONTENT REQUIRED] e.g. "GTM-XXXXXXX"
+  var GTM_ID = "GTM-KBQP5SKQ";
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   window.gtag = window.gtag || gtag;

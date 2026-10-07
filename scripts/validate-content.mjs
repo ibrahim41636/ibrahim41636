@@ -3,7 +3,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { z } from "zod";
 
-const SERVICES = "environmental-permitting environmental-compliance environmental-records environmental-audits environmental-due-diligence environmental-impact-assessment environmental-management-plans environmental-monitoring air-quality-monitoring dust-monitoring fuel-station-voc-monitoring noise-monitoring water-quality-monitoring waste-management circular-economy esg-advisory ghg-carbon-accounting net-zero-advisory sustainability-advisory life-cycle-assessment sustainable-buildings green-building-advisory".split(" ");
+const SERVICES = "environmental-permitting environmental-compliance environmental-records environmental-audits environmental-due-diligence environmental-impact-assessment environmental-management-plans environmental-monitoring air-quality-monitoring dust-monitoring fuel-station-voc-monitoring noise-monitoring water-quality-monitoring waste-management circular-economy esg-advisory ghg-carbon-accounting net-zero-advisory sustainability-advisory life-cycle-assessment sustainable-buildings green-building-advisory solar-energy-systems ev-charging-stations battery-energy-storage renewable-operations-maintenance renewable-energy-feasibility".split(" ");
 const INDUSTRIES = "industrial-manufacturing construction real-estate infrastructure energy oil-gas logistics-warehousing food-beverage healthcare hospitality mining-quarrying waste-recycling government-public-sector commercial-facilities".split(" ");
 const titled = z.object({ title: z.string().min(2), description: z.string().min(10) }).strict();
 const faq = z.object({ q: z.string().min(5), a: z.string().min(30) }).strict();
@@ -15,8 +15,8 @@ const svcLoc = z.object({
   regulatoryContext: z.array(z.string()).min(3).max(5), faqs: z.array(faq).min(5),
 }).strict();
 const service = z.object({
-  category: z.enum(["permitting-compliance","environmental-studies","monitoring-measurement","waste-circular-economy","sustainability-climate","sustainable-buildings"]),
-  order: z.number(), formFamily: z.enum(["permitting","studies","monitoring","waste","sustainability","buildings"]),
+  category: z.enum(["permitting-compliance","environmental-studies","monitoring-measurement","waste-circular-economy","sustainability-climate","sustainable-buildings","renewable-energy"]),
+  order: z.number(), formFamily: z.enum(["permitting","studies","monitoring","waste","sustainability","buildings","energy"]),
   industries: z.array(z.enum(INDUSTRIES)).min(3), related: z.array(z.enum(SERVICES)).min(2).max(4), en: svcLoc, ar: svcLoc,
 }).strict();
 const indLoc = z.object({

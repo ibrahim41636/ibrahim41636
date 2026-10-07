@@ -25,6 +25,12 @@ describe("smart fields per service", () => {
     expect(names).toContain("stations");
     expect(names).not.toContain("monitoringType");
   });
+  it("renewable energy asks for site type, solutions, status, bill and area", () => {
+    const names = serviceFields("solar-energy-systems").map((f) => f.name);
+    expect(names).toEqual(expect.arrayContaining(["siteType", "energySolution", "projectStatus", "monthlyBill", "availableArea"]));
+    const { errors } = validate("request", { ...base, service: "ev-charging-stations", siteType: "compound", energySolution: ["ev-charging", "rooftop-solar"], projectStatus: "planning" });
+    expect(errors).toEqual({});
+  });
   it("shows permit expiry only for valid/expiring/expired permits", () => {
     const expiry = serviceFields("environmental-permitting").find((f) => f.name === "permitExpiry")!;
     expect(isVisible(expiry, { permitStatus: "none" })).toBe(false);

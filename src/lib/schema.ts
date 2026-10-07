@@ -34,6 +34,7 @@ export function organizationSchema() {
       "Environmental permitting", "Environmental compliance", "Environmental impact assessment", "Environmental monitoring",
       "Air quality monitoring", "Dust monitoring", "VOC monitoring", "Noise monitoring", "Water quality monitoring",
       "Waste management", "Circular economy", "ESG", "Greenhouse gas accounting", "Net zero", "Life cycle assessment", "Green buildings",
+      "Solar energy systems", "EV charging stations", "Battery energy storage", "Renewable energy operation and maintenance",
     ],
     contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: site.email, telephone: site.phone, areaServed: GCC.map(([code]) => code), availableLanguage: ["English", "Arabic"] }],
     ...(sameAs.length ? { sameAs } : {}),

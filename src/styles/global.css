@@ -192,7 +192,7 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 
 .mega { position: absolute; inset-inline: 0; top: 100%; background: var(--c-white); border-top: 1px solid var(--c-line); border-bottom: 1px solid var(--c-line); box-shadow: 0 32px 48px -32px rgba(18,22,20,.3); }
 .mega[hidden] { display: none; }
-.mega-inner { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) 280px; gap: var(--space-6) var(--space-7); padding-block: var(--space-7); }
+.mega-inner { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) 260px; gap: var(--space-6) var(--space-7); padding-block: var(--space-7); }
 .mega-inner--industries { grid-template-columns: repeat(4, minmax(0, 1fr)) 280px; }
 .mega h3 { font-size: var(--fs-14); font-weight: 600; margin: 0 0 var(--space-3); }
 .mega h3 a { text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
@@ -578,6 +578,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 /* Experience stats + team (Home, About) */
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-5); }
+.stats--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .stat b { display: block; font-size: clamp(40px, 5vw, 64px); line-height: 1; letter-spacing: -.03em; color: var(--c-forest); font-weight: 600; }
 .stat span { display: block; margin-top: var(--space-3); color: var(--c-muted); }
 .on-dark .stat b { color: var(--c-mint); }
@@ -622,3 +623,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .area-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-3); margin: 0; padding: 0; list-style: none; }
 .area-list li { display: flex; align-items: center; gap: var(--space-3); padding: var(--space-4) var(--space-5); border: 1px solid var(--c-line); border-radius: var(--radius); background: var(--c-paper); font-weight: 600; }
 .area-list svg { width: 18px; height: 18px; color: var(--c-forest-2); flex-shrink: 0; }
+
+/* Home practice areas: the seventh card spans the row as a featured card. */
+.card--span { grid-column: 1 / -1; }
+@media (min-width: 641px) { .card--span .card-list { columns: 2; column-gap: var(--space-6); } }

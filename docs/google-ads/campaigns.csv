@@ -1,0 +1,6 @@
+Campaign,Campaign Type,Networks,Budget,Budget type,Bid Strategy Type,Languages,Location,Campaign Status
+SA | Search | Permits & EIA,Search,Google search,120,Daily,Maximize clicks,ar;en,Saudi Arabia,Paused
+SA | Search | Monitoring,Search,Google search,70,Daily,Maximize clicks,ar;en,Saudi Arabia,Paused
+SA | Search | Solar & EV,Search,Google search,80,Daily,Maximize clicks,ar;en,Saudi Arabia,Paused
+SA | Search | Waste & ESG,Search,Google search,30,Daily,Maximize clicks,ar;en,Saudi Arabia,Paused
+SA | Search | Brand,Search,Google search,10,Daily,Maximize clicks,ar;en,Saudi Arabia,Paused

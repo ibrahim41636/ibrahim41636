@@ -62,4 +62,4 @@ We may update this policy when we change the cookies we use or when legal requir
 
 ## 6. Contact us
 
-For questions about this policy, contact us at sales@selorin.co or +966 53 430 2332.
+For questions about this policy, contact us at sales@selorin.co or +966 55 015 6887.

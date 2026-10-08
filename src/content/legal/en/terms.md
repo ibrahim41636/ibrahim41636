@@ -13,7 +13,7 @@ These terms of use govern your access to and use of https://selorin.co (the "web
 - **Commercial Registration (Unified National Number):** 7054829457
 - **Address:** Kingdom of Saudi Arabia
 - **Email:** sales@selorin.co
-- **Phone:** +966 53 430 2332
+- **Phone:** +966 55 015 6887
 
 ## 2. Purpose of the website
 
@@ -88,5 +88,5 @@ These terms are governed by the laws of the Kingdom of Saudi Arabia. Any dispute
 For questions about these terms:
 
 - **Email:** sales@selorin.co
-- **Phone:** +966 53 430 2332
+- **Phone:** +966 55 015 6887
 - **Address:** Kingdom of Saudi Arabia

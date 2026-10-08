@@ -6,12 +6,12 @@ export const site = {
   shortName: "Selorin",
   url: "https://selorin.co",
   email: "sales@selorin.co",
-  phone: "+966 53 430 2332",
-  phoneHref: "+966534302332",
-  whatsapp: "966534302332",
+  phone: "+966 55 015 6887",
+  phoneHref: "+966550156887",
+  whatsapp: "966550156887",
   country: { en: "Saudi Arabia", ar: "المملكة العربية السعودية" },
   // [CONTENT REQUIRED] Replace with the company's real profiles; empty values are hidden.
-  social: { linkedin: "https://www.linkedin.com/company/selorin/", x: "" },
+  social: { linkedin: "https://www.linkedin.com/company/selorin/", instagram: "https://www.instagram.com/selorin5/", tiktok: "https://www.tiktok.com/@selorin86", x: "" },
   profilePdf: "/files/selorin-company-profile.pdf",
 };
 

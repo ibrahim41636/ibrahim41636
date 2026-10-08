@@ -184,6 +184,8 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 .header-tools { display: flex; align-items: center; gap: var(--space-3); }
 .header-social { width: 36px; height: 36px; display: grid; place-items: center; border-radius: var(--radius-sm); color: inherit; border: 1px solid var(--c-line); transition: color .2s var(--ease), border-color .2s var(--ease); }
 .header-social:hover { color: #0a66c2; border-color: #0a66c2; }
+.header-social--instagram:hover { color: #c13584; border-color: #c13584; }
+.header-social--tiktok:hover { color: #111; border-color: #111; }
 .header-social svg { width: 18px; height: 18px; }
 .lang-switch { font-size: var(--fs-14); font-weight: 600; text-decoration: none; color: var(--c-ink-2); padding: 8px 10px; border-radius: var(--radius-sm); }
 .lang-switch:hover { background: rgba(18,22,20,.05); }
@@ -683,3 +685,6 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .city-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .city-list li { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--c-white); border: 1px solid var(--c-line); font-weight: 600; font-size: var(--fs-14); }
 .city-list svg { width: 16px; height: 16px; color: var(--c-forest); }
+
+/* Small phones: keep the header to one social icon; all of them stay in the footer */
+@media (max-width: 520px) { .header-social--instagram, .header-social--tiktok { display: none; } }

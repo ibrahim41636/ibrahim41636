@@ -13,6 +13,11 @@ const services = await getServices();
 const industries = await getIndustries();
 const section = basePath(path).split("/")[1] ?? "";
 const cur = (s: string) => (section === s ? "is-current" : undefined);
+const headerSocials = [
+  { url: site.social.linkedin, icon: "linkedin", en: "LinkedIn", ar: "لينكد إن" },
+  { url: site.social.instagram, icon: "instagram", en: "Instagram", ar: "إنستغرام" },
+  { url: site.social.tiktok, icon: "tiktok", en: "TikTok", ar: "تيك توك" },
+].filter((s) => s.url);
 ---
 <header class="site-header" data-header>
   <div class="container bar">
@@ -82,7 +87,7 @@ const cur = (s: string) => (section === s ? "is-current" : undefined);
     )}
 
     <div class="header-tools" style={focused ? "margin-inline-start:auto" : undefined}>
-      {site.social.linkedin && <a class="header-social" href={site.social.linkedin} target="_blank" rel="noopener" aria-label={lang === "ar" ? "سيلورين على لينكد إن" : "Selorin on LinkedIn"} data-cta="header_linkedin"><Icon name="linkedin" /></a>}
+      {headerSocials.map((s) => <a class:list={["header-social", `header-social--${s.icon}`]} href={s.url} target="_blank" rel="noopener" aria-label={lang === "ar" ? `سيلورين على ${s.ar}` : `Selorin on ${s.en}`} data-cta={`header_${s.icon}`}><Icon name={s.icon} /></a>)}
       <a class="lang-switch" href={href(other, basePath(path))} hreflang={other} lang={other} aria-label={t(lang, "lang.switchLabel")} data-track="language_switch">
         <span aria-hidden="true" class="ltr"><span class:list={[{ "is-on": lang === "en" }]}>EN</span> | <span class:list={[{ "is-on": lang === "ar" }]}>AR</span></span>
       </a>

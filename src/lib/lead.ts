@@ -156,7 +156,7 @@ export function confirmationEmail(lead: Lead) {
   }
   const subject = ar ? `استلمنا طلبك — ${lead.leadId}` : `We have received your request — ${lead.leadId}`;
   const text = ar
-    ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 53 430 2332`
-    : `Dear ${lead.contactName},\n\nThank you for contacting Selorin. We have received your request regarding "${lead.service.name}". Our team will review your requirements and contact you shortly.\n\nRequest ID: ${lead.leadId}\n\nSelorin Environmental Advisory & Services\nsales@selorin.co · +966 53 430 2332`;
+    ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887`
+    : `Dear ${lead.contactName},\n\nThank you for contacting Selorin. We have received your request regarding "${lead.service.name}". Our team will review your requirements and contact you shortly.\n\nRequest ID: ${lead.leadId}\n\nSelorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887`;
   return { subject, text };
 }

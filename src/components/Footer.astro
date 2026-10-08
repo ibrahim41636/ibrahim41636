@@ -8,6 +8,12 @@ import { getIndustries } from "@/lib/content";
 interface Props { lang: Lang; focused?: boolean }
 const { lang, focused = false } = Astro.props;
 const industries = (await getIndustries()).slice(0, 8);
+const socials = [
+  { url: site.social.linkedin, icon: "linkedin", label: "LinkedIn" },
+  { url: site.social.instagram, icon: "instagram", label: "Instagram" },
+  { url: site.social.tiktok, icon: "tiktok", label: "TikTok" },
+  { url: site.social.x, icon: "x", label: "X" },
+].filter((s) => s.url);
 ---
 <footer class="site-footer on-dark">
   <div class="container">
@@ -25,10 +31,9 @@ const industries = (await getIndustries()).slice(0, 8);
             <li>{site.country[lang]}</li>
             <li><a href={site.profilePdf} download data-cta="footer_profile">{lang === "ar" ? "تحميل الملف التعريفي (PDF)" : "Download company profile (PDF)"}</a></li>
           </ul>
-          {(site.social.linkedin || site.social.x) && (
+          {socials.length > 0 && (
             <div class="socials">
-              {site.social.linkedin && <a href={site.social.linkedin} aria-label="LinkedIn" rel="noopener" target="_blank"><Icon name="linkedin" /></a>}
-              {site.social.x && <a href={site.social.x} aria-label="X" rel="noopener" target="_blank"><Icon name="x" /></a>}
+              {socials.map((s) => <a href={s.url} aria-label={s.label} rel="noopener" target="_blank" data-cta={`footer_${s.icon}`}><Icon name={s.icon} /></a>)}
             </div>
           )}
         </div>

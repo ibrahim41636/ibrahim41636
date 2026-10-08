@@ -1,7 +1,7 @@
 # Selorin content guide (for writers and the CMS)
 
 Company: **Selorin Environmental Advisory & Services** (Arabic: **سيلورين للاستشارات والخدمات البيئية**), an environmental advisory and services firm operating in Saudi Arabia.
-Website https://selorin.co · sales@selorin.co · +966 53 430 2332 · Location: Saudi Arabia.
+Website https://selorin.co · sales@selorin.co · +966 55 015 6887 · Location: Saudi Arabia.
 
 Positioning: Selorin turns regulatory requirements and environmental data into clear, defensible decisions — combining permitting and compliance, environmental studies, field monitoring and sustainability advisory under one accountable team.
 

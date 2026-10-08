@@ -17,7 +17,7 @@ The controller responsible for personal data collected through the website is:
 - **Commercial Registration (Unified National Number):** 7054829457
 - **Address:** Kingdom of Saudi Arabia
 - **Email:** sales@selorin.co
-- **Phone:** +966 53 430 2332
+- **Phone:** +966 55 015 6887
 - **Data review and protection contact:** Ahmed Fathy, IT@selorin.co
 
 ## 2. Personal data we collect
@@ -144,6 +144,6 @@ We may update this policy from time to time. The date at the top of this page sh
 For questions about this policy or about how we handle personal data:
 
 - **Email:** sales@selorin.co
-- **Phone:** +966 53 430 2332
+- **Phone:** +966 55 015 6887
 - **Personal data enquiries:** Ahmed Fathy, IT@selorin.co
 - **Address:** Kingdom of Saudi Arabia

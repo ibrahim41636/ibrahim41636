@@ -157,11 +157,16 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
   const lead = buildLead({ leadId, kind, values, fields, now, attachments: uploads.files.map(({ name, size, type }) => ({ name, size, type })) });
 
   let delivered = false;
+  let reason = "";
   try {
     await sendEmail(env, { to: env.SALES_EMAIL ?? "sales@selorin.co", subject: emailSubject(lead), text: emailText(lead), html: emailHtml(lead), replyTo: lead.email, files: uploads.files });
     delivered = true;
   } catch (err) {
     console.error("lead email failed", leadId, err);
+    // Short, non-sensitive code shown to the visitor so a failed delivery can be diagnosed
+    // without dashboard access: "no_key" or the provider's HTTP status (e.g. "provider_401").
+    const msg = String(err);
+    reason = !env.RESEND_API_KEY ? "no_key" : `provider_${/Email send failed: (\d{3})/.exec(msg)?.[1] ?? "network"}`;
   }
 
   waitUntil((async () => {
@@ -180,7 +185,7 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
   })());
 
   // If email failed and there is no database copy either, the lead would be lost: tell the user.
-  if (!delivered && !env.DB) return respond(request, 502, { ok: false, error: "delivery", lang });
+  if (!delivered && !env.DB) return respond(request, 502, { ok: false, error: "delivery", reason, lang });
   return respond(request, 200, { ok: true, requestId: leadId, lang, kind });
 }
 

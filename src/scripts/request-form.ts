@@ -198,7 +198,7 @@ export function initRequestForm(form: HTMLFormElement) {
     files.forEach((f) => data.append("attachments", f, f.name));
     try {
       const res = await fetch(form.action, { method: "POST", body: data, headers: { Accept: "application/json" } });
-      const body = (await res.json().catch(() => ({}))) as { ok?: boolean; requestId?: string; errors?: Record<string, string>; error?: string };
+      const body = (await res.json().catch(() => ({}))) as { ok?: boolean; requestId?: string; errors?: Record<string, string>; error?: string; reason?: string };
       if (res.ok && body.ok && body.requestId) {
         const values = readValues(form);
         track("generate_lead", { form_kind: kind, request_id: body.requestId, service_slug: currentService() || "unspecified", industry: (values.industry as string) || undefined, urgent: values.urgent === "yes" });
@@ -218,7 +218,8 @@ export function initRequestForm(form: HTMLFormElement) {
         : body.error === "captcha"
           ? (lang === "ar" ? "تعذّر التحقق من الطلب. يرجى إكمال التحقق والمحاولة مرة أخرى." : "We could not verify the request. Please complete the check and try again.")
           : body.errors ? (lang === "ar" ? "يرجى مراجعة الحقول المحددة." : "Please check the highlighted fields.")
-          : (lang === "ar" ? "تعذّر إرسال طلبك. حاول مرة أخرى أو راسلنا على sales@selorin.co." : "We could not send your request. Please try again, or email sales@selorin.co.");
+          : (lang === "ar" ? "تعذّر إرسال طلبك. حاول مرة أخرى أو راسلنا على sales@selorin.co." : "We could not send your request. Please try again, or email sales@selorin.co.")
+            + ` (${[res.status, body.error, body.reason].filter(Boolean).join(" · ")})`; // support code for diagnosing failures
       track("form_error", { form_kind: kind, step: current + 1, field: body.error ?? "server", service_slug: currentService() || undefined });
     } catch {
       alertBox.hidden = false;

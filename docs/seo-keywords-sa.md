@@ -66,9 +66,9 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
 
 ## Content backlog (one article per routine run, Arabic + English)
 
-1. خطوات استخراج التصريح البيئي من المركز الوطني للرقابة على الالتزام البيئي (دليل عملي)
-2. متى يحتاج مشروعك إلى دراسة تقييم أثر بيئي في السعودية؟
-3. تكلفة تركيب الطاقة الشمسية للمنازل في السعودية: ما الذي يحدد السعر؟
+1. ~~خطوات استخراج التصريح البيئي~~ (covered by existing `environmental-permits-saudi-arabia-guide`)
+2. ~~متى يحتاج مشروعك إلى دراسة تقييم أثر بيئي؟~~ (covered by existing `how-environmental-impact-assessment-works`)
+3. ~~تكلفة تركيب الطاقة الشمسية للمنازل في السعودية: ما الذي يحدد السعر؟~~ ✅ 2026-10-11
 4. اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني
 5. تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟
 6. كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات
@@ -80,3 +80,9 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
 - 2026-10-07: keyword map created; Arabic titles of permitting, EIA, compliance, monitoring, waste,
   solar and EV pages aligned to primary keywords; home page targets «مكتب استشارات بيئية في السعودية»
   and lists the service cities.
+- 2026-10-11 (weekly run): backlog items 1–2 already covered by existing insights, so not duplicated (avoids
+  keyword cannibalisation). Published item 3 as `insights/{ar,en}/home-solar-cost-saudi-arabia` targeting
+  «تكلفة تركيب الطاقة الشمسية للمنازل» / "home solar cost Saudi Arabia", with inline links to solar systems,
+  battery storage, O&M and feasibility pages. No invented prices; regulatory references kept general (WERA
+  small-scale solar regulations, electricity company procedures). Early Ads search terms for solar
+  («تركيب طاقة شمسية الرياض», «محطة طاقة شمسية منزلية») support this topic.

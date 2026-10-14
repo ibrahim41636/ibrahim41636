@@ -66,6 +66,11 @@ const pageContext = { page_language: lang, page_path: path, ...analytics };
   <meta name="theme-color" content="#121614" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href={lang === "ar" ? "/manifest-ar.webmanifest" : "/manifest-en.webmanifest"} />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content={lang === "ar" ? "سيلورين" : "Selorin"} />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />
   <!-- Consent defaults must reach the dataLayer before any event, or Google tags read consent too early. -->

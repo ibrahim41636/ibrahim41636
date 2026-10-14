@@ -20,7 +20,8 @@ const { lang } = Astro.props;
         <li class="step"><p>{t(lang, "received.step3")}</p></li>
       </ol>
       <div class="actions mt-7">
-        <a class="btn" href={href(lang, "/insights/")}>{t(lang, "nav.insights")}</a>
+        <a class="btn" href={href(lang, "/track/")} data-track-link>{lang === "ar" ? "تابع طلبك" : "Track your request"}</a>
+        <a class="btn btn--ghost" href={href(lang, "/insights/")}>{t(lang, "nav.insights")}</a>
         <a class="btn btn--ghost" href={href(lang, "/")}>{t(lang, "nav.home")}</a>
       </div>
       <p class="muted mt-6" style="font-size:var(--fs-14)">{site.email} · <span class="ltr">{site.phone}</span></p>
@@ -31,6 +32,8 @@ const { lang } = Astro.props;
     if (/^SEL-\d{4}-\d{6}$/.test(id)) {
       document.querySelector<HTMLElement>("[data-ref-id]")!.textContent = id;
       document.querySelector<HTMLElement>("[data-ref]")!.hidden = false;
+      const link = document.querySelector<HTMLAnchorElement>("[data-track-link]");
+      if (link) link.href += `?id=${encodeURIComponent(id)}`;
     }
   </script>
 </Base>

@@ -9,7 +9,8 @@
     "node_modules",
     "functions",
     "worker",
-    ".wrangler"
+    ".wrangler",
+    "tests/tracking.test.ts"
   ],
   "compilerOptions": {
     "baseUrl": ".",

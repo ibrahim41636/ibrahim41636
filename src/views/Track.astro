@@ -1,0 +1,137 @@
+---
+// Request tracking for clients: enter the Request ID and the e-mail used on the form to see the
+// current status and the timeline. Data comes from GET /api/track (functions/api/track.ts).
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import { href, site, type Lang } from "@/i18n/ui";
+import { STATUSES, STATUS_LABELS } from "@/lib/tracking";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const T = {
+  title: ar ? "تابع طلبك" : "Track your request",
+  lead: ar ? "أدخل رقم الطلب والبريد الإلكتروني الذي استخدمته في النموذج لمعرفة حالة طلبك." : "Enter your Request ID and the e-mail you used on the form to see where your request stands.",
+  id: ar ? "رقم الطلب" : "Request ID",
+  email: ar ? "البريد الإلكتروني" : "E-mail",
+  submit: ar ? "عرض الحالة" : "Show status",
+  loading: ar ? "جارٍ البحث…" : "Searching…",
+  notFound: ar ? "لم نجد طلباً بهذا الرقم والبريد. تأكد من البيانات كما وصلتك في رسالة التأكيد." : "We could not find a request with this ID and e-mail. Check them against your confirmation e-mail.",
+  bad: ar ? "تأكد من رقم الطلب (مثل SEL-2026-000123) ومن البريد الإلكتروني." : "Check the Request ID (e.g. SEL-2026-000123) and the e-mail address.",
+  unavailable: ar ? "خدمة المتابعة غير متاحة حالياً. تواصل معنا وسنخبرك بحالة طلبك." : "Tracking is not available right now. Contact us and we will update you.",
+  error: ar ? "تعذّر الاتصال. حاول مرة أخرى." : "Connection failed. Please try again.",
+  service: ar ? "الخدمة" : "Service",
+  submitted: ar ? "تاريخ الطلب" : "Submitted",
+  status: ar ? "الحالة الحالية" : "Current status",
+  history: ar ? "سجل الطلب" : "Timeline",
+  help: ar ? "لديك سؤال عن طلبك؟" : "Questions about your request?",
+  newReq: ar ? "طلب خدمة جديدة" : "Request a new service",
+};
+const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]]));
+---
+<Base lang={lang} path="/track/" noindex title={T.title} description={T.lead} analytics={{ page_type: "track_request" }}>
+  <section class="section">
+    <div class="container-narrow">
+      <span class="icon" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-mint);color:var(--c-forest)"><Icon name="check" size={28} /></span>
+      <h1 class="mt-5" style="font-size:var(--fs-h2)">{T.title}</h1>
+      <p class="lead">{T.lead}</p>
+
+      <form class="form-grid" data-track-form novalidate>
+        <div class="field">
+          <label for="t-id">{T.id}</label>
+          <input id="t-id" name="rid" class="ltr" required placeholder="SEL-2026-000123" autocomplete="off" inputmode="text" />
+        </div>
+        <div class="field">
+          <label for="t-email">{T.email}</label>
+          <input id="t-email" name="email" type="email" class="ltr" required autocomplete="email" />
+        </div>
+        <div class="full"><button class="btn" type="submit" data-submit>{T.submit} <Icon name="arrow" class="arrow" /></button></div>
+      </form>
+
+      <p class="track-alert" data-alert role="alert" hidden></p>
+
+      <div class="track-result card" data-result hidden>
+        <dl class="track-meta">
+          <div><dt>{T.id}</dt><dd class="ltr" data-r-id></dd></div>
+          <div><dt>{T.service}</dt><dd data-r-service></dd></div>
+          <div><dt>{T.submitted}</dt><dd data-r-date></dd></div>
+          <div><dt>{T.status}</dt><dd><span class="status-pill" data-r-status></span></dd></div>
+        </dl>
+        <h2 style="font-size:var(--fs-h4);margin:var(--space-5) 0 0">{T.history}</h2>
+        <ol class="timeline" data-r-history></ol>
+      </div>
+
+      <div class="actions mt-7">
+        <a class="btn btn--ghost" href={href(lang, "/request/")}>{T.newReq}</a>
+        <a class="btn btn--ghost" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener" data-track="whatsapp_click">{ar ? "واتساب" : "WhatsApp"}</a>
+      </div>
+      <p class="muted mt-6" style="font-size:var(--fs-14)">{T.help} {site.email} · <span class="ltr">{site.phone}</span></p>
+    </div>
+  </section>
+
+  <style is:global>
+    .track-alert { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: #fdecea; color: #8a1c12; }
+    .track-result { margin-top: var(--space-6); }
+    .track-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); margin: 0; }
+    .track-meta dt { font-size: var(--fs-12); color: var(--c-muted); }
+    .track-meta dd { margin: 4px 0 0; font-weight: 600; }
+    .status-pill { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--c-mint); color: var(--c-forest); font-size: var(--fs-14); }
+    .timeline { list-style: none; padding: 0; margin: var(--space-4) 0 0; display: grid; gap: var(--space-4); }
+    .timeline li { position: relative; padding-inline-start: 28px; }
+    .timeline li::before { content: ""; position: absolute; inset-inline-start: 6px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-forest-2); }
+    .timeline li:not(:last-child)::after { content: ""; position: absolute; inset-inline-start: 10px; top: 20px; bottom: calc(-1 * var(--space-4)); width: 2px; background: var(--c-line); }
+    .timeline b { display: block; }
+    .timeline small { color: var(--c-muted); }
+    .timeline p { margin: 4px 0 0; color: var(--c-ink-2); font-size: var(--fs-15); white-space: pre-line; }
+  </style>
+
+  <script is:inline define:vars={{ T, labels, lang }}>
+    const form = document.querySelector("[data-track-form]");
+    const alertBox = document.querySelector("[data-alert]");
+    const result = document.querySelector("[data-result]");
+    const btn = form.querySelector("[data-submit]");
+    const params = new URLSearchParams(location.search);
+    if (params.get("id")) form.rid.value = params.get("id");
+    try { const saved = localStorage.getItem("selorin_track_email"); if (saved) form.email.value = saved; } catch {}
+
+    const fmt = (iso) => {
+      const d = new Date(iso.includes("T") ? iso : iso.replace(" ", "T") + "Z");
+      return isNaN(d) ? iso : d.toLocaleDateString(lang === "ar" ? "ar-SA-u-ca-gregory" : "en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Riyadh" });
+    };
+    const show = (msg) => { alertBox.textContent = msg; alertBox.hidden = false; result.hidden = true; };
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const id = form.rid.value.trim().toUpperCase();
+      const email = form.email.value.trim();
+      if (!/^SEL-\d{4}-\d{6}$/.test(id) || !email.includes("@")) return show(T.bad);
+      alertBox.hidden = true;
+      const label = btn.innerHTML; btn.disabled = true; btn.textContent = T.loading;
+      try {
+        const res = await fetch(`/api/track?id=${encodeURIComponent(id)}&email=${encodeURIComponent(email)}`, { headers: { Accept: "application/json" } });
+        const body = await res.json().catch(() => ({}));
+        if (res.status === 404) return show(T.notFound);
+        if (res.status === 503) return show(T.unavailable);
+        if (!res.ok || !body.ok) return show(T.error);
+        try { localStorage.setItem("selorin_track_email", email); } catch {}
+        const r = body.request;
+        document.querySelector("[data-r-id]").textContent = r.id;
+        document.querySelector("[data-r-service]").textContent = r.service || "—";
+        document.querySelector("[data-r-date]").textContent = fmt(r.submittedAt);
+        document.querySelector("[data-r-status]").textContent = labels[r.status] || r.status;
+        const list = document.querySelector("[data-r-history]");
+        list.replaceChildren(...[...r.history].reverse().map((ev) => {
+          const li = document.createElement("li");
+          const b = document.createElement("b"); b.textContent = labels[ev.status] || ev.status;
+          const small = document.createElement("small"); small.textContent = fmt(ev.at);
+          li.append(b, small);
+          if (ev.note) { const p = document.createElement("p"); p.textContent = ev.note; li.append(p); }
+          return li;
+        }));
+        result.hidden = false;
+        window.dataLayer && window.dataLayer.push({ event: "track_request", request_status: r.status });
+      } catch { show(T.error); }
+      finally { btn.disabled = false; btn.innerHTML = label; }
+    });
+    if (form.rid.value && form.email.value) form.requestSubmit();
+  </script>
+</Base>

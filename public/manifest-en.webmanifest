@@ -1,0 +1,58 @@
+{
+  "id": "/",
+  "name": "Selorin — Request & track environmental services",
+  "short_name": "Selorin",
+  "description": "Request an environmental service, upload documents and track your request.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F6F2",
+  "theme_color": "#0B3B2A",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "/icons/app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/app/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Request a service",
+      "url": "/request/?source=pwa",
+      "icons": [
+        {
+          "src": "/icons/app/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Track a request",
+      "url": "/track/?source=pwa",
+      "icons": [
+        {
+          "src": "/icons/app/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

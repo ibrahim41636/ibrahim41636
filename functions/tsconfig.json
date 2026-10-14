@@ -18,6 +18,8 @@
     "../worker/**/*.ts",
     "../src/lib/forms.ts",
     "../src/lib/lead.ts",
+    "../src/lib/tracking.ts",
+    "../tests/tracking.test.ts",
     "../src/lib/uploads.ts"
   ]
 }

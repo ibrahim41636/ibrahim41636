@@ -1,0 +1,115 @@
+---
+// Staff dashboard: list requests and update their status (the client sees it on /ar/track/ and can
+// be e-mailed). Protected by the ADMIN_TOKEN Worker secret; the token stays in this browser tab only.
+import Base from "@/layouts/Base.astro";
+import { STATUSES, STATUS_LABELS } from "@/lib/tracking";
+const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]));
+---
+<Base lang="ar" path="/admin/" noindex focused title="لوحة الطلبات" description="إدارة طلبات العملاء وتحديث حالتها.">
+  <section class="section">
+    <div class="container">
+      <h1 style="font-size:var(--fs-h2)">لوحة الطلبات</h1>
+
+      <form class="adm-login" data-login>
+        <label for="adm-token">رمز الدخول</label>
+        <input id="adm-token" type="password" autocomplete="current-password" class="ltr" required />
+        <button class="btn" type="submit">دخول</button>
+      </form>
+
+      <div data-panel hidden>
+        <div class="adm-bar">
+          <label>عرض <select data-filter><option value="">كل الطلبات</option>{STATUSES.map((s) => <option value={s}>{labels[s]}</option>)}</select></label>
+          <button class="btn btn--ghost" type="button" data-refresh>تحديث</button>
+          <button class="btn btn--ghost" type="button" data-logout>خروج</button>
+        </div>
+        <p class="adm-msg" data-msg hidden></p>
+        <div class="adm-table-wrap">
+          <table class="adm-table">
+            <thead><tr><th>الرقم</th><th>التاريخ</th><th>العميل</th><th>التواصل</th><th>الخدمة</th><th>الحالة</th><th>تحديث الحالة</th></tr></thead>
+            <tbody data-rows></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style is:global>
+    .adm-login { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: var(--space-6); }
+    .adm-login input, .adm-bar select, .adm-table select, .adm-table input { padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; background: #fff; }
+    .adm-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: var(--space-6) 0 var(--space-4); }
+    .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); }
+    .adm-msg.err { background: #fdecea; color: #8a1c12; }
+    .adm-table-wrap { overflow-x: auto; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+    .adm-table { width: 100%; border-collapse: collapse; font-size: var(--fs-14); }
+    .adm-table th, .adm-table td { padding: 10px 12px; border-bottom: 1px solid var(--c-line); text-align: start; vertical-align: top; }
+    .adm-table th { background: var(--c-paper-2); white-space: nowrap; }
+    .adm-update { display: grid; gap: 6px; min-width: 220px; }
+    .adm-update label { display: flex; gap: 6px; align-items: center; font-size: var(--fs-12); }
+    .urgent { color: #b42318; font-weight: 600; }
+  </style>
+
+  <script is:inline define:vars={{ labels, statuses: STATUSES }}>
+    const KEY = "selorin_admin_token";
+    const $ = (s) => document.querySelector(s);
+    let token = sessionStorage.getItem(KEY) || "";
+    const msg = (text, err) => { const m = $("[data-msg]"); m.textContent = text; m.className = "adm-msg" + (err ? " err" : ""); m.hidden = !text; };
+    const api = async (path, init = {}) => {
+      const res = await fetch(path, { ...init, headers: { ...(init.headers || {}), Authorization: `Bearer ${token}`, "Content-Type": "application/json" } });
+      const body = await res.json().catch(() => ({}));
+      if (res.status === 401) { logout(); throw new Error("رمز الدخول غير صحيح"); }
+      if (res.status === 503) throw new Error(body.error === "admin_not_configured" ? "لم يُضبط ADMIN_TOKEN في Cloudflare بعد" : "قاعدة البيانات غير مربوطة بعد");
+      if (!res.ok || !body.ok) throw new Error("تعذّر تنفيذ الطلب");
+      return body;
+    };
+    const date = (s) => new Date(s.replace(" ", "T") + "Z").toLocaleString("ar-SA-u-ca-gregory", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Riyadh" });
+    const cell = (text, cls) => { const td = document.createElement("td"); td.textContent = text ?? ""; if (cls) td.className = cls; return td; };
+
+    async function load() {
+      msg("");
+      try {
+        const f = $("[data-filter]").value;
+        const { leads } = await api(`/api/admin/leads?limit=100${f ? `&status=${f}` : ""}`);
+        const rows = leads.map((l) => {
+          const tr = document.createElement("tr");
+          const contact = document.createElement("td");
+          contact.innerHTML = "";
+          const e = document.createElement("a"); e.href = `mailto:${l.email}`; e.textContent = l.email; e.className = "ltr";
+          const p = document.createElement("a"); p.href = `tel:${l.phone}`; p.textContent = l.phone || ""; p.className = "ltr";
+          contact.append(e, document.createElement("br"), p);
+          const upd = document.createElement("td");
+          const box = document.createElement("div"); box.className = "adm-update";
+          const sel = document.createElement("select");
+          statuses.forEach((s) => { const o = document.createElement("option"); o.value = s; o.textContent = labels[s]; o.selected = s === l.status; sel.append(o); });
+          const note = document.createElement("input"); note.placeholder = "ملاحظة للعميل (اختياري)";
+          const lab = document.createElement("label"); const chk = document.createElement("input"); chk.type = "checkbox"; chk.checked = true; lab.append(chk, "إرسال بريد للعميل");
+          const save = document.createElement("button"); save.className = "btn"; save.type = "button"; save.textContent = "حفظ";
+          save.onclick = async () => {
+            save.disabled = true;
+            try {
+              const r = await api("/api/admin/status", { method: "POST", body: JSON.stringify({ leadId: l.lead_id, status: sel.value, note: note.value, notify: chk.checked }) });
+              msg(`تم تحديث ${l.lead_id} إلى «${labels[r.status]}»${r.notified ? " وأُرسل بريد للعميل" : ""}`);
+              load();
+            } catch (err) { msg(err.message, true); } finally { save.disabled = false; }
+          };
+          box.append(sel, note, lab, save); upd.append(box);
+          tr.append(
+            cell(l.lead_id, "ltr"), cell(date(l.submitted_at)),
+            cell(`${l.contact_name || ""}${l.company ? " — " + l.company : ""}${l.location ? " · " + l.location : ""}`),
+            contact, cell(l.service || l.kind), cell(`${labels[l.status] || l.status}${l.urgent ? " · عاجل" : ""}`, l.urgent ? "urgent" : ""), upd,
+          );
+          return tr;
+        });
+        $("[data-rows]").replaceChildren(...rows);
+        if (!rows.length) msg("لا توجد طلبات بهذا التصنيف.");
+      } catch (err) { msg(err.message, true); }
+    }
+    function logout() { token = ""; sessionStorage.removeItem(KEY); $("[data-panel]").hidden = true; $("[data-login]").hidden = false; }
+    function start() { $("[data-login]").hidden = true; $("[data-panel]").hidden = false; load(); }
+
+    $("[data-login]").addEventListener("submit", (e) => { e.preventDefault(); token = $("#adm-token").value.trim(); sessionStorage.setItem(KEY, token); start(); });
+    $("[data-refresh]").onclick = load;
+    $("[data-filter]").onchange = load;
+    $("[data-logout]").onclick = logout;
+    if (token) start();
+  </script>
+</Base>

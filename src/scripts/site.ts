@@ -123,3 +123,8 @@ try {
 
 initClickTracking();
 initConsent();
+
+/* Installable app (PWA): offline support. Skipped on localhost dev servers. */
+if ("serviceWorker" in navigator && location.hostname !== "localhost") {
+  addEventListener("load", () => { navigator.serviceWorker.register("/sw.js").catch(() => {}); });
+}

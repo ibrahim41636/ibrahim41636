@@ -5,6 +5,9 @@ Allow: /
 Disallow: /api/
 Disallow: /request/received/
 Disallow: /ar/request/received/
+Disallow: /ar/admin/
+Disallow: /track/
+Disallow: /ar/track/
 
 # AI search crawlers are welcome to read public content.
 User-agent: GPTBot

@@ -17,12 +17,13 @@ export interface Env {
   LEAD_WEBHOOK_SECRET?: string;
   DB?: D1Database; // optional: lead log + sequential IDs + rate limiting
   EMAIL_DRY_RUN?: string; // "true" in local development: log emails instead of sending
+  ADMIN_TOKEN?: string; // secret for the staff dashboard (/ar/admin/) that updates request statuses
 }
 
 const MAX_BODY = 12 * 1024 * 1024;
 const RATE = { windowMinutes: 10, max: 5 };
 
-const json = (status: number, body: unknown) =>
+export const json = (status: number, body: unknown) =>
   new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" } });
 
 function originAllowed(request: Request, env: Env) {
@@ -76,7 +77,7 @@ const b64 = (bytes: Uint8Array) => {
   return btoa(s);
 };
 
-async function sendEmail(env: Env, msg: { to: string; subject: string; text: string; html?: string; replyTo?: string; files?: CheckedFile[] }) {
+export async function sendEmail(env: Env, msg: { to: string; subject: string; text: string; html?: string; replyTo?: string; files?: CheckedFile[] }) {
   if (env.EMAIL_DRY_RUN === "true") {
     console.log(`[dry-run email] to=${msg.to} reply-to=${msg.replyTo ?? "-"} subject=${msg.subject} attachments=${msg.files?.map((f) => f.name).join(",") || "none"}\n${msg.text}`);
     return;
@@ -104,6 +105,8 @@ async function logLead(env: Env, lead: Lead, ipHash: string, delivered: boolean)
     lead.leadId, lead.kind, lead.service.slug, lead.industry, lead.company, lead.contactName, lead.email, lead.phone, lead.location,
     lead.sourcePage, lead.utm.source, lead.utm.medium, lead.utm.campaign, lead.urgent ? 1 : 0, ipHash, delivered ? 1 : 0, JSON.stringify(lead),
   ).run();
+  // First entry on the request's tracking timeline (table added in migrations/0002_tracking.sql).
+  await env.DB.prepare(`INSERT INTO lead_events (lead_id, status, at) VALUES (?1, 'received', datetime('now'))`).bind(lead.leadId).run();
 }
 
 function respond(request: Request, status: number, body: Record<string, unknown>) {

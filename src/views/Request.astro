@@ -15,7 +15,7 @@ const title = name ? (ar ? `اطلب خدمة ${name}` : `Request ${name}`) : (a
   description={ar ? `أرسل طلبك إلى سيلورين${name ? ` بخصوص ${name}` : ""}، وسيراجع مختص بيئي متطلباتك ويتواصل معك.` : `Send your ${name ?? "environmental"} request to Selorin. An environmental specialist will review your requirements and contact you.`}
   analytics={{ page_type: "request_form", service_slug: service ?? "" }}>
   <section class="section" style="padding-top:48px">
-    <div class="container split" style="grid-template-columns:minmax(0,4fr) minmax(0,8fr)">
+    <div class="container split split--form">
       <div style="position:sticky;top:96px">
         {service && <p class="mb-5"><a class="muted" href={href(lang, `/services/${service}/`)} style="font-size:var(--fs-14)">{ar ? "→ العودة إلى" : "← Back to"} {name}</a></p>}
         <p class="eyebrow">{ar ? "طلب خدمة" : "Service request"}</p>

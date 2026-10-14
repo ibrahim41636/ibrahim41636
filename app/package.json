@@ -1,0 +1,22 @@
+{
+  "name": "selorin-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Selorin iOS and Android apps (Capacitor shell around selorin.co)",
+  "scripts": {
+    "sync": "cap sync",
+    "assets": "capacitor-assets generate --iconBackgroundColor '#0B3B2A' --iconBackgroundColorDark '#0B3B2A' --splashBackgroundColor '#0B3B2A' --splashBackgroundColorDark '#0B3B2A'"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.5.3",
+    "@capacitor/ios": "^8.5.3",
+    "@capacitor/splash-screen": "^8.0.2",
+    "@capacitor/status-bar": "^8.0.4"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.5.3"
+  }
+}

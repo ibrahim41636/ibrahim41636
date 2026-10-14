@@ -9,6 +9,7 @@
     "node_modules",
     "functions",
     "worker",
+    "app",
     ".wrangler",
     "tests/tracking.test.ts"
   ],

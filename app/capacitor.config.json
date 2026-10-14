@@ -1,0 +1,17 @@
+{
+  "appId": "co.selorin.app",
+  "appName": "Selorin",
+  "webDir": "www",
+  "server": {
+    "url": "https://selorin.co/ar/?utm_source=app",
+    "errorPath": "index.html",
+    "allowNavigation": ["selorin.co", "www.selorin.co"]
+  },
+  "backgroundColor": "#0B3B2A",
+  "android": { "allowMixedContent": false },
+  "ios": { "contentInset": "never", "scrollEnabled": true, "limitsNavigationsToAppBoundDomains": false },
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 1200, "launchAutoHide": true, "backgroundColor": "#0B3B2A", "showSpinner": false },
+    "StatusBar": { "style": "DARK", "backgroundColor": "#0B3B2A", "overlaysWebView": false }
+  }
+}

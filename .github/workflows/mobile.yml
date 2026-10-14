@@ -1,0 +1,90 @@
+name: Mobile apps
+
+# Builds the Capacitor shells in app/ (Android + iOS) around https://selorin.co.
+# - Android: a debug APK you can install on any phone for testing, plus a release AAB for Google Play
+#   (signed when the ANDROID_KEYSTORE_* secrets exist, see docs/mobile-apps.md).
+# - iOS: a simulator build that proves the Xcode project compiles. Store builds need an Apple
+#   Developer account and the signing secrets described in docs/mobile-apps.md.
+
+on:
+  pull_request:
+    paths: ["app/**", ".github/workflows/mobile.yml"]
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/mobile.yml"]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: app
+
+jobs:
+  android:
+    runs-on: ubuntu-latest
+    env:
+      VERSION_CODE: ${{ github.run_number }}
+      VERSION_NAME: 1.0.${{ github.run_number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: gradle
+      - run: npm ci
+      - run: npx cap sync android
+      - name: Debug APK
+        working-directory: app/android
+        run: ./gradlew --no-daemon assembleDebug
+      - name: Release AAB (signed when the keystore secrets are set)
+        working-directory: app/android
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/upload.jks"
+            ./gradlew --no-daemon bundleRelease \
+              -Pandroid.injected.signing.store.file="$RUNNER_TEMP/upload.jks" \
+              -Pandroid.injected.signing.store.password="$KEYSTORE_PASSWORD" \
+              -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+              -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
+          else
+            echo "::notice::ANDROID_KEYSTORE_BASE64 not set - building an unsigned AAB"
+            ./gradlew --no-daemon bundleRelease
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: selorin-android-${{ env.VERSION_NAME }}
+          path: |
+            app/android/app/build/outputs/apk/debug/*.apk
+            app/android/app/build/outputs/bundle/release/*.aab
+
+  ios:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - run: npm ci
+      - run: npx cap sync ios
+      - name: Simulator build (no signing)
+        working-directory: app/ios/App
+        run: |
+          xcodebuild -project App.xcodeproj -scheme App -configuration Release \
+            -sdk iphonesimulator -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO build

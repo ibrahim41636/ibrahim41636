@@ -105,7 +105,8 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 @media (max-width: 640px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(32px, 6vw, 96px); align-items: start; }
 .split--even { grid-template-columns: 1fr 1fr; align-items: center; }
-@media (max-width: 900px) { .split, .split--even { grid-template-columns: 1fr; } }
+.split--form { grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); }
+@media (max-width: 900px) { .split, .split--even, .split--form { grid-template-columns: 1fr; } }
 .stack > * + * { margin-top: var(--space-4); }
 
 /* ---------- Type helpers ---------- */

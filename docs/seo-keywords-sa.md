@@ -69,7 +69,7 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
 1. ~~خطوات استخراج التصريح البيئي~~ (covered by existing `environmental-permits-saudi-arabia-guide`)
 2. ~~متى يحتاج مشروعك إلى دراسة تقييم أثر بيئي؟~~ (covered by existing `how-environmental-impact-assessment-works`)
 3. ~~تكلفة تركيب الطاقة الشمسية للمنازل في السعودية: ما الذي يحدد السعر؟~~ ✅ 2026-10-11
-4. اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني
+4. ~~اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني~~ ✅ 2026-10-18
 5. تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟
 6. كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات
 7. إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية
@@ -86,3 +86,10 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
   battery storage, O&M and feasibility pages. No invented prices; regulatory references kept general (WERA
   small-scale solar regulations, electricity company procedures). Early Ads search terms for solar
   («تركيب طاقة شمسية الرياض», «محطة طاقة شمسية منزلية») support this topic.
+- 2026-10-18 (weekly run): published backlog item 4 as `insights/{ar,en}/ev-chargers-compounds-buildings-saudi-arabia`
+  targeting «اشتراطات تركيب شواحن السيارات الكهربائية» / "EV charger requirements Saudi Arabia", supporting
+  `/ar/services/ev-charging-stations/` (which keeps «شواحن ومحطات شحن السيارات الكهربائية» as its primary keyword,
+  so the two don't compete). Inline links to EV charging, solar, battery storage, feasibility and the EV request
+  form. Regulatory context kept general (Saudi Building Code, approved equipment standards, municipal/Civil Defense
+  parking rules, electricity company procedures) with a note to check current versions; no invented figures.
+  Audit: new AR title 64 chars, EN title shortened to 66; descriptions 151/156 chars with the primary keyword.

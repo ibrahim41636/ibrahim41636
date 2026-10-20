@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-02",
+  "slot": 1,
+  "pillar": "أنظمة تخزين الطاقة بالبطاريات",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/battery-energy-storage/"
+  ],
+  "ar": {
+    "title": "هل يحتاج النظام الشمسي إلى بطاريات ليكون مجديًا؟",
+    "text": "منشأة تركّب ألواحًا شمسية وتضيف إليها بطاريات «احتياطًا»، ثم تكتشف أن البطاريات لا تعمل إلا نادرًا. أين الخطأ؟\n\nالخرافة: النظام الشمسي لا يكون مجديًا إلا مع بطاريات.\nالحقيقة: الأنظمة المرتبطة بالشبكة قد تكون مجدية دون بطاريات، خاصة عندما يتزامن الاستهلاك مع ساعات الشمس، كالمصانع والمكاتب وأحمال التكييف النهارية. أما البطاريات فاستثمار مستقل يُبرَّر بحاجة محددة:\n\n• طاقة احتياطية لأحمال حرجة: غرف التبريد، والخوادم، والمعدات الطبية.\n• خفض الأحمال القصوى عندما تكون قدرة التوصيل قيدًا على الموقع.\n• نقل الطاقة الشمسية إلى المساء إذا كان استهلاكك الأكبر بعد الغروب.\n• دعم شحن السيارات الكهربائية في موقع محدود القدرة.\n\nكيف تقرر: حلّل منحنى الأحمال ساعة بساعة، وحدد الهدف أولًا، ثم احسب سعة البطارية وقدرتها لهذا الهدف وحده. البطارية بلا هدف واضح تكلفة إضافية لا تُستثمر.\n\nتفكر في التخزين؟ اطلب استشارة، والتفاصيل في الرابط.\n\n#تخزين_الطاقة #الطاقة_الشمسية #البطاريات #السعودية #سيلورين",
+    "x": "هل يحتاج النظام الشمسي إلى بطاريات؟ ليس دائمًا. البطاريات تُبرَّر بهدف محدد: طاقة احتياطية، أو خفض الأحمال القصوى، أو نقل الطاقة إلى المساء. حدد الهدف ثم احسب السعة. #تخزين_الطاقة",
+    "link": "/ar/services/battery-energy-storage/",
+    "image": {
+      "template": "myth",
+      "myth": "النظام الشمسي لا يكون مجديًا إلا مع بطاريات",
+      "fact": "الأنظمة المرتبطة بالشبكة قد تكون مجدية دون بطاريات حين يتزامن الاستهلاك مع ساعات الشمس. البطاريات تُبرَّر بحاجة محددة: طاقة احتياطية، أو خفض الأحمال القصوى، أو نقل الطاقة إلى المساء، وتُحجَّم وفق منحنى الأحمال."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Does a solar system need batteries to pay off?",
+    "text": "A facility adds batteries to its solar system \"just in case\", then finds they are rarely used. Why?\n\nMyth: a solar system only pays off with batteries.\nFact: grid-connected systems can pay off without batteries, especially when consumption lines up with daylight hours, as in factories, offices and daytime cooling loads. Batteries are a separate investment, justified by a specific need:\n\n• Backup for critical loads: cold rooms, servers, medical equipment.\n• Peak reduction where connection capacity limits the site.\n• Shifting solar energy into the evening if most of your use is after sunset.\n• Supporting EV charging on a capacity-limited site.\n\nHow to decide: analyse the hour-by-hour load profile, set the purpose first, then size battery capacity and power for that purpose alone. A battery without a clear purpose is extra cost that does not earn its keep.\n\n#EnergyStorage #SolarEnergy #SaudiArabia",
+    "link": "/services/battery-energy-storage/",
+    "image": {
+      "template": "myth",
+      "myth": "A solar system only pays off if you add batteries",
+      "fact": "Grid-connected systems can pay off without batteries when use lines up with daylight hours. Batteries are justified by a specific need, such as backup, peak reduction or evening use, and sized to the load profile."
+    }
+  }
+}

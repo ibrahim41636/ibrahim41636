@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-01",
+  "slot": 1,
+  "pillar": "تقييم الأثر البيئي",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-impact-assessment/"
+  ],
+  "ar": {
+    "title": "تقييم الأثر البيئي يبدأ مع الفكرة لا مع الترخيص",
+    "text": "خطأ يمكن تجنبه: تأجيل تقييم الأثر البيئي حتى يكتمل التصميم، ثم اكتشاف أن بعض بياناته تحتاج مواسم لجمعها.\n\nتعتمد دراسة تقييم الأثر البيئي (EIA) على بيانات خط الأساس: جودة الهواء، والضوضاء، والمياه، والتربة، والتنوع الحيوي، والمجتمعات المجاورة. وبعض هذه البيانات لا يُجمع في أسبوع؛ فالطيور والحياة الفطرية تختلف بين المواسم، وجودة الهواء تتأثر باتجاه الرياح وفترات الغبار.\n\nما يعنيه ذلك عمليًا:\n• ابدأ الفحص الأولي والتصنيف في مرحلة المفهوم، لتعرف مستوى الدراسة المطلوب مبكرًا.\n• أدرج جمع البيانات الموسمية في الجدول الزمني للمشروع بندًا مستقلًا، لا مهمة لاحقة.\n• استفد من نتائج الدراسة المبكرة في اختيار الموقع والتخطيط، فتعديل الرسومات أسهل من تعديل المبنى.\n• نسّق بين فريق التصميم وفريق الدراسة حتى يطابق وصف المشروع في التقرير ما سيُنفَّذ فعلًا.\n\nالبدء المبكر لا يضيف عملًا إلى الدراسة، لكنه يمنع أن تصبح هي سبب التأخير.\n\nالتفاصيل في الرابط.\n\n#تقييم_الأثر_البيئي #الدراسات_البيئية #التصريح_البيئي #السعودية #سيلورين",
+    "x": "لا تؤجل تقييم الأثر البيئي حتى يكتمل التصميم. بعض بيانات خط الأساس، كالطيور والحياة الفطرية وجودة الهواء، تختلف بين المواسم وتحتاج وقتًا لجمعها. ابدأ في مرحلة المفهوم. #تقييم_الأثر_البيئي",
+    "link": "/ar/services/environmental-impact-assessment/",
+    "image": {
+      "template": "tip",
+      "title": "ابدأ تقييم الأثر البيئي في مرحلة المفهوم",
+      "text": "بعض بيانات خط الأساس، مثل الطيور والحياة الفطرية وجودة الهواء، تختلف بين المواسم. أدرجها في الجدول الزمني مبكرًا حتى لا تؤخر التصريح البيئي."
+    }
+  },
+  "en": {
+    "title": "Start your EIA at concept stage, not at permitting",
+    "text": "An avoidable mistake: leaving the EIA until the design is finished, then finding its data takes seasons.\n\nAn environmental impact assessment (EIA) relies on baseline data: air quality, noise, water, soil, biodiversity and nearby communities. Some of it cannot be gathered in a week. Birds and wildlife vary between seasons, and air quality changes with wind direction and dusty periods.\n\nWhat that means in practice:\n• Run screening and categorisation at concept stage, so you know early what level of study is required.\n• Put seasonal data collection in the project schedule as its own line item, not a later task.\n• Use early findings in site selection and layout. Changing drawings is easier than changing a building.\n• Keep the design and study teams aligned, so the project described in the report is the one that gets built.\n\nStarting early does not add work to the study. It stops the study from becoming the cause of delay.\n\n#EIA #EnvironmentalImpactAssessment #SaudiArabia",
+    "link": "/services/environmental-impact-assessment/",
+    "image": {
+      "template": "tip",
+      "title": "Start your EIA at concept stage",
+      "text": "Some baseline data, such as birds, wildlife and air quality, varies by season. Build it into the schedule early so it does not hold up your environmental permit."
+    }
+  }
+}

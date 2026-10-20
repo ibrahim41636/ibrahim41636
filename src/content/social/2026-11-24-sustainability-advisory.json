@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-24",
+  "slot": 1,
+  "pillar": "استشارات الاستدامة",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/sustainability-advisory/"
+  ],
+  "ar": {
+    "title": "أرصدة الكربون: ابدأ بحصر انبعاثاتك أولًا",
+    "text": "قبل سؤال «هل نشتري أرصدة كربون أم نولّدها؟» اسأل سؤالًا أبسط: هل نعرف انبعاثاتنا بدقة يمكن الدفاع عنها؟\n\nرصيد الكربون شهادة تمثل طنًا واحدًا من مكافئ ثاني أكسيد الكربون (tCO2e) جرى خفضه أو إزالته، بعد التحقق منه وفق منهجية معتمدة. وقيمته تتحدد بجودته:\n• الإضافية: هل كان الخفض سيحدث دون المشروع؟\n• الديمومة: هل الإزالة دائمة أم معرّضة للانعكاس؟\n• عدم الازدواج: هل احتُسب الطن نفسه لأكثر من جهة؟\n• التحقق المستقل: من جهة مستقلة عن مطوّر المشروع.\n\nلكن الأرصدة ليست نقطة البداية. التسلسل العملي:\n1. حصر انبعاثات النطاقات 1 و2 و3 وفق بروتوكول غازات الاحتباس الحراري (GHG Protocol).\n2. مستهدفات خفض واضحة، ومسؤولون عن تنفيذها.\n3. خفض فعلي في العمليات والطاقة وسلاسل التوريد.\n4. أرصدة عالية الجودة للانبعاثات المتبقية فقط، بادعاءات دقيقة في التقارير.\n\nومن يفكر في توليد أرصدة من مشروعه يحتاج الأساس نفسه: خط أساس موثّق وبيانات قابلة للتحقق.\n\nتحتاج استراتيجية استدامة تبدأ من الأرقام؟ التفاصيل في الرابط.\n\n#أرصدة_الكربون #الاستدامة #الحياد_الصفري #السعودية #سيلورين",
+    "x": "قبل شراء أرصدة الكربون أو توليدها: احصر انبعاثاتك وفق GHG Protocol، وضع مستهدفات خفض، ثم استخدم أرصدة عالية الجودة للانبعاثات المتبقية فقط. #أرصدة_الكربون",
+    "link": "/ar/services/sustainability-advisory/",
+    "image": {
+      "template": "tip",
+      "title": "أرصدة الكربون تبدأ بحصر انبعاثات يمكن الدفاع عنه",
+      "text": "احصروا انبعاثات النطاقات 1 و2 و3، وضعوا مستهدفات خفض، ونفّذوا الخفض الفعلي أولًا. ثم استخدموا أرصدة موثّقة عالية الجودة للانبعاثات المتبقية فقط، بادعاءات دقيقة."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Carbon credits start with your own inventory",
+    "text": "Before buying or generating carbon credits, ask: can we defend our own emissions numbers?\n\nA carbon credit represents one tonne of CO2 equivalent (tCO2e) reduced or removed, verified under a recognised methodology. Its value depends on quality: additionality, permanence, no double counting and independent verification.\n\nCredits are not the starting point. The practical sequence:\n1. Inventory Scope 1, 2 and 3 emissions under the GHG Protocol.\n2. Set reduction targets with clear owners.\n3. Cut emissions in operations, energy and supply chains.\n4. Use high-quality credits only for residual emissions, with careful claims.\n\nPlanning to generate credits from a project? You need the same foundation: a documented baseline and verifiable data.\n\nNeed a sustainability strategy that starts from the numbers? Details at the link.\n\n#CarbonCredits #Sustainability #NetZero",
+    "link": "/services/sustainability-advisory/",
+    "image": {
+      "template": "tip",
+      "title": "Carbon credits start with an inventory you can defend",
+      "text": "Inventory Scope 1, 2 and 3 emissions, set reduction targets and cut emissions first. Then use high-quality, verified credits only for residual emissions, with careful claims."
+    }
+  }
+}

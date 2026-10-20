@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-28",
+  "slot": 1,
+  "pillar": "حصر الانبعاثات والمحاسبة الكربونية",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/ghg-carbon-accounting/"
+  ],
+  "ar": {
+    "title": "تصدّر إلى أوروبا؟ بيانات الانبعاثات التي سيطلبها عميلك",
+    "text": "تصدّر الألمنيوم أو الحديد والصلب أو الأسمدة إلى الاتحاد الأوروبي؟ عميلك هناك سيسألك عن انبعاثات منتجك.\n\nفي إطار آلية تعديل حدود الكربون الأوروبية (CBAM)، يحتاج المستورد الأوروبي إلى معرفة الانبعاثات المضمّنة في السلع التي يستوردها، وأدق مصدر لهذه البيانات هو منشأتك أنت. جهّز ما يلي:\n\n• حدود المنشأة: الوحدات والعمليات الإنتاجية الداخلة في الحساب، وما يُستبعد منها ولماذا.\n• بيانات الانبعاثات المباشرة: كميات الوقود والمواد الخام وعوامل الانبعاث، موثقة بالفواتير وسجلات العدادات.\n• استهلاك الكهرباء ومصدرها، فقد يُطلب منك أيضًا.\n• توزيع الانبعاثات على المنتجات: طريقة واضحة تربط الانبعاثات بكل طن منتج.\n• منهجية مكتوبة وأدلة قابلة للتتبع، حتى يستطيع مُحقق مستقل مراجعة الأرقام.\n\nإذا لم تتوفر بيانات فعلية قابلة للتحقق، قد يعتمد المستورد على قيم افتراضية لا تعكس أداء منشأتك الفعلي. والفجوات في بيانات سنة كاملة يصعب سدها لاحقًا، فابدأ بتنظيمها الآن.\n\nنساعدكم في بناء حصر انبعاثات وفق GHG Protocol وISO 14064-1 يكون جاهزًا للتحقق. اطلب استشارة.\n\n#حصر_الانبعاثات #البصمة_الكربونية #CBAM #السعودية #سيلورين",
+    "x": "تصدّر الألمنيوم أو الصلب أو الأسمدة إلى أوروبا؟ جهّز بيانات انبعاثات منشأتك: الحدود، والوقود والمواد الخام، والكهرباء، والتوزيع على كل طن منتج، ومنهجية جاهزة للتحقق. #CBAM",
+    "link": "/ar/services/ghg-carbon-accounting/",
+    "image": {
+      "template": "checklist",
+      "title": "ما الذي سيطلبه عميلك الأوروبي ضمن CBAM؟",
+      "kicker": "للمصدّرين",
+      "items": [
+        "حدود المنشأة والعمليات المشمولة بالحساب",
+        "بيانات الوقود والمواد الخام وعوامل الانبعاث",
+        "استهلاك الكهرباء ومصدرها",
+        "طريقة توزيع الانبعاثات على كل طن منتج",
+        "منهجية مكتوبة وأدلة جاهزة للتحقق المستقل"
+      ]
+    }
+  },
+  "en": {
+    "title": "Exporting to the EU? The emissions data buyers will ask for",
+    "text": "Exporting aluminium, steel or fertilisers to the EU? Your buyer will ask about your product's emissions.\n\nUnder the EU Carbon Border Adjustment Mechanism (CBAM), European importers need to know the embedded emissions of the goods they bring in, and the best source of that data is your plant. Prepare:\n\n• Installation boundaries: the units and processes included, and what is excluded.\n• Direct emissions data: fuel and raw material quantities and emission factors, backed by invoices and meter records.\n• Electricity consumption and its source, which you may also be asked for.\n• Allocation to products: a clear method linking emissions to each tonne produced.\n• A written methodology and a traceable evidence trail an independent verifier can review.\n\nWithout actual, verifiable data, importers may fall back on default values that do not reflect your real performance. Gaps across a full year are hard to fill later, so organise the data now.\n\n#CBAM #CarbonAccounting #GHGInventory #SaudiArabia",
+    "link": "/services/ghg-carbon-accounting/",
+    "image": {
+      "template": "checklist",
+      "title": "What your EU buyer will ask for under CBAM",
+      "kicker": "For exporters",
+      "items": [
+        "Installation boundaries and processes included",
+        "Fuel, raw material and emission factor data",
+        "Electricity consumption and its source",
+        "A method to allocate emissions to each tonne produced",
+        "A written methodology and evidence ready for verification"
+      ]
+    }
+  }
+}

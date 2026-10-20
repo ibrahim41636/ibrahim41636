@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-18",
+  "slot": 1,
+  "pillar": "الاقتصاد الدائري",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/circular-economy/"
+  ],
+  "ar": {
+    "title": "الاقتصاد الدائري أكبر من إعادة التدوير",
+    "text": "مصنع يعيد تدوير معظم نفاياته، لكنه ما زال يشتري المواد نفسها كل شهر ويدفع ثمن هدرها مرتين. أين الخلل؟\n\nالخرافة: الاقتصاد الدائري يعني إعادة التدوير.\nالحقيقة: إعادة التدوير حلقة واحدة، وغالبًا آخر ما يُلجأ إليه قبل الاسترداد أو الدفن. والقيمة الأكبر تأتي قبلها:\n\n• التصميم لمنع الهدر: تقليل القصاصات بتحسين توزيع القطع، واختيار مواد يسهل فصلها وإصلاحها.\n• التقليل من المصدر: مراجعة مواصفات الشراء والتغليف وكميات الطلب.\n• إعادة الاستخدام: عبوات ومنصات نقل قابلة للإرجاع مع الموردين والعملاء.\n• الإصلاح وإعادة التأهيل: إطالة عمر المعدات وقطع الغيار بدل استبدالها.\n• تبادل المنتجات الثانوية: ما تعدّه منشأتك نفاية قد يكون مادة خام لمنشأة أخرى.\n\nثم تأتي إعادة التدوير لما تبقى، بعقود واضحة ووثائق تثبت مصير المواد.\n\nنقطة البداية العملية: خريطة لتدفق المواد تبيّن ما يدخل المنشأة وما يخرج منها، وكلفة كل طن مهدر شاملةً سعر شرائه.\n\nتريد خارطة طريق دائرية لعملياتك؟ التفاصيل في الرابط.\n\n#الاقتصاد_الدائري #إعادة_التدوير #إدارة_النفايات #السعودية #سيلورين",
+    "x": "إعادة التدوير حلقة واحدة من الاقتصاد الدائري، وغالبًا آخرها. القيمة الأكبر في التصميم لمنع الهدر والتقليل من المصدر وإعادة الاستخدام والإصلاح. #الاقتصاد_الدائري",
+    "link": "/ar/services/circular-economy/",
+    "image": {
+      "template": "myth",
+      "myth": "الاقتصاد الدائري يعني إعادة التدوير",
+      "fact": "إعادة التدوير حلقة واحدة، وغالبًا آخر الخيارات قبل الاسترداد أو الدفن. تبدأ القيمة الأكبر بالتصميم لمنع الهدر، ثم التقليل من المصدر، وإعادة الاستخدام، والإصلاح، وتبادل المنتجات الثانوية مع منشآت أخرى."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Circular economy is more than recycling",
+    "text": "A factory recycles most of its waste, yet buys the same materials every month. What is missing?\n\nMyth: circular economy means recycling.\nFact: recycling is one loop, usually the last option before recovery or landfill. Most value sits earlier:\n\n• Design out waste: cut offcuts with better nesting; choose materials that are easy to separate and repair.\n• Reduce at source: review purchasing specifications, packaging and order sizes.\n• Reuse: returnable containers and pallets with suppliers and customers.\n• Repair and refurbish: extend the life of equipment and spares.\n• Exchange by-products: your waste may be another facility's raw material.\n\nRecycling then handles what is left, with clear contracts and records of where materials go.\n\nStart with a material flow map: what enters, what leaves, and the full cost of every wasted tonne, including its purchase price.\n\nWant a practical circular roadmap? Details at the link.\n\n#CircularEconomy #WasteManagement #SaudiArabia",
+    "link": "/services/circular-economy/",
+    "image": {
+      "template": "myth",
+      "myth": "Circular economy means recycling",
+      "fact": "Recycling is one loop, usually the last option before recovery or landfill. Most value comes first: designing out waste, reducing at source, reuse, repair and exchanging by-products with other facilities."
+    }
+  }
+}

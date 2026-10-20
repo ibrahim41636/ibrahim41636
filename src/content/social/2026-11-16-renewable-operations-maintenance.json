@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-16",
+  "slot": 1,
+  "pillar": "تشغيل وصيانة مشاريع الطاقة المتجددة",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/renewable-operations-maintenance/"
+  ],
+  "ar": {
+    "title": "تنظيف الألواح الشمسية: متى يكون في وقته فعلًا؟",
+    "text": "تنظيف الألواح الشمسية بجدول ثابت طوال العام خطأ شائع: إما ماء وجهد بلا عائد، أو إنتاج ضائع لا يلاحظه أحد.\n\nفي المناطق المغبرة يتغير تراكم الغبار على الألواح من أسبوع لآخر بحسب الرياح والعواصف الترابية والأنشطة المجاورة. لذلك يُبنى قرار التنظيف على خسائر الاتساخ المقيسة، لا على التقويم:\n\n• قِس الخسارة: قارن إنتاج لوح مرجعي يُنظَّف بانتظام بلوح متسخ، أو تابع نسبة الأداء (PR) قبل التنظيف وبعده بعد تصحيحها لشدة الإشعاع ودرجة الحرارة.\n• حدّد عتبة اقتصادية: نظّف حين تتجاوز قيمة الطاقة المفقودة كلفة دورة التنظيف من ماء وعمالة ومعدات.\n• راقب الأحداث: بعد العواصف الترابية أو أعمال الإنشاء القريبة راجع البيانات فورًا، ولا تنتظر الموعد المجدول.\n• التزم بتعليمات المصنّع: طريقة التنظيف ونوع الفرشاة وجودة الماء قد تؤثر في طبقة الزجاج وفي الضمان.\n• تجنّب ساعات الحرارة القصوى: رش ماء بارد على ألواح ساخنة قد يعرّضها لإجهاد حراري.\n\nالنتيجة: جدول تنظيف مرن، وإنتاج أقرب إلى ما صُممت له المحطة، وقرار يمكن تبريره بالأرقام.\n\nتحتاج برنامج تشغيل وصيانة مبنيًا على البيانات؟ التفاصيل في الرابط.\n\n#الطاقة_الشمسية #تنظيف_الألواح_الشمسية #الطاقة_المتجددة #السعودية #سيلورين",
+    "x": "تنظيف الألواح الشمسية بجدول ثابت قد يهدر الماء أو يضيّع الإنتاج. قِس خسائر الاتساخ بلوح مرجعي أو بنسبة الأداء، ونظّف حين تتجاوز قيمة الطاقة المفقودة كلفة التنظيف. #الطاقة_الشمسية",
+    "link": "/ar/services/renewable-operations-maintenance/",
+    "image": {
+      "template": "tip",
+      "title": "نظّف الألواح الشمسية حسب الخسارة المقيسة، لا حسب التقويم",
+      "text": "قارن إنتاج لوح مرجعي نظيف بلوح متسخ، أو تابع نسبة الأداء بعد تصحيحها للإشعاع والحرارة. ونظّف حين تتجاوز قيمة الطاقة المفقودة كلفة دورة التنظيف، وراجع البيانات بعد كل عاصفة ترابية."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Solar panel cleaning: when is it actually due?",
+    "text": "Cleaning solar panels on a fixed calendar either wastes water and labour or quietly loses energy.\n\nIn dusty regions, soiling changes week to week with wind, dust storms and nearby activity. Base cleaning on measured soiling losses instead:\n\n• Measure the loss: compare a regularly cleaned reference module with a soiled one, or track the performance ratio (PR) before and after cleaning, corrected for irradiance and temperature.\n• Set an economic trigger: clean when the value of lost energy exceeds the cost of a cleaning cycle.\n• Watch for events: after dust storms or nearby construction, check the data straight away.\n• Follow the manufacturer: cleaning method, brushes and water quality can affect the glass coating and the warranty.\n• Avoid peak heat: cold water on hot modules can cause thermal stress.\n\nNeed a data-driven O&M programme? Details at the link.\n\n#SolarEnergy #SolarOandM #SaudiArabia",
+    "link": "/services/renewable-operations-maintenance/",
+    "image": {
+      "template": "tip",
+      "title": "Clean solar panels by measured loss, not by the calendar",
+      "text": "Compare a clean reference module with a soiled one, or track the corrected performance ratio. Clean when the value of lost energy exceeds the cost of a cleaning cycle, and check the data after every dust storm."
+    }
+  }
+}

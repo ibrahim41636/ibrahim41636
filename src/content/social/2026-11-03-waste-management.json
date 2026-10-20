@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-03",
+  "slot": 1,
+  "pillar": "إدارة النفايات",
+  "stage": "conversion",
+  "sources": [
+    "https://selorin.co/ar/services/waste-management/"
+  ],
+  "ar": {
+    "title": "البطاريات التالفة في منشأتك: كيف تتعامل معها؟",
+    "text": "في زاوية المستودع بطاريات قديمة من الرافعات الشوكية وأنظمة UPS؟ هذه ليست خردة عادية.\n\nتحتوي البطاريات المستعملة والتالفة على مكونات خطرة: الرصاص والحمض في بطاريات الرصاص الحمضية، ومخاطر الحريق والتسرب في بطاريات الليثيوم. لذلك تُدار بوصفها نفايات خطرة، ولا تُخلط بالنفايات العامة ولا تُسلَّم لأي جامع خردة.\n\nما ينبغي للمنشأة فعله:\n• الفرز: منطقة مخصصة للبطاريات، مع فصل الأنواع عن بعضها.\n• التخزين الآمن: حاوية احتواء مقاومة للأحماض، وتهوية جيدة، وبُعد عن مصادر الحرارة، وعزل أطراف بطاريات الليثيوم لمنع التماس.\n• الملصقات والسجل: النوع، والكمية، ومصدر البطارية، وتاريخ دخولها المخزن.\n• الناقل والمستقبِل: تحقق من ترخيصهما للتعامل مع النفايات الخطرة وفق متطلبات المركز الوطني لإدارة النفايات (موان)، واحتفظ بوثائق كل شحنة.\n• التدريب: فريق الصيانة والمستودع يعرف ماذا يفعل عند تسرب البطارية أو انتفاخها أو ارتفاع حرارتها.\n\nلديك بطاريات من أنظمة طاقة شمسية أو UPS أو رافعات شوكية؟ نساعدك في تصنيفها، وتنظيم تخزينها، والتحقق من الناقلين. اطلب استشارة.\n\n#النفايات_الخطرة #إدارة_النفايات #البطاريات #السعودية #سيلورين",
+    "x": "البطاريات التالفة نفايات خطرة لا خردة: افرزها، وخزّنها في حاوية احتواء بعيدًا عن الحرارة، وسجّلها، وسلّمها لناقل مرخّص للنفايات الخطرة مع الاحتفاظ بالوثائق. #النفايات_الخطرة",
+    "link": "/ar/services/waste-management/",
+    "image": {
+      "template": "checklist",
+      "title": "بطاريات تالفة في منشأتك؟ افعل هذا",
+      "kicker": "نفايات خطرة",
+      "items": [
+        "افصلها عن النفايات العامة وافرز أنواعها",
+        "خزّنها في حاوية احتواء بعيدًا عن الحرارة",
+        "اعزل أطراف بطاريات الليثيوم لمنع التماس",
+        "سجّل النوع والكمية وتاريخ دخول المخزن",
+        "سلّمها لناقل مرخّص للنفايات الخطرة واحتفظ بالوثائق"
+      ]
+    }
+  },
+  "en": {
+    "title": "Damaged batteries on site: how to handle them",
+    "text": "A pile of old forklift and UPS batteries in the corner of the warehouse? That is not ordinary scrap.\n\nUsed and damaged batteries contain hazardous components: lead and acid in lead-acid batteries, and fire and leak risks in lithium batteries. That is why they are managed as hazardous waste, kept out of general waste and never handed to just any scrap collector.\n\nWhat a facility should do:\n• Segregate: a dedicated battery area, with types kept apart.\n• Store safely: an acid-resistant containment bin, good ventilation, distance from heat sources, and taped lithium terminals to prevent short circuits.\n• Label and log: type, quantity, source and date into storage.\n• Check the transporter and receiver: both should be licensed for hazardous waste under MWAN requirements; keep the documents for every shipment.\n• Train: maintenance and warehouse staff know what to do if a battery leaks, swells or heats up.\n\n#HazardousWaste #WasteManagement #SaudiArabia",
+    "link": "/services/waste-management/",
+    "image": {
+      "template": "checklist",
+      "title": "Damaged batteries on site? Do this",
+      "kicker": "Hazardous waste",
+      "items": [
+        "Keep them out of general waste and segregate by type",
+        "Store in a containment bin away from heat",
+        "Tape lithium terminals to prevent short circuits",
+        "Log type, quantity and date into storage",
+        "Use a licensed hazardous waste transporter; keep records"
+      ]
+    }
+  }
+}

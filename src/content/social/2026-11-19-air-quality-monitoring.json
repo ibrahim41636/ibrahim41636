@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-19",
+  "slot": 1,
+  "pillar": "رصد جودة الهواء",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/air-quality-monitoring/"
+  ],
+  "ar": {
+    "title": "حساسات منخفضة التكلفة أم أجهزة رصد مرجعية؟",
+    "text": "قراءة الحساس منخفض التكلفة لا تكفي عادةً لتقرير امتثال، لكنها ليست بلا قيمة.\n\nالسؤال الصحيح: ماذا ستفعل بالبيانات؟\n\nأجهزة الرصد المرجعية تعمل بطرق قياس معتمدة، مع معايرة وضبط جودة موثّقين، ولذلك تُستخدم حين تُقارن النتائج بالمعايير أو تُرفع إلى جهة رقابية.\n\nأما الحساسات منخفضة التكلفة فمفيدة في:\n• الفحص الأولي: تحديد النقاط الساخنة قبل اختيار مواقع الرصد المرجعي.\n• التغطية المكانية: شبكة نقاط حول حدود الموقع بدل نقطة واحدة.\n• الإنذار المبكر: تنبيه فرق التشغيل عند ارتفاع الغبار أو الغازات لاتخاذ إجراء فوري.\n• متابعة الاتجاهات: مقارنة الأيام وأنماط التشغيل.\n\nولها حدود معروفة: تتأثر بالرطوبة والحرارة، وتنحرف قراءاتها مع الوقت. لذلك:\n• ضعها فترةً بجوار جهاز مرجعي لمعايرتها.\n• وثّق المعايرة والصيانة واستبعاد البيانات غير الصالحة.\n• راجع اشتراطات تصريحك البيئي لمعرفة طرق القياس المقبولة في التقارير الرسمية.\n\nالحل العملي غالبًا مزيج: أجهزة مرجعية للامتثال، وحساسات للتغطية والإنذار.\n\nتحتاج برنامج رصد لجودة الهواء؟ التفاصيل في الرابط.\n\n#جودة_الهواء #رصد_جودة_الهواء #الرصد_البيئي #السعودية #سيلورين",
+    "x": "الحساسات منخفضة التكلفة مفيدة للفحص الأولي والإنذار المبكر، لكن بيانات الامتثال تحتاج عادةً أجهزة مرجعية بطرق قياس معتمدة. والمزيج هو الحل العملي. #جودة_الهواء",
+    "link": "/ar/services/air-quality-monitoring/",
+    "image": {
+      "template": "faq",
+      "q": "هل تصلح بيانات الحساسات منخفضة التكلفة لتقارير الامتثال البيئي؟",
+      "a": "غالبًا لا تكفي وحدها. تقارير الامتثال تحتاج عادةً أجهزة مرجعية بطرق قياس معتمدة وضبط جودة موثّق. أما الحساسات فمفيدة للفحص الأولي وتحديد النقاط الساخنة والإنذار المبكر، بشرط معايرتها بجوار جهاز مرجعي وتوثيق ذلك. وراجعوا اشتراطات التصريح لمعرفة الطرق المقبولة."
+    }
+  },
+  "en": {
+    "title": "Low-cost sensors or reference monitors?",
+    "text": "A low-cost sensor reading is rarely enough for a compliance report, but it is not worthless.\n\nThe real question: what will you do with the data?\n\nReference monitors use recognised methods with documented calibration and quality control, so they are used when results are compared with standards or submitted to a regulator.\n\nLow-cost sensors are useful for:\n• Screening: finding hotspots before you choose reference locations.\n• Coverage: a network around the boundary, not one point.\n• Early warning: alerting operations when dust or gases rise.\n• Trends across days and operating patterns.\n\nLimits: humidity and temperature affect them, and readings drift. So co-locate them with a reference monitor to calibrate, document calibration and data exclusions, and check your permit conditions for accepted methods.\n\nThe practical answer is usually a mix: reference monitors for compliance, sensors for coverage and alerts. Details at the link.\n\n#AirQuality #EnvironmentalMonitoring #SaudiArabia",
+    "link": "/services/air-quality-monitoring/",
+    "image": {
+      "template": "faq",
+      "q": "Can low-cost sensor data be used for environmental compliance reports?",
+      "a": "Usually not on its own. Compliance reporting normally needs reference monitors using recognised methods and documented quality control. Sensors are valuable for screening, finding hotspots and early warning, provided they are calibrated alongside a reference monitor and documented. Check your permit conditions for accepted methods."
+    }
+  }
+}

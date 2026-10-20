@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-22",
+  "slot": 1,
+  "pillar": "التدقيق البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-audits/"
+  ],
+  "ar": {
+    "title": "دقّق بيئيًا داخليًا قبل أن يأتي المفتش",
+    "text": "خذ تصريحك البيئي، واقرأ اشتراطاته واحدًا واحدًا، واسأل عند كل اشتراط: أين الدليل على أننا نلتزم به اليوم؟\n\nهذا جوهر التدقيق البيئي الداخلي: مقارنة ما يشترطه التصريح بما يحدث فعلًا في الموقع، قبل أن تكتشف الجهة الرقابية الفجوة. خطوات عملية:\n\n1. حوّل التصريح إلى سجل التزامات: كل اشتراط في سطر، مع المسؤول عنه ونوع الدليل المطلوب.\n2. انزل إلى الموقع: مناطق تخزين الكيماويات والنفايات، ونقاط التصريف، ومصادر الانبعاثات والضوضاء.\n3. اطلب الدليل لا الإجابة: سجل، أو تقرير رصد، أو بيان نقل نفايات، أو صورة مؤرخة.\n4. صنّف الملاحظات حسب المخاطر: ما يمس اشتراطات التصريح مباشرة يُعالَج أولًا.\n5. أغلق الحلقة: إجراء تصحيحي لكل ملاحظة، بمسؤول وموعد، ومتابعة في التدقيق التالي.\n\nولمن يطبّق نظام إدارة بيئية وفق ISO 14001، يمكن دمج هذه المقارنة في برنامج التدقيق الداخلي القائم.\n\nنصيحة: اختر مدققًا من خارج الفريق المسؤول عن التشغيل اليومي، فالعين الجديدة ترى ما اعتاده الآخرون.\n\nتحتاج تدقيقًا بيئيًا مستقلًا؟ اطلب استشارة.\n\n#التدقيق_البيئي #الامتثال_البيئي #ISO14001 #السعودية #سيلورين",
+    "x": "اقرأ اشتراطات تصريحك البيئي واحدًا واحدًا، واسأل: أين الدليل على أننا نلتزم به اليوم؟ هذا جوهر التدقيق البيئي الداخلي قبل أي تفتيش. #التدقيق_البيئي",
+    "link": "/ar/services/environmental-audits/",
+    "image": {
+      "template": "tip",
+      "title": "قبل أن يأتي المفتش: دقّق داخليًا مقابل اشتراطات تصريحك",
+      "text": "حوّل التصريح إلى سجل التزامات، وانزل إلى الموقع، واطلب دليلًا موثقًا لكل اشتراط. ثم صنّف الفجوات حسب المخاطر، وحدّد لكل منها إجراءً تصحيحيًا ومسؤولًا وموعدًا."
+    }
+  },
+  "en": {
+    "title": "Audit yourself before the inspector does",
+    "text": "Take your permit, read each condition, and ask: where is the evidence that we comply with this today?\n\nThat is the core of an internal environmental audit: comparing what the permit requires with what actually happens on site, before the regulator finds the gap.\n\n1. Turn the permit into a register: one condition per line, with an owner and the evidence expected.\n2. Walk the site: chemical and waste storage, discharge points, emission and noise sources.\n3. Ask for evidence, not answers: a log, a monitoring report, a waste manifest, a dated photo.\n4. Rank findings by risk: anything touching permit conditions comes first.\n5. Close the loop: a corrective action per finding, with an owner, a date and follow-up next audit.\n\nIf you run an ISO 14001 system, build this into your existing internal audit programme. And use an auditor from outside the day-to-day operations team.\n\nNeed an independent audit? Request a consultation.\n\n#EnvironmentalAudit #ISO14001 #SaudiArabia",
+    "link": "/services/environmental-audits/",
+    "image": {
+      "template": "tip",
+      "title": "Before the inspector arrives: audit against your permit",
+      "text": "Turn the permit into a register of obligations, walk the site and ask for documented evidence for every condition. Then rank gaps by risk and give each a corrective action, an owner and a date."
+    }
+  }
+}

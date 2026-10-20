@@ -296,7 +296,12 @@ export async function queueFeed(env: SocialEnv, { articles, campaign = [] }: Fee
   const backfill = Number(env.SOCIAL_BACKFILL_DAYS) || 21;
   const cutoff = now.getTime() - backfill * 86_400_000;
   const recent = articles.filter((a) => new Date(a.date).getTime() >= cutoff && new Date(a.date).getTime() <= now.getTime());
-  const drafts = [...recent.flatMap((a) => articleSeries(a, channels, now)), ...campaign.flatMap((c) => campaignSeries(c, channels, now))];
+  // Several articles at once (a new channel, or a batch of articles) launch two days apart, newest first.
+  const order = [...new Set([...recent].sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug)).map((a) => a.slug))];
+  const drafts = [
+    ...recent.flatMap((a) => articleSeries(a, channels, new Date(now.getTime() + order.indexOf(a.slug) * 2 * 86_400_000))),
+    ...campaign.flatMap((c) => campaignSeries(c, channels, now)),
+  ];
 
   // Evergreen: re-share an older Arabic article once a week, rotating through the archive.
   const older = articles.filter((a) => a.lang === "ar" && new Date(a.date).getTime() < cutoff).sort((a, b) => a.date.localeCompare(b.date));

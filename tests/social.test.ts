@@ -1,5 +1,5 @@
 import { describe, expect, it, vi, afterEach } from "vitest";
-import { articleSeries, composeText, configuredChannels, nextSlot, toDbTime, utmLink, xLength, type FeedArticle } from "../src/lib/social";
+import { articleSeries, campaignSeries, composeCampaignText, composeText, configuredChannels, nextSlot, toDbTime, utmLink, xLength, type CampaignPost, type FeedArticle } from "../src/lib/social";
 import { oauth1Header, runSocialCron, handleSocialAdmin, type SocialEnv } from "../functions/api/social";
 
 const article: FeedArticle = {
@@ -53,6 +53,48 @@ describe("social helpers", () => {
   it("turns a channel on only when all its secrets are set", () => {
     expect(configuredChannels({ LINKEDIN_ACCESS_TOKEN: "t" })).toEqual([]);
     expect(configuredChannels({ LINKEDIN_ACCESS_TOKEN: "t", LINKEDIN_ORG_ID: "1", SOCIAL_WEBHOOK_URL: "https://h" })).toEqual(["linkedin", "webhook"]);
+  });
+});
+
+describe("campaign posts and branded images", () => {
+  const post: CampaignPost = {
+    id: "2026-10-25-cbam", date: "2026-10-25", slot: 1, stage: "consideration", pillar: "Carbon",
+    versions: [
+      { lang: "ar", text: "نص المنشور العربي مع معلومة موثقة.\n\n#الاستدامة #سيلورين", x: "نسخة قصيرة لإكس", link: "https://selorin.co/ar/services/ghg-carbon-accounting/", image: "https://selorin.co/social/campaign/2026-10-25-cbam-ar.jpg" },
+      { lang: "en", text: "English version of the post with a sourced fact.", link: "https://selorin.co/services/ghg-carbon-accounting/" },
+    ],
+  };
+
+  it("uses the rendered image for each article variant", () => {
+    const a = { ...article, images: { launch: "https://selorin.co/social/ar/d/launch.jpg", takeaway: "https://selorin.co/social/ar/d/takeaway.jpg", faq: "https://selorin.co/social/ar/d/faq.jpg" } };
+    const posts = articleSeries(a, ["linkedin"], new Date("2026-10-19T05:00:00Z"));
+    expect(posts.map((p) => p.image.split("/").pop())).toEqual(["launch.jpg", "takeaway.jpg", "faq.jpg"]);
+  });
+
+  it("schedules a campaign post on its day and slot, per language and channel", () => {
+    const drafts = campaignSeries(post, ["linkedin", "x", "instagram", "google_business"], new Date("2026-10-20T05:00:00Z"));
+    // Sunday 25 Oct, second slot (13:00 Riyadh = 10:00 UTC); English one slot later.
+    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "ar")!.scheduledAt).toBe("2026-10-25 10:00:00");
+    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "en")!.scheduledAt).toBe("2026-10-25 17:30:00");
+    expect(drafts.some((d) => d.channel === "instagram" && d.lang === "ar")).toBe(true);
+    expect(drafts.some((d) => d.lang === "en" && d.channel !== "linkedin")).toBe(false);
+    const x = drafts.find((d) => d.channel === "x")!;
+    expect(x.text.startsWith("نسخة قصيرة لإكس")).toBe(true);
+    expect(x.link).toContain("utm_campaign=campaign-2026-10-25-cbam");
+    expect(drafts.find((d) => d.channel === "google_business")!.text).not.toContain("#");
+  });
+
+  it("waits until a campaign post is within three weeks and drops stale ones", () => {
+    expect(campaignSeries(post, ["linkedin"], new Date("2026-09-01T00:00:00Z"))).toEqual([]);
+    expect(campaignSeries(post, ["linkedin"], new Date("2026-11-10T00:00:00Z"))).toEqual([]);
+    // Same day but after the slot → next slot.
+    const late = campaignSeries(post, ["linkedin"], new Date("2026-10-25T11:00:00Z"));
+    expect(late[0].scheduledAt).toBe("2026-10-25 17:30:00");
+  });
+
+  it("keeps campaign X posts within the limit", () => {
+    const long = { lang: "ar" as const, text: "أ".repeat(400) };
+    expect(xLength(composeCampaignText("x", long, "https://selorin.co/ar/?utm_source=x"))).toBeLessThanOrEqual(280);
   });
 });
 
@@ -117,15 +159,21 @@ describe("social cron", () => {
     const env = { DB: db as unknown as D1Database, SOCIAL_WEBHOOK_URL: "https://hook.example/x" } as SocialEnv;
     const old = { ...article, slug: "old-guide", date: "2025-01-01T00:00:00.000Z" };
 
-    const first = await runSocialCron(env, new Date("2026-10-19T05:00:00Z"), [article, old]);
+    const first = await runSocialCron(env, new Date("2026-10-19T05:00:00Z"), { articles: [article, old] });
     expect(first.queued).toBe(4); // launch + takeaway + faq + one evergreen re-share
     expect(first.published).toBe(0); // first slot is 09:30 Riyadh (+25 min offset for the webhook channel)
 
-    const again = await runSocialCron(env, new Date("2026-10-19T07:00:00Z"), [article, old]);
+    const again = await runSocialCron(env, new Date("2026-10-19T07:00:00Z"), { articles: [article, old] });
     expect(again.queued).toBe(0);
     expect(again.published).toBe(2); // launch + evergreen
     expect(sent.map((s) => s.body.variant).sort()).toEqual(["evergreen", "launch"]);
     expect(sent[0].body.link).toContain("utm_source=social_webhook");
+
+    // A campaign post for that day is queued once, alongside the article series.
+    const camp = { id: "c1", date: "2026-10-21", slot: 0, stage: "awareness" as const, pillar: "p", versions: [{ lang: "ar" as const, text: "نص حملة طويل بما يكفي للاختبار" }] };
+    const third = await runSocialCron(env, new Date("2026-10-19T07:05:00Z"), { articles: [article, old], campaign: [camp] });
+    expect(third.queued).toBe(1);
+    expect(db.posts.some((p) => p.source_key === "campaign/c1:ar:webhook")).toBe(true);
   });
 
   it("retries a failed post and gives up after three attempts", async () => {
@@ -134,7 +182,7 @@ describe("social cron", () => {
     const env = { DB: db as unknown as D1Database, SOCIAL_WEBHOOK_URL: "https://hook.example/x", SOCIAL_AUTOPOST: "false" } as SocialEnv;
     db.posts.push({ id: 99, channel: "webhook", lang: "ar", variant: "manual", text: "t", scheduled_at: "2026-10-19 05:00:00", status: "scheduled", attempts: 0 });
     let t = new Date("2026-10-19T05:00:00Z");
-    for (let i = 0; i < 3; i++) { await runSocialCron(env, t, []); t = new Date(t.getTime() + 31 * 60_000); }
+    for (let i = 0; i < 3; i++) { await runSocialCron(env, t, { articles: [] }); t = new Date(t.getTime() + 31 * 60_000); }
     expect(db.posts[0].status).toBe("failed");
     expect(db.posts[0].attempts).toBe(3);
     expect(db.posts[0].error).toContain("500");

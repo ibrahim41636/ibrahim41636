@@ -148,4 +148,29 @@ const legal = defineCollection({
   }),
 });
 
-export const collections = { services, industries, authors, insights, projects, legal };
+// Campaign posts for the social publishing hub (src/lib/social.ts): one file per post, queued on its date
+// to every connected account. `image` is rendered by scripts/social-images/render.mjs with the named template.
+const socialImage = z.looseObject({ template: z.enum(["cover", "takeaway", "faq", "checklist", "stat", "myth", "event", "tip"]) });
+const socialVersion = z.object({
+  text: z.string().min(20).max(2900),
+  x: z.string().max(260).optional(), // shorter text for X (the link is added after it)
+  title: z.string().optional(),
+  link: z.string().regex(/^\/[^\s]*$/).optional(), // site path, e.g. /ar/services/dust-monitoring/
+  image: socialImage.optional(),
+});
+const social = defineCollection({
+  loader: glob({ pattern: "*.json", base: "./src/content/social" }),
+  schema: z.object({
+    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/), // publishing day, Riyadh time
+    slot: z.number().int().min(0).max(5).default(0), // 0 = first posting slot that day (see SLOTS_RIYADH)
+    pillar: z.string(),
+    stage: z.enum(["awareness", "consideration", "conversion"]),
+    channels: z.array(z.enum(["linkedin", "x", "facebook", "instagram", "google_business", "webhook"])).optional(),
+    sources: z.array(z.string()).default([]), // where every fact in the post comes from
+    ar: socialVersion,
+    en: socialVersion.optional(),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { services, industries, authors, insights, projects, legal, social };

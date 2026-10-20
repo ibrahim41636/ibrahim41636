@@ -1,6 +1,6 @@
 import { describe, expect, it, vi, afterEach } from "vitest";
 import { articleSeries, campaignSeries, composeCampaignText, composeText, configuredChannels, nextSlot, toDbTime, utmLink, xLength, type CampaignPost, type FeedArticle } from "../src/lib/social";
-import { oauth1Header, runSocialCron, handleSocialAdmin, type SocialEnv } from "../functions/api/social";
+import { oauth1Header, publishPost, runSocialCron, handleSocialAdmin, type QueuedPost, type SocialEnv } from "../functions/api/social";
 
 const article: FeedArticle = {
   slug: "dust-monitoring", lang: "ar", title: "رصد الغبار في مواقع الإنشاء", description: "كيف تصمم برنامج رصد الغبار.",
@@ -98,6 +98,87 @@ describe("campaign posts and branded images", () => {
   });
 });
 
+describe("TikTok and YouTube", () => {
+  afterEach(() => vi.unstubAllGlobals());
+  const withVideo = { ...article, video: "https://selorin.co/social/video/ar/dust-monitoring.mp4", images: { launch: "https://selorin.co/l.jpg", takeaway: "https://selorin.co/t.jpg", faq: "https://selorin.co/f.jpg" } };
+  const queued = (over: Partial<QueuedPost>): QueuedPost => ({
+    id: 1, source_key: null, channel: "tiktok", lang: "ar", variant: "launch", title: "رصد الغبار", text: "نص", link: null, image: null, video: null,
+    scheduled_at: "2026-10-19 05:00:00", status: "scheduled", attempts: 0, external_id: null, error: null, published_at: null, ...over,
+  });
+
+  it("sends the video to YouTube (launch only) and TikTok, and images for the other TikTok posts", () => {
+    const posts = articleSeries(withVideo, ["tiktok", "youtube"], new Date("2026-10-19T05:00:00Z"));
+    expect(posts.filter((p) => p.channel === "youtube").map((p) => p.variant)).toEqual(["launch"]);
+    expect(posts.find((p) => p.channel === "youtube")!.video).toBe(withVideo.video);
+    expect(posts.find((p) => p.channel === "youtube")!.text).toContain("#Shorts");
+    const tk = posts.filter((p) => p.channel === "tiktok");
+    expect(tk.map((p) => [p.variant, !!p.video])).toEqual([["launch", true], ["takeaway", false], ["faq", false]]);
+    expect(articleSeries(article, ["youtube"], new Date("2026-10-19T05:00:00Z"))).toEqual([]);
+  });
+
+  it("posts a TikTok video with the privacy level the account allows and keeps the rotated refresh token", async () => {
+    const db = fakeDb();
+    db.posts.push(queued({ video: "https://selorin.co/v.mp4" }));
+    const calls: { url: string; body: any }[] = [];
+    vi.stubGlobal("fetch", async (url: string, init: RequestInit) => {
+      const body = init?.body instanceof URLSearchParams ? Object.fromEntries(init.body) : init?.body ? JSON.parse(String(init.body)) : null;
+      calls.push({ url, body });
+      if (url.includes("oauth/token")) return Response.json({ access_token: "at1", refresh_token: "rt2", expires_in: 86400 });
+      if (url.includes("creator_info")) return Response.json({ data: { privacy_level_options: ["FOLLOWER_OF_CREATOR", "SELF_ONLY"] }, error: { code: "ok" } });
+      if (url.includes("video/init")) return Response.json({ data: { publish_id: "pub-1" }, error: { code: "ok" } });
+      return new Response("unexpected", { status: 500 });
+    });
+    const env = { DB: db as unknown as D1Database, TIKTOK_CLIENT_KEY: "k", TIKTOK_CLIENT_SECRET: "s", TIKTOK_REFRESH_TOKEN: "rt1" } as SocialEnv;
+    const r = await publishPost(env, db.posts[0] as QueuedPost, new Date("2026-10-19T05:00:00Z"));
+    expect(r.ok).toBe(true);
+    expect(db.posts[0].external_id).toBe("pub-1");
+    expect(calls[0].body.refresh_token).toBe("rt1");
+    const init = calls.find((c) => c.url.includes("video/init"))!.body;
+    expect(init.post_info.privacy_level).toBe("FOLLOWER_OF_CREATOR");
+    expect(init.source_info).toEqual({ source: "PULL_FROM_URL", video_url: "https://selorin.co/v.mp4" });
+    expect(db.tokens.tiktok.refresh_token).toBe("rt2");
+  });
+
+  it("posts a TikTok photo when there is no video", async () => {
+    const db = fakeDb();
+    db.tokens.tiktok = { access_token: "cached", refresh_token: "rt", expires_at: "2099-01-01 00:00:00" };
+    db.posts.push(queued({ image: "https://selorin.co/t.jpg", variant: "takeaway" }));
+    const calls: string[] = [];
+    let photo: any;
+    vi.stubGlobal("fetch", async (url: string, init: RequestInit) => {
+      calls.push(url);
+      if (url.includes("creator_info")) return Response.json({ data: { privacy_level_options: ["PUBLIC_TO_EVERYONE", "SELF_ONLY"] }, error: { code: "ok" } });
+      if (url.includes("content/init")) { photo = JSON.parse(String(init.body)); return Response.json({ data: { publish_id: "pub-2" }, error: { code: "ok" } }); }
+      return new Response("unexpected", { status: 500 });
+    });
+    const env = { DB: db as unknown as D1Database, TIKTOK_CLIENT_KEY: "k", TIKTOK_CLIENT_SECRET: "s", TIKTOK_REFRESH_TOKEN: "rt1" } as SocialEnv;
+    expect((await publishPost(env, db.posts[0] as QueuedPost, new Date("2026-10-19T05:00:00Z"))).ok).toBe(true);
+    expect(calls.some((u) => u.includes("oauth"))).toBe(false); // cached token reused
+    expect(photo.media_type).toBe("PHOTO");
+    expect(photo.post_info.privacy_level).toBe("PUBLIC_TO_EVERYONE");
+    expect(photo.source_info.photo_images).toEqual(["https://selorin.co/t.jpg"]);
+  });
+
+  it("uploads a YouTube Short with a resumable upload", async () => {
+    const db = fakeDb();
+    db.posts.push(queued({ channel: "youtube", video: "https://selorin.co/v.mp4", text: "وصف\n\n#Shorts" }));
+    let meta: any; let put: RequestInit | undefined;
+    vi.stubGlobal("fetch", async (url: string, init: RequestInit) => {
+      if (url.includes("oauth2.googleapis.com")) return Response.json({ access_token: "g1" });
+      if (url === "https://selorin.co/v.mp4") return new Response(new Uint8Array([1, 2, 3]), { headers: { "content-type": "video/mp4" } });
+      if (url.includes("uploadType=resumable")) { meta = JSON.parse(String(init.body)); return new Response(null, { status: 200, headers: { location: "https://upload.example/session" } }); }
+      if (url === "https://upload.example/session") { put = init; return Response.json({ id: "yt-1" }); }
+      return new Response("unexpected", { status: 500 });
+    });
+    const env = { DB: db as unknown as D1Database, YOUTUBE_CLIENT_ID: "c", YOUTUBE_CLIENT_SECRET: "s", YOUTUBE_REFRESH_TOKEN: "r" } as SocialEnv;
+    expect((await publishPost(env, db.posts[0] as QueuedPost, new Date())).ok).toBe(true);
+    expect(db.posts[0].external_id).toBe("yt-1");
+    expect(meta.snippet.title).toBe("رصد الغبار");
+    expect(meta.status.privacyStatus).toBe("public");
+    expect(put?.method).toBe("PUT");
+  });
+});
+
 describe("X OAuth 1.0a", () => {
   it("signs the request as specified (independent signature check)", async () => {
     const keys = { key: "xvz1evFS4wEEPTGEFPHBog", secret: "kAcSOqF21Fu85e7zjz7ZN2U4ZRhfV3WpwPAoE3Z7kBw", token: "370773112-GmHxMAgYyLbNEtIKZeRNFsMKPR9EyMZeS9weJAEb", tokenSecret: "LswwdoUaIvS8ltyTt5jkRh4J50vUPVVHtR2YPi5kE" };
@@ -115,11 +196,12 @@ describe("X OAuth 1.0a", () => {
 function fakeDb() {
   type Row = Record<string, any>;
   const posts: Row[] = [];
+  const tokens: Row = {};
   let id = 0;
   const run = (sql: string, a: unknown[]) => {
     if (sql.startsWith("INSERT OR IGNORE INTO social_posts")) {
       if (posts.some((p) => p.source_key === a[0])) return 0;
-      posts.push({ id: ++id, source_key: a[0], channel: a[1], lang: a[2], variant: a[3], title: a[4], text: a[5], link: a[6], image: a[7], scheduled_at: a[8], status: "scheduled", attempts: 0, created_at: "2026-10-19 05:00:00" });
+      posts.push({ id: ++id, source_key: a[0], channel: a[1], lang: a[2], variant: a[3], title: a[4], text: a[5], link: a[6], image: a[7], video: a[8], scheduled_at: a[9], status: "scheduled", attempts: 0, created_at: "2026-10-19 05:00:00" });
       return 1;
     }
     if (sql.startsWith("INSERT INTO social_posts")) {
@@ -130,6 +212,7 @@ function fakeDb() {
     if (sql.includes("SET status = 'published'")) { const p = posts.find((x) => x.id === a[2])!; Object.assign(p, { status: "published", external_id: a[0], published_at: a[1] }); return 1; }
     if (sql.includes("SET status = ?1, error = ?2")) { const p = posts.find((x) => x.id === a[3])!; Object.assign(p, { status: a[0], error: a[1] }); if (a[0] === "scheduled") p.scheduled_at = a[2]; return 1; }
     if (sql.includes("SET status = 'cancelled'")) { posts.find((x) => x.id === a[0])!.status = "cancelled"; return 1; }
+    if (sql.startsWith("INSERT INTO social_tokens")) { tokens.tiktok = { access_token: a[0], refresh_token: a[1], expires_at: a[2] }; return 1; }
     return 0;
   };
   const stmt = (sql: string, args: unknown[] = []): any => ({
@@ -137,6 +220,7 @@ function fakeDb() {
     run: async () => ({ meta: { changes: run(sql, args) } }),
     first: async () => {
       if (sql.includes("COUNT(*) AS n FROM social_posts")) return { n: posts.filter((p) => p.variant === "evergreen").length };
+      if (sql.includes("FROM social_tokens")) return tokens.tiktok ?? null;
       if (sql.includes("FROM social_posts WHERE id = ?1")) { const p = posts.find((x) => x.id === args[0]); return p ? { ...p } : null; }
       return null;
     },
@@ -146,7 +230,7 @@ function fakeDb() {
       return { results: [] };
     },
   });
-  return { posts, prepare: (sql: string) => stmt(sql), batch: async (list: any[]) => Promise.all(list.map((s) => s.run())) };
+  return { posts, tokens, prepare: (sql: string) => stmt(sql), batch: async (list: any[]) => Promise.all(list.map((s) => s.run())) };
 }
 
 describe("social cron", () => {

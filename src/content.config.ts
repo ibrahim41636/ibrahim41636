@@ -157,6 +157,7 @@ const socialVersion = z.object({
   title: z.string().optional(),
   link: z.string().regex(/^\/[^\s]*$/).optional(), // site path, e.g. /ar/services/dust-monitoring/
   image: socialImage.optional(),
+  video: z.boolean().default(false), // also make a short vertical video (TikTok, YouTube Shorts) from the image
 });
 const social = defineCollection({
   loader: glob({ pattern: "*.json", base: "./src/content/social" }),

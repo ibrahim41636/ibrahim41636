@@ -1,0 +1,75 @@
+---
+// Latest updates: the campaign posts from src/content/social/ that are also published to LinkedIn, X,
+// Instagram, TikTok and YouTube by the social hub, so the website carries every post too (with links
+// into the service pages). Posts dated in the future appear once the site is rebuilt on or after their day.
+import { getCollection } from "astro:content";
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Icon from "@/components/Icon.astro";
+import { pageImage } from "@/data/imagery";
+import { href, site, t, formatDate, type Lang } from "@/i18n/ui";
+import { socialAsset } from "@/lib/social-assets";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const path = "/updates/";
+const today = new Date().toISOString().slice(0, 10);
+const posts = (await getCollection("social", (e) => !e.data.draft && e.data.date <= today && !!e.data[lang]))
+  .sort((a, b) => b.data.date.localeCompare(a.data.date) || b.data.slot - a.data.slot)
+  .slice(0, 60)
+  .map((e) => ({ id: e.id, date: new Date(`${e.data.date}T00:00:00Z`), pillar: e.data.pillar, v: e.data[lang]!, image: socialAsset(`/social/campaign/${e.id}-${lang}.jpg`) }));
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: ar ? "آخر المستجدات" : "Latest updates", path }];
+const follow = [
+  { url: site.social.linkedin, icon: "linkedin", name: ar ? "لينكد إن" : "LinkedIn" },
+  { url: site.social.instagram, icon: "instagram", name: ar ? "إنستغرام" : "Instagram" },
+  { url: site.social.tiktok, icon: "tiktok", name: ar ? "تيك توك" : "TikTok" },
+  { url: site.social.youtube, icon: "youtube", name: ar ? "يوتيوب" : "YouTube" },
+  { url: site.social.x, icon: "xlogo", name: ar ? "إكس" : "X" },
+].filter((f) => f.url);
+---
+<Base lang={lang} path={path} breadcrumbs={crumbs}
+  title={ar ? "آخر المستجدات | سيلورين للاستشارات والخدمات البيئية" : "Latest updates | Selorin"}
+  description={ar ? "آخر منشورات سيلورين في الاستشارات البيئية والرصد والطاقة المتجددة والاستدامة، كما تُنشر على حساباتنا في لينكد إن وإنستغرام وتيك توك ويوتيوب وإكس." : "Selorin's latest posts on environmental advisory, monitoring, renewable energy and sustainability, as shared on our LinkedIn, Instagram, TikTok, YouTube and X accounts."}
+  analytics={{ page_type: "updates" }}>
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("insights")} eyebrow={ar ? "آخر المستجدات" : "Latest updates"}
+    title={ar ? "كل ما ننشره، في مكان واحد" : "Everything we publish, in one place"}
+    lead={ar ? "نصائح عملية ومستجدات تنظيمية وأفكار من مشاريع الطاقة والبيئة والاستدامة. تُنشر هنا وعلى جميع حساباتنا في الوقت نفسه." : "Practical tips, regulatory updates and ideas from energy, environment and sustainability work, published here and on all our accounts at the same time."} />
+  <section class="section">
+    <div class="container">
+      {follow.length > 0 && (
+        <nav class="upd-follow" aria-label={ar ? "حساباتنا" : "Our accounts"}>
+          <span>{ar ? "تابعنا على:" : "Follow us on:"}</span>
+          {follow.map((f) => <a class="pill" href={f.url} rel="me noopener" target="_blank"><Icon name={f.icon} /> {f.name}</a>)}
+        </nav>
+      )}
+      {posts.length === 0
+        ? <p class="lead">{ar ? "تُنشر المستجدات هنا قريبًا. وفي الأثناء تصفّح " : "Updates will appear here soon. Meanwhile, browse "}<a href={href(lang, "/insights/")}>{t(lang, "nav.insights")}</a>.</p>
+        : (
+          <div class="upd-grid">
+            {posts.map((p) => (
+              <article class="upd-card" id={p.id}>
+                {p.image && <img src={p.image} alt={p.v.title ?? p.pillar} width="1080" height="1350" loading="lazy" decoding="async" />}
+                <div class="upd-body">
+                  <p class="upd-meta"><time datetime={p.date.toISOString().slice(0, 10)}>{formatDate(lang, p.date)}</time> · {p.pillar}</p>
+                  <p class="upd-text">{p.v.text}</p>
+                  {p.v.link && <a class="link" href={p.v.link}>{ar ? "التفاصيل" : "Details"} <Icon name="arrow" /></a>}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+    </div>
+  </section>
+  <CtaBand title={t(lang, "insights.ctaTitle")} body={t(lang, "insights.ctaBody")} label={t(lang, "cta.specialist")} to={href(lang, "/request/")} cta="updates_cta" />
+  <style>
+    .upd-follow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: var(--space-7); }
+    .upd-follow .pill { display: inline-flex; gap: 6px; align-items: center; text-decoration: none; padding: 8px 14px; }
+    .upd-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-5); }
+    .upd-card { background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; }
+    .upd-card img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; display: block; }
+    .upd-body { padding: var(--space-5); display: grid; gap: var(--space-3); }
+    .upd-meta { font-size: var(--fs-14); color: var(--c-muted); margin: 0; }
+    .upd-text { white-space: pre-line; margin: 0; font-size: var(--fs-15); line-height: 1.75; }
+  </style>
+</Base>

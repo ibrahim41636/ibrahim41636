@@ -3,7 +3,7 @@
 // weekly posting slots. Pure functions — shared by the Worker cron (functions/api/social.ts),
 // the staff page (/ar/admin/social/) and the unit tests.
 
-export const CHANNELS = ["linkedin", "x", "facebook", "instagram", "google_business", "webhook"] as const;
+export const CHANNELS = ["linkedin", "x", "facebook", "instagram", "google_business", "webhook", "tiktok", "youtube"] as const;
 export type Channel = (typeof CHANNELS)[number];
 
 export const CHANNEL_INFO: Record<Channel, { ar: string; en: string; langs: ("ar" | "en")[]; utmSource: string }> = {
@@ -15,7 +15,11 @@ export const CHANNEL_INFO: Record<Channel, { ar: string; en: string; langs: ("ar
   // Google Business Profile posts appear in Maps and the local panel on Google Search.
   google_business: { ar: "ملف جوجل التجاري", en: "Google Business Profile", langs: ["ar"], utmSource: "google_business" },
   // Make / Zapier / n8n hook for channels without a direct API here (TikTok, Snapchat, WhatsApp channel…).
-  webhook: { ar: "ربط خارجي (TikTok وغيره)", en: "Automation webhook", langs: ["ar"], utmSource: "social_webhook" },
+  webhook: { ar: "ربط خارجي (Make / Zapier)", en: "Automation webhook", langs: ["ar"], utmSource: "social_webhook" },
+  // Short vertical videos (scripts/social-images/video.mjs) and photo posts.
+  tiktok: { ar: "تيك توك", en: "TikTok", langs: ["ar"], utmSource: "tiktok" },
+  // YouTube Shorts: only posts that have a video.
+  youtube: { ar: "يوتيوب", en: "YouTube", langs: ["ar"], utmSource: "youtube" },
 };
 
 export const isChannel = (v: unknown): v is Channel => typeof v === "string" && (CHANNELS as readonly string[]).includes(v);
@@ -45,6 +49,8 @@ export interface FeedArticle {
   faqs: { q: string; a: string }[];
   /** Branded images rendered for this article (absolute URLs), by post variant. */
   images?: Partial<Record<"launch" | "takeaway" | "faq" | "checklist", string>>;
+  /** Short vertical video for TikTok / YouTube Shorts (absolute URL), when rendered. */
+  video?: string;
 }
 
 /** A campaign post from src/content/social/, as published in the feed (links and images absolute). */
@@ -55,7 +61,7 @@ export interface CampaignPost {
   stage: "awareness" | "consideration" | "conversion";
   pillar: string;
   channels?: Channel[];
-  versions: { lang: "ar" | "en"; text: string; x?: string; title?: string; link?: string; image?: string }[];
+  versions: { lang: "ar" | "en"; text: string; x?: string; title?: string; link?: string; image?: string; video?: string }[];
 }
 
 export interface PostDraft {
@@ -67,8 +73,12 @@ export interface PostDraft {
   text: string;
   link: string;
   image: string;
+  video?: string;
   scheduledAt: string; // "YYYY-MM-DD HH:MM:SS" UTC, same format as D1 datetime('now')
 }
+
+/** Channels that take a video when one exists (YouTube takes nothing else). */
+const VIDEO_CHANNELS: Channel[] = ["tiktok", "youtube"];
 
 /** Add UTM parameters so leads from this post are attributed to the channel in the lead log. */
 export function utmLink(url: string, channel: Channel, campaign: string, content: string) {
@@ -139,6 +149,12 @@ export function composeText(channel: Channel, a: FeedArticle, variant: Variant, 
     case "google_business":
       // The link goes in the "Learn more" button; Google rejects posts with phone numbers in text.
       return clip(lead, 1450);
+    case "tiktok":
+      // Captions are not clickable either; people search TikTok, so keywords and hashtags matter.
+      return clip(`${lead}\n\n${t.bio} — selorin.co\n\n${tags}`, 2100);
+    case "youtube":
+      // The video description (the title comes from the post title).
+      return clip(`${lead}\n\n${cta}\n${link}\n\n${tags} #Shorts`, 4900);
     default:
       return clip(`${lead}\n\n${cta}\n${link}\n\n${tags}`, 2900);
   }
@@ -185,6 +201,8 @@ export function articleSeries(a: FeedArticle, channels: Channel[], now: Date, va
     channels.forEach((channel) => {
       if (!CHANNEL_INFO[channel].langs.includes(a.lang)) return;
       if (channel === "instagram" && !a.image) return;
+      const video = variant === "launch" && VIDEO_CHANNELS.includes(channel) ? a.video : undefined;
+      if (channel === "youtube" && !video) return;
       // English LinkedIn posts go one slot after the Arabic ones.
       const at = nextSlot(base, a.lang === "en" ? 1 : 0);
       at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
@@ -195,7 +213,7 @@ export function articleSeries(a: FeedArticle, channels: Channel[], now: Date, va
       out.push({
         sourceKey: `${a.lang}/${a.slug}:${key}:${channel}`,
         channel, lang: a.lang, variant, title: a.title,
-        text: composeText(channel, a, variant, link), link, image,
+        text: composeText(channel, a, variant, link), link, image, ...(video ? { video } : {}),
         scheduledAt: toDbTime(at),
       });
     });
@@ -215,6 +233,10 @@ export function composeCampaignText(channel: Channel, v: CampaignPost["versions"
     }
     case "instagram":
       return clip(`${v.text}${link ? `\n\n${t.bio} — ${link}` : ""}`, 2200);
+    case "tiktok":
+      return clip(`${v.text}\n\n${t.bio} — selorin.co`, 2100);
+    case "youtube":
+      return clip(`${v.text}${link ? `\n\n${link}` : ""}\n\n#Shorts`, 4900);
     case "google_business":
       // Hashtags do nothing on Google; the link goes in the "Learn more" button.
       return clip(v.text.split("\n").filter((l) => !/^\s*(#\S+\s*)+$/.test(l)).join("\n").trim(), 1450);
@@ -241,7 +263,9 @@ export function campaignSeries(post: CampaignPost, channels: Channel[], now: Dat
     channels.forEach((channel) => {
       if (post.channels && !post.channels.includes(channel)) return;
       if (!CHANNEL_INFO[channel].langs.includes(v.lang)) return;
-      if (channel === "instagram" && !v.image) return;
+      if ((channel === "instagram" || channel === "tiktok") && !v.image && !v.video) return;
+      const video = VIDEO_CHANNELS.includes(channel) ? v.video : undefined;
+      if (channel === "youtube" && !video) return;
       let at = nextSlot(start, post.slot + (v.lang === "en" ? 1 : 0));
       if (at.getTime() < now.getTime()) at = nextSlot(now, v.lang === "en" ? 1 : 0);
       at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
@@ -249,7 +273,7 @@ export function campaignSeries(post: CampaignPost, channels: Channel[], now: Dat
       out.push({
         sourceKey: `campaign/${post.id}:${v.lang}:${channel}`,
         channel, lang: v.lang, variant: "campaign", title: v.title ?? post.pillar,
-        text: composeCampaignText(channel, v, link), link, image: v.image ?? "",
+        text: composeCampaignText(channel, v, link), link, image: v.image ?? "", ...(video ? { video } : {}),
         scheduledAt: toDbTime(at),
       });
     });
@@ -267,5 +291,7 @@ export function configuredChannels(env: Record<string, unknown>): Channel[] {
     instagram: has("INSTAGRAM_USER_ID", "FACEBOOK_PAGE_TOKEN"),
     google_business: has("GBP_CLIENT_ID", "GBP_CLIENT_SECRET", "GBP_REFRESH_TOKEN", "GBP_ACCOUNT_ID", "GBP_LOCATION_ID"),
     webhook: has("SOCIAL_WEBHOOK_URL"),
+    tiktok: has("TIKTOK_CLIENT_KEY", "TIKTOK_CLIENT_SECRET", "TIKTOK_REFRESH_TOKEN"),
+    youtube: has("YOUTUBE_CLIENT_ID", "YOUTUBE_CLIENT_SECRET", "YOUTUBE_REFRESH_TOKEN"),
   })[c]);
 }

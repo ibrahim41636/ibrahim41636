@@ -20,6 +20,8 @@ export interface SocialEnv extends Env {
   FACEBOOK_PAGE_ID?: string; FACEBOOK_PAGE_TOKEN?: string; INSTAGRAM_USER_ID?: string; META_GRAPH_VERSION?: string;
   GBP_CLIENT_ID?: string; GBP_CLIENT_SECRET?: string; GBP_REFRESH_TOKEN?: string; GBP_ACCOUNT_ID?: string; GBP_LOCATION_ID?: string;
   SOCIAL_WEBHOOK_URL?: string; SOCIAL_WEBHOOK_SECRET?: string;
+  TIKTOK_CLIENT_KEY?: string; TIKTOK_CLIENT_SECRET?: string; TIKTOK_REFRESH_TOKEN?: string; TIKTOK_PRIVACY?: string;
+  YOUTUBE_CLIENT_ID?: string; YOUTUBE_CLIENT_SECRET?: string; YOUTUBE_REFRESH_TOKEN?: string; YOUTUBE_PRIVACY?: string;
   SOCIAL_AUTOPOST?: string; // "false" stops automatic queuing of article posts (manual posts still publish)
   SOCIAL_BACKFILL_DAYS?: string; // articles newer than this are queued (default 21)
   INDEXNOW_KEY?: string; // optional: notify Bing/Yandex of new articles (key served at /<key>.txt)
@@ -27,7 +29,7 @@ export interface SocialEnv extends Env {
 
 export interface QueuedPost {
   id: number; source_key: string | null; channel: Channel; lang: string; variant: string; title: string | null;
-  text: string; link: string | null; image: string | null; scheduled_at: string; status: string; attempts: number;
+  text: string; link: string | null; image: string | null; video?: string | null; scheduled_at: string; status: string; attempts: number;
   external_id: string | null; error: string | null; published_at: string | null;
 }
 
@@ -42,11 +44,11 @@ async function check(res: Response, what: string) {
   throw new Error(`${what} ${res.status}: ${body}`);
 }
 
-/** Image bytes for a post: the site's own files come straight from the static assets. */
-async function imageBlob(env: SocialEnv, url: string) {
+/** Image or video bytes for a post: the site's own files come straight from the static assets. */
+async function mediaBlob(env: SocialEnv, url: string) {
   const res = env.ASSETS && /^https:\/\/(www\.)?selorin\.co\//.test(url) ? await env.ASSETS.fetch(new Request(url)) : await fetch(url);
-  await check(res, "Image");
-  return new Blob([await res.arrayBuffer()], { type: res.headers.get("content-type") ?? "image/jpeg" });
+  await check(res, "Media");
+  return new Blob([await res.arrayBuffer()], { type: res.headers.get("content-type") ?? (url.endsWith(".mp4") ? "video/mp4" : "image/jpeg") });
 }
 
 async function publishLinkedIn(env: SocialEnv, p: QueuedPost) {
@@ -63,7 +65,7 @@ async function publishLinkedIn(env: SocialEnv, p: QueuedPost) {
       method: "POST", headers, body: JSON.stringify({ initializeUploadRequest: { owner } }),
     }), "LinkedIn image init");
     const { value } = (await init.json()) as { value: { uploadUrl: string; image: string } };
-    await check(await fetch(value.uploadUrl, { method: "PUT", headers: { authorization: headers.authorization }, body: await imageBlob(env, p.image) }), "LinkedIn image upload");
+    await check(await fetch(value.uploadUrl, { method: "PUT", headers: { authorization: headers.authorization }, body: await mediaBlob(env, p.image) }), "LinkedIn image upload");
     content = { media: { id: value.image, altText: (p.title ?? "").slice(0, 300) } };
   }
   const res = await check(await fetch("https://api.linkedin.com/rest/posts", {
@@ -109,7 +111,7 @@ async function publishX(env: SocialEnv, p: QueuedPost) {
     try {
       const url = "https://api.x.com/2/media/upload";
       const form = new FormData();
-      form.append("media", await imageBlob(env, p.image), "image.jpg");
+      form.append("media", await mediaBlob(env, p.image), "image.jpg");
       form.append("media_category", "tweet_image");
       const up = await check(await fetch(url, { method: "POST", headers: { authorization: await xAuth(env, url) }, body: form }), "X media");
       mediaId = ((await up.json()) as { data?: { id?: string } }).data?.id;
@@ -154,12 +156,16 @@ async function publishInstagram(env: SocialEnv, p: QueuedPost) {
   return ((await res.json()) as { id?: string }).id ?? "";
 }
 
-async function publishGoogleBusiness(env: SocialEnv, p: QueuedPost) {
+async function googleAccessToken(clientId: string, clientSecret: string, refreshToken: string) {
   const tok = await check(await fetch("https://oauth2.googleapis.com/token", {
     method: "POST",
-    body: new URLSearchParams({ client_id: env.GBP_CLIENT_ID!, client_secret: env.GBP_CLIENT_SECRET!, refresh_token: env.GBP_REFRESH_TOKEN!, grant_type: "refresh_token" }),
+    body: new URLSearchParams({ client_id: clientId, client_secret: clientSecret, refresh_token: refreshToken, grant_type: "refresh_token" }),
   }), "Google token");
-  const { access_token } = (await tok.json()) as { access_token: string };
+  return ((await tok.json()) as { access_token: string }).access_token;
+}
+
+async function publishGoogleBusiness(env: SocialEnv, p: QueuedPost) {
+  const access_token = await googleAccessToken(env.GBP_CLIENT_ID!, env.GBP_CLIENT_SECRET!, env.GBP_REFRESH_TOKEN!);
   const res = await check(await fetch(`https://mybusiness.googleapis.com/v4/accounts/${env.GBP_ACCOUNT_ID}/locations/${env.GBP_LOCATION_ID}/localPosts`, {
     method: "POST",
     headers: { authorization: `Bearer ${access_token}`, "content-type": "application/json" },
@@ -187,18 +193,95 @@ async function publishWebhook(env: SocialEnv, p: QueuedPost) {
   return `webhook-${p.id}`;
 }
 
+const clipText = (s: string, max: number) => ([...s].length <= max ? s : [...s].slice(0, max - 1).join("") + "…");
+
+/**
+ * TikTok access token. TikTok refresh tokens can rotate, so the newest one is kept in D1
+ * (social_tokens); the TIKTOK_REFRESH_TOKEN secret is only the starting point.
+ */
+async function tiktokToken(env: SocialEnv, now = new Date()) {
+  const db = env.DB!;
+  const row = await db.prepare(`SELECT access_token, refresh_token, expires_at FROM social_tokens WHERE channel = 'tiktok'`)
+    .first<{ access_token: string | null; refresh_token: string | null; expires_at: string | null }>();
+  if (row?.access_token && row.expires_at && fromDbTime(row.expires_at).getTime() > now.getTime() + 5 * 60_000) return row.access_token;
+  const res = await check(await fetch("https://open.tiktokapis.com/v2/oauth/token/", {
+    method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      client_key: env.TIKTOK_CLIENT_KEY!, client_secret: env.TIKTOK_CLIENT_SECRET!,
+      grant_type: "refresh_token", refresh_token: row?.refresh_token || env.TIKTOK_REFRESH_TOKEN!,
+    }),
+  }), "TikTok token");
+  const t = (await res.json()) as { access_token?: string; refresh_token?: string; expires_in?: number; error?: string; error_description?: string };
+  if (!t.access_token) throw new Error(`TikTok token: ${t.error ?? "no token"} ${t.error_description ?? ""}`.trim());
+  await db.prepare(
+    `INSERT INTO social_tokens (channel, access_token, refresh_token, expires_at) VALUES ('tiktok', ?1, ?2, ?3)
+     ON CONFLICT(channel) DO UPDATE SET access_token = ?1, refresh_token = ?2, expires_at = ?3`,
+  ).bind(t.access_token, t.refresh_token ?? row?.refresh_token ?? env.TIKTOK_REFRESH_TOKEN!, toDbTime(new Date(now.getTime() + (t.expires_in ?? 3600) * 1000))).run();
+  return t.access_token;
+}
+
+async function tiktokCall(token: string, path: string, body: unknown) {
+  const res = await check(await fetch(`https://open.tiktokapis.com/v2/${path}`, {
+    method: "POST", headers: { authorization: `Bearer ${token}`, "content-type": "application/json; charset=UTF-8" }, body: JSON.stringify(body),
+  }), "TikTok");
+  const r = (await res.json()) as { data?: Record<string, unknown>; error?: { code?: string; message?: string } };
+  if (r.error?.code && r.error.code !== "ok") throw new Error(`TikTok ${r.error.code}: ${r.error.message ?? ""}`);
+  return r.data ?? {};
+}
+
+async function publishTikTok(env: SocialEnv, p: QueuedPost) {
+  if (!p.video && !p.image) throw new Error("TikTok needs a video or an image");
+  const token = await tiktokToken(env);
+  // Apps that TikTok has not audited yet may only post privately (SELF_ONLY); use what the account allows.
+  const info = await tiktokCall(token, "post/publish/creator_info/query/", {});
+  const options = (info.privacy_level_options as string[] | undefined) ?? [];
+  const privacy = [env.TIKTOK_PRIVACY, "PUBLIC_TO_EVERYONE"].find((o) => o && options.includes(o)) ?? options[0] ?? "SELF_ONLY";
+  // Media is pulled by TikTok from selorin.co, which must be verified in the TikTok developer portal.
+  const data = p.video
+    ? await tiktokCall(token, "post/publish/video/init/", {
+        post_info: { title: clipText(p.text, 2200), privacy_level: privacy, disable_duet: false, disable_comment: false, disable_stitch: false },
+        source_info: { source: "PULL_FROM_URL", video_url: p.video },
+      })
+    : await tiktokCall(token, "post/publish/content/init/", {
+        post_info: { title: clipText(p.title ?? "", 90), description: clipText(p.text, 4000), privacy_level: privacy, disable_comment: false, auto_add_music: true },
+        source_info: { source: "PULL_FROM_URL", photo_cover_index: 0, photo_images: [p.image] },
+        post_mode: "DIRECT_POST", media_type: "PHOTO",
+      });
+  return String(data.publish_id ?? "");
+}
+
+async function publishYouTube(env: SocialEnv, p: QueuedPost) {
+  if (!p.video) throw new Error("YouTube needs a video");
+  const token = await googleAccessToken(env.YOUTUBE_CLIENT_ID!, env.YOUTUBE_CLIENT_SECRET!, env.YOUTUBE_REFRESH_TOKEN!);
+  const video = await mediaBlob(env, p.video);
+  // Resumable upload: send the metadata, then the bytes to the session URL.
+  const start = await check(await fetch("https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status", {
+    method: "POST",
+    headers: { authorization: `Bearer ${token}`, "content-type": "application/json; charset=UTF-8", "x-upload-content-type": "video/mp4", "x-upload-content-length": String(video.size) },
+    body: JSON.stringify({
+      snippet: { title: clipText(p.title || p.text.split("\n")[0], 100), description: clipText(p.text, 4900), categoryId: "28", defaultLanguage: p.lang, defaultAudioLanguage: p.lang },
+      status: { privacyStatus: env.YOUTUBE_PRIVACY ?? "public", selfDeclaredMadeForKids: false },
+    }),
+  }), "YouTube init");
+  const session = start.headers.get("location");
+  if (!session) throw new Error("YouTube init: no upload URL");
+  const res = await check(await fetch(session, { method: "PUT", headers: { authorization: `Bearer ${token}`, "content-type": "video/mp4" }, body: video }), "YouTube upload");
+  return ((await res.json()) as { id?: string }).id ?? "";
+}
+
 const PUBLISHERS: Record<Channel, (env: SocialEnv, p: QueuedPost) => Promise<string>> = {
   linkedin: publishLinkedIn, x: publishX, facebook: publishFacebook, instagram: publishInstagram,
-  google_business: publishGoogleBusiness, webhook: publishWebhook,
+  google_business: publishGoogleBusiness, webhook: publishWebhook, tiktok: publishTikTok, youtube: publishYouTube,
 };
 
 // ---------- Queue ----------
 
 function insertStmt(db: D1Database, d: PostDraft) {
   return db.prepare(
-    `INSERT OR IGNORE INTO social_posts (source_key, channel, lang, variant, title, text, link, image, scheduled_at)
-     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)`,
-  ).bind(d.sourceKey, d.channel, d.lang, d.variant, d.title, d.text, d.link, d.image, d.scheduledAt);
+    `INSERT OR IGNORE INTO social_posts (source_key, channel, lang, variant, title, text, link, image, video, scheduled_at)
+     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10)`,
+  ).bind(d.sourceKey, d.channel, d.lang, d.variant, d.title, d.text, d.link, d.image, d.video ?? null, d.scheduledAt);
 }
 
 export interface Feed { articles: FeedArticle[]; campaign?: CampaignPost[] }
@@ -308,7 +391,7 @@ export async function handleSocialAdmin(request: Request, env: SocialEnv, path: 
     const status = new URL(request.url).searchParams.get("status");
     const filter = status && ["scheduled", "published", "failed", "cancelled"].includes(status) ? "WHERE status = ?1" : "";
     const stmt = db.prepare(
-      `SELECT id, channel, lang, variant, title, text, link, image, scheduled_at, status, attempts, external_id, error, published_at
+      `SELECT id, channel, lang, variant, title, text, link, image, video, scheduled_at, status, attempts, external_id, error, published_at
        FROM social_posts ${filter} ORDER BY CASE WHEN status IN ('scheduled','publishing') THEN 0 ELSE 1 END, scheduled_at ${filter ? "DESC" : "ASC"} LIMIT 150`,
     );
     const rows = await (filter ? stmt.bind(status) : stmt).all();

@@ -22,6 +22,7 @@ jobs:
       - run: npm ci
       - run: node scripts/validate-content.mjs services
       - run: node scripts/validate-content.mjs industries
+      - run: node scripts/validate-social.mjs
       - run: npm test
       - run: npx tsc -p functions/tsconfig.json
       - run: npm run build

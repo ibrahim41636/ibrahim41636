@@ -12,7 +12,8 @@ const socials = [
   { url: site.social.linkedin, icon: "linkedin", label: "LinkedIn" },
   { url: site.social.instagram, icon: "instagram", label: "Instagram" },
   { url: site.social.tiktok, icon: "tiktok", label: "TikTok" },
-  { url: site.social.x, icon: "x", label: "X" },
+  { url: site.social.x, icon: "xlogo", label: "X" },
+  { url: site.social.youtube, icon: "youtube", label: "YouTube" },
 ].filter((s) => s.url);
 ---
 <footer class="site-footer on-dark">
@@ -64,6 +65,7 @@ const socials = [
           <h2>{t(lang, "nav.insights")}</h2>
           <ul>
             <li><a href={href(lang, "/insights/")}>{t(lang, "insights.all")}</a></li>
+            <li><a href={href(lang, "/updates/")}>{lang === "ar" ? "آخر المستجدات" : "Latest updates"}</a></li>
             <li><a href={href(lang, "/insights/category/environmental-compliance/")}>{lang === "ar" ? "الامتثال البيئي" : "Environmental Compliance"}</a></li>
             <li><a href={href(lang, "/insights/category/technical-articles/")}>{lang === "ar" ? "مقالات فنية" : "Technical Articles"}</a></li>
             <li><a href={href(lang, "/insights/category/esg/")}>{lang === "ar" ? "الحوكمة البيئية والاجتماعية" : "ESG"}</a></li>

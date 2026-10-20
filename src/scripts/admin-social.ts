@@ -35,7 +35,9 @@ async function loadQueue() {
   const f = $<HTMLSelectElement>("[data-filter]").value;
   const data = await api(`/api/admin/social${f ? `?status=${f}` : ""}`);
   channels = data.channels;
-  $("[data-channels]").replaceChildren(...channels.map((c) => {
+  // The website is always on: articles and campaign posts are published with every site build.
+  const site = document.createElement("li"); site.className = "on"; site.textContent = "الموقع الإلكتروني — تلقائي";
+  $("[data-channels]").replaceChildren(site, ...channels.map((c) => {
     const li = document.createElement("li"); li.className = c.configured ? "on" : "";
     li.textContent = `${c.name} — ${c.configured ? "مربوط" : "غير مربوط"}`; return li;
   }));

@@ -27,6 +27,7 @@ export const GET: APIRoute = async () => {
         takeaways: p.data.keyTakeaways,
         faqs: p.data.faqs,
         images: { launch: img("launch"), takeaway: img("takeaway"), faq: img("faq"), checklist: img("checklist") },
+        video: abs(socialAsset(`/social/video/${lang}/${slug}.mp4`)),
       });
     }
   }
@@ -41,7 +42,7 @@ export const GET: APIRoute = async () => {
     versions: LANGS.flatMap((lang) => {
       const v = e.data[lang];
       if (!v) return [];
-      return [{ lang, text: v.text, x: v.x, title: v.title, link: abs(v.link), image: abs(socialAsset(`/social/campaign/${e.id}-${lang}.jpg`)) }];
+      return [{ lang, text: v.text, x: v.x, title: v.title, link: abs(v.link), image: abs(socialAsset(`/social/campaign/${e.id}-${lang}.jpg`)), video: abs(socialAsset(`/social/video/campaign/${e.id}-${lang}.mp4`)) }];
     }),
   }));
 

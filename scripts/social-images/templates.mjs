@@ -243,4 +243,34 @@ export function avatar(lang, { size = 800 }) {
   <div style="position:absolute;inset:0;display:grid;place-items:center">${MARK(C.mint, Math.round(size * 0.58))}</div>`);
 }
 
-export const TEMPLATES = { cover, takeaway, faq, checklist, stat, myth, event, tip, og, banner, avatar };
+/** Vertical 1080×1920 video frame (TikTok, YouTube Shorts, Reels): a rendered 4:5 card between brand bands. */
+export function story(lang, { card, step, steps }) {
+  return page(lang, 1080, 1920, `
+  <div style="position:absolute;inset:0;background:${C.deep}"></div>
+  ${contours(C.mint, 0.10, 4, 1080, 1920)}
+  <div style="position:absolute;inset-inline:64px;top:150px;display:flex;align-items:center;gap:18px;color:#fff;z-index:2" dir="ltr">
+    ${MARK(C.mint, 72)}<b style="font:600 44px Inter;letter-spacing:-.5px">Selorin</b>
+    <span style="margin-inline-start:auto;color:${C.mint};font:600 26px Inter">selorin.co</span>
+  </div>
+  <img src="${card}" style="position:absolute;left:0;top:285px;width:1080px;height:1350px;z-index:2">
+  <div style="position:absolute;inset-inline:64px;top:1680px;display:flex;gap:10px;z-index:2">
+    ${Array.from({ length: steps }, (_, i) => `<span style="flex:1;height:8px;border-radius:4px;background:${i <= step ? C.mint : "rgba(205,239,211,.25)"}"></span>`).join("")}
+  </div>`);
+}
+
+/** Closing frame of a video: the call to action. */
+export function endcard(lang, { line }) {
+  const ar = lang === "ar";
+  return page(lang, 1080, 1920, `
+  <div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 20%,${C.forest2} 0%,${C.forest} 45%,${C.deep} 100%)"></div>
+  ${contours(C.mint, 0.13, 6, 1080, 1920)}
+  <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:56px;padding:0 90px;text-align:center;color:#fff;z-index:2">
+    ${MARK(C.mint, 260)}
+    <div style="font:600 120px Inter;letter-spacing:-3px;line-height:1">Selorin</div>
+    <div style="font-size:40px;font-weight:600;color:${C.mint}">${esc(L[lang].brand)}</div>
+    <div data-fit="36" style="max-height:260px;font-size:62px;font-weight:700;line-height:1.4">${esc(line || (ar ? "تحتاج دعمًا في مشروعك؟ اطلب استشارة" : "Need support on your project? Request a consultation"))}</div>
+    <div style="background:${C.mint};color:${C.deep};border-radius:999px;padding:26px 60px;font:700 52px Inter">selorin.co</div>
+  </div>`);
+}
+
+export const TEMPLATES = { cover, takeaway, faq, checklist, stat, myth, event, tip, og, banner, avatar, story, endcard };

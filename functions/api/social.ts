@@ -9,8 +9,8 @@
 //   GET  /api/admin/funnel?days=            → leads per source with progress through the sales stages
 import { json, type Env } from "./request";
 import {
-  CHANNELS, CHANNEL_INFO, articleSeries, configuredChannels, fromDbTime, isChannel, toDbTime, utmLink, xLength,
-  type Channel, type FeedArticle, type PostDraft,
+  CHANNELS, CHANNEL_INFO, articleSeries, campaignSeries, configuredChannels, fromDbTime, isChannel, toDbTime, utmLink, xLength,
+  type CampaignPost, type Channel, type FeedArticle, type PostDraft,
 } from "../../src/lib/social";
 
 export interface SocialEnv extends Env {
@@ -42,19 +42,38 @@ async function check(res: Response, what: string) {
   throw new Error(`${what} ${res.status}: ${body}`);
 }
 
+/** Image bytes for a post: the site's own files come straight from the static assets. */
+async function imageBlob(env: SocialEnv, url: string) {
+  const res = env.ASSETS && /^https:\/\/(www\.)?selorin\.co\//.test(url) ? await env.ASSETS.fetch(new Request(url)) : await fetch(url);
+  await check(res, "Image");
+  return new Blob([await res.arrayBuffer()], { type: res.headers.get("content-type") ?? "image/jpeg" });
+}
+
 async function publishLinkedIn(env: SocialEnv, p: QueuedPost) {
+  const headers = {
+    authorization: `Bearer ${env.LINKEDIN_ACCESS_TOKEN}`, "content-type": "application/json",
+    "LinkedIn-Version": env.LINKEDIN_API_VERSION ?? "202606", "X-Restli-Protocol-Version": "2.0.0",
+  };
+  const owner = `urn:li:organization:${env.LINKEDIN_ORG_ID}`;
+  // Branded image posts (the link is in the text) reach further than bare link shares, and the
+  // Posts API does not fetch link previews by itself.
+  let content: Record<string, unknown> | undefined = p.link ? { article: { source: p.link, title: p.title ?? "" } } : undefined;
+  if (p.image) {
+    const init = await check(await fetch("https://api.linkedin.com/rest/images?action=initializeUpload", {
+      method: "POST", headers, body: JSON.stringify({ initializeUploadRequest: { owner } }),
+    }), "LinkedIn image init");
+    const { value } = (await init.json()) as { value: { uploadUrl: string; image: string } };
+    await check(await fetch(value.uploadUrl, { method: "PUT", headers: { authorization: headers.authorization }, body: await imageBlob(env, p.image) }), "LinkedIn image upload");
+    content = { media: { id: value.image, altText: (p.title ?? "").slice(0, 300) } };
+  }
   const res = await check(await fetch("https://api.linkedin.com/rest/posts", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${env.LINKEDIN_ACCESS_TOKEN}`, "content-type": "application/json",
-      "LinkedIn-Version": env.LINKEDIN_API_VERSION ?? "202606", "X-Restli-Protocol-Version": "2.0.0",
-    },
+    method: "POST", headers,
     body: JSON.stringify({
-      author: `urn:li:organization:${env.LINKEDIN_ORG_ID}`,
+      author: owner,
       commentary: p.text,
       visibility: "PUBLIC",
       distribution: { feedDistribution: "MAIN_FEED", targetEntities: [], thirdPartyDistributionChannels: [] },
-      ...(p.link ? { content: { article: { source: p.link, title: p.title ?? "" } } } : {}),
+      ...(content ? { content } : {}),
       lifecycleState: "PUBLISHED",
       isReshareDisabledByAuthor: false,
     }),
@@ -79,17 +98,43 @@ export async function oauth1Header(method: string, url: string, keys: { key: str
   return "OAuth " + Object.keys(params).sort().map((k) => `${pct(k)}="${pct(params[k])}"`).join(", ");
 }
 
+const xKeys = (env: SocialEnv) => ({ key: env.X_API_KEY!, secret: env.X_API_SECRET!, token: env.X_ACCESS_TOKEN!, tokenSecret: env.X_ACCESS_SECRET! });
+const nonce = () => [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, "0")).join("");
+const xAuth = (env: SocialEnv, url: string) => oauth1Header("POST", url, xKeys(env), nonce(), String(Math.floor(Date.now() / 1000)));
+
 async function publishX(env: SocialEnv, p: QueuedPost) {
+  let mediaId: string | undefined;
+  if (p.image) {
+    // A failed image upload should not lose the post: fall back to text and link only.
+    try {
+      const url = "https://api.x.com/2/media/upload";
+      const form = new FormData();
+      form.append("media", await imageBlob(env, p.image), "image.jpg");
+      form.append("media_category", "tweet_image");
+      const up = await check(await fetch(url, { method: "POST", headers: { authorization: await xAuth(env, url) }, body: form }), "X media");
+      mediaId = ((await up.json()) as { data?: { id?: string } }).data?.id;
+    } catch (err) {
+      console.error("x media upload failed, posting without image", p.id, err);
+    }
+  }
   const url = "https://api.x.com/2/tweets";
-  const nonce = [...crypto.getRandomValues(new Uint8Array(16))].map((b) => b.toString(16).padStart(2, "0")).join("");
-  const auth = await oauth1Header("POST", url, { key: env.X_API_KEY!, secret: env.X_API_SECRET!, token: env.X_ACCESS_TOKEN!, tokenSecret: env.X_ACCESS_SECRET! }, nonce, String(Math.floor(Date.now() / 1000)));
-  const res = await check(await fetch(url, { method: "POST", headers: { authorization: auth, "content-type": "application/json" }, body: JSON.stringify({ text: p.text }) }), "X");
+  const res = await check(await fetch(url, {
+    method: "POST", headers: { authorization: await xAuth(env, url), "content-type": "application/json" },
+    body: JSON.stringify({ text: p.text, ...(mediaId ? { media: { media_ids: [mediaId] } } : {}) }),
+  }), "X");
   return ((await res.json()) as { data?: { id?: string } }).data?.id ?? "";
 }
 
 const graph = (env: SocialEnv, path: string) => `https://graph.facebook.com/${env.META_GRAPH_VERSION ?? "v23.0"}/${path}`;
 
 async function publishFacebook(env: SocialEnv, p: QueuedPost) {
+  // With a branded image: a photo post (the link stays in the caption). Otherwise a link post.
+  if (p.image) {
+    const body = new URLSearchParams({ url: p.image, caption: p.text, access_token: env.FACEBOOK_PAGE_TOKEN! });
+    const res = await check(await fetch(graph(env, `${env.FACEBOOK_PAGE_ID}/photos`), { method: "POST", body }), "Facebook photo");
+    const r = (await res.json()) as { id?: string; post_id?: string };
+    return r.post_id ?? r.id ?? "";
+  }
   const body = new URLSearchParams({ message: p.text, access_token: env.FACEBOOK_PAGE_TOKEN! });
   if (p.link) body.set("link", p.link);
   const res = await check(await fetch(graph(env, `${env.FACEBOOK_PAGE_ID}/feed`), { method: "POST", body }), "Facebook");
@@ -156,14 +201,19 @@ function insertStmt(db: D1Database, d: PostDraft) {
   ).bind(d.sourceKey, d.channel, d.lang, d.variant, d.title, d.text, d.link, d.image, d.scheduledAt);
 }
 
-/** Queue the post series for recent articles, and one older article per week (evergreen rotation). */
-export async function queueArticles(env: SocialEnv, articles: FeedArticle[], now: Date) {
+export interface Feed { articles: FeedArticle[]; campaign?: CampaignPost[] }
+
+/**
+ * Queue the post series for recent articles, one older article per week (evergreen rotation) and
+ * the campaign posts whose day is coming up.
+ */
+export async function queueFeed(env: SocialEnv, { articles, campaign = [] }: Feed, now: Date) {
   const channels = configuredChannels(env as unknown as Record<string, unknown>);
   if (!env.DB || !channels.length || env.SOCIAL_AUTOPOST === "false") return { queued: 0, newArticles: [] as string[] };
   const backfill = Number(env.SOCIAL_BACKFILL_DAYS) || 21;
   const cutoff = now.getTime() - backfill * 86_400_000;
   const recent = articles.filter((a) => new Date(a.date).getTime() >= cutoff && new Date(a.date).getTime() <= now.getTime());
-  const drafts = recent.flatMap((a) => articleSeries(a, channels, now));
+  const drafts = [...recent.flatMap((a) => articleSeries(a, channels, now)), ...campaign.flatMap((c) => campaignSeries(c, channels, now))];
 
   // Evergreen: re-share an older Arabic article once a week, rotating through the archive.
   const older = articles.filter((a) => a.lang === "ar" && new Date(a.date).getTime() < cutoff).sort((a, b) => a.date.localeCompare(b.date));
@@ -229,17 +279,18 @@ export async function publishDue(env: SocialEnv, now: Date) {
   return out;
 }
 
-export async function loadFeed(env: SocialEnv): Promise<FeedArticle[]> {
-  if (!env.ASSETS) return [];
+export async function loadFeed(env: SocialEnv): Promise<Feed> {
+  if (!env.ASSETS) return { articles: [] };
   const res = await env.ASSETS.fetch(new Request("https://selorin.co/social-feed.json"));
-  if (!res.ok) return [];
-  return ((await res.json()) as { articles: FeedArticle[] }).articles ?? [];
+  if (!res.ok) return { articles: [] };
+  const feed = (await res.json()) as Feed;
+  return { articles: feed.articles ?? [], campaign: feed.campaign ?? [] };
 }
 
 /** The cron job: queue new article posts, ping IndexNow for new articles, publish what is due. */
-export async function runSocialCron(env: SocialEnv, now = new Date(), feed?: FeedArticle[]) {
+export async function runSocialCron(env: SocialEnv, now = new Date(), feed?: Feed) {
   if (!env.DB) return { queued: 0, published: 0, failed: 0 };
-  const { queued, newArticles } = await queueArticles(env, feed ?? (await loadFeed(env)), now);
+  const { queued, newArticles } = await queueFeed(env, feed ?? (await loadFeed(env)), now);
   await pingIndexNow(env, newArticles);
   const results = await publishDue(env, now);
   return { queued, published: results.filter((r) => r.ok).length, failed: results.filter((r) => !r.ok).length };

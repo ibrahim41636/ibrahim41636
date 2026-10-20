@@ -21,13 +21,14 @@ export const CHANNEL_INFO: Record<Channel, { ar: string; en: string; langs: ("ar
 export const isChannel = (v: unknown): v is Channel => typeof v === "string" && (CHANNELS as readonly string[]).includes(v);
 
 /** Funnel stage each post variant serves: awareness → consideration → conversion. */
-export const VARIANTS = ["launch", "takeaway", "faq", "evergreen", "manual"] as const;
+export const VARIANTS = ["launch", "takeaway", "faq", "evergreen", "campaign", "manual"] as const;
 export type Variant = (typeof VARIANTS)[number];
 export const VARIANT_INFO: Record<Variant, { ar: string; stage: "awareness" | "consideration" | "conversion"; dayOffset: number }> = {
   launch: { ar: "إطلاق المقال", stage: "awareness", dayOffset: 0 },
   takeaway: { ar: "أبرز نقطة", stage: "consideration", dayOffset: 3 },
   faq: { ar: "سؤال وجواب", stage: "conversion", dayOffset: 7 },
   evergreen: { ar: "إعادة نشر", stage: "awareness", dayOffset: 0 },
+  campaign: { ar: "منشور الحملة", stage: "awareness", dayOffset: 0 },
   manual: { ar: "منشور يدوي", stage: "awareness", dayOffset: 0 },
 };
 
@@ -42,6 +43,19 @@ export interface FeedArticle {
   date: string; // ISO
   takeaways: string[];
   faqs: { q: string; a: string }[];
+  /** Branded images rendered for this article (absolute URLs), by post variant. */
+  images?: Partial<Record<"launch" | "takeaway" | "faq" | "checklist", string>>;
+}
+
+/** A campaign post from src/content/social/, as published in the feed (links and images absolute). */
+export interface CampaignPost {
+  id: string;
+  date: string; // YYYY-MM-DD, Riyadh
+  slot: number;
+  stage: "awareness" | "consideration" | "conversion";
+  pillar: string;
+  channels?: Channel[];
+  versions: { lang: "ar" | "en"; text: string; x?: string; title?: string; link?: string; image?: string }[];
 }
 
 export interface PostDraft {
@@ -177,10 +191,65 @@ export function articleSeries(a: FeedArticle, channels: Channel[], now: Date, va
       const campaign = `insight-${a.slug}`;
       const key = variant === "evergreen" ? `${variant}-${toDbTime(now).slice(0, 10)}` : variant;
       const link = utmLink(a.url, channel, campaign, key);
+      const image = (variant === "takeaway" || variant === "faq" ? a.images?.[variant] : variant === "evergreen" ? a.images?.checklist ?? a.images?.launch : a.images?.launch) ?? a.image;
       out.push({
         sourceKey: `${a.lang}/${a.slug}:${key}:${channel}`,
         channel, lang: a.lang, variant, title: a.title,
-        text: composeText(channel, a, variant, link), link, image: a.image,
+        text: composeText(channel, a, variant, link), link, image,
+        scheduledAt: toDbTime(at),
+      });
+    });
+  }
+  return out;
+}
+
+/** Text of a campaign post for one channel (the link is already UTM-tagged). */
+export function composeCampaignText(channel: Channel, v: CampaignPost["versions"][number], link: string): string {
+  const t = CTA[v.lang];
+  switch (channel) {
+    case "x": {
+      const tail = link ? `\n\n${link}` : "";
+      let body = v.x ?? v.text;
+      while (xLength(body + tail) > X_LIMIT && body.length > 20) body = clip(body, [...body].length - 10);
+      return body + tail;
+    }
+    case "instagram":
+      return clip(`${v.text}${link ? `\n\n${t.bio} — ${link}` : ""}`, 2200);
+    case "google_business":
+      // Hashtags do nothing on Google; the link goes in the "Learn more" button.
+      return clip(v.text.split("\n").filter((l) => !/^\s*(#\S+\s*)+$/.test(l)).join("\n").trim(), 1450);
+    default:
+      return clip(`${v.text}${link ? `\n\n${link}` : ""}`, 2900);
+  }
+}
+
+/** Start of a Riyadh calendar day (YYYY-MM-DD) in UTC. */
+const riyadhDayStart = (day: string) => {
+  const [y, m, d] = day.split("-").map(Number);
+  return new Date(Date.UTC(y, m - 1, d) - RIYADH_OFFSET_MIN * 60_000);
+};
+
+/**
+ * Drafts for a campaign post on its day, once it is within the queue window (from yesterday to
+ * `aheadDays` ahead). Fridays and Saturdays roll to Sunday; a slot already past is moved to the next one.
+ */
+export function campaignSeries(post: CampaignPost, channels: Channel[], now: Date, aheadDays = 21): PostDraft[] {
+  const start = riyadhDayStart(post.date);
+  if (start.getTime() > now.getTime() + aheadDays * 86_400_000 || start.getTime() < now.getTime() - 2 * 86_400_000) return [];
+  const out: PostDraft[] = [];
+  for (const v of post.versions) {
+    channels.forEach((channel) => {
+      if (post.channels && !post.channels.includes(channel)) return;
+      if (!CHANNEL_INFO[channel].langs.includes(v.lang)) return;
+      if (channel === "instagram" && !v.image) return;
+      let at = nextSlot(start, post.slot + (v.lang === "en" ? 1 : 0));
+      if (at.getTime() < now.getTime()) at = nextSlot(now, v.lang === "en" ? 1 : 0);
+      at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
+      const link = v.link ? utmLink(v.link, channel, `campaign-${post.id}`, post.stage) : "";
+      out.push({
+        sourceKey: `campaign/${post.id}:${v.lang}:${channel}`,
+        channel, lang: v.lang, variant: "campaign", title: v.title ?? post.pillar,
+        text: composeCampaignText(channel, v, link), link, image: v.image ?? "",
         scheduledAt: toDbTime(at),
       });
     });

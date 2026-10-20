@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "test": "vitest run",
     "check": "astro check",
-    "inventory": "tsx scripts/export-inventory.ts"
+    "inventory": "tsx scripts/export-inventory.ts",
+    "social:images": "node scripts/social-images/render.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.10",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20261005.1",
     "axe-core": "^4.13.0",
+    "playwright-core": "1.56.1",
     "tsx": "^4.23.15",
     "vitest": "^5.0.3",
     "wrangler": "^4.147.0"

@@ -1,0 +1,202 @@
+// Social publishing hub: the company's channels, how each article becomes a series of posts,
+// UTM-tagged links (so every lead can be traced back to the channel that brought it) and the
+// weekly posting slots. Pure functions — shared by the Worker cron (functions/api/social.ts),
+// the staff page (/ar/admin/social/) and the unit tests.
+
+export const CHANNELS = ["linkedin", "x", "facebook", "instagram", "google_business", "webhook"] as const;
+export type Channel = (typeof CHANNELS)[number];
+
+export const CHANNEL_INFO: Record<Channel, { ar: string; en: string; langs: ("ar" | "en")[]; utmSource: string }> = {
+  // LinkedIn is the main B2B channel in the Kingdom and has many English-reading decision makers.
+  linkedin: { ar: "لينكد إن", en: "LinkedIn", langs: ["ar", "en"], utmSource: "linkedin" },
+  x: { ar: "إكس (تويتر)", en: "X", langs: ["ar"], utmSource: "x" },
+  facebook: { ar: "فيسبوك", en: "Facebook", langs: ["ar"], utmSource: "facebook" },
+  instagram: { ar: "إنستغرام", en: "Instagram", langs: ["ar"], utmSource: "instagram" },
+  // Google Business Profile posts appear in Maps and the local panel on Google Search.
+  google_business: { ar: "ملف جوجل التجاري", en: "Google Business Profile", langs: ["ar"], utmSource: "google_business" },
+  // Make / Zapier / n8n hook for channels without a direct API here (TikTok, Snapchat, WhatsApp channel…).
+  webhook: { ar: "ربط خارجي (TikTok وغيره)", en: "Automation webhook", langs: ["ar"], utmSource: "social_webhook" },
+};
+
+export const isChannel = (v: unknown): v is Channel => typeof v === "string" && (CHANNELS as readonly string[]).includes(v);
+
+/** Funnel stage each post variant serves: awareness → consideration → conversion. */
+export const VARIANTS = ["launch", "takeaway", "faq", "evergreen", "manual"] as const;
+export type Variant = (typeof VARIANTS)[number];
+export const VARIANT_INFO: Record<Variant, { ar: string; stage: "awareness" | "consideration" | "conversion"; dayOffset: number }> = {
+  launch: { ar: "إطلاق المقال", stage: "awareness", dayOffset: 0 },
+  takeaway: { ar: "أبرز نقطة", stage: "consideration", dayOffset: 3 },
+  faq: { ar: "سؤال وجواب", stage: "conversion", dayOffset: 7 },
+  evergreen: { ar: "إعادة نشر", stage: "awareness", dayOffset: 0 },
+  manual: { ar: "منشور يدوي", stage: "awareness", dayOffset: 0 },
+};
+
+export interface FeedArticle {
+  slug: string;
+  lang: "ar" | "en";
+  title: string;
+  description: string;
+  url: string; // absolute
+  image: string; // absolute, JPEG
+  category: string;
+  date: string; // ISO
+  takeaways: string[];
+  faqs: { q: string; a: string }[];
+}
+
+export interface PostDraft {
+  sourceKey: string;
+  channel: Channel;
+  lang: "ar" | "en";
+  variant: Variant;
+  title: string;
+  text: string;
+  link: string;
+  image: string;
+  scheduledAt: string; // "YYYY-MM-DD HH:MM:SS" UTC, same format as D1 datetime('now')
+}
+
+/** Add UTM parameters so leads from this post are attributed to the channel in the lead log. */
+export function utmLink(url: string, channel: Channel, campaign: string, content: string) {
+  const u = new URL(url);
+  u.searchParams.set("utm_source", CHANNEL_INFO[channel].utmSource);
+  u.searchParams.set("utm_medium", "social");
+  u.searchParams.set("utm_campaign", campaign);
+  u.searchParams.set("utm_content", content);
+  return u.toString();
+}
+
+const CATEGORY_TAGS: Record<string, { ar: string[]; en: string[] }> = {
+  "regulatory-updates": { ar: ["#المركز_الوطني_للرقابة_على_الالتزام_البيئي", "#الأنظمة_البيئية"], en: ["#NCEC", "#EnvironmentalRegulation"] },
+  "environmental-compliance": { ar: ["#الامتثال_البيئي", "#التصاريح_البيئية"], en: ["#EnvironmentalCompliance", "#Permitting"] },
+  esg: { ar: ["#الحوكمة_البيئية_والاجتماعية", "#ESG"], en: ["#ESG", "#Sustainability"] },
+  sustainability: { ar: ["#الاستدامة", "#رؤية_2030"], en: ["#Sustainability", "#Vision2030"] },
+  "technical-articles": { ar: ["#الرصد_البيئي", "#جودة_الهواء"], en: ["#EnvironmentalMonitoring", "#AirQuality"] },
+  "industry-guides": { ar: ["#البيئة", "#السعودية"], en: ["#SaudiArabia", "#Environment"] },
+};
+export const hashtags = (category: string, lang: "ar" | "en") =>
+  [...(CATEGORY_TAGS[category]?.[lang] ?? []), lang === "ar" ? "#سيلورين" : "#Selorin"].join(" ");
+
+const CTA = {
+  ar: { read: "اقرأ الدليل كاملًا:", ask: "تحتاج دعمًا في مشروعك؟ اطلب استشارة:", bio: "الرابط في الحساب" },
+  en: { read: "Read the full guide:", ask: "Need support on your project? Request a consultation:", bio: "Link in bio" },
+};
+
+// X counts every URL as 23 characters and most scripts (Latin, Arabic) as 1; others as 2.
+const X_LIMIT = 280;
+const X_URL = 23;
+export function xLength(text: string) {
+  let n = 0;
+  const urls = text.match(/https?:\/\/\S+/g) ?? [];
+  for (const ch of text.replace(/https?:\/\/\S+/g, "")) {
+    const c = ch.codePointAt(0)!;
+    n += c <= 0x10ff || (c >= 0x2000 && c <= 0x200d) || (c >= 0x2010 && c <= 0x201f) || (c >= 0x2032 && c <= 0x2037) ? 1 : 2;
+  }
+  return n + urls.length * X_URL;
+}
+
+const clip = (s: string, max: number) => {
+  const chars = [...s];
+  return chars.length <= max ? s : chars.slice(0, max - 1).join("").replace(/\s+\S*$/, "") + "…";
+};
+
+/** Write the text of one post for one channel. Links are added by the caller (already UTM-tagged). */
+export function composeText(channel: Channel, a: FeedArticle, variant: Variant, link: string): string {
+  const t = CTA[a.lang];
+  const tags = hashtags(a.category, a.lang);
+  let lead: string;
+  let cta = t.read;
+  if (variant === "takeaway" && a.takeaways[0]) lead = `${a.takeaways[0]}\n\n${a.title}`;
+  else if (variant === "faq" && a.faqs[0]) { lead = `${a.faqs[0].q}\n\n${a.faqs[0].a}`; cta = t.ask; }
+  else lead = `${a.title}\n\n${a.description}`;
+
+  switch (channel) {
+    case "x": {
+      // Fit the 280 limit: shorten the lead, never the link or the hashtags.
+      const tail = `\n\n${link}\n${tags}`;
+      const head = variant === "faq" && a.faqs[0] ? a.faqs[0].q : variant === "takeaway" && a.takeaways[0] ? a.takeaways[0] : a.title;
+      let body = head;
+      while (xLength(body + tail) > X_LIMIT && body.length > 20) body = clip(body, [...body].length - 10);
+      return body + tail;
+    }
+    case "instagram":
+      // Links in captions are not clickable; the URL is still useful for people who copy it.
+      return clip(`${lead}\n\n${t.bio} — ${link}\n\n${tags}`, 2200);
+    case "google_business":
+      // The link goes in the "Learn more" button; Google rejects posts with phone numbers in text.
+      return clip(lead, 1450);
+    default:
+      return clip(`${lead}\n\n${cta}\n${link}\n\n${tags}`, 2900);
+  }
+}
+
+// Posting slots in Riyadh time (UTC+3, no daylight saving): working week Sunday–Thursday,
+// morning, after lunch and evening — when B2B audiences in the Kingdom are most active.
+export const SLOTS_RIYADH = ["09:30", "13:00", "20:30"];
+const WORK_DAYS = new Set([0, 1, 2, 3, 4]); // Sun..Thu
+const RIYADH_OFFSET_MIN = 180;
+
+export const toDbTime = (d: Date) => d.toISOString().slice(0, 19).replace("T", " ");
+export const fromDbTime = (s: string) => new Date(s.replace(" ", "T") + "Z");
+
+/** First posting slot at or after `from`; `skip` moves that many slots further on. */
+export function nextSlot(from: Date, skip = 0): Date {
+  const riyadh = new Date(from.getTime() + RIYADH_OFFSET_MIN * 60_000);
+  for (let day = 0; day < 14; day++) {
+    const d = new Date(Date.UTC(riyadh.getUTCFullYear(), riyadh.getUTCMonth(), riyadh.getUTCDate() + day));
+    if (!WORK_DAYS.has(d.getUTCDay())) continue;
+    for (const slot of SLOTS_RIYADH) {
+      const [h, m] = slot.split(":").map(Number);
+      const local = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), h, m);
+      const utc = new Date(local - RIYADH_OFFSET_MIN * 60_000);
+      if (utc.getTime() < from.getTime()) continue;
+      if (skip-- > 0) continue;
+      return utc;
+    }
+  }
+  throw new Error("no slot found");
+}
+
+/**
+ * The drip series for one article on the given channels: launch on the next slot, a key takeaway
+ * three days later and an FAQ (with the consultation call to action) a week later. Each channel
+ * gets its own slot offset so the accounts do not all post in the same minute.
+ */
+export function articleSeries(a: FeedArticle, channels: Channel[], now: Date, variants: Variant[] = ["launch", "takeaway", "faq"]): PostDraft[] {
+  const out: PostDraft[] = [];
+  for (const variant of variants) {
+    if (variant === "takeaway" && !a.takeaways.length) continue;
+    if (variant === "faq" && !a.faqs.length) continue;
+    const base = new Date(now.getTime() + VARIANT_INFO[variant].dayOffset * 86_400_000);
+    channels.forEach((channel) => {
+      if (!CHANNEL_INFO[channel].langs.includes(a.lang)) return;
+      if (channel === "instagram" && !a.image) return;
+      // English LinkedIn posts go one slot after the Arabic ones.
+      const at = nextSlot(base, a.lang === "en" ? 1 : 0);
+      at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
+      const campaign = `insight-${a.slug}`;
+      const key = variant === "evergreen" ? `${variant}-${toDbTime(now).slice(0, 10)}` : variant;
+      const link = utmLink(a.url, channel, campaign, key);
+      out.push({
+        sourceKey: `${a.lang}/${a.slug}:${key}:${channel}`,
+        channel, lang: a.lang, variant, title: a.title,
+        text: composeText(channel, a, variant, link), link, image: a.image,
+        scheduledAt: toDbTime(at),
+      });
+    });
+  }
+  return out;
+}
+
+/** Which channels have their credentials set in the Worker environment. */
+export function configuredChannels(env: Record<string, unknown>): Channel[] {
+  const has = (...k: string[]) => k.every((x) => typeof env[x] === "string" && (env[x] as string).length > 0);
+  return CHANNELS.filter((c) => ({
+    linkedin: has("LINKEDIN_ACCESS_TOKEN", "LINKEDIN_ORG_ID"),
+    x: has("X_API_KEY", "X_API_SECRET", "X_ACCESS_TOKEN", "X_ACCESS_SECRET"),
+    facebook: has("FACEBOOK_PAGE_ID", "FACEBOOK_PAGE_TOKEN"),
+    instagram: has("INSTAGRAM_USER_ID", "FACEBOOK_PAGE_TOKEN"),
+    google_business: has("GBP_CLIENT_ID", "GBP_CLIENT_SECRET", "GBP_REFRESH_TOKEN", "GBP_ACCOUNT_ID", "GBP_LOCATION_ID"),
+    webhook: has("SOCIAL_WEBHOOK_URL"),
+  })[c]);
+}

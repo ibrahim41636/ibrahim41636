@@ -11,7 +11,8 @@
     "worker",
     "app",
     ".wrangler",
-    "tests/tracking.test.ts"
+    "tests/tracking.test.ts",
+    "tests/social.test.ts"
   ],
   "compilerOptions": {
     "baseUrl": ".",

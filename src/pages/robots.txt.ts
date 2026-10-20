@@ -6,6 +6,7 @@ Disallow: /api/
 Disallow: /request/received/
 Disallow: /ar/request/received/
 Disallow: /ar/admin/
+Disallow: /social-feed.json
 Disallow: /track/
 Disallow: /ar/track/
 

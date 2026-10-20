@@ -5,8 +5,9 @@
 import { handleRequestPost, methodNotAllowed, type Env } from "../functions/api/request";
 import { handleTrack } from "../functions/api/track";
 import { handleAdmin } from "../functions/api/admin";
+import { runSocialCron, type SocialEnv } from "../functions/api/social";
 
-interface WorkerEnv extends Env {
+interface WorkerEnv extends Env, SocialEnv {
   ASSETS: Fetcher;
 }
 
@@ -27,6 +28,12 @@ export default {
       return handleTrack(request, env);
     }
     if (pathname.startsWith("/api/admin/")) return handleAdmin(request, env, pathname.replace(/\/$/, ""));
+    // IndexNow ownership file (only when the INDEXNOW_KEY secret is set).
+    if (env.INDEXNOW_KEY && pathname === `/${env.INDEXNOW_KEY}.txt`) return new Response(env.INDEXNOW_KEY, { headers: { "content-type": "text/plain" } });
     return env.ASSETS.fetch(request);
+  },
+  // Cron (wrangler.toml [triggers]): queue posts for new articles and publish due posts to every connected account.
+  async scheduled(controller, env, ctx) {
+    ctx.waitUntil(runSocialCron(env, new Date(controller.scheduledTime)).then((r) => console.log("social cron", JSON.stringify(r))));
   },
 } satisfies ExportedHandler<WorkerEnv>;

@@ -9,6 +9,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]))
   <section class="section">
     <div class="container">
       <h1 style="font-size:var(--fs-h2)">لوحة الطلبات</h1>
+      <p><a href="/ar/admin/social/">مركز النشر والقمع التسويقي ←</a></p>
 
       <form class="adm-login" data-login>
         <label for="adm-token">رمز الدخول</label>
@@ -35,6 +36,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]))
 
   <style is:global>
     .adm-login { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: var(--space-6); }
+    .adm-login[hidden] { display: none; }
     .adm-login input, .adm-bar select, .adm-table select, .adm-table input { padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; background: #fff; }
     .adm-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: var(--space-6) 0 var(--space-4); }
     .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); }

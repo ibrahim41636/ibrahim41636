@@ -50,4 +50,6 @@ docs/                      content guide, architecture, launch checklist
 
 Every page is generated from the files in `src/content/`. To change a service, edit its JSON (both `en` and `ar` blocks) and push — CI validates and deploys. Writing rules (no invented claims, Arabic standards, lengths) are in `docs/content-guide.md`. Anything not yet confirmed is written as `[CONTENT REQUIRED: …]` and is highlighted in yellow on the site so it can't be mistaken for final copy.
 
+Social publishing hub and marketing funnel (scheduled posting to the company's LinkedIn, X, Facebook, Instagram and Google Business Profile, UTM attribution, funnel report at `/ar/admin/social/`): **`docs/social-funnel-ar.md`**.
+
 See **`docs/architecture.md`** for the sitemap, CMS plan, form/email pipeline, security, SEO, analytics events and the launch checklist.

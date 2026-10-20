@@ -24,6 +24,11 @@ run_worker_first = true
 [observability]
 enabled = true
 
+# Social publishing hub (functions/api/social.ts): every 15 minutes queue posts for new articles
+# and publish due posts to the connected accounts. Does nothing until D1 and a channel are set up.
+[triggers]
+crons = ["*/15 * * * *"]
+
 [vars]
 SALES_EMAIL = "sales@selorin.co"
 MAIL_FROM = "Selorin Website <website@selorin.co>"
@@ -33,10 +38,15 @@ SEND_CONFIRMATION = "true"
 # Secrets (dashboard → Worker → Settings → Variables and Secrets, type "Secret", or
 # `npx wrangler secret put NAME`): RESEND_API_KEY, ADMIN_TOKEN (staff dashboard /ar/admin/), TURNSTILE_SECRET,
 # and optionally LEAD_WEBHOOK_URL / LEAD_WEBHOOK_SECRET.
+# Social accounts (each channel turns on when its secrets are set — see docs/social-funnel-ar.md):
+#   LinkedIn: LINKEDIN_ACCESS_TOKEN, LINKEDIN_ORG_ID · X: X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN, X_ACCESS_SECRET
+#   Facebook/Instagram: FACEBOOK_PAGE_ID, FACEBOOK_PAGE_TOKEN, INSTAGRAM_USER_ID
+#   Google Business Profile: GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN, GBP_ACCOUNT_ID, GBP_LOCATION_ID
+#   TikTok/Snapchat/others via Make or Zapier: SOCIAL_WEBHOOK_URL, SOCIAL_WEBHOOK_SECRET · Search engines: INDEXNOW_KEY
 
 # Lead log + sequential request IDs + rate limiting + request tracking (/track/). Create with:
 #   npx wrangler d1 create selorin-leads   → paste the database_id below
-#   npx wrangler d1 migrations apply selorin-leads --remote   (applies 0001 and 0002)
+#   npx wrangler d1 migrations apply selorin-leads --remote   (applies 0001–0003)
 # [[d1_databases]]
 # binding = "DB"
 # database_name = "selorin-leads"

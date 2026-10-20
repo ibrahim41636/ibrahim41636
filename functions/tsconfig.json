@@ -20,6 +20,7 @@
     "../src/lib/lead.ts",
     "../src/lib/tracking.ts",
     "../tests/tracking.test.ts",
+    "../tests/social.test.ts",
     "../src/lib/uploads.ts"
   ]
 }

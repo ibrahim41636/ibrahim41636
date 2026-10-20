@@ -1,0 +1,110 @@
+---
+// Staff page for the social publishing hub: which company accounts are connected, the posting
+// queue (automatic article series + manual posts), a composer, and the funnel report that links
+// each channel to the requests it brought in. Same ADMIN_TOKEN login as /ar/admin/.
+import Base from "@/layouts/Base.astro";
+import { SLOTS_RIYADH } from "@/lib/social";
+---
+<Base lang="ar" path="/admin/social/" noindex focused title="مركز النشر والقمع التسويقي" description="إدارة النشر على حسابات الشركة ومتابعة القمع التسويقي.">
+  <section class="section">
+    <div class="container">
+      <p class="soc-nav"><a href="/ar/admin/">← لوحة الطلبات</a></p>
+      <h1 style="font-size:var(--fs-h2)">مركز النشر والقمع التسويقي</h1>
+      <p class="soc-lead">كل مقال جديد في مركز المعرفة يُنشر تلقائيًا على حسابات الشركة المربوطة في ثلاث مراحل: إطلاق المقال، ثم أبرز نقطة فيه بعد ٣ أيام، ثم سؤال وجواب مع دعوة لطلب استشارة بعد أسبوع، ويُعاد نشر مقال قديم كل أسبوع. أوقات النشر (بتوقيت الرياض، الأحد–الخميس): <span class="ltr">{SLOTS_RIYADH.join(" · ")}</span>.</p>
+
+      <form class="adm-login" data-login>
+        <label for="adm-token">رمز الدخول</label>
+        <input id="adm-token" type="password" autocomplete="current-password" class="ltr" required />
+        <button class="btn" type="submit">دخول</button>
+      </form>
+
+      <div data-panel hidden>
+        <p class="adm-msg" data-msg hidden></p>
+
+        <h2 class="soc-h">الحسابات</h2>
+        <ul class="soc-channels" data-channels></ul>
+
+        <h2 class="soc-h">القمع التسويقي</h2>
+        <div class="adm-bar">
+          <label>الفترة <select data-days><option value="30">آخر ٣٠ يومًا</option><option value="90" selected>آخر ٩٠ يومًا</option><option value="365">آخر سنة</option></select></label>
+        </div>
+        <div class="soc-funnel" data-funnel></div>
+        <div class="adm-table-wrap">
+          <table class="adm-table">
+            <thead><tr><th>المصدر</th><th>الوسيط</th><th>الطلبات</th><th>وصلت لعرض سعر</th><th>مكتملة</th><th>نسبة التحويل لعرض</th></tr></thead>
+            <tbody data-sources></tbody>
+          </table>
+        </div>
+
+        <h2 class="soc-h">منشور جديد</h2>
+        <form class="soc-compose" data-compose>
+          <fieldset><legend>الحسابات</legend><div data-pick></div></fieldset>
+          <label>النص <textarea data-text rows="6" required maxlength="2900"></textarea></label>
+          <p class="soc-count" data-count></p>
+          <div class="soc-row">
+            <label>رابط (صفحة من الموقع تُضاف لها معرّفات التتبع تلقائيًا) <input data-link type="url" class="ltr" placeholder="https://selorin.co/ar/services/…" /></label>
+            <label>رابط صورة JPEG (مطلوب لإنستغرام) <input data-image type="url" class="ltr" placeholder="https://selorin.co/images/….jpg" /></label>
+          </div>
+          <div class="soc-row">
+            <label>الموعد (بتوقيت الرياض، اتركه فارغًا للنشر في الدورة القادمة) <input data-at type="datetime-local" class="ltr" /></label>
+            <label>اللغة <select data-lang><option value="ar">العربية</option><option value="en">English</option></select></label>
+          </div>
+          <button class="btn" type="submit">جدولة</button>
+        </form>
+
+        <h2 class="soc-h">قائمة النشر</h2>
+        <div class="adm-bar">
+          <label>عرض <select data-filter>
+            <option value="">القادمة ثم الأحدث</option><option value="scheduled">مجدولة</option><option value="published">منشورة</option>
+            <option value="failed">فشلت</option><option value="cancelled">ملغاة</option>
+          </select></label>
+          <button class="btn btn--ghost" type="button" data-refresh>تحديث</button>
+          <button class="btn btn--ghost" type="button" data-run>تشغيل النشر الآن</button>
+          <button class="btn btn--ghost" type="button" data-logout>خروج</button>
+        </div>
+        <div class="adm-table-wrap">
+          <table class="adm-table">
+            <thead><tr><th>الموعد</th><th>الحساب</th><th>النوع</th><th>النص</th><th>الحالة</th><th>إجراء</th></tr></thead>
+            <tbody data-rows></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style is:global>
+    .soc-nav { margin-bottom: var(--space-4); }
+    .soc-lead { max-width: 75ch; color: var(--c-ink-2, inherit); }
+    .soc-h { font-size: var(--fs-h4, 1.25rem); margin: var(--space-8, 40px) 0 var(--space-4, 16px); }
+    .adm-login { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: var(--space-6); }
+    .adm-login[hidden] { display: none; }
+    .adm-login input, .adm-bar select, .adm-table select, .adm-table input, .adm-table textarea, .soc-compose input, .soc-compose select, .soc-compose textarea { padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; background: #fff; max-width: 100%; }
+    .adm-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: var(--space-4) 0; }
+    .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); margin-top: var(--space-4); }
+    .adm-msg.err { background: #fdecea; color: #8a1c12; }
+    .adm-table-wrap { overflow-x: auto; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+    .adm-table { width: 100%; border-collapse: collapse; font-size: var(--fs-14); }
+    .adm-table th, .adm-table td { padding: 10px 12px; border-bottom: 1px solid var(--c-line); text-align: start; vertical-align: top; }
+    .adm-table th { background: var(--c-paper-2); white-space: nowrap; }
+    .soc-channels { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+    .soc-channels li { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--c-line); background: #fff; font-size: var(--fs-14); }
+    .soc-channels li.on { background: var(--c-mint); border-color: transparent; }
+    .soc-funnel { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: var(--space-4); }
+    .soc-funnel div { padding: 14px; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+    .soc-funnel strong { display: block; font-size: 1.6rem; }
+    .soc-compose { display: grid; gap: 12px; max-width: 900px; }
+    .soc-compose label { display: grid; gap: 6px; }
+    .soc-compose fieldset { border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: 10px 14px; }
+    .soc-compose fieldset label { display: inline-flex; gap: 6px; margin-inline-end: 16px; align-items: center; }
+    .soc-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    .soc-count { font-size: var(--fs-12); margin: 0; }
+    .soc-count.over { color: #b42318; font-weight: 600; }
+    .soc-text { white-space: pre-wrap; max-width: 46ch; max-height: 9em; overflow: auto; font-size: var(--fs-12); }
+    .soc-actions { display: grid; gap: 6px; min-width: 150px; }
+    .soc-err { color: #b42318; font-size: var(--fs-12); max-width: 30ch; overflow-wrap: anywhere; }
+  </style>
+
+  <script>
+    import "@/scripts/admin-social";
+  </script>
+</Base>

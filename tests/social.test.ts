@@ -260,6 +260,17 @@ describe("social cron", () => {
     expect(db.posts.some((p) => p.source_key === "campaign/c1:ar:webhook")).toBe(true);
   });
 
+  it("staggers several new articles two days apart, newest first", async () => {
+    const db = fakeDb();
+    const env = { DB: db as unknown as D1Database, SOCIAL_WEBHOOK_URL: "https://hook.example/x" } as SocialEnv;
+    const a1 = { ...article, slug: "a-newer", date: "2026-10-18T00:00:00.000Z" };
+    const a2 = { ...article, slug: "b-older", date: "2026-10-10T00:00:00.000Z" };
+    await runSocialCron(env, new Date("2026-10-19T05:00:00Z"), { articles: [a2, a1] });
+    const launch = (slug: string) => db.posts.find((p) => p.source_key === `ar/${slug}:launch:webhook`)!.scheduled_at;
+    expect(launch("a-newer")).toBe("2026-10-19 06:55:00");
+    expect(launch("b-older")).toBe("2026-10-21 06:55:00");
+  });
+
   it("retries a failed post and gives up after three attempts", async () => {
     const db = fakeDb();
     vi.stubGlobal("fetch", async () => new Response("boom", { status: 500 }));

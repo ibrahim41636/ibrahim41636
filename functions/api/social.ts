@@ -184,7 +184,7 @@ async function hmacHex(secret: string, data: string) {
 }
 
 async function publishWebhook(env: SocialEnv, p: QueuedPost) {
-  const body = JSON.stringify({ id: p.id, lang: p.lang, variant: p.variant, title: p.title, text: p.text, link: p.link, image: p.image });
+  const body = JSON.stringify({ id: p.id, lang: p.lang, variant: p.variant, title: p.title, text: p.text, link: p.link, image: p.image, video: p.video ?? null });
   await check(await fetch(env.SOCIAL_WEBHOOK_URL!, {
     method: "POST",
     headers: { "content-type": "application/json", ...(env.SOCIAL_WEBHOOK_SECRET ? { "x-selorin-signature": await hmacHex(env.SOCIAL_WEBHOOK_SECRET, body) } : {}) },

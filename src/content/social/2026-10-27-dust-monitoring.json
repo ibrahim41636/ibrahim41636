@@ -7,9 +7,9 @@
     "https://selorin.co/ar/services/dust-monitoring/"
   ],
   "ar": {
-    "title": "رصد الغبار في موقع الإنشاء: من القراءة إلى الإجراء",
-    "text": "جهاز رصد الغبار في موقعك يسجّل القراءات، لكن هل يعرف أحد في الفريق ماذا يفعل عندما ترتفع؟\n\nقيمة الرصد المستمر للغبار في مواقع الإنشاء لا تُقاس بعدد الأجهزة، بل بما يحدث بعد القراءة. أربعة عناصر تصنع الفرق:\n\n• موقعان على الأقل: محطة قبل اتجاه الرياح وأخرى بعده، مع قياس سرعة الرياح واتجاهها. هكذا تميّز غبار موقعك عن الغبار القادم من خارجه.\n• المؤشرات المناسبة: PM10 وPM2.5 بحسب متطلبات المشروع، بأجهزة معايرة تسجّل البيانات باستمرار.\n• قيم تنبيه مرتبطة بإجراءات: عند المستوى الأول رش إضافي للطرق الداخلية ومناطق الحفر، وعند المستوى الأعلى إيقاف الأعمال المثيرة للغبار حتى تنخفض القراءات. ولكل مستوى مسؤول محدد.\n• سجل يثبت الاستجابة: وقت التنبيه، والإجراء المتخذ، ووقت عودة القراءات إلى مستواها المعتاد. هذا السجل هو ما تحتاجه عند أي شكوى أو تفتيش.\n\nابدأ بخريطة الموقع واتجاه الرياح السائد قبل اختيار الأجهزة.\n\nالتفاصيل في الرابط.\n\n#رصد_الغبار #جودة_الهواء #مشاريع_البناء #السعودية #سيلورين",
-    "x": "رصد الغبار في موقع الإنشاء لا يكفي وحده: محطة قبل اتجاه الرياح وأخرى بعده، وقيم تنبيه مرتبطة بإجراء ومسؤول، وسجل يثبت وقت الاستجابة. #رصد_الغبار",
+    "title": "رصد الغبار في موقع البناء: من القراءة إلى الإجراء",
+    "text": "متى كانت آخر مرة غيّرت فيها قراءةُ جهاز رصد الغبار شيئًا في موقعك؟\n\nقيمة الرصد المستمر للغبار في مواقع الإنشاء لا تُقاس بعدد الأجهزة، بل بما يحدث بعد ارتفاع القراءة. خمسة عناصر تصنع الفرق:\n\n• موقعان على الأقل: محطة قبل اتجاه الرياح وأخرى بعده، مع قياس سرعة الرياح واتجاهها، لتمييز غبار موقعك عن الغبار القادم من خارجه.\n• المؤشرات المناسبة: PM10 وPM2.5 بحسب متطلبات المشروع، بأجهزة معايرة تسجّل البيانات باستمرار، مع متابعة يومية لانقطاع البيانات.\n• قيم تنبيه مرتبطة بإجراءات: عند المستوى الأول رش إضافي للطرق الداخلية ومناطق الحفر، وعند المستوى الأعلى إيقاف الأعمال المثيرة للغبار حتى تنخفض القراءات، ولكل مستوى مسؤول باسمه.\n• سجل يثبت الاستجابة: وقت التنبيه، والإجراء المتخذ، ووقت عودة القراءات إلى مستواها المعتاد.\n• مراجعة أسبوعية: اربط الارتفاعات بالأنشطة، كالحفر وحركة الشاحنات والتكسير، لتعرف مصدر الغبار الحقيقي.\n\nوإن كانت مدينتك تفرض اشتراطات خاصة لضبط غبار البناء، فاجعل خطة الرصد مطابقة لها من اليوم الأول.\n\nالتفاصيل في الرابط.\n\n#رصد_الغبار #جودة_الهواء #مشاريع_البناء #السعودية #سيلورين",
+    "x": "جهاز رصد الغبار وحده لا يكفي: محطة قبل اتجاه الرياح وأخرى بعده، وقيم تنبيه مرتبطة بإجراء ومسؤول، وسجل يثبت وقت الاستجابة، ومراجعة أسبوعية تربط القراءات بالأنشطة. #رصد_الغبار",
     "link": "/ar/services/dust-monitoring/",
     "image": {
       "template": "tip",
@@ -19,13 +19,13 @@
     "video": true
   },
   "en": {
-    "title": "Construction dust monitoring: from reading to action",
-    "text": "Your site dust monitor records the readings. Does anyone on the team know what to do when they rise?\n\nThe value of continuous dust monitoring is not the number of devices. It is what happens after the reading. Four things make the difference:\n\n• At least two locations: one station upwind and one downwind, with wind speed and direction. That is how you separate your site's dust from dust blowing in.\n• The right parameters: PM10 and PM2.5 as the project requires, with calibrated instruments logging continuously.\n• Alert levels tied to actions: extra spraying of haul roads and excavation areas at the first level, and pausing dust-generating work at the higher level until readings fall. Each level has a named owner.\n• A log that proves the response: alert time, action taken and when readings returned to normal. This is what you need for a complaint or an inspection.\n\nStart with the site map and the prevailing wind before choosing equipment.\n\n#DustMonitoring #AirQuality #Construction",
+    "title": "Site dust monitoring: from reading to action",
+    "text": "When did a reading from your site dust monitor last change anything on site?\n\nThe value of continuous dust monitoring is not the number of devices but what happens after a reading rises. Five things matter:\n\n• Two locations at least: upwind and downwind, with wind speed and direction, to separate your dust from outside dust.\n• The right parameters: PM10 and PM2.5 as the project requires, on calibrated devices that log continuously, with a daily check for data gaps.\n• Trigger levels tied to actions: extra spraying of haul roads and excavation areas first, then stopping dusty works until readings fall, each level with a named owner.\n• A response log: alert time, action taken, and when readings returned to normal.\n• A weekly review linking peaks to activities such as excavation, truck movements and crushing.\n\nIf your city sets specific construction dust requirements, align the monitoring plan with them from day one.\n\nDetails at the link.\n\n#DustMonitoring #AirQuality #Construction",
     "link": "/services/dust-monitoring/",
     "image": {
       "template": "tip",
       "title": "Dust monitoring starts with a response plan",
-      "text": "Place one station upwind and one downwind, and tie each alert level to an action and an owner: extra spraying first, then pausing dusty work. Log the time of every response."
+      "text": "Place one station upwind and one downwind, and tie each trigger level to an action and an owner: extra spraying first, then stopping dusty works. Log every response time."
     }
   }
 }

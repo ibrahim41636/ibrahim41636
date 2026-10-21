@@ -57,8 +57,8 @@ SEND_CONFIRMATION = "true"
 # Lead log + sequential request IDs + rate limiting + request tracking (/track/). Create with:
 #   npx wrangler d1 create selorin-leads   → paste the database_id below
 #   npx wrangler d1 migrations apply selorin-leads --remote   (applies 0001–0004)
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "selorin-leads"
-# database_id = "[CONTENT REQUIRED]"
-# migrations_dir = "migrations"
+[[d1_databases]]
+binding = "DB"
+database_name = "selorin-leads"
+database_id = "e65bec51-3b21-44b5-afa2-1970f54519eb"
+migrations_dir = "migrations"

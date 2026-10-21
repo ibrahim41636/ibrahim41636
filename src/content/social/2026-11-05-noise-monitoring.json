@@ -2,29 +2,29 @@
   "date": "2026-11-05",
   "slot": 1,
   "pillar": "رصد الضوضاء",
-  "stage": "awareness",
+  "stage": "consideration",
   "sources": [
     "https://selorin.co/ar/services/noise-monitoring/"
   ],
   "ar": {
     "title": "رصد الضوضاء: قِس خط الأساس قبل بدء الأعمال",
-    "text": "تصل أول شكوى من الحي المجاور بعد أسبوع من بدء الحفر. هل لديك قياس تقارن به؟\n\nدون خط أساس للضوضاء، يصعب أن تثبت كم من الضجيج مصدره موقعك، وكم كان موجودًا أصلًا من الطرق والأنشطة المحيطة. والحل قياس يسبق دخول أول معدّة إلى الموقع.\n\nكيف تقيسون خط الأساس بطريقة يُعتمد عليها:\n• حدّدوا أقرب المستقبِلات الحساسة: المساكن والمدارس والمستشفيات والمساجد، وقيسوا عندها لا عند بوابة الموقع فقط.\n• غطّوا الفترات التي ستعمل فيها المعدات: النهار والمساء والليل، وأيام العمل والعطلة الأسبوعية.\n• استخدموا جهاز قياس مستوى صوت معايرًا، وتحقّقوا من معايرته ميدانيًا قبل كل جلسة قياس وبعدها.\n• سجّلوا مؤشرات مثل LAeq وLAmax وL90، مع الظروف الجوية ومصادر الضوضاء الملحوظة.\n• وثّقوا كل نقطة بإحداثياتها وصورها حتى يتكرر القياس في المكان نفسه أثناء التنفيذ.\n\nبهذا يصبح ردّكم على أي شكوى مبنيًا على بيانات، لا على تقديرات.\n\nتخطّطون لمشروع قرب منطقة سكنية؟ اطلب استشارة.\n\n#رصد_الضوضاء #الضوضاء_البيئية #مشاريع_البناء #السعودية #سيلورين",
-    "x": "أول شكوى ضوضاء تصل بعد بدء الحفر. هل لديك ما تقارن به؟ قِس خط الأساس عند المساكن والمدارس القريبة، نهارًا وليلًا، بجهاز معاير قبل دخول أول معدّة. #رصد_الضوضاء",
+    "text": "بدأت أعمال الحفر، ووصلت أول شكوى من الحي المجاور. كم كان مستوى الضوضاء قبل أن تبدأ؟\nإن لم تكن قد قسته، فلن تملك إجابة.\n\nقياس خط الأساس للضوضاء قبل تجهيز الموقع هو المرجع الذي تُقارن به كل قراءة لاحقة، وهو ما يفصل أثر مشروعك عن ضوضاء الطرق والمنشآت المجاورة.\n\nكيف تبني خط أساس يمكن الاعتماد عليه:\n• حدّد المستقبِلات الحساسة أولًا: المساكن والمدارس والمستشفيات والمساجد الأقرب إلى حدود الموقع.\n• قِس في الفترات التي سيعمل فيها المشروع فعلًا، نهارًا وليلًا، في أيام العمل وعطلة نهاية الأسبوع.\n• استخدم أجهزة قياس معايرة، وسجّل التحقق الميداني من المعايرة قبل كل قياس وبعده.\n• وثّق الظروف: سرعة الرياح، والمصادر الدخيلة كحركة المركبات، وموقع الجهاز بالصور والإحداثيات.\n• أبلغ عن مؤشرات واضحة مثل المستوى المكافئ المستمر (LAeq) والمستويات القصوى.\n\nبهذه البيانات تستطيع الرد على الشكوى بالأرقام، وضبط ساعات الأعمال الصاخبة وإجراءات التخفيف قبل أن تتحول المشكلة إلى نزاع أو ملاحظة رقابية.\n\nالتفاصيل في الرابط.\n\n#رصد_الضوضاء #الضوضاء_البيئية #مشاريع_البناء #السعودية #سيلورين",
+    "x": "أول شكوى ضوضاء من الجيران تبدأ بسؤال: كم كان المستوى قبل الأعمال؟ قِس خط الأساس عند المستقبِلات الحساسة، نهارًا وليلًا، بأجهزة معايرة وظروف موثقة. #رصد_الضوضاء",
     "link": "/ar/services/noise-monitoring/",
     "image": {
       "template": "tip",
       "title": "قِس الضوضاء قبل أن تبدأ الأعمال",
-      "text": "خط أساس عند المساكن والمدارس والمستشفيات القريبة، نهارًا وليلًا، بجهاز معاير ونقاط موثقة الإحداثيات، يجعل ردّك على أي شكوى مبنيًا على بيانات."
+      "text": "خط الأساس عند المساكن والمدارس الأقرب، نهارًا وليلًا، بأجهزة معايرة وظروف موثقة، هو المرجع الذي يفصل أثر مشروعك عن ضوضاء المحيط ويجعل ردك على أي شكوى مبنيًا على الأرقام."
     }
   },
   "en": {
     "title": "Noise monitoring: measure the baseline before works start",
-    "text": "The first neighbour complaint arrives a week into excavation. What will you compare it with?\n\nWithout a baseline, it is hard to show how much noise comes from your site and how much was already there from roads and nearby activity. The answer is a survey before the first machine arrives.\n\nHow to make the baseline count:\n• Measure at the nearest sensitive receptors (homes, schools, hospitals, mosques), not only at the site gate.\n• Cover the periods you will work: day, evening and night, weekdays and weekends.\n• Use a calibrated sound level meter and field-check it before and after each session.\n• Record LAeq, LAmax and L90, with weather conditions and noticeable sources.\n• Log each point with coordinates and photos so it can be repeated during construction.\n\nPlanning works near a residential area? Ask for a consultation.\n\n#NoiseMonitoring #Construction #SaudiArabia",
+    "text": "Excavation has started and the first complaint arrives from the neighbourhood.\nWhat were the noise levels before you began? If you never measured them, you have no answer.\n\nA baseline noise survey is the reference every later reading is compared against. It separates your project's impact from road traffic and neighbouring facilities.\n\nHow to build a baseline you can rely on:\n• Identify sensitive receptors first: the nearest homes, schools, hospitals and mosques.\n• Measure in the periods the project will actually operate, day and night, weekdays and weekends.\n• Use calibrated meters and record field calibration checks before and after each measurement.\n• Document conditions: wind speed, extraneous sources, and meter positions with photos and coordinates.\n• Report clear indicators such as LAeq and maximum levels.\n\nDetails at the link.\n\n#NoiseMonitoring #Construction #SaudiArabia",
     "link": "/services/noise-monitoring/",
     "image": {
       "template": "tip",
-      "title": "Measure noise before the works start",
-      "text": "A baseline at nearby homes, schools and hospitals, covering day and night, taken with a calibrated meter at documented points, lets you answer any complaint with data."
+      "title": "Measure noise before works start",
+      "text": "A baseline at the nearest homes and schools, day and night, with calibrated meters and documented conditions, separates your impact from background noise and lets you answer complaints with data."
     }
   }
 }

@@ -46,7 +46,8 @@ if (existsSync(campaignDir)) {
       const card = `public/social/campaign/${id}-${lang}.jpg`;
       if (!v?.video || !existsSync(card)) continue;
       const out = `public/social/video/campaign/${id}-${lang}.mp4`;
-      if (force || !existsSync(out)) jobs.push({ out, lang, cards: [card], line: v.title });
+      // One card: hold it for two slide lengths so there is time to read it.
+      if (force || !existsSync(out)) jobs.push({ out, lang, cards: [card, card], line: v.title });
     }
   }
 }

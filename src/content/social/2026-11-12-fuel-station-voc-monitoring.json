@@ -2,29 +2,29 @@
   "date": "2026-11-12",
   "slot": 1,
   "pillar": "رصد المركبات العضوية المتطايرة في محطات الوقود",
-  "stage": "consideration",
+  "stage": "awareness",
   "sources": [
     "https://selorin.co/ar/services/fuel-station-voc-monitoring/"
   ],
   "ar": {
     "title": "لماذا ترصد محطات الوقود المركبات العضوية المتطايرة؟",
-    "text": "لماذا تُرصد المركبات العضوية المتطايرة في محطة وقود لا يرى فيها أحد أي انبعاثات؟\n\nلأن أبخرة الوقود لا تُرى، لكنها تنطلق في لحظات محددة من تشغيل المحطة:\n• أثناء تفريغ الصهريج: يدفع الوقود الداخل إلى الخزانات الأرضية الأبخرةَ الموجودة فيها نحو أنابيب التهوية.\n• أثناء التعبئة: تخرج الأبخرة من خزان المركبة عند فوهة المضخة.\n• من أنابيب التهوية: مع تغيّر درجة الحرارة والضغط داخل الخزانات على مدار اليوم.\n\nولهذه الأبخرة أثران: تعرّض العاملين والعملاء والجوار القريب لمركّبات يضر بعضها بالصحة عند التعرض المتكرر، ومساهمتها في تكوّن الأوزون قرب سطح الأرض.\n\nماذا يتضمن الرصد الجيد للمركبات العضوية المتطايرة (VOCs)؟\n• حساسات ثابتة آمنة ذاتيًا ومناسبة للمناطق الخطرة، مثل كواشف التأين الضوئي (PID).\n• مواقع عند نقطة التفريغ وأنابيب التهوية ومنطقة المضخات وحدود المحطة.\n• تسجيل مستمر للبيانات، وإنذارات عند ارتفاع التراكيز.\n• صيانة ومعايرة دورية، وتقارير تتوافق مع اشتراطات التصريح البيئي للمحطة.\n\nتديرون محطة أو شبكة محطات؟ التفاصيل في الرابط.\n\n#محطات_الوقود #جودة_الهواء #المركبات_العضوية_المتطايرة #السعودية #سيلورين",
-    "x": "أبخرة الوقود لا تُرى، لكنها تنطلق أثناء تفريغ الصهاريج والتعبئة ومن أنابيب التهوية. الرصد المستمر بحساسات آمنة ذاتيًا يوثّق التراكيز وينبّه عند ارتفاعها. #محطات_الوقود",
+    "text": "رائحة الوقود عند تفريغ الصهريج أو تعبئة المركبات ليست تفصيلًا عابرًا، بل انبعاثات يمكن قياسها.\n\nلماذا ترصد محطات الوقود المركبات العضوية المتطايرة (VOCs)؟\n• مصادر الانبعاث معروفة: تفريغ الوقود في الخزانات الأرضية، وفتحات التهوية، ومضخات التعبئة.\n• العاملون في المحطة هم الأكثر تعرضًا لهذه الأبخرة يومًا بعد يوم.\n• المحطات داخل الأحياء قريبة من المساكن والمحال، فتصل الروائح والأبخرة إلى الجوار.\n• هذه المركبات تسهم في تكوّن الأوزون عند سطح الأرض، وهو من ملوثات الهواء.\n• قد تتضمن اشتراطات التصريح البيئي للمحطة رصدًا مستمرًا وسجلات وتقارير دورية.\n\nوما الذي يجعل نظام الرصد موثوقًا؟\n• حساسات آمنة ذاتيًا (intrinsically safe) مناسبة للمناطق الخطرة.\n• مواقع تركيب عند نقاط الانبعاث الرئيسة، لا حيث يسهل التركيب فقط.\n• معايرة دورية بغاز مرجعي موثق، مع إنذارات وتسجيل مستمر للبيانات.\n\nتحتاج دعمًا في التوريد أو التركيب أو الصيانة؟ التفاصيل في الرابط.\n\n#محطات_الوقود #جودة_الهواء #الرصد_البيئي #السعودية #سيلورين",
+    "x": "لماذا ترصد محطات الوقود المركبات العضوية المتطايرة؟ لأن التفريغ والتهوية والتعبئة تطلق أبخرة يتعرض لها العاملون والجوار. والحل: حساسات آمنة ذاتيًا ومعايرة موثقة. #محطات_الوقود",
     "link": "/ar/services/fuel-station-voc-monitoring/",
     "image": {
       "template": "faq",
-      "q": "لماذا تحتاج محطة الوقود إلى رصد المركبات العضوية المتطايرة (VOCs)؟",
-      "a": "لأن أبخرة الوقود تنطلق أثناء تفريغ الصهاريج والتعبئة ومن أنابيب التهوية، فتؤثر على العاملين والجوار وجودة الهواء. والرصد المستمر بحساسات آمنة ذاتيًا يوثّق التراكيز وينبّه عند ارتفاعها، ويدعم الالتزام باشتراطات التصريح البيئي."
+      "q": "لماذا ترصد محطات الوقود المركبات العضوية المتطايرة (VOCs)؟",
+      "a": "لأن تفريغ الوقود وفتحات التهوية ومضخات التعبئة تطلق أبخرة يتعرض لها العاملون والجوار، وتسهم في تكوّن الأوزون عند سطح الأرض. والرصد المستمر بحساسات آمنة ذاتيًا ومعايرة موثقة يقدم بيانات جاهزة حين تطلبها اشتراطات التصريح."
     }
   },
   "en": {
     "title": "Why do fuel stations monitor VOCs?",
-    "text": "Why monitor volatile organic compounds at a fuel station where nobody sees any emissions?\n\nBecause fuel vapour is invisible, and it is released at predictable moments:\n• Tanker unloading: incoming fuel pushes the vapour already in the underground tanks out through the vent pipes.\n• Refuelling: vapour escapes from the vehicle tank at the nozzle.\n• Vent pipes: tanks breathe as temperature and pressure change.\n\nIt matters because workers, customers and neighbours are exposed to compounds, some harmful with repeated exposure, and it adds to ground-level ozone.\n\nWhat good VOC monitoring includes:\n• Fixed, intrinsically safe sensors suited to hazardous areas, such as photoionisation detectors (PID).\n• Sensors at the unloading point, vents, dispensers and boundary.\n• Continuous data logging with high-concentration alarms.\n• Routine calibration, and reports aligned with the permit conditions.\n\nOperating a station or a network? Details at the link.\n\n#FuelStations #AirQuality #SaudiArabia",
+    "text": "The smell of fuel during unloading or refuelling is not a minor detail. It is an emission you can measure.\n\nWhy fuel stations monitor volatile organic compounds (VOCs):\n• The sources are known: unloading into underground tanks, vent pipes and dispensers.\n• Station staff are the most exposed, day after day.\n• Stations in neighbourhoods sit close to homes and shops.\n• VOCs contribute to ground-level ozone formation.\n• A station's environmental permit conditions may include continuous monitoring, records and reports.\n\nWhat makes a monitoring system reliable:\n• Intrinsically safe sensors suited to hazardous areas.\n• Sensors placed at the main emission points, not where installation is easiest.\n• Regular calibration with traceable reference gas, alarms and data logging.\n\nNeed supply, installation or maintenance? Details at the link.\n\n#FuelStations #AirQuality #SaudiArabia",
     "link": "/services/fuel-station-voc-monitoring/",
     "image": {
       "template": "faq",
-      "q": "Why does a fuel station need VOC monitoring?",
-      "a": "Fuel vapour is released during tanker unloading, refuelling and from vent pipes, affecting workers, neighbours and air quality. Continuous monitoring with intrinsically safe sensors records concentrations, raises alarms when they climb and supports the station's permit conditions."
+      "q": "Why do fuel stations monitor volatile organic compounds (VOCs)?",
+      "a": "Unloading, vent pipes and dispensers release vapours that staff and neighbours are exposed to, and VOCs contribute to ground-level ozone. Continuous monitoring with intrinsically safe sensors and documented calibration gives you data ready when permit conditions call for it."
     }
   }
 }

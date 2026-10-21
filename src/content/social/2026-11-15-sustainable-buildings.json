@@ -2,44 +2,34 @@
   "date": "2026-11-15",
   "slot": 1,
   "pillar": "المباني المستدامة",
-  "stage": "consideration",
+  "stage": "awareness",
   "sources": [
-    "https://selorin.co/ar/services/sustainable-buildings/"
+    "https://selorin.co/ar/services/sustainable-buildings/",
+    "https://rega.gov.sa/en/media-center/events/city-scape-2026/",
+    "https://cityscapeglobal.com/welcome-to-cityscape-global-2026"
   ],
   "ar": {
-    "title": "قبل شراء مبنى أو تطويره: 5 أسئلة عن الاستدامة",
-    "text": "المخططات والعوائد المتوقعة واضحة في العرض، لكن ماذا عن فاتورة التبريد بعد خمس سنوات؟\n\nقبل أن تشتري مبنى أو تبدأ تطوير مشروع، اطرح أسئلة تكشف أداءه البيئي وتكاليف تشغيله على المدى الطويل:\n\n• الطاقة والتبريد: هل توجد نمذجة للطاقة أو بيانات استهلاك فعلية؟ وما أداء الغلاف والزجاج والتظليل؟\n• المياه: هل التركيبات موفّرة، وهل توجد عدادات فرعية تكشف التسربات والاستهلاك غير المعتاد؟\n• الالتزام: كيف تحقّق التصميم من متطلبات كود البناء السعودي، بما فيها اشتراطات ترشيد الطاقة؟\n• التصنيف: هل يستهدف المشروع شهادة مثل مستدام أو LEED؟ وما الأدلة الموثقة حتى الآن؟\n• المواد والهواء الداخلي: ما مواد التشطيب المستخدمة، وكيف صُممت التهوية؟\n\nالإجابات الغامضة لا تعني بالضرورة مشروعًا ضعيفًا، لكنها تعني مخاطر يجب تسعيرها قبل القرار.\n\nوفي مرحلة التصميم يكون تحسين الأداء أقل كلفة. تحتاج مراجعة لمشروعك؟ اطلب استشارة.\n\n#المباني_المستدامة #العقار #كفاءة_الطاقة #السعودية #سيلورين",
-    "x": "قبل شراء مبنى أو تطويره، اسأل عن نمذجة الطاقة، وكفاءة المياه، والالتزام بكود البناء السعودي، والشهادة المستهدفة، وجودة الهواء الداخلي. #المباني_المستدامة #العقار",
+    "title": "قبل شراء مبنى أو تطويره: 6 أسئلة عن الاستدامة",
+    "text": "المخططات والصور تبيع المشروع، لكن فاتورة الكهرباء بعد التسليم لا تظهر في الكتيّب.\n\nفي معرض Cityscape Global بالرياض (16–19 نوفمبر 2026) تُعرض مشاريع كثيرة في وقت واحد. وقبل أن تشتري مبنى أو تدخل في تطويره، اطرح على المطوّر أو فريق التصميم هذه الأسئلة:\n\n• الطاقة: هل أُجريت محاكاة لأداء الطاقة؟ وما افتراضاتها للعزل والزجاج وأنظمة التكييف؟\n• التكييف: ما كفاءة النظام المختار، وهل حُجّم على أحمال محسوبة أم على تقدير تقريبي؟\n• المياه: ما الأدوات الموفرة للمياه المعتمدة في التصميم، وهل توجد عدادات لقياس الاستهلاك؟\n• المواد: ما مصادر المواد الرئيسة، وهل وُثّقت أسباب اختيارها؟\n• الشهادات: هل يستهدف المشروع تقييمًا مثل مستدام أو LEED؟ وهل هو مسجّل فقط أم حاصل على التقييم؟\n• التشغيل: هل ستُسلَّم أدلة تشغيل وصيانة وبيانات عدادات فرعية تتيح متابعة الأداء؟\n\nالإجابات الواضحة مؤشر على أن الاستدامة جزء من القرار التصميمي، لا إضافة تسويقية. وكلما طُرحت هذه الأسئلة مبكرًا، كان تحسين النتائج أقل كلفة.\n\nالتفاصيل في الرابط.\n\n#المباني_المستدامة #العقار #سيتي_سكيب #السعودية #سيلورين",
+    "x": "قبل شراء مبنى أو تطويره، اسأل: هل أُجريت محاكاة للطاقة؟ ما كفاءة التكييف؟ أين عدادات المياه؟ وهل المشروع مسجّل في مستدام أو LEED أم حاصل على التقييم؟ #المباني_المستدامة",
     "link": "/ar/services/sustainable-buildings/",
     "image": {
-      "template": "checklist",
-      "title": "اسأل قبل أن تشتري مبنى أو تطوّره",
-      "items": [
-        "الطاقة والتبريد: نمذجة أو بيانات استهلاك فعلية",
-        "المياه: تركيبات موفّرة وعدادات فرعية",
-        "الالتزام بمتطلبات ترشيد الطاقة في كود البناء السعودي",
-        "شهادة مستهدفة مثل مستدام أو LEED وأدلتها",
-        "المواد والتهوية وجودة الهواء الداخلي"
-      ],
-      "kicker": "5 أسئلة"
+      "template": "event",
+      "date": "Cityscape · 16–19 نوفمبر 2026",
+      "title": "أسئلة الاستدامة قبل شراء مبنى أو تطويره",
+      "text": "اسأل عن محاكاة أداء الطاقة، وكفاءة التكييف، وعدادات المياه، ومصادر المواد، وحالة شهادة مستدام أو LEED، وأدلة التشغيل بعد التسليم."
     },
     "video": true
   },
   "en": {
-    "title": "Buying or developing a building? 5 sustainability questions",
-    "text": "The plans and projected returns are clear in the brochure. What about the cooling bill in five years?\n\nBefore you buy a building or start a development, ask questions that reveal its environmental performance and long-term operating costs:\n\n• Energy and cooling: is there an energy model or real consumption data? How do the envelope, glazing and shading perform?\n• Water: are fixtures efficient, and are there sub-meters to catch leaks and unusual use?\n• Compliance: how did the design meet the Saudi Building Code, including its energy conservation requirements?\n• Rating: is the project pursuing Mostadam or LEED, and what evidence exists so far?\n• Materials and indoor air: what finishes are used, and how is ventilation designed?\n\nVague answers are not always a bad sign, but they are risks to price in before you decide.\n\nWant your project reviewed while changes still cost least? Ask for a consultation.\n\n#SustainableBuildings #RealEstate #SaudiArabia",
+    "title": "Before you buy or develop a building: 6 questions",
+    "text": "Renders sell the project, but the electricity bill after handover is not in the brochure.\n\nAt Cityscape Global in Riyadh (16–19 November 2026), many projects compete for attention at once. Before you buy or co-develop a building, ask the developer or design team:\n\n• Energy: was energy performance modelled, and with what assumptions for insulation, glazing and cooling?\n• Cooling: how efficient is the chosen system, and was it sized on calculated loads?\n• Water: which water-saving fixtures are specified, and is consumption metered?\n• Materials: where do the main materials come from, and are choices documented?\n• Rating: is the project targeting Mostadam or LEED? Registered only, or rated?\n• Operation: will O&M manuals and sub-meter data be handed over?\n\nClear answers show sustainability is part of the design, not marketing.\n\nDetails at the link.\n\n#SustainableBuildings #RealEstate #Cityscape",
     "link": "/services/sustainable-buildings/",
     "image": {
-      "template": "checklist",
-      "title": "Ask before you buy or develop a building",
-      "items": [
-        "Energy and cooling: an energy model or real consumption data",
-        "Water: efficient fixtures and sub-metering",
-        "Compliance with Saudi Building Code energy requirements",
-        "Target rating such as Mostadam or LEED, and its evidence",
-        "Materials, ventilation and indoor air quality"
-      ],
-      "kicker": "5 questions"
+      "template": "event",
+      "date": "Cityscape · 16–19 Nov 2026",
+      "title": "Sustainability questions before you buy or develop",
+      "text": "Ask about energy modelling, cooling efficiency, water metering, material sources, Mostadam or LEED status, and the O&M information handed over."
     }
   }
 }

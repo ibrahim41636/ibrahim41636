@@ -2,43 +2,43 @@
   "date": "2026-11-09",
   "slot": 1,
   "pillar": "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة",
-  "stage": "conversion",
+  "stage": "consideration",
   "sources": [
     "https://selorin.co/ar/services/renewable-energy-feasibility/"
   ],
   "ar": {
-    "title": "قبل مشروع طاقة شمسية لمنشأتك: 5 نقاط تحقق",
-    "text": "قبل أن توقّع عقد نظام شمسي لمصنعك أو مستودعك، هل تعرف متى تستهلك منشأتك الكهرباء فعلًا؟\n\nمساحة السطح وحدها لا تحدد جدوى المشروع. هذه قائمة تحقق قبل الالتزام:\n\n• ملف الأحمال: بيانات استهلاك لاثني عشر شهرًا على الأقل، مفصّلة بالساعة إن أمكن، لمعرفة الجزء من الإنتاج الذي ستستهلكه المنشأة مباشرة.\n• السطح أو الأرض: قدرة الهيكل على التحمل، والعمر المتبقي للعزل، والتظليل، وسهولة الوصول لتنظيف الألواح من الغبار.\n• الربط بالشبكة: سعة المحوّل ونقطة الربط، والتأكد من الاشتراطات النافذة لدى الجهات المختصة قبل احتساب أي عائد من الفائض.\n• التصاريح والفرز البيئي: الموافقات التي يحتاجها المشروع، وأي قيود بيئية أو استخدامات أراضٍ مجاورة قد تؤثر عليه.\n• التشغيل والصيانة: من سيتولى التنظيف والمراقبة واستبدال المكونات، وكم سيكلف ذلك طوال عمر النظام.\n\nالإجابة عن هذه النقاط مبكرًا تحمي الاستثمار من مفاجآت ما بعد التركيب.\n\nتحتاج دراسة جدوى واضحة قبل القرار؟ اطلب استشارة.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #دراسة_جدوى #السعودية #سيلورين",
-    "x": "قبل عقد نظام شمسي لمنشأتك: ملف أحمال لـ12 شهرًا، وحالة السطح، ونقطة الربط بالشبكة، والتصاريح، وخطة التشغيل والصيانة. مساحة السطح وحدها لا تكفي. #الطاقة_الشمسية",
+    "title": "قبل مشروع الطاقة الشمسية لمنشأتك: 5 أسئلة",
+    "text": "5 أسئلة أجب عنها قبل توقيع عقد نظام طاقة شمسية لمصنعك أو مستودعك أو مبناك التجاري.\n\nالعرض الفني من المورّد يجيب عادةً عن عدد الألواح والتكلفة. أما قرار الاستثمار فيحتاج إلى صورة أوسع:\n\n• ملف الأحمال: كم تستهلك المنشأة ساعة بساعة؟ النظام المصمم على متوسط الفاتورة الشهرية قد يُنتج في أوقات لا تحتاج فيها إلى الطاقة.\n• السطح أو الأرض: هل يتحمل السطح الأحمال الإضافية، وما عمره المتبقي؟ هل توجد ظلال من مبانٍ أو معدات مجاورة؟ وهل يغطي صك الأرض أو عقد الإيجار عمر المشروع؟\n• الربط بالشبكة: ما سعة نقطة الربط، وما المتطلبات الفنية والإجرائية لدى الجهات المختصة؟\n• التصاريح والفحص البيئي: ما الموافقات التي يحتاجها المشروع؟ وهل الموقع قريب من أودية أو موائل حساسة أو استخدامات قد تتأثر بالأعمال؟\n• التشغيل والصيانة: من ينظف الألواح ويتابع الأداء والأعطال، وكم يكلف ذلك على مدى عمر النظام؟\n\nنصيحة: اطلب تقديرًا للإنتاج السنوي من طرف مستقل عن المورّد، فهو الرقم الذي تُبنى عليه كل حسابات العائد.\n\nالتفاصيل في الرابط.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #دراسة_جدوى #السعودية #سيلورين",
+    "x": "قبل توقيع عقد نظام شمسي لمنشأتك: راجع ملف الأحمال، وحالة السطح أو الأرض، وسعة الربط بالشبكة، والتصاريح والفحص البيئي، وتكلفة التشغيل والصيانة. #الطاقة_الشمسية",
     "link": "/ar/services/renewable-energy-feasibility/",
     "image": {
       "template": "checklist",
       "title": "قبل الالتزام بمشروع طاقة شمسية لمنشأتك",
+      "kicker": "قائمة تحقق",
       "items": [
-        "ملف أحمال لـ12 شهرًا يوضح متى تستهلك المنشأة الكهرباء",
-        "السطح أو الأرض: التحمل الإنشائي والتظليل وسهولة التنظيف",
-        "نقطة الربط بالشبكة وسعتها والاشتراطات النافذة",
-        "التصاريح المطلوبة والفرز البيئي للموقع",
-        "خطة تشغيل وصيانة وتكلفتها طوال عمر النظام"
-      ],
-      "kicker": "قائمة تحقق"
+        "ملف الأحمال ساعة بساعة، لا متوسط الفاتورة الشهرية",
+        "حالة السطح أو الأرض والظلال ومدة الحيازة",
+        "سعة نقطة الربط بالشبكة ومتطلباتها",
+        "التصاريح اللازمة والفحص البيئي للموقع",
+        "خطة التشغيل والصيانة وتكلفتها على عمر النظام"
+      ]
     }
   },
   "en": {
-    "title": "Before a commercial solar project: 5 checks",
-    "text": "Before you sign for solar on your factory or warehouse, do you know when your site actually uses power?\n\nRoof area alone does not decide feasibility. Check these before you commit:\n\n• Load profile: at least twelve months of consumption data, hourly if possible, to see how much of the output the site will use directly.\n• Roof or land: structural capacity, remaining roof life, shading and safe access for cleaning dust off the panels.\n• Grid connection: transformer capacity and connection point, and the rules currently in force before you count on any value from surplus power.\n• Permits and environmental screening: which approvals the project needs, and any constraints from neighbouring land uses.\n• Operation and maintenance: who cleans, monitors and replaces components, and what that costs over the system's life.\n\nNeed a clear feasibility study before you decide? Ask for a consultation.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
+    "title": "Before you commit to a solar project: 5 questions",
+    "text": "Five questions to answer before you sign for a solar system on your factory, warehouse or commercial building.\n\nA supplier's proposal usually covers panel count and price. An investment decision needs more:\n\n• Load profile: how much does the site use hour by hour? A system sized on the average monthly bill may generate when you do not need it.\n• Roof or land: can the roof take the extra load, and how long will it last? Any shading? Does the deed or lease cover the project's life?\n• Grid connection: what capacity is available at the connection point, and what do the authorities require?\n• Permits and environmental screening: which approvals apply, and is the site near wadis, sensitive habitats or affected uses?\n• Operation and maintenance: who cleans panels and tracks performance, and at what lifetime cost?\n\nTip: get an annual yield estimate independent of the supplier.\n\nDetails at the link.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
     "link": "/services/renewable-energy-feasibility/",
     "image": {
       "template": "checklist",
-      "title": "Before you commit to a solar project on your site",
+      "title": "Before you commit to a solar project",
+      "kicker": "Checklist",
       "items": [
-        "A 12-month load profile showing when the site uses power",
-        "Roof or land: structure, shading and access for cleaning",
-        "Grid connection point, capacity and the rules in force",
+        "Hourly load profile, not the average monthly bill",
+        "Roof or land condition, shading and tenure",
+        "Grid connection capacity and requirements",
         "Required permits and environmental screening of the site",
-        "An O&M plan and its cost over the system's life"
-      ],
-      "kicker": "Checklist"
+        "O&M plan and its cost over the system's life"
+      ]
     }
   }
 }

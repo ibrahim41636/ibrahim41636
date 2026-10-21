@@ -7,38 +7,38 @@
     "https://selorin.co/ar/services/environmental-monitoring/"
   ],
   "ar": {
-    "title": "برنامج الرصد الذاتي: قائمة مراجعة قبل الجولة القادمة",
-    "text": "هل يصمد برنامج الرصد الذاتي لديكم أمام سؤال بسيط: كيف تأكدتم من صحة هذه القراءة؟\n\nالرصد الذاتي ليس جدول زيارات ميدانية، بل منظومة تربط كل قياس باشتراط في التصريح البيئي وبدليل على جودته. راجعوا برنامجكم مقابل هذه العناصر:\n\n• المعاملات: كل معامل مرتبط بمصدر انبعاث أو تصريف، أو باشتراط محدد في التصريح.\n• المواقع: نقاط مبرّرة، مثل اتجاه الرياح السائدة وحدود الموقع ونقاط التصريف، وثابتة بين جولات الرصد.\n• التكرار والمدة: يتبعان اشتراطات التصريح وأنماط التشغيل الفعلية، بما فيها فترات الذروة.\n• المعايرة: سجلات معايرة لكل جهاز، وفحوص ميدانية قبل القياس وبعده.\n• ضبط الجودة وتوكيدها (QA/QC): عيّنات مكررة وعيّنات فارغة، وسلسلة حيازة موثقة، ومختبر مؤهل للتحاليل المطلوبة.\n• التقارير: صيغة ومواعيد واضحة، وإجراء محدد للتصعيد عند تجاوز أي حد.\n\nالبيانات التي لا يمكن تتبّع جودتها تُضعف موقفكم بدل أن تدعمه.\n\nتحتاج مراجعة لبرنامج الرصد لديكم؟ التفاصيل في الرابط.\n\n#الرصد_البيئي #التصريح_البيئي #الامتثال_البيئي #السعودية #سيلورين",
-    "x": "هل يصمد برنامج الرصد الذاتي أمام سؤال: كيف تأكدتم من صحة هذه القراءة؟ راجع المعاملات والمواقع والتكرار والمعايرة وضبط الجودة والتقارير. #الرصد_البيئي",
+    "title": "برنامج الرصد الذاتي: ما الذي يجب أن يتضمنه؟",
+    "text": "برنامج الرصد الذاتي الجيد يجيب كتابيًا عن ستة أسئلة قبل أخذ أول عينة.\n\nحين تتوزع أعمال الرصد بين أكثر من مقاول، أو تتغير الطرق من فترة إلى أخرى، تصبح النتائج صعبة المقارنة ويصعب الدفاع عنها عند التفتيش. البرنامج الموثق يمنع ذلك:\n\n• المعاملات: ماذا نقيس؟ اربط كل معامل بالتزام محدد في التصريح البيئي أو الدراسة البيئية المعتمدة.\n• المواقع: أين نقيس؟ نقاط ثابتة بإحداثيات، تشمل المصدر وحدود الموقع والمستقبِلات الحساسة عند الحاجة.\n• التكرار: متى وكم مرة؟ وفق اشتراطات التصريح، مع مراعاة دورات التشغيل والمواسم.\n• المعايرة: سجل معايرة لكل جهاز، بمرجعية موثقة وتواريخ واضحة.\n• ضبط الجودة وتوكيدها (QA/QC): عينات مكررة وعينات فارغة، وسلسلة حيازة، ومراجعة للبيانات قبل اعتمادها.\n• التقارير: نموذج ثابت يقارن النتائج بالحدود وبالفترات السابقة، ويوضح الإجراء التصحيحي عند أي تجاوز.\n\nنصيحة: راجع البرنامج عند كل تعديل في التصريح أو تغيير في العمليات، لا عند التجديد فقط.\n\nالتفاصيل في الرابط.\n\n#الرصد_البيئي #الامتثال_البيئي #التصريح_البيئي #سيلورين",
+    "x": "برنامج الرصد الذاتي يحدد كتابيًا: المعاملات، والمواقع، والتكرار، والمعايرة، وضبط الجودة، ونموذج التقارير. وراجعه مع كل تعديل في التصريح أو العمليات. #الرصد_البيئي",
     "link": "/ar/services/environmental-monitoring/",
     "image": {
       "template": "checklist",
-      "title": "برنامج رصد ذاتي يصمد أمام المراجعة",
+      "title": "عناصر برنامج الرصد الذاتي",
+      "kicker": "قائمة تحقق",
       "items": [
-        "معاملات مرتبطة بمصادر الانبعاث واشتراطات التصريح",
-        "مواقع رصد مبرّرة وثابتة بين الجولات",
-        "تكرار يتبع التصريح وأنماط التشغيل الفعلية",
-        "سجلات معايرة وفحوص ميدانية قبل القياس وبعده",
-        "ضبط جودة وسلسلة حيازة وتقارير بمواعيد واضحة"
-      ],
-      "kicker": "قائمة مراجعة"
+        "معاملات مرتبطة بالتزامات التصريح البيئي",
+        "نقاط رصد ثابتة بإحداثيات موثقة",
+        "تكرار يراعي دورات التشغيل والمواسم",
+        "سجلات معايرة وضبط الجودة (QA/QC)",
+        "تقارير تقارن النتائج بالحدود والفترات السابقة"
+      ]
     }
   },
   "en": {
-    "title": "Self-monitoring programme: a review checklist",
-    "text": "Would your self-monitoring programme survive a simple question: how do you know this reading is right?\n\nSelf-monitoring is not a schedule of site visits. It is a system that ties every measurement to a permit condition and to evidence of its quality. Review yours against these points:\n\n• Parameters: each one linked to an emission or discharge source, or to a specific permit condition.\n• Locations: justified points (prevailing wind, site boundary, discharge points), kept the same between rounds.\n• Frequency and duration: set by permit conditions and actual operating patterns, including peaks.\n• Calibration: records for every instrument, with field checks before and after measuring.\n• QA/QC: duplicates and blanks, a documented chain of custody, and a lab qualified for the analyses.\n• Reporting: a clear format and schedule, and an escalation step for any exceedance.\n\nWant your monitoring programme reviewed? Details at the link.\n\n#EnvironmentalMonitoring #Compliance #SaudiArabia",
+    "title": "Self-monitoring programme: what it must include",
+    "text": "A good self-monitoring programme answers six questions in writing before the first sample is taken.\n\nWhen monitoring is split between contractors, or methods change between periods, results become hard to compare and hard to defend at inspection. A documented programme prevents that:\n\n• Parameters: what do we measure? Link each one to a specific permit or approved study commitment.\n• Locations: where? Fixed points with coordinates.\n• Frequency: when and how often? As the permit requires, reflecting operating cycles and seasons.\n• Calibration: a record for every instrument, with documented traceability.\n• QA/QC: duplicates and blanks, chain of custody, data review before sign-off.\n• Reporting: a fixed format comparing results with limits and previous periods.\n\nTip: review the programme whenever the permit or operations change.\n\nDetails at the link.\n\n#EnvironmentalMonitoring #Compliance #SaudiArabia",
     "link": "/services/environmental-monitoring/",
     "image": {
       "template": "checklist",
-      "title": "A self-monitoring programme that stands up to review",
+      "title": "Self-monitoring programme essentials",
+      "kicker": "Checklist",
       "items": [
-        "Parameters linked to emission sources and permit conditions",
-        "Justified monitoring locations, fixed between rounds",
-        "Frequency set by the permit and real operating patterns",
-        "Calibration records and field checks before and after",
-        "QA/QC, chain of custody and reports on a clear schedule"
-      ],
-      "kicker": "Review checklist"
+        "Parameters linked to permit commitments",
+        "Fixed monitoring points with documented coordinates",
+        "Frequency that reflects operating cycles and seasons",
+        "Calibration records and QA/QC",
+        "Reports comparing results with limits and past periods"
+      ]
     }
   }
 }

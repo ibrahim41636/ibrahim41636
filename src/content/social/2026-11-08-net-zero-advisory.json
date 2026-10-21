@@ -4,16 +4,18 @@
   "pillar": "استشارات الحياد الصفري",
   "stage": "awareness",
   "sources": [
-    "https://selorin.co/ar/services/net-zero-advisory/"
+    "https://selorin.co/ar/services/net-zero-advisory/",
+    "https://en.wikipedia.org/wiki/2026_United_Nations_Climate_Change_Conference",
+    "https://www.bmluk.gv.at/service/veranstaltungen/klima-und-umwelt/weltklimakonferenz-2026.html"
   ],
   "ar": {
     "title": "COP31 وأهداف المناخ: من أين تبدأ شركتك؟",
-    "text": "حين تتصدر مؤتمرات المناخ مثل COP31 العناوين، يصل إلى مجلس الإدارة سؤال مباشر: ما هدفنا المناخي نحن؟\n\nالإجابة الجادة لا تبدأ بسنة مستهدفة تُعلن ثم تُراجع، بل بنقطة انطلاق يمكن الدفاع عنها: جرد انبعاثات غازات الاحتباس الحراري.\n\nقبل أي إعلان، اسأل فريقك خمسة أسئلة:\n• هل حدود الجرد واضحة ومبنية على إطار معروف مثل بروتوكول غازات الاحتباس الحراري (GHG Protocol) أو ISO 14064-1؟\n• هل بيانات النطاقين 1 و2 مأخوذة من مصادرها: فواتير الوقود والكهرباء، وسجلات المولدات وغازات التبريد؟\n• هل معاملات الانبعاث موثقة المصدر ومطبقة بثبات من سنة إلى أخرى؟\n• هل حُددت سنة الأساس وسياسة إعادة احتسابها عند الاستحواذ أو تغيّر الأنشطة؟\n• هل يستطيع مراجع مستقل تتبّع الرقم النهائي حتى الفاتورة؟\n\nإذا كانت الإجابات واضحة، يصبح تحويل خط الأساس إلى مستهدفات خفض واقعية وخارطة طريق محددة التكاليف خطوة منطقية يعتمدها المجلس ويتابع تنفيذها.\n\nتحتاج دعمًا في بناء خط الأساس؟ اطلب استشارة.\n\n#الحياد_الصفري #COP31 #انبعاثات_الكربون #السعودية #سيلورين",
+    "text": "مع انعقاد مؤتمر المناخ COP31 في أنطاليا بتركيا (9–20 نوفمبر 2026)، يصل إلى مجلس الإدارة سؤال مباشر: ما هدفنا المناخي نحن؟\n\nالإجابة الجادة لا تبدأ بسنة مستهدفة تُعلن ثم تُراجع، بل بنقطة انطلاق يمكن الدفاع عنها: جرد انبعاثات غازات الاحتباس الحراري.\n\nقبل أي إعلان، اسأل فريقك خمسة أسئلة:\n• هل حدود الجرد واضحة ومبنية على إطار معروف مثل بروتوكول غازات الاحتباس الحراري (GHG Protocol) أو ISO 14064-1؟\n• هل بيانات النطاقين 1 و2 مأخوذة من مصادرها: فواتير الوقود والكهرباء، وسجلات المولدات وغازات التبريد؟\n• هل معاملات الانبعاث موثقة المصدر ومطبقة بثبات من سنة إلى أخرى؟\n• هل حُددت سنة الأساس وسياسة إعادة احتسابها عند الاستحواذ أو تغيّر الأنشطة؟\n• هل يستطيع مراجع مستقل تتبّع الرقم النهائي حتى الفاتورة؟\n\nإذا كانت الإجابات واضحة، يصبح تحويل خط الأساس إلى مستهدفات خفض واقعية وخارطة طريق محددة التكاليف خطوة منطقية يعتمدها المجلس ويتابع تنفيذها.\n\nتحتاج دعمًا في بناء خط الأساس؟ اطلب استشارة.\n\n#الحياد_الصفري #COP31 #انبعاثات_الكربون #السعودية #سيلورين",
     "x": "مؤتمرات المناخ مثل COP31 تعيد سؤال المجلس: ما هدفنا؟ ابدأ بجرد انبعاثات موثوق: حدود واضحة، وبيانات النطاقين 1 و2 من مصادرها، وسنة أساس محددة. #الحياد_الصفري #COP31",
     "link": "/ar/services/net-zero-advisory/",
     "image": {
       "template": "event",
-      "date": "مؤتمر المناخ COP31",
+      "date": "COP31 · 9–20 نوفمبر 2026",
       "title": "هدفك المناخي يبدأ بجرد انبعاثات موثوق",
       "text": "قبل إعلان أي هدف: حدود جرد واضحة، وبيانات النطاقين 1 و2 من مصادرها، ومعاملات انبعاث موثقة، وسنة أساس محددة يستطيع المراجع تتبّعها."
     },
@@ -21,11 +23,11 @@
   },
   "en": {
     "title": "COP31 and climate targets: where your company starts",
-    "text": "When climate conferences such as COP31 lead the headlines, boards ask a direct question: what is our target?\n\nA serious answer does not start with a target year that is announced and later revised. It starts with a defensible baseline: a greenhouse gas inventory.\n\nBefore any announcement, ask your team:\n• Are inventory boundaries clear and based on a recognised framework such as the GHG Protocol or ISO 14064-1?\n• Is Scope 1 and 2 data taken from source records: fuel and electricity bills, generator logs, refrigerant records?\n• Are emission factors documented and applied consistently?\n• Is there a base year and a recalculation policy?\n• Can an independent reviewer trace the total back to the invoice?\n\nWith clear answers, turning the baseline into realistic targets and a costed roadmap becomes a logical next step.\n\nNeed help with your baseline? Request a consultation.\n\n#NetZero #COP31 #GHGInventory",
+    "text": "As COP31 meets in Antalya, Türkiye (9–20 November 2026), boards ask a direct question: what is our target?\n\nA serious answer does not start with a target year that is announced and later revised. It starts with a defensible baseline: a greenhouse gas inventory.\n\nBefore any announcement, ask your team:\n• Are inventory boundaries clear and based on a recognised framework such as the GHG Protocol or ISO 14064-1?\n• Is Scope 1 and 2 data taken from source records: fuel and electricity bills, generator logs, refrigerant records?\n• Are emission factors documented and applied consistently?\n• Is there a base year and a recalculation policy?\n• Can an independent reviewer trace the total back to the invoice?\n\nWith clear answers, turning the baseline into realistic targets and a costed roadmap becomes a logical next step.\n\nNeed help with your baseline? Request a consultation.\n\n#NetZero #COP31 #GHGInventory",
     "link": "/services/net-zero-advisory/",
     "image": {
       "template": "event",
-      "date": "COP31 climate conference",
+      "date": "COP31 · 9–20 Nov 2026",
       "title": "Your climate target starts with a credible inventory",
       "text": "Before announcing any target: clear inventory boundaries, Scope 1 and 2 data from source records, documented emission factors and a base year a reviewer can trace."
     }

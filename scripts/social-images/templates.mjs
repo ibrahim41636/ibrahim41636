@@ -183,7 +183,7 @@ export function event(lang, { date, title, text }) {
   <div style="position:absolute;inset:0;background:${C.deep}"></div>
   ${contours(C.mint, 0.13, 9)}
   <div style="position:absolute;inset-inline:72px;top:96px;bottom:200px;display:flex;flex-direction:column;gap:40px;z-index:2">
-    <div style="align-self:flex-start;border:2px solid ${C.mint};border-radius:24px;padding:22px 34px;color:${C.mint};font-size:44px;font-weight:700">${esc(date)}</div>
+    <div style="align-self:flex-start;border:2px solid ${C.mint};border-radius:24px;padding:22px 34px;color:${C.mint};font-size:44px;font-weight:700">${String(date).split(" · ").map((part) => `<bdi>${esc(part)}</bdi>`).join(" · ")}</div>
     <h1 data-fit="36" style="max-height:420px;color:#fff;font-size:78px;line-height:1.3;font-weight:700">${esc(title)}</h1>
     <p data-fit="22" style="flex:1;color:rgba(255,255,255,.86);font-size:38px;line-height:1.6">${esc(text)}</p>
   </div>

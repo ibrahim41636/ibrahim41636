@@ -4,16 +4,18 @@
   "pillar": "المباني المستدامة",
   "stage": "awareness",
   "sources": [
-    "https://selorin.co/ar/services/sustainable-buildings/"
+    "https://selorin.co/ar/services/sustainable-buildings/",
+    "https://rega.gov.sa/en/media-center/events/city-scape-2026/",
+    "https://cityscapeglobal.com/welcome-to-cityscape-global-2026"
   ],
   "ar": {
     "title": "قبل شراء مبنى أو تطويره: 6 أسئلة عن الاستدامة",
-    "text": "المخططات والصور تبيع المشروع، لكن فاتورة الكهرباء بعد التسليم لا تظهر في الكتيّب.\n\nفي معارض العقار مثل Cityscape Global تُعرض مشاريع كثيرة في وقت واحد. وقبل أن تشتري مبنى أو تدخل في تطويره، اطرح على المطوّر أو فريق التصميم هذه الأسئلة:\n\n• الطاقة: هل أُجريت محاكاة لأداء الطاقة؟ وما افتراضاتها للعزل والزجاج وأنظمة التكييف؟\n• التكييف: ما كفاءة النظام المختار، وهل حُجّم على أحمال محسوبة أم على تقدير تقريبي؟\n• المياه: ما الأدوات الموفرة للمياه المعتمدة في التصميم، وهل توجد عدادات لقياس الاستهلاك؟\n• المواد: ما مصادر المواد الرئيسة، وهل وُثّقت أسباب اختيارها؟\n• الشهادات: هل يستهدف المشروع تقييمًا مثل مستدام أو LEED؟ وهل هو مسجّل فقط أم حاصل على التقييم؟\n• التشغيل: هل ستُسلَّم أدلة تشغيل وصيانة وبيانات عدادات فرعية تتيح متابعة الأداء؟\n\nالإجابات الواضحة مؤشر على أن الاستدامة جزء من القرار التصميمي، لا إضافة تسويقية. وكلما طُرحت هذه الأسئلة مبكرًا، كان تحسين النتائج أقل كلفة.\n\nالتفاصيل في الرابط.\n\n#المباني_المستدامة #العقار #سيتي_سكيب #السعودية #سيلورين",
+    "text": "المخططات والصور تبيع المشروع، لكن فاتورة الكهرباء بعد التسليم لا تظهر في الكتيّب.\n\nفي معرض Cityscape Global بالرياض (16–19 نوفمبر 2026) تُعرض مشاريع كثيرة في وقت واحد. وقبل أن تشتري مبنى أو تدخل في تطويره، اطرح على المطوّر أو فريق التصميم هذه الأسئلة:\n\n• الطاقة: هل أُجريت محاكاة لأداء الطاقة؟ وما افتراضاتها للعزل والزجاج وأنظمة التكييف؟\n• التكييف: ما كفاءة النظام المختار، وهل حُجّم على أحمال محسوبة أم على تقدير تقريبي؟\n• المياه: ما الأدوات الموفرة للمياه المعتمدة في التصميم، وهل توجد عدادات لقياس الاستهلاك؟\n• المواد: ما مصادر المواد الرئيسة، وهل وُثّقت أسباب اختيارها؟\n• الشهادات: هل يستهدف المشروع تقييمًا مثل مستدام أو LEED؟ وهل هو مسجّل فقط أم حاصل على التقييم؟\n• التشغيل: هل ستُسلَّم أدلة تشغيل وصيانة وبيانات عدادات فرعية تتيح متابعة الأداء؟\n\nالإجابات الواضحة مؤشر على أن الاستدامة جزء من القرار التصميمي، لا إضافة تسويقية. وكلما طُرحت هذه الأسئلة مبكرًا، كان تحسين النتائج أقل كلفة.\n\nالتفاصيل في الرابط.\n\n#المباني_المستدامة #العقار #سيتي_سكيب #السعودية #سيلورين",
     "x": "قبل شراء مبنى أو تطويره، اسأل: هل أُجريت محاكاة للطاقة؟ ما كفاءة التكييف؟ أين عدادات المياه؟ وهل المشروع مسجّل في مستدام أو LEED أم حاصل على التقييم؟ #المباني_المستدامة",
     "link": "/ar/services/sustainable-buildings/",
     "image": {
       "template": "event",
-      "date": "Cityscape Global",
+      "date": "Cityscape · 16–19 نوفمبر 2026",
       "title": "أسئلة الاستدامة قبل شراء مبنى أو تطويره",
       "text": "اسأل عن محاكاة أداء الطاقة، وكفاءة التكييف، وعدادات المياه، ومصادر المواد، وحالة شهادة مستدام أو LEED، وأدلة التشغيل بعد التسليم."
     },
@@ -21,11 +23,11 @@
   },
   "en": {
     "title": "Before you buy or develop a building: 6 questions",
-    "text": "Renders sell the project, but the electricity bill after handover is not in the brochure.\n\nAt real estate shows such as Cityscape Global, many projects compete for attention at once. Before you buy or co-develop a building, ask the developer or design team:\n\n• Energy: was energy performance modelled, and with what assumptions for insulation, glazing and cooling?\n• Cooling: how efficient is the chosen system, and was it sized on calculated loads?\n• Water: which water-saving fixtures are specified, and is consumption metered?\n• Materials: where do the main materials come from, and are choices documented?\n• Rating: is the project targeting Mostadam or LEED? Registered only, or rated?\n• Operation: will O&M manuals and sub-meter data be handed over?\n\nClear answers show sustainability is part of the design, not marketing.\n\nDetails at the link.\n\n#SustainableBuildings #RealEstate #Cityscape",
+    "text": "Renders sell the project, but the electricity bill after handover is not in the brochure.\n\nAt Cityscape Global in Riyadh (16–19 November 2026), many projects compete for attention at once. Before you buy or co-develop a building, ask the developer or design team:\n\n• Energy: was energy performance modelled, and with what assumptions for insulation, glazing and cooling?\n• Cooling: how efficient is the chosen system, and was it sized on calculated loads?\n• Water: which water-saving fixtures are specified, and is consumption metered?\n• Materials: where do the main materials come from, and are choices documented?\n• Rating: is the project targeting Mostadam or LEED? Registered only, or rated?\n• Operation: will O&M manuals and sub-meter data be handed over?\n\nClear answers show sustainability is part of the design, not marketing.\n\nDetails at the link.\n\n#SustainableBuildings #RealEstate #Cityscape",
     "link": "/services/sustainable-buildings/",
     "image": {
       "template": "event",
-      "date": "Cityscape Global",
+      "date": "Cityscape · 16–19 Nov 2026",
       "title": "Sustainability questions before you buy or develop",
       "text": "Ask about energy modelling, cooling efficiency, water metering, material sources, Mostadam or LEED status, and the O&M information handed over."
     }

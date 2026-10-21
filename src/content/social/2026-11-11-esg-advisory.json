@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-11",
+  "slot": 1,
+  "pillar": "استشارات الحوكمة البيئية والاجتماعية والمؤسسية (ESG)",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/esg-advisory/"
+  ],
+  "ar": {
+    "title": "خرافة: ESG يخص الشركات المدرجة فقط",
+    "text": "«لسنا شركة مدرجة، فلا يعنينا ESG». ثم يصل استبيان استدامة من أكبر عملائكم.\n\nالحوكمة البيئية والاجتماعية والمؤسسية (ESG) لا تقتصر على الإفصاح في السوق المالية. فالمورد قد يتلقى طلب بيانات من عميل يعدّ تقرير الاستدامة الخاص به، أو من جهة تمويل تقيّم المخاطر، أو من مشترٍ دولي يراجع سلسلة إمداده.\n\nوالتحدي عادةً ليس السؤال نفسه، بل غياب بيانات جاهزة للإجابة عنه. ابدأوا بمجموعة بيانات أساسية:\n• استهلاك الطاقة والوقود والمياه شهريًا.\n• كميات النفايات وطرق التخلص منها.\n• تقدير انبعاثات النطاقين 1 و2.\n• مؤشرات الصحة والسلامة المهنية.\n• السياسات المعتمدة، والمسؤول عن كل مؤشر.\n\nواحتفظوا بالدليل خلف كل رقم، فالسؤال التالي في الغالب: ما مصدر هذا الرقم؟\n\nالمورد الذي يجيب بسرعة وبأدلة واضحة يسهّل على عميله قرار الاستمرار معه.\n\nتستعدون لطلبات بيانات من العملاء أو الممولين؟ اطلب استشارة.\n\n#ESG #الاستدامة #سلاسل_الإمداد #السعودية #سيلورين",
+    "x": "«لسنا شركة مدرجة، فلا يعنينا ESG». ثم يصل استبيان من أكبر عملائك. جهّز بيانات الطاقة والمياه والنفايات والانبعاثات والسلامة، والدليل خلف كل رقم. #ESG #الاستدامة",
+    "link": "/ar/services/esg-advisory/",
+    "image": {
+      "template": "myth",
+      "myth": "تقارير ESG تخص الشركات المدرجة في السوق المالية فقط.",
+      "fact": "قد يطلب العملاء والممولون والمشترون الدوليون من مورديهم بيانات عن الطاقة والانبعاثات والنفايات والسلامة والحوكمة. والمورد الذي يجهّز بياناته وأدلتها مسبقًا يجيب بسرعة وثقة."
+    }
+  },
+  "en": {
+    "title": "Myth: ESG is only for listed companies",
+    "text": "\"We are not listed, so ESG does not apply to us.\" Then your largest customer sends a questionnaire.\n\nESG is not only about stock-market disclosure. A supplier may receive data requests from a customer preparing its own sustainability report, a lender assessing risk, or an international buyer reviewing its supply chain.\n\nThe hard part is rarely the question; it is having no data ready to answer it. Start with a basic data set:\n• Monthly energy, fuel and water use.\n• Waste quantities and disposal routes.\n• An estimate of Scope 1 and 2 emissions.\n• Health and safety indicators.\n• Approved policies, and an owner for each indicator.\n\nKeep the evidence behind every number. The next question is usually: where does this figure come from?\n\nPreparing for data requests from customers or lenders? Ask for a consultation.\n\n#ESG #Sustainability #SupplyChain",
+    "link": "/services/esg-advisory/",
+    "image": {
+      "template": "myth",
+      "myth": "ESG reporting is only for companies listed on the stock market.",
+      "fact": "Customers, lenders and international buyers may ask suppliers for data on energy, emissions, waste, safety and governance. Suppliers who prepare that data and its evidence in advance can answer quickly and with confidence."
+    }
+  }
+}

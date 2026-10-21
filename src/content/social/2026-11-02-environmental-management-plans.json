@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-02",
+  "slot": 2,
+  "pillar": "خطط الإدارة البيئية",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-management-plans/"
+  ],
+  "ar": {
+    "title": "ماذا تتضمن خطة الإدارة البيئية للإنشاء (CEMP)؟",
+    "text": "خطة الإدارة البيئية للإنشاء (CEMP) ليست ملفًا يُقدَّم للاعتماد ثم يُحفظ في الأدراج.\n\nهي دليل العمل اليومي في الموقع، والمرجع الذي يُسأل عنه المقاول عند أي ملاحظة. والخطة الجيدة تغطي خمسة محاور:\n\n• الجوانب البيئية للموقع: الغبار، والضوضاء، والمياه والصرف، والنفايات، والمواد الكيميائية والوقود، والحياة الفطرية إن وُجدت.\n• إجراءات الضبط لكل جانب: الرش، وتغطية الشاحنات، وأوقات الأعمال الصاخبة، ومناطق تخزين الوقود المحمية، وفرز النفايات.\n• برنامج الرصد: ما يُقاس، وأين، وبأي تكرار، وما قيم التنبيه.\n• المسؤوليات بالأدوار والأسماء: من ينفّذ، ومن يتابع، ومن يملك صلاحية إيقاف العمل، بما في ذلك المقاولون من الباطن.\n• السجلات والتقارير: سجلات يومية وأسبوعية، وتقارير دورية للمالك وللجهة المختصة بحسب اشتراطات التصريح، وإجراء واضح للشكاوى والحوادث.\n\nاختبار بسيط: اسأل مشرف الموقع عن الإجراء المطلوب عند ارتفاع الغبار. إذا لم يجد الجواب في الخطة، فالخطة تحتاج إلى مراجعة.\n\nالتفاصيل في الرابط.\n\n#خطة_الإدارة_البيئية #مشاريع_البناء #الامتثال_البيئي #السعودية #سيلورين",
+    "x": "خطة الإدارة البيئية للإنشاء (CEMP) الجيدة تغطي: الجوانب البيئية، وإجراءات الضبط، وبرنامج الرصد، والمسؤوليات بالأسماء، والسجلات والتقارير. هل يعرف مشرف موقعك ما فيها؟ #خطة_الإدارة_البيئية",
+    "link": "/ar/services/environmental-management-plans/",
+    "image": {
+      "template": "checklist",
+      "title": "خطة الإدارة البيئية للإنشاء (CEMP) تغطي",
+      "kicker": "قائمة تحقق",
+      "items": [
+        "الجوانب البيئية: الغبار والضوضاء والمياه والنفايات والوقود",
+        "إجراءات ضبط محددة لكل جانب",
+        "برنامج رصد: ماذا يُقاس وأين وبأي تكرار",
+        "مسؤوليات واضحة تشمل المقاولين من الباطن",
+        "سجلات وتقارير دورية وإجراء للشكاوى والحوادث"
+      ]
+    }
+  },
+  "en": {
+    "title": "What a construction environmental management plan covers",
+    "text": "A construction environmental management plan (CEMP) is not a file you submit for approval and then shelve.\n\nIt is the site's working guide, and the first thing checked when an issue comes up. A good plan covers five areas:\n\n• Environmental aspects: dust, noise, water and drainage, waste, chemicals and fuel, and wildlife where relevant.\n• Controls for each aspect: spraying, covered trucks, hours for noisy work, bunded fuel storage, waste segregation.\n• Monitoring programme: what is measured, where, how often, and the alert levels.\n• Named roles: who acts, who checks and who can stop work, including subcontractors.\n• Records and reporting: daily and weekly logs, periodic reports to the owner and, where the permit requires it, the authority, plus a clear procedure for complaints and incidents.\n\nA simple test: ask your site supervisor what to do when dust levels rise. If the answer is not in the plan, the plan needs a review.\n\n#CEMP #EnvironmentalManagement #Construction",
+    "link": "/services/environmental-management-plans/",
+    "image": {
+      "template": "checklist",
+      "title": "A construction EMP (CEMP) covers",
+      "kicker": "Checklist",
+      "items": [
+        "Aspects: dust, noise, water, waste and fuel",
+        "Specific controls for each aspect",
+        "Monitoring: what is measured, where and how often",
+        "Named responsibilities, including subcontractors",
+        "Records, periodic reports and a complaints procedure"
+      ]
+    }
+  }
+}

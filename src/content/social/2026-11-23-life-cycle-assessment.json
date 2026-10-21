@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-23",
+  "slot": 1,
+  "pillar": "تقييم دورة الحياة",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/life-cycle-assessment/"
+  ],
+  "ar": {
+    "title": "أقل انبعاثات في المصنع لا تعني أقل أثر بيئي",
+    "text": "أي المنتجين أقل أثرًا: الذي يُصنَّع بانبعاثات أقل، أم الذي يدوم ضعف المدة ويستهلك طاقة أقل أثناء تشغيله؟\n\nالخرافة: المنتج الأقل انبعاثات في المصنع هو الأقل بصمة بيئية.\nالحقيقة: التصنيع مرحلة واحدة من القصة. تقييم دورة الحياة (LCA) وفق ISO 14040 وISO 14044 ينظر إلى المراحل كلها:\n\n• المواد الخام: استخراجها ومعالجتها قد يكونان أثقل أثرًا من التصنيع نفسه.\n• النقل: مسافات التوريد ووسائل نقل المواد والمنتج النهائي.\n• الاستخدام: في المنتجات المستهلكة للطاقة أو المياه، مثل أجهزة التكييف والمضخات، قد تكون هذه المرحلة الأكبر أثرًا.\n• نهاية العمر: إمكانية الإصلاح وإعادة الاستخدام والتدوير، أو الانتهاء إلى الدفن.\n\nولهذا تُقارن المنتجات على أساس «وحدة وظيفية» واحدة، مثل تبريد مساحة محددة لعدد محدد من السنوات، لا قطعة مقابل قطعة.\n\nماذا يعني ذلك عمليًا؟ قبل أي ادعاء بيئي عن منتج، أو قرار تصميم أو توريد مبني على «الأقل انبعاثًا»، تأكد أن المقارنة تغطي دورة الحياة كاملة وبالحدود نفسها.\n\nالتفاصيل في الرابط.\n\n#تقييم_دورة_الحياة #البصمة_الكربونية #الاستدامة #السعودية #سيلورين",
+    "x": "المنتج الأقل انبعاثات في المصنع ليس بالضرورة الأقل أثرًا. تقييم دورة الحياة يشمل المواد الخام والنقل والاستخدام ونهاية العمر، ويقارن على أساس وحدة وظيفية واحدة. #تقييم_دورة_الحياة",
+    "link": "/ar/services/life-cycle-assessment/",
+    "image": {
+      "template": "myth",
+      "myth": "المنتج الأقل انبعاثات في المصنع هو الأقل بصمة بيئية",
+      "fact": "التصنيع مرحلة واحدة فقط. تقييم دورة الحياة (LCA) يشمل المواد الخام والنقل والاستخدام ونهاية العمر، وفي المنتجات المستهلكة للطاقة قد تكون مرحلة الاستخدام الأكبر أثرًا. قارنوا على أساس وحدة وظيفية واحدة."
+    }
+  },
+  "en": {
+    "title": "Lowest factory emissions is not lowest footprint",
+    "text": "Which has the lower impact: the product made with fewer emissions, or the one that lasts twice as long?\n\nMyth: the product with the lowest factory emissions has the lowest footprint.\nFact: manufacturing is one stage. A life cycle assessment (LCA) under ISO 14040 and ISO 14044 covers them all:\n\n• Raw materials: extraction and processing can outweigh manufacturing.\n• Transport: supply distances and modes, for inputs and the finished product.\n• Use: for products that consume energy or water, such as air conditioners and pumps, this can be the largest stage.\n• End of life: repair, reuse and recycling, or landfill.\n\nThat is why products are compared on the same functional unit, such as cooling a given space for a set number of years, not item for item.\n\nBefore a product claim or sourcing decision based on \"lowest emissions\", check that the comparison covers the whole life cycle. Details at the link.\n\n#LifeCycleAssessment #Sustainability #SaudiArabia",
+    "link": "/services/life-cycle-assessment/",
+    "image": {
+      "template": "myth",
+      "myth": "The product with the lowest factory emissions has the lowest footprint",
+      "fact": "Manufacturing is one stage. LCA covers raw materials, transport, use and end of life, and for energy-using products the use stage can be the largest. Compare products on the same functional unit."
+    }
+  }
+}

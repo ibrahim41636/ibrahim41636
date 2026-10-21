@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-25",
+  "slot": 1,
+  "pillar": "السجلات والتقارير البيئية",
+  "stage": "conversion",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-records/"
+  ],
+  "ar": {
+    "title": "السجلات البيئية التي تحتاجها كل منشأة",
+    "text": "أكثر ما يُربك المنشآت عند التفتيش أو التدقيق ليس غياب الإجراء، بل الوثيقة التي لا يعرف أحد أين حُفظت.\n\nالسجل البيئي دليلك على ما تفعله فعلًا، وما لا يوثَّق يصعب إثباته. هذه أهم السجلات التي ينبغي أن تكون مكتملة وسهلة الوصول:\n\n• التصاريح والموافقات: التصريح البيئي واشتراطاته، وتواريخ التجديد، والمراسلات مع الجهات الرقابية.\n• نتائج الرصد: تقارير الانبعاثات والهواء والضوضاء والمياه، وتقارير المختبر، وشهادات المعايرة.\n• وثائق النفايات: بيان نقل لكل شحنة، وتراخيص الناقلين والجهات المستقبِلة، وسجل الكميات حسب النوع.\n• التدريب: من تدرّب على ماذا ومتى، خاصة في التعامل مع المواد الخطرة والانسكابات.\n• الحوادث والشكاوى: سجل لكل انسكاب أو تجاوز أو شكوى، مع نتيجة التحقيق والإجراء التصحيحي.\n\nثلاث قواعد تجعل السجلات مفيدة:\n1. مكان واحد معروف، ورقيًا كان أو رقميًا.\n2. مسؤول محدد عن تحديث كل سجل.\n3. مراجعة دورية تكشف النواقص قبل أن يكشفها غيرك.\n\nتحتاج تنظيم سجلاتك وتقاريرك البيئية؟ اطلب استشارة.\n\n#السجلات_البيئية #الامتثال_البيئي #التفتيش_البيئي #السعودية #سيلورين",
+    "x": "خمسة سجلات بيئية تحتاجها كل منشأة: التصاريح، ونتائج الرصد، ووثائق النفايات، والتدريب، والحوادث والشكاوى. في مكان واحد، وبمسؤول محدد لكل سجل. #الامتثال_البيئي",
+    "link": "/ar/services/environmental-records/",
+    "image": {
+      "template": "checklist",
+      "title": "السجلات البيئية الأساسية لكل منشأة",
+      "kicker": "قائمة مراجعة",
+      "items": [
+        "التصاريح والموافقات واشتراطاتها وتواريخ تجديدها",
+        "نتائج الرصد وتقارير المختبر وشهادات المعايرة",
+        "بيانات نقل النفايات وتراخيص الناقلين",
+        "سجلات التدريب على المواد الخطرة والانسكابات",
+        "سجل الحوادث والشكاوى والإجراءات التصحيحية"
+      ]
+    }
+  },
+  "en": {
+    "title": "Environmental records every facility should keep",
+    "text": "During an inspection or audit, the problem is rarely a missing procedure. It is the document nobody can find.\n\nRecords are your evidence; what is not recorded is hard to prove. Keep these complete and easy to reach:\n\n• Permits and approvals: the environmental permit and its conditions, renewal dates and regulator correspondence.\n• Monitoring results: emissions, air, noise and water reports, lab reports and calibration certificates.\n• Waste documents: a manifest per consignment, transporter and receiver licences, quantities by waste type.\n• Training: who was trained on what and when, especially hazardous materials and spill response.\n• Incidents and complaints: every spill, exceedance or complaint, with the investigation and corrective action.\n\nThree rules: one known location, paper or digital; a named owner per register; and a periodic review that finds gaps before someone else does.\n\nNeed your records organised? Request a consultation.\n\n#EnvironmentalCompliance #SaudiArabia",
+    "link": "/services/environmental-records/",
+    "image": {
+      "template": "checklist",
+      "title": "Core environmental records for every facility",
+      "kicker": "Checklist",
+      "items": [
+        "Permits, approvals, conditions and renewal dates",
+        "Monitoring results, lab reports and calibration certificates",
+        "Waste manifests and transporter licences",
+        "Training records for hazardous materials and spills",
+        "Incident and complaint log with corrective actions"
+      ]
+    }
+  }
+}

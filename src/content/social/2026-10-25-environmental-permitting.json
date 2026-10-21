@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25",
+  "slot": 1,
+  "pillar": "التصاريح البيئية",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-permitting/"
+  ],
+  "ar": {
+    "title": "قبل طلب التصريح البيئي: 5 عناصر جهّزها أولًا",
+    "text": "خمسة عناصر جهّزها قبل أن تبدأ طلب التصريح البيئي، حتى لا يتحول الطلب إلى جولات متكررة من الملاحظات.\n\nمعظم ما تطلبه الجهة المختصة معلومات موجودة لديك أصلًا، لكنها تحتاج إلى أن تجتمع في ملف واحد متسق:\n\n• وصف المشروع أو المنشأة: النشاط، والطاقة الإنتاجية، والعمليات الرئيسة، ومراحل التنفيذ.\n• الموقع: الإحداثيات، والمخطط العام، والاستخدامات المجاورة كالمساكن والأودية ومصادر المياه.\n• المدخلات والمخرجات: المواد الخام والوقود والمياه، والانبعاثات والصرف والنفايات والضوضاء المتوقعة.\n• الدراسة البيئية المناسبة لتصنيف المشروع، مثل تقييم الأثر البيئي (EIA) أو خطة الإدارة البيئية (EMP).\n• الوثائق النظامية: السجل التجاري، والتراخيص القائمة، وصك الأرض أو عقد الإيجار، وبيانات مسؤول التواصل.\n\nنصيحة عملية: اجعل الأرقام متطابقة في جميع المستندات. اختلاف الطاقة الإنتاجية أو المساحة بين الدراسة ونموذج الطلب يثير أسئلة يمكن تجنبها بسهولة.\n\nنساعدكم في تحديد التصاريح المنطبقة، وإعداد الملف، ومتابعة ملاحظات الجهة المختصة حتى صدور القرار. التفاصيل في الرابط.\n\n#التصريح_البيئي #الامتثال_البيئي #السعودية #سيلورين",
+    "x": "قبل طلب التصريح البيئي جهّز: وصف المشروع، والموقع ومحيطه، والمدخلات والمخرجات، والدراسة البيئية المناسبة، والوثائق النظامية. واجعل الأرقام متطابقة في كل المستندات. #التصريح_البيئي",
+    "link": "/ar/services/environmental-permitting/",
+    "image": {
+      "template": "checklist",
+      "title": "جهّز هذا قبل طلب التصريح البيئي",
+      "kicker": "قائمة تحقق",
+      "items": [
+        "وصف المشروع: النشاط والطاقة الإنتاجية والعمليات",
+        "الموقع والمخطط العام والاستخدامات المجاورة",
+        "المدخلات والمخرجات: الوقود والمياه والانبعاثات والنفايات",
+        "الدراسة البيئية المناسبة لتصنيف المشروع",
+        "السجل التجاري والتراخيص وصك الأرض أو عقد الإيجار"
+      ]
+    }
+  },
+  "en": {
+    "title": "Before you apply for an environmental permit",
+    "text": "Five things to have ready before you start an environmental permit application.\n\nHaving them ready saves rounds of comments: most of what the reviewing authority asks for is information you already hold; it just needs to sit in one consistent file:\n\n• Project description: activity, production capacity, main processes and phases.\n• Site: coordinates, layout plan and neighbouring uses such as homes, wadis and water sources.\n• Inputs and outputs: raw materials, fuel and water; expected emissions, discharges, waste and noise.\n• The environmental study that matches your project's category, such as an EIA or an EMP.\n• Legal documents: commercial registration, existing licences, title deed or lease, and a named contact.\n\nPractical tip: keep the numbers identical across every document. A capacity or area that differs between the study and the form raises questions you can easily avoid.\n\nDetails at the link.\n\n#EnvironmentalPermit #SaudiArabia #Compliance",
+    "link": "/services/environmental-permitting/",
+    "image": {
+      "template": "checklist",
+      "title": "Have this ready before you apply",
+      "kicker": "Checklist",
+      "items": [
+        "Project description: activity, capacity and processes",
+        "Site location, layout plan and neighbouring uses",
+        "Inputs and outputs: fuel, water, emissions and waste",
+        "The environmental study that matches the project category",
+        "Commercial registration, licences and title deed or lease"
+      ]
+    }
+  }
+}

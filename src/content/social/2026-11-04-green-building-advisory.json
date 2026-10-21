@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04",
+  "slot": 1,
+  "pillar": "استشارات المباني الخضراء",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/green-building-advisory/"
+  ],
+  "ar": {
+    "title": "مستدام أم LEED: أي نظام تصنيف يناسب مشروعك؟",
+    "text": "مستدام أم LEED؟ السؤال الأدق: من سيقرأ شهادة مبناك، ولماذا؟\n\nمستدام نظام سعودي لتصنيف المباني المستدامة، وLEED نظام دولي صادر عن مجلس المباني الخضراء الأمريكي (USGBC). كلاهما معترف به، والاختيار بينهما قرار استثماري قبل أن يكون قرارًا فنيًا.\n\nأربعة أسئلة تحسم الاختيار:\n• من الجمهور المستهدف؟ إذا كان المشترون والمستأجرون محليين، فمستدام لغة مشتركة معهم. وإذا كان المستأجر علامة دولية أو مستثمرًا أجنبيًا، فقد تنص معاييره على LEED تحديدًا.\n• ما نوع المشروع؟ مبنى سكني أو تجاري أو مجمع متكامل؟ ولمشاريع البنية التحتية قد يكون نظام Envision أنسب.\n• ماذا تقول العقود؟ راجعوا اشتراطات الممولين والمستأجرين ومعايير العلامات الفندقية قبل اعتماد النظام.\n• من سيجمع الأدلة؟ لكل نظام متطلبات توثيق مختلفة، وتأخير جمعها يعطّل التقديم في مراحله الأخيرة.\n\nالقرار الأنسب يُتخذ في مرحلة التصميم المفاهيمي، حين تكون إضافة النقاط أقل كلفة.\n\nتحتاج دعمًا في اختيار النظام ووضع خطة النقاط؟ التفاصيل في الرابط.\n\n#المباني_الخضراء #مستدام #LEED #السعودية #سيلورين",
+    "x": "مستدام أم LEED؟ اسأل أولًا: من سيقرأ شهادة مبناك؟ المشتري المحلي، أم المستأجر الدولي، أم الممول؟ واحسم القرار في مرحلة التصميم المفاهيمي. #المباني_الخضراء #مستدام",
+    "link": "/ar/services/green-building-advisory/",
+    "image": {
+      "template": "faq",
+      "q": "مستدام أم LEED: أي نظام تصنيف يناسب مشروعي في السعودية؟",
+      "a": "يعتمد على جمهور المشروع ونوعه واشتراطات عقوده. مستدام نظام سعودي يخاطب السوق المحلية، وLEED نظام دولي قد يشترطه مستأجرون أو مستثمرون دوليون. حدّدوا النظام في مرحلة التصميم المفاهيمي، وخطّطوا لجمع الأدلة من اليوم الأول."
+    }
+  },
+  "en": {
+    "title": "Mostadam or LEED: which rating fits your project?",
+    "text": "Mostadam or LEED? The better question is: who will read your building's certificate, and why?\n\nMostadam is the Saudi sustainable building rating system; LEED is the international system from the US Green Building Council (USGBC). Both are recognised, and choosing between them is an investment decision before it is a technical one.\n\nFour questions settle it:\n• Audience: local buyers and tenants know Mostadam; an international tenant, hotel brand or investor may specify LEED.\n• Project type: residential, commercial or a whole community? For infrastructure, Envision may fit better.\n• Contracts: check lender, tenant and brand requirements before you commit.\n• Evidence: each system has its own documentation burden, and late evidence stalls submissions.\n\nDecide at concept design, when credits cost least.\n\nNeed help choosing a system and planning credits? Details at the link.\n\n#GreenBuilding #Mostadam #LEED #SaudiArabia",
+    "link": "/services/green-building-advisory/",
+    "image": {
+      "template": "faq",
+      "q": "Mostadam or LEED: which rating system fits a project in Saudi Arabia?",
+      "a": "It depends on the project's audience, type and contract requirements. Mostadam is the Saudi system and speaks to the local market; LEED is international and may be specified by global tenants or investors. Decide at concept design and plan evidence collection from day one."
+    }
+  }
+}

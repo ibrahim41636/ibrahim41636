@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-26",
+  "slot": 1,
+  "pillar": "الفحص البيئي النافي للجهالة",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-due-diligence/"
+  ],
+  "ar": {
+    "title": "متى تحتاج فحصًا بيئيًا قبل شراء موقع أو شركة؟",
+    "text": "حين تشتري موقعًا صناعيًا أو شركة قائمة، فقد تشتري معها التزامات بيئية لا تظهر في العقد.\n\nتلوث قديم في التربة، أو مخالفات لم تُغلق، أو تصاريح لا تغطي النشاط الفعلي. والفحص البيئي النافي للجهالة يكشف هذه المخاطر قبل التوقيع لا بعده. وتزداد الحاجة إليه في الحالات التالية:\n• الاستحواذ على منشأة صناعية أو شركة لها مواقع تشغيل.\n• شراء أو استئجار أرض استُخدمت سابقًا لأنشطة صناعية أو لتخزين الوقود أو الكيماويات.\n• التمويل، حين يطلب المموّل تقييمًا للمخاطر البيئية المرتبطة بالأصل.\n• البيع، لتقديم ملف واضح للمشتري وتقليل التفاوض المتأخر.\n\nماذا يشمل عادة؟\n• مراجعة الاستخدامات السابقة للموقع والسجلات المتاحة.\n• زيارة ميدانية للخزانات الأرضية ومناطق التخزين ونقاط التصريف وآثار الانسكابات.\n• مراجعة التصاريح البيئية وحالة الامتثال وأي إشعارات أو مخالفات سابقة.\n• توصية بأخذ عينات من التربة أو المياه الجوفية عند وجود مؤشرات تلوث.\n\nوالأهم أن تنعكس النتائج على الصفقة: في السعر، أو الضمانات، أو الشروط المسبقة، أو خطة المعالجة.\n\nتدرس صفقة أو موقعًا جديدًا؟ اطلب استشارة.\n\n#الفحص_البيئي #العناية_الواجبة #الاستحواذ #السعودية #سيلورين",
+    "x": "قبل شراء موقع صناعي أو شركة: قد تشتري معهما تلوثًا قديمًا أو مخالفات لم تُغلق. الفحص البيئي النافي للجهالة يكشف ذلك قبل التوقيع، لتنعكس النتائج على السعر والشروط. #الفحص_البيئي",
+    "link": "/ar/services/environmental-due-diligence/",
+    "image": {
+      "template": "faq",
+      "q": "متى أحتاج فحصًا بيئيًا نافيًا للجهالة قبل شراء موقع أو شركة؟",
+      "a": "عند الاستحواذ على منشأة صناعية، أو شراء أو استئجار أرض استُخدمت لأنشطة صناعية أو لتخزين الوقود والكيماويات، أو حين يطلب المموّل تقييمًا للمخاطر. ويشمل مراجعة الاستخدامات السابقة والتصاريح والمخالفات، وزيارة ميدانية، وعينات عند وجود مؤشرات تلوث."
+    }
+  },
+  "en": {
+    "title": "When do you need environmental due diligence?",
+    "text": "Buy an industrial site or an operating company and you may also buy liabilities the contract does not show.\n\nHistoric soil contamination, open violations, permits that do not cover the actual activity: environmental due diligence finds these before you sign. It matters most when you are:\n• Acquiring a facility or a company with operating sites.\n• Buying or leasing land previously used for industry or fuel and chemical storage.\n• Financing, when the lender asks for an environmental risk assessment.\n• Selling, to give buyers a clear file.\n\nIt typically covers past site uses and records; a site visit to underground tanks, storage areas, discharge points and spill signs; permit and compliance status, including past notices; and soil or groundwater sampling where there are signs of contamination.\n\nThe findings must then shape the deal: price, warranties, conditions precedent or a remediation plan.\n\nAssessing a deal? Request a consultation.\n\n#DueDiligence #EnvironmentalRisk #SaudiArabia",
+    "link": "/services/environmental-due-diligence/",
+    "image": {
+      "template": "faq",
+      "q": "When do I need environmental due diligence before buying a site or company?",
+      "a": "When acquiring an industrial facility, buying or leasing land used for industry or fuel and chemical storage, or when a lender asks for a risk assessment. It reviews past uses, permits and violations, includes a site visit, and adds sampling where contamination is suspected, so findings shape price and terms."
+    }
+  }
+}

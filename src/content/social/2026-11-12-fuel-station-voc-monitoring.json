@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-12",
+  "slot": 1,
+  "pillar": "رصد المركبات العضوية المتطايرة في محطات الوقود",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/fuel-station-voc-monitoring/"
+  ],
+  "ar": {
+    "title": "لماذا ترصد محطات الوقود المركبات العضوية المتطايرة؟",
+    "text": "لماذا تُرصد المركبات العضوية المتطايرة في محطة وقود لا يرى فيها أحد أي انبعاثات؟\n\nلأن أبخرة الوقود لا تُرى، لكنها تنطلق في لحظات محددة من تشغيل المحطة:\n• أثناء تفريغ الصهريج: يدفع الوقود الداخل إلى الخزانات الأرضية الأبخرةَ الموجودة فيها نحو أنابيب التهوية.\n• أثناء التعبئة: تخرج الأبخرة من خزان المركبة عند فوهة المضخة.\n• من أنابيب التهوية: مع تغيّر درجة الحرارة والضغط داخل الخزانات على مدار اليوم.\n\nولهذه الأبخرة أثران: تعرّض العاملين والعملاء والجوار القريب لمركّبات يضر بعضها بالصحة عند التعرض المتكرر، ومساهمتها في تكوّن الأوزون قرب سطح الأرض.\n\nماذا يتضمن الرصد الجيد للمركبات العضوية المتطايرة (VOCs)؟\n• حساسات ثابتة آمنة ذاتيًا ومناسبة للمناطق الخطرة، مثل كواشف التأين الضوئي (PID).\n• مواقع عند نقطة التفريغ وأنابيب التهوية ومنطقة المضخات وحدود المحطة.\n• تسجيل مستمر للبيانات، وإنذارات عند ارتفاع التراكيز.\n• صيانة ومعايرة دورية، وتقارير تتوافق مع اشتراطات التصريح البيئي للمحطة.\n\nتديرون محطة أو شبكة محطات؟ التفاصيل في الرابط.\n\n#محطات_الوقود #جودة_الهواء #المركبات_العضوية_المتطايرة #السعودية #سيلورين",
+    "x": "أبخرة الوقود لا تُرى، لكنها تنطلق أثناء تفريغ الصهاريج والتعبئة ومن أنابيب التهوية. الرصد المستمر بحساسات آمنة ذاتيًا يوثّق التراكيز وينبّه عند ارتفاعها. #محطات_الوقود",
+    "link": "/ar/services/fuel-station-voc-monitoring/",
+    "image": {
+      "template": "faq",
+      "q": "لماذا تحتاج محطة الوقود إلى رصد المركبات العضوية المتطايرة (VOCs)؟",
+      "a": "لأن أبخرة الوقود تنطلق أثناء تفريغ الصهاريج والتعبئة ومن أنابيب التهوية، فتؤثر على العاملين والجوار وجودة الهواء. والرصد المستمر بحساسات آمنة ذاتيًا يوثّق التراكيز وينبّه عند ارتفاعها، ويدعم الالتزام باشتراطات التصريح البيئي."
+    }
+  },
+  "en": {
+    "title": "Why do fuel stations monitor VOCs?",
+    "text": "Why monitor volatile organic compounds at a fuel station where nobody sees any emissions?\n\nBecause fuel vapour is invisible, and it is released at predictable moments:\n• Tanker unloading: incoming fuel pushes the vapour already in the underground tanks out through the vent pipes.\n• Refuelling: vapour escapes from the vehicle tank at the nozzle.\n• Vent pipes: tanks breathe as temperature and pressure change.\n\nIt matters because workers, customers and neighbours are exposed to compounds, some harmful with repeated exposure, and it adds to ground-level ozone.\n\nWhat good VOC monitoring includes:\n• Fixed, intrinsically safe sensors suited to hazardous areas, such as photoionisation detectors (PID).\n• Sensors at the unloading point, vents, dispensers and boundary.\n• Continuous data logging with high-concentration alarms.\n• Routine calibration, and reports aligned with the permit conditions.\n\nOperating a station or a network? Details at the link.\n\n#FuelStations #AirQuality #SaudiArabia",
+    "link": "/services/fuel-station-voc-monitoring/",
+    "image": {
+      "template": "faq",
+      "q": "Why does a fuel station need VOC monitoring?",
+      "a": "Fuel vapour is released during tanker unloading, refuelling and from vent pipes, affecting workers, neighbours and air quality. Continuous monitoring with intrinsically safe sensors records concentrations, raises alarms when they climb and supports the station's permit conditions."
+    }
+  }
+}

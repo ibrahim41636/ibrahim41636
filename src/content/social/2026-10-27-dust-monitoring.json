@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-27",
+  "slot": 1,
+  "pillar": "رصد الغبار",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/dust-monitoring/"
+  ],
+  "ar": {
+    "title": "رصد الغبار في موقع الإنشاء: من القراءة إلى الإجراء",
+    "text": "جهاز رصد الغبار في موقعك يسجّل القراءات، لكن هل يعرف أحد في الفريق ماذا يفعل عندما ترتفع؟\n\nقيمة الرصد المستمر للغبار في مواقع الإنشاء لا تُقاس بعدد الأجهزة، بل بما يحدث بعد القراءة. أربعة عناصر تصنع الفرق:\n\n• موقعان على الأقل: محطة قبل اتجاه الرياح وأخرى بعده، مع قياس سرعة الرياح واتجاهها. هكذا تميّز غبار موقعك عن الغبار القادم من خارجه.\n• المؤشرات المناسبة: PM10 وPM2.5 بحسب متطلبات المشروع، بأجهزة معايرة تسجّل البيانات باستمرار.\n• قيم تنبيه مرتبطة بإجراءات: عند المستوى الأول رش إضافي للطرق الداخلية ومناطق الحفر، وعند المستوى الأعلى إيقاف الأعمال المثيرة للغبار حتى تنخفض القراءات. ولكل مستوى مسؤول محدد.\n• سجل يثبت الاستجابة: وقت التنبيه، والإجراء المتخذ، ووقت عودة القراءات إلى مستواها المعتاد. هذا السجل هو ما تحتاجه عند أي شكوى أو تفتيش.\n\nابدأ بخريطة الموقع واتجاه الرياح السائد قبل اختيار الأجهزة.\n\nالتفاصيل في الرابط.\n\n#رصد_الغبار #جودة_الهواء #مشاريع_البناء #السعودية #سيلورين",
+    "x": "رصد الغبار في موقع الإنشاء لا يكفي وحده: محطة قبل اتجاه الرياح وأخرى بعده، وقيم تنبيه مرتبطة بإجراء ومسؤول، وسجل يثبت وقت الاستجابة. #رصد_الغبار",
+    "link": "/ar/services/dust-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "رصد الغبار يبدأ بخطة استجابة",
+      "text": "ضع محطة قبل اتجاه الرياح وأخرى بعده، واربط كل قيمة تنبيه بإجراء ومسؤول: رش إضافي أولًا، ثم إيقاف الأعمال المثيرة للغبار، وسجّل وقت كل استجابة."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Construction dust monitoring: from reading to action",
+    "text": "Your site dust monitor records the readings. Does anyone on the team know what to do when they rise?\n\nThe value of continuous dust monitoring is not the number of devices. It is what happens after the reading. Four things make the difference:\n\n• At least two locations: one station upwind and one downwind, with wind speed and direction. That is how you separate your site's dust from dust blowing in.\n• The right parameters: PM10 and PM2.5 as the project requires, with calibrated instruments logging continuously.\n• Alert levels tied to actions: extra spraying of haul roads and excavation areas at the first level, and pausing dust-generating work at the higher level until readings fall. Each level has a named owner.\n• A log that proves the response: alert time, action taken and when readings returned to normal. This is what you need for a complaint or an inspection.\n\nStart with the site map and the prevailing wind before choosing equipment.\n\n#DustMonitoring #AirQuality #Construction",
+    "link": "/services/dust-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "Dust monitoring starts with a response plan",
+      "text": "Place one station upwind and one downwind, and tie each alert level to an action and an owner: extra spraying first, then pausing dusty work. Log the time of every response."
+    }
+  }
+}

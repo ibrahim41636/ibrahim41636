@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-09",
+  "slot": 1,
+  "pillar": "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة",
+  "stage": "conversion",
+  "sources": [
+    "https://selorin.co/ar/services/renewable-energy-feasibility/"
+  ],
+  "ar": {
+    "title": "قبل مشروع طاقة شمسية لمنشأتك: 5 نقاط تحقق",
+    "text": "قبل أن توقّع عقد نظام شمسي لمصنعك أو مستودعك، هل تعرف متى تستهلك منشأتك الكهرباء فعلًا؟\n\nمساحة السطح وحدها لا تحدد جدوى المشروع. هذه قائمة تحقق قبل الالتزام:\n\n• ملف الأحمال: بيانات استهلاك لاثني عشر شهرًا على الأقل، مفصّلة بالساعة إن أمكن، لمعرفة الجزء من الإنتاج الذي ستستهلكه المنشأة مباشرة.\n• السطح أو الأرض: قدرة الهيكل على التحمل، والعمر المتبقي للعزل، والتظليل، وسهولة الوصول لتنظيف الألواح من الغبار.\n• الربط بالشبكة: سعة المحوّل ونقطة الربط، والتأكد من الاشتراطات النافذة لدى الجهات المختصة قبل احتساب أي عائد من الفائض.\n• التصاريح والفرز البيئي: الموافقات التي يحتاجها المشروع، وأي قيود بيئية أو استخدامات أراضٍ مجاورة قد تؤثر عليه.\n• التشغيل والصيانة: من سيتولى التنظيف والمراقبة واستبدال المكونات، وكم سيكلف ذلك طوال عمر النظام.\n\nالإجابة عن هذه النقاط مبكرًا تحمي الاستثمار من مفاجآت ما بعد التركيب.\n\nتحتاج دراسة جدوى واضحة قبل القرار؟ اطلب استشارة.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #دراسة_جدوى #السعودية #سيلورين",
+    "x": "قبل عقد نظام شمسي لمنشأتك: ملف أحمال لـ12 شهرًا، وحالة السطح، ونقطة الربط بالشبكة، والتصاريح، وخطة التشغيل والصيانة. مساحة السطح وحدها لا تكفي. #الطاقة_الشمسية",
+    "link": "/ar/services/renewable-energy-feasibility/",
+    "image": {
+      "template": "checklist",
+      "title": "قبل الالتزام بمشروع طاقة شمسية لمنشأتك",
+      "items": [
+        "ملف أحمال لـ12 شهرًا يوضح متى تستهلك المنشأة الكهرباء",
+        "السطح أو الأرض: التحمل الإنشائي والتظليل وسهولة التنظيف",
+        "نقطة الربط بالشبكة وسعتها والاشتراطات النافذة",
+        "التصاريح المطلوبة والفرز البيئي للموقع",
+        "خطة تشغيل وصيانة وتكلفتها طوال عمر النظام"
+      ],
+      "kicker": "قائمة تحقق"
+    }
+  },
+  "en": {
+    "title": "Before a commercial solar project: 5 checks",
+    "text": "Before you sign for solar on your factory or warehouse, do you know when your site actually uses power?\n\nRoof area alone does not decide feasibility. Check these before you commit:\n\n• Load profile: at least twelve months of consumption data, hourly if possible, to see how much of the output the site will use directly.\n• Roof or land: structural capacity, remaining roof life, shading and safe access for cleaning dust off the panels.\n• Grid connection: transformer capacity and connection point, and the rules currently in force before you count on any value from surplus power.\n• Permits and environmental screening: which approvals the project needs, and any constraints from neighbouring land uses.\n• Operation and maintenance: who cleans, monitors and replaces components, and what that costs over the system's life.\n\nNeed a clear feasibility study before you decide? Ask for a consultation.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
+    "link": "/services/renewable-energy-feasibility/",
+    "image": {
+      "template": "checklist",
+      "title": "Before you commit to a solar project on your site",
+      "items": [
+        "A 12-month load profile showing when the site uses power",
+        "Roof or land: structure, shading and access for cleaning",
+        "Grid connection point, capacity and the rules in force",
+        "Required permits and environmental screening of the site",
+        "An O&M plan and its cost over the system's life"
+      ],
+      "kicker": "Checklist"
+    }
+  }
+}

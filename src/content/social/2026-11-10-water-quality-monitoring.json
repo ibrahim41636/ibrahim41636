@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-10",
+  "slot": 1,
+  "pillar": "رصد جودة المياه",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/water-quality-monitoring/"
+  ],
+  "ar": {
+    "title": "مياه الصرف الصناعي: نقطة أخذ العيّنة تصنع الفرق",
+    "text": "عيّنة واحدة من المكان الخطأ قد تُفقد نتائج تحليل مياه الصرف قيمتها أمام المفتش.\n\nنتيجة المختبر لا تكون أدق من العيّنة التي وصلت إليه، ولذلك تبدأ موثوقية رصد مياه الصرف الصناعي من الميدان:\n\n• نقطة الأخذ: من نقطة التصريف المحددة في التصريح، بعد المعالجة وقبل الاختلاط بأي تيار آخر. وأضيفوا نقطة عند مدخل وحدة المعالجة لتقييم كفاءتها.\n• نوع العيّنة: إذا تغيّر التصريف خلال الوردية، فالعيّنة المركّبة على مدى زمني تمثّله أفضل من عيّنة لحظية واحدة.\n• التكرار: مرتبط باشتراطات التصريح وبدورات التشغيل، لا بما يناسب جدول الفريق.\n• الحفظ: عبوات مناسبة لكل معامل، وتبريد، والتزام بمدة الحفظ المسموح بها قبل التحليل.\n• القياس الميداني: معاملات مثل الأس الهيدروجيني (pH) ودرجة الحرارة تُقاس في الموقع لأنها تتغير سريعًا.\n• سلسلة الحيازة: نموذج يوثّق من أخذ العيّنة ومتى وأين، ومن تسلّمها، مع إحكام إغلاق العبوات.\n\nبهذا تصبح كل نتيجة قابلة للدفاع عنها.\n\nتحتاج برنامج رصد لمياه الصرف؟ التفاصيل في الرابط.\n\n#جودة_المياه #مياه_الصرف_الصناعي #الامتثال_البيئي #السعودية #سيلورين",
+    "x": "عيّنة من المكان الخطأ تُفقد نتائج مياه الصرف قيمتها. خذها من نقطة التصريف المحددة في التصريح، واختر العيّنة المركّبة عند تغيّر التصريف، ووثّق سلسلة الحيازة. #جودة_المياه",
+    "link": "/ar/services/water-quality-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "صحة النتيجة تبدأ من نقطة أخذ العيّنة",
+      "text": "خذوا العيّنة من نقطة التصريف المحددة في التصريح بعد المعالجة، واختاروا العيّنة المركّبة عند تغيّر التصريف، ووثّقوا سلسلة الحيازة من الموقع حتى المختبر."
+    }
+  },
+  "en": {
+    "title": "Industrial wastewater: where you sample decides the result",
+    "text": "One sample from the wrong point can make your wastewater results worthless in front of an inspector.\n\nA lab result is only as good as the sample that reached the lab, so reliable wastewater monitoring starts in the field:\n\n• Sampling point: the discharge point named in your permit, after treatment and before mixing with any other stream. Add an inlet point to judge treatment performance.\n• Sample type: if the discharge varies across a shift, a time-composite sample represents it better than a single grab.\n• Frequency: set by permit conditions and process cycles, not by the team's schedule.\n• Preservation: the right container per parameter, cooling, and analysis within the allowed holding time.\n• Field measurements: pH and temperature change fast, so measure them on site.\n• Chain of custody: a form recording who sampled, when and where, and who received the sealed containers.\n\nNeed a wastewater monitoring programme? Details at the link.\n\n#WaterQuality #Wastewater #SaudiArabia",
+    "link": "/services/water-quality-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "A reliable result starts at the sampling point",
+      "text": "Sample at the permitted discharge point after treatment, use composite samples when the discharge varies, and keep a chain of custody from site to lab."
+    }
+  }
+}

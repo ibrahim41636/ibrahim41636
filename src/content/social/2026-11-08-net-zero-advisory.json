@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-08",
+  "slot": 1,
+  "pillar": "استشارات الحياد الصفري",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/net-zero-advisory/"
+  ],
+  "ar": {
+    "title": "قبل هدف الحياد الصفري: ابدأ بجرد انبعاثات موثوق",
+    "text": "الخطأ الأكثر كلفة في خطط الحياد الصفري: إعلان الهدف قبل معرفة نقطة البداية.\n\nفي موسم مؤتمرات المناخ تتصدر الأهداف المناخية العناوين، ويصل إلى مجلس الإدارة سؤال متوقع: ما هدفنا نحن؟ والإجابة الجادة تبدأ من جرد انبعاثات غازات الاحتباس الحراري، لا من سنة مستهدفة.\n\nما الذي يجعل الجرد أساسًا صالحًا لهدف؟\n• حدود واضحة وفق إطار معروف مثل بروتوكول غازات الاحتباس الحراري (GHG Protocol) أو ISO 14064-1.\n• بيانات النطاقين 1 و2 من مصادرها: فواتير الوقود والكهرباء، وسجلات المولدات وغازات التبريد.\n• معاملات انبعاث موثّقة المصدر، تُطبّق بثبات من سنة إلى أخرى.\n• سنة أساس محددة، وسياسة لإعادة احتسابها عند الاستحواذ أو تغيّر الأنشطة.\n• مسار أدلة يستطيع المراجع تتبّعه من الرقم النهائي إلى الفاتورة.\n\nبعد ذلك فقط تتحول الأرقام إلى مستهدفات خفض واقعية وخارطة طريق محددة التكاليف.\n\nتحتاج دعمًا في بناء خط الأساس؟ التفاصيل في الرابط.\n\n#الحياد_الصفري #انبعاثات_الكربون #الاستدامة #السعودية #سيلورين",
+    "x": "الخطأ الأكثر كلفة في خطط الحياد الصفري: إعلان الهدف قبل معرفة نقطة البداية. ابدأ بجرد انبعاثات بحدود واضحة وبيانات موثقة وسنة أساس محددة. #الحياد_الصفري",
+    "link": "/ar/services/net-zero-advisory/",
+    "image": {
+      "template": "tip",
+      "title": "الهدف يأتي بعد الجرد، لا قبله",
+      "text": "حدود واضحة، وبيانات النطاقين 1 و2 من مصادرها، ومعاملات انبعاث موثقة، وسنة أساس محددة: هذا ما يجعل هدف الحياد الصفري قابلًا للدفاع عنه أمام المجلس والمراجعين."
+    },
+    "video": true
+  },
+  "en": {
+    "title": "Net zero starts with a credible emissions inventory",
+    "text": "The most expensive mistake in net zero planning: announcing a target before you know your starting point.\n\nClimate conference season puts targets in the headlines, and boards ask the obvious question: what is ours? A serious answer starts with a greenhouse gas inventory, not a target year.\n\nWhat makes an inventory fit to set a target on:\n• Clear boundaries under a recognised framework such as the GHG Protocol or ISO 14064-1.\n• Scope 1 and 2 data from source records: fuel and electricity bills, generator logs, refrigerant records.\n• Documented emission factors, applied consistently year to year.\n• A defined base year and a recalculation policy.\n• An evidence trail a reviewer can follow from total to invoice.\n\nOnly then do the numbers become realistic targets and a costed roadmap.\n\nNeed help building your baseline? Details at the link.\n\n#NetZero #GHGInventory #SaudiArabia",
+    "link": "/services/net-zero-advisory/",
+    "image": {
+      "template": "tip",
+      "title": "Inventory first, target second",
+      "text": "Clear boundaries, Scope 1 and 2 data from source records, documented emission factors and a defined base year make a net zero target defensible to your board and reviewers."
+    }
+  }
+}

@@ -77,8 +77,8 @@ export interface PostDraft {
   scheduledAt: string; // "YYYY-MM-DD HH:MM:SS" UTC, same format as D1 datetime('now')
 }
 
-/** Channels that take a video when one exists (YouTube takes nothing else). */
-const VIDEO_CHANNELS: Channel[] = ["tiktok", "youtube"];
+/** Channels that take a video when one exists (YouTube takes nothing else; the webhook passes it on to Make/Zapier). */
+const VIDEO_CHANNELS: Channel[] = ["tiktok", "youtube", "webhook"];
 
 /** Add UTM parameters so leads from this post are attributed to the channel in the lead log. */
 export function utmLink(url: string, channel: Channel, campaign: string, content: string) {

@@ -24,6 +24,15 @@ run_worker_first = true
 [observability]
 enabled = true
 
+# Preview deployments (Workers Builds runs `npx wrangler preview` for pull requests). Previews never
+# e-mail real people: emails are logged instead of sent.
+[previews.vars]
+SALES_EMAIL = "sales@selorin.co"
+MAIL_FROM = "Selorin Website <website@selorin.co>"
+ALLOWED_ORIGINS = "https://selorin.co,https://www.selorin.co"
+SEND_CONFIRMATION = "false"
+EMAIL_DRY_RUN = "true"
+
 # Social publishing hub (functions/api/social.ts): every 15 minutes queue posts for new articles
 # and publish due posts to the connected accounts. Does nothing until D1 and a channel are set up.
 [triggers]

@@ -73,7 +73,7 @@ if (existsSync(campaignDir)) {
 // Profile images for every platform (uploaded by hand once): docs/marketing/brand-assets/.
 if (argv.includes("--profiles")) {
   const out = "docs/marketing/brand-assets";
-  const line = "تصاريح وامتثال · دراسات بيئية · رصد وقياس · استدامة";
+  const line = "تصاريح وامتثال · دراسات بيئية · رصد وقياس · استدامة · طاقة متجددة";
   const sizes = {
     "linkedin-cover-1128x191": [1128, 191, "end"], "x-header-1500x500": [1500, 500, "end"], "facebook-cover-1640x624": [1640, 624, "end"],
     "youtube-banner-2560x1440": [2560, 1440, "center"], "google-business-cover-1024x576": [1024, 576, "center"],

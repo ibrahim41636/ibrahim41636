@@ -98,7 +98,7 @@
 | `youtube-banner-2560x1440.png` | لافتة قناة يوتيوب | النص داخل المنطقة الوسطى الآمنة فيظهر على التلفاز والجوال |
 | `google-business-cover-1024x576.png` | صورة الغلاف في ملف جوجل التجاري | جوجل قد يختار صورة أخرى للعرض؛ ارفعوا أيضًا صورًا ميدانية حقيقية (القسم 10.7) |
 
-**ملاحظة للتصميم:** الأغلفة الحالية تذكر «تصاريح وامتثال · دراسات بيئية · رصد وقياس · استدامة» ولا تذكر الطاقة المتجددة. يُقترح في النسخة القادمة إضافة «طاقة متجددة» حتى تطابق الخدمات الـ27.
+**ملاحظة للتصميم:** الأغلفة تذكر «تصاريح وامتثال · دراسات بيئية · رصد وقياس · استدامة · طاقة متجددة» (حُدّثت في 2026-10-25). لإعادة توليدها: `npm run social:images -- --profiles` بعد حذف الملف القديم.
 
 ---
 
@@ -132,71 +132,127 @@
 
 ### 5.1 السطر التعريفي (الحد 120 حرفًا)
 
-العربية:
-
-```text
-تصاريح بيئية ودراسات ورصد واستدامة وطاقة شمسية للمنشآت والمشاريع في المملكة العربية السعودية
-```
-
-> عدد الأحرف: **92** من 120
+بأسلوب صفحات الشركات الكبرى (مثل PwC): الغاية أولًا ثم الكلمات التي يُبحث بها. الإنجليزية لغة الصفحة الأساسية، والعربية تُضاف من Manage languages.
 
 الإنجليزية:
 
 ```text
-Environmental permits, studies, monitoring, ESG and solar energy for facilities and projects in Saudi Arabia
+Turning environmental requirements into clear decisions | Environmental advisory & renewable energy in Saudi Arabia
 ```
 
-> عدد الأحرف: **108** من 120
+> عدد الأحرف: **115** من 120
+
+العربية:
+
+```text
+نحوّل المتطلبات البيئية إلى قرارات واضحة | استشارات بيئية وطاقة متجددة في المملكة العربية السعودية
+```
+
+> عدد الأحرف: **98** من 120
 
 ### 5.2 النبذة About (الحد 2000 حرف)
 
-العربية:
-
-```text
-سيلورين للاستشارات والخدمات البيئية شركة استشارات بيئية وخدمات طاقة متجددة تعمل في المملكة العربية السعودية. نحوّل المتطلبات النظامية والبيانات البيئية إلى قرارات واضحة يمكن الدفاع عنها أمام الجهات المختصة والمستثمرين.
-
-خدماتنا:
-- التصاريح والامتثال: التصاريح البيئية، ودعم الامتثال البيئي، والسجلات والتقارير البيئية، والتدقيق البيئي، والفحص البيئي النافي للجهالة.
-- الدراسات البيئية: تقييم الأثر البيئي (EIA)، وخطط الإدارة البيئية للإنشاء والتشغيل.
-- الرصد والقياس: جودة الهواء المحيط والانبعاثات، والغبار (PM10 وPM2.5)، والمركبات العضوية المتطايرة في محطات الوقود، والضوضاء والاهتزازات، والمياه ومياه الصرف.
-- النفايات والاقتصاد الدائري: خطط إدارة النفايات وسجلاتها، وخرائط طريق الاقتصاد الدائري.
-- الاستدامة والمناخ: استشارات الحوكمة البيئية والاجتماعية والمؤسسية (ESG)، وحصر انبعاثات غازات الاحتباس الحراري، والحياد الصفري، واستراتيجيات الاستدامة، وتقييم دورة الحياة (LCA).
-- المباني المستدامة: إدماج الأداء البيئي في قرارات التصميم، والدعم خلال أنظمة مستدام وLEED وEnvision.
-- الطاقة المتجددة: أنظمة الطاقة الشمسية، وتخزين الطاقة بالبطاريات، ومحطات شحن السيارات الكهربائية، ودراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة، والتشغيل والصيانة.
-
-طريقة عملنا:
-نفهم أنشطتكم ومخاطر موقعكم، ونحدد المتطلبات المنطبقة والفجوات، ثم نعدّ الدراسات والخطط ونجري القياسات الميدانية، ونجهّز المستندات ونتابع ملاحظات الجهات المختصة، ونستمر في دعم الامتثال والرصد والتقارير طوال عمر المشروع.
-
-نعمل مع مديري البيئة والسلامة ومديري المشاريع والمطورين ومديري المرافق وملاك المنشآت في الصناعة والإنشاءات والعقار والطاقة والخدمات اللوجستية والرعاية الصحية والضيافة والقطاع العام، في الرياض وجدة والدمام وسائر مناطق المملكة.
-
-للتواصل: sales@selorin.co | +966 55 015 6887 | selorin.co
-```
-
-> عدد الأحرف: **1675** من 2000
+البنية: الغاية، ثم من نحن، ثم الممارسات السبع كما في الموقع، ثم القطاعات، ثم الصلة برؤية 2030 ومبادرة السعودية الخضراء، ثم الدعوة إلى الإجراء.
 
 الإنجليزية:
 
 ```text
-Selorin Environmental Advisory & Services is an environmental advisory and renewable energy services firm working in Saudi Arabia. We turn regulatory requirements and environmental data into clear decisions you can defend to authorities and investors.
+Selorin helps organizations in Saudi Arabia grow responsibly. We turn environmental requirements and data into clear decisions that our clients can defend to regulators, investors and the communities around them.
 
-What we do:
-- Permits and compliance: environmental permitting, compliance support, environmental records and reporting, environmental audits and environmental due diligence.
-- Environmental studies: environmental impact assessment (EIA) and construction and operation environmental management plans.
-- Monitoring: ambient air and source emissions, dust (PM10 and PM2.5), fuel station VOC, noise and vibration, water and wastewater.
-- Waste and circular economy: waste management plans and records, and circular economy roadmaps.
-- Sustainability and climate: ESG advisory, GHG and carbon accounting, net zero roadmaps, sustainability strategy and life cycle assessment (LCA).
-- Sustainable buildings: environmental performance in early design decisions, and support through Mostadam, LEED and Envision.
-- Renewable energy: solar PV systems, battery energy storage, EV charging stations, renewable energy feasibility and environmental studies, and operation and maintenance.
+We are an environmental advisory and services firm. One accountable team brings regulatory, technical and field expertise together across seven practices:
 
-How we work:
-We review your activities and site risks, identify the applicable requirements and gaps, prepare the studies and plans and carry out field measurements, prepare submissions and follow up on authority comments, then support compliance, monitoring and reporting over the life of the project.
+• Permitting & Compliance: environmental permits, compliance management, environmental records and reporting, audits and environmental due diligence.
+• Environmental Studies: environmental impact assessment (EIA) and environmental management plans for construction and operation.
+• Monitoring & Measurement: ambient air and emissions, dust (PM10 and PM2.5), fuel station VOC, noise and vibration, water and wastewater.
+• Waste & Circular Economy: waste management plans and records, and circular economy roadmaps.
+• Sustainability, ESG & Climate: ESG advisory, GHG and carbon accounting, net zero roadmaps, sustainability strategy and life cycle assessment.
+• Sustainable Buildings & Infrastructure: green building advisory and support through Mostadam, LEED and Envision.
+• Renewable Energy: solar PV systems, battery energy storage, EV charging stations, feasibility studies, and operation and maintenance.
 
-We work with HSE and environmental managers, project managers, developers, facility managers and owners in industry, construction, real estate, energy, logistics, healthcare, hospitality and the public sector, in Riyadh, Jeddah, Dammam and across the Kingdom.
+We serve industry and manufacturing, construction, real estate, energy and utilities, oil and gas, mining, logistics, healthcare, hospitality, food and beverage, infrastructure and the public sector, from project concept through operation.
 
-Contact: sales@selorin.co | +966 55 015 6887 | selorin.co
+Our work helps clients contribute to the environmental goals of Saudi Vision 2030 and the Saudi Green Initiative.
+
+Request a consultation: selorin.co/request
+sales@selorin.co | +966 55 015 6887
 ```
 
-> عدد الأحرف: **1851** من 2000
+> عدد الأحرف: **1714** من 2000
+
+العربية:
+
+```text
+تساعد سيلورين المنشآت والمشاريع في المملكة العربية السعودية على النمو بمسؤولية. نحوّل المتطلبات النظامية والبيانات البيئية إلى قرارات واضحة يمكن الدفاع عنها أمام الجهات المختصة والمستثمرين والمجتمع المحيط.
+
+سيلورين شركة استشارات وخدمات بيئية، يجمع فيها فريق واحد مسؤول الخبرة التنظيمية والفنية والميدانية في سبعة مجالات:
+
+• التصاريح والامتثال: التصاريح البيئية، وإدارة الامتثال، والسجلات والتقارير البيئية، والتدقيق البيئي، والفحص البيئي النافي للجهالة.
+• الدراسات البيئية: تقييم الأثر البيئي (EIA)، وخطط الإدارة البيئية للإنشاء والتشغيل.
+• الرصد والقياس: جودة الهواء والانبعاثات، والغبار (PM10 وPM2.5)، والمركبات العضوية المتطايرة في محطات الوقود، والضوضاء والاهتزازات، والمياه ومياه الصرف.
+• النفايات والاقتصاد الدائري: خطط إدارة النفايات وسجلاتها، وخرائط طريق الاقتصاد الدائري.
+• الاستدامة والحوكمة والمناخ: استشارات ESG، وحصر انبعاثات غازات الاحتباس الحراري، وخرائط الحياد الصفري، واستراتيجيات الاستدامة، وتقييم دورة الحياة.
+• المباني والبنية التحتية المستدامة: استشارات المباني الخضراء، والدعم خلال أنظمة مستدام وLEED وEnvision.
+• الطاقة المتجددة: أنظمة الطاقة الشمسية، وتخزين الطاقة بالبطاريات، ومحطات شحن السيارات الكهربائية، ودراسات الجدوى، والتشغيل والصيانة.
+
+نخدم الصناعة والتصنيع، والإنشاءات، والتطوير العقاري، والطاقة والمرافق، والنفط والغاز، والتعدين، والخدمات اللوجستية، والرعاية الصحية، والضيافة، والأغذية والمشروبات، والبنية التحتية، والقطاع الحكومي، من فكرة المشروع حتى تشغيله.
+
+ويساعد عملنا عملاءنا على الإسهام في المستهدفات البيئية لرؤية السعودية 2030 ومبادرة السعودية الخضراء.
+
+اطلب استشارة: selorin.co/ar/request
+sales@selorin.co | +966 55 015 6887
+```
+
+> عدد الأحرف: **1569** من 2000
+
+### 5.2.1 المنشور التعريفي المثبّت
+
+الإنجليزية (يُثبّت عبر Feature on top):
+
+```text
+Meet Selorin.
+
+Environmental requirements in Saudi Arabia keep growing, and so does the data behind them. Our job is to turn both into clear decisions for facilities and projects.
+
+One accountable team for:
+• Environmental permits and compliance
+• EIA and environmental management plans
+• Air, dust, noise and water monitoring
+• Waste and circular economy
+• ESG, carbon accounting and net zero
+• Green buildings: Mostadam and LEED
+• Solar PV, battery storage and EV charging
+
+Follow the page for practical guides in English and Arabic, or tell us about your project:
+https://selorin.co/request/?utm_source=linkedin&utm_medium=social&utm_campaign=bio&utm_content=pinned
+
+#Selorin #SaudiArabia #Sustainability #EnvironmentalCompliance
+```
+
+> عدد الأحرف: **732** من 3000
+
+العربية:
+
+```text
+تعرّف على سيلورين.
+
+تتزايد المتطلبات البيئية في المملكة، وتتزايد معها البيانات التي تقوم عليها. عملنا أن نحوّلهما إلى قرارات واضحة للمنشآت والمشاريع.
+
+فريق واحد مسؤول عن:
+• التصاريح البيئية والامتثال
+• تقييم الأثر البيئي وخطط الإدارة البيئية
+• رصد الهواء والغبار والضوضاء والمياه
+• النفايات والاقتصاد الدائري
+• ESG والبصمة الكربونية والحياد الصفري
+• المباني الخضراء: مستدام وLEED
+• الطاقة الشمسية وتخزين الطاقة وشواحن السيارات الكهربائية
+
+تابعوا الصفحة لأدلة عملية بالعربية والإنجليزية، أو أخبرونا عن مشروعكم:
+https://selorin.co/ar/request/?utm_source=linkedin&utm_medium=social&utm_campaign=bio&utm_content=pinned
+
+#سيلورين #السعودية #الاستدامة #الامتثال_البيئي
+```
+
+> عدد الأحرف: **662** من 3000
 
 ### 5.3 التخصصات (Specialties)
 
@@ -928,7 +984,6 @@ python3 -c "import sys; print(len(sys.stdin.read().rstrip('\n')))" < نص.txt
 
 **المرئيات**
 - [ ] فحص ظهور الأغلفة والصورة الرمزية على الجوال والحاسب بعد أي تحديث من المنصات.
-- [ ] عند تحديث الأغلفة، إضافة «طاقة متجددة» إلى النص (القسم 3).
 
 ---
 
@@ -936,3 +991,4 @@ python3 -c "import sys; print(len(sys.stdin.read().rstrip('\n')))" < نص.txt
 
 - 2026-10-20: إنشاء الدليل. لم تُضف أي أرقام أو أنظمة مؤرخة لأن النصوص تعتمد على وصف الخدمات وطريقة العمل فقط.
 - 2026-10-20 (مراجعة): أعيد عدّ كل النصوص آليًا؛ اختُصر المنشور المثبت في إكس ليبقى ضمن 280 حرفًا والرابط محسوب بطوله الكامل؛ صُحح عدد الخدمات التي يغطيها التصنيف الأساسي في جوجل (22 من 27)؛ حُذفت عبارات عامة عن سلوك المستخدمين في المنصات لم نتحقق منها من مصدر؛ صار قسم الأسئلة والأجوبة في جوجل مشروطًا بظهوره في الملف؛ أضيف جدول المقاطع القصيرة من تقويم الحملة.
+- 2026-10-25: نصوص لينكد إن بأسلوب صفحات الشركات الكبرى (غاية، ممارسات سبع، قطاعات، دعوة إلى الإجراء) بالإنجليزية والعربية، ومنشور تعريفي مثبّت؛ الأغلفة تذكر الطاقة المتجددة؛ معرّف إكس الرسمي @selorinco ويُقترح توحيده في بقية المنصات؛ حُدّث وصف قناة يوتيوب وكلماتها المفتاحية آليًا عبر Make. نسخة جاهزة للنسخ بأزرار لكل منصة في صفحة «دليل حسابات سيلورين».

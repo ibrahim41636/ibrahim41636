@@ -70,7 +70,7 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
 2. ~~متى يحتاج مشروعك إلى دراسة تقييم أثر بيئي؟~~ (covered by existing `how-environmental-impact-assessment-works`)
 3. ~~تكلفة تركيب الطاقة الشمسية للمنازل في السعودية: ما الذي يحدد السعر؟~~ ✅ 2026-10-11
 4. ~~اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني~~ ✅ 2026-10-18
-5. تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟
+5. ~~تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟~~ ✅ 2026-10-25
 6. كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات
 7. إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية
 8. رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير
@@ -93,3 +93,11 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
   form. Regulatory context kept general (Saudi Building Code, approved equipment standards, municipal/Civil Defense
   parking rules, electricity company procedures) with a note to check current versions; no invented figures.
   Audit: new AR title 64 chars, EN title shortened to 66; descriptions 151/156 chars with the primary keyword.
+- 2026-10-25 (weekly run): published backlog item 5 as `insights/{ar,en}/self-monitoring-reports-saudi-arabia`
+  targeting the question-form query «تقارير الرصد الذاتي: ما المطلوب ومتى» / "self-monitoring report
+  requirements Saudi Arabia". It supports `/ar/services/environmental-monitoring/` (whose title keeps
+  «الرصد البيئي وتقارير الرصد الذاتي» as the commercial target) rather than competing with it. Inline links to
+  environmental monitoring, air and water monitoring, permitting, EIA, compliance, the inspection guide and the
+  monitoring request form. Regulatory context kept general (permit conditions, Environmental Law implementing
+  regulations, NCEC oversight); no invented frequencies or limits, no accreditation claims.
+  Audit: AR title 48 chars, EN title shortened to 64; descriptions include the primary keyword.

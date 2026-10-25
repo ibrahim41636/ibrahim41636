@@ -30,9 +30,11 @@ describe("social helpers", () => {
     expect(text).toContain("utm_source=x");
   });
 
-  it("schedules on Riyadh working-day slots only", () => {
-    // Friday 2026-10-23 10:00 UTC → next slot is Sunday 09:30 Riyadh = 06:30 UTC.
-    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z")))).toBe("2026-10-25 06:30:00");
+  it("schedules on Riyadh slots: three on working days, one evening slot at the weekend", () => {
+    // Friday 2026-10-23 10:00 UTC → Friday 20:30 Riyadh = 17:30 UTC; the one after is Saturday evening, then Sunday 09:30.
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z")))).toBe("2026-10-23 17:30:00");
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 1))).toBe("2026-10-24 17:30:00");
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 2))).toBe("2026-10-25 06:30:00");
     // Monday 05:00 UTC (08:00 Riyadh) → 09:30 Riyadh same day; skip 1 → 13:00 Riyadh.
     expect(toDbTime(nextSlot(new Date("2026-10-19T05:00:00Z")))).toBe("2026-10-19 06:30:00");
     expect(toDbTime(nextSlot(new Date("2026-10-19T05:00:00Z"), 1))).toBe("2026-10-19 10:00:00");
@@ -46,8 +48,11 @@ describe("social helpers", () => {
     const faq = posts.find((p) => p.variant === "faq" && p.channel === "linkedin")!;
     expect(faq.text).toContain(article.faqs[0].q);
     expect(faq.scheduledAt > posts[0].scheduledAt).toBe(true);
-    // English articles only go to channels that publish in English.
-    expect(articleSeries({ ...article, lang: "en" }, ["x", "linkedin"], now).every((p) => p.channel === "linkedin")).toBe(true);
+    // English goes first: the English launch takes the first slot, the Arabic one the next.
+    const en = articleSeries({ ...article, lang: "en" }, ["x", "linkedin", "google_business"], now);
+    expect(en.some((p) => p.channel === "google_business")).toBe(false);
+    expect(en.find((p) => p.variant === "launch" && p.channel === "linkedin")!.scheduledAt).toBe("2026-10-19 06:30:00");
+    expect(posts.find((p) => p.variant === "launch" && p.channel === "linkedin")!.scheduledAt).toBe("2026-10-19 10:00:00");
   });
 
   it("turns a channel on only when all its secrets are set", () => {
@@ -73,12 +78,14 @@ describe("campaign posts and branded images", () => {
 
   it("schedules a campaign post on its day and slot, per language and channel", () => {
     const drafts = campaignSeries(post, ["linkedin", "x", "instagram", "google_business"], new Date("2026-10-20T05:00:00Z"));
-    // Sunday 25 Oct, second slot (13:00 Riyadh = 10:00 UTC); English one slot later.
-    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "ar")!.scheduledAt).toBe("2026-10-25 10:00:00");
-    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "en")!.scheduledAt).toBe("2026-10-25 17:30:00");
+    // Sunday 25 Oct, second slot (13:00 Riyadh = 10:00 UTC) in English; Arabic one slot later.
+    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "en")!.scheduledAt).toBe("2026-10-25 10:00:00");
+    expect(drafts.find((d) => d.channel === "linkedin" && d.lang === "ar")!.scheduledAt).toBe("2026-10-25 17:30:00");
     expect(drafts.some((d) => d.channel === "instagram" && d.lang === "ar")).toBe(true);
-    expect(drafts.some((d) => d.lang === "en" && d.channel !== "linkedin")).toBe(false);
-    const x = drafts.find((d) => d.channel === "x")!;
+    // The English version has no image, so it skips Instagram; Google stays Arabic only.
+    expect(drafts.some((d) => d.lang === "en" && (d.channel === "instagram" || d.channel === "google_business"))).toBe(false);
+    expect(drafts.some((d) => d.lang === "en" && d.channel === "x")).toBe(true);
+    const x = drafts.find((d) => d.channel === "x" && d.lang === "ar")!;
     expect(x.text.startsWith("نسخة قصيرة لإكس")).toBe(true);
     expect(x.link).toContain("utm_campaign=campaign-2026-10-25-cbam");
     expect(drafts.find((d) => d.channel === "google_business")!.text).not.toContain("#");
@@ -87,9 +94,10 @@ describe("campaign posts and branded images", () => {
   it("waits until a campaign post is within three weeks and drops stale ones", () => {
     expect(campaignSeries(post, ["linkedin"], new Date("2026-09-01T00:00:00Z"))).toEqual([]);
     expect(campaignSeries(post, ["linkedin"], new Date("2026-11-10T00:00:00Z"))).toEqual([]);
-    // Same day but after the slot → next slot.
+    // Same day but after the slot → next slot (English), then the following one (Arabic).
     const late = campaignSeries(post, ["linkedin"], new Date("2026-10-25T11:00:00Z"));
-    expect(late[0].scheduledAt).toBe("2026-10-25 17:30:00");
+    expect(late.find((d) => d.lang === "en")!.scheduledAt).toBe("2026-10-25 17:30:00");
+    expect(late.find((d) => d.lang === "ar")!.scheduledAt).toBe("2026-10-26 06:30:00");
   });
 
   it("keeps campaign X posts within the limit", () => {
@@ -245,9 +253,12 @@ describe("social cron", () => {
 
     const first = await runSocialCron(env, new Date("2026-10-19T05:00:00Z"), { articles: [article, old] });
     expect(first.queued).toBe(4); // launch + takeaway + faq + one evergreen re-share
-    expect(first.published).toBe(0); // first slot is 09:30 Riyadh (+25 min offset for the webhook channel)
+    expect(first.published).toBe(0);
 
-    const again = await runSocialCron(env, new Date("2026-10-19T07:00:00Z"), { articles: [article, old] });
+    // Arabic posts go one slot after English ones: 13:00 Riyadh (+25 min for the webhook channel).
+    const early = await runSocialCron(env, new Date("2026-10-19T07:00:00Z"), { articles: [article, old] });
+    expect(early.published).toBe(0);
+    const again = await runSocialCron(env, new Date("2026-10-19T10:30:00Z"), { articles: [article, old] });
     expect(again.queued).toBe(0);
     expect(again.published).toBe(2); // launch + evergreen
     expect(sent.map((s) => s.body.variant).sort()).toEqual(["evergreen", "launch"]);
@@ -255,7 +266,7 @@ describe("social cron", () => {
 
     // A campaign post for that day is queued once, alongside the article series.
     const camp = { id: "c1", date: "2026-10-21", slot: 0, stage: "awareness" as const, pillar: "p", versions: [{ lang: "ar" as const, text: "نص حملة طويل بما يكفي للاختبار" }] };
-    const third = await runSocialCron(env, new Date("2026-10-19T07:05:00Z"), { articles: [article, old], campaign: [camp] });
+    const third = await runSocialCron(env, new Date("2026-10-19T10:35:00Z"), { articles: [article, old], campaign: [camp] });
     expect(third.queued).toBe(1);
     expect(db.posts.some((p) => p.source_key === "campaign/c1:ar:webhook")).toBe(true);
   });
@@ -267,8 +278,8 @@ describe("social cron", () => {
     const a2 = { ...article, slug: "b-older", date: "2026-10-10T00:00:00.000Z" };
     await runSocialCron(env, new Date("2026-10-19T05:00:00Z"), { articles: [a2, a1] });
     const launch = (slug: string) => db.posts.find((p) => p.source_key === `ar/${slug}:launch:webhook`)!.scheduled_at;
-    expect(launch("a-newer")).toBe("2026-10-19 06:55:00");
-    expect(launch("b-older")).toBe("2026-10-21 06:55:00");
+    expect(launch("a-newer")).toBe("2026-10-19 10:25:00");
+    expect(launch("b-older")).toBe("2026-10-21 10:25:00");
   });
 
   it("retries a failed post and gives up after three attempts", async () => {

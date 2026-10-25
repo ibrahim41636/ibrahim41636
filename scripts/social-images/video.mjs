@@ -3,7 +3,7 @@
 //   npm run build && npm run social:images && npm run social:videos
 //   npm run social:videos -- --force | --only <slug-or-campaign-id> | --langs ar,en
 // Outputs: public/social/video/{lang}/{slug}.mp4 (articles)
-//          public/social/video/campaign/{id}-{lang}.mp4 (campaign posts with "video": true)
+//          public/social/video/campaign/{id}-{lang}.mp4 (every campaign post unless "video": false)
 // Needs ffmpeg (libx264) on the PATH.
 import { chromium } from "playwright-core";
 import { execFileSync } from "node:child_process";
@@ -16,7 +16,7 @@ import { story, endcard } from "./templates.mjs";
 const argv = process.argv.slice(2);
 const force = argv.includes("--force");
 const only = argv.includes("--only") ? argv[argv.indexOf("--only") + 1] : null;
-const langs = (argv.includes("--langs") ? argv[argv.indexOf("--langs") + 1] : "ar").split(",");
+const langs = (argv.includes("--langs") ? argv[argv.indexOf("--langs") + 1] : "ar,en").split(",");
 
 const SLIDE = 3.6; // seconds per frame
 const FADE = 0.5;
@@ -44,7 +44,7 @@ if (existsSync(campaignDir)) {
     for (const lang of langs) {
       const v = post[lang];
       const card = `public/social/campaign/${id}-${lang}.jpg`;
-      if (!v?.video || !existsSync(card)) continue;
+      if (!v || v.video === false || !existsSync(card)) continue;
       const out = `public/social/video/campaign/${id}-${lang}.mp4`;
       // One card: hold it for two slide lengths so there is time to read it.
       if (force || !existsSync(out)) jobs.push({ out, lang, cards: [card, card], line: v.title });

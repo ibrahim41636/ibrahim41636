@@ -11,7 +11,7 @@ export const site = {
   whatsapp: "966550156887",
   country: { en: "Saudi Arabia", ar: "المملكة العربية السعودية" },
   // [CONTENT REQUIRED] Replace with the company's real profiles; empty values are hidden.
-  social: { linkedin: "https://www.linkedin.com/company/selorin/", instagram: "https://www.instagram.com/selorin5/", tiktok: "https://www.tiktok.com/@selorin86", x: "", youtube: "" },
+  social: { linkedin: "https://www.linkedin.com/company/selorin/", instagram: "https://www.instagram.com/selorin5/", tiktok: "https://www.tiktok.com/@selorin86", x: "https://x.com/selorinco", youtube: "" },
   profilePdf: "/files/selorin-company-profile.pdf",
 };
 

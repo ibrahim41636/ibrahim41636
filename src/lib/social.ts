@@ -7,19 +7,20 @@ export const CHANNELS = ["linkedin", "x", "facebook", "instagram", "google_busin
 export type Channel = (typeof CHANNELS)[number];
 
 export const CHANNEL_INFO: Record<Channel, { ar: string; en: string; langs: ("ar" | "en")[]; utmSource: string }> = {
-  // LinkedIn is the main B2B channel in the Kingdom and has many English-reading decision makers.
+  // Every channel but Google posts in both languages (English first). LinkedIn is the main B2B
+  // channel in the Kingdom and has many English-reading decision makers.
   linkedin: { ar: "لينكد إن", en: "LinkedIn", langs: ["ar", "en"], utmSource: "linkedin" },
-  x: { ar: "إكس (تويتر)", en: "X", langs: ["ar"], utmSource: "x" },
-  facebook: { ar: "فيسبوك", en: "Facebook", langs: ["ar"], utmSource: "facebook" },
-  instagram: { ar: "إنستغرام", en: "Instagram", langs: ["ar"], utmSource: "instagram" },
+  x: { ar: "إكس (تويتر)", en: "X", langs: ["ar", "en"], utmSource: "x" },
+  facebook: { ar: "فيسبوك", en: "Facebook", langs: ["ar", "en"], utmSource: "facebook" },
+  instagram: { ar: "إنستغرام", en: "Instagram", langs: ["ar", "en"], utmSource: "instagram" },
   // Google Business Profile posts appear in Maps and the local panel on Google Search.
   google_business: { ar: "ملف جوجل التجاري", en: "Google Business Profile", langs: ["ar"], utmSource: "google_business" },
   // Make / Zapier / n8n hook for channels without a direct API here (TikTok, Snapchat, WhatsApp channel…).
-  webhook: { ar: "ربط خارجي (Make / Zapier)", en: "Automation webhook", langs: ["ar"], utmSource: "social_webhook" },
+  webhook: { ar: "ربط خارجي (Make / Zapier)", en: "Automation webhook", langs: ["ar", "en"], utmSource: "social_webhook" },
   // Short vertical videos (scripts/social-images/video.mjs) and photo posts.
-  tiktok: { ar: "تيك توك", en: "TikTok", langs: ["ar"], utmSource: "tiktok" },
+  tiktok: { ar: "تيك توك", en: "TikTok", langs: ["ar", "en"], utmSource: "tiktok" },
   // YouTube Shorts: only posts that have a video.
-  youtube: { ar: "يوتيوب", en: "YouTube", langs: ["ar"], utmSource: "youtube" },
+  youtube: { ar: "يوتيوب", en: "YouTube", langs: ["ar", "en"], utmSource: "youtube" },
 };
 
 export const isChannel = (v: unknown): v is Channel => typeof v === "string" && (CHANNELS as readonly string[]).includes(v);
@@ -162,9 +163,14 @@ export function composeText(channel: Channel, a: FeedArticle, variant: Variant, 
 
 // Posting slots in Riyadh time (UTC+3, no daylight saving): working week Sunday–Thursday,
 // morning, after lunch and evening — when B2B audiences in the Kingdom are most active.
+// Friday and Saturday keep one evening slot, when Instagram, TikTok and YouTube are busiest.
 export const SLOTS_RIYADH = ["09:30", "13:00", "20:30"];
+export const WEEKEND_SLOTS_RIYADH = ["20:30"];
 const WORK_DAYS = new Set([0, 1, 2, 3, 4]); // Sun..Thu
 const RIYADH_OFFSET_MIN = 180;
+
+/** Every post goes out in English first and in Arabic one slot later. */
+const langSkip = (lang: "ar" | "en") => (lang === "ar" ? 1 : 0);
 
 export const toDbTime = (d: Date) => d.toISOString().slice(0, 19).replace("T", " ");
 export const fromDbTime = (s: string) => new Date(s.replace(" ", "T") + "Z");
@@ -174,8 +180,7 @@ export function nextSlot(from: Date, skip = 0): Date {
   const riyadh = new Date(from.getTime() + RIYADH_OFFSET_MIN * 60_000);
   for (let day = 0; day < 14; day++) {
     const d = new Date(Date.UTC(riyadh.getUTCFullYear(), riyadh.getUTCMonth(), riyadh.getUTCDate() + day));
-    if (!WORK_DAYS.has(d.getUTCDay())) continue;
-    for (const slot of SLOTS_RIYADH) {
+    for (const slot of WORK_DAYS.has(d.getUTCDay()) ? SLOTS_RIYADH : WEEKEND_SLOTS_RIYADH) {
       const [h, m] = slot.split(":").map(Number);
       const local = Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), h, m);
       const utc = new Date(local - RIYADH_OFFSET_MIN * 60_000);
@@ -203,8 +208,7 @@ export function articleSeries(a: FeedArticle, channels: Channel[], now: Date, va
       if (channel === "instagram" && !a.image) return;
       const video = variant === "launch" && VIDEO_CHANNELS.includes(channel) ? a.video : undefined;
       if (channel === "youtube" && !video) return;
-      // English LinkedIn posts go one slot after the Arabic ones.
-      const at = nextSlot(base, a.lang === "en" ? 1 : 0);
+      const at = nextSlot(base, langSkip(a.lang));
       at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
       const campaign = `insight-${a.slug}`;
       const key = variant === "evergreen" ? `${variant}-${toDbTime(now).slice(0, 10)}` : variant;
@@ -253,7 +257,7 @@ const riyadhDayStart = (day: string) => {
 
 /**
  * Drafts for a campaign post on its day, once it is within the queue window (from yesterday to
- * `aheadDays` ahead). Fridays and Saturdays roll to Sunday; a slot already past is moved to the next one.
+ * `aheadDays` ahead). Fridays and Saturdays use the evening slot; a slot already past is moved to the next one.
  */
 export function campaignSeries(post: CampaignPost, channels: Channel[], now: Date, aheadDays = 21): PostDraft[] {
   const start = riyadhDayStart(post.date);
@@ -266,8 +270,10 @@ export function campaignSeries(post: CampaignPost, channels: Channel[], now: Dat
       if ((channel === "instagram" || channel === "tiktok") && !v.image && !v.video) return;
       const video = VIDEO_CHANNELS.includes(channel) ? v.video : undefined;
       if (channel === "youtube" && !video) return;
-      let at = nextSlot(start, post.slot + (v.lang === "en" ? 1 : 0));
-      if (at.getTime() < now.getTime()) at = nextSlot(now, v.lang === "en" ? 1 : 0);
+      // The English version's slot (or the next one if it has passed); Arabic follows it.
+      let first = nextSlot(start, post.slot);
+      if (first.getTime() < now.getTime()) first = nextSlot(now);
+      const at = nextSlot(first, langSkip(v.lang));
       at.setUTCMinutes(at.getUTCMinutes() + CHANNELS.indexOf(channel) * 5);
       const link = v.link ? utmLink(v.link, channel, `campaign-${post.id}`, post.stage) : "";
       out.push({

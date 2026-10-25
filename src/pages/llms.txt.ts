@@ -8,6 +8,7 @@ export const GET: APIRoute = async () => {
   const services = await getServices();
   const industries = await getIndustries();
   const insights = await getInsights("en");
+  const insightsAr = await getInsights("ar");
   const u = (p: string) => `${site.url}${p}`;
   const lines = [
     `# ${site.name.en}`,
@@ -32,6 +33,22 @@ export const GET: APIRoute = async () => {
     `- [About](${u("/about/")})`,
     `- [Contact](${u("/contact/")})`,
     `- [Request a consultation](${u("/request/")})`,
+    `- [Latest updates and social posts](${u("/updates/")})`,
+    ...Object.entries(site.social).filter(([, url]) => url).map(([name, url]) => `- ${name}: ${url}`),
+    "",
+    // Arabic pages, so answer engines can cite Selorin in Arabic answers too.
+    "## بالعربية",
+    "سيلورين شركة استشارات وخدمات بيئية في المملكة العربية السعودية: التصاريح البيئية والامتثال، ودراسات تقييم الأثر البيئي، ورصد الهواء والغبار والضوضاء والمياه، وإدارة النفايات، والاستدامة والحياد الكربوني، والطاقة المتجددة.",
+    "",
+    ...categories.flatMap((c) => [
+      `### ${c.name.ar}`,
+      ...services.filter((s) => s.data.category === c.id).map((s) => `- [${s.data.ar.name}](${u(`/ar/services/${s.id}/`)}): ${s.data.ar.definition}`),
+      "",
+    ]),
+    "### مقالات",
+    ...insightsAr.map((p) => `- [${p.data.title}](${u(`/ar/insights/${insightSlug(p)}/`)}): ${p.data.description}`),
+    "",
+    `- [اطلب استشارة](${u("/ar/request/")}) · [آخر المستجدات](${u("/ar/updates/")})`,
     "",
   ];
   return new Response(lines.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8" } });

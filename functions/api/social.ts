@@ -303,14 +303,16 @@ export async function queueFeed(env: SocialEnv, { articles, campaign = [] }: Fee
     ...campaign.flatMap((c) => campaignSeries(c, channels, now)),
   ];
 
-  // Evergreen: re-share an older Arabic article once a week, rotating through the archive.
+  // Evergreen: re-share an older article once a week (English, then Arabic), rotating through the archive.
   const older = articles.filter((a) => a.lang === "ar" && new Date(a.date).getTime() < cutoff).sort((a, b) => a.date.localeCompare(b.date));
   if (older.length) {
     const last = await env.DB.prepare(`SELECT COUNT(*) AS n FROM social_posts WHERE variant = 'evergreen' AND created_at > datetime(?1, '-7 days')`)
       .bind(toDbTime(now)).first<{ n: number }>();
     if (!last?.n) {
       const week = Math.floor(now.getTime() / (7 * 86_400_000));
-      drafts.push(...articleSeries(older[week % older.length], channels, now, ["evergreen"]));
+      const pick = older[week % older.length];
+      const en = articles.find((a) => a.lang === "en" && a.slug === pick.slug);
+      drafts.push(...[en, pick].flatMap((a) => (a ? articleSeries(a, channels, now, ["evergreen"]) : [])));
     }
   }
   if (!drafts.length) return { queued: 0, newArticles: [] };

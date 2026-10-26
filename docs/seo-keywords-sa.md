@@ -9,6 +9,13 @@ Rules: one primary keyword per page (no two pages competing for the same query);
 keyword appears in the Arabic `seoTitle`, H1/lead and first paragraph; city names appear naturally,
 never as keyword lists; no claims of accreditation or approval that Selorin does not hold.
 
+This file is part of Selorin's unified marketing system (`docs/marketing/operating-system-ar.md`).
+Before writing, read the latest month in `docs/marketing/monthly-brief.md`: the backlog below follows
+its order. For answer engines (GEO), every article opens with a two-sentence direct answer to the
+search question, uses question-form headings, has an FAQ section and at least one clear definition,
+names official sources where a rule or date is mentioned, and gets a link from two related older
+articles (checklist in `operating-system-ar.md` §7).
+
 ## Core (brand + category)
 
 | Keyword (AR) | Keyword (EN) | Target page |
@@ -71,9 +78,15 @@ never as keyword lists; no claims of accreditation or approval that Selorin does
 3. ~~تكلفة تركيب الطاقة الشمسية للمنازل في السعودية: ما الذي يحدد السعر؟~~ ✅ 2026-10-11
 4. ~~اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني~~ ✅ 2026-10-18
 5. ~~تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟~~ ✅ 2026-10-25
-6. كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات
+6. ~~كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات~~ (covered by existing `preparing-for-an-environmental-inspection`)
 7. إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية
-8. رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير
+8. ~~رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير~~ (covered by existing `dust-monitoring-pm10-pm25-construction`)
+9. خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف (target `/ar/services/net-zero-advisory/`; week of COP31)
+10. خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب (target `/ar/services/environmental-management-plans/`)
+11. قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير (target `/ar/services/noise-monitoring/`)
+
+The order follows the latest monthly brief (`docs/marketing/monthly-brief.md`); when a new brief changes the
+month's focus, re-order this list to match it.
 
 ## Log
 

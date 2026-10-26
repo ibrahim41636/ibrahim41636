@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-06",
+  "slot": 0,
+  "pillar": "أنظمة الطاقة الشمسية",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/solar-energy-systems/",
+    "https://selorin.co/ar/insights/home-solar-cost-saudi-arabia/"
+  ],
+  "ar": {
+    "title": "قبل تركيب الطاقة الشمسية على سطحك: 3 فحوص",
+    "text": "تفكر في ألواح شمسية لمنزلك أو منشأتك؟ ثلاثة فحوص قبل طلب أي عرض سعر:\n\n• فواتير 12 شهرًا: صمّم النظام على استهلاكك الفعلي وذروته في الصيف، لا على مساحة السطح فقط.\n• السطح نفسه: الظل من خزانات المياه ووحدات التكييف، وتحمّل الهيكل، ومساحة آمنة للوصول والتنظيف.\n• الربط بالشبكة: اسأل مبكرًا عن متطلبات الموافقة وترتيبات العداد قبل توقيع العقد.\n\nبعد ذلك تصبح مقارنة العروض مقارنة أرقام واضحة: إنتاج متوقع، وتكلفة، ومدة استرداد.\n\nاقرأ دليل تكلفة الطاقة الشمسية للمنازل في السعودية من الرابط.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #السعودية #سيلورين",
+    "x": "قبل تركيب الطاقة الشمسية: صمّم على فواتير 12 شهرًا، وافحص الظل وتحمّل السطح، واسأل مبكرًا عن متطلبات الربط بالشبكة والعداد. #الطاقة_الشمسية",
+    "link": "/ar/insights/home-solar-cost-saudi-arabia/",
+    "image": {
+      "template": "tip",
+      "title": "قبل الطاقة الشمسية على سطحك",
+      "text": "صمّم النظام على فواتير 12 شهرًا لا على مساحة السطح، وافحص الظل وتحمّل الهيكل، واسأل عن متطلبات الربط بالشبكة والعداد قبل توقيع العقد."
+    }
+  },
+  "en": {
+    "title": "Before rooftop solar: three checks",
+    "text": "Thinking about solar panels for your home or facility? Three checks before you ask for a quote:\n\n• 12 months of bills: size the system to your real consumption and its summer peak, not just the roof area.\n• The roof itself: shade from water tanks and AC units, structural capacity, and safe access for cleaning.\n• Grid connection: ask early about approval requirements and metering arrangements before signing.\n\nAfter that, comparing quotes becomes a comparison of clear numbers: expected output, cost and payback.\n\nRead our guide to home solar costs in Saudi Arabia at the link.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
+    "x": "Before rooftop solar: size it on 12 months of bills, check shade and roof structure, and ask early about grid connection and metering requirements. #SolarEnergy",
+    "link": "/insights/home-solar-cost-saudi-arabia/",
+    "image": {
+      "template": "tip",
+      "title": "Before rooftop solar",
+      "text": "Size the system on 12 months of bills, not roof area. Check shade and structure, and ask about grid connection and metering requirements before you sign."
+    }
+  }
+}

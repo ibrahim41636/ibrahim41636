@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-31",
+  "slot": 0,
+  "pillar": "أسبوع البيئة في السعودية",
+  "stage": "awareness",
+  "sources": [
+    "https://www.unccd.int/index.php/events/other/2026-un-climate-change-conference-cop31",
+    "https://cityscapeglobal.com/welcome-to-cityscape-global-2026",
+    "https://rega.gov.sa/en/media-center/events/city-scape-2026/"
+  ],
+  "ar": {
+    "title": "أسبوع البيئة في السعودية: ماذا ينتظرنا في نوفمبر؟",
+    "text": "أسبوع البيئة في السعودية | ماذا ينتظر الاستدامة في نوفمبر 2026؟\n\nموعدان يستحقان الاستعداد:\n\n• مؤتمر الأمم المتحدة للمناخ COP31 في أنطاليا بتركيا، من 9 إلى 20 نوفمبر. يعود معه سؤال الأهداف المناخية إلى طاولة مجالس الإدارات، ونقطة البداية الجادة هي جرد انبعاثات موثوق قبل أي إعلان.\n• معرض سيتي سكيب العالمي في الرياض، من 16 إلى 19 نوفمبر. قبل شراء مبنى أو تطويره، اسأل عن أداء الطاقة وكفاءة التكييف والمياه وحالة شهادة مستدام أو LEED.\n\nونوفمبر أيضًا بداية موسم الإنشاءات في الطقس الأبرد: وقت مناسب لمراجعة خطط ضبط الغبار والضوضاء قبل تسارع الأعمال.\n\nنتابع معكم كل أسبوع أبرز ما يخص البيئة والاستدامة في المملكة، وما يعنيه لمنشأتك.\n\n#أسبوع_البيئة #الاستدامة #COP31 #سيتي_سكيب #السعودية #سيلورين",
+    "x": "أسبوع البيئة في السعودية: نوفمبر يحمل COP31 في أنطاليا (9–20 نوفمبر) وسيتي سكيب العالمي في الرياض (16–19 نوفمبر). ابدأ بجرد انبعاثاتك واسأل عن أداء المباني. #الاستدامة #COP31",
+    "link": "/ar/updates/",
+    "image": {
+      "template": "event",
+      "date": "نوفمبر 2026",
+      "title": "أسبوع البيئة: COP31 وسيتي سكيب في نوفمبر",
+      "text": "COP31 في أنطاليا من 9 إلى 20 نوفمبر، وسيتي سكيب العالمي في الرياض من 16 إلى 19 نوفمبر. جهّز جرد انبعاثاتك، واسأل عن أداء المباني قبل الشراء."
+    }
+  },
+  "en": {
+    "title": "This week in Saudi sustainability: what November holds",
+    "text": "This week in Saudi sustainability | What November 2026 holds\n\nTwo dates worth preparing for:\n\n• The UN Climate Change Conference COP31 in Antalya, Türkiye, 9–20 November. Climate targets return to board agendas, and the credible starting point is a reliable emissions inventory before any announcement.\n• Cityscape Global in Riyadh, 16–19 November. Before you buy or develop a building, ask about energy performance, cooling efficiency, water and Mostadam or LEED status.\n\nNovember also starts the cooler construction season: a good time to review dust and noise control plans before works speed up.\n\nEvery week we follow what matters for the environment and sustainability in the Kingdom, and what it means for your facility.\n\n#Sustainability #COP31 #Cityscape #SaudiArabia",
+    "x": "This week in Saudi sustainability: November brings COP31 in Antalya (9–20 Nov) and Cityscape Global in Riyadh (16–19 Nov). Start with your emissions inventory and ask about building performance. #COP31",
+    "link": "/updates/",
+    "image": {
+      "template": "event",
+      "date": "November 2026",
+      "title": "This week: COP31 and Cityscape in November",
+      "text": "COP31 in Antalya from 9 to 20 November, and Cityscape Global in Riyadh from 16 to 19 November. Prepare your emissions inventory and ask about building performance before you buy."
+    }
+  }
+}

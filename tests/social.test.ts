@@ -30,11 +30,12 @@ describe("social helpers", () => {
     expect(text).toContain("utm_source=x");
   });
 
-  it("schedules on Riyadh slots: three on working days, one evening slot at the weekend", () => {
-    // Friday 2026-10-23 10:00 UTC → Friday 20:30 Riyadh = 17:30 UTC; the one after is Saturday evening, then Sunday 09:30.
-    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z")))).toBe("2026-10-23 17:30:00");
-    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 1))).toBe("2026-10-24 17:30:00");
-    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 2))).toBe("2026-10-25 06:30:00");
+  it("schedules on Riyadh slots: three on working days, two evening slots at the weekend", () => {
+    // Friday 2026-10-23 10:00 UTC → Friday 17:00 Riyadh = 14:00 UTC, then 20:30, then Saturday 17:00 … Sunday 09:30.
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z")))).toBe("2026-10-23 14:00:00");
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 1))).toBe("2026-10-23 17:30:00");
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 2))).toBe("2026-10-24 14:00:00");
+    expect(toDbTime(nextSlot(new Date("2026-10-23T10:00:00Z"), 4))).toBe("2026-10-25 06:30:00");
     // Monday 05:00 UTC (08:00 Riyadh) → 09:30 Riyadh same day; skip 1 → 13:00 Riyadh.
     expect(toDbTime(nextSlot(new Date("2026-10-19T05:00:00Z")))).toBe("2026-10-19 06:30:00");
     expect(toDbTime(nextSlot(new Date("2026-10-19T05:00:00Z"), 1))).toBe("2026-10-19 10:00:00");

@@ -163,9 +163,10 @@ export function composeText(channel: Channel, a: FeedArticle, variant: Variant, 
 
 // Posting slots in Riyadh time (UTC+3, no daylight saving): working week Sunday–Thursday,
 // morning, after lunch and evening — when B2B audiences in the Kingdom are most active.
-// Friday and Saturday keep one evening slot, when Instagram, TikTok and YouTube are busiest.
+// Friday and Saturday get two evening slots, when Instagram, TikTok and YouTube are busiest, so a
+// weekend post goes out in English and Arabic on the same day.
 export const SLOTS_RIYADH = ["09:30", "13:00", "20:30"];
-export const WEEKEND_SLOTS_RIYADH = ["20:30"];
+export const WEEKEND_SLOTS_RIYADH = ["17:00", "20:30"];
 const WORK_DAYS = new Set([0, 1, 2, 3, 4]); // Sun..Thu
 const RIYADH_OFFSET_MIN = 180;
 

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-13",
+  "slot": 0,
+  "pillar": "محطات شحن السيارات الكهربائية",
+  "stage": "consideration",
+  "sources": [
+    "https://selorin.co/ar/services/ev-charging-stations/"
+  ],
+  "ar": {
+    "title": "شاحن سيارة كهربائية في المنزل: افحص هذه الأمور أولًا",
+    "text": "اشتريت سيارة كهربائية أو تفكر في ذلك؟ قبل تركيب شاحن جداري في المنزل:\n\n• سعة اللوحة الكهربائية: اطلب من فني مختص تقييم الأحمال الحالية، فالشاحن يعمل ساعات متواصلة.\n• دائرة مستقلة بحماية مناسبة للشاحن، لا توصيلة من مقبس قائم.\n• موقع الشاحن: قريب من مكان الوقوف، ومحمي من الشمس المباشرة قدر الإمكان، ومسار الكابل آمن.\n• القدرة المناسبة: الشحن المتناوب (AC) بين 7 و22 كيلوواط يناسب عادةً الشحن الليلي في المنازل.\n\nوللمجمعات السكنية والمباني: خطط الشواحن حول عدد المستخدمين وقدرة المبنى الكهربائية من البداية.\n\nالتفاصيل في الرابط.\n\n#السيارات_الكهربائية #شواحن_السيارات #السعودية #سيلورين",
+    "x": "قبل تركيب شاحن سيارة كهربائية في المنزل: قيّم سعة اللوحة، وخصص دائرة مستقلة بحماية، واختر موقعًا قريبًا ومحميًا من الشمس. الشحن المتناوب 7–22 كيلوواط يناسب الشحن الليلي عادةً. #السيارات_الكهربائية",
+    "link": "/ar/services/ev-charging-stations/",
+    "image": {
+      "template": "tip",
+      "title": "شاحن السيارة الكهربائية في المنزل",
+      "text": "قيّم سعة اللوحة الكهربائية أولًا، وخصص دائرة مستقلة بحماية مناسبة، واختر موقعًا قريبًا من الوقوف ومحميًا من الشمس. الشحن المتناوب 7–22 كيلوواط يناسب الشحن الليلي."
+    }
+  },
+  "en": {
+    "title": "A home EV charger: check these first",
+    "text": "Bought an electric car, or thinking about it? Before installing a wall charger at home:\n\n• Panel capacity: ask a qualified electrician to assess your current loads, since the charger runs for hours at a time.\n• A dedicated circuit with suitable protection, not a connection from an existing socket.\n• Location: close to where you park, shaded from direct sun where possible, with a safe cable route.\n• The right power: AC charging of 7–22 kW usually suits overnight charging at home.\n\nFor compounds and buildings: plan chargers around the number of users and the building's electrical capacity from the start.\n\nDetails at the link.\n\n#ElectricVehicles #EVCharging #SaudiArabia",
+    "x": "Before a home EV charger: assess panel capacity, use a dedicated protected circuit and a shaded spot near parking. AC charging of 7–22 kW usually suits overnight home charging. #EVCharging",
+    "link": "/services/ev-charging-stations/",
+    "image": {
+      "template": "tip",
+      "title": "A home EV charger",
+      "text": "Assess your electrical panel first, use a dedicated circuit with suitable protection, and pick a shaded spot near parking. AC charging of 7–22 kW suits overnight charging."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30",
+  "slot": 0,
+  "pillar": "الامتثال البيئي",
+  "stage": "awareness",
+  "sources": [
+    "https://selorin.co/ar/services/environmental-compliance/",
+    "https://selorin.co/ar/services/environmental-permitting/"
+  ],
+  "ar": {
+    "title": "خرافة: التصريح البيئي معاملة تنتهي عند استلامه",
+    "text": "هل ينتهي العمل البيئي يوم استلام التصريح؟\n\nكثير من المنشآت تتعامل مع التصريح البيئي كمعاملة تُنجز مرة واحدة ثم تُحفظ في ملف. لكن التصريح في الغالب يحمل اشتراطات تستمر طوال التشغيل:\n\n• رصد دوري للانبعاثات أو الهواء أو المياه بحسب نشاطك.\n• سجلات للنفايات والمواد الكيميائية والصيانة تُحدَّث باستمرار.\n• تقارير دورية تُرفع في مواعيدها.\n• إجراءات تُطبق عند تجاوز القراءات أو وقوع حادث بيئي.\n\nالمنشأة الملتزمة هي التي تستطيع أن تُثبت التزامها في أي يوم، لا يوم التجديد فقط.\n\nاقرأ كيف ندعم الامتثال البيئي بعد التصريح من الرابط.\n\n#الامتثال_البيئي #التصريح_البيئي #السعودية #سيلورين",
+    "x": "التصريح البيئي ليس معاملة تنتهي عند استلامه: اشتراطاته تستمر في الرصد الدوري والسجلات والتقارير وإجراءات الاستجابة طوال التشغيل. #الامتثال_البيئي #التصريح_البيئي",
+    "link": "/ar/services/environmental-compliance/",
+    "image": {
+      "template": "myth",
+      "myth": "التصريح البيئي معاملة تنتهي عند استلامه",
+      "fact": "اشتراطات التصريح تستمر طوال التشغيل: رصد دوري، وسجلات محدّثة، وتقارير في مواعيدها، وإجراءات عند تجاوز القراءات. الالتزام يُثبت كل يوم، لا يوم التجديد فقط."
+    }
+  },
+  "en": {
+    "title": "Myth: the environmental permit is done once it is issued",
+    "text": "Does environmental work end the day the permit arrives?\n\nMany facilities treat the environmental permit as a one-off task that goes into a file. In practice a permit usually carries conditions that run for the whole operation:\n\n• Periodic monitoring of emissions, air or water, depending on your activity.\n• Waste, chemical and maintenance records kept up to date.\n• Periodic reports submitted on time.\n• Actions when readings exceed limits or an environmental incident occurs.\n\nA compliant facility can prove compliance on any day, not only on renewal day.\n\nSee how we support compliance after the permit at the link.\n\n#EnvironmentalCompliance #EnvironmentalPermit #SaudiArabia",
+    "x": "An environmental permit is not done once issued: its conditions continue through monitoring, records, reports and response actions for the whole operation. #EnvironmentalCompliance",
+    "link": "/services/environmental-compliance/",
+    "image": {
+      "template": "myth",
+      "myth": "The environmental permit is done once it is issued",
+      "fact": "Permit conditions run for the whole operation: periodic monitoring, up-to-date records, reports on time and actions when readings exceed limits. Compliance is proven every day, not only on renewal day."
+    }
+  }
+}

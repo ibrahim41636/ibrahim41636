@@ -234,6 +234,7 @@ function fakeDb() {
       return null;
     },
     all: async () => {
+      if (sql.includes("WHERE status = 'scheduled' AND variant = 'campaign'")) return { results: posts.filter((p) => p.status === "scheduled" && p.variant === "campaign").map((p) => ({ id: p.id, source_key: p.source_key })) };
       if (sql.includes("WHERE status = 'scheduled' AND scheduled_at <= ?1")) return { results: posts.filter((p) => p.status === "scheduled" && p.scheduled_at <= (args[0] as string)).slice(0, 10).map((p) => ({ ...p })) };
       if (sql.includes("FROM social_posts")) return { results: posts };
       return { results: [] };
@@ -270,6 +271,26 @@ describe("social cron", () => {
     const third = await runSocialCron(env, new Date("2026-10-19T10:35:00Z"), { articles: [article, old], campaign: [camp] });
     expect(third.queued).toBe(1);
     expect(db.posts.some((p) => p.source_key === "campaign/c1:ar:webhook")).toBe(true);
+  });
+
+  it("cancels queued campaign posts whose file was removed, and only those", async () => {
+    const db = fakeDb();
+    const env = { DB: db as unknown as D1Database, SOCIAL_WEBHOOK_URL: "https://hook.example/x" } as SocialEnv;
+    const post = (id: string) => ({ id, date: "2026-10-21", slot: 0, stage: "awareness" as const, pillar: "p", versions: [{ lang: "ar" as const, text: "نص حملة طويل بما يكفي للاختبار" }] });
+    const now = new Date("2026-10-19T05:00:00Z");
+    await runSocialCron(env, now, { articles: [], campaign: [post("keep"), post("old-name")] });
+    expect(db.posts.filter((p) => p.status === "scheduled")).toHaveLength(2);
+
+    // A feed that failed to load (no campaign posts) must not cancel the calendar.
+    await runSocialCron(env, now, { articles: [], campaign: [] });
+    expect(db.posts.filter((p) => p.status === "scheduled")).toHaveLength(2);
+
+    // The post was renamed: the old queued copy is cancelled and the new one queued.
+    await runSocialCron(env, now, { articles: [], campaign: [post("keep"), post("new-name")] });
+    const status = (id: string) => db.posts.find((p) => p.source_key === `campaign/${id}:ar:webhook`)?.status;
+    expect(status("keep")).toBe("scheduled");
+    expect(status("old-name")).toBe("cancelled");
+    expect(status("new-name")).toBe("scheduled");
   });
 
   it("staggers several new articles two days apart, newest first", async () => {

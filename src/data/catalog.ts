@@ -59,7 +59,7 @@ export const SUB_SERVICES: SubService[] = [
   // B. Environmental Monitoring (15 — incl. two approved v2 solution pages)
   s("environmental-monitoring", "air-quality-monitoring", "Air Quality Monitoring", "رصد جودة الهواء", "air quality monitoring services", "Integrated air programmes combining ambient, workplace and source data."),
   s("environmental-monitoring", "ambient-air-monitoring", "Ambient Air Quality Monitoring Stations", "محطات رصد جودة الهواء المحيط", "ambient air quality monitoring station AAQMS", "Fixed continuous ambient stations (gases, PM, meteorology) and their operation."),
-  s("environmental-monitoring", "stack-emission-monitoring", "Stack Emission Monitoring", "رصد انبعاثات المداخن", "stack emission testing CEMS", "Point-source emissions: periodic stack testing and CEMS."),
+  s("environmental-monitoring", "stack-emission-monitoring", "Stack Emission Monitoring", "رصد انبعاثات المداخن", "stack emission testing and continuous monitoring", "Point-source emissions: periodic stack testing and continuous monitoring."),
   s("environmental-monitoring", "dust-monitoring", "Dust Monitoring", "رصد الغبار", "dust monitoring PM10 PM2.5 construction", "Particulate fence-line networks for dusty sites with real-time alerts."),
   s("environmental-monitoring", "fuel-station-voc-monitoring", "Fuel Station VOC Monitoring", "رصد المركبات العضوية المتطايرة في محطات الوقود", "VOC monitoring fuel stations NCEC", "Fixed PID VOC systems for fuel stations (intrinsically safe, 4–20 mA/Modbus)."),
   s("environmental-monitoring", "noise-monitoring", "Noise Monitoring", "رصد الضوضاء", "environmental noise monitoring", "Environmental and occupational noise surveys and continuous terminals."),

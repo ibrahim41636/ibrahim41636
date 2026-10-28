@@ -107,7 +107,7 @@ const PAGE: Record<string, Key> = {
 const EQUIPMENT: Record<string, Key> = {
   "dust-monitoring-station": "monitoringStation",
   "air-quality-monitoring-station": "monitoringStation",
-  cems: "powerPlant",
+  "continuous-emissions-monitoring": "powerPlant",
   "voc-sampling-analysis": "refinery",
   "soil-sampling-equipment": "fields",
   "water-sediment-sampling-equipment": "river",

@@ -71,7 +71,7 @@ These regulations set the **standards** your facility's measurements are compare
 
 The [Executive Regulation for Air Quality](https://www.uqn.gov.sa/details?p=17812) sets ambient air standards, including for PM10 and PM2.5, and emission standards for stationary sources. Its list of violations includes failing to carry out annual tests on stationary sources not under continuous monitoring, failing to notify NCEC of emergencies, and installing or operating ambient air monitoring networks without a licence or through an unlicensed service provider.
 
-**What to do:** list your stacks and stationary sources, confirm which need continuous monitoring and which need periodic testing, and check that whoever runs your monitoring is licensed. For sites that need continuous dust and noise data, Selorin rents a [dust, noise and weather monitoring station](/equipment/dust-monitoring-station/) with installation and weekly and monthly reports, and supplies [continuous emissions monitoring systems (CEMS)](/equipment/cems/) and [ambient air quality monitoring stations](/equipment/air-quality-monitoring-station/).
+**What to do:** list your stacks and stationary sources, confirm which need continuous monitoring and which need periodic testing, and check that whoever runs your monitoring is licensed. For sites that need continuous dust and noise data, Selorin rents a [dust, noise and weather monitoring station](/equipment/dust-monitoring-station/) with installation and weekly and monthly reports, and supplies [continuous emissions monitoring systems](/equipment/continuous-emissions-monitoring/) and [ambient air quality monitoring stations](/equipment/air-quality-monitoring-station/).
 
 ### Noise
 

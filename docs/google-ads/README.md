@@ -41,7 +41,7 @@
 |---|---|---|
 | Monitoring | Equipment: Dust station rental (عربي وإنجليزي) | `/equipment/dust-monitoring-station/` |
 | Monitoring | Equipment: Air quality station | `/ar/equipment/air-quality-monitoring-station/` |
-| Monitoring | Equipment: CEMS | `/ar/equipment/cems/` |
+| Monitoring | Equipment: Stack emissions monitoring | `/ar/equipment/continuous-emissions-monitoring/` |
 | Monitoring | Equipment: Vapour recovery | `/ar/equipment/vapour-recovery-unit/` |
 | Permits & EIA | NCEC regulations | `/ar/insights/ncec-environmental-regulations-guide/` |
 

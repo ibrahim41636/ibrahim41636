@@ -1,10 +1,12 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import { categories } from "@/data/taxonomy";
+import { EQUIPMENT_GROUPS } from "@/data/equipment";
 import type { Lang } from "@/i18n/ui";
 
 export type Service = CollectionEntry<"services">;
 export type Industry = CollectionEntry<"industries">;
 export type Insight = CollectionEntry<"insights">;
+export type Equipment = CollectionEntry<"equipment">;
 
 const catIndex = (id: string) => categories.findIndex((c) => c.id === id);
 
@@ -15,6 +17,11 @@ export async function getServices() {
 
 export async function getIndustries() {
   return (await getCollection("industries")).sort((a, b) => a.data.order - b.data.order);
+}
+
+export async function getEquipment() {
+  const g = (e: Equipment) => EQUIPMENT_GROUPS.indexOf(e.data.group);
+  return (await getCollection("equipment")).sort((a, b) => g(a) - g(b) || a.data.order - b.data.order);
 }
 
 export async function getInsights(lang: Lang) {

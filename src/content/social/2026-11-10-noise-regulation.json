@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17835",
+    "https://www.mewa.gov.sa/en/Ministry/AboutMinistry/RulesAndConditions/RulesLibrary/Docs/Executive%20Regulation%20for%20Noise.pdf"
+  ],
+  "ar": {
+    "title": "ضوضاء الإنشاء: نافذة السابعة صباحًا إلى السادسة مساءً",
+    "text": "مع موسم الإنشاءات في الطقس الأبرد، سؤال يتكرر في المواقع: متى يُسمح بالأعمال الصاخبة؟\n\nتسمح اللائحة التنفيذية للضوضاء بتجاوز مقاييس الضوضاء في مواقع أعمال الإنشاء من السابعة صباحًا حتى السادسة مساءً. خارج هذه الساعات تعود المقاييس المعتادة، فالأعمال الليلية تحتاج تخطيطًا وقياسًا.\n\nولماذا يهم كل ديسيبل؟ لأن الديسيبل مقياس لوغاريتمي:\n• زيادة 3 ديسيبل تعني مضاعفة طاقة الصوت، أي معدة ثانية مماثلة تعمل بجانب الأولى.\n• زيادة 10 ديسيبل تُدرَك تقريبًا كضعف الارتفاع في الصوت.\n\nلذلك فإن إبعاد معدة صاخبة أو حجبها بحاجز قد يخفض بضعة ديسيبلات، وهذا فرق كبير عند المستقبل الحساس.\n\nما تحتاجه عمليًا: جدول للأعمال الصاخبة، وقياس عند حدود الموقع وقرب المساكن، وسجل يربط القراءات بالأنشطة.\n\nالتفاصيل في الرابط.\n\n#رصد_الضوضاء #مشاريع_البناء #الالتزام_البيئي #السعودية",
+    "x": "لائحة الضوضاء تسمح بتجاوز المقاييس في مواقع الإنشاء من 7 صباحًا إلى 6 مساءً. وتذكّر: كل 3 ديسيبل تضاعف طاقة الصوت. #رصد_الضوضاء",
+    "link": "/ar/services/noise-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "مواقع الإنشاء: من 7 صباحًا إلى 6 مساءً",
+      "text": "تسمح لائحة الضوضاء بتجاوز المقاييس في مواقع الإنشاء خلال هذه الساعات فقط. وتذكّر أن كل 3 ديسيبل إضافية تضاعف طاقة الصوت."
+    }
+  },
+  "en": {
+    "title": "Construction noise: the 7 am to 6 pm window",
+    "text": "With the cooler construction season under way, one question keeps coming up on site: when is noisy work allowed?\n\nSaudi Arabia's Executive Regulation for Noise permits exceedances of the noise standards at construction work sites from 7:00 am to 6:00 pm. Outside these hours the usual standards apply, so night work needs planning and measurement.\n\nWhy does every decibel matter? Because the decibel is a logarithmic scale:\n• +3 dB means double the sound energy, like a second identical machine running beside the first.\n• +10 dB is perceived as roughly twice as loud.\n\nSo moving a noisy machine or screening it with a barrier can cut a few decibels, which is a large difference at a sensitive receptor.\n\nWhat you need in practice: a schedule for noisy works, measurement at the site boundary and near homes, and a log linking readings to activities.\n\nDetails at the link.\n\n#NoiseMonitoring #Construction #EnvironmentalCompliance #SaudiArabia",
+    "x": "Saudi noise rules permit exceedances at construction sites from 7 am to 6 pm. And remember: every +3 dB doubles the sound energy.",
+    "link": "/services/noise-monitoring/",
+    "image": {
+      "template": "tip",
+      "title": "Construction sites: 7 am to 6 pm",
+      "text": "The Noise regulation permits exceedances at construction sites only in these hours. And every extra 3 dB doubles the sound energy."
+    }
+  }
+}

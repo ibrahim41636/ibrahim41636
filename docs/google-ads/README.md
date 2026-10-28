@@ -33,6 +33,20 @@
 
 > تكلفة النقرة الفعلية في السعودية تختلف حسب المنافسة. راجع التقديرات في **Keyword Planner** قبل التفعيل، وعدّل الميزانيات بناءً عليها.
 
+### مجموعات الأجهزة ولوائح المركز (أضيفت 28 أكتوبر 2026)
+
+ست مجموعات إعلانية جديدة في `keywords.csv` و`ads.csv`، داخل الحملات القائمة لا في حملة جديدة:
+
+| الحملة | المجموعة | الصفحة |
+|---|---|---|
+| Monitoring | Equipment: Dust station rental (عربي وإنجليزي) | `/equipment/dust-monitoring-station/` |
+| Monitoring | Equipment: Air quality station | `/ar/equipment/air-quality-monitoring-station/` |
+| Monitoring | Equipment: CEMS | `/ar/equipment/cems/` |
+| Monitoring | Equipment: Vapour recovery | `/ar/equipment/vapour-recovery-unit/` |
+| Permits & EIA | NCEC regulations | `/ar/insights/ncec-environmental-regulations-guide/` |
+
+تُنشأ عبر Ryze AI بعد نشر الصفحات على الموقع (حتى لا تُرفض الإعلانات لأن الرابط لا يعمل)، وبعد أن تعود الحملات إلى الظهور: آخر 7 أيام حتى 28 أكتوبر كانت بلا ظهور في كل الحملات رغم أنها «مؤهلة»، والأرجح أن السبب الفوترة.
+
 ## ثالثاً: الإعدادات
 
 - **الموقع الجغرافي:** المملكة العربية السعودية، مع خيار **«Presence: الأشخاص الموجودون في الموقع أو يترددون عليه بانتظام»** وليس «المهتمون بالموقع»، حتى لا تظهر الإعلانات خارج المملكة. أضف تعديلات عروض أسعار لاحقاً حسب أداء الرياض والمنطقة الشرقية ومكة المكرمة.

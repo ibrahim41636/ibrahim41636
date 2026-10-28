@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-01",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "awareness",
+  "sources": [
+    "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/63831ff6-63d9-4212-8b54-abf800e146bd/1",
+    "https://www.uqn.gov.sa/details?p=17831",
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.uqn.gov.sa/details?p=17835",
+    "https://www.uqn.gov.sa/details?p=25435",
+    "https://www.uqn.gov.sa/details?p=25431"
+  ],
+  "ar": {
+    "title": "اللوائح التنفيذية التي يطبقها المركز الوطني للرقابة على الالتزام البيئي",
+    "text": "نظام البيئة الصادر بالمرسوم الملكي (م/165) وتاريخ 19/11/1441هـ لا يُطبَّق نصًا عامًا فقط، بل عبر لوائح تنفيذية يراقب المركز الوطني للرقابة على الالتزام البيئي الالتزام بها.\n\nخمس لوائح تحدد معظم ما يُطلب من المنشأة:\n• التصاريح البيئية لإنشاء وتشغيل الأنشطة: تصنّف الأنشطة إلى ثلاث فئات بحسب أثرها، ويتبع التصنيف ما تحتاجه من دراسات وتصاريح.\n• جودة الهواء: مقاييس الهواء المحيط وانبعاثات المصادر الثابتة، والرصد والاختبارات الدورية.\n• الضوضاء: مقاييس الضوضاء وساعات الأعمال الصاخبة في مواقع الإنشاء.\n• حماية الأوساط المائية من التلوث: المياه السطحية والجوفية والبحرية وحدود التصريف.\n• منع ومعالجة تلوث التربة: منع التلوث ومعالجة التربة الملوثة.\n\nوتكملها لوائح التفتيش والتدقيق البيئي، ومقدمي الخدمات البيئية، والمواد المستنفدة لطبقة الأوزون، وضبط المخالفات.\n\nجمعنا اللوائح في دليل واحد: ماذا تتطلب كل لائحة، ورابط نصها الرسمي، والخدمة التي تحقق الالتزام بها.\n\n#نظام_البيئة #الالتزام_البيئي #المركز_الوطني_للرقابة_على_الالتزام_البيئي #السعودية",
+    "x": "خمس لوائح تنفيذية لنظام البيئة تحدد معظم ما يُطلب من منشأتك: التصاريح البيئية، وجودة الهواء، والضوضاء، والأوساط المائية، والتربة. الدليل الكامل مع روابط النصوص الرسمية:",
+    "link": "/ar/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "checklist",
+      "title": "لوائح تنفيذية تحدد التزامات منشأتك",
+      "kicker": "نظام البيئة",
+      "items": [
+        "التصاريح البيئية: ثلاث فئات للأنشطة",
+        "جودة الهواء: المحيط والمصادر الثابتة",
+        "الضوضاء: المقاييس وساعات العمل",
+        "الأوساط المائية: المياه وحدود التصريف",
+        "التربة: المنع والمعالجة"
+      ]
+    }
+  },
+  "en": {
+    "title": "The executive regulations NCEC applies",
+    "text": "Saudi Arabia's Environmental Law, Royal Decree M/165 of 19/11/1441H, is applied through executive regulations, and the National Center for Environmental Compliance (NCEC) oversees compliance with them.\n\nFive regulations set most of what a facility must do:\n• Environmental permits to construct and operate: three categories of activity by impact, and the studies and permits each needs.\n• Air quality: ambient and stationary-source emission standards, monitoring and periodic testing.\n• Noise: noise standards and noisy-work hours at construction sites.\n• Protection of aquatic media: surface water, groundwater, the sea and discharge limits.\n• Prevention and remediation of soil pollution.\n\nThey are completed by the regulations on inspection and audit, environmental service providers, ozone-depleting substances, and violations.\n\nWe brought them together in one guide: what each requires, a link to its official text, and the service that helps you comply.\n\n#EnvironmentalCompliance #SaudiArabia #NCEC #Regulation",
+    "x": "Five executive regulations of the Saudi Environmental Law set most of what a facility must do: permits, air quality, noise, water and soil. Our guide, with links to the official texts:",
+    "link": "/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "checklist",
+      "title": "Regulations that set your obligations",
+      "kicker": "Environmental Law",
+      "items": [
+        "Permits: three categories of activity",
+        "Air quality: ambient and stationary sources",
+        "Noise: standards and working hours",
+        "Aquatic media: water and discharge limits",
+        "Soil: prevention and remediation"
+      ]
+    }
+  }
+}

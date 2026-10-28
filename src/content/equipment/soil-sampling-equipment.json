@@ -1,0 +1,198 @@
+{
+  "group": "sampling",
+  "order": 1,
+  "modes": [
+    "rental",
+    "supply"
+  ],
+  "service": "environmental-monitoring",
+  "services": [
+    "environmental-due-diligence",
+    "environmental-impact-assessment",
+    "fuel-station-voc-monitoring"
+  ],
+  "industries": [
+    "oil-gas",
+    "construction",
+    "real-estate",
+    "waste-recycling",
+    "mining-quarrying"
+  ],
+  "related": [
+    "water-sediment-sampling-equipment",
+    "vapour-recovery-unit",
+    "voc-sampling-analysis"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=25431",
+    "https://www.uqn.gov.sa/details?p=17839"
+  ],
+  "en": {
+    "name": "Soil and Soil Gas Sampling Equipment",
+    "seoTitle": "Soil and Soil Gas Sampling Equipment in Saudi Arabia | Selorin",
+    "metaDescription": "Soil augers, core samplers, soil gas implants and probe kits for site investigations, fuel stations and due diligence, for rent or supply, or as a sampling service.",
+    "cardDescription": "Augers, core samplers, soil gas implants and probe kits for contaminated land, fuel station and due diligence investigations.",
+    "lead": "Hand and powered tools to take soil samples and soil gas readings at the right depth, without cross-contamination, for site investigations, fuel stations and land transactions.",
+    "offer": "Rent or buy the sampling kit for your field team, or let our team carry out the sampling with documented methods, chain of custody and laboratory coordination.",
+    "definition": "Soil and soil gas sampling is the collection of soil cores and of the air in soil pores at set depths, to find out whether a site is contaminated and how far the contamination extends. Selorin rents and supplies the augers, core samplers, probes and soil gas implants used for this work, and carries out sampling as a service.",
+    "overview": [
+      "Soil samples show what is held in the ground; soil gas samples show the vapours moving through it, such as fuel hydrocarbons near tanks and pipelines or landfill gas at the edge of a site. Many investigations need both.",
+      "Soil gas implants are small stainless-steel screens left at a set depth as permanent monitoring points, so readings can be repeated over time. Drive kits place them, and probe kits with dedicated tips take one-off readings.",
+      "For soil, hand augers suit different ground: regular, mud, sand, Edelman, Dutch and stony-soil heads. Core samplers with liners keep the sample intact for laboratory analysis, and hollow-stem or powered augers reach greater depths."
+    ],
+    "includes": [
+      "Sampling plan: grid or targeted locations, depths, parameters and quality control samples",
+      "Rental or supply of augers, core samplers, probes, implants and vacuum pumps",
+      "Field sampling by our team, with logs, photographs and coordinates",
+      "Chain-of-custody documents and coordination with an accredited laboratory",
+      "Report comparing results with the applicable soil criteria, with recommendations"
+    ],
+    "types": [
+      {
+        "title": "Soil gas implants and probes",
+        "description": "Permanent soil gas points in several lengths with stainless-steel screens, a drive kit to place them, and probe kits with dedicated tips.",
+        "sectors": "Oil and gas, fuel stations, landfills"
+      },
+      {
+        "title": "Pilot holes and extraction",
+        "description": "Extendable tile probes to locate obstructions, a 12 V vacuum pump for soil gas extraction, and flighted augers and bits for concrete and asphalt.",
+        "sectors": "Fuel stations, construction, oil and gas"
+      },
+      {
+        "title": "Hand and bucket augers",
+        "description": "Regular, mud, sand, Edelman, Dutch and stony-soil augers, and bucket augers for bulk samples.",
+        "sectors": "All sectors"
+      },
+      {
+        "title": "Core samplers and soil probes",
+        "description": "Core, multi-stage and split-core samplers with liners; regular, recovery and replaceable-tip probes; slide hammers and extensions.",
+        "sectors": "Consultants, large projects"
+      },
+      {
+        "title": "Powered augering",
+        "description": "Hollow-stem and flighted augers driven by a drill, and a gas-powered core sampling kit for hard ground.",
+        "sectors": "Construction, oil and gas, mining"
+      },
+      {
+        "title": "Sampling and classification kits",
+        "description": "Basic, environmental and professional sampling kits, and a field kit for soil classification.",
+        "sectors": "Consultants, construction"
+      }
+    ],
+    "useCases": [
+      "Fuel station site assessments, tank replacements and closures",
+      "Environmental due diligence before buying, leasing or financing land",
+      "Investigation of contaminated sites and verification after remediation",
+      "Landfill gas migration checks at site boundaries",
+      "Baseline soil conditions for environmental impact assessments",
+      "Construction on former industrial land"
+    ],
+    "regulatory": [
+      "The Executive Regulation for the Prevention and Remediation of Soil Pollution under the Environmental Law addresses soil contamination and the obligation to treat contaminated soil.",
+      "The Executive Regulation for the Environmental Rehabilitation of Degraded Sites and Remediation of Contaminated Sites sets how contaminated sites are assessed, treated and rehabilitated.",
+      "Environmental permits, impact assessments and due diligence reports often require soil data collected with documented methods."
+    ],
+    "faqs": [
+      {
+        "q": "What is soil gas sampling?",
+        "a": "It is the collection of the air held in soil pores at a set depth, using implants or probes, to detect vapours such as fuel hydrocarbons or landfill gas moving through the ground."
+      },
+      {
+        "q": "Do you rent soil sampling equipment?",
+        "a": "Yes. Augers, core samplers, probes and soil gas kits can be rented for a project, or supplied for your field team."
+      },
+      {
+        "q": "Can you carry out the sampling for us?",
+        "a": "Yes. Our team prepares the sampling plan, takes the samples, keeps the chain of custody, coordinates the laboratory analysis and reports the results."
+      },
+      {
+        "q": "How deep can samples be taken?",
+        "a": "It depends on the ground and the equipment. Hand augers and probes suit shallow sampling, while hollow-stem and powered augers reach deeper layers. We choose the method from the investigation objectives and the ground conditions."
+      }
+    ]
+  },
+  "ar": {
+    "name": "معدات أخذ عينات التربة وغازات التربة",
+    "seoTitle": "معدات أخذ عينات التربة وغازات التربة في السعودية | سيلورين",
+    "metaDescription": "مثاقب التربة وأجهزة العينات اللبية ونقاط غازات التربة ومجموعات المجسات، لدراسات المواقع ومحطات الوقود والفحص البيئي، للتأجير أو التوريد أو كخدمة.",
+    "cardDescription": "مثاقب وأجهزة عينات لبية ونقاط غازات التربة ومجسات لدراسات الأراضي الملوثة ومحطات الوقود والفحص البيئي.",
+    "lead": "أدوات يدوية وآلية لأخذ عينات التربة وقراءات غازاتها على العمق الصحيح دون تلوث متبادل، لدراسات المواقع ومحطات الوقود وصفقات الأراضي.",
+    "offer": "استأجر معدات أخذ العينات أو اشترها لفريقك الميداني، أو دع فريقنا ينفّذ أخذ العينات بطرق موثقة وسلسلة حيازة وتنسيق مع المختبر.",
+    "definition": "أخذ عينات التربة وغازاتها هو جمع عينات لبية من التربة، وجمع الهواء الموجود في مسامها على أعماق محددة، لمعرفة هل الموقع ملوث وإلى أي مدى يمتد التلوث. وتؤجّر سيلورين وتورد المثاقب وأجهزة العينات اللبية والمجسات ونقاط غازات التربة المستخدمة في ذلك، وتنفّذ أخذ العينات كخدمة.",
+    "overview": [
+      "عينات التربة تكشف ما تحمله الأرض، وعينات غازات التربة تكشف الأبخرة التي تتحرك خلالها، مثل هيدروكربونات الوقود قرب الخزانات والأنابيب أو غاز المرادم عند حدود الموقع. وكثير من الدراسات يحتاج الاثنين.",
+      "نقاط غازات التربة مصافٍ صغيرة من الفولاذ المقاوم للصدأ تُترك على عمق محدد نقاطَ رصد دائمة، فتتكرر القراءات مع الوقت. وتُثبَّت بمجموعة دق مخصصة، بينما تُستخدم مجموعات المجسات ذات الرؤوس المخصصة للقراءات المفردة.",
+      "ولعينات التربة مثاقب يدوية تناسب أنواع الأرض المختلفة: العادية والطينية والرملية والصخرية وأنواع إدلمان والهولندية. وتحفظ أجهزة العينات اللبية المزودة ببطانات العينة سليمة لتحليلها مخبريًا، وتصل المثاقب المجوفة والآلية إلى أعماق أكبر."
+    ],
+    "includes": [
+      "خطة أخذ العينات: شبكة أو مواقع محددة، والأعماق، والمؤشرات، وعينات ضبط الجودة",
+      "تأجير أو توريد المثاقب وأجهزة العينات اللبية والمجسات والنقاط ومضخات التفريغ",
+      "أخذ العينات ميدانيًا بفريقنا مع سجلات وصور وإحداثيات",
+      "مستندات سلسلة الحيازة والتنسيق مع مختبر معتمد",
+      "تقرير يقارن النتائج بمعايير التربة المنطبقة مع التوصيات"
+    ],
+    "types": [
+      {
+        "title": "نقاط ومجسات غازات التربة",
+        "description": "نقاط دائمة لغازات التربة بأطوال مختلفة ومصافٍ من الفولاذ المقاوم للصدأ، ومجموعة دق لتثبيتها، ومجموعات مجسات برؤوس مخصصة.",
+        "sectors": "النفط والغاز، محطات الوقود، المرادم"
+      },
+      {
+        "title": "الثقوب التمهيدية والاستخلاص",
+        "description": "مجسات قابلة للتمديد لتحديد العوائق تحت الأرض، ومضخة تفريغ 12 فولت لاستخلاص غازات التربة، ومثاقب ولقم للخرسانة والأسفلت.",
+        "sectors": "محطات الوقود، الإنشاءات، النفط والغاز"
+      },
+      {
+        "title": "المثاقب اليدوية والدلوية",
+        "description": "مثاقب للتربة العادية والطينية والرملية والصخرية وأنواع إدلمان والهولندية، ومثاقب دلوية للعينات الكبيرة.",
+        "sectors": "جميع القطاعات"
+      },
+      {
+        "title": "أجهزة العينات اللبية ومجسات التربة",
+        "description": "أجهزة عينات لبية ومتعددة المراحل ومنقسمة مع بطانات، ومجسات عادية واسترجاعية برؤوس قابلة للاستبدال، ومطارق انزلاقية وملحقات.",
+        "sectors": "المكاتب الاستشارية، المشاريع الكبرى"
+      },
+      {
+        "title": "الحفر الآلي",
+        "description": "مثاقب مجوفة وحلزونية تُدار بالمثقاب، ومجموعة عينات لبية تعمل بمحرك للأرض الصلبة.",
+        "sectors": "الإنشاءات، النفط والغاز، التعدين"
+      },
+      {
+        "title": "مجموعات أخذ العينات والتصنيف",
+        "description": "مجموعات أساسية وبيئية واحترافية لأخذ العينات، ومجموعة ميدانية لتصنيف التربة.",
+        "sectors": "المكاتب الاستشارية، الإنشاءات"
+      }
+    ],
+    "useCases": [
+      "تقييم مواقع محطات الوقود واستبدال الخزانات وإغلاق المحطات",
+      "الفحص البيئي النافي للجهالة قبل شراء الأراضي أو استئجارها أو تمويلها",
+      "دراسة المواقع الملوثة والتحقق بعد معالجتها",
+      "فحص انتقال غاز المرادم عند حدود الموقع",
+      "الحالة المرجعية للتربة ضمن تقييم الأثر البيئي",
+      "البناء على أراضٍ كانت صناعية سابقًا"
+    ],
+    "regulatory": [
+      "تتناول اللائحة التنفيذية لمنع ومعالجة تلوث التربة لنظام البيئة تلوث التربة والالتزام بمعالجة التربة الملوثة.",
+      "وتحدد اللائحة التنفيذية لإعادة التأهيل البيئي للمواقع المتدهورة ومعالجة المواقع الملوثة كيفية تقييم المواقع الملوثة ومعالجتها وإعادة تأهيلها.",
+      "كثيرًا ما تتطلب التصاريح البيئية ودراسات تقييم الأثر وتقارير الفحص البيئي بيانات تربة جُمعت بطرق موثقة."
+    ],
+    "faqs": [
+      {
+        "q": "ما أخذ عينات غازات التربة؟",
+        "a": "هو جمع الهواء الموجود في مسام التربة على عمق محدد باستخدام نقاط أو مجسات، للكشف عن أبخرة مثل هيدروكربونات الوقود أو غاز المرادم المتحركة في الأرض."
+      },
+      {
+        "q": "هل تؤجّرون معدات أخذ عينات التربة؟",
+        "a": "نعم. يمكن استئجار المثاقب وأجهزة العينات اللبية والمجسات ومجموعات غازات التربة لمشروع محدد، أو توريدها لفريقك الميداني."
+      },
+      {
+        "q": "هل تنفّذون أخذ العينات نيابة عنا؟",
+        "a": "نعم. يُعدّ فريقنا خطة أخذ العينات، ويأخذ العينات، ويحافظ على سلسلة الحيازة، وينسّق التحليل المخبري، ويقدّم تقرير النتائج."
+      },
+      {
+        "q": "إلى أي عمق يمكن أخذ العينات؟",
+        "a": "يعتمد ذلك على طبيعة الأرض والمعدات. المثاقب اليدوية والمجسات تناسب الأعماق القريبة، والمثاقب المجوفة والآلية تصل إلى طبقات أعمق، ونختار الطريقة بحسب أهداف الدراسة وظروف الأرض."
+      }
+    ]
+  }
+}

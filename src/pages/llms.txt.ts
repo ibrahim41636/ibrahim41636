@@ -1,7 +1,8 @@
 // llms.txt — a plain-text map of the site for AI answer engines (https://llmstxt.org).
 import type { APIRoute } from "astro";
 import { categories } from "@/data/taxonomy";
-import { getServices, getIndustries, getInsights, insightSlug } from "@/lib/content";
+import { getServices, getIndustries, getInsights, getEquipment, insightSlug } from "@/lib/content";
+import { EQUIPMENT_GROUPS, GROUPS } from "@/data/equipment";
 import { site } from "@/i18n/ui";
 
 export const GET: APIRoute = async () => {
@@ -9,6 +10,7 @@ export const GET: APIRoute = async () => {
   const industries = await getIndustries();
   const insights = await getInsights("en");
   const insightsAr = await getInsights("ar");
+  const equipment = await getEquipment();
   const u = (p: string) => `${site.url}${p}`;
   const lines = [
     `# ${site.name.en}`,
@@ -23,6 +25,10 @@ export const GET: APIRoute = async () => {
       ...services.filter((s) => s.data.category === c.id).map((s) => `- [${s.data.en.name}](${u(`/services/${s.id}/`)}): ${s.data.en.definition}`),
       "",
     ]),
+    "## Monitoring equipment: rental and supply",
+    `Selorin rents and supplies environmental monitoring equipment in Saudi Arabia, with installation, live data, technical support and weekly and monthly reports: ${u("/equipment/")}`,
+    ...EQUIPMENT_GROUPS.flatMap((g) => equipment.filter((e) => e.data.group === g).map((e) => `- [${e.data.en.name}](${u(`/equipment/${e.id}/`)}) (${GROUPS[g].name.en}): ${e.data.en.definition}`)),
+    "",
     "## Industries",
     ...industries.map((i) => `- [${i.data.en.name}](${u(`/industries/${i.id}/`)}): ${i.data.en.cardDescription}`),
     "",
@@ -45,6 +51,10 @@ export const GET: APIRoute = async () => {
       ...services.filter((s) => s.data.category === c.id).map((s) => `- [${s.data.ar.name}](${u(`/ar/services/${s.id}/`)}): ${s.data.ar.definition}`),
       "",
     ]),
+    "### تأجير أجهزة الرصد البيئي وتوريدها",
+    `تؤجّر سيلورين أجهزة الرصد البيئي وتوردها في المملكة، مع التركيب والبيانات المباشرة والدعم الفني والتقارير الأسبوعية والشهرية: ${u("/ar/equipment/")}`,
+    ...equipment.map((e) => `- [${e.data.ar.name}](${u(`/ar/equipment/${e.id}/`)}): ${e.data.ar.definition}`),
+    "",
     "### مقالات",
     ...insightsAr.map((p) => `- [${p.data.title}](${u(`/ar/insights/${insightSlug(p)}/`)}): ${p.data.description}`),
     "",

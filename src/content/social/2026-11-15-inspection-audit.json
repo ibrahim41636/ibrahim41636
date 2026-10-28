@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-15",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.mewa.gov.sa/ar/MediaCenter/News/Pages/News2122020.aspx",
+    "https://www.uqn.gov.sa/details?p=17831",
+    "https://www.uqn.gov.sa/details?p=17879"
+  ],
+  "ar": {
+    "title": "التفتيش البيئي: كن جاهزًا في أي يوم",
+    "text": "زيارة التفتيش البيئي لا تُختبر فيها المنشأة يوم الزيارة، بل تُختبر سجلات الأشهر التي سبقتها.\n\nبدأ تطبيق اللائحة التنفيذية للتفتيش والتدقيق البيئي في مارس 2021، وهي تحدد نطاق عمل المركز الوطني للرقابة على الالتزام البيئي في التفتيش والتدقيق. وتربط لائحة التصاريح البيئية تجديد تصريح التشغيل للفئتين الثانية والثالثة بتقديم دراسة تدقيق بيئي كل ثلاث سنوات.\n\nخمسة أسئلة يطرحها المفتش عادةً، فاطرحها أنت أولًا:\n• أين التصريح البيئي، وهل يعرف المسؤولون اشتراطاته؟\n• أين نتائج الرصد، وهل رُفعت في مواعيدها؟\n• أين سجلات النفايات ونقلها ومن استلمها؟\n• هل أُغلقت ملاحظات الزيارة السابقة بإجراءات موثقة؟\n• هل شهادات معايرة الأجهزة سارية؟\n\nالتقييم الذاتي قبل الزيارة أرخص من أي ملاحظة بعدها.\n\nالتفاصيل في الرابط.\n\n#التفتيش_البيئي #التدقيق_البيئي #الالتزام_البيئي #السعودية",
+    "x": "التفتيش البيئي يختبر سجلات الأشهر السابقة لا يوم الزيارة. خمسة أسئلة يطرحها المفتش: التصريح، والرصد، والنفايات، والملاحظات السابقة، والمعايرة. #التفتيش_البيئي",
+    "link": "/ar/services/environmental-audits/",
+    "image": {
+      "template": "checklist",
+      "title": "خمسة أسئلة يطرحها المفتش",
+      "kicker": "التفتيش البيئي",
+      "items": [
+        "أين التصريح وهل تُعرف اشتراطاته؟",
+        "هل رُفعت نتائج الرصد في مواعيدها؟",
+        "أين سجلات النفايات ونقلها؟",
+        "هل أُغلقت الملاحظات السابقة؟",
+        "هل شهادات المعايرة سارية؟"
+      ]
+    }
+  },
+  "en": {
+    "title": "Environmental inspection: be ready on any day",
+    "text": "An environmental inspection does not test the facility on the day of the visit. It tests the records of the months before it.\n\nSaudi Arabia's Executive Regulation for Environmental Inspection and Audit has applied since March 2021 and sets the scope of NCEC's inspection and audit work. The environmental permits regulation links the renewal of an operating permit for Category 2 and 3 activities to an environmental audit study every three years.\n\nFive questions an inspector usually asks, so ask them first:\n• Where is the environmental permit, and do the people responsible know its conditions?\n• Where are the monitoring results, and were they submitted on time?\n• Where are the waste records, transport documents and receipts?\n• Were the findings of the last visit closed with documented actions?\n• Are the instrument calibration certificates valid?\n\nA self-assessment before the visit costs less than any finding after it.\n\nDetails at the link.\n\n#EnvironmentalInspection #EnvironmentalAudit #Compliance #SaudiArabia",
+    "x": "An environmental inspection tests your records from the months before, not the day of the visit. Five questions inspectors ask: permit, monitoring, waste, past findings, calibration.",
+    "link": "/services/environmental-audits/",
+    "image": {
+      "template": "checklist",
+      "title": "Five questions an inspector asks",
+      "kicker": "Inspection",
+      "items": [
+        "Where is the permit, and are its conditions known?",
+        "Were monitoring results submitted on time?",
+        "Where are the waste records?",
+        "Were past findings closed?",
+        "Are calibration certificates valid?"
+      ]
+    }
+  }
+}

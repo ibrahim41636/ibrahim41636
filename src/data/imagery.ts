@@ -100,8 +100,23 @@ const PAGE: Record<string, Key> = {
   projects: "windFarm",
   contact: "windHills",
   request: "handheld",
+  equipment: "monitoringStation",
 };
 
+// Equipment pages: replace with licensed product photography as it is added to /public/images.
+const EQUIPMENT: Record<string, Key> = {
+  "dust-monitoring-station": "monitoringStation",
+  "air-quality-monitoring-station": "monitoringStation",
+  cems: "powerPlant",
+  "voc-sampling-analysis": "refinery",
+  "soil-sampling-equipment": "fields",
+  "water-sediment-sampling-equipment": "river",
+  "vapour-recovery-unit": "station",
+  "dust-collection-systems": "openPitMine",
+  "scrubbers-ventilation": "renewFactory",
+};
+
+export const equipmentImage = (id: string) => IMAGES[EQUIPMENT[id] ?? "monitoringStation"];
 export const categoryImage = (id: string) => IMAGES[CATEGORY[id] ?? "landscape"];
 export const serviceImage = (id: string, category: string) => IMAGES[SERVICE[id] ?? CATEGORY[category] ?? "landscape"];
 export const industryImage = (id: string) => IMAGES[INDUSTRY[id] ?? "landscape"];

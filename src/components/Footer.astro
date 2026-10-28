@@ -42,6 +42,7 @@ const socials = [
           <h2>{t(lang, "nav.services")}</h2>
           <ul>
             {categories.map((c) => <li><a href={href(lang, `/services/${c.id}/`)}>{c.name[lang]}</a></li>)}
+            <li><a href={href(lang, "/equipment/")}>{lang === "ar" ? "تأجير أجهزة الرصد" : "Monitoring equipment rental"}</a></li>
           </ul>
         </div>
         <div>

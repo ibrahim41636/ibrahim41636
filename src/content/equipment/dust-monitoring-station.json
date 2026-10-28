@@ -1,0 +1,395 @@
+{
+  "group": "ambient-monitoring",
+  "order": 1,
+  "modes": [
+    "rental",
+    "supply"
+  ],
+  "service": "dust-monitoring",
+  "services": [
+    "noise-monitoring",
+    "air-quality-monitoring",
+    "environmental-management-plans"
+  ],
+  "industries": [
+    "construction",
+    "mining-quarrying",
+    "infrastructure",
+    "industrial-manufacturing",
+    "real-estate"
+  ],
+  "related": [
+    "air-quality-monitoring-station",
+    "dust-collection-systems",
+    "voc-sampling-analysis"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.uqn.gov.sa/details?p=17835",
+    "https://www.mewa.gov.sa/en/Ministry/AboutMinistry/RulesAndConditions/RulesLibrary/Docs/Executive%20Regulation%20for%20Noise.pdf"
+  ],
+  "en": {
+    "name": "Dust, Noise and Weather Monitoring Station",
+    "seoTitle": "Dust Monitoring Station Rental in Saudi Arabia | Selorin",
+    "metaDescription": "Rent a solar-powered dust monitoring station for PM2.5, PM10, noise and weather, with installation, live data, support and weekly and monthly reports.",
+    "cardDescription": "Solar-powered station for PM2.5, PM10, noise, wind, temperature, humidity and pressure, rented with installation, live data and reports.",
+    "lead": "A compact, solar-powered station that measures PM2.5, PM10, noise and five weather parameters around construction sites, crushers, batching plants and industrial perimeters, and sends the data live to your dashboard.",
+    "offer": "Rent the station with installation, connectivity, technical support and weekly and monthly reports, so your site has continuous dust and noise data without buying or maintaining equipment.",
+    "definition": "A dust monitoring station is a fixed field instrument that continuously measures airborne particulate matter (PM2.5 and PM10) at a site, usually together with noise and wind, so that dust levels can be compared with limits and controlled in time. Selorin rents a solar-powered station of this type with installation, a live dashboard, alerts, maintenance and weekly and monthly reports.",
+    "overview": [
+      "A micro pump draws air through a metal sampling head with a built-in size cutter, and particle concentrations are measured by laser light scattering. Above a set humidity threshold the inlet heats and dries the air, which limits the bias that water vapour causes in light-scattering readings.",
+      "The station also measures noise with a free-field microphone and records wind speed, wind direction, temperature, relative humidity and air pressure, so each dust reading can be read against the wind that carried it. Values are available as minute, hourly and daily averages.",
+      "Data travels over 4G or Wi-Fi to a cloud dashboard and is also stored on a memory card in the station. An internal 7-inch touchscreen gives on-site access to live data, history and settings, and SMS and email alerts go out when a value crosses the threshold you set.",
+      "The station is a sensor-based instrument for continuous site monitoring and early warning. Its readings are not equivalent to reference-method analysers or Class 1 sound level meters; where a permit requires reference methods, we advise on the right equipment."
+    ],
+    "includes": [
+      "Site survey and a monitoring location plan based on the layout, prevailing wind and nearby receptors",
+      "Delivery, installation on a pole, wall or bracket, commissioning and functional testing",
+      "Connection over 4G or Wi-Fi to a cloud dashboard, with access for your team",
+      "SMS and email alerts at thresholds agreed with you",
+      "Weekly report: daily and hourly averages, exceedances and wind data",
+      "Monthly report: charts, wind rose, comparison with the national ambient standards and your permit or plan limits, exceedance analysis and validated data in Excel",
+      "Preventive maintenance: inlet and sampling head cleaning, sensor and calibration checks, solar and battery checks",
+      "Technical support for the whole rental period, and relocation of the station as the works move"
+    ],
+    "measures": [
+      {
+        "parameter": "PM2.5 / PM10",
+        "principle": "Laser light scattering",
+        "range": "0 to 1000 µg/m³",
+        "accuracy": "±10%",
+        "resolution": "0.1 µg/m³"
+      },
+      {
+        "parameter": "Noise",
+        "principle": "Free-field microphone",
+        "range": "30 to 130 dB",
+        "accuracy": "±0.1 dB",
+        "resolution": "0.1 dB"
+      },
+      {
+        "parameter": "Wind speed",
+        "principle": "Cup anemometer",
+        "range": "0 to 45 m/s",
+        "accuracy": "±0.3 m/s",
+        "resolution": "0.1 m/s"
+      },
+      {
+        "parameter": "Wind direction",
+        "principle": "Wind vane",
+        "range": "0 to 360°",
+        "accuracy": "±3°",
+        "resolution": "1°"
+      },
+      {
+        "parameter": "Temperature",
+        "principle": "Resistive",
+        "range": "−40 to 60 °C",
+        "accuracy": "±0.3 °C",
+        "resolution": "0.1 °C"
+      },
+      {
+        "parameter": "Relative humidity",
+        "principle": "Capacitive",
+        "range": "0 to 100% RH",
+        "accuracy": "±2% RH",
+        "resolution": "0.1% RH"
+      },
+      {
+        "parameter": "Air pressure",
+        "principle": "Resistive / capacitive",
+        "range": "10 to 1300 hPa",
+        "accuracy": "±0.3 hPa",
+        "resolution": "0.1 hPa"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Measurement cycle",
+        "value": "60 s on all channels; PM cycle adjustable from 1 to 999 s"
+      },
+      {
+        "label": "Sampling",
+        "value": "Pump suction with a heated PM inlet"
+      },
+      {
+        "label": "Data reporting",
+        "value": "Interval adjustable from 1 to 60 minutes"
+      },
+      {
+        "label": "Communication",
+        "value": "Wi-Fi, 4G, RS485, Modbus"
+      },
+      {
+        "label": "Data system",
+        "value": "Onboard data unit to cloud platform"
+      },
+      {
+        "label": "Local interface",
+        "value": "Internal 7-inch touchscreen"
+      },
+      {
+        "label": "Data storage",
+        "value": "Memory card with local history"
+      },
+      {
+        "label": "Data export",
+        "value": "Excel and CSV"
+      },
+      {
+        "label": "Power supply",
+        "value": "220 V AC or solar (80 W panel, 50 Ah battery)"
+      },
+      {
+        "label": "Autonomy",
+        "value": "At least 12 hours of operation without solar input"
+      },
+      {
+        "label": "Power consumption",
+        "value": "20 W"
+      },
+      {
+        "label": "Enclosure",
+        "value": "Coated carbon steel, IP44"
+      },
+      {
+        "label": "Dimensions",
+        "value": "320 × 200 × 470 mm (L × W × H)"
+      },
+      {
+        "label": "Operating range",
+        "value": "−15 to +55 °C, 0 to 100% RH"
+      },
+      {
+        "label": "Installation",
+        "value": "Pole (1 + 1 + 1.2 m), wall or bracket"
+      },
+      {
+        "label": "Options",
+        "value": "LED display board, total suspended particulates (TSP), CCTV camera"
+      }
+    ],
+    "useCases": [
+      "Construction sites that monitor dust and noise under a construction environmental management plan (CEMP)",
+      "Crushers, quarries and concrete batching plants with dust at the site boundary",
+      "Industrial perimeters and laydown areas close to homes, schools or hospitals",
+      "Demolition, earthworks and road projects where the work front keeps moving",
+      "Baseline monitoring before construction starts, to record existing dust and noise levels",
+      "Responding to complaints with data that shows the levels and the wind direction at the time"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality under the Environmental Law sets the national ambient air standards, including for PM10 and PM2.5, and gives the National Center for Environmental Compliance (NCEC) responsibility for monitoring and enforcement.",
+      "The same regulation treats installing and operating ambient air monitoring networks without a licence, or using an unlicensed service provider, as a violation. Monitoring for regulatory submission is therefore run through a provider licensed by NCEC for that activity.",
+      "The Executive Regulation for Noise sets noise standards and permits exceedances at construction sites between 7:00 am and 6:00 pm, so work outside these hours needs to be planned with noise data.",
+      "Environmental permit conditions and construction environmental management plans often set dust and noise monitoring, alert thresholds and reporting frequency for the site."
+    ],
+    "faqs": [
+      {
+        "q": "How much does it cost to rent a dust monitoring station?",
+        "a": "The rental depends on the number of stations, the parameters, the rental period and the reporting you need. Send the site location and the period through the request form and we will reply with a configuration and a quotation."
+      },
+      {
+        "q": "What does the station measure?",
+        "a": "PM2.5 and PM10 by laser light scattering, noise from 30 to 130 dB, wind speed and direction, temperature, relative humidity and air pressure. Total suspended particulates (TSP), an LED display board and a CCTV camera can be added as options."
+      },
+      {
+        "q": "Does the station need mains power?",
+        "a": "No. It runs on a solar panel with a battery and is designed to keep operating for at least 12 hours without solar input. It can also run on 220 V where mains power is available."
+      },
+      {
+        "q": "How do we receive the data and the reports?",
+        "a": "Live readings are on a cloud dashboard your team can open from any device, with SMS and email alerts. We send a weekly report, and a monthly report with charts, a wind rose, comparison with the standards and the validated data in Excel."
+      },
+      {
+        "q": "Is the station a reference-method analyser?",
+        "a": "No. It is a sensor-based station for continuous site monitoring and early warning. Where a permit or a study requires reference methods, such as gravimetric sampling or beta attenuation, we advise on the right equipment or measurement campaign."
+      },
+      {
+        "q": "Where should the station be placed?",
+        "a": "Usually at the site boundary, between the main dust sources and the nearest receptors, taking the prevailing wind into account. Larger sites often need one station upwind and one or more downwind. We prepare the location plan before installation."
+      }
+    ]
+  },
+  "ar": {
+    "name": "محطة رصد الغبار والضوضاء والطقس",
+    "seoTitle": "تأجير جهاز ومحطة رصد الغبار في السعودية | سيلورين",
+    "metaDescription": "استأجر محطة رصد غبار تعمل بالطاقة الشمسية تقيس PM2.5 وPM10 والضوضاء والطقس، مع التركيب والبيانات المباشرة والدعم الفني والتقارير الأسبوعية والشهرية.",
+    "cardDescription": "محطة تعمل بالطاقة الشمسية تقيس PM2.5 وPM10 والضوضاء والرياح والحرارة والرطوبة والضغط، تُؤجَّر مع التركيب والبيانات المباشرة والتقارير.",
+    "lead": "محطة مدمجة تعمل بالطاقة الشمسية، تقيس PM2.5 وPM10 والضوضاء وخمسة مؤشرات للطقس حول مواقع الإنشاء والكسارات ومحطات الخرسانة وحدود المنشآت الصناعية، وترسل البيانات مباشرة إلى لوحة بياناتك.",
+    "offer": "استأجر المحطة شاملة التركيب والربط والدعم الفني والتقارير الأسبوعية والشهرية، لتحصل على بيانات مستمرة للغبار والضوضاء في موقعك دون شراء أجهزة أو صيانتها.",
+    "definition": "محطة رصد الغبار جهاز ميداني ثابت يقيس الجسيمات العالقة في الهواء (PM2.5 وPM10) في الموقع بشكل مستمر، وعادةً مع الضوضاء والرياح، لمقارنة مستويات الغبار بالحدود المسموح بها وضبطها في الوقت المناسب. وتؤجّر سيلورين محطة من هذا النوع تعمل بالطاقة الشمسية، شاملة التركيب ولوحة البيانات المباشرة والتنبيهات والصيانة والتقارير الأسبوعية والشهرية.",
+    "overview": [
+      "تسحب مضخة صغيرة الهواء عبر رأس سحب معدني مزوّد بفاصل لأحجام الجسيمات، وتُقاس تراكيز الجسيمات بتقنية تشتت ضوء الليزر. وعند تجاوز الرطوبة حدًا مضبوطًا يسخّن المدخل الهواء ويجففه، فيقل أثر بخار الماء على القراءة.",
+      "وتقيس المحطة الضوضاء بميكروفون للمجال الحر، وتسجّل سرعة الرياح واتجاهها ودرجة الحرارة والرطوبة النسبية والضغط الجوي، فتُقرأ كل قيمة غبار مع اتجاه الرياح التي حملته. وتتوفر القيم متوسطاتٍ لكل دقيقة وساعة ويوم.",
+      "تنتقل البيانات عبر شبكة الجيل الرابع أو الواي فاي إلى لوحة بيانات سحابية، وتُحفظ أيضًا على بطاقة ذاكرة داخل المحطة. وتتيح شاشة لمس داخلية مقاس 7 بوصات الاطلاع على البيانات المباشرة والسجل والإعدادات في الموقع، وتصل تنبيهات بالرسائل النصية والبريد الإلكتروني عند تجاوز أي قيمة للحد الذي تحدده.",
+      "المحطة جهاز يعتمد على الحساسات للرصد المستمر في الموقع والإنذار المبكر، وقراءاتها لا تعادل أجهزة الطرق المرجعية ولا مقاييس الصوت من الفئة الأولى. وإذا اشترط التصريح طرقًا مرجعية، نرشدك إلى الجهاز المناسب."
+    ],
+    "includes": [
+      "زيارة للموقع وخطة لمواقع الرصد مبنية على المخطط واتجاه الرياح السائد والمستقبلات القريبة",
+      "التوصيل والتركيب على عمود أو جدار أو حامل، والتشغيل والاختبار الوظيفي",
+      "الربط عبر الجيل الرابع أو الواي فاي بلوحة بيانات سحابية يدخلها فريقك",
+      "تنبيهات بالرسائل النصية والبريد الإلكتروني عند حدود نتفق عليها معك",
+      "تقرير أسبوعي: المتوسطات اليومية والساعية والتجاوزات وبيانات الرياح",
+      "تقرير شهري: رسوم بيانية، ووردة الرياح، ومقارنة بالمقاييس الوطنية للهواء المحيط وبحدود تصريحك أو خطتك، وتحليل للتجاوزات، وبيانات مدققة بصيغة Excel",
+      "صيانة وقائية: تنظيف المدخل ورأس السحب، وفحص الحساسات والمعايرة، وفحص الألواح الشمسية والبطارية",
+      "دعم فني طوال مدة التأجير، ونقل المحطة مع تقدّم الأعمال"
+    ],
+    "measures": [
+      {
+        "parameter": "PM2.5 / PM10",
+        "principle": "تشتت ضوء الليزر",
+        "range": "0 – 1000 µg/m³",
+        "accuracy": "±10%",
+        "resolution": "0.1 µg/m³"
+      },
+      {
+        "parameter": "الضوضاء",
+        "principle": "ميكروفون المجال الحر",
+        "range": "30 – 130 dB",
+        "accuracy": "±0.1 dB",
+        "resolution": "0.1 dB"
+      },
+      {
+        "parameter": "سرعة الرياح",
+        "principle": "مقياس الكؤوس",
+        "range": "0 – 45 m/s",
+        "accuracy": "±0.3 m/s",
+        "resolution": "0.1 m/s"
+      },
+      {
+        "parameter": "اتجاه الرياح",
+        "principle": "دوارة الرياح",
+        "range": "0 – 360°",
+        "accuracy": "±3°",
+        "resolution": "1°"
+      },
+      {
+        "parameter": "درجة الحرارة",
+        "principle": "مقاومة حرارية",
+        "range": "−40 – 60 °C",
+        "accuracy": "±0.3 °C",
+        "resolution": "0.1 °C"
+      },
+      {
+        "parameter": "الرطوبة النسبية",
+        "principle": "حساس سعوي",
+        "range": "0 – 100% RH",
+        "accuracy": "±2% RH",
+        "resolution": "0.1% RH"
+      },
+      {
+        "parameter": "الضغط الجوي",
+        "principle": "مقاومي / سعوي",
+        "range": "10 – 1300 hPa",
+        "accuracy": "±0.3 hPa",
+        "resolution": "0.1 hPa"
+      }
+    ],
+    "specs": [
+      {
+        "label": "دورة القياس",
+        "value": "60 ثانية لجميع القنوات، ودورة الجسيمات قابلة للضبط من 1 إلى 999 ثانية"
+      },
+      {
+        "label": "طريقة السحب",
+        "value": "سحب بمضخة مع مدخل جسيمات مُسخَّن"
+      },
+      {
+        "label": "إرسال البيانات",
+        "value": "فاصل زمني قابل للضبط من 1 إلى 60 دقيقة"
+      },
+      {
+        "label": "الاتصال",
+        "value": "Wi-Fi و4G وRS485 وModbus"
+      },
+      {
+        "label": "نظام البيانات",
+        "value": "وحدة بيانات داخلية مرتبطة بمنصة سحابية"
+      },
+      {
+        "label": "الواجهة المحلية",
+        "value": "شاشة لمس داخلية مقاس 7 بوصات"
+      },
+      {
+        "label": "تخزين البيانات",
+        "value": "بطاقة ذاكرة مع سجل محلي"
+      },
+      {
+        "label": "تصدير البيانات",
+        "value": "Excel وCSV"
+      },
+      {
+        "label": "مصدر الطاقة",
+        "value": "كهرباء 220 فولت أو طاقة شمسية (لوح 80 واط وبطارية 50 أمبير ساعة)"
+      },
+      {
+        "label": "الاستقلالية",
+        "value": "12 ساعة تشغيل على الأقل دون إشعاع شمسي"
+      },
+      {
+        "label": "استهلاك الطاقة",
+        "value": "20 واط"
+      },
+      {
+        "label": "الهيكل",
+        "value": "فولاذ كربوني مطلي، درجة حماية IP44"
+      },
+      {
+        "label": "الأبعاد",
+        "value": "320 × 200 × 470 ملم (طول × عرض × ارتفاع)"
+      },
+      {
+        "label": "ظروف التشغيل",
+        "value": "من −15 °C حتى +55 °C، والرطوبة النسبية حتى 100%"
+      },
+      {
+        "label": "التركيب",
+        "value": "عمود (1 + 1 + 1.2 م) أو جدار أو حامل"
+      },
+      {
+        "label": "خيارات إضافية",
+        "value": "لوحة عرض LED، والجسيمات العالقة الكلية (TSP)، وكاميرا مراقبة"
+      }
+    ],
+    "useCases": [
+      "مواقع الإنشاء التي ترصد الغبار والضوضاء ضمن خطة الإدارة البيئية لأعمال الإنشاء (CEMP)",
+      "الكسارات والمحاجر ومحطات الخرسانة التي يصل غبارها إلى حدود الموقع",
+      "حدود المنشآت الصناعية ومناطق التخزين القريبة من المساكن أو المدارس أو المستشفيات",
+      "مشاريع الهدم والحفر والطرق التي تتنقل فيها جبهة العمل باستمرار",
+      "الرصد المرجعي قبل بدء الإنشاء لتوثيق مستويات الغبار والضوضاء القائمة",
+      "الرد على الشكاوى ببيانات توضح المستويات واتجاه الرياح وقت الشكوى"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء لنظام البيئة المقاييس الوطنية للهواء المحيط، ومنها PM10 وPM2.5، وتسند إلى المركز الوطني للرقابة على الالتزام البيئي مهام الرصد والرقابة.",
+      "وتعدّ اللائحة نفسها تركيب شبكات رصد الهواء المحيط وتشغيلها دون ترخيص، أو الاستعانة بمقدم خدمات غير مرخص، مخالفةً. لذلك يُنفَّذ الرصد المخصص للرفع إلى الجهة الرقابية عبر مقدم خدمة مرخّص من المركز لهذا النشاط.",
+      "تحدد اللائحة التنفيذية للضوضاء مقاييس الضوضاء، وتسمح بتجاوزها في مواقع الإنشاء من السابعة صباحًا حتى السادسة مساءً، فيلزم تخطيط العمل خارج هذه الساعات ببيانات ضوضاء.",
+      "كثيرًا ما تحدد اشتراطات التصريح البيئي وخطط الإدارة البيئية لأعمال الإنشاء رصد الغبار والضوضاء وحدود التنبيه وتكرار التقارير في الموقع."
+    ],
+    "faqs": [
+      {
+        "q": "كم تكلفة استئجار محطة رصد الغبار؟",
+        "a": "تعتمد قيمة التأجير على عدد المحطات والمؤشرات المطلوبة ومدة التأجير ونوع التقارير. أرسل موقع المشروع والمدة عبر نموذج الطلب، ونرد عليك بالتهيئة المناسبة وعرض السعر."
+      },
+      {
+        "q": "ماذا تقيس المحطة؟",
+        "a": "تقيس PM2.5 وPM10 بتقنية تشتت ضوء الليزر، والضوضاء من 30 إلى 130 ديسيبل، وسرعة الرياح واتجاهها، ودرجة الحرارة، والرطوبة النسبية، والضغط الجوي. ويمكن إضافة قياس الجسيمات العالقة الكلية (TSP) ولوحة عرض LED وكاميرا مراقبة."
+      },
+      {
+        "q": "هل تحتاج المحطة إلى كهرباء؟",
+        "a": "لا. تعمل بلوح شمسي وبطارية، ومصممة للاستمرار في التشغيل 12 ساعة على الأقل دون إشعاع شمسي، ويمكن تشغيلها بكهرباء 220 فولت حيث تتوفر."
+      },
+      {
+        "q": "كيف نستلم البيانات والتقارير؟",
+        "a": "تظهر القراءات المباشرة على لوحة بيانات سحابية يفتحها فريقك من أي جهاز، مع تنبيهات بالرسائل النصية والبريد. ونرسل تقريرًا أسبوعيًا، وتقريرًا شهريًا فيه رسوم بيانية ووردة الرياح ومقارنة بالمقاييس والبيانات المدققة بصيغة Excel."
+      },
+      {
+        "q": "هل المحطة جهاز طريقة مرجعية؟",
+        "a": "لا. هي محطة تعتمد على الحساسات للرصد المستمر في الموقع والإنذار المبكر. وإذا اشترط التصريح أو الدراسة طرقًا مرجعية مثل أخذ العينات الوزني أو التوهين الإشعاعي، نرشدك إلى الجهاز أو حملة القياس المناسبة."
+      },
+      {
+        "q": "أين توضع المحطة؟",
+        "a": "عادةً عند حدود الموقع بين مصادر الغبار الرئيسة وأقرب المستقبلات، مع مراعاة اتجاه الرياح السائد. وتحتاج المواقع الكبيرة غالبًا محطة قبل اتجاه الرياح ومحطة أو أكثر بعده، ونُعدّ خطة المواقع قبل التركيب."
+      }
+    ]
+  }
+}

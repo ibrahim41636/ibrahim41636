@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=25431",
+    "https://www.uqn.gov.sa/details?p=17839",
+    "https://selorin.co/equipment/soil-sampling-equipment/"
+  ],
+  "ar": {
+    "title": "غازات التربة: ما لا تظهره عينة التربة",
+    "text": "عينة التربة تخبرك بما تحمله الأرض في نقطة واحدة. أما غازات التربة فتخبرك بما يتحرك خلالها.\n\nمسام التربة مملوءة بالهواء. وعندما يوجد تلوث بهيدروكربونات الوقود أو غاز المرادم، تنتقل أبخرته في هذه المسام وقد تصل إلى المباني والخنادق. لذلك تُستخدم عينات غازات التربة لتحديد امتداد التلوث بسرعة وتوجيه أماكن الحفر وأخذ العينات.\n\nكيف تُؤخذ؟\n• نقطة رصد دائمة: مصفاة صغيرة من الفولاذ المقاوم للصدأ تُثبت على عمق محدد، فتتكرر القراءات مع الوقت.\n• مجس مؤقت: يُدق إلى العمق المطلوب لقراءة واحدة.\n• مضخة تفريغ صغيرة تسحب العينة إلى جهاز قياس أو إلى عبوة للتحليل المخبري.\n\nوتتناول اللائحة التنفيذية لمنع ومعالجة تلوث التربة منع التلوث والالتزام بمعالجة التربة الملوثة، وتكملها لائحة إعادة التأهيل البيئي للمواقع المتدهورة ومعالجة المواقع الملوثة.\n\nالتفاصيل في الرابط.\n\n#تلوث_التربة #محطات_الوقود #الفحص_البيئي #السعودية",
+    "x": "عينة التربة تخبرك بما تحمله الأرض، وغازات التربة تخبرك بما يتحرك خلالها، كأبخرة الوقود وغاز المرادم. نقاط دائمة أو مجسات مؤقتة. #تلوث_التربة",
+    "link": "/ar/equipment/soil-sampling-equipment/",
+    "image": {
+      "template": "faq",
+      "q": "ما أخذ عينات غازات التربة؟",
+      "a": "جمع الهواء الموجود في مسام التربة على عمق محدد بنقاط دائمة أو مجسات مؤقتة، للكشف عن أبخرة مثل هيدروكربونات الوقود أو غاز المرادم وتحديد امتداد التلوث."
+    }
+  },
+  "en": {
+    "title": "Soil gas: what a soil sample does not show",
+    "text": "A soil sample tells you what the ground holds at one point. Soil gas tells you what is moving through it.\n\nSoil pores are full of air. Where there is contamination with fuel hydrocarbons or landfill gas, the vapours move through these pores and can reach buildings and trenches. Soil gas sampling is therefore used to map the extent of contamination quickly and to target drilling and sampling.\n\nHow is it taken?\n• A permanent monitoring point: a small stainless-steel screen set at a fixed depth, so readings can be repeated over time.\n• A temporary probe: driven to the required depth for a single reading.\n• A small vacuum pump draws the sample to a meter or into a canister for laboratory analysis.\n\nSaudi Arabia's Executive Regulation for the Prevention and Remediation of Soil Pollution covers preventing pollution and treating contaminated soil, complemented by the regulation on rehabilitation of degraded sites and remediation of contaminated sites.\n\nDetails at the link.\n\n#SoilContamination #FuelStations #DueDiligence #SaudiArabia",
+    "x": "A soil sample shows what the ground holds; soil gas shows what moves through it, such as fuel vapour or landfill gas. Permanent points or temporary probes.",
+    "link": "/equipment/soil-sampling-equipment/",
+    "image": {
+      "template": "faq",
+      "q": "What is soil gas sampling?",
+      "a": "Collecting the air in soil pores at a set depth, with permanent points or temporary probes, to detect vapours such as fuel hydrocarbons or landfill gas and map how far contamination extends."
+    }
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "group": "sampling",
+  "order": 2,
+  "modes": [
+    "rental",
+    "supply"
+  ],
+  "service": "water-quality-monitoring",
+  "services": [
+    "environmental-monitoring",
+    "environmental-impact-assessment",
+    "environmental-due-diligence"
+  ],
+  "industries": [
+    "oil-gas",
+    "industrial-manufacturing",
+    "infrastructure",
+    "construction",
+    "government-public-sector"
+  ],
+  "related": [
+    "soil-sampling-equipment",
+    "voc-sampling-analysis",
+    "air-quality-monitoring-station"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=25435"
+  ],
+  "en": {
+    "name": "Water, Groundwater and Sediment Sampling Equipment",
+    "seoTitle": "Water and Sediment Sampling Equipment in Saudi Arabia | Selorin",
+    "metaDescription": "Groundwater bailers, water level and interface meters, depth samplers, sediment grabs and corers, for rent or supply, or as a water and sediment sampling service.",
+    "cardDescription": "Bailers, water level and interface meters, depth samplers, sediment grabs and corers for groundwater, wastewater and marine sampling.",
+    "lead": "Equipment to sample groundwater, surface water, wastewater, sludge and sediment at the right point and depth, and to measure water levels and floating fuel in wells.",
+    "offer": "Rent or buy the sampling equipment, or let our team carry out the sampling with documented methods, chain of custody and laboratory coordination.",
+    "definition": "Water and sediment sampling is the collection of representative samples of groundwater, surface water, wastewater, sludge and sediment for laboratory analysis, together with field measurements such as water level. Selorin rents and supplies the bailers, depth samplers, interface meters, grabs and corers used for this work, and carries out sampling as a service.",
+    "overview": [
+      "In monitoring wells, a water level meter records the depth to water, and an interface meter detects a layer of fuel floating on the groundwater and measures its thickness. Bailers, in stainless steel or as disposable clear tubes, then collect the sample without carrying contamination from one well to the next.",
+      "For wastewater, tanks and lagoons, a discrete liquid sampler with a peristaltic pump takes a sample from a set depth. For sediment, grab samplers collect the surface layer, and corers and multi-stage samplers keep the layers in order for analysis.",
+      "Field geotechnical tools, such as cone penetrometers and infiltration and vane shear tests, give soil strength and infiltration data alongside environmental samples."
+    ],
+    "includes": [
+      "Sampling plan: points, depths, parameters, preservation and quality control",
+      "Rental or supply of samplers, meters, grabs and corers",
+      "Field sampling by our team, with field logs and photographs",
+      "Chain-of-custody documents and coordination with an accredited laboratory",
+      "Report comparing results with the applicable standards and permit limits"
+    ],
+    "types": [
+      {
+        "title": "Sludge and sediment samplers",
+        "description": "Multi-stage samplers for sludge and sediment cores, a sand and sediment probe, and a peat borer for undisturbed cores.",
+        "sectors": "Marine, wastewater, wetlands"
+      },
+      {
+        "title": "Grab samplers",
+        "description": "Ekman and bottom dredges for surface sediment.",
+        "sectors": "Marine, lakes, wastewater"
+      },
+      {
+        "title": "Groundwater bailers",
+        "description": "Stainless-steel and disposable clear bailers.",
+        "sectors": "Groundwater monitoring"
+      },
+      {
+        "title": "Water level and interface meters",
+        "description": "Depth to water and the fuel-water interface in monitoring wells.",
+        "sectors": "Oil and gas, groundwater"
+      },
+      {
+        "title": "Discrete liquid sampler",
+        "description": "Depth-specific liquid sampling with a peristaltic pump.",
+        "sectors": "Water, wastewater"
+      },
+      {
+        "title": "Field geotechnical tests",
+        "description": "Static and dynamic cone penetrometers, infiltration tests and vane shear tests.",
+        "sectors": "Construction, infrastructure, agriculture"
+      }
+    ],
+    "useCases": [
+      "Groundwater monitoring wells at fuel stations, depots and tank farms",
+      "Wastewater and sludge sampling at treatment plants and industrial sites",
+      "Coastal and marine baseline surveys",
+      "Lakes, ponds, lagoons and evaporation ponds",
+      "Dewatering discharges from construction sites",
+      "Infiltration tests for drainage and soakaway design"
+    ],
+    "regulatory": [
+      "The Executive Regulation for the Protection of Aquatic Media from Pollution under the Environmental Law covers the protection of surface water, groundwater and the marine environment, and the role of the National Center for Environmental Compliance (NCEC) in monitoring them.",
+      "Environmental permits set discharge limits, sampling points and reporting for wastewater and treated water.",
+      "Groundwater and sediment data are often required in impact assessments, contaminated land investigations and due diligence."
+    ],
+    "faqs": [
+      {
+        "q": "What is an interface meter used for?",
+        "a": "It measures the depth to a layer of fuel or oil floating on groundwater in a monitoring well, and the depth to the water below it, so the thickness of the floating product can be calculated."
+      },
+      {
+        "q": "Do you rent water sampling equipment?",
+        "a": "Yes. Bailers, meters, depth samplers, grabs and corers can be rented for a project or supplied for your team."
+      },
+      {
+        "q": "Can you take the samples for us?",
+        "a": "Yes. Our team plans and carries out the sampling, keeps the chain of custody, coordinates the laboratory and reports the results against the applicable standards."
+      },
+      {
+        "q": "Why use disposable bailers?",
+        "a": "A new disposable bailer for each well avoids carrying contamination between wells and removes the need to decontaminate equipment in the field."
+      }
+    ]
+  },
+  "ar": {
+    "name": "معدات أخذ عينات المياه والمياه الجوفية والرواسب",
+    "seoTitle": "معدات أخذ عينات المياه والرواسب في السعودية | سيلورين",
+    "metaDescription": "أجهزة سحب عينات المياه الجوفية، ومقاييس منسوب المياه والفاصل، وأجهزة العينات العميقة، وجرّافات الرواسب، للتأجير أو التوريد أو كخدمة لأخذ العينات.",
+    "cardDescription": "أجهزة سحب ومقاييس منسوب وفاصل وأجهزة عينات عميقة وجرّافات رواسب للمياه الجوفية والصرف والبيئة البحرية.",
+    "lead": "معدات لأخذ عينات المياه الجوفية والسطحية ومياه الصرف والحمأة والرواسب من النقطة والعمق الصحيحين، ولقياس منسوب المياه والوقود الطافي في الآبار.",
+    "offer": "استأجر معدات أخذ العينات أو اشترها، أو دع فريقنا ينفّذ أخذ العينات بطرق موثقة وسلسلة حيازة وتنسيق مع المختبر.",
+    "definition": "أخذ عينات المياه والرواسب هو جمع عينات ممثِّلة من المياه الجوفية والسطحية ومياه الصرف والحمأة والرواسب لتحليلها مخبريًا، مع قياسات ميدانية مثل منسوب المياه. وتؤجّر سيلورين وتورد أجهزة السحب والعينات العميقة ومقاييس الفاصل والجرّافات وأجهزة العينات اللبية المستخدمة في ذلك، وتنفّذ أخذ العينات كخدمة.",
+    "overview": [
+      "في آبار الرصد يسجّل مقياس المنسوب عمق المياه، ويكشف مقياس الفاصل طبقة الوقود الطافية على المياه الجوفية ويقيس سمكها. ثم تجمع أجهزة السحب، المصنوعة من الفولاذ المقاوم للصدأ أو الشفافة أحادية الاستخدام، العينة دون نقل التلوث من بئر إلى أخرى.",
+      "ولمياه الصرف والخزانات والبحيرات الاصطناعية، يأخذ جهاز العينات العميقة المزود بمضخة تمعجية عينة من عمق محدد. وللرواسب، تجمع الجرّافات الطبقة السطحية، وتحفظ أجهزة العينات اللبية ومتعددة المراحل ترتيب الطبقات للتحليل.",
+      "وتقدّم أدوات الفحص الجيوتقني الميداني، مثل مخاريط الاختراق واختبارات التسرب والقص الدوراني، بيانات قوة التربة وتسربها إلى جانب العينات البيئية."
+    ],
+    "includes": [
+      "خطة أخذ العينات: النقاط والأعماق والمؤشرات والحفظ وضبط الجودة",
+      "تأجير أو توريد أجهزة العينات والمقاييس والجرّافات وأجهزة العينات اللبية",
+      "أخذ العينات ميدانيًا بفريقنا مع سجلات ميدانية وصور",
+      "مستندات سلسلة الحيازة والتنسيق مع مختبر معتمد",
+      "تقرير يقارن النتائج بالمقاييس المنطبقة وحدود التصريح"
+    ],
+    "types": [
+      {
+        "title": "أجهزة عينات الحمأة والرواسب",
+        "description": "أجهزة متعددة المراحل لعينات الحمأة والرواسب اللبية، ومجس للرمال والرواسب، ومثقب للعينات اللبية غير المضطربة.",
+        "sectors": "البيئة البحرية، الصرف الصحي، الأراضي الرطبة"
+      },
+      {
+        "title": "الجرّافات",
+        "description": "جرّافات إكمان والجرّافات القاعية للرواسب السطحية.",
+        "sectors": "البيئة البحرية، البحيرات، الصرف الصحي"
+      },
+      {
+        "title": "أجهزة سحب المياه الجوفية",
+        "description": "أجهزة سحب من الفولاذ المقاوم للصدأ وأخرى شفافة أحادية الاستخدام.",
+        "sectors": "رصد المياه الجوفية"
+      },
+      {
+        "title": "مقاييس المنسوب والفاصل",
+        "description": "قياس عمق المياه وحد الفاصل بين الوقود والماء في آبار الرصد.",
+        "sectors": "النفط والغاز، المياه الجوفية"
+      },
+      {
+        "title": "جهاز العينات العميقة",
+        "description": "أخذ عينات سائلة من عمق محدد بمضخة تمعجية.",
+        "sectors": "المياه، الصرف الصحي"
+      },
+      {
+        "title": "الفحوص الجيوتقنية الميدانية",
+        "description": "مخاريط الاختراق الساكن والديناميكي، واختبارات التسرب، واختبارات القص الدوراني.",
+        "sectors": "الإنشاءات، البنية التحتية، الزراعة"
+      }
+    ],
+    "useCases": [
+      "آبار رصد المياه الجوفية في محطات الوقود والمستودعات ومستودعات الخزانات",
+      "عينات مياه الصرف والحمأة في محطات المعالجة والمواقع الصناعية",
+      "الدراسات المرجعية الساحلية والبحرية",
+      "البحيرات والبرك وأحواض التبخير",
+      "تصريف مياه نزح المياه الجوفية في مواقع الإنشاء",
+      "اختبارات التسرب لتصميم التصريف وآبار الامتصاص"
+    ],
+    "regulatory": [
+      "تتناول اللائحة التنفيذية لحماية الأوساط المائية من التلوث لنظام البيئة حماية المياه السطحية والجوفية والبيئة البحرية، ودور المركز الوطني للرقابة على الالتزام البيئي في رصدها.",
+      "تحدد التصاريح البيئية حدود التصريف ونقاط أخذ العينات والتقارير لمياه الصرف والمياه المعالجة.",
+      "كثيرًا ما تُطلب بيانات المياه الجوفية والرواسب في تقييم الأثر البيئي ودراسات الأراضي الملوثة والفحص البيئي."
+    ],
+    "faqs": [
+      {
+        "q": "ما استخدام مقياس الفاصل؟",
+        "a": "يقيس عمق طبقة الوقود أو الزيت الطافية على المياه الجوفية في بئر الرصد، وعمق المياه تحتها، فيُحسب سمك المنتج الطافي."
+      },
+      {
+        "q": "هل تؤجّرون معدات أخذ عينات المياه؟",
+        "a": "نعم. يمكن استئجار أجهزة السحب والمقاييس وأجهزة العينات العميقة والجرّافات وأجهزة العينات اللبية لمشروع محدد، أو توريدها لفريقك."
+      },
+      {
+        "q": "هل تأخذون العينات نيابة عنا؟",
+        "a": "نعم. يخطط فريقنا لأخذ العينات وينفّذه، ويحافظ على سلسلة الحيازة، وينسّق مع المختبر، ويقدّم النتائج مقارنة بالمقاييس المنطبقة."
+      },
+      {
+        "q": "لماذا تُستخدم أجهزة السحب أحادية الاستخدام؟",
+        "a": "لأن جهازًا جديدًا لكل بئر يمنع نقل التلوث بين الآبار، ويغني عن تنظيف المعدات ميدانيًا."
+      }
+    ]
+  }
+}

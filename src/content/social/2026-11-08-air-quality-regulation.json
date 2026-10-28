@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-08",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://istitlaa.ncc.gov.sa/ar/civil/mewa/executiveregulationsforenvironmentalserviceprovide/Pages/default.aspx"
+  ],
+  "ar": {
+    "title": "هل يكفي أي جهاز رصد للتقارير النظامية؟",
+    "text": "في أسبوع مؤتمر المناخ COP31 يعود الحديث عن الانبعاثات وقياسها. لكن القياس الذي يُرفع إلى الجهة الرقابية له شروط.\n\nثلاث نقاط من اللائحة التنفيذية لجودة الهواء تفوت كثيرًا من المنشآت:\n• تركيب شبكات رصد الهواء المحيط وتشغيلها دون ترخيص، أو الاستعانة بمقدم خدمات غير مرخص، مخالفة. فالجهة التي تنفذ الرصد يجب أن تكون مرخصة لهذا النشاط.\n• المصادر الثابتة غير الخاضعة للرصد المستمر تحتاج اختبارات وتحاليل سنوية، وعدم إجرائها مخالفة.\n• الحالات الطارئة والإغلاق المؤقت الذي قد يترتب عليه تجاوز للمقاييس يجب إبلاغ المركز الوطني للرقابة على الالتزام البيئي بها.\n\nالعلم وراء ذلك بسيط: الرقم الذي تبني عليه قرارًا تنظيميًا يجب أن يكون قابلًا للتتبع، أي جهاز معاير، وطريقة معروفة، وجهة مسؤولة عن النتيجة.\n\nالدليل الكامل للوائح في الرابط.\n\n#جودة_الهواء #الالتزام_البيئي #COP31 #السعودية",
+    "x": "لائحة جودة الهواء تعدّ تشغيل شبكات رصد الهواء دون ترخيص أو عبر مقدم خدمات غير مرخص مخالفة، وتلزم باختبارات سنوية للمصادر غير الخاضعة للرصد المستمر. #جودة_الهواء",
+    "link": "/ar/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "myth",
+      "myth": "أي جهاز رصد يكفي للتقارير النظامية",
+      "fact": "لائحة جودة الهواء تعدّ تشغيل شبكات رصد الهواء دون ترخيص، أو الاستعانة بمقدم خدمات غير مرخص، مخالفةً."
+    }
+  },
+  "en": {
+    "title": "Will any monitor do for regulatory reports?",
+    "text": "COP31 week brings emissions and their measurement back to the boardroom. But a measurement submitted to a regulator comes with conditions.\n\nThree points of Saudi Arabia's Executive Regulation for Air Quality that many facilities miss:\n• Installing and operating ambient air monitoring networks without a licence, or using an unlicensed service provider, is a violation. Whoever runs the monitoring must be licensed for that activity.\n• Stationary sources that are not under continuous monitoring need annual tests and analyses; skipping them is a violation.\n• Emergencies and temporary shutdowns that may lead to exceeding the standards must be reported to the National Center for Environmental Compliance (NCEC).\n\nThe science behind this is simple: a number that supports a regulatory decision must be traceable, meaning a calibrated instrument, a known method, and an accountable provider.\n\nThe full guide to the regulations is at the link.\n\n#AirQuality #EnvironmentalCompliance #COP31 #SaudiArabia",
+    "x": "Saudi air quality rules treat running ambient monitoring networks without a licence, or via an unlicensed provider, as a violation, and require annual tests for sources without continuous monitoring.",
+    "link": "/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "myth",
+      "myth": "Any monitor will do for regulatory reports",
+      "fact": "The Air Quality regulation treats running monitoring networks without a licence, or using an unlicensed provider, as a violation."
+    }
+  }
+}

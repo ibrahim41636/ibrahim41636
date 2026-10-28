@@ -1,0 +1,206 @@
+{
+  "group": "emissions-monitoring",
+  "order": 1,
+  "modes": [
+    "supply",
+    "operation"
+  ],
+  "service": "air-quality-monitoring",
+  "services": [
+    "environmental-monitoring",
+    "environmental-compliance",
+    "environmental-records"
+  ],
+  "industries": [
+    "energy",
+    "oil-gas",
+    "industrial-manufacturing",
+    "waste-recycling",
+    "mining-quarrying"
+  ],
+  "related": [
+    "air-quality-monitoring-station",
+    "dust-collection-systems",
+    "scrubbers-ventilation"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.uqn.gov.sa/details?p=17831"
+  ],
+  "en": {
+    "name": "Continuous Emissions Monitoring System (CEMS)",
+    "seoTitle": "CEMS Continuous Emissions Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Extractive and in-situ CEMS, laser gas analysers, stack dust monitors and flow meters, supplied, installed and maintained with data reporting in Saudi Arabia.",
+    "cardDescription": "Extractive and in-situ gas analysers, laser analysers, stack dust monitors and flow meters, supplied, installed and maintained.",
+    "lead": "Stack gas analysers, dust monitors and flow meters that measure emissions around the clock, with the data acquisition, calibration and maintenance that keep a CEMS accepted.",
+    "offer": "We supply, install and commission the system, connect it to data acquisition and reporting, and maintain it, so your stack data stays complete and defensible.",
+    "definition": "A continuous emissions monitoring system (CEMS) measures pollutant concentrations and gas flow in a stack around the clock, so that a facility can report its emissions and show compliance with emission limits. Selorin supplies, installs and maintains extractive and in-situ CEMS, stack dust monitors and flow meters, and supports data reporting and periodic accuracy testing.",
+    "overview": [
+      "Extractive systems draw a sample from the stack through a heated line, condition it and analyse it in a cabinet at ground level. In-situ analysers measure directly across the stack. The choice depends on the gases, the stack conditions, dust and moisture, and access.",
+      "Tunable diode laser (TDLS) analysers measure single gases such as carbon monoxide, ammonia slip after selective catalytic reduction, or hydrogen chloride, with a fast response. Zirconia oxygen analysers provide the reference oxygen used to correct concentrations.",
+      "Stack dust is measured by light transmission in dry stacks, by forward scattering at low concentrations, and with dedicated monitors in wet stacks after flue gas desulphurisation. Pitot tube or ultrasonic flow meters turn concentrations into mass emission rates.",
+      "Data acquisition and handling software records the data, applies corrections and averaging, and produces compliance reports. Analysers in the range hold international type approvals, and we provide the certificates with the technical submittal."
+    ],
+    "includes": [
+      "Stack survey: sampling ports, access, gas conditions and the parameters your permit requires",
+      "System design and selection of extractive or in-situ analysers, dust and flow monitors",
+      "Supply, installation and commissioning, with factory and site acceptance tests",
+      "Data acquisition, telemetry and compliance reporting software",
+      "Calibration and quality assurance procedures, and drift checks",
+      "Preventive maintenance, spare parts and 24/7 technical support",
+      "Support for relative accuracy tests and periodic stack testing"
+    ],
+    "types": [
+      {
+        "title": "Extractive CEMS analysers",
+        "description": "Analysers for NOx, SO2, CO, CO2 and O2 (paramagnetic), and complete systems in a 19-inch rack.",
+        "sectors": "Cement, power, petrochemical"
+      },
+      {
+        "title": "In-situ gas analysers",
+        "description": "Cross-stack analysers for NOx, SO2, NH3 and O2, including an explosion-proof version for hazardous areas.",
+        "sectors": "Cement, steel, power, oil and gas, petrochemical"
+      },
+      {
+        "title": "Laser (TDLS) analysers",
+        "description": "Tunable diode laser analysers for CO, NH3 slip after SCR, and HCl.",
+        "sectors": "Steel, power, petrochemical, incineration, cement"
+      },
+      {
+        "title": "Zirconia oxygen analyser",
+        "description": "In-situ O2 for combustion control and correction to reference oxygen.",
+        "sectors": "All combustion sources"
+      },
+      {
+        "title": "Stack dust monitors",
+        "description": "Light transmission and forward scattering monitors for dry stacks, and monitors for wet stacks after flue gas desulphurisation.",
+        "sectors": "Cement, steel, power, industry"
+      },
+      {
+        "title": "Flow, temperature and pressure",
+        "description": "Pitot tube and ultrasonic flow meters for volumetric flow and mass emission rates.",
+        "sectors": "Cement, power, petrochemical"
+      }
+    ],
+    "useCases": [
+      "Power and desalination plants with boilers and gas turbines",
+      "Cement kilns, clinker coolers and mills",
+      "Refineries, petrochemical plants and gas processing",
+      "Steel, metals and foundries",
+      "Waste incineration and thermal treatment",
+      "Facilities upgrading or replacing an existing CEMS"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality sets emission standards for stationary sources and requires annual testing of stationary sources that are not under continuous monitoring.",
+      "The regulation also sets controls for auditing continuous monitoring systems, so a CEMS needs documented calibration, quality assurance and data handling.",
+      "Environmental operating permits specify which stacks must be monitored continuously, the parameters and the reporting to the National Center for Environmental Compliance (NCEC).",
+      "Facilities in Jubail and Yanbu follow the continuous monitoring requirements of the Royal Commission for Jubail and Yanbu."
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between extractive and in-situ CEMS?",
+        "a": "An extractive system takes a sample out of the stack and analyses it in a conditioned cabinet, which suits multi-gas measurement and easy maintenance. An in-situ analyser measures inside or across the stack without sample transport, which gives a fast response with fewer components."
+      },
+      {
+        "q": "Which stacks need continuous monitoring?",
+        "a": "The environmental permit for the facility sets which sources need continuous monitoring and which need periodic testing. We review your permit and the stack inventory and propose the system that meets it."
+      },
+      {
+        "q": "How are CEMS readings kept accurate?",
+        "a": "With scheduled calibration and drift checks, preventive maintenance, and periodic comparison against reference stack testing, such as relative accuracy tests, documented in the data system."
+      },
+      {
+        "q": "Can you take over maintenance of an existing CEMS?",
+        "a": "Yes. We assess the installed system, its data and its documentation, then propose a maintenance and upgrade plan."
+      }
+    ]
+  },
+  "ar": {
+    "name": "نظام الرصد المستمر للانبعاثات (CEMS)",
+    "seoTitle": "نظام الرصد المستمر للانبعاثات CEMS في السعودية | سيلورين",
+    "metaDescription": "أنظمة CEMS الاستخلاصية والموضعية ومحللات الليزر وأجهزة رصد غبار المداخن ومقاييس التدفق، توريدًا وتركيبًا وصيانة مع تقارير البيانات في السعودية.",
+    "cardDescription": "محللات غازات استخلاصية وموضعية، ومحللات ليزر، وأجهزة رصد غبار المداخن، ومقاييس تدفق، توريدًا وتركيبًا وصيانة.",
+    "lead": "محللات غازات المداخن وأجهزة رصد الغبار ومقاييس التدفق التي تقيس الانبعاثات على مدار الساعة، مع أنظمة جمع البيانات والمعايرة والصيانة التي تبقي النظام مقبولًا.",
+    "offer": "نورد النظام ونركّبه ونشغّله، ونربطه بجمع البيانات والتقارير، ونتولى صيانته، لتبقى بيانات مداخنك مكتملة ويمكن الدفاع عنها.",
+    "definition": "نظام الرصد المستمر للانبعاثات (CEMS) يقيس تراكيز الملوثات وتدفق الغازات في المدخنة على مدار الساعة، لتتمكن المنشأة من الإبلاغ عن انبعاثاتها وإثبات التزامها بحدود الانبعاث. وتورد سيلورين أنظمة CEMS الاستخلاصية والموضعية وأجهزة رصد غبار المداخن ومقاييس التدفق وتركّبها وتصونها، وتدعم تقارير البيانات واختبارات الدقة الدورية.",
+    "overview": [
+      "تسحب الأنظمة الاستخلاصية عينة من المدخنة عبر خط مسخَّن، ثم تهيئها وتحللها في خزانة على مستوى الأرض. أما المحللات الموضعية فتقيس مباشرة عبر المدخنة. ويعتمد الاختيار على الغازات المطلوبة وظروف المدخنة والغبار والرطوبة وسهولة الوصول.",
+      "تقيس محللات الليزر ثنائي الصمام القابل للضبط (TDLS) غازًا واحدًا مثل أول أكسيد الكربون أو الأمونيا المتسربة بعد الاختزال الحفزي الانتقائي أو كلوريد الهيدروجين، باستجابة سريعة. وتوفر محللات الأكسجين بالزركونيا قيمة الأكسجين المرجعية لتصحيح التراكيز.",
+      "يُقاس غبار المداخن بنفاذ الضوء في المداخن الجافة، وبالتشتت الأمامي عند التراكيز المنخفضة، وبأجهزة مخصصة في المداخن الرطبة بعد إزالة الكبريت من غازات الاحتراق. وتحوّل مقاييس التدفق بأنبوب بيتو أو بالموجات فوق الصوتية التراكيز إلى معدلات انبعاث كتلية.",
+      "يسجّل برنامج جمع البيانات ومعالجتها القراءات، ويطبّق التصحيحات والمتوسطات، ويُصدر تقارير الامتثال. وتحمل المحللات في هذه الفئة اعتمادات نوعية دولية، ونقدّم شهاداتها مع المستندات الفنية."
+    ],
+    "includes": [
+      "مسح المدخنة: فتحات أخذ العينات والوصول وظروف الغاز والمؤشرات التي يشترطها تصريحك",
+      "تصميم النظام واختيار المحللات الاستخلاصية أو الموضعية وأجهزة الغبار والتدفق",
+      "التوريد والتركيب والتشغيل، مع اختبارات القبول في المصنع والموقع",
+      "برنامج جمع البيانات ونقلها وتقارير الامتثال",
+      "إجراءات المعايرة وضمان الجودة وفحوص الانحراف",
+      "الصيانة الوقائية وقطع الغيار والدعم الفني على مدار الساعة",
+      "دعم اختبارات الدقة النسبية واختبارات المداخن الدورية"
+    ],
+    "types": [
+      {
+        "title": "محللات CEMS الاستخلاصية",
+        "description": "محللات لـ NOx وSO2 وCO وCO2 وO2 (بالمغناطيسية المسايرة)، وأنظمة متكاملة في خزانة قياس 19 بوصة.",
+        "sectors": "الأسمنت، الطاقة، البتروكيماويات"
+      },
+      {
+        "title": "محللات الغاز الموضعية",
+        "description": "محللات تقيس عبر المدخنة لـ NOx وSO2 وNH3 وO2، منها نسخة مقاومة للانفجار للمناطق الخطرة.",
+        "sectors": "الأسمنت، الحديد، الطاقة، النفط والغاز، البتروكيماويات"
+      },
+      {
+        "title": "محللات الليزر (TDLS)",
+        "description": "محللات ليزر ثنائي الصمام القابل للضبط لأول أكسيد الكربون، والأمونيا المتسربة بعد الاختزال الحفزي، وكلوريد الهيدروجين.",
+        "sectors": "الحديد، الطاقة، البتروكيماويات، الحرق، الأسمنت"
+      },
+      {
+        "title": "محلل الأكسجين بالزركونيا",
+        "description": "قياس موضعي للأكسجين للتحكم في الاحتراق والتصحيح إلى الأكسجين المرجعي.",
+        "sectors": "جميع مصادر الاحتراق"
+      },
+      {
+        "title": "أجهزة رصد غبار المداخن",
+        "description": "أجهزة بنفاذ الضوء والتشتت الأمامي للمداخن الجافة، وأجهزة للمداخن الرطبة بعد إزالة الكبريت.",
+        "sectors": "الأسمنت، الحديد، الطاقة، الصناعة"
+      },
+      {
+        "title": "التدفق والحرارة والضغط",
+        "description": "مقاييس تدفق بأنبوب بيتو وبالموجات فوق الصوتية لحساب التدفق الحجمي ومعدلات الانبعاث الكتلية.",
+        "sectors": "الأسمنت، الطاقة، البتروكيماويات"
+      }
+    ],
+    "useCases": [
+      "محطات الكهرباء والتحلية ذات الغلايات والتوربينات الغازية",
+      "أفران الأسمنت ومبردات الكلنكر والمطاحن",
+      "المصافي ومصانع البتروكيماويات ومعالجة الغاز",
+      "مصانع الحديد والمعادن والمسابك",
+      "حرق النفايات والمعالجة الحرارية",
+      "المنشآت التي تحدّث نظام CEMS قائمًا أو تستبدله"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء مقاييس انبعاثات المصادر الثابتة، وتلزم بإجراء اختبارات وتحاليل سنوية للمصادر الثابتة غير الخاضعة للرصد المستمر.",
+      "وتضع اللائحة ضوابط لتدقيق نظم الرصد المستمر، فيحتاج النظام إلى معايرة وضمان جودة ومعالجة بيانات موثقة.",
+      "تحدد تصاريح التشغيل البيئية المداخن التي يلزم رصدها باستمرار، والمؤشرات، والتقارير التي تُرفع إلى المركز الوطني للرقابة على الالتزام البيئي.",
+      "وتلتزم المنشآت في الجبيل وينبع بمتطلبات الرصد المستمر لدى الهيئة الملكية للجبيل وينبع."
+    ],
+    "faqs": [
+      {
+        "q": "ما الفرق بين نظام CEMS الاستخلاصي والموضعي؟",
+        "a": "النظام الاستخلاصي يسحب عينة من المدخنة ويحللها في خزانة مهيأة، وهو مناسب لقياس عدة غازات وسهولة الصيانة. أما المحلل الموضعي فيقيس داخل المدخنة أو عبرها دون نقل العينة، فيعطي استجابة أسرع بمكونات أقل."
+      },
+      {
+        "q": "ما المداخن التي تحتاج رصدًا مستمرًا؟",
+        "a": "يحدد التصريح البيئي للمنشأة المصادر التي تحتاج رصدًا مستمرًا وتلك التي تكفيها الاختبارات الدورية. نراجع تصريحك وقائمة المداخن ونقترح النظام الذي يحقق المتطلبات."
+      },
+      {
+        "q": "كيف تبقى قراءات النظام دقيقة؟",
+        "a": "بمعايرة وفحوص انحراف مجدولة، وصيانة وقائية، ومقارنة دورية مع اختبارات المداخن المرجعية مثل اختبارات الدقة النسبية، وتوثيق ذلك في نظام البيانات."
+      },
+      {
+        "q": "هل تتولون صيانة نظام CEMS قائم؟",
+        "a": "نعم. نقيّم النظام المركّب وبياناته ومستنداته، ثم نقترح خطة للصيانة والتحديث."
+      }
+    ]
+  }
+}

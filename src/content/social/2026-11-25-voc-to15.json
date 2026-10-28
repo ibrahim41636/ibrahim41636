@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-25",
+  "slot": 2,
+  "pillar": "تأجير أجهزة الرصد",
+  "stage": "consideration",
+  "sources": [
+    "https://www.epa.gov/amtic/compendium-methods-determination-toxic-organic-compounds-ambient-air",
+    "https://selorin.co/equipment/voc-sampling-analysis/"
+  ],
+  "ar": {
+    "title": "شكوى رائحة في الليل: كيف تُؤخذ العينة في لحظتها؟",
+    "text": "شكاوى الروائح حول المناطق الصناعية تأتي غالبًا في الليل أو في الصباح الباكر، حين يكون الهواء ساكنًا. وعندما يصل الفريق، تكون الرائحة قد تبددت.\n\nالحل في طريقة قياس معروفة: جمع عينة هواء كاملة في عبوة مفرّغة ومعالجة داخليًا، ثم تحليلها في المختبر بالكروماتوغرافيا الغازية ومطياف الكتلة وفق طريقة TO-15 من وكالة حماية البيئة الأمريكية. النتيجة لا تقول «توجد رائحة» فقط، بل تحدد المركبات وتراكيزها، كالبنزين العطري والتولوين والزيلين.\n\nوالمهم هو التوقيت:\n• جهاز عينات يُشغَّل عن بُعد يبقى في الموقع، ويبدأ الجمع لحظة وصول الشكوى.\n• جهاز آلي يجمع عينات في أوقات محددة لرصد نمط متكرر.\n• جهاز رصد مباشر للمركبات الكلية يُظهر الارتفاع لحظة حدوثه ويوجّه أخذ العينات.\n\nبيانات اللحظة الصحيحة تحوّل الشكوى من خلاف إلى معلومة يمكن العمل عليها.\n\nالتفاصيل في الرابط.\n\n#المركبات_العضوية_المتطايرة #جودة_الهواء #الروائح #السعودية",
+    "x": "شكوى رائحة في الليل؟ جهاز عينات يُشغَّل عن بُعد يجمع الهواء في عبوة لحظة الشكوى، ثم يحدد تحليل TO-15 المركبات وتراكيزها. #جودة_الهواء",
+    "link": "/ar/equipment/voc-sampling-analysis/",
+    "image": {
+      "template": "faq",
+      "q": "ما طريقة TO-15؟",
+      "a": "طريقة من وكالة حماية البيئة الأمريكية لقياس المركبات العضوية المتطايرة في هواء يُجمع في عبوات معدّة خصيصًا ويُحلَّل بالكروماتوغرافيا الغازية ومطياف الكتلة."
+    }
+  },
+  "en": {
+    "title": "An odour complaint at night: sampling at the right moment",
+    "text": "Odour complaints around industrial areas often come at night or early in the morning, when the air is still. By the time a team arrives, the smell has gone.\n\nThe answer is an established method: collect a whole-air sample in an evacuated, passivated canister, then analyse it in the laboratory by gas chromatography and mass spectrometry under US EPA method TO-15. The result does not just say there was a smell; it identifies the compounds and their concentrations, such as benzene, toluene and xylenes.\n\nTiming is what matters:\n• A remote-trigger sampler stays on site and starts collecting the moment a complaint comes in.\n• An automatic sampler collects at set times to catch a recurring pattern.\n• An online total VOC monitor shows a rise as it happens and guides sampling.\n\nData from the right moment turns a complaint from an argument into information you can act on.\n\nDetails at the link.\n\n#VOC #AirQuality #Odour #SaudiArabia",
+    "x": "An odour complaint at night? A remote-trigger sampler fills a canister the moment it comes in, and TO-15 analysis identifies the compounds and their levels.",
+    "link": "/equipment/voc-sampling-analysis/",
+    "image": {
+      "template": "faq",
+      "q": "What is TO-15?",
+      "a": "A US EPA method for measuring volatile organic compounds in air collected in specially prepared canisters and analysed by gas chromatography and mass spectrometry."
+    }
+  }
+}

@@ -22,7 +22,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
   analytics={{ page_type: "services_hub" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("services")} eyebrow={t(lang, "nav.services")}
     title={ar ? "خدمات بيئية مترابطة، من الدراسة إلى الامتثال المستمر" : "Connected environmental services, from first study to ongoing compliance"}
-    lead={ar ? "22 خدمة ضمن ستة مجالات، يربط بينها فريق واحد يفهم متطلباتك التنظيمية ويحوّلها إلى مخرجات واضحة." : "22 services across six practice areas, connected by one team that understands your regulatory requirements and turns them into clear deliverables."} />
+    lead={ar ? `${services.length} خدمة ضمن ${categories.length} مجالات، يربط بينها فريق واحد يفهم متطلباتك التنظيمية ويحوّلها إلى مخرجات واضحة.` : `${services.length} services across ${categories.length} practice areas, connected by one team that understands your regulatory requirements and turns them into clear deliverables.`} />
   <nav class="section-tight bg-white border-top" aria-label={ar ? "المجالات" : "Practice areas"} style="padding-block:20px">
     <div class="container" style="display:flex;flex-wrap:wrap;gap:8px">
       {categories.map((c) => <a class="pill" href={`#${c.id}`} style="text-decoration:none;padding:8px 14px">{c.name[lang]}</a>)}

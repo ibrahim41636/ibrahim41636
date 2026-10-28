@@ -52,6 +52,28 @@ articles (checklist in `operating-system-ar.md` §7).
 | قياس الضوضاء | noise monitoring | `/ar/services/noise-monitoring/` |
 | تحليل المياه / مياه الصرف | water quality testing | `/ar/services/water-quality-monitoring/` |
 
+## Equipment (rental and supply, `/equipment/`)
+
+Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI, October 2026).
+
+| Keyword (AR) | Keyword (EN) | Target page | Notes |
+|---|---|---|---|
+| تأجير جهاز رصد الغبار / محطة رصد الغبار / جهاز قياس الغبار | dust monitor rental, dust monitoring station | `/ar/equipment/dust-monitoring-station/` | low volume, high intent; the service page `/services/dust-monitoring/` keeps «رصد الغبار» |
+| محطة رصد جودة الهواء / جهاز قياس جودة الهواء (140/month, rising to 320 in Sep 2026) | air quality monitoring station (50/month) | `/ar/equipment/air-quality-monitoring-station/` | «جهاز قياس جودة الهواء» mixes home buyers; Ads use negatives |
+| نظام الرصد المستمر للانبعاثات | continuous emission monitoring system (70/month), CEMS analyzer (30) | `/ar/equipment/cems/` | |
+| رصد المركبات العضوية المتطايرة / أخذ عينات VOC | VOC monitoring, TO-15 | `/ar/equipment/voc-sampling-analysis/` | the service page keeps fuel-station VOC monitoring |
+| وحدة استرجاع الأبخرة / استرجاع أبخرة الوقود | vapour recovery unit (20/month) | `/ar/equipment/vapour-recovery-unit/` | |
+| معدات أخذ عينات التربة وغازاتها | soil gas sampling equipment | `/ar/equipment/soil-sampling-equipment/` | |
+| معدات أخذ عينات المياه والرواسب | water and sediment sampling equipment | `/ar/equipment/water-sediment-sampling-equipment/` | |
+| أنظمة جمع الغبار / الفلاتر الكيسية | dust collector, bag filter | `/ar/equipment/dust-collection-systems/` | |
+| أبراج الغسيل الرطب / التهوية الصناعية | wet scrubber, industrial ventilation | `/ar/equipment/scrubbers-ventilation/` | |
+
+## Regulations (NCEC)
+
+| Keyword (AR) | Keyword (EN) | Target page | Notes |
+|---|---|---|---|
+| المركز الوطني للرقابة على الالتزام البيئي (12,100/month) / لوائح المركز / اللوائح التنفيذية لنظام البيئة | NCEC regulations (30/month) | `/ar/insights/ncec-environmental-regulations-guide/` | largest query in the market; much of it is navigational or job-seeking, so the guide answers «ماذا تتطلب كل لائحة»; Ads exclude وظائف/توظيف |
+
 ## Waste & sustainability
 
 | Keyword (AR) | Keyword (EN) | Target page |
@@ -85,6 +107,8 @@ articles (checklist in `operating-system-ar.md` §7).
 10. خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب (target `/ar/services/environmental-management-plans/`)
 11. قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير (target `/ar/services/noise-monitoring/`)
 
+12. Regulation deep-dives, one per executive regulation, each linking back to the NCEC guide (`ncec-environmental-regulations-guide`): air quality (stationary sources and monitoring licences), noise, aquatic media, soil, ozone-depleting substances, environmental service providers.
+
 The order follows the latest monthly brief (`docs/marketing/monthly-brief.md`); when a new brief changes the
 month's focus, re-order this list to match it.
 
@@ -114,3 +138,9 @@ month's focus, re-order this list to match it.
   monitoring request form. Regulatory context kept general (permit conditions, Environmental Law implementing
   regulations, NCEC oversight); no invented frequencies or limits, no accreditation claims.
   Audit: AR title 48 chars, EN title shortened to 64; descriptions include the primary keyword.
+- 2026-10-28: equipment section (`/equipment/`, 9 device pages plus a hub, Arabic and English) and the NCEC
+  regulations pillar guide (`insights/{ar,en}/ncec-environmental-regulations-guide`) published. Keywords checked
+  in Keyword Planner via Ryze AI: the NCEC name query (12,100/month) is the largest in the market, and
+  «جهاز قياس جودة الهواء» is growing. Each equipment page targets the device query; the service pages keep the
+  service queries, so the two do not compete. Every equipment page carries Service/Offer structured data
+  (lease or sale, no price) and FAQ data, and is listed in `llms.txt` in both languages.

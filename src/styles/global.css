@@ -689,3 +689,13 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 
 /* Small phones: keep the header to one social icon; all of them stay in the footer */
 @media (max-width: 520px) { .header-social--instagram, .header-social--tiktok { display: none; } }
+
+/* Mid-width desktops: keep the full navigation on one line. Other social links stay in the footer. */
+@media (min-width: 1181px) and (max-width: 1679px) {
+  .header-social:not(.header-social--linkedin) { display: none; }
+  .nav-link { padding-inline: 9px; }
+}
+@media (min-width: 1181px) and (max-width: 1320px) {
+  .brand-text small { display: none; }
+  .header-tools { gap: var(--space-2); }
+}

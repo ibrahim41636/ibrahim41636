@@ -105,3 +105,32 @@ export function collectionSchema(lang: Lang, path: string, name: string, items: 
     mainEntity: { "@type": "ItemList", itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, url: abs(lang, it.path) })) },
   };
 }
+
+/** Equipment offered for rental or supply: a Service whose offer is the device itself (no brand, no price). */
+export function equipmentSchema(lang: Lang, e: { slug: string; name: string; description: string; image: string; leaseOut: boolean; specs: { label: string; value: string }[] }) {
+  const url = abs(lang, `/equipment/${e.slug}/`);
+  return {
+    "@type": "Service",
+    "@id": `${url}#service`,
+    name: e.name,
+    serviceType: e.leaseOut ? (lang === "ar" ? "تأجير أجهزة الرصد البيئي" : "Environmental monitoring equipment rental") : (lang === "ar" ? "توريد أنظمة بيئية وتركيبها" : "Environmental equipment supply and installation"),
+    description: e.description,
+    provider: { "@id": ORG_ID },
+    areaServed: AREA_SERVED,
+    url,
+    inLanguage: lang,
+    offers: {
+      "@type": "Offer",
+      businessFunction: e.leaseOut ? "http://purl.org/goodrelations/v1#LeaseOut" : "http://purl.org/goodrelations/v1#Sell",
+      availability: "https://schema.org/InStock",
+      areaServed: { "@type": "Country", name: "Saudi Arabia" },
+      itemOffered: {
+        "@type": "Product",
+        name: e.name,
+        description: e.description,
+        image: new URL(e.image, site.url).toString(),
+        additionalProperty: e.specs.map((s) => ({ "@type": "PropertyValue", name: s.label, value: s.value })),
+      },
+    },
+  };
+}

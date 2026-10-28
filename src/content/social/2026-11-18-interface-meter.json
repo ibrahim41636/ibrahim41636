@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-18",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=25435",
+    "https://selorin.co/equipment/water-sediment-sampling-equipment/"
+  ],
+  "ar": {
+    "title": "ماذا يكشف بئر الرصد قرب خزان الوقود؟",
+    "text": "الوقود أخف من الماء ولا يذوب فيه بسهولة. فإذا تسرب من خزان أرضي ووصل إلى المياه الجوفية، طفا فوقها طبقةً.\n\nلهذا يُقاس في بئر الرصد قرب خزانات الوقود شيئان لا شيء واحد:\n• عمق سطح الوقود الطافي.\n• عمق سطح الماء تحته.\n\nالفرق بينهما هو سمك المنتج الطافي، ويقيسه مقياس الفاصل: مجس ينزل في البئر ويميّز بين الهواء والوقود والماء. بعد ذلك تُجمع عينة المياه بجهاز سحب جديد لكل بئر حتى لا ينتقل التلوث من بئر إلى أخرى.\n\nوتتناول اللائحة التنفيذية لحماية الأوساط المائية من التلوث حماية المياه الجوفية، ويتضمن جدول مخالفاتها مراعاة كمية الملوثات ومدتها والأضرار، مع إلزام المخالف بمعالجتها.\n\nالقياس المبكر يحوّل التسرب من مشكلة كبيرة إلى إصلاح محدود.\n\nالتفاصيل في الرابط.\n\n#المياه_الجوفية #محطات_الوقود #الرصد_البيئي #السعودية",
+    "x": "الوقود المتسرب يطفو فوق المياه الجوفية. مقياس الفاصل في بئر الرصد يقيس عمق الوقود وعمق الماء، والفرق هو سمك المنتج الطافي. #المياه_الجوفية",
+    "link": "/ar/equipment/water-sediment-sampling-equipment/",
+    "image": {
+      "template": "tip",
+      "title": "الوقود يطفو فوق المياه الجوفية",
+      "text": "في بئر الرصد قرب الخزانات قِس عمق الوقود وعمق الماء بمقياس الفاصل؛ الفرق هو سمك المنتج الطافي. واستخدم جهاز سحب جديدًا لكل بئر."
+    }
+  },
+  "en": {
+    "title": "What a monitoring well near a fuel tank reveals",
+    "text": "Fuel is lighter than water and does not mix with it easily. If it leaks from an underground tank and reaches groundwater, it floats on top as a layer.\n\nThat is why a monitoring well near fuel tanks measures two things, not one:\n• The depth to the top of the floating fuel.\n• The depth to the water below it.\n\nThe difference is the thickness of the floating product, measured with an interface meter: a probe lowered into the well that tells air, fuel and water apart. The water sample is then taken with a new bailer for each well, so contamination is not carried from one well to the next.\n\nSaudi Arabia's Executive Regulation for the Protection of Aquatic Media from Pollution covers groundwater, and its table of violations considers the quantity and duration of pollution and the damage caused, with an obligation to remedy it.\n\nEarly measurement turns a leak from a large problem into a limited repair.\n\nDetails at the link.\n\n#Groundwater #FuelStations #EnvironmentalMonitoring #SaudiArabia",
+    "x": "Leaked fuel floats on groundwater. An interface meter measures the depth to fuel and to water in a monitoring well; the difference is the floating product thickness.",
+    "link": "/equipment/water-sediment-sampling-equipment/",
+    "image": {
+      "template": "tip",
+      "title": "Fuel floats on groundwater",
+      "text": "In a well near fuel tanks, measure the depth to fuel and to water with an interface meter; the difference is the floating product. Use a new bailer for each well."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-22",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "awareness",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17837",
+    "https://ozone.unep.org/treaties/montreal-protocol"
+  ],
+  "ar": {
+    "title": "غازات التبريد: لائحة لا تنتبه لها كثير من المنشآت",
+    "text": "أجهزة التكييف والتبريد في منشأتك تحمل غازات تنظمها لائحة خاصة.\n\nبروتوكول مونتريال يضبط المواد المستنفدة لطبقة الأوزون منذ ثمانينيات القرن الماضي، وأضاف تعديل كيغالي خفضًا تدريجيًا لمركبات الكربون الهيدروفلورية (HFCs). هذه المركبات لا تستنفد الأوزون، لكنها غازات دفيئة قوية، وكثير منها يُستخدم اليوم في التبريد بديلًا عن المواد القديمة.\n\nوفي المملكة، تنظم اللائحة التنفيذية للمواد المستنفدة لطبقة الأوزون ومركبات الكربون الهيدروفلورية الأنشطة والأجهزة والمعدات المرتبطة بهذه المواد، ويتولى المركز الوطني للرقابة على الالتزام البيئي تنظيمها ومراقبتها، بما في ذلك التصاريح والتراخيص اللازمة قبل ممارسة هذه الأنشطة.\n\nما تحتاجه المنشأة عمليًا:\n• حصر أجهزة التبريد والتكييف ونوع الغاز وكميته في كل جهاز.\n• سجل صيانة يوضح كميات الغاز المضافة والمسترجعة.\n• التعامل مع جهات صيانة ملتزمة باشتراطات اللائحة.\n\nالتفاصيل في الرابط.\n\n#طبقة_الأوزون #الالتزام_البيئي #التبريد_والتكييف #السعودية",
+    "x": "أجهزة التبريد في منشأتك تحمل غازات تنظمها لائحة المواد المستنفدة لطبقة الأوزون ومركبات HFCs. ابدأ بحصر الأجهزة وسجل للغاز المضاف والمسترجع. #طبقة_الأوزون",
+    "link": "/ar/services/environmental-compliance/",
+    "image": {
+      "template": "tip",
+      "title": "غازات التبريد لها لائحة",
+      "text": "احصر أجهزة التبريد والتكييف ونوع الغاز وكميته، ووثّق الغاز المضاف والمسترجع في كل صيانة، وتعامل مع جهات صيانة ملتزمة."
+    }
+  },
+  "en": {
+    "title": "Refrigerant gases: a regulation many facilities overlook",
+    "text": "The air-conditioning and refrigeration equipment in your facility holds gases covered by their own regulation.\n\nThe Montreal Protocol has controlled ozone-depleting substances since the late 1980s, and its Kigali Amendment added a phase-down of hydrofluorocarbons (HFCs). HFCs do not deplete ozone, but they are potent greenhouse gases, and many are used today in cooling as replacements for the older substances.\n\nIn Saudi Arabia, the Executive Regulation for Ozone-Depleting Substances and Hydrofluorocarbons covers the activities, appliances and equipment that involve these substances. The National Center for Environmental Compliance (NCEC) regulates and monitors them, including the permits and licences needed before such activities.\n\nWhat a facility needs in practice:\n• An inventory of cooling equipment, with the gas type and charge in each unit.\n• A maintenance log showing the gas added and recovered.\n• Maintenance contractors who follow the regulation's requirements.\n\nDetails at the link.\n\n#OzoneLayer #EnvironmentalCompliance #HVAC #SaudiArabia",
+    "x": "Your cooling equipment holds gases covered by Saudi rules on ozone-depleting substances and HFCs. Start with an inventory and a log of gas added and recovered.",
+    "link": "/services/environmental-compliance/",
+    "image": {
+      "template": "tip",
+      "title": "Refrigerant gases have a regulation",
+      "text": "Inventory your cooling equipment with gas type and charge, log gas added and recovered at every service, and use contractors who follow the rules."
+    }
+  }
+}

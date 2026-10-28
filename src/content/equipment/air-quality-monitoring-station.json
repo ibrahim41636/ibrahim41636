@@ -1,0 +1,233 @@
+{
+  "group": "ambient-monitoring",
+  "order": 2,
+  "modes": [
+    "rental",
+    "supply",
+    "operation"
+  ],
+  "service": "air-quality-monitoring",
+  "services": [
+    "environmental-monitoring",
+    "environmental-impact-assessment",
+    "environmental-permitting"
+  ],
+  "industries": [
+    "industrial-manufacturing",
+    "oil-gas",
+    "energy",
+    "government-public-sector",
+    "infrastructure"
+  ],
+  "related": [
+    "dust-monitoring-station",
+    "cems",
+    "voc-sampling-analysis"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.uqn.gov.sa/details?p=17831"
+  ],
+  "en": {
+    "name": "Ambient Air Quality Monitoring Station (AQMS)",
+    "seoTitle": "Air Quality Monitoring Station (AQMS) in Saudi Arabia | Selorin",
+    "metaDescription": "Ambient air quality monitoring stations with reference gas analysers for SO2, NOx, NH3 and CO, calibration equipment, data platform, operation and reports.",
+    "cardDescription": "Reference gas analysers for SO2, NOx, NH3, CO and ozone, with calibrators, zero air and a data platform, for rent, supply or operation.",
+    "lead": "A monitoring station built around reference gas analysers, calibration equipment and a data platform, for facilities, baseline studies and monitoring networks that need defensible ambient air data.",
+    "offer": "Rent a station for a monitoring campaign, or have one supplied, installed and operated for you, with calibration, data validation and periodic reports included.",
+    "definition": "An ambient air quality monitoring station (AQMS) is a shelter fitted with analysers that continuously measure gaseous pollutants such as sulphur dioxide, nitrogen oxides, carbon monoxide and ozone, together with particulate matter and weather, to compare air quality with national standards. Selorin rents, supplies and operates these stations with the calibration equipment, data platform and reports that keep the data valid.",
+    "overview": [
+      "Each analyser uses an established measurement principle: UV fluorescence for sulphur dioxide, chemiluminescence for nitrogen oxides and ammonia, and gas filter correlation for carbon monoxide. These are the principles behind the reference and equivalent methods used by regulators, which is why such stations support permits, baseline studies and monitoring networks.",
+      "Data is only as good as its calibration. The station is supported by gas dilution calibrators, ozone transfer standards, zero air generators, converters and permeation ovens, so zero and span checks run on schedule and every result can be traced to a reference.",
+      "Readings are logged at the station and sent to an online platform, where they are validated and turned into hourly and daily averages, exceedance alerts and periodic reports."
+    ],
+    "includes": [
+      "Monitoring design: parameters, number of stations and siting against receptors and prevailing wind",
+      "Station shelter, gas analysers, particulate monitors and a meteorological mast",
+      "Calibration equipment and a calibration and quality assurance schedule",
+      "Data logging, telemetry and access to an online data platform",
+      "Operation and preventive maintenance, including consumables and spare parts",
+      "Daily data review, and monthly and quarterly reports compared with the national standards",
+      "Station rental for time-limited campaigns such as baseline surveys for environmental impact assessments"
+    ],
+    "types": [
+      {
+        "title": "Sulphur dioxide analyser",
+        "description": "Measures SO2 by UV fluorescence, for ambient networks and facility fence lines.",
+        "sectors": "Monitoring networks, industry"
+      },
+      {
+        "title": "Nitrogen oxides analyser",
+        "description": "Measures NO, NO2 and NOx by chemiluminescence.",
+        "sectors": "Monitoring networks, industry"
+      },
+      {
+        "title": "Ammonia and nitrogen oxides analyser",
+        "description": "Measures NH3 together with NOx by chemiluminescence, using a converter.",
+        "sectors": "Agriculture, industry"
+      },
+      {
+        "title": "Carbon monoxide analyser",
+        "description": "Measures CO by gas filter correlation.",
+        "sectors": "Monitoring networks, traffic"
+      },
+      {
+        "title": "Gas dilution calibrators",
+        "description": "Trace-level, multi-gas and portable calibrators that dilute certified gas to known concentrations for zero and span checks.",
+        "sectors": "Monitoring networks, industry"
+      },
+      {
+        "title": "Ozone transfer and primary standards",
+        "description": "Generate and measure known ozone concentrations to calibrate ozone analysers.",
+        "sectors": "Monitoring networks, laboratories"
+      },
+      {
+        "title": "Zero air generators",
+        "description": "Fixed, portable and field-case sources of pollutant-free air for zero checks and dilution.",
+        "sectors": "Monitoring networks, laboratories, field calibration teams"
+      },
+      {
+        "title": "Converters, oxidizers, ovens and manifolds",
+        "description": "Converters for TRS and H2S, NO2 and NH3; a hydrocarbon catalytic oxidizer; fixed and portable permeation ovens; and sampling manifolds for the station inlet.",
+        "sectors": "Monitoring networks, laboratories, monitoring stations"
+      }
+    ],
+    "useCases": [
+      "Industrial facilities whose environmental permit requires ambient air monitoring",
+      "Baseline air quality surveys for environmental impact assessments",
+      "Monitoring networks for industrial cities, municipalities and large developments",
+      "Traffic and urban air quality studies",
+      "Calibration and quality assurance support for stations already in operation",
+      "Ports, airports and logistics hubs with combustion and traffic emissions"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality sets the national ambient air standards and gives the National Center for Environmental Compliance (NCEC) the role of monitoring air quality, publishing indicators and acting when standards are approached.",
+      "Installing and operating ambient air monitoring networks requires a licence under the regulation, so stations used for regulatory reporting are operated through a service provider licensed by NCEC for that activity.",
+      "Environmental permits issued under the Executive Regulation for Environmental Permits can set ambient monitoring, parameters and reporting as conditions of operation.",
+      "Facilities in Jubail and Yanbu also follow the environmental regulations of the Royal Commission for Jubail and Yanbu."
+    ],
+    "faqs": [
+      {
+        "q": "What does an air quality monitoring station measure?",
+        "a": "Typically sulphur dioxide, nitrogen oxides, carbon monoxide, ozone and particulate matter (PM10 and PM2.5), with wind, temperature and humidity. Ammonia, hydrogen sulphide and VOCs can be added depending on the sources around the site."
+      },
+      {
+        "q": "What is the difference between this station and a dust monitoring station?",
+        "a": "A dust monitoring station uses sensors for continuous site monitoring and early warning of dust and noise. An air quality station uses reference-principle gas analysers with calibration equipment, and is used where data must stand up to permit and study requirements."
+      },
+      {
+        "q": "Can we rent a station for an environmental impact assessment baseline?",
+        "a": "Yes. For a baseline survey we rent the station for the campaign period, operate it, validate the data and deliver a baseline report that can be used in the assessment."
+      },
+      {
+        "q": "How is data quality maintained?",
+        "a": "Through scheduled zero and span checks with dilution calibrators, zero air and ozone standards, preventive maintenance, and daily data review that flags and documents invalid data before reports are issued."
+      },
+      {
+        "q": "Who operates the station?",
+        "a": "We can operate it for you for the whole contract, including calibration, maintenance and reporting, or train your team where you prefer to run it yourselves."
+      }
+    ]
+  },
+  "ar": {
+    "name": "محطة رصد جودة الهواء المحيط (AQMS)",
+    "seoTitle": "محطة رصد جودة الهواء AQMS في السعودية | سيلورين",
+    "metaDescription": "محطات رصد جودة الهواء المحيط بمحللات غازات مرجعية لثاني أكسيد الكبريت وأكاسيد النيتروجين والأمونيا وأول أكسيد الكربون، مع المعايرة ومنصة البيانات والتشغيل والتقارير.",
+    "cardDescription": "محللات غازات مرجعية لـ SO2 وNOx وNH3 وCO والأوزون، مع أجهزة المعايرة والهواء الصفري ومنصة بيانات، للتأجير أو التوريد أو التشغيل.",
+    "lead": "محطة رصد تقوم على محللات غازات مرجعية وأجهزة معايرة ومنصة بيانات، للمنشآت والدراسات المرجعية وشبكات الرصد التي تحتاج بيانات هواء محيط يُعتمد عليها.",
+    "offer": "استأجر محطة لحملة رصد محددة، أو نوردها ونركّبها ونشغّلها لك، شاملة المعايرة وتدقيق البيانات والتقارير الدورية.",
+    "definition": "محطة رصد جودة الهواء المحيط (AQMS) غرفة مجهزة بمحللات تقيس باستمرار الملوثات الغازية مثل ثاني أكسيد الكبريت وأكاسيد النيتروجين وأول أكسيد الكربون والأوزون، إلى جانب الجسيمات العالقة والطقس، لمقارنة جودة الهواء بالمقاييس الوطنية. وتؤجّر سيلورين هذه المحطات وتوردها وتشغّلها مع أجهزة المعايرة ومنصة البيانات والتقارير التي تحافظ على صحة البيانات.",
+    "overview": [
+      "يعتمد كل محلل على مبدأ قياس معروف: الفلورة بالأشعة فوق البنفسجية لثاني أكسيد الكبريت، والتألق الكيميائي لأكاسيد النيتروجين والأمونيا، والارتباط بمرشح الغاز لأول أكسيد الكربون. وهذه هي المبادئ التي تقوم عليها الطرق المرجعية والمكافئة لدى الجهات الرقابية، ولذلك تُستخدم هذه المحطات في التصاريح والدراسات المرجعية وشبكات الرصد.",
+      "جودة البيانات من جودة المعايرة. لذلك تُدعم المحطة بأجهزة معايرة بالتخفيف، ومعايير نقل للأوزون، ومولدات هواء صفري، ومحوّلات، وأفران نفاذية، لتُجرى فحوص الصفر والمدى في مواعيدها وتُتتبع كل نتيجة إلى مرجع.",
+      "تُسجَّل القراءات في المحطة وتُرسل إلى منصة إلكترونية، حيث تُدقَّق وتتحول إلى متوسطات ساعية ويومية وتنبيهات بالتجاوز وتقارير دورية."
+    ],
+    "includes": [
+      "تصميم الرصد: المؤشرات وعدد المحطات ومواقعها بالنسبة للمستقبلات واتجاه الرياح السائد",
+      "غرفة المحطة ومحللات الغازات وأجهزة رصد الجسيمات وصاري الأرصاد الجوية",
+      "أجهزة المعايرة وجدول للمعايرة وضمان الجودة",
+      "تسجيل البيانات ونقلها عن بُعد وإتاحة منصة البيانات الإلكترونية",
+      "التشغيل والصيانة الوقائية، بما فيها المستهلكات وقطع الغيار",
+      "مراجعة يومية للبيانات، وتقارير شهرية وربع سنوية مقارنة بالمقاييس الوطنية",
+      "تأجير المحطة لحملات محددة المدة مثل الدراسات المرجعية لتقييم الأثر البيئي"
+    ],
+    "types": [
+      {
+        "title": "محلل ثاني أكسيد الكبريت",
+        "description": "يقيس SO2 بالفلورة بالأشعة فوق البنفسجية، لشبكات الرصد وحدود المنشآت.",
+        "sectors": "شبكات الرصد، الصناعة"
+      },
+      {
+        "title": "محلل أكاسيد النيتروجين",
+        "description": "يقيس NO وNO2 وNOx بالتألق الكيميائي.",
+        "sectors": "شبكات الرصد، الصناعة"
+      },
+      {
+        "title": "محلل الأمونيا وأكاسيد النيتروجين",
+        "description": "يقيس NH3 مع NOx بالتألق الكيميائي باستخدام محوّل.",
+        "sectors": "الزراعة، الصناعة"
+      },
+      {
+        "title": "محلل أول أكسيد الكربون",
+        "description": "يقيس CO بتقنية الارتباط بمرشح الغاز.",
+        "sectors": "شبكات الرصد، المرور"
+      },
+      {
+        "title": "أجهزة المعايرة بالتخفيف",
+        "description": "أجهزة معايرة للتراكيز المنخفضة ومتعددة الغازات ومحمولة، تخفف الغاز المعتمد إلى تراكيز معلومة لفحوص الصفر والمدى.",
+        "sectors": "شبكات الرصد، الصناعة"
+      },
+      {
+        "title": "معايير نقل الأوزون والمعايير الأولية",
+        "description": "تولّد تراكيز أوزون معلومة وتقيسها لمعايرة محللات الأوزون.",
+        "sectors": "شبكات الرصد، المختبرات"
+      },
+      {
+        "title": "مولدات الهواء الصفري",
+        "description": "مصادر ثابتة ومحمولة وميدانية لهواء خالٍ من الملوثات لفحوص الصفر والتخفيف.",
+        "sectors": "شبكات الرصد، المختبرات، فرق المعايرة الميدانية"
+      },
+      {
+        "title": "المحوّلات والمؤكسدات والأفران والمجمّعات",
+        "description": "محوّلات لمركبات الكبريت المختزلة وكبريتيد الهيدروجين وثاني أكسيد النيتروجين والأمونيا، ومؤكسد حفزي للهيدروكربونات، وأفران نفاذية ثابتة ومحمولة، ومجمّعات سحب لمدخل المحطة.",
+        "sectors": "شبكات الرصد، المختبرات، محطات الرصد"
+      }
+    ],
+    "useCases": [
+      "المنشآت الصناعية التي يشترط تصريحها البيئي رصد الهواء المحيط",
+      "الدراسات المرجعية لجودة الهواء ضمن تقييم الأثر البيئي",
+      "شبكات الرصد في المدن الصناعية والأمانات والمشاريع الكبرى",
+      "دراسات جودة الهواء في المدن وعلى الطرق",
+      "دعم المعايرة وضمان الجودة لمحطات قائمة",
+      "الموانئ والمطارات ومراكز الخدمات اللوجستية ذات انبعاثات الاحتراق والمركبات"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء المقاييس الوطنية للهواء المحيط، وتسند إلى المركز الوطني للرقابة على الالتزام البيئي رصد جودة الهواء ونشر مؤشراتها واتخاذ الإجراءات عند الاقتراب من تجاوز المقاييس.",
+      "يتطلب تركيب شبكات رصد الهواء المحيط وتشغيلها ترخيصًا وفق اللائحة، ولذلك تُشغَّل المحطات المستخدمة في التقارير النظامية عبر مقدم خدمة مرخّص من المركز لهذا النشاط.",
+      "يمكن أن تتضمن التصاريح البيئية الصادرة وفق اللائحة التنفيذية للتصاريح البيئية اشتراطات للرصد المحيط ومؤشراته وتقاريره ضمن شروط التشغيل.",
+      "وتلتزم المنشآت في الجبيل وينبع أيضًا باللوائح البيئية للهيئة الملكية للجبيل وينبع."
+    ],
+    "faqs": [
+      {
+        "q": "ماذا تقيس محطة رصد جودة الهواء؟",
+        "a": "عادةً ثاني أكسيد الكبريت وأكاسيد النيتروجين وأول أكسيد الكربون والأوزون والجسيمات العالقة (PM10 وPM2.5)، مع الرياح والحرارة والرطوبة. ويمكن إضافة الأمونيا وكبريتيد الهيدروجين والمركبات العضوية المتطايرة بحسب المصادر المحيطة بالموقع."
+      },
+      {
+        "q": "ما الفرق بين هذه المحطة ومحطة رصد الغبار؟",
+        "a": "محطة رصد الغبار تعتمد على الحساسات للرصد المستمر في الموقع والإنذار المبكر للغبار والضوضاء. أما محطة جودة الهواء فتستخدم محللات غازات تعمل بمبادئ مرجعية مع أجهزة معايرة، وتُستخدم حيث يجب أن تصمد البيانات أمام اشتراطات التصاريح والدراسات."
+      },
+      {
+        "q": "هل يمكن استئجار محطة لدراسة مرجعية ضمن تقييم الأثر البيئي؟",
+        "a": "نعم. نؤجّر المحطة طوال مدة الحملة ونشغّلها وندقق بياناتها ونسلّم تقريرًا مرجعيًا يمكن استخدامه في الدراسة."
+      },
+      {
+        "q": "كيف تُحفظ جودة البيانات؟",
+        "a": "بفحوص الصفر والمدى في مواعيدها باستخدام أجهزة التخفيف والهواء الصفري ومعايير الأوزون، والصيانة الوقائية، والمراجعة اليومية للبيانات التي ترصد البيانات غير الصالحة وتوثّقها قبل إصدار التقارير."
+      },
+      {
+        "q": "من يشغّل المحطة؟",
+        "a": "يمكننا تشغيلها لك طوال مدة العقد بما يشمل المعايرة والصيانة والتقارير، أو تدريب فريقك إن فضّلت تشغيلها بنفسك."
+      }
+    ]
+  }
+}

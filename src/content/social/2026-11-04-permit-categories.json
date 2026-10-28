@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-04",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17831",
+    "https://www.mewa.gov.sa/ar/MediaCenter/News/Pages/News2212020.aspx"
+  ],
+  "ar": {
+    "title": "أي تصريح بيئي تحتاجه منشأتك؟",
+    "text": "قبل أن تسأل عن مدة التصريح البيئي، اسأل: في أي فئة يقع نشاطي؟\n\nتصنّف اللائحة التنفيذية للتصاريح البيئية لإنشاء وتشغيل الأنشطة الأنشطةَ بحسب أثرها البيئي إلى ثلاث فئات:\n• الفئة الأولى: أنشطة يُتوقع أن يكون أثرها ضئيلًا ولا يتعدى حدود الموقع.\n• الفئة الثانية: أنشطة يُتوقع أن يكون أثرها متوسطًا.\n• الفئة الثالثة: الأنشطة ذات الأثر الأعلى.\n\nويراعي المركز عند التصنيف نوع النشاط وحجمه، والطاقة المستخدمة، واستهلاك الموارد الطبيعية، واستخدامات الأراضي، والمستقبلات الحساسة حول الموقع.\n\nمن الفئة يتحدد الطريق: هل تحتاج دراسة تقييم أثر بيئي؟ وما المطلوب لتصريح الإنشاء ثم لتصريح التشغيل؟\n\nوالخطوة التي تُنسى كثيرًا: تحويل اشتراطات التصريح إلى قائمة التزامات لكل منها مسؤول وموعد.\n\nالتفاصيل في الرابط.\n\n#التصاريح_البيئية #الالتزام_البيئي #نظام_البيئة #السعودية",
+    "x": "قبل مدة التصريح البيئي، اسأل عن الفئة: لائحة التصاريح تصنّف الأنشطة إلى ثلاث فئات بحسب أثرها، ومنها يتحدد المطلوب للإنشاء والتشغيل. #التصاريح_البيئية",
+    "link": "/ar/services/environmental-permitting/",
+    "image": {
+      "template": "faq",
+      "q": "أي تصريح بيئي تحتاجه منشأتك؟",
+      "a": "تصنّف اللائحة التنفيذية للتصاريح البيئية الأنشطة إلى ثلاث فئات بحسب أثرها، ومن الفئة يتحدد ما تحتاجه من دراسة أثر وتصريح إنشاء وتصريح تشغيل."
+    }
+  },
+  "en": {
+    "title": "Which environmental permit does your facility need?",
+    "text": "Before asking how long an environmental permit takes, ask: which category is my activity in?\n\nThe Executive Regulation for Environmental Permits to Construct and Operate Activities classifies activities by environmental impact into three categories:\n• Category 1: activities expected to have minor impacts that stay within the site.\n• Category 2: activities expected to have moderate impacts.\n• Category 3: activities with the highest impacts.\n\nWhen classifying, NCEC considers the type and size of the activity, the energy used, the use of natural resources, land use, and sensitive receptors around the site.\n\nThe category sets the path: is an environmental impact assessment needed, and what is required for the permit to construct and then the permit to operate?\n\nThe step most often missed: turning the permit conditions into a list of obligations, each with an owner and a date.\n\nDetails at the link.\n\n#EnvironmentalPermits #EnvironmentalCompliance #SaudiArabia",
+    "x": "Before asking how long a permit takes, ask about the category: Saudi permit rules classify activities into three categories by impact, and that sets what you need to construct and operate.",
+    "link": "/services/environmental-permitting/",
+    "image": {
+      "template": "faq",
+      "q": "Which environmental permit does your facility need?",
+      "a": "The permits regulation classifies activities into three categories by impact, and the category sets the impact study, the permit to construct and the permit to operate you need."
+    }
+  }
+}

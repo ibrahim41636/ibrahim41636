@@ -1,0 +1,187 @@
+{
+  "group": "emission-control",
+  "order": 3,
+  "modes": [
+    "supply",
+    "operation"
+  ],
+  "service": "environmental-compliance",
+  "services": [
+    "air-quality-monitoring",
+    "environmental-permitting",
+    "environmental-management-plans"
+  ],
+  "industries": [
+    "industrial-manufacturing",
+    "oil-gas",
+    "food-beverage",
+    "energy",
+    "logistics-warehousing"
+  ],
+  "related": [
+    "dust-collection-systems",
+    "cems",
+    "vapour-recovery-unit"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812"
+  ],
+  "en": {
+    "name": "Wet Scrubbers and Industrial Ventilation",
+    "seoTitle": "Wet Scrubbers and Industrial Ventilation in Saudi Arabia | Selorin",
+    "metaDescription": "Wet scrubbers for gases, fumes and acid mists, heavy-duty blowers, industrial ventilation, cooling towers and air curtains, supplied, installed and maintained.",
+    "cardDescription": "Wet scrubbers, heavy-duty blowers, ventilation systems, cooling towers and air curtains, supplied, installed and maintained.",
+    "lead": "Gas cleaning and air-moving systems for process plants: scrubbers that remove gases and fumes, and the blowers, fans, cooling towers and air curtains that keep air where it should be.",
+    "offer": "We size, supply, install and maintain the system, and measure emissions after commissioning so you know it performs.",
+    "definition": "A wet scrubber is a tower in which contaminated gas passes through a spray or packed bed of scrubbing liquid that dissolves or neutralises gases, fumes and water-soluble particles. Selorin supplies and maintains wet scrubbers together with the heavy-duty blowers, ventilation systems, cooling towers and air curtains that move and control air in industrial plants.",
+    "overview": [
+      "In a wet scrubber the scrubbing liquid, often water with a neutralising chemical, is chosen for the pollutant: acid gases, ammonia, fumes or odorous compounds. Packed towers give a large contact surface; spray towers handle gases with more particles.",
+      "Heavy-duty centrifugal blowers are engineered for the flow, pressure and temperature of each application and move air through ducts, filters and scrubbers. Ventilation ranges from single axial, jet, rooftop, smoke, movable and wall fans to engineered air-handling units.",
+      "Cooling towers are built to the required capacity, with counter-flow designs and large axial fans, and industrial air curtains seal doors against dust and heat, from loading bays to cold rooms."
+    ],
+    "includes": [
+      "Process review: gas composition, flow, temperature and the limit to meet",
+      "System sizing and selection, including scrubbing liquid and materials",
+      "Supply, installation, ducting and commissioning",
+      "Blower, fan and ventilation upgrades for existing systems",
+      "Preventive maintenance and spare parts",
+      "Stack emission testing after commissioning"
+    ],
+    "types": [
+      {
+        "title": "Wet scrubber",
+        "description": "Spray or packed tower for gases, fumes, acid mists and water-soluble particles.",
+        "sectors": "Petrochemicals, fertilisers, pharmaceuticals, metal finishing, food processing, waste treatment"
+      },
+      {
+        "title": "Heavy-duty centrifugal blowers",
+        "description": "Fans engineered for the flow, pressure and temperature of each application.",
+        "sectors": "Cement, steel and metals, chemicals, power and utilities"
+      },
+      {
+        "title": "Ventilation systems",
+        "description": "Axial, jet, rooftop, smoke, movable and wall fans, fan sections and air-handling units.",
+        "sectors": "Oil, gas and petrochemicals, food and grain, pharmaceuticals and chemicals, power and logistics"
+      },
+      {
+        "title": "Cooling towers",
+        "description": "Counter-flow towers built to capacity and pressure requirements, with large axial fans.",
+        "sectors": "Process cooling, HVAC plants, power and utilities"
+      },
+      {
+        "title": "Air curtains",
+        "description": "Industrial air curtains for vertical or horizontal mounting on doors of all sizes.",
+        "sectors": "Cold storage, food plants, warehouses and logistics"
+      }
+    ],
+    "useCases": [
+      "Fertiliser, chemical and pharmaceutical plants with acid gases or ammonia",
+      "Metal finishing and plating lines with acid mists",
+      "Wastewater and waste treatment with odorous gases",
+      "Process plants that need more air flow through existing filters",
+      "Warehouses and cold stores that lose conditioned air at doors",
+      "Process and HVAC plants that need cooling capacity"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality sets emission standards for stationary sources and requires facilities to maintain their equipment and act when they approach the standards.",
+      "Environmental permits set the emission limits and the controls for each source, and inspections check that control equipment is in place and working."
+    ],
+    "faqs": [
+      {
+        "q": "What does a wet scrubber remove?",
+        "a": "Gases and fumes that dissolve in or react with the scrubbing liquid, such as acid gases, ammonia and some odorous compounds, as well as water-soluble particles and mists."
+      },
+      {
+        "q": "What is the difference between a packed tower and a spray tower?",
+        "a": "A packed tower passes gas through a bed of packing wetted by the liquid, giving a large contact surface for gas removal. A spray tower contacts the gas with sprayed droplets and tolerates more particles."
+      },
+      {
+        "q": "Can you upgrade the fans on an existing system?",
+        "a": "Yes. We review the duct system and the required flow and pressure, then supply blowers or fans sized for the duty."
+      },
+      {
+        "q": "How do we confirm the scrubber meets the limit?",
+        "a": "By stack emission testing after commissioning, compared with the limits in your environmental permit."
+      }
+    ]
+  },
+  "ar": {
+    "name": "أبراج الغسيل الرطب والتهوية الصناعية",
+    "seoTitle": "أبراج الغسيل الرطب والتهوية الصناعية في السعودية | سيلورين",
+    "metaDescription": "أبراج غسيل رطب للغازات والأدخنة والرذاذ الحمضي، ونافخات ثقيلة، وتهوية صناعية، وأبراج تبريد، وستائر هوائية، توريدًا وتركيبًا وصيانة.",
+    "cardDescription": "أبراج غسيل رطب ونافخات ثقيلة وأنظمة تهوية وأبراج تبريد وستائر هوائية، توريدًا وتركيبًا وصيانة.",
+    "lead": "أنظمة لتنقية الغازات وتحريك الهواء في المنشآت الصناعية: أبراج غسيل تزيل الغازات والأدخنة، ونافخات ومراوح وأبراج تبريد وستائر هوائية تبقي الهواء حيث يجب.",
+    "offer": "نحدد سعة النظام ونورده ونركّبه ونصونه، ونقيس الانبعاثات بعد التشغيل لتعرف أنه يؤدي المطلوب.",
+    "definition": "برج الغسيل الرطب برج يمر فيه الغاز الملوث عبر رذاذ أو حشوة مبللة بسائل غسيل يذيب الغازات والأدخنة والجسيمات القابلة للذوبان أو يعادلها. وتورد سيلورين أبراج الغسيل الرطب وتصونها، مع النافخات الثقيلة وأنظمة التهوية وأبراج التبريد والستائر الهوائية التي تحرك الهواء وتتحكم فيه في المنشآت الصناعية.",
+    "overview": [
+      "في برج الغسيل الرطب يُختار سائل الغسيل، وغالبًا ماء مع مادة معادلة، بحسب الملوث: الغازات الحمضية أو الأمونيا أو الأدخنة أو المركبات ذات الرائحة. وتوفر الأبراج ذات الحشوة سطح تلامس كبيرًا، بينما تتحمل أبراج الرذاذ غازات تحمل جسيمات أكثر.",
+      "وتُصمَّم النافخات الطاردة المركزية الثقيلة بحسب التدفق والضغط والحرارة في كل تطبيق، لتحريك الهواء عبر المجاري والفلاتر وأبراج الغسيل. وتتدرج التهوية من مراوح محورية ونفاثة وسقفية ولطرد الدخان ومتنقلة وجدارية إلى وحدات مناولة هواء مصممة هندسيًا.",
+      "وتُبنى أبراج التبريد بالسعة المطلوبة بتصاميم التدفق المعاكس ومراوح محورية كبيرة، وتغلق الستائر الهوائية الصناعية الأبواب أمام الغبار والحرارة، من أرصفة التحميل إلى غرف التبريد."
+    ],
+    "includes": [
+      "مراجعة العملية: تركيب الغاز وتدفقه وحرارته والحد المطلوب تحقيقه",
+      "تحديد سعة النظام واختياره، بما يشمل سائل الغسيل والمواد",
+      "التوريد والتركيب ومجاري الهواء والتشغيل",
+      "تحديث النافخات والمراوح والتهوية في الأنظمة القائمة",
+      "الصيانة الوقائية وقطع الغيار",
+      "اختبار انبعاثات المدخنة بعد التشغيل"
+    ],
+    "types": [
+      {
+        "title": "برج الغسيل الرطب",
+        "description": "برج رذاذ أو حشوة للغازات والأدخنة والرذاذ الحمضي والجسيمات القابلة للذوبان.",
+        "sectors": "البتروكيماويات، الأسمدة، الأدوية، معالجة المعادن، تصنيع الأغذية، معالجة النفايات"
+      },
+      {
+        "title": "النافخات الطاردة المركزية الثقيلة",
+        "description": "مراوح مصممة بحسب التدفق والضغط والحرارة في كل تطبيق.",
+        "sectors": "الأسمنت، الحديد والمعادن، الكيماويات، الطاقة والمرافق"
+      },
+      {
+        "title": "أنظمة التهوية",
+        "description": "مراوح محورية ونفاثة وسقفية ولطرد الدخان ومتنقلة وجدارية، ووحدات مراوح ووحدات مناولة هواء.",
+        "sectors": "النفط والغاز والبتروكيماويات، الأغذية والحبوب، الأدوية والكيماويات، الطاقة والخدمات اللوجستية"
+      },
+      {
+        "title": "أبراج التبريد",
+        "description": "أبراج بتدفق معاكس تُبنى بحسب السعة والضغط المطلوبين، بمراوح محورية كبيرة.",
+        "sectors": "تبريد العمليات، محطات التكييف، الطاقة والمرافق"
+      },
+      {
+        "title": "الستائر الهوائية",
+        "description": "ستائر هوائية صناعية تُركَّب رأسيًا أو أفقيًا على الأبواب بكل المقاسات.",
+        "sectors": "التخزين المبرد، مصانع الأغذية، المستودعات والخدمات اللوجستية"
+      }
+    ],
+    "useCases": [
+      "مصانع الأسمدة والكيماويات والأدوية ذات الغازات الحمضية أو الأمونيا",
+      "خطوط معالجة المعادن والطلاء ذات الرذاذ الحمضي",
+      "معالجة مياه الصرف والنفايات ذات الغازات الكريهة",
+      "المنشآت التي تحتاج تدفق هواء أكبر عبر فلاترها القائمة",
+      "المستودعات ومخازن التبريد التي تفقد الهواء المكيف عند الأبواب",
+      "منشآت العمليات والتكييف التي تحتاج سعة تبريد"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء مقاييس انبعاثات المصادر الثابتة، وتلزم المنشآت بصيانة معداتها واتخاذ الإجراءات عند الاقتراب من المقاييس.",
+      "تحدد التصاريح البيئية حدود الانبعاث وإجراءات التحكم لكل مصدر، ويتحقق التفتيش من وجود معدات التحكم وعملها."
+    ],
+    "faqs": [
+      {
+        "q": "ماذا يزيل برج الغسيل الرطب؟",
+        "a": "الغازات والأدخنة التي تذوب في سائل الغسيل أو تتفاعل معه، مثل الغازات الحمضية والأمونيا وبعض المركبات ذات الرائحة، إضافة إلى الجسيمات والرذاذ القابل للذوبان."
+      },
+      {
+        "q": "ما الفرق بين برج الحشوة وبرج الرذاذ؟",
+        "a": "برج الحشوة يمرر الغاز عبر حشوة مبللة بالسائل فيوفر سطح تلامس كبيرًا لإزالة الغازات، أما برج الرذاذ فيلامس الغاز بقطرات مرشوشة ويتحمل جسيمات أكثر."
+      },
+      {
+        "q": "هل يمكن تحديث المراوح في نظام قائم؟",
+        "a": "نعم. نراجع شبكة المجاري والتدفق والضغط المطلوبين، ثم نورد نافخات أو مراوح بسعة مناسبة للتشغيل."
+      },
+      {
+        "q": "كيف نتأكد أن برج الغسيل يحقق الحد المطلوب؟",
+        "a": "باختبار انبعاثات المدخنة بعد التشغيل ومقارنتها بالحدود الواردة في تصريحك البيئي."
+      }
+    ]
+  }
+}

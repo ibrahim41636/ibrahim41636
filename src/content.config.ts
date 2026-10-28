@@ -4,6 +4,7 @@
 import { defineCollection, reference } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
+import { EQUIPMENT_GROUPS, EQUIPMENT_MODES } from "./data/equipment";
 
 export const SERVICE_CATEGORIES = [
   "permitting-compliance",
@@ -148,6 +149,42 @@ const legal = defineCollection({
   }),
 });
 
+// Monitoring and emission-control equipment offered for rental, supply or operation (/equipment/).
+// Specifications come from manufacturer datasheets; pages carry no brand names and no prices.
+const equipmentLocale = z.object({
+  name: z.string(),
+  seoTitle: z.string().max(70),
+  metaDescription: z.string().max(170),
+  cardDescription: z.string(),
+  lead: z.string(),
+  offer: z.string(), // the one-line offer shown under the hero
+  definition: z.string(), // answers the search question in two sentences (quoted by answer engines)
+  overview: z.array(z.string()).min(1),
+  includes: z.array(z.string()).min(3),
+  measures: z.array(z.object({ parameter: z.string(), principle: z.string(), range: z.string(), accuracy: z.string(), resolution: z.string() })).default([]),
+  specs: z.array(z.object({ label: z.string(), value: z.string() })).default([]),
+  types: z.array(z.object({ title: z.string(), description: z.string(), sectors: z.string() })).default([]),
+  useCases: z.array(z.string()).min(3),
+  regulatory: z.array(z.string()).min(1),
+  faqs: z.array(faq).min(3),
+});
+
+const equipment = defineCollection({
+  loader: glob({ pattern: "*.json", base: "./src/content/equipment" }),
+  schema: z.object({
+    group: z.enum(EQUIPMENT_GROUPS),
+    order: z.number(),
+    modes: z.array(z.enum(EQUIPMENT_MODES)).min(1),
+    service: reference("services"), // request form and primary related service
+    services: z.array(reference("services")).default([]),
+    industries: z.array(reference("industries")).default([]),
+    related: z.array(z.string()).default([]), // other equipment slugs
+    sources: z.array(z.string()).default([]),
+    en: equipmentLocale,
+    ar: equipmentLocale,
+  }),
+});
+
 // Campaign posts for the social publishing hub (src/lib/social.ts): one file per post, queued on its date
 // to every connected account. `image` is rendered by scripts/social-images/render.mjs with the named template.
 const socialImage = z.looseObject({ template: z.enum(["cover", "takeaway", "faq", "checklist", "stat", "myth", "event", "tip"]) });
@@ -174,4 +211,4 @@ const social = defineCollection({
   }),
 });
 
-export const collections = { services, industries, authors, insights, projects, legal, social };
+export const collections = { services, industries, authors, insights, projects, legal, social, equipment };

@@ -1,0 +1,107 @@
+---
+import { pageImage } from "@/data/imagery";
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import Faq from "@/components/Faq.astro";
+import Icon from "@/components/Icon.astro";
+import { href, t, type Lang } from "@/i18n/ui";
+import { EQUIPMENT_GROUPS, GROUPS, MODES } from "@/data/equipment";
+import { getEquipment } from "@/lib/content";
+import { collectionSchema, faqSchema } from "@/lib/schema";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const L = (en: string, a: string) => (ar ? a : en);
+const items = await getEquipment();
+const featured = items.find((e) => e.id === "dust-monitoring-station");
+const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.equipment"), path: "/equipment/" }];
+const steps = [
+  [L("Site and parameters", "الموقع والمؤشرات"), L("We agree the parameters, the number of stations and their locations from the site layout, prevailing wind and nearby receptors.", "نحدد المؤشرات وعدد المحطات ومواقعها بناءً على مخطط الموقع واتجاه الرياح السائد والمستقبلات القريبة.")],
+  [L("Installation and connection", "التركيب والربط"), L("The station is installed, tested and connected over 4G or Wi-Fi to a cloud dashboard your team can open from any device.", "تُركّب المحطة وتُختبر وتُربط عبر شبكة الجيل الرابع أو الواي فاي بلوحة بيانات سحابية يفتحها فريقك من أي جهاز.")],
+  [L("Live data and alerts", "بيانات مباشرة وتنبيهات"), L("Readings update in real time, and SMS or email alerts go out when a value approaches the threshold you set.", "تتحدث القراءات لحظيًا، وتصل تنبيهات بالرسائل النصية أو البريد عند اقتراب أي قيمة من الحد الذي تضبطه.")],
+  [L("Weekly and monthly reports", "تقارير أسبوعية وشهرية"), L("Each week and each month you receive a report with averages, charts, a wind rose, exceedances and their likely causes.", "تصلك كل أسبوع وكل شهر تقارير بالمتوسطات والرسوم البيانية ووردة الرياح والتجاوزات وأسبابها المحتملة.")],
+  [L("Maintenance and support", "الصيانة والدعم"), L("Preventive maintenance, sensor checks and technical support run for the whole rental period.", "صيانة وقائية وفحص للحساسات ودعم فني طوال مدة التأجير.")],
+];
+const faqs = [
+  { q: L("Can I rent an environmental monitoring station instead of buying one?", "هل يمكن استئجار محطة رصد بيئي بدل شرائها؟"), a: L("Yes. Selorin rents dust, noise and weather monitoring stations for construction sites, crushers, batching plants and industrial perimeters, with installation, connectivity, a live dashboard, technical support and weekly and monthly reports included in the rental.", "نعم. تؤجّر سيلورين محطات رصد الغبار والضوضاء والطقس لمواقع الإنشاء والكسارات ومحطات الخرسانة وحدود المنشآت الصناعية، ويشمل التأجير التركيب والربط ولوحة البيانات المباشرة والدعم الفني والتقارير الأسبوعية والشهرية.") },
+  { q: L("When is renting better than buying?", "متى يكون الاستئجار أفضل من الشراء؟"), a: L("Renting suits monitoring tied to a project phase, such as construction or a time-limited campaign, because maintenance, calibration checks and reporting stay with us. Buying suits permanent monitoring points at an operating facility.", "يناسب الاستئجار الرصد المرتبط بمرحلة من المشروع كالإنشاء أو حملة رصد محددة المدة، لأن الصيانة وفحوص المعايرة والتقارير تبقى علينا. ويناسب الشراء نقاط الرصد الدائمة في منشأة قيد التشغيل.") },
+  { q: L("Are the reports suitable for submission to the regulator?", "هل التقارير مناسبة للرفع إلى الجهة الرقابية؟"), a: L("Reports compare readings with the national ambient standards and the limits in your permit or management plan. Where monitoring data must be submitted to the National Center for Environmental Compliance, the station is installed, operated and reported through a service provider licensed by the Center for that activity, as the Executive Regulation for Air Quality requires.", "تقارن التقارير القراءات بالمقاييس الوطنية للهواء المحيط وبالحدود الواردة في تصريحك أو خطة الإدارة البيئية. وحين يلزم رفع بيانات الرصد إلى المركز الوطني للرقابة على الالتزام البيئي، تُركَّب المحطة وتُشغَّل وتُعدّ تقاريرها عبر مقدّم خدمة مرخّص من المركز لهذا النشاط، كما تشترط اللائحة التنفيذية لجودة الهواء.") },
+  { q: L("Which regions do you cover?", "ما المناطق التي تغطونها؟"), a: L("We serve projects across Saudi Arabia. Tell us the site location in the request form and we will confirm the installation and support arrangements.", "نخدم المشاريع في مختلف مناطق المملكة. اذكر موقع المشروع في نموذج الطلب ونؤكد لك ترتيبات التركيب والدعم.") },
+];
+---
+<Base lang={lang} path="/equipment/" breadcrumbs={crumbs}
+  title={L("Environmental Monitoring Equipment Rental in Saudi Arabia | Selorin", "تأجير أجهزة الرصد البيئي في السعودية | سيلورين")}
+  description={L("Rent or supply dust, noise, air quality, CEMS and VOC monitoring equipment in Saudi Arabia, with installation, live data, support and weekly and monthly reports.", "تأجير وتوريد أجهزة رصد الغبار والضوضاء وجودة الهواء والانبعاثات والمركبات العضوية المتطايرة في السعودية، مع التركيب والبيانات المباشرة والدعم والتقارير الأسبوعية والشهرية.")}
+  schema={[collectionSchema(lang, "/equipment/", t(lang, "nav.equipment"), items.map((e) => ({ name: e.data[lang].name, path: `/equipment/${e.id}/` }))), faqSchema(faqs)]}
+  analytics={{ page_type: "equipment_hub" }}>
+  <PageHero lang={lang} crumbs={crumbs} photo={pageImage("equipment")} eyebrow={t(lang, "nav.equipment")}
+    title={L("Environmental monitoring equipment, for rent or supply", "أجهزة الرصد البيئي، تأجيرًا أو توريدًا")}
+    lead={L("Monitoring stations, emissions analysers, samplers and emission control systems, installed, connected and supported by one team, with the data turned into weekly and monthly reports.", "محطات رصد، ومحللات انبعاثات، ومعدات أخذ عينات، وأنظمة تحكم في الانبعاثات، يركّبها ويربطها ويدعمها فريق واحد، ويحوّل بياناتها إلى تقارير أسبوعية وشهرية.")}>
+    <div class="actions mt-6">
+      <a class="btn btn--light" href={href(lang, "/equipment/dust-monitoring-station/")} data-cta="equipment_hub_featured">{L("Rent a dust monitoring station", "استأجر محطة رصد غبار")} <Icon name="arrow" class="arrow" /></a>
+      <a class="btn btn--ghost" href="#range">{L("Browse the range", "تصفح الأجهزة")}</a>
+    </div>
+  </PageHero>
+
+  {featured && (
+    <section class="section bg-white border-top" aria-labelledby="h-featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{MODES.rental[lang]}</p>
+            <h2 id="h-featured">{featured.data[lang].name}</h2>
+          </div>
+          <div style="max-width:56ch">
+            <p class="lead">{featured.data[lang].offer}</p>
+            <a class="link mt-4" href={href(lang, "/equipment/dust-monitoring-station/")}>{L("Specifications and rental details", "المواصفات وتفاصيل التأجير")} <Icon name="arrow" /></a>
+          </div>
+        </div>
+        <ol class="steps" style="list-style:none;padding:0;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+          {steps.map(([title, body]) => <li class="step"><h3>{title}</h3><p>{body}</p></li>)}
+        </ol>
+      </div>
+    </section>
+  )}
+
+  <nav class="section-tight border-top" id="range" aria-label={L("Equipment groups", "فئات الأجهزة")} style="padding-block:20px">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:8px">
+      {EQUIPMENT_GROUPS.map((g) => <a class="pill" href={`#${g}`} style="text-decoration:none;padding:8px 14px">{GROUPS[g].name[lang]}</a>)}
+    </div>
+  </nav>
+
+  {EQUIPMENT_GROUPS.map((g, i) => (
+    <section class:list={["section", { "bg-white": i % 2 === 1 }]} id={g} aria-labelledby={`h-${g}`}>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">{String(i + 1).padStart(2, "0")} — {t(lang, "nav.equipment")}</p>
+            <h2 id={`h-${g}`}>{GROUPS[g].name[lang]}</h2>
+          </div>
+          <p class="lead" style="max-width:52ch">{GROUPS[g].intro[lang]}</p>
+        </div>
+        <div class="grid grid-3">
+          {items.filter((e) => e.data.group === g).map((e) => (
+            <article class="card reveal">
+              <span class="icon"><Icon name={GROUPS[g].icon} /></span>
+              <h3><a class="card-link" href={href(lang, `/equipment/${e.id}/`)} data-cta="equipment_card" data-equipment={e.id} style="text-decoration:none">{e.data[lang].name}</a></h3>
+              <p>{e.data[lang].cardDescription}</p>
+              <p class="benefit"><Icon name="check" /><span>{e.data.modes.map((m) => MODES[m][lang]).join(ar ? "، " : " · ")}</span></p>
+              <span class="link" aria-hidden="true">{L("View equipment", "عرض الجهاز")} <Icon name="arrow" /></span>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="section bg-white border-top" aria-labelledby="h-faq">
+    <div class="container" style="max-width:860px">
+      <h2 id="h-faq">{t(lang, "service.faq")}</h2>
+      <Faq items={faqs} />
+    </div>
+  </section>
+
+  <CtaBand title={L("Not sure which equipment you need?", "لست متأكدًا من الجهاز المناسب؟")} body={L("Share your permit conditions or management plan and we will recommend the parameters, the equipment and the reporting.", "شاركنا اشتراطات تصريحك أو خطة الإدارة البيئية، ونقترح المؤشرات والأجهزة والتقارير المناسبة.")} label={t(lang, "cta.consultation")} to={href(lang, "/request/")} cta="equipment_hub_final"
+    secondary={{ label: t(lang, "cta.specialist"), to: "tel:+966550156887" }} />
+</Base>

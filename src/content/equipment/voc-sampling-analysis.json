@@ -1,0 +1,201 @@
+{
+  "group": "emissions-monitoring",
+  "order": 2,
+  "modes": [
+    "rental",
+    "supply",
+    "operation"
+  ],
+  "service": "air-quality-monitoring",
+  "services": [
+    "fuel-station-voc-monitoring",
+    "environmental-monitoring",
+    "environmental-impact-assessment"
+  ],
+  "industries": [
+    "oil-gas",
+    "industrial-manufacturing",
+    "energy",
+    "waste-recycling",
+    "government-public-sector"
+  ],
+  "related": [
+    "vapour-recovery-unit",
+    "air-quality-monitoring-station",
+    "cems"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.epa.gov/amtic/compendium-methods-determination-toxic-organic-compounds-ambient-air"
+  ],
+  "en": {
+    "name": "VOC Sampling and Online VOC Monitoring",
+    "seoTitle": "VOC Monitoring and Sampling Equipment in Saudi Arabia | Selorin",
+    "metaDescription": "VOC canister samplers for TO-15, portable FID analysers and online NMHC, TVOC and multi-VOC monitors, for rent or supply, with sampling plans and reports.",
+    "cardDescription": "Canister samplers for TO-15, portable FID analysers and online NMHC, TVOC and multi-VOC monitors for plants, tank farms and industrial parks.",
+    "lead": "From a single canister sample after an odour complaint to an online monitor at an industrial park fence line, the equipment to measure volatile organic compounds and the plan to use it well.",
+    "offer": "Rent samplers and analysers for a campaign, or have online VOC monitors supplied, installed and operated, with sampling plans, laboratory coordination and reports.",
+    "definition": "VOC monitoring measures volatile organic compounds in air, either by collecting whole-air samples in passivated canisters for laboratory analysis (US EPA methods TO-14A and TO-15) or by analysing air continuously with online NMHC, TVOC or multi-VOC monitors. Selorin rents and supplies both, from field samplers to online monitors, with sampling plans and reports.",
+    "overview": [
+      "Canister sampling captures a whole-air sample in an evacuated, passivated canister over a set period, from a few minutes to 24 hours. In the laboratory the sample is concentrated and analysed by gas chromatography and mass spectrometry, which identifies and quantifies individual compounds such as benzene, toluene and xylenes.",
+      "Automatic, fixed-site and remote-trigger samplers make it possible to sample at the moment an odour or a process event occurs, for example when a neighbour reports a smell, without staff on site.",
+      "Online monitors give continuous results: flame ionisation detection (FID) for total hydrocarbons, non-methane hydrocarbons and TVOC, and online gas chromatography for multi-compound and ozone-precursor (PAMS) monitoring. A portable FID analyser supports leak surveys and spot checks."
+    ],
+    "includes": [
+      "Sampling plan: compounds, locations, duration and number of samples",
+      "Rental of canisters and field samplers, with chain-of-custody documents",
+      "Coordination of laboratory analysis and review of results",
+      "Supply, installation and operation of online NMHC, TVOC or multi-VOC monitors",
+      "Portable FID surveys around tanks, loading areas and process units",
+      "Reports that compare results with applicable limits and identify likely sources"
+    ],
+    "types": [
+      {
+        "title": "Air sampling canisters",
+        "description": "Passivated canisters for whole-air sampling to US EPA TO-14A and TO-15.",
+        "sectors": "Oil and gas, petrochemical"
+      },
+      {
+        "title": "Automatic and fixed-site samplers",
+        "description": "An automatic air sampler, a fixed-site multi-canister system, a carry-on sampler and a remote-trigger sampler for odour events.",
+        "sectors": "Industry, consultants, industrial parks"
+      },
+      {
+        "title": "Laboratory preparation and analysis",
+        "description": "Canister autosamplers, preconcentrators (including a cryogen-free model), a canister cleaning system and a precision static dilutor.",
+        "sectors": "Laboratories"
+      },
+      {
+        "title": "Portable THC, NMHC and TVOC analyser",
+        "description": "A portable FID analyser for leak surveys and spot measurements.",
+        "sectors": "Oil and gas"
+      },
+      {
+        "title": "Online NMHC and TVOC monitor",
+        "description": "Continuous measurement of non-methane hydrocarbons and total VOCs at a fence line or inside an industrial park.",
+        "sectors": "Industrial parks"
+      },
+      {
+        "title": "Multi-VOC and PAMS online monitor",
+        "description": "Online gas chromatography with a preconcentrator, and GC-MS integration, for compound-by-compound monitoring.",
+        "sectors": "Government networks, industrial parks"
+      }
+    ],
+    "useCases": [
+      "Fence-line VOC monitoring at refineries, petrochemical plants and tank farms",
+      "Investigating odour complaints around industrial areas",
+      "Monitoring networks inside industrial cities and parks",
+      "Checking VOC levels around fuel stations and fuel depots",
+      "Baseline studies for environmental impact assessments",
+      "Leak surveys around tanks, loading racks and process units"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality sets ambient and emission standards and makes the National Center for Environmental Compliance (NCEC) responsible for monitoring and enforcement.",
+      "Environmental permits can set VOC monitoring, methods and reporting for facilities with storage, loading or process emissions.",
+      "Canister sampling and analysis follow the US EPA Compendium methods TO-14A and TO-15, which are widely used for toxic organic compounds in ambient air."
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between canister sampling and online VOC monitoring?",
+        "a": "Canister sampling collects air over a set period for laboratory analysis, which identifies individual compounds at low levels. Online monitoring measures continuously at the site and shows changes as they happen, but with less compound detail unless an online GC is used."
+      },
+      {
+        "q": "What is TO-15?",
+        "a": "TO-15 is a US EPA method for measuring volatile organic compounds in air collected in specially prepared canisters and analysed by gas chromatography and mass spectrometry."
+      },
+      {
+        "q": "Can we sample when an odour complaint comes in?",
+        "a": "Yes. Remote-trigger and automatic samplers can be left in place and started when a complaint or an event occurs, so the sample matches the moment of the odour."
+      },
+      {
+        "q": "Do you rent VOC samplers?",
+        "a": "Yes. Canisters, samplers and portable analysers can be rented for a campaign, with the sampling plan, laboratory coordination and report included."
+      }
+    ]
+  },
+  "ar": {
+    "name": "أخذ عينات المركبات العضوية المتطايرة ورصدها المباشر",
+    "seoTitle": "أجهزة رصد المركبات العضوية المتطايرة VOC في السعودية | سيلورين",
+    "metaDescription": "أجهزة أخذ عينات VOC بالعبوات وفق TO-15، ومحللات FID محمولة، وأجهزة رصد مباشر للهيدروكربونات غير الميثانية والمركبات الكلية، للتأجير أو التوريد مع الخطط والتقارير.",
+    "cardDescription": "أجهزة عينات بالعبوات وفق TO-15، ومحللات FID محمولة، وأجهزة رصد مباشر للمصانع ومستودعات الخزانات والمدن الصناعية.",
+    "lead": "من عينة واحدة بعد شكوى رائحة، إلى جهاز رصد مباشر على حدود مدينة صناعية: الأجهزة اللازمة لقياس المركبات العضوية المتطايرة، والخطة التي تحسن استخدامها.",
+    "offer": "استأجر أجهزة العينات والمحللات لحملة رصد، أو نورد لك أجهزة الرصد المباشر ونركّبها ونشغّلها، مع خطط أخذ العينات والتنسيق مع المختبر والتقارير.",
+    "definition": "رصد المركبات العضوية المتطايرة هو قياس هذه المركبات في الهواء، إما بجمع عينات هواء كاملة في عبوات معالجة داخليًا لتحليلها مخبريًا وفق طريقتي وكالة حماية البيئة الأمريكية TO-14A وTO-15، أو بتحليل الهواء باستمرار بأجهزة رصد مباشر للهيدروكربونات غير الميثانية (NMHC) والمركبات الكلية (TVOC) أو المركبات المتعددة. وتؤجّر سيلورين الطريقتين وتوردهما، من أجهزة العينات الميدانية إلى أجهزة الرصد المباشر، مع خطط أخذ العينات والتقارير.",
+    "overview": [
+      "تجمع طريقة العبوات عينة هواء كاملة في عبوة مفرّغة ومعالجة داخليًا خلال مدة محددة، من دقائق إلى 24 ساعة. وفي المختبر تُركَّز العينة وتُحلَّل بالكروماتوغرافيا الغازية ومطياف الكتلة، فتُحدد المركبات وتُقاس كلٌّ على حدة، مثل البنزين والتولوين والزيلين.",
+      "وتتيح أجهزة العينات الآلية والثابتة والمشغَّلة عن بُعد أخذ العينة لحظة حدوث الرائحة أو الحدث التشغيلي، كأن يبلّغ أحد السكان عن رائحة، دون وجود فريق في الموقع.",
+      "أما أجهزة الرصد المباشر فتعطي نتائج مستمرة: الكشف بالتأين باللهب (FID) للهيدروكربونات الكلية وغير الميثانية والمركبات الكلية، والكروماتوغرافيا الغازية المباشرة لرصد المركبات منفردة وسلائف الأوزون (PAMS). ويدعم محلل FID المحمول مسوحات التسرب والقياسات الموضعية."
+    ],
+    "includes": [
+      "خطة أخذ العينات: المركبات والمواقع والمدة وعدد العينات",
+      "تأجير العبوات وأجهزة العينات الميدانية مع مستندات سلسلة الحيازة",
+      "التنسيق مع المختبر للتحليل ومراجعة النتائج",
+      "توريد أجهزة الرصد المباشر للهيدروكربونات غير الميثانية والمركبات الكلية والمتعددة وتركيبها وتشغيلها",
+      "مسوحات FID محمولة حول الخزانات ومناطق التحميل ووحدات التشغيل",
+      "تقارير تقارن النتائج بالحدود المنطبقة وتحدد المصادر المحتملة"
+    ],
+    "types": [
+      {
+        "title": "عبوات عينات الهواء",
+        "description": "عبوات معالجة داخليًا لجمع عينات الهواء الكاملة وفق TO-14A وTO-15.",
+        "sectors": "النفط والغاز، البتروكيماويات"
+      },
+      {
+        "title": "أجهزة العينات الآلية والثابتة",
+        "description": "جهاز عينات آلي، ونظام ثابت متعدد العبوات، وجهاز عينات محمول، وجهاز يُشغَّل عن بُعد عند حدوث الرائحة.",
+        "sectors": "الصناعة، المكاتب الاستشارية، المدن الصناعية"
+      },
+      {
+        "title": "أجهزة التحضير والتحليل المخبري",
+        "description": "أجهزة تلقيم آلي للعبوات، وأجهزة تركيز مسبق (منها طراز لا يحتاج سوائل تبريد)، ونظام تنظيف العبوات، وجهاز تخفيف ساكن دقيق.",
+        "sectors": "المختبرات"
+      },
+      {
+        "title": "محلل محمول للهيدروكربونات الكلية وغير الميثانية والمركبات الكلية",
+        "description": "محلل FID محمول لمسوحات التسرب والقياسات الموضعية.",
+        "sectors": "النفط والغاز"
+      },
+      {
+        "title": "جهاز رصد مباشر للهيدروكربونات غير الميثانية والمركبات الكلية",
+        "description": "قياس مستمر على حدود المنشأة أو داخل المدينة الصناعية.",
+        "sectors": "المدن الصناعية"
+      },
+      {
+        "title": "جهاز رصد مباشر للمركبات المتعددة وسلائف الأوزون",
+        "description": "كروماتوغرافيا غازية مباشرة مع جهاز تركيز مسبق، وربط بمطياف الكتلة، لرصد كل مركب على حدة.",
+        "sectors": "الشبكات الحكومية، المدن الصناعية"
+      }
+    ],
+    "useCases": [
+      "رصد المركبات العضوية المتطايرة على حدود المصافي ومصانع البتروكيماويات ومستودعات الخزانات",
+      "التحقيق في شكاوى الروائح حول المناطق الصناعية",
+      "شبكات الرصد داخل المدن والمجمعات الصناعية",
+      "فحص مستويات المركبات حول محطات الوقود ومستودعاته",
+      "الدراسات المرجعية ضمن تقييم الأثر البيئي",
+      "مسوحات التسرب حول الخزانات ومنصات التحميل ووحدات التشغيل"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء مقاييس الهواء المحيط والانبعاثات، وتسند الرصد والرقابة إلى المركز الوطني للرقابة على الالتزام البيئي.",
+      "يمكن أن تشترط التصاريح البيئية رصد المركبات العضوية المتطايرة وطرقه وتقاريره للمنشآت ذات انبعاثات التخزين أو التحميل أو التشغيل.",
+      "يتبع أخذ العينات بالعبوات وتحليلها طريقتي TO-14A وTO-15 من مجموعة طرق وكالة حماية البيئة الأمريكية، وهما مستخدمتان على نطاق واسع لقياس المركبات العضوية السامة في الهواء المحيط."
+    ],
+    "faqs": [
+      {
+        "q": "ما الفرق بين أخذ العينات بالعبوات والرصد المباشر للمركبات العضوية المتطايرة؟",
+        "a": "العبوات تجمع الهواء خلال مدة محددة لتحليله في المختبر، فتحدد المركبات منفردة عند تراكيز منخفضة. أما الرصد المباشر فيقيس باستمرار في الموقع ويُظهر التغيرات لحظة حدوثها، لكن بتفصيل أقل للمركبات ما لم يُستخدم جهاز كروماتوغرافيا مباشر."
+      },
+      {
+        "q": "ما طريقة TO-15؟",
+        "a": "طريقة من وكالة حماية البيئة الأمريكية لقياس المركبات العضوية المتطايرة في هواء يُجمع في عبوات معدّة خصيصًا ويُحلل بالكروماتوغرافيا الغازية ومطياف الكتلة."
+      },
+      {
+        "q": "هل يمكن أخذ عينة عند وصول شكوى رائحة؟",
+        "a": "نعم. يمكن ترك أجهزة العينات الآلية أو المشغلة عن بُعد في الموقع وتشغيلها عند الشكوى أو الحدث، فتطابق العينة لحظة الرائحة."
+      },
+      {
+        "q": "هل تؤجّرون أجهزة عينات المركبات العضوية المتطايرة؟",
+        "a": "نعم. نؤجّر العبوات وأجهزة العينات والمحللات المحمولة لحملة الرصد، شاملة خطة أخذ العينات والتنسيق مع المختبر والتقرير."
+      }
+    ]
+  }
+}

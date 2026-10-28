@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-29",
+  "slot": 2,
+  "pillar": "تأجير أجهزة الرصد",
+  "stage": "conversion",
+  "sources": [
+    "https://selorin.co/equipment/dust-monitoring-station/",
+    "https://www.uqn.gov.sa/details?p=17812"
+  ],
+  "ar": {
+    "title": "كيف يرى جهاز رصد الغبار جسيمات لا يلتقطها؟",
+    "text": "كيف يقيس جهاز رصد الغبار جسيمات لا يجمعها أصلًا؟\n\nيمرر تيارًا من الهواء أمام شعاع ليزر. كل جسيم يشتت جزءًا من الضوء، وتتحول شدة الضوء المشتت ونمطه إلى تركيز كتلي بوحدة الميكروغرام في المتر المكعب (µg/m³) للجسيمات PM2.5 وPM10.\n\nتفصيلان يحددان قيمة الرقم:\n• الرطوبة: قطرات الماء تشتت الضوء أيضًا، لذلك يُسخَّن مدخل الهواء ويُجفَّف عند تجاوز الرطوبة حدًا معينًا قبل القياس.\n• الرياح: القراءة لا معنى لها دون سرعة الرياح واتجاهها وقت القياس، ولذلك تقيس المحطة الاثنين معًا.\n\nمحطات تشتت الليزر أدوات تعتمد على الحساسات للرصد المستمر والإنذار المبكر في الموقع، وتبقى الطرق المرجعية مثل أخذ العينات الوزني هي المعيار.\n\nتؤجّر سيلورين الآن محطات رصد الغبار والضوضاء والطقس التي تعمل بالطاقة الشمسية، شاملة التركيب ولوحة البيانات المباشرة والدعم الفني والتقارير الأسبوعية والشهرية.\n\nالمواصفات الكاملة في الرابط.\n\n#رصد_الغبار #جودة_الهواء #مشاريع_البناء #السعودية #سيلورين",
+    "x": "محطة رصد الغبار تقيس PM2.5 وPM10 بتشتت ضوء الليزر، مع الضوضاء والرياح. سيلورين تؤجّرها الآن شاملة التركيب والبيانات المباشرة والدعم والتقارير الأسبوعية والشهرية. #رصد_الغبار",
+    "link": "/ar/equipment/dust-monitoring-station/",
+    "image": {
+      "template": "checklist",
+      "title": "تأجير محطة رصد الغبار يشمل",
+      "kicker": "تأجير",
+      "items": [
+        "قياس PM2.5 وPM10 والضوضاء و5 مؤشرات للطقس",
+        "تشغيل بالطاقة الشمسية وربط 4G أو Wi-Fi",
+        "لوحة بيانات مباشرة وتنبيهات بالرسائل والبريد",
+        "تقارير أسبوعية وشهرية مع وردة الرياح",
+        "صيانة وقائية ودعم فني طوال المدة"
+      ]
+    }
+  },
+  "en": {
+    "title": "How a dust monitor sees particles it never catches",
+    "text": "How does a dust monitor measure particles it never collects?\n\nIt passes a stream of air through a laser beam. Each particle scatters some of the light, and the intensity and pattern of the scattered light are converted into a mass concentration in micrograms per cubic metre (µg/m³) for PM2.5 and PM10.\n\nTwo details decide whether the number is useful:\n• Humidity: water droplets scatter light too, so above a set humidity the inlet heats and dries the air before it is measured.\n• Wind: a reading means little without the wind speed and direction that carried the dust, which is why the station measures both.\n\nLaser-scattering stations are sensor-based tools for continuous site monitoring and early warning; reference methods such as gravimetric sampling remain the benchmark.\n\nSelorin now rents solar-powered dust, noise and weather monitoring stations, with installation, a live dashboard, technical support and weekly and monthly reports.\n\nFull specifications at the link.\n\n#DustMonitoring #AirQuality #Construction #SaudiArabia",
+    "x": "A dust monitoring station measures PM2.5 and PM10 by laser light scattering, with noise and wind. Selorin now rents them with installation, live data, support and weekly and monthly reports.",
+    "link": "/equipment/dust-monitoring-station/",
+    "image": {
+      "template": "checklist",
+      "title": "Dust monitoring station rental includes",
+      "kicker": "Rental",
+      "items": [
+        "PM2.5, PM10, noise and 5 weather parameters",
+        "Solar power with 4G or Wi-Fi connection",
+        "Live dashboard with SMS and email alerts",
+        "Weekly and monthly reports with a wind rose",
+        "Preventive maintenance and technical support"
+      ]
+    }
+  }
+}

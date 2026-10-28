@@ -1,0 +1,189 @@
+{
+  "group": "emission-control",
+  "order": 1,
+  "modes": [
+    "supply",
+    "operation"
+  ],
+  "service": "fuel-station-voc-monitoring",
+  "services": [
+    "environmental-permitting",
+    "environmental-compliance",
+    "air-quality-monitoring"
+  ],
+  "industries": [
+    "oil-gas",
+    "energy",
+    "logistics-warehousing",
+    "commercial-facilities"
+  ],
+  "related": [
+    "voc-sampling-analysis",
+    "soil-sampling-equipment",
+    "scrubbers-ventilation"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://www.uqn.gov.sa/details?p=17831",
+    "https://pei.org/wiki_pei/stage-i-vapor-recovery/",
+    "https://pei.org/wiki_pei/stage-ii-vapor-recovery/"
+  ],
+  "en": {
+    "name": "Fuel Vapour Recovery Unit (VRU)",
+    "seoTitle": "Vapour Recovery Unit (VRU) for Fuel Stations | Selorin",
+    "metaDescription": "Vapour recovery units for fuel stations, terminals and fuel farms: activated carbon adsorption with vacuum regeneration that returns petrol vapour to liquid fuel.",
+    "cardDescription": "Captures the petrol vapour displaced at fuel stations, terminals and fuel farms and returns it to liquid fuel. ATEX-certified.",
+    "lead": "A closed system that captures the petrol vapour pushed out of tanks during delivery, storage and refuelling, and turns it back into liquid fuel instead of releasing it to air.",
+    "offer": "We survey the site, supply and install the unit, show its effect with VOC measurements, and maintain it, so vapour losses and fuel odour around your station fall.",
+    "definition": "A vapour recovery unit (VRU) is a closed system that captures the petrol vapours displaced when fuel is loaded, stored or dispensed, and returns them to liquid fuel instead of releasing them to air. The unit Selorin supplies uses activated carbon adsorption with vacuum regeneration and is certified for use in explosive atmospheres (ATEX).",
+    "overview": [
+      "When a tanker fills an underground tank, or a car is refuelled, the incoming liquid pushes out an equal volume of air saturated with fuel vapour. Without control, these hydrocarbons, which include benzene, escape at vent pipes and nozzles as air pollution and lost product.",
+      "Inside the unit, the vapour passes through beds of activated carbon that adsorb the hydrocarbons and release cleaned air. When a bed is loaded, a vacuum pump regenerates it, and the recovered vapour is absorbed back into liquid product, so what would have been lost returns to the tank.",
+      "Vapour recovery is usually described in two stages. Stage I captures the vapour displaced from storage tanks during deliveries; Stage II captures the vapour displaced from vehicle tanks during refuelling. A recovery unit treats the collected vapour at terminals, depots, fuel farms and larger stations."
+    ],
+    "includes": [
+      "Site survey: throughput, tanks, vents, loading arrangements and hazardous area classification",
+      "Unit selection and sizing for the vapour volumes at your site",
+      "Supply with ATEX documentation, installation, tie-in and commissioning",
+      "VOC measurements before and after installation to show the reduction",
+      "Preventive maintenance of carbon beds, vacuum pump and controls",
+      "Operator training and support for environmental permit and inspection requirements"
+    ],
+    "specs": [
+      {
+        "label": "Function",
+        "value": "Captures hydrocarbon vapour displaced during fuel loading, storage and dispensing"
+      },
+      {
+        "label": "Technology",
+        "value": "Activated carbon adsorption with vacuum regeneration"
+      },
+      {
+        "label": "Output",
+        "value": "Recovered vapour returned to liquid product; cleaned air vented"
+      },
+      {
+        "label": "Certification",
+        "value": "ATEX, for use in explosive atmospheres"
+      },
+      {
+        "label": "Applications",
+        "value": "Fuel terminals and depots, retail fuel stations, airport and logistics fuel farms, petrochemical storage"
+      }
+    ],
+    "useCases": [
+      "Retail fuel stations with fuel odour or VOC readings near vents and dispensers",
+      "Fuel terminals and depots with tanker loading racks",
+      "Airport and logistics fuel farms",
+      "Petrochemical and solvent storage tanks",
+      "New stations designed to meet environmental permit conditions",
+      "Stations near homes that receive complaints about fuel smell"
+    ],
+    "regulatory": [
+      "The National Center for Environmental Compliance (NCEC) oversees the environmental compliance of fuel stations through environmental permits and inspections, including air emissions.",
+      "The Executive Regulation for Air Quality sets ambient and emission standards that apply to emissions from fuel storage and handling.",
+      "Equipment installed where flammable vapour may be present must suit the hazardous area classification; the unit we supply carries ATEX certification."
+    ],
+    "faqs": [
+      {
+        "q": "What is a vapour recovery unit at a fuel station?",
+        "a": "It is equipment that captures the petrol vapour pushed out of tanks during deliveries and refuelling and turns it back into liquid fuel, instead of letting it escape through vent pipes."
+      },
+      {
+        "q": "What is the difference between Stage I and Stage II vapour recovery?",
+        "a": "Stage I captures the vapour displaced from the station's storage tanks when a tanker delivers fuel. Stage II captures the vapour displaced from a vehicle's tank during refuelling, at the nozzle."
+      },
+      {
+        "q": "Does recovered vapour reduce fuel losses?",
+        "a": "Yes. Recovered vapour returns to the tank as liquid fuel, so part of the evaporation loss is recovered. The amount depends on throughput, fuel volatility and temperature, and we estimate it during the site survey."
+      },
+      {
+        "q": "Is vapour recovery mandatory for fuel stations in Saudi Arabia?",
+        "a": "Requirements depend on the station's environmental permit and the conditions set by NCEC and the fuel company. We review your permit and inspection findings and advise whether a unit is needed and what size."
+      },
+      {
+        "q": "How do we show that the unit works?",
+        "a": "By measuring VOCs around vents and dispensers before and after installation, using continuous monitors or canister sampling, and recording the results in a short performance report."
+      }
+    ]
+  },
+  "ar": {
+    "name": "وحدة استرجاع أبخرة الوقود (VRU)",
+    "seoTitle": "وحدة استرجاع أبخرة الوقود VRU لمحطات الوقود | سيلورين",
+    "metaDescription": "وحدات استرجاع أبخرة الوقود لمحطات الوقود والمستودعات ومرافق الوقود: امتزاز بالكربون المنشط مع تجديد بالتفريغ يعيد أبخرة البنزين وقودًا سائلًا.",
+    "cardDescription": "تلتقط أبخرة البنزين المزاحة في محطات الوقود والمستودعات ومرافق الوقود وتعيدها وقودًا سائلًا، وحاصلة على شهادة ATEX.",
+    "lead": "نظام مغلق يلتقط أبخرة البنزين التي تخرج من الخزانات أثناء التفريغ والتخزين والتعبئة، ويعيدها وقودًا سائلًا بدل انطلاقها في الهواء.",
+    "offer": "نمسح الموقع، ونورد الوحدة ونركّبها، ونثبت أثرها بقياسات المركبات العضوية المتطايرة، ونتولى صيانتها، لتنخفض خسائر الأبخرة ورائحة الوقود حول محطتك.",
+    "definition": "وحدة استرجاع الأبخرة (VRU) نظام مغلق يلتقط أبخرة البنزين المزاحة أثناء تحميل الوقود وتخزينه وتعبئته، ويعيدها وقودًا سائلًا بدل إطلاقها في الهواء. وتعتمد الوحدة التي توردها سيلورين على الامتزاز بالكربون المنشط مع التجديد بالتفريغ، وهي حاصلة على شهادة ATEX للعمل في الأجواء القابلة للانفجار.",
+    "overview": [
+      "عندما تفرّغ الناقلة الوقود في خزان أرضي، أو تُعبّأ سيارة، يزيح السائل الداخل حجمًا مساويًا من الهواء المشبع بأبخرة الوقود. ودون تحكم تنطلق هذه الهيدروكربونات، ومنها مركّب البنزين العطري (Benzene)، من أنابيب التهوية والمسدسات تلوثًا للهواء وفاقدًا من المنتج.",
+      "داخل الوحدة تمر الأبخرة عبر طبقات من الكربون المنشط تمتز الهيدروكربونات وتُخرج هواءً نظيفًا. وعندما تتشبع الطبقة، تجددها مضخة تفريغ، وتُمتص الأبخرة المسترجعة مرة أخرى في المنتج السائل، فيعود إلى الخزان ما كان سيُفقد.",
+      "يُقسَّم استرجاع الأبخرة عادةً إلى مرحلتين: المرحلة الأولى تلتقط الأبخرة المزاحة من خزانات المحطة أثناء التفريغ من الناقلة، والمرحلة الثانية تلتقط الأبخرة المزاحة من خزان السيارة أثناء التعبئة. وتعالج وحدة الاسترجاع الأبخرة المجمّعة في المستودعات ومحطات التوزيع ومرافق الوقود والمحطات الكبيرة."
+    ],
+    "includes": [
+      "مسح الموقع: كميات البيع والخزانات وأنابيب التهوية وترتيبات التحميل وتصنيف المناطق الخطرة",
+      "اختيار الوحدة وتحديد سعتها بحسب كميات الأبخرة في موقعك",
+      "التوريد مع مستندات ATEX، والتركيب والربط والتشغيل",
+      "قياس المركبات العضوية المتطايرة قبل التركيب وبعده لإثبات الانخفاض",
+      "صيانة وقائية لطبقات الكربون ومضخة التفريغ ونظام التحكم",
+      "تدريب المشغلين ودعم متطلبات التصريح البيئي والتفتيش"
+    ],
+    "specs": [
+      {
+        "label": "الوظيفة",
+        "value": "التقاط أبخرة الهيدروكربونات المزاحة أثناء تحميل الوقود وتخزينه وتعبئته"
+      },
+      {
+        "label": "التقنية",
+        "value": "امتزاز بالكربون المنشط مع تجديد بالتفريغ"
+      },
+      {
+        "label": "المخرجات",
+        "value": "إعادة الأبخرة المسترجعة إلى المنتج السائل، وتصريف هواء نظيف"
+      },
+      {
+        "label": "الاعتماد",
+        "value": "شهادة ATEX للعمل في الأجواء القابلة للانفجار"
+      },
+      {
+        "label": "التطبيقات",
+        "value": "مستودعات ومحطات توزيع الوقود، ومحطات الوقود، ومرافق وقود المطارات والخدمات اللوجستية، وخزانات البتروكيماويات"
+      }
+    ],
+    "useCases": [
+      "محطات الوقود التي تظهر فيها رائحة الوقود أو قراءات مرتفعة للمركبات العضوية المتطايرة قرب أنابيب التهوية والمضخات",
+      "مستودعات الوقود ومحطات التوزيع ذات منصات تحميل الناقلات",
+      "مرافق وقود المطارات والخدمات اللوجستية",
+      "خزانات البتروكيماويات والمذيبات",
+      "المحطات الجديدة المصممة لتلبية اشتراطات التصريح البيئي",
+      "المحطات القريبة من المساكن التي تتلقى شكاوى من رائحة الوقود"
+    ],
+    "regulatory": [
+      "يتولى المركز الوطني للرقابة على الالتزام البيئي رقابة الالتزام البيئي لمحطات الوقود عبر التصاريح البيئية والتفتيش، بما في ذلك الانبعاثات الهوائية.",
+      "تحدد اللائحة التنفيذية لجودة الهواء مقاييس الهواء المحيط والانبعاثات المنطبقة على انبعاثات تخزين الوقود ومناولته.",
+      "يجب أن تناسب الأجهزة المركّبة في مواقع قد توجد فيها أبخرة قابلة للاشتعال تصنيفَ المنطقة الخطرة، والوحدة التي نوردها حاصلة على شهادة ATEX."
+    ],
+    "faqs": [
+      {
+        "q": "ما وحدة استرجاع الأبخرة في محطة الوقود؟",
+        "a": "هي معدات تلتقط أبخرة البنزين التي تخرج من الخزانات أثناء التفريغ والتعبئة وتعيدها وقودًا سائلًا، بدل أن تنطلق من أنابيب التهوية."
+      },
+      {
+        "q": "ما الفرق بين المرحلة الأولى والثانية لاسترجاع الأبخرة؟",
+        "a": "المرحلة الأولى تلتقط الأبخرة المزاحة من خزانات المحطة عند تفريغ الناقلة للوقود، والمرحلة الثانية تلتقط الأبخرة المزاحة من خزان السيارة أثناء التعبئة عند المسدس."
+      },
+      {
+        "q": "هل تقلل الأبخرة المسترجعة فاقد الوقود؟",
+        "a": "نعم. تعود الأبخرة المسترجعة إلى الخزان وقودًا سائلًا، فيُسترد جزء من فاقد التبخر. وتعتمد الكمية على حجم البيع وتطاير الوقود ودرجة الحرارة، ونقدّرها خلال مسح الموقع."
+      },
+      {
+        "q": "هل استرجاع الأبخرة إلزامي لمحطات الوقود في السعودية؟",
+        "a": "تعتمد المتطلبات على التصريح البيئي للمحطة والاشتراطات التي يضعها المركز الوطني للرقابة على الالتزام البيئي وشركة الوقود. نراجع تصريحك وملاحظات التفتيش، ونوضح هل تحتاج إلى وحدة وما السعة المناسبة."
+      },
+      {
+        "q": "كيف نثبت أن الوحدة تعمل؟",
+        "a": "بقياس المركبات العضوية المتطايرة حول أنابيب التهوية والمضخات قبل التركيب وبعده، بأجهزة رصد مستمر أو بعينات العبوات، وتوثيق النتائج في تقرير أداء مختصر."
+      }
+    ]
+  }
+}

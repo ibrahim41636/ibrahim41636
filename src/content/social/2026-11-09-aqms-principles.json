@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-09",
+  "slot": 2,
+  "pillar": "تأجير أجهزة الرصد",
+  "stage": "consideration",
+  "sources": [
+    "https://www.epa.gov/amtic/air-monitoring-methods-criteria-pollutants",
+    "https://selorin.co/equipment/air-quality-monitoring-station/"
+  ],
+  "ar": {
+    "title": "كيف تقيس محطة جودة الهواء غازًا لا يُرى؟",
+    "text": "كيف تقيس محطة جودة الهواء غازًا لا يُرى ولا يُشم بتراكيز تصل إلى أجزاء من البليون؟\n\nكل غاز له بصمة ضوئية، والمحللات المرجعية تستخدمها:\n• ثاني أكسيد الكبريت (SO2): يمتص الأشعة فوق البنفسجية ثم يعيد إطلاق ضوء بطول موجي أطول (الفلورة). شدة هذا الضوء تتناسب مع التركيز.\n• أكاسيد النيتروجين (NOx): يتفاعل أكسيد النيتريك مع الأوزون داخل الجهاز فينتج ثاني أكسيد نيتروجين مثارًا يطلق ضوءًا عند عودته إلى حالته الطبيعية (التألق الكيميائي). ويُقاس ثاني أكسيد النيتروجين بعد تحويله إلى أكسيد النيتريك.\n• أول أكسيد الكربون (CO): يمتص الأشعة تحت الحمراء قرب 4.6 ميكرومتر، ويُقاس الامتصاص بالمقارنة مع مرشح مملوء بالغاز نفسه (الارتباط بمرشح الغاز).\n\nهذه المبادئ هي أساس الطرق المرجعية والمكافئة لدى وكالة حماية البيئة الأمريكية، لكنها لا تكفي وحدها: فحوص الصفر والمدى بغاز معتمد وهواء صفري هي ما يجعل الرقم قابلًا للتتبع.\n\nتؤجّر سيلورين محطات رصد جودة الهواء وتوردها وتشغّلها مع المعايرة والتقارير.\n\n#جودة_الهواء #الرصد_البيئي #علوم_البيئة #السعودية",
+    "x": "SO2 بالفلورة فوق البنفسجية، وNOx بالتألق الكيميائي، وCO بامتصاص الأشعة تحت الحمراء قرب 4.6 ميكرومتر: هكذا تقيس محطات جودة الهواء غازات لا تُرى. #جودة_الهواء",
+    "link": "/ar/equipment/air-quality-monitoring-station/",
+    "image": {
+      "template": "checklist",
+      "title": "كيف تقيس المحللات المرجعية الغازات",
+      "kicker": "علوم القياس",
+      "items": [
+        "SO2: الفلورة بالأشعة فوق البنفسجية",
+        "NOx: التألق الكيميائي مع الأوزون",
+        "CO: امتصاص الأشعة تحت الحمراء قرب 4.6 ميكرومتر",
+        "فحوص الصفر والمدى بغاز معتمد",
+        "هواء صفري لضمان خط أساس نظيف"
+      ]
+    }
+  },
+  "en": {
+    "title": "How an air quality station measures an invisible gas",
+    "text": "How does an air quality station measure a gas you cannot see or smell, at parts per billion?\n\nEach gas has an optical fingerprint, and reference analysers use it:\n• Sulphur dioxide (SO2): absorbs ultraviolet light and re-emits light at a longer wavelength (fluorescence). The intensity is proportional to the concentration.\n• Nitrogen oxides (NOx): nitric oxide reacts with ozone inside the analyser to form excited nitrogen dioxide, which emits light as it relaxes (chemiluminescence). NO2 is measured after conversion to NO.\n• Carbon monoxide (CO): absorbs infrared light near 4.6 micrometres; the absorption is compared against a filter filled with CO itself (gas filter correlation).\n\nThese principles underpin US EPA reference and equivalent methods, but they are not enough on their own: zero and span checks with certified gas and zero air are what make the number traceable.\n\nSelorin rents, supplies and operates air quality monitoring stations with calibration and reporting.\n\n#AirQuality #EnvironmentalMonitoring #Science #SaudiArabia",
+    "x": "SO2 by UV fluorescence, NOx by chemiluminescence, CO by infrared absorption near 4.6 µm: how air quality stations measure gases you cannot see.",
+    "link": "/equipment/air-quality-monitoring-station/",
+    "image": {
+      "template": "checklist",
+      "title": "How reference analysers measure gases",
+      "kicker": "Measurement science",
+      "items": [
+        "SO2: ultraviolet fluorescence",
+        "NOx: chemiluminescence with ozone",
+        "CO: infrared absorption near 4.6 µm",
+        "Zero and span checks with certified gas",
+        "Zero air for a clean baseline"
+      ]
+    }
+  }
+}

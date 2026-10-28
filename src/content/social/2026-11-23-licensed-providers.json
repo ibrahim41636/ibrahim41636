@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-23",
+  "slot": 2,
+  "pillar": "لوائح المركز الوطني للرقابة على الالتزام البيئي",
+  "stage": "consideration",
+  "sources": [
+    "https://istitlaa.ncc.gov.sa/ar/civil/mewa/executiveregulationsforenvironmentalserviceprovide/Pages/default.aspx",
+    "https://www.uqn.gov.sa/details?p=17812"
+  ],
+  "ar": {
+    "title": "ترخيص مقدم الخدمة البيئية: مسؤوليتك أيضًا",
+    "text": "\"ترخيص الجهة الاستشارية شأنها هي.\" هذا افتراض قد يكلف المنشأة.\n\nتشترط اللائحة التنفيذية لمقدمي الخدمات البيئية حصول كل جهة على ترخيص قبل تقديم أي خدمة بيئية، ومن الخدمات المشمولة رصد جودة الأوساط البيئية ومصادر التلوث، وإدارة شبكات الرصد البيئي وتركيبها وصيانتها وتشغيلها. ويُطلب في الترخيص بيان الأجهزة المستخدمة ومنهجية قياسها وشهادات معايرتها.\n\nوتعدّ اللائحة التنفيذية لجودة الهواء الاستعانة بمقدم خدمات غير مرخص في رصد الهواء المحيط مخالفةً، أي أن الأثر قد يصل إلى المنشأة نفسها.\n\nثلاثة أسئلة قبل التعاقد على دراسة أو رصد:\n• هل للجهة ترخيص ساري للنشاط المحدد، لا لنشاط بيئي عام؟\n• ما الأجهزة المستخدمة، وما شهادات معايرتها؟\n• من يوقّع التقرير الذي سيُرفع إلى الجهة الرقابية؟\n\nالدليل الكامل للوائح في الرابط.\n\n#الالتزام_البيئي #الخدمات_البيئية #الرصد_البيئي #السعودية",
+    "x": "ترخيص مقدم الخدمة البيئية ليس شأنه وحده: لائحة جودة الهواء تعدّ الاستعانة بمقدم غير مرخص في رصد الهواء مخالفة. اسأل عن الترخيص للنشاط المحدد. #الالتزام_البيئي",
+    "link": "/ar/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "myth",
+      "myth": "ترخيص الجهة الاستشارية شأنها وحدها",
+      "fact": "الاستعانة بمقدم خدمات غير مرخص في رصد الهواء المحيط مخالفة وفق لائحة جودة الهواء. اطلب الترخيص للنشاط المحدد."
+    }
+  },
+  "en": {
+    "title": "Your provider's environmental licence is your concern too",
+    "text": "\"The consultant's licence is the consultant's business.\" That assumption can cost a facility.\n\nSaudi Arabia's Executive Regulation for Environmental Service Providers requires every provider to hold a licence before offering an environmental service. The services covered include monitoring environmental media and pollution sources, and managing, installing, maintaining and operating environmental monitoring networks. The licence application lists the instruments used, their measurement method and their calibration certificates.\n\nThe Executive Regulation for Air Quality treats using an unlicensed service provider for ambient air monitoring as a violation, so the consequences can reach the facility itself.\n\nThree questions before you contract a study or monitoring:\n• Does the provider hold a valid licence for this specific activity, not just for environmental work in general?\n• Which instruments will be used, and what are their calibration certificates?\n• Who signs the report that goes to the regulator?\n\nThe full guide to the regulations is at the link.\n\n#EnvironmentalCompliance #EnvironmentalServices #Monitoring #SaudiArabia",
+    "x": "A provider's environmental licence is not only their concern: Saudi air quality rules treat using an unlicensed provider for ambient monitoring as a violation. Ask for the licence for the specific activity.",
+    "link": "/insights/ncec-environmental-regulations-guide/",
+    "image": {
+      "template": "myth",
+      "myth": "The consultant's licence is their business alone",
+      "fact": "Using an unlicensed provider for ambient air monitoring is a violation under the Air Quality regulation. Ask for the licence for the specific activity."
+    }
+  }
+}

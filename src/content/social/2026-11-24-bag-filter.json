@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-24",
+  "slot": 2,
+  "pillar": "أنظمة التحكم في الانبعاثات",
+  "stage": "consideration",
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812",
+    "https://selorin.co/equipment/dust-collection-systems/"
+  ],
+  "ar": {
+    "title": "كيف ينظف الفلتر الكيسي نفسه دون أن يتوقف؟",
+    "text": "في مصانع الأسمنت والكسارات وصوامع الخرسانة، يمر الهواء المحمل بالغبار عبر مئات الأكياس القماشية قبل أن يخرج من المدخنة. فكيف تبقى الأكياس نظيفة؟\n\nالفكرة في الفلتر الكيسي بالنبض النفاث:\n• يمر الهواء من خارج الكيس إلى داخله، فتتكون على سطحه طبقة من الغبار. هذه الطبقة نفسها تصبح جزءًا من الترشيح وتلتقط جسيمات أدق.\n• مع ازدياد سمكها يرتفع فرق الضغط عبر الكيس، فتنطلق نبضة قصيرة من الهواء المضغوط داخل الكيس تهزه وتسقط الغبار في القادوس.\n• تُنظَّف الأكياس صفًا بعد صف، فيستمر الفلتر في العمل دون توقف.\n\nواختيار مادة الكيس قرار هندسي: البوليستر للحرارة المنخفضة، وPTFE والألياف الزجاجية بغشاء ePTFE للحرارة الأعلى والغازات الأكالة.\n\nوالتحقق النهائي يكون باختبار انبعاثات المدخنة ومقارنتها بالحدود الواردة في التصريح البيئي واللائحة التنفيذية لجودة الهواء.\n\nالتفاصيل في الرابط.\n\n#جمع_الغبار #جودة_الهواء #الصناعة #السعودية",
+    "x": "الفلتر الكيسي بالنبض النفاث: طبقة الغبار على الكيس تصبح جزءًا من الترشيح، ونبضة هواء قصيرة تسقطها عند ارتفاع فرق الضغط، فيعمل الفلتر دون توقف. #جمع_الغبار",
+    "link": "/ar/equipment/dust-collection-systems/",
+    "image": {
+      "template": "tip",
+      "title": "الفلتر الكيسي ينظف نفسه بالنبض",
+      "text": "طبقة الغبار على الكيس تصبح جزءًا من الترشيح، وعندما يرتفع فرق الضغط تسقطها نبضة هواء قصيرة، صفًا بعد صف، دون إيقاف الفلتر."
+    }
+  },
+  "en": {
+    "title": "How a bag filter cleans itself without stopping",
+    "text": "In cement plants, crushers and batching plants, dusty air passes through hundreds of fabric bags before it leaves the stack. How do the bags stay clean?\n\nThe idea behind the jet pulse bag filter:\n• Air flows from outside the bag to inside, and a layer of dust builds up on its surface. That layer becomes part of the filter and catches even finer particles.\n• As it thickens, the pressure drop across the bag rises, and a short pulse of compressed air inside the bag flexes it and drops the dust into the hopper.\n• Bags are cleaned row by row, so the filter keeps working without stopping.\n\nChoosing the bag material is an engineering decision: polyester for lower temperatures, PTFE and glass fibre with an ePTFE membrane for higher temperatures and aggressive gases.\n\nThe final check is a stack emission test compared with the limits in the environmental permit and the Executive Regulation for Air Quality.\n\nDetails at the link.\n\n#DustCollection #AirQuality #Industry #SaudiArabia",
+    "x": "Jet pulse bag filters: the dust layer on each bag becomes part of the filter, and a short air pulse drops it when pressure drop rises, so the filter never stops.",
+    "link": "/equipment/dust-collection-systems/",
+    "image": {
+      "template": "tip",
+      "title": "A bag filter cleans itself by pulse",
+      "text": "The dust layer on each bag becomes part of the filter. When pressure drop rises, a short air pulse drops it, row by row, without stopping the filter."
+    }
+  }
+}

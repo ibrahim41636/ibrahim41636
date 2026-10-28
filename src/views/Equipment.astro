@@ -1,0 +1,190 @@
+---
+import { equipmentImage } from "@/data/imagery";
+import Base from "@/layouts/Base.astro";
+import PageHero from "@/components/PageHero.astro";
+import Icon from "@/components/Icon.astro";
+import Faq from "@/components/Faq.astro";
+import ServiceCard from "@/components/ServiceCard.astro";
+import CtaBand from "@/components/CtaBand.astro";
+import { getEntries, getEntry } from "astro:content";
+import { href, t, type Lang } from "@/i18n/ui";
+import { GROUPS, MODES } from "@/data/equipment";
+import { getEquipment, type Equipment } from "@/lib/content";
+import { INDUSTRY_ICON } from "@/lib/icons";
+import { equipmentSchema, faqSchema } from "@/lib/schema";
+
+interface Props { lang: Lang; item: Equipment }
+const { lang, item } = Astro.props;
+const ar = lang === "ar";
+const d = item.data[lang];
+const group = GROUPS[item.data.group];
+const service = await getEntry(item.data.service);
+const services = await getEntries([item.data.service, ...item.data.services.filter((s) => s.id !== item.data.service.id)]);
+const industries = await getEntries(item.data.industries);
+const related = (await getEquipment()).filter((e) => item.data.related.includes(e.id));
+const photo = equipmentImage(item.id);
+const path = `/equipment/${item.id}/`;
+const requestHref = href(lang, `/request/${service!.id}/`);
+const leaseOut = item.data.modes.includes("rental");
+const L = (en: string, a: string) => (ar ? a : en);
+const crumbs = [
+  { name: t(lang, "nav.home"), path: "/" },
+  { name: t(lang, "nav.equipment"), path: "/equipment/" },
+  { name: d.name, path },
+];
+const toc = [
+  ["overview", L("Overview", "نظرة عامة")],
+  ["includes", leaseOut ? L("What the rental includes", "ماذا يشمل التأجير") : L("What we provide", "ماذا نقدّم")],
+  ...(d.measures.length ? [["measures", L("Measurement specifications", "مواصفات القياس")]] : []),
+  ...(d.specs.length ? [["specs", L("System specifications", "مواصفات النظام")]] : []),
+  ...(d.types.length ? [["types", L("Equipment in this range", "الأجهزة ضمن هذه الفئة")]] : []),
+  ["uses", L("Where it is used", "أين يُستخدم")],
+  ["regulatory", t(lang, "service.regulatory")],
+  ["faq", t(lang, "service.faq")],
+];
+const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير") : L("Request a quote", "اطلب عرض سعر");
+---
+<Base lang={lang} path={path} title={d.seoTitle} description={d.metaDescription} breadcrumbs={crumbs} image={photo.src} imageAlt={photo.alt[lang]}
+  schema={[equipmentSchema(lang, { slug: item.id, name: d.name, description: d.definition, image: photo.src, leaseOut, specs: [...d.measures.map((m) => ({ label: m.parameter, value: `${m.range} (${m.accuracy})` })), ...d.specs] }), faqSchema(d.faqs)]}
+  analytics={{ page_type: "equipment", equipment_slug: item.id, service_slug: service!.id }}>
+
+  <PageHero lang={lang} crumbs={crumbs} photo={photo} eyebrow={group.name[lang]} title={d.name} lead={d.lead}>
+    <ul class="equip-modes" aria-label={L("Available as", "متاح عبر")}>
+      {item.data.modes.map((m) => <li class="pill">{MODES[m][lang]}</li>)}
+    </ul>
+    <div class="actions mt-6">
+      <a class="btn btn--light" href={requestHref} data-cta="equipment_hero_request" data-equipment={item.id}>{cta} <Icon name="arrow" class="arrow" /></a>
+      <a class="btn btn--ghost" href={d.measures.length ? "#measures" : "#includes"}>{d.measures.length ? L("Specifications", "المواصفات") : L("What is included", "ماذا يشمل")}</a>
+    </div>
+    <p class="mt-5" style="color:#a9b2ad;font-size:var(--fs-14);display:flex;gap:8px;align-items:flex-start"><Icon name="check" size={16} /> {d.offer}</p>
+  </PageHero>
+
+  <div class="section">
+    <div class="container with-toc">
+      <nav class="toc" aria-label={t(lang, "service.inThisPage")}>
+        <p class="eyebrow">{t(lang, "service.inThisPage")}</p>
+        <ol>{toc.map(([id, label]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
+        <a class="btn btn--sm btn--block mt-6" href={requestHref} data-cta="equipment_toc_request" data-equipment={item.id}>{cta}</a>
+      </nav>
+
+      <div>
+        <section class="block" id="overview" aria-labelledby="h-overview">
+          <h2 id="h-overview">{L("Overview", "نظرة عامة")}</h2>
+          <p class="definition">{d.definition}</p>
+          <div class="prose">{d.overview.map((p) => <p>{p}</p>)}</div>
+        </section>
+
+        <section class="block" id="includes" aria-labelledby="h-includes">
+          <h2 id="h-includes">{leaseOut ? L("What the rental includes", "ماذا يشمل التأجير") : L("What we provide", "ماذا نقدّم")}</h2>
+          <div class="card equip-offer">
+            <span class="icon"><Icon name={group.icon} /></span>
+            <p><b>{d.offer}</b></p>
+          </div>
+          <ul class="checklist checklist--2 mt-6">{d.includes.map((x) => <li>{x}</li>)}</ul>
+        </section>
+
+        {d.measures.length > 0 && (
+          <section class="block" id="measures" aria-labelledby="h-measures">
+            <h2 id="h-measures">{L("Measurement specifications", "مواصفات القياس")}</h2>
+            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("Measurement specifications", "مواصفات القياس")} — ${d.name}`}>
+              <table class="table">
+                <thead><tr>
+                  <th scope="col">{L("Parameter", "المؤشر")}</th><th scope="col">{L("Principle", "مبدأ القياس")}</th><th scope="col">{L("Range", "المدى")}</th>
+                  <th scope="col">{L("Accuracy", "الدقة")}</th><th scope="col">{L("Resolution", "الاستبانة")}</th>
+                </tr></thead>
+                <tbody>{d.measures.map((m) => <tr><th scope="row">{m.parameter}</th><td>{m.principle}</td><td><bdi dir="ltr">{m.range}</bdi></td><td><bdi dir="ltr">{m.accuracy}</bdi></td><td><bdi dir="ltr">{m.resolution}</bdi></td></tr>)}</tbody>
+              </table>
+            </div>
+          </section>
+        )}
+
+        {d.specs.length > 0 && (
+          <section class="block" id="specs" aria-labelledby="h-specs">
+            <h2 id="h-specs">{L("System specifications", "مواصفات النظام")}</h2>
+            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("System specifications", "مواصفات النظام")} — ${d.name}`}>
+              <table class="table">
+                <tbody>{d.specs.map((s) => <tr><th scope="row">{s.label}</th><td>{s.value}</td></tr>)}</tbody>
+              </table>
+            </div>
+            <p class="muted mt-4" style="font-size:var(--fs-14)">{L("Specifications are the manufacturer's and may change without notice. We confirm the configuration for your site in the quotation.", "المواصفات من بيانات الشركة المصنّعة وقد تتغير دون إشعار، ونؤكد التهيئة المناسبة لموقعك في عرض السعر.")}</p>
+          </section>
+        )}
+
+        {d.types.length > 0 && (
+          <section class="block" id="types" aria-labelledby="h-types">
+            <h2 id="h-types">{L("Equipment in this range", "الأجهزة ضمن هذه الفئة")}</h2>
+            <div class="grid grid-2">
+              {d.types.map((x, i) => (
+                <div class="card"><span class="card-num">{String(i + 1).padStart(2, "0")}</span><h3>{x.title}</h3><p>{x.description}</p><p class="muted" style="font-size:var(--fs-14)"><b>{L("Sectors", "القطاعات")}:</b> {x.sectors}</p></div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section class="block" id="uses" aria-labelledby="h-uses">
+          <h2 id="h-uses">{L("Where it is used", "أين يُستخدم")}</h2>
+          <ul class="checklist checklist--2">{d.useCases.map((u) => <li>{u}</li>)}</ul>
+          {industries.length > 0 && (
+            <div class="grid grid-2 mt-6" style="gap:12px">
+              {industries.map((ind) => <a class="tile" href={href(lang, `/industries/${ind.id}/`)}><Icon name={INDUSTRY_ICON[ind.id] ?? "factory"} />{ind.data[lang].name}<Icon name="arrow" class="arrow" /></a>)}
+            </div>
+          )}
+        </section>
+
+        <section class="block" id="regulatory" aria-labelledby="h-regulatory">
+          <h2 id="h-regulatory">{t(lang, "service.regulatory")}</h2>
+          <ul class="checklist">{d.regulatory.map((r) => <li>{r}</li>)}</ul>
+          <p class="muted mt-5" style="font-size:var(--fs-14)">{t(lang, "service.regulatoryNote")}</p>
+          {item.data.sources.length > 0 && (
+            <p class="muted mt-4" style="font-size:var(--fs-14)">{L("Sources", "المصادر")}: {item.data.sources.map((s, i) => <>{i > 0 && " · "}<a href={s} target="_blank" rel="noopener">{new URL(s).hostname.replace(/^www\./, "")}</a></>)}</p>
+          )}
+        </section>
+
+        <section class="block" id="faq" aria-labelledby="h-faq">
+          <h2 id="h-faq">{t(lang, "service.faq")}</h2>
+          <Faq items={d.faqs} />
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <section class="section bg-white border-top">
+    <div class="container">
+      {related.length > 0 && (
+        <>
+          <div class="section-head"><h2>{L("Related equipment", "أجهزة ذات صلة")}</h2></div>
+          <div class="grid grid-3">
+            {related.map((e) => (
+              <article class="card reveal">
+                <span class="icon"><Icon name={GROUPS[e.data.group].icon} /></span>
+                <h3><a class="card-link" href={href(lang, `/equipment/${e.id}/`)} data-cta="equipment_card" data-equipment={e.id} style="text-decoration:none">{e.data[lang].name}</a></h3>
+                <p>{e.data[lang].cardDescription}</p>
+                <span class="link" aria-hidden="true">{L("View equipment", "عرض الجهاز")} <Icon name="arrow" /></span>
+              </article>
+            ))}
+          </div>
+        </>
+      )}
+      <div class:list={["section-head", { "mt-7": related.length > 0 }]}><h2>{t(lang, "service.related")}</h2></div>
+      <div class="grid grid-3">{services.map((s) => <ServiceCard lang={lang} service={s} />)}</div>
+    </div>
+  </section>
+
+  <CtaBand title={L("Need this equipment on your site?", "تحتاج هذا الجهاز في موقعك؟")} body={L("Tell us the site, the parameters and the period, and we will send a configuration and a quotation.", "أخبرنا بالموقع والمؤشرات المطلوبة والمدة، ونرسل لك التهيئة المناسبة وعرض السعر.")} label={cta} to={requestHref} cta="equipment_final_request"
+    secondary={{ label: t(lang, "cta.specialist"), to: "tel:+966550156887" }} />
+
+  <div class="sticky-cta" data-sticky-cta aria-hidden="true">
+    <div class="container">
+      <b>{d.name}</b>
+      <a class="btn btn--light btn--sm" href={requestHref} tabindex="-1" data-cta="equipment_sticky_request" data-equipment={item.id}>{cta}</a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .equip-modes { list-style: none; padding: 0; margin: 20px 0 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .equip-modes .pill { padding: 6px 12px; }
+  .equip-offer { display: flex; flex-direction: row; gap: 16px; align-items: center; text-align: start; }
+  .equip-offer .icon { flex: none; margin: 0; }
+  .equip-offer p { margin: 0; }
+</style>

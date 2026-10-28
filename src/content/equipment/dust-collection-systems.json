@@ -1,0 +1,180 @@
+{
+  "group": "emission-control",
+  "order": 2,
+  "modes": [
+    "supply",
+    "operation"
+  ],
+  "service": "environmental-compliance",
+  "services": [
+    "dust-monitoring",
+    "air-quality-monitoring",
+    "environmental-management-plans"
+  ],
+  "industries": [
+    "industrial-manufacturing",
+    "mining-quarrying",
+    "construction",
+    "food-beverage"
+  ],
+  "related": [
+    "dust-monitoring-station",
+    "cems",
+    "scrubbers-ventilation"
+  ],
+  "sources": [
+    "https://www.uqn.gov.sa/details?p=17812"
+  ],
+  "en": {
+    "name": "Dust Collection and Suppression Systems",
+    "seoTitle": "Industrial Dust Collectors and Bag Filters in Saudi Arabia | Selorin",
+    "metaDescription": "Jet pulse bag filters, cyclones, silo vent filters and mist cannons, supplied, installed and maintained, with dust monitoring and stack testing to verify the result.",
+    "cardDescription": "Jet pulse bag filters, cyclones, silo vent filters and mist cannons for process dust and open-area dust, supplied and maintained.",
+    "lead": "Systems that stop dust at the source, from fine process dust in a stack to open dust at crushers and stockpiles, followed by the measurements that show they work.",
+    "offer": "We assess the dust problem, design and supply the system, install and maintain it, and verify the result with dust monitoring and stack testing.",
+    "definition": "Industrial dust collection removes particles from process air before it is released, using fabric filters, cyclones and vent filters, while dust suppression controls open-area dust with water mist. Selorin supplies, installs and maintains these systems and verifies their performance with monitoring and stack testing.",
+    "overview": [
+      "A jet pulse bag filter draws dusty air through fabric bags that hold the particles, and cleans the bags automatically with short pulses of compressed air. Filter media range from polyester to PTFE and glass fibre with an ePTFE membrane, chosen for the gas temperature and chemistry.",
+      "A cyclone separates heavy, coarse dust by centrifugal force before it reaches the main filter. It has no moving parts and needs little maintenance. A silo vent filter, mounted on silos and storage tanks, captures the dust pushed out during pneumatic filling.",
+      "For open areas such as crushing, stockpiles and haul roads, a mist cannon throws fine water droplets over a long range to bring airborne dust down.",
+      "The work runs from measurement to control: assess the site and its dust profile, design and select the system, supply, install, operate and maintain it, and verify the result with stack emission testing and continuous monitoring."
+    ],
+    "includes": [
+      "Site survey, dust profile and review of existing equipment",
+      "System selection and engineering with the manufacturer",
+      "Supply, including factory quality checks, shipping and customs clearance",
+      "Mechanical, electrical and ducting works, and commissioning",
+      "Filter media, spare parts and service contracts",
+      "Stack emission testing and dust monitoring to verify performance"
+    ],
+    "types": [
+      {
+        "title": "Jet pulse bag filter",
+        "description": "Fabric filter dust collector with automatic pulse cleaning; filter bags, pulse valves and bag cages available as spares.",
+        "sectors": "Cement and building materials, steel and foundries, mining and crushing, food and grain, chemicals and fertilisers, wood and furniture"
+      },
+      {
+        "title": "Cyclone separator",
+        "description": "Centrifugal pre-separation of heavy and coarse dust, with no moving parts.",
+        "sectors": "Woodworking, mining and quarrying, cement and lime, bulk material handling"
+      },
+      {
+        "title": "Silo vent filter",
+        "description": "Compact filter on silos and tanks for dust displaced during pneumatic filling and venting.",
+        "sectors": "Concrete batching, cement and lime, grain and flour, plastics and chemicals"
+      },
+      {
+        "title": "Mist cannon",
+        "description": "Long-range water mist for dust suppression in open areas.",
+        "sectors": "Mining and quarrying, cement and building materials, bulk material handling"
+      }
+    ],
+    "useCases": [
+      "Cement plants, crushers and building material factories",
+      "Steel mills and foundries",
+      "Concrete batching plants with cement silos",
+      "Grain, flour and feed handling",
+      "Open stockpiles, haul roads and loading areas",
+      "Facilities with stack dust above permit limits"
+    ],
+    "regulatory": [
+      "The Executive Regulation for Air Quality sets emission standards for stationary sources, including particulate matter, and the measures a facility must take when it approaches them.",
+      "Environmental permits set dust emission limits, control measures and testing for each stack and for open sources.",
+      "Construction and operational environmental management plans include dust control measures such as water suppression."
+    ],
+    "faqs": [
+      {
+        "q": "How does a jet pulse bag filter work?",
+        "a": "Dusty air passes through fabric filter bags that hold the particles. At set intervals a short pulse of compressed air flexes each bag and drops the collected dust into a hopper, so the filter keeps working without stopping."
+      },
+      {
+        "q": "When is a cyclone enough on its own?",
+        "a": "A cyclone removes heavy, coarse dust well but lets fine particles through. It is used alone for coarse dust, such as wood chips, and before a bag filter where fine dust must also be controlled."
+      },
+      {
+        "q": "Which filter media should we use?",
+        "a": "It depends on the gas temperature, moisture and chemistry. Polyester suits lower temperatures, while PTFE and glass fibre with an ePTFE membrane suit higher temperatures and aggressive gases. We select it from your process data."
+      },
+      {
+        "q": "How do we show the system meets the limit?",
+        "a": "By stack emission testing after commissioning, and by continuous dust monitoring where the permit requires it."
+      }
+    ]
+  },
+  "ar": {
+    "name": "أنظمة جمع الغبار وإخماده",
+    "seoTitle": "أنظمة جمع الغبار والفلاتر الكيسية في السعودية | سيلورين",
+    "metaDescription": "فلاتر كيسية بالنبض النفاث، وفواصل إعصارية، وفلاتر تهوية الصوامع، ومدافع الرذاذ، توريدًا وتركيبًا وصيانة، مع رصد الغبار واختبار المداخن للتحقق من النتيجة.",
+    "cardDescription": "فلاتر كيسية بالنبض النفاث وفواصل إعصارية وفلاتر صوامع ومدافع رذاذ لغبار العمليات والغبار المكشوف، توريدًا وصيانة.",
+    "lead": "أنظمة توقف الغبار عند مصدره، من غبار العمليات الدقيق في المداخن إلى الغبار المكشوف عند الكسارات والأكوام، تتبعها قياسات تثبت فعاليتها.",
+    "offer": "نقيّم مشكلة الغبار، ونصمم النظام ونورده، ونركّبه ونصونه، ونتحقق من النتيجة برصد الغبار واختبار المداخن.",
+    "definition": "جمع الغبار الصناعي هو إزالة الجسيمات من هواء العمليات قبل إطلاقه باستخدام الفلاتر القماشية والفواصل الإعصارية وفلاتر التهوية، أما إخماد الغبار فيضبط الغبار في المناطق المكشوفة برذاذ الماء. وتورد سيلورين هذه الأنظمة وتركّبها وتصونها، وتتحقق من أدائها بالرصد واختبار المداخن.",
+    "overview": [
+      "يسحب الفلتر الكيسي بالنبض النفاث الهواء المحمل بالغبار عبر أكياس قماشية تحتجز الجسيمات، وينظفها آليًا بنبضات قصيرة من الهواء المضغوط. وتتنوع مواد الترشيح من البوليستر إلى PTFE والألياف الزجاجية بغشاء ePTFE، وتُختار بحسب حرارة الغاز وتركيبه الكيميائي.",
+      "ويفصل الفاصل الإعصاري الغبار الثقيل والخشن بقوة الطرد المركزي قبل وصوله إلى الفلتر الرئيس، دون أجزاء متحركة وبصيانة قليلة. أما فلتر تهوية الصوامع فيُركَّب على الصوامع والخزانات ليلتقط الغبار المزاح أثناء التعبئة الهوائية.",
+      "وفي المناطق المكشوفة، كالتكسير والأكوام وطرق النقل، يطلق مدفع الرذاذ قطرات ماء دقيقة لمسافة بعيدة لإسقاط الغبار العالق.",
+      "ويمضي العمل من القياس إلى التحكم: تقييم الموقع ومصادر غباره، ثم تصميم النظام واختياره، وتوريده وتركيبه وتشغيله وصيانته، ثم التحقق من النتيجة باختبار انبعاثات المداخن والرصد المستمر."
+    ],
+    "includes": [
+      "مسح الموقع وتحديد مصادر الغبار ومراجعة المعدات القائمة",
+      "اختيار النظام وهندسته مع الشركة المصنّعة",
+      "التوريد بما يشمل فحوص الجودة في المصنع والشحن والتخليص الجمركي",
+      "الأعمال الميكانيكية والكهربائية ومجاري الهواء والتشغيل",
+      "مواد الترشيح وقطع الغيار وعقود الخدمة",
+      "اختبار انبعاثات المداخن ورصد الغبار للتحقق من الأداء"
+    ],
+    "types": [
+      {
+        "title": "الفلتر الكيسي بالنبض النفاث",
+        "description": "جامع غبار بفلاتر قماشية وتنظيف آلي بالنبض، وتتوفر الأكياس وصمامات النبض والأقفاص قطع غيار.",
+        "sectors": "الأسمنت ومواد البناء، الحديد والمسابك، التعدين والتكسير، الأغذية والحبوب، الكيماويات والأسمدة، الأخشاب والأثاث"
+      },
+      {
+        "title": "الفاصل الإعصاري",
+        "description": "فصل مسبق للغبار الثقيل والخشن بالطرد المركزي دون أجزاء متحركة.",
+        "sectors": "النجارة، التعدين والمحاجر، الأسمنت والجير، مناولة المواد السائبة"
+      },
+      {
+        "title": "فلتر تهوية الصوامع",
+        "description": "فلتر مدمج على الصوامع والخزانات للغبار المزاح أثناء التعبئة الهوائية والتهوية.",
+        "sectors": "محطات الخرسانة، الأسمنت والجير، الحبوب والدقيق، البلاستيك والكيماويات"
+      },
+      {
+        "title": "مدفع الرذاذ",
+        "description": "رذاذ ماء بعيد المدى لإخماد الغبار في المناطق المكشوفة.",
+        "sectors": "التعدين والمحاجر، الأسمنت ومواد البناء، مناولة المواد السائبة"
+      }
+    ],
+    "useCases": [
+      "مصانع الأسمنت والكسارات ومصانع مواد البناء",
+      "مصانع الحديد والمسابك",
+      "محطات الخرسانة ذات صوامع الأسمنت",
+      "مناولة الحبوب والدقيق والأعلاف",
+      "الأكوام المكشوفة وطرق النقل ومناطق التحميل",
+      "المنشآت التي يتجاوز غبار مداخنها حدود التصريح"
+    ],
+    "regulatory": [
+      "تحدد اللائحة التنفيذية لجودة الهواء مقاييس انبعاثات المصادر الثابتة، ومنها الجسيمات، والإجراءات التي تلتزم بها المنشأة عند الاقتراب منها.",
+      "تحدد التصاريح البيئية حدود انبعاث الغبار وإجراءات التحكم والاختبارات لكل مدخنة وللمصادر المكشوفة.",
+      "تتضمن خطط الإدارة البيئية للإنشاء والتشغيل إجراءات ضبط الغبار مثل الإخماد بالماء."
+    ],
+    "faqs": [
+      {
+        "q": "كيف يعمل الفلتر الكيسي بالنبض النفاث؟",
+        "a": "يمر الهواء المحمل بالغبار عبر أكياس قماشية تحتجز الجسيمات، وعلى فترات محددة تهز نبضة قصيرة من الهواء المضغوط كل كيس فيسقط الغبار المتجمع في القادوس، فيستمر الفلتر في العمل دون توقف."
+      },
+      {
+        "q": "متى يكفي الفاصل الإعصاري وحده؟",
+        "a": "يزيل الفاصل الإعصاري الغبار الثقيل والخشن بكفاءة لكنه يمرر الجسيمات الدقيقة، فيُستخدم وحده للغبار الخشن مثل نشارة الخشب، وقبل الفلتر الكيسي حين يلزم ضبط الغبار الدقيق أيضًا."
+      },
+      {
+        "q": "ما مادة الترشيح المناسبة؟",
+        "a": "تعتمد على حرارة الغاز ورطوبته وتركيبه الكيميائي. البوليستر يناسب الحرارة المنخفضة، وPTFE والألياف الزجاجية بغشاء ePTFE تناسب الحرارة الأعلى والغازات الأكالة، ونختارها من بيانات عملياتك."
+      },
+      {
+        "q": "كيف نثبت أن النظام يحقق الحد المطلوب؟",
+        "a": "باختبار انبعاثات المدخنة بعد التشغيل، وبالرصد المستمر للغبار حيث يشترطه التصريح."
+      }
+    ]
+  }
+}

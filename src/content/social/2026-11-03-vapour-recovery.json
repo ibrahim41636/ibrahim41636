@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-03",
+  "slot": 2,
+  "pillar": "استرجاع أبخرة الوقود",
+  "stage": "consideration",
+  "sources": [
+    "https://pei.org/wiki_pei/stage-i-vapor-recovery/",
+    "https://pei.org/wiki_pei/stage-ii-vapor-recovery/",
+    "https://selorin.co/equipment/vapour-recovery-unit/"
+  ],
+  "ar": {
+    "title": "كل لتر يدخل الخزان يطرد لترًا من الأبخرة",
+    "text": "كل لتر وقود يدخل خزانًا يطرد حجمًا مساويًا من الهواء المشبع بأبخرة الوقود.\n\nهذا ما يحدث في محطة الوقود مرتين:\n• عند تفريغ الناقلة في الخزان الأرضي، فتخرج الأبخرة من أنبوب التهوية. استرجاعها يسمى المرحلة الأولى (Stage I).\n• عند تعبئة السيارة، فتخرج الأبخرة من فتحة خزانها عند المسدس. استرجاعها يسمى المرحلة الثانية (Stage II).\n\nهذه الأبخرة هيدروكربونات متطايرة، منها مركّب البنزين العطري، وهي في الوقت نفسه وقود مفقود.\n\nوحدة استرجاع الأبخرة (VRU) تعالج ما يُجمع منها: تمر الأبخرة على طبقات من الكربون المنشط تمتز الهيدروكربونات وتخرج هواءً نظيفًا، ثم تجدد مضخة تفريغ الطبقة، وتعود الأبخرة المسترجعة إلى الخزان وقودًا سائلًا.\n\nوالطريقة العملية لإثبات أثرها: قياس المركبات العضوية المتطايرة حول أنابيب التهوية والمضخات قبل التركيب وبعده.\n\nالتفاصيل في الرابط.\n\n#محطات_الوقود #جودة_الهواء #المركبات_العضوية_المتطايرة #السعودية",
+    "x": "كل لتر وقود يدخل الخزان يطرد لترًا من الهواء المشبع بالأبخرة. وحدة استرجاع الأبخرة تمتزها بالكربون المنشط وتعيدها وقودًا سائلًا. #محطات_الوقود",
+    "link": "/ar/equipment/vapour-recovery-unit/",
+    "image": {
+      "template": "tip",
+      "title": "كل لتر يدخل الخزان يطرد لترًا من الأبخرة",
+      "text": "المرحلة الأولى تسترجع الأبخرة عند تفريغ الناقلة، والثانية عند تعبئة السيارة، ووحدة الاسترجاع تمتزها بالكربون المنشط وتعيدها وقودًا سائلًا."
+    }
+  },
+  "en": {
+    "title": "Every litre into a tank pushes a litre of vapour out",
+    "text": "Every litre of fuel that enters a tank pushes out an equal volume of air saturated with fuel vapour.\n\nAt a fuel station this happens twice:\n• When a tanker fills the underground tank, vapour leaves through the vent pipe. Capturing it is called Stage I vapour recovery.\n• When a car is refuelled, vapour leaves the car's tank at the nozzle. Capturing it is called Stage II.\n\nThese vapours are volatile hydrocarbons, including benzene, and they are also lost fuel.\n\nA vapour recovery unit (VRU) treats what is collected: vapour passes through beds of activated carbon that adsorb the hydrocarbons and release clean air; a vacuum pump then regenerates the bed, and the recovered vapour returns to the tank as liquid fuel.\n\nThe practical way to show its effect: measure VOCs around vents and dispensers before and after installation.\n\nDetails at the link.\n\n#FuelStations #AirQuality #VOC #SaudiArabia",
+    "x": "Every litre of fuel into a tank pushes out a litre of vapour-laden air. A vapour recovery unit adsorbs it on activated carbon and returns it as liquid fuel.",
+    "link": "/equipment/vapour-recovery-unit/",
+    "image": {
+      "template": "tip",
+      "title": "Every litre in pushes a litre of vapour out",
+      "text": "Stage I recovers vapour at tanker delivery, Stage II at the nozzle, and a recovery unit adsorbs it on activated carbon and returns it as liquid fuel."
+    }
+  }
+}

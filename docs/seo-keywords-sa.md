@@ -60,7 +60,7 @@ Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI
 |---|---|---|---|
 | تأجير جهاز رصد الغبار / محطة رصد الغبار / جهاز قياس الغبار | dust monitor rental, dust monitoring station | `/ar/equipment/dust-monitoring-station/` | low volume, high intent; the service page `/services/dust-monitoring/` keeps «رصد الغبار» |
 | محطة رصد جودة الهواء / جهاز قياس جودة الهواء (140/month, rising to 320 in Sep 2026) | air quality monitoring station (50/month) | `/ar/equipment/air-quality-monitoring-station/` | «جهاز قياس جودة الهواء» mixes home buyers; Ads use negatives |
-| نظام الرصد المستمر للانبعاثات | continuous emission monitoring system (70/month), CEMS analyzer (30) | `/ar/equipment/cems/` | |
+| نظام الرصد المستمر للانبعاثات | continuous emission monitoring system (70/month) | `/ar/equipment/continuous-emissions-monitoring/` | never use the acronym or bid on it (it is the brand of the exclusive agent in KSA) |
 | رصد المركبات العضوية المتطايرة / أخذ عينات VOC | VOC monitoring, TO-15 | `/ar/equipment/voc-sampling-analysis/` | the service page keeps fuel-station VOC monitoring |
 | وحدة استرجاع الأبخرة / استرجاع أبخرة الوقود | vapour recovery unit (20/month) | `/ar/equipment/vapour-recovery-unit/` | |
 | معدات أخذ عينات التربة وغازاتها | soil gas sampling equipment | `/ar/equipment/soil-sampling-equipment/` | |

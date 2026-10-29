@@ -287,12 +287,27 @@ function insertStmt(db: D1Database, d: PostDraft) {
 export interface Feed { articles: FeedArticle[]; campaign?: CampaignPost[] }
 
 /**
+ * Cancel queued campaign posts whose file is no longer in src/content/social (withdrawn or renamed),
+ * so a removed post never goes out with its old text. An empty calendar (a feed that failed to load)
+ * cancels nothing.
+ */
+async function cancelWithdrawn(db: D1Database, campaign: CampaignPost[]) {
+  if (!campaign.length) return 0;
+  const ids = new Set(campaign.map((c) => c.id));
+  const rows = await db.prepare(`SELECT id, source_key FROM social_posts WHERE status = 'scheduled' AND variant = 'campaign'`).all<{ id: number; source_key: string | null }>();
+  const stale = (rows.results ?? []).filter((r) => r.source_key?.startsWith("campaign/") && !ids.has(r.source_key.slice("campaign/".length).split(":")[0]));
+  if (stale.length) await db.batch(stale.map((r) => db.prepare(`UPDATE social_posts SET status = 'cancelled' WHERE id = ?1 AND status = 'scheduled'`).bind(r.id)));
+  return stale.length;
+}
+
+/**
  * Queue the post series for recent articles, one older article per week (evergreen rotation) and
  * the campaign posts whose day is coming up.
  */
 export async function queueFeed(env: SocialEnv, { articles, campaign = [] }: Feed, now: Date) {
   const channels = configuredChannels(env as unknown as Record<string, unknown>);
   if (!env.DB || !channels.length || env.SOCIAL_AUTOPOST === "false") return { queued: 0, newArticles: [] as string[] };
+  await cancelWithdrawn(env.DB, campaign);
   const backfill = Number(env.SOCIAL_BACKFILL_DAYS) || 21;
   const cutoff = now.getTime() - backfill * 86_400_000;
   const recent = articles.filter((a) => new Date(a.date).getTime() >= cutoff && new Date(a.date).getTime() <= now.getTime());

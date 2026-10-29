@@ -9,6 +9,8 @@ import { join } from "node:path";
 const DIR = "src/content/social";
 const files = process.argv.slice(2).length ? process.argv.slice(2) : (existsSync(DIR) ? readdirSync(DIR).filter((f) => f.endsWith(".json")).map((f) => join(DIR, f)) : []);
 const services = new Set(readdirSync("src/content/services").map((f) => f.replace(/\.json$/, "")));
+// Equipment brands of the agencies and the acronym of the exclusive agent in KSA: never in Selorin content.
+const AGENT_BRANDS = /\bCEMS\b|cemsplus|\b(DXG|Sabio|Nutech|CADABCO|ZWIN|Microvac)\b/i;
 const BANNED = /\b(leading|world-class|best-in-class|number one|unmatched|cutting-edge|one-stop|passionate)\b|الأفضل|الرائدة|الرائد|الأول من نوعه|لا مثيل|!/i;
 
 // [field, max length] per image template; arrays are checked item by item.
@@ -51,6 +53,7 @@ for (const f of files) {
       if (!v.text || v.text.length < 20) errs.push(`${lang}.text too short`);
       if ((v.text ?? "").length > 2900) errs.push(`${lang}.text over 2900 characters`);
       if (BANNED.test(v.text ?? "") || BANNED.test(v.x ?? "") || BANNED.test(JSON.stringify(v.image ?? {}))) errs.push(`${lang}: banned hype wording or exclamation mark`);
+      if (AGENT_BRANDS.test(JSON.stringify(v))) errs.push(`${lang}: names an equipment manufacturer or agent (or the acronym CEMS); write the device type in full`);
       if (v.x && xLength(v.x) > 255) errs.push(`${lang}.x is ${xLength(v.x)} characters (max 255 before the link)`);
       if (v.link && (!/^\/[^\s]*$/.test(v.link) || !pageExists(v.link))) errs.push(`${lang}.link "${v.link}" is not an existing site path`);
       if (v.link && lang === "ar" && !v.link.startsWith("/ar/")) errs.push("ar.link should point to the Arabic page (/ar/…)");

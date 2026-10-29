@@ -86,7 +86,7 @@ Accuracy depends on calibrated flow meters and weighbridges, fuel and material s
 
 ### Measurement-based monitoring
 
-Where emissions leave through a defined point such as a stack, continuous emissions monitoring systems (CEMS) measure gas concentration and flue gas flow directly. This matters most for some non-CO2 gases, such as nitrous oxide (N2O) from nitric acid production at fertiliser plants.
+Where emissions leave through a defined point such as a stack, continuous emissions monitoring systems measure gas concentration and flue gas flow directly. This matters most for some non-CO2 gases, such as nitrous oxide (N2O) from nitric acid production at fertiliser plants.
 
 ### Where the emissions come from in each sector
 

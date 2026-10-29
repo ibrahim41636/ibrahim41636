@@ -15,6 +15,7 @@ Rules for every piece of content:
 - No statistic, date, regulation, authority name or deadline unless an official or reputable source states it; cite the link.
 - No claims of accreditation, licences, clients, projects, years of experience, team size, prices or guaranteed timelines.
 - No hype words (leading, best, number one, world-class / الرائدة، الأفضل) and no exclamation marks or emojis in official copy.
+- No manufacturer or agent brand names for equipment, and never the acronym "CEMS" (it is the name of an exclusive agent in Saudi Arabia); write "continuous emissions monitoring" / «الرصد المستمر للانبعاثات» in full, and never bid on it in ads.
 - Every post links to one service page or article; every article links to the related service pages.
 
 SEO and GEO. One primary keyword per page. Titles and first lines carry the keyword in Arabic and English and answer the search question directly in two sentences, so Google and answer engines (ChatGPT, Perplexity, Google AI answers) can quote Selorin. Use question-form headings, an FAQ section and clear definitions.

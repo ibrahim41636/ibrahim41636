@@ -32,7 +32,7 @@ const faqs = [
 ---
 <Base lang={lang} path="/equipment/" breadcrumbs={crumbs}
   title={L("Environmental Monitoring Equipment Rental in Saudi Arabia | Selorin", "تأجير أجهزة الرصد البيئي في السعودية | سيلورين")}
-  description={L("Rent or supply dust, noise, air quality, CEMS and VOC monitoring equipment in Saudi Arabia, with installation, live data, support and weekly and monthly reports.", "تأجير وتوريد أجهزة رصد الغبار والضوضاء وجودة الهواء والانبعاثات والمركبات العضوية المتطايرة في السعودية، مع التركيب والبيانات المباشرة والدعم والتقارير الأسبوعية والشهرية.")}
+  description={L("Rent or supply dust, noise, air quality, stack emissions and VOC monitoring equipment in Saudi Arabia, with installation, live data, support and weekly and monthly reports.", "تأجير وتوريد أجهزة رصد الغبار والضوضاء وجودة الهواء والانبعاثات والمركبات العضوية المتطايرة في السعودية، مع التركيب والبيانات المباشرة والدعم والتقارير الأسبوعية والشهرية.")}
   schema={[collectionSchema(lang, "/equipment/", t(lang, "nav.equipment"), items.map((e) => ({ name: e.data[lang].name, path: `/equipment/${e.id}/` }))), faqSchema(faqs)]}
   analytics={{ page_type: "equipment_hub" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("equipment")} eyebrow={t(lang, "nav.equipment")}

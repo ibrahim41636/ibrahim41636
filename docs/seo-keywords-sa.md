@@ -101,7 +101,7 @@ Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI
 4. ~~اشتراطات تركيب شواحن السيارات الكهربائية في الكمباوندات والمباني~~ ✅ 2026-10-18
 5. ~~تقارير الرصد الذاتي: ما المطلوب من المنشأة ومتى؟~~ ✅ 2026-10-25
 6. ~~كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات~~ (covered by existing `preparing-for-an-environmental-inspection`)
-7. إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية
+7. ~~إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية~~ ✅ 2026-11-01
 8. ~~رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير~~ (covered by existing `dust-monitoring-pm10-pm25-construction`)
 9. خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف (target `/ar/services/net-zero-advisory/`; week of COP31)
 10. خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب (target `/ar/services/environmental-management-plans/`)
@@ -144,3 +144,11 @@ month's focus, re-order this list to match it.
   «جهاز قياس جودة الهواء» is growing. Each equipment page targets the device query; the service pages keep the
   service queries, so the two do not compete. Every equipment page carries Service/Offer structured data
   (lease or sale, no price) and FAQ data, and is listed in `llms.txt` in both languages.
+- 2026-11-01 (weekly run, per the November brief): published backlog item 7 as
+  `insights/{ar,en}/factory-waste-management-mwan-saudi-arabia` targeting «إدارة نفايات المصانع» / "factory waste
+  management Saudi Arabia", with MWAN as the secondary term. `/ar/services/waste-management/` keeps «تراخيص موان»
+  as its commercial target, and the article links to it, so the two don't compete; it complements (not repeats)
+  `facility-waste-management-plan-guide` by covering the regulator, producer duties, provider licence checks and
+  records. Links to waste management, circular economy, environmental records, audits, the NCEC guide, the
+  facility plan guide and the waste request form. Regulatory references kept general (Waste Management Law and
+  Implementing Regulations, MWAN licensing); no thresholds, timelines or fees, no accreditation claims.

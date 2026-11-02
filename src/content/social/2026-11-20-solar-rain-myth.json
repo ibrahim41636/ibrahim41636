@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-20",
+  "slot": 0,
+  "pillar": "الطاقة الشمسية للمنازل",
+  "stage": "awareness",
+  "sources": [
+    "https://www.pv-magazine-india.com/?p=4915",
+    "https://sabq.org/article/m_pdebu",
+    "https://selorin.co/ar/services/renewable-operations-maintenance/"
+  ],
+  "ar": {
+    "title": "هل يكفي المطر لتنظيف الألواح الشمسية؟",
+    "text": "هل يكفي المطر لتنظيف الألواح الشمسية؟\n\nمع توقعات المركز الوطني للأرصاد بأمطار أعلى من المعدل هذا الشهر، يظن كثيرون أن المطر سيتكفل بالتنظيف. الواقع أن المطر الغزير قد يغسل جزءًا من الغبار، أما الرذاذ الخفيف فوق طبقة غبار سميكة فقد يتركها طينًا يجف ويلتصق بالزجاج.\n\nولماذا يهم ذلك؟ لأن الغبار يحجب جزءًا من ضوء الشمس عن الخلايا. وفي حقل الاختبار في جامعة الملك عبدالله للعلوم والتقنية (كاوست) في ثول، أدى ترك الألواح دون تنظيف إلى خسائر في الإنتاج وصلت سريعًا إلى 6%.\n\nثلاث نصائح بعد المطر:\n• افحص الألواح بحثًا عن بقع الطين وخطوط الغبار عند الحواف.\n• نظّف بالماء وفرشاة ناعمة في الصباح الباكر أو المساء، لا وقت الحرارة.\n• تجنب المنظفات الكاشطة والضغط العالي، وقارن الإنتاج في تطبيق العاكس قبل التنظيف وبعده.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #السعودية",
+    "x": "المطر الخفيف قد يحوّل الغبار على الألواح الشمسية إلى طين. في حقل اختبار كاوست وصلت خسائر الألواح غير المنظفة سريعًا إلى 6%. افحص ألواحك بعد المطر. #الطاقة_الشمسية",
+    "link": "/ar/services/renewable-operations-maintenance/",
+    "image": {
+      "template": "myth",
+      "myth": "المطر ينظف الألواح الشمسية",
+      "fact": "الرذاذ الخفيف قد يحوّل الغبار إلى طين لاصق، وفي حقل اختبار كاوست بلغت خسائر الألواح غير المنظفة 6%."
+    }
+  },
+  "en": {
+    "title": "Does rain clean your solar panels?",
+    "text": "Does rain clean your solar panels?\n\nWith Saudi Arabia's National Center for Meteorology expecting above-average rain this month, many assume the rain will do the cleaning. In practice, heavy rain can wash off part of the dust, but light drizzle on a thick dust layer can leave mud that dries and sticks to the glass.\n\nWhy does it matter? Dust blocks part of the sunlight from reaching the cells. At the KAUST test field in Thuwal, leaving panels uncleaned quickly led to output losses as high as 6%.\n\nThree tips after rain:\n• Check the panels for mud spots and dust lines along the edges.\n• Clean with water and a soft brush early in the morning or in the evening, not in the heat of the day.\n• Avoid abrasive cleaners and high pressure, and compare output in your inverter app before and after cleaning.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
+    "x": "Light rain can turn the dust on solar panels into mud. At the KAUST test field, uncleaned panels quickly lost up to 6% of output. Check your panels after rain.",
+    "link": "/services/renewable-operations-maintenance/",
+    "image": {
+      "template": "myth",
+      "myth": "Rain cleans your solar panels",
+      "fact": "Light drizzle can turn dust into sticky mud, and at the KAUST test field uncleaned panels lost up to 6% of output."
+    }
+  }
+}

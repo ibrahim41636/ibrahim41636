@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-12",
+  "slot": 0,
+  "pillar": "إدارة النفايات",
+  "stage": "consideration",
+  "sources": [
+    "https://www.aleqt.com/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-20-%D8%A3%D9%84%D9%81-%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD-%D8%A8%D9%8A%D8%A6%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D8%A7%D9%85-%D8%A8%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-32-6843",
+    "https://www.alwatan.com.sa/article/1180159",
+    "https://selorin.co/ar/insights/factory-waste-management-mwan-saudi-arabia/"
+  ],
+  "ar": {
+    "title": "58 ألف جولة رقابية بيئية في 2025: هل ملف نفايات مصنعك جاهز؟",
+    "text": "أكثر من 58 ألف جولة رقابية نفذها المركز الوطني للرقابة على الالتزام البيئي في 2025، استهدف 51% منها القطاعات الأعلى أثرًا: التصنيع والتعدين والطاقة. وفي العام نفسه أصدر المركز 20,152 تصريحًا بيئيًا، بارتفاع 32% عن العام السابق.\n\nماذا يعني ذلك للمصنع؟ أن زيارة التفتيش أقرب، وأن ملف النفايات من أول ما يُراجع:\n• التصنيف: ما الخطر من نفاياتك وما غير الخطر، ومن أي عملية يأتي كل نوع.\n• التخزين: مناطق مخصصة ومحمية ومعلَّمة، لا يُخلط فيها الخطر بغيره.\n• الناقل وجهة المعالجة: ترخيص ساري لدى المركز الوطني لإدارة النفايات (موان) يغطي النوع المحدد.\n• الوثائق: سجل للكميات ووثيقة تسليم لكل شحنة.\n\nدليلنا لإدارة نفايات المصانع وتراخيص موان في الرابط.\n\n#إدارة_النفايات #الالتزام_البيئي #المصانع #السعودية",
+    "x": "أكثر من 58 ألف جولة رقابية نفذها المركز الوطني للرقابة على الالتزام البيئي في 2025، 51% منها في التصنيع والتعدين والطاقة. هل ملف نفايات مصنعك جاهز؟ #إدارة_النفايات",
+    "link": "/ar/insights/factory-waste-management-mwan-saudi-arabia/",
+    "image": {
+      "template": "stat",
+      "value": "+58,000",
+      "label": "جولة رقابية بيئية نفذها المركز الوطني للرقابة على الالتزام البيئي في 2025",
+      "context": "51% منها في التصنيع والتعدين والطاقة",
+      "source": "التقرير السنوي للمركز 2025، عبر الاقتصادية"
+    }
+  },
+  "en": {
+    "title": "58,000 environmental inspection rounds in 2025: is your factory's waste file ready?",
+    "text": "More than 58,000 inspection rounds were carried out by Saudi Arabia's National Center for Environmental Compliance (NCEC) in 2025, and 51% of them targeted the highest-impact sectors: manufacturing, mining and energy. In the same year the Center issued 20,152 environmental permits, up 32% on the year before.\n\nWhat does that mean for a factory? An inspection is closer, and the waste file is among the first things checked:\n• Classification: which of your wastes are hazardous and which are not, and which process each one comes from.\n• Storage: designated, protected and labelled areas, with hazardous waste kept apart.\n• Carrier and treatment facility: a valid licence from the National Center for Waste Management (MWAN) covering the specific waste type.\n• Records: quantities logged and a handover document for every shipment.\n\nOur guide to factory waste management and MWAN licences is at the link.\n\n#WasteManagement #EnvironmentalCompliance #Manufacturing #SaudiArabia",
+    "x": "More than 58,000 environmental inspection rounds by Saudi Arabia's NCEC in 2025, 51% of them in manufacturing, mining and energy. Is your factory's waste file ready?",
+    "link": "/insights/factory-waste-management-mwan-saudi-arabia/",
+    "image": {
+      "template": "stat",
+      "value": "58,000+",
+      "label": "environmental inspection rounds by Saudi Arabia's NCEC in 2025",
+      "context": "51% in manufacturing, mining and energy",
+      "source": "NCEC 2025 annual report, via Al Eqtisadiah"
+    }
+  }
+}

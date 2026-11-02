@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-07",
+  "slot": 0,
+  "pillar": "أسبوع البيئة في السعودية",
+  "stage": "awareness",
+  "sources": [
+    "https://www.unccd.int/index.php/events/other/2026-un-climate-change-conference-cop31",
+    "https://sabq.org/article/m_pdebu",
+    "https://cityscapeglobal.com/welcome-to-cityscape-global-2026",
+    "https://ghgprotocol.org/corporate-standard"
+  ],
+  "ar": {
+    "title": "أسبوع البيئة في السعودية: COP31 ومطر نوفمبر",
+    "text": "أسبوع البيئة في السعودية | COP31 يبدأ الاثنين، ومطر نوفمبر على الأبواب\n\nثلاثة أمور تهم المنشآت هذا الأسبوع:\n\n• مؤتمر الأمم المتحدة للمناخ COP31 يبدأ الاثنين 9 نوفمبر في أنطاليا بتركيا ويستمر حتى 20 نوفمبر. سيعود معه الحديث عن الأهداف المناخية، والخطوة الأولى الجادة لأي منشأة هي جرد انبعاثات موثوق وفق بروتوكول غازات الدفيئة، قبل أي إعلان عن هدف.\n• يتوقع المركز الوطني للأرصاد أمطارًا أعلى من المعدل في معظم مناطق المملكة خلال نوفمبر. والمطر يحمل ما على أرض الموقع إلى مجاري السيول، فراجع قبل أول عاصفة حواجز خزانات الوقود والمواد الكيميائية، وتصريف مياه الأمطار وحماية فتحات التصريف في مواقع الإنشاء.\n• معرض سيتي سكيب العالمي في الرياض من 16 إلى 19 نوفمبر: فرصة لطرح سؤال أداء الطاقة والمياه في أي مبنى قبل شرائه أو تطويره.\n\nنتابع كل أسبوع أبرز ما يخص البيئة والاستدامة في المملكة وما يعنيه لمنشأتك.\n\n#أسبوع_البيئة #COP31 #الاستدامة #السعودية #سيلورين",
+    "x": "أسبوع البيئة في السعودية: COP31 يبدأ في أنطاليا الاثنين 9 نوفمبر، والأرصاد تتوقع أمطارًا أعلى من المعدل في معظم المناطق. ابدأ بجرد انبعاثاتك، وراجع تصريف الأمطار في موقعك. #الاستدامة #COP31",
+    "link": "/ar/updates/",
+    "image": {
+      "template": "event",
+      "date": "9–20 نوفمبر",
+      "title": "أسبوع البيئة: COP31 ومطر نوفمبر",
+      "text": "COP31 يبدأ في أنطاليا 9 نوفمبر، والأرصاد تتوقع أمطارًا أعلى من المعدل في معظم المناطق. جهّز جرد انبعاثاتك، وراجع تصريف مياه الأمطار في موقعك."
+    }
+  },
+  "en": {
+    "title": "This week in Saudi sustainability: COP31 and November rain",
+    "text": "This week in Saudi sustainability | COP31 opens Monday, and November rain is on the way\n\nThree things that matter to facilities this week:\n\n• The UN climate conference COP31 opens on Monday 9 November in Antalya, Türkiye, and runs to 20 November. Climate targets will be back on board agendas, and the first serious step for any facility is a reliable emissions inventory under the GHG Protocol, before any target is announced.\n• Saudi Arabia's National Center for Meteorology expects above-average rain in most regions in November. Rain carries whatever is on the ground into storm drains, so before the first storm check the bunds around fuel and chemical storage, and stormwater drainage and drain inlet protection on construction sites.\n• Cityscape Global runs in Riyadh from 16 to 19 November: a good moment to ask about the energy and water performance of any building before you buy or develop it.\n\nEvery week we follow the environment and sustainability news in Saudi Arabia and what it means for your facility.\n\n#Sustainability #COP31 #SaudiArabia",
+    "x": "This week in Saudi sustainability: COP31 opens in Antalya on 9 November, and the National Center for Meteorology expects above-average rain in most regions. Start with your emissions inventory and check site drainage.",
+    "link": "/updates/",
+    "image": {
+      "template": "event",
+      "date": "9–20 November",
+      "title": "This week: COP31 and November rain",
+      "text": "COP31 opens in Antalya on 9 November, and above-average rain is expected in most regions. Prepare your emissions inventory and check stormwater drainage on site."
+    }
+  }
+}

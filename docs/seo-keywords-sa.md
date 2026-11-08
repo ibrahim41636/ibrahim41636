@@ -103,7 +103,7 @@ Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI
 6. ~~كيف تستعد المنشأة للتفتيش البيئي وتتجنب المخالفات~~ (covered by existing `preparing-for-an-environmental-inspection`)
 7. ~~إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية~~ ✅ 2026-11-01
 8. ~~رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير~~ (covered by existing `dust-monitoring-pm10-pm25-construction`)
-9. خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف (target `/ar/services/net-zero-advisory/`; week of COP31)
+9. ~~خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف~~ ✅ 2026-11-08
 10. خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب (target `/ar/services/environmental-management-plans/`)
 11. قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير (target `/ar/services/noise-monitoring/`)
 
@@ -152,3 +152,10 @@ month's focus, re-order this list to match it.
   records. Links to waste management, circular economy, environmental records, audits, the NCEC guide, the
   facility plan guide and the waste request form. Regulatory references kept general (Waste Management Law and
   Implementing Regulations, MWAN licensing); no thresholds, timelines or fees, no accreditation claims.
+- 2026-11-08 (weekly run, COP31 week per the November brief): published backlog item 9 as
+  `insights/{ar,en}/net-zero-roadmap-saudi-companies` targeting «خطة الحياد الصفري للشركات» / "net zero roadmap
+  Saudi Arabia". It supports `/ar/services/net-zero-advisory/` (whose title keeps «استشارات الحياد الصفري وإزالة
+  الكربون») and hands the inventory step to `ghg-inventory-scope-1-2-3` rather than repeating it. Links to net zero,
+  GHG accounting, ESG and feasibility services, the GHG inventory, CBAM and factory solar guides, and the net zero
+  request form. The only figure used is the national 2060 net-zero target under the Saudi Green Initiative, already
+  stated elsewhere on the site; no other targets, percentages or claims. AR title 68 chars, descriptions 135/154.

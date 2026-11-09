@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-27",
+  "slot": 0,
+  "pillar": "الطاقة الشمسية للمنازل",
+  "stage": "awareness",
+  "sources": [
+    "https://www.sciencedirect.com/science/article/pii/S1364032125003004",
+    "https://www.mdpi.com/1996-1073/18/14/3609",
+    "https://selorin.co/ar/insights/home-solar-cost-saudi-arabia/"
+  ],
+  "ar": {
+    "title": "هل تنتج الألواح الشمسية أكثر في الحر؟",
+    "text": "هل تنتج الألواح الشمسية أكثر في الحر؟\n\nالكهرباء الشمسية تأتي من ضوء الشمس لا من حرارتها. بل إن الحرارة تخفض كفاءة الخلايا: كلما ارتفعت حرارة الخلية فوق 25 درجة مئوية، وهي حرارة الاختبار القياسية، انخفضت قدرة اللوح.\n\nكم يبلغ الانخفاض؟ معامل الحرارة للقدرة القصوى في ألواح السيليكون البلوري الحديثة يتراوح عادةً بين 0.25% و0.40% لكل درجة مئوية، وفق مراجعة علمية منشورة في 2025. فلوح معامله 0.35% وخلاياه عند 55 درجة يفقد نحو 10% من قدرته المقننة.\n\nثلاث نصائح:\n• ابحث في ورقة بيانات اللوح عن «معامل الحرارة للقدرة القصوى (Pmax)»، وكلما صغر الرقم كان أداء اللوح أفضل في الحر.\n• اترك فراغًا لتهوية الألواح من الخلف عند تركيبها على السطح.\n• قارن إنتاج نظامك بين الصيف والشتاء في تطبيق العاكس، فالأيام الأبرد الصافية ترفع كفاءة الخلايا.\n\n#الطاقة_الشمسية #الطاقة_المتجددة #السعودية",
+    "x": "الألواح الشمسية تعمل بالضوء لا بالحرارة. ألواح السيليكون البلوري تفقد عادةً 0.25%–0.40% من قدرتها لكل درجة فوق 25 درجة مئوية. ابحث عن معامل الحرارة في ورقة بيانات لوحك. #الطاقة_الشمسية",
+    "link": "/ar/insights/home-solar-cost-saudi-arabia/",
+    "image": {
+      "template": "myth",
+      "myth": "الألواح الشمسية تنتج أكثر في الحر",
+      "fact": "الحرارة تخفض الكفاءة: ألواح السيليكون البلوري تفقد عادةً 0.25%–0.40% من قدرتها لكل درجة مئوية فوق 25 درجة."
+    }
+  },
+  "en": {
+    "title": "Do solar panels produce more in the heat?",
+    "text": "Do solar panels produce more in the heat?\n\nSolar electricity comes from sunlight, not heat. In fact, heat lowers cell efficiency: the further a cell's temperature rises above 25°C, the standard test temperature, the less power the panel delivers.\n\nBy how much? The maximum power temperature coefficient of today's crystalline silicon panels typically lies between 0.25% and 0.40% per °C, according to a scientific review published in 2025. So a panel with a 0.35% coefficient and cells at 55°C loses about 10% of its rated power.\n\nThree tips:\n• Look for the \"temperature coefficient of Pmax\" on your panel's datasheet: the smaller the number, the better the panel performs in the heat.\n• Leave a ventilation gap behind the panels when mounting them on a roof.\n• Compare your system's output between summer and winter in your inverter app: cooler clear days raise cell efficiency.\n\n#SolarEnergy #RenewableEnergy #SaudiArabia",
+    "x": "Solar panels run on light, not heat. Crystalline silicon panels typically lose 0.25%–0.40% of their power for every °C above 25°C. Check the temperature coefficient on your panel's datasheet. #SolarEnergy",
+    "link": "/insights/home-solar-cost-saudi-arabia/",
+    "image": {
+      "template": "myth",
+      "myth": "Solar panels produce more in the heat",
+      "fact": "Heat lowers efficiency: crystalline silicon panels typically lose 0.25%–0.40% of their power for every °C above 25°C."
+    }
+  }
+}

@@ -132,4 +132,4 @@ Response requirements and timelines depend on the notice and the authority, so a
 
 ## How Selorin can help
 
-Selorin's environmental compliance service helps facilities build compliance registers, review records and prepare for regulatory visits, supported by our environmental records and environmental audits work. A pre-inspection audit is often a practical first step to identify gaps while there is still time to close them.
+Selorin's [environmental compliance](/services/environmental-compliance/) service helps facilities build compliance registers, review records and prepare for regulatory visits, supported by our environmental records and environmental audits work. A pre-inspection audit is often a practical first step to identify gaps while there is still time to close them. If the review finds an expired environmental permit or conditions that no longer match the facility, our [environmental permitting](/services/environmental-permitting/) service handles the renewal or amendment.

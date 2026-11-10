@@ -110,4 +110,4 @@ Build in allowance for regulator questions and for additional surveys if the rev
 
 ## How Selorin can help
 
-Selorin's environmental impact assessment service covers screening, scoping, baseline surveys, impact assessment and preparation of the environmental management plan, and links directly to our environmental management plans and environmental permitting work. Early involvement during concept design gives the assessment the best chance to shape the project rather than react to it.
+Selorin's environmental impact assessment service covers screening, scoping, baseline surveys, impact assessment and preparation of the environmental management plan, and links directly to our [environmental management plans](/services/environmental-management-plans/) and [environmental permitting](/services/environmental-permitting/) work. Early involvement during concept design gives the assessment the best chance to shape the project rather than react to it.

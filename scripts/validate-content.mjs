@@ -8,7 +8,7 @@ const INDUSTRIES = "industrial-manufacturing construction real-estate infrastruc
 const titled = z.object({ title: z.string().min(2), description: z.string().min(10) }).strict();
 const faq = z.object({ q: z.string().min(5), a: z.string().min(30) }).strict();
 const svcLoc = z.object({
-  name: z.string(), seoTitle: z.string().max(70), metaDescription: z.string().min(80).max(170), valueProp: z.string(),
+  name: z.string(), h1: z.string().optional(), seoTitle: z.string().max(70), metaDescription: z.string().min(80).max(170), valueProp: z.string(),
   cardDescription: z.string(), keyBenefit: z.string(), definition: z.string().min(150), overview: z.array(z.string()).min(3),
   whenYouNeed: z.array(z.string()).min(6), deliver: z.array(titled).min(6), approach: z.array(titled).min(5).max(6),
   deliverables: z.array(z.object({ item: z.string(), format: z.string(), timing: z.string() }).strict()).min(5).max(7),

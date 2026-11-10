@@ -159,3 +159,10 @@ month's focus, re-order this list to match it.
   GHG accounting, ESG and feasibility services, the GHG inventory, CBAM and factory solar guides, and the net zero
   request form. The only figure used is the national 2060 net-zero target under the Saudi Green Initiative, already
   stated elsewhere on the site; no other targets, percentages or claims. AR title 68 chars, descriptions 135/154.
+- 2026-11-10 (search leadership plan, `docs/marketing/search-leadership-plan-ar.md`): Keyword Planner confirms
+  «تصريح بيئي» at 4,400 searches/month (largest target). The permitting page did not contain that exact phrase: added an
+  optional `h1` field to services and set the AR heading to «التصاريح البيئية: استخراج تصريح بيئي وتجديده» with the
+  phrase in the lead. Added internal links to `/ar/services/environmental-permitting/` (and EN equivalents) from the
+  permits guide, EIA guide, inspection guide and factory waste article. Home hero eyebrow now reads «مكتب استشارات
+  بيئية · المملكة العربية السعودية» to support the home page's primary keyword. Google Ads: permits campaign moved to
+  Target Impression Share (absolute top, 70%, 15 SAR cap), budgets rebalanced, exact-match core keywords added.

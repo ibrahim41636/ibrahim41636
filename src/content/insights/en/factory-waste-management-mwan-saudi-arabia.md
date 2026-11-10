@@ -38,7 +38,7 @@ MWAN regulates the waste sector in the Kingdom and applies the **Waste Managemen
 - Setting the requirements that waste producers and service providers follow.
 - Tracking waste from its source to its final destination.
 
-This sits alongside the environmental compliance system overseen by the National Center for Environmental Compliance (NCEC), as our guide to [NCEC environmental regulations](/insights/ncec-environmental-regulations-guide/) explains. A factory may answer to both: an environmental permit for its activity, and waste management obligations for the waste it produces.
+This sits alongside the environmental compliance system overseen by the National Center for Environmental Compliance (NCEC), as our guide to [NCEC environmental regulations](/insights/ncec-environmental-regulations-guide/) explains. A factory may answer to both: an [environmental permit](/services/environmental-permitting/) for its activity, and waste management obligations for the waste it produces.
 
 ## What is a factory expected to do as a waste producer?
 

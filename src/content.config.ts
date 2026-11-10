@@ -32,6 +32,7 @@ const titled = z.object({ title: z.string(), description: z.string() });
 
 const serviceLocale = z.object({
   name: z.string(),
+  h1: z.string().optional(), // page heading when it should carry the search keyword; defaults to name
   seoTitle: z.string().max(70),
   metaDescription: z.string().max(170),
   valueProp: z.string(),

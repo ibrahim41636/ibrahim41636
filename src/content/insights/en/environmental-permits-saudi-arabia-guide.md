@@ -120,4 +120,4 @@ Regulatory requirements, fees, timelines and validity periods are updated from t
 
 ## How Selorin can help
 
-Selorin's environmental permitting service covers classification, application preparation and coordination with the authority, and connects to our environmental impact assessment and environmental compliance work when studies or ongoing condition tracking are needed. If you are planning a new facility or a change to an existing one, a short scoping discussion early on can clarify what will be required.
+Selorin's [environmental permitting service](/services/environmental-permitting/) covers classification, application preparation and coordination with the authority, and connects to our environmental impact assessment and environmental compliance work when studies or ongoing condition tracking are needed. If you are planning a new facility or a change to an existing one, a short scoping discussion early on can clarify what will be required. [Request a permitting consultation](/request/environmental-permitting/).

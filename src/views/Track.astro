@@ -115,7 +115,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
         try { localStorage.setItem("selorin_track_email", email); } catch {}
         const r = body.request;
         document.querySelector("[data-r-id]").textContent = r.id;
-        document.querySelector("[data-r-service]").textContent = r.service || "—";
+        document.querySelector("[data-r-service]").textContent = r.service || "";
         document.querySelector("[data-r-date]").textContent = fmt(r.submittedAt);
         document.querySelector("[data-r-status]").textContent = labels[r.status] || r.status;
         const list = document.querySelector("[data-r-history]");

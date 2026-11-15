@@ -238,49 +238,49 @@
       {
         "parameter": "PM2.5 / PM10",
         "principle": "تشتت ضوء الليزر",
-        "range": "0 – 1000 µg/m³",
+        "range": "من 0 إلى 1000 µg/m³",
         "accuracy": "±10%",
         "resolution": "0.1 µg/m³"
       },
       {
         "parameter": "الضوضاء",
         "principle": "ميكروفون المجال الحر",
-        "range": "30 – 130 dB",
+        "range": "من 30 إلى 130 dB",
         "accuracy": "±0.1 dB",
         "resolution": "0.1 dB"
       },
       {
         "parameter": "سرعة الرياح",
         "principle": "مقياس الكؤوس",
-        "range": "0 – 45 m/s",
+        "range": "من 0 إلى 45 m/s",
         "accuracy": "±0.3 m/s",
         "resolution": "0.1 m/s"
       },
       {
         "parameter": "اتجاه الرياح",
         "principle": "دوارة الرياح",
-        "range": "0 – 360°",
+        "range": "من 0 إلى 360°",
         "accuracy": "±3°",
         "resolution": "1°"
       },
       {
         "parameter": "درجة الحرارة",
         "principle": "مقاومة حرارية",
-        "range": "−40 – 60 °C",
+        "range": "من −40 إلى 60 °C",
         "accuracy": "±0.3 °C",
         "resolution": "0.1 °C"
       },
       {
         "parameter": "الرطوبة النسبية",
         "principle": "حساس سعوي",
-        "range": "0 – 100% RH",
+        "range": "من 0 إلى 100% RH",
         "accuracy": "±2% RH",
         "resolution": "0.1% RH"
       },
       {
         "parameter": "الضغط الجوي",
         "principle": "مقاومي / سعوي",
-        "range": "10 – 1300 hPa",
+        "range": "من 10 إلى 1300 hPa",
         "accuracy": "±0.3 hPa",
         "resolution": "0.1 hPa"
       }

@@ -3,11 +3,11 @@
 import { site, href, type Lang } from "@/i18n/ui";
 
 const ORG_ID = `${site.url}/#organization`;
-// Primary market first: Saudi Arabia, then the other GCC states.
-const GCC = [["SA", "Saudi Arabia"], ["AE", "United Arab Emirates"], ["KW", "Kuwait"], ["QA", "Qatar"], ["BH", "Bahrain"], ["OM", "Oman"]] as const;
+// Primary market first: Saudi Arabia, then the other GCC states, Iraq and Egypt.
+const MARKETS = [["SA", "Saudi Arabia"], ["AE", "United Arab Emirates"], ["KW", "Kuwait"], ["QA", "Qatar"], ["BH", "Bahrain"], ["OM", "Oman"], ["IQ", "Iraq"], ["EG", "Egypt"]] as const;
 const SA_CITIES = ["Riyadh", "Jeddah", "Makkah", "Madinah", "Dammam", "Khobar", "Jubail", "Yanbu", "Tabuk", "NEOM", "Abha", "Buraidah", "Hail", "Jazan"];
 const AREA_SERVED = [
-  ...GCC.map(([code, name]) => ({ "@type": "Country", name, identifier: code })),
+  ...MARKETS.map(([code, name]) => ({ "@type": "Country", name, identifier: code })),
   ...SA_CITIES.map((name) => ({ "@type": "City", name, containedInPlace: { "@type": "Country", name: "Saudi Arabia" } })),
 ];
 
@@ -27,7 +27,7 @@ export function organizationSchema() {
     url: site.url,
     logo: { "@type": "ImageObject", url: `${site.url}/icons/selorin-mark.svg` },
     image: `${site.url}/images/og-default.jpg`,
-    description: "Environmental advisory and services firm in Saudi Arabia serving the GCC, providing environmental permitting and compliance, environmental impact assessment, environmental monitoring, waste management and sustainability advisory.",
+    description: "Environmental advisory and services firm in Saudi Arabia serving the GCC, Iraq and Egypt, providing environmental permitting and compliance, environmental impact assessment, environmental monitoring, waste management and sustainability advisory.",
     email: site.email,
     telephone: site.phone,
     address: { "@type": "PostalAddress", addressCountry: "SA" },
@@ -40,7 +40,7 @@ export function organizationSchema() {
       "Waste management", "Circular economy", "ESG", "Greenhouse gas accounting", "Net zero", "Life cycle assessment", "Green buildings",
       "Solar energy systems", "EV charging stations", "Battery energy storage", "Renewable energy operation and maintenance",
     ],
-    contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: site.email, telephone: site.phone, areaServed: GCC.map(([code]) => code), availableLanguage: ["English", "Arabic"] }],
+    contactPoint: [{ "@type": "ContactPoint", contactType: "sales", email: site.email, telephone: site.phone, areaServed: MARKETS.map(([code]) => code), availableLanguage: ["English", "Arabic"] }],
     ...(sameAs.length ? { sameAs } : {}),
   };
 }

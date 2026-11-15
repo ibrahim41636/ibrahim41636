@@ -148,13 +148,13 @@ export function confirmationEmail(lead: Lead) {
   const ar = lead.lang === "ar";
   if (lead.kind === "careers") {
     return {
-      subject: ar ? `استلمنا طلب التوظيف — ${lead.leadId}` : `We have received your application — ${lead.leadId}`,
+      subject: ar ? `استلمنا طلب التوظيف رقم ${lead.leadId}` : `We have received your application (${lead.leadId})`,
       text: ar
         ? `مرحباً ${lead.contactName}،\n\nشكراً لاهتمامك بالانضمام إلى سيلورين. استلمنا طلبك، وسنراجع خبراتك ونتواصل معك عند توفر فرصة تناسبها.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية`
         : `Dear ${lead.contactName},\n\nThank you for your interest in joining Selorin. We have received your application and will contact you when an opportunity matches your experience.\n\nReference: ${lead.leadId}\n\nSelorin Environmental Advisory & Services`,
     };
   }
-  const subject = ar ? `استلمنا طلبك — ${lead.leadId}` : `We have received your request — ${lead.leadId}`;
+  const subject = ar ? `استلمنا طلبك رقم ${lead.leadId}` : `We have received your request (${lead.leadId})`;
   const text = ar
     ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887`
     : `Dear ${lead.contactName},\n\nThank you for contacting Selorin. We have received your request regarding "${lead.service.name}". Our team will review your requirements and contact you shortly.\n\nRequest ID: ${lead.leadId}\n\nSelorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887`;

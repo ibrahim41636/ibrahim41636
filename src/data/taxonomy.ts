@@ -50,8 +50,8 @@ export const categories: Category[] = [
     icon: "monitoring",
     name: { en: "Monitoring & Measurement", ar: "الرصد والقياس" },
     summary: {
-      en: "Air, dust, VOC, noise and water monitoring — from programme design and field measurement to compliance reporting.",
-      ar: "رصد الهواء والغبار والمركبات العضوية المتطايرة والضوضاء والمياه — من تصميم البرنامج والقياس الميداني إلى تقارير الامتثال.",
+      en: "Air, dust, VOC, noise and water monitoring, from programme design and field measurement to compliance reporting.",
+      ar: "رصد الهواء والغبار والمركبات العضوية المتطايرة والضوضاء والمياه، من تصميم البرنامج والقياس الميداني إلى تقارير الامتثال.",
     },
     benefit: { en: "Measured evidence instead of assumptions.", ar: "أدلة مقاسة بدلاً من التقديرات." },
     intro: {
@@ -165,8 +165,8 @@ export const categories: Category[] = [
         extra: {
           title: { en: "Charging types we deliver", ar: "أنواع الشحن التي ننفذها" },
           items: [
-            { name: { en: "AC charging", ar: "الشحن المتناوب (AC)" }, note: { en: "Typically 7–22 kW. Homes, compounds, offices and hotels where cars stay for hours.", ar: "عادةً 7–22 كيلوواط. للمنازل والكمباوندات والمكاتب والفنادق حيث تبقى السيارة ساعات." } },
-            { name: { en: "DC fast charging", ar: "الشحن السريع (DC)" }, note: { en: "Typically 50–150 kW. Malls, fleets and commercial sites with shorter stops.", ar: "عادةً 50–150 كيلوواط. للمراكز التجارية والأساطيل والمواقع التجارية ذات التوقف القصير." } },
+            { name: { en: "AC charging", ar: "الشحن المتناوب (AC)" }, note: { en: "Typically 7 to 22 kW. Homes, compounds, offices and hotels where cars stay for hours.", ar: "عادةً من 7 إلى 22 كيلوواط. للمنازل والكمباوندات والمكاتب والفنادق حيث تبقى السيارة ساعات." } },
+            { name: { en: "DC fast charging", ar: "الشحن السريع (DC)" }, note: { en: "Typically 50 to 150 kW. Malls, fleets and commercial sites with shorter stops.", ar: "عادةً من 50 إلى 150 كيلوواط. للمراكز التجارية والأساطيل والمواقع التجارية ذات التوقف القصير." } },
             { name: { en: "Ultra-fast charging", ar: "الشحن فائق السرعة" }, note: { en: "Above 150 kW. Highway and city hubs where drivers recharge in minutes.", ar: "أكثر من 150 كيلوواط. لمراكز الطرق السريعة والمدن حيث يشحن السائق في دقائق." } },
           ],
         },

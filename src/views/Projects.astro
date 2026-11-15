@@ -32,7 +32,7 @@ const engagementTypes = ar
           ))}
         </div>
       )}
-      <div class:list={["section-head", { "mt-7": projects.length > 0 }]}><div><p class="eyebrow">{ar ? "نوعية التكليفات" : "Types of engagement"}</p><h2>{ar ? "ما الذي نعمل عليه عادةً" : "What we typically work on"}</h2></div><p class="lead">{ar ? "أمثلة على نطاقات العمل، وليست دراسات حالة لعملاء محددين." : "Examples of engagement scopes — not case studies of specific clients."}</p></div>
+      <div class:list={["section-head", { "mt-7": projects.length > 0 }]}><div><p class="eyebrow">{ar ? "نوعية التكليفات" : "Types of engagement"}</p><h2>{ar ? "ما الذي نعمل عليه عادةً" : "What we typically work on"}</h2></div><p class="lead">{ar ? "أمثلة على نطاقات العمل، وليست دراسات حالة لعملاء محددين." : "Examples of engagement scopes, not case studies of specific clients."}</p></div>
       <div class="grid grid-3">
         {engagementTypes.map(([h, p, s]) => (
           <article class="card"><h3>{h}</h3><p>{p}</p><a class="link" href={href(lang, `/services/${s}/`)}>{t(lang, "cta.exploreService")} <Icon name="arrow" /></a></article>

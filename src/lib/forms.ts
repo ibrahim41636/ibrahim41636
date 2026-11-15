@@ -150,7 +150,7 @@ const FAMILY_FIELDS: Record<Family, Field[]> = {
         o("eia", "Environmental impact assessment", "تقييم الأثر البيئي"),
         o("cemp", "Construction environmental management plan", "خطة الإدارة البيئية للإنشاء"),
         o("oemp", "Operational environmental management plan", "خطة الإدارة البيئية للتشغيل"),
-        o("not-sure", "Not sure — need advice", "غير متأكد — أحتاج إلى استشارة"),
+        o("not-sure", "Not sure, I need advice", "غير متأكد وأحتاج إلى استشارة"),
       ],
     },
     { name: "projectSize", type: "text", maxLength: 200, label: { en: "Project size or capacity", ar: "حجم المشروع أو طاقته" }, hint: { en: "e.g. site area, production capacity, number of units", ar: "مثل مساحة الموقع أو الطاقة الإنتاجية أو عدد الوحدات" } },
@@ -180,7 +180,7 @@ const FAMILY_FIELDS: Record<Family, Field[]> = {
       options: [
         o("one-off", "One-off survey", "مسح لمرة واحدة"),
         o("short", "Less than 3 months", "أقل من 3 أشهر"),
-        o("medium", "3–12 months", "من 3 إلى 12 شهراً"),
+        o("medium", "3 to 12 months", "من 3 إلى 12 شهراً"),
         o("continuous", "Continuous / long term", "مستمر / طويل الأمد"),
       ],
     },

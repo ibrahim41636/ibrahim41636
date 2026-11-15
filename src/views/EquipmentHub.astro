@@ -75,7 +75,7 @@ const faqs = [
       <div class="container">
         <div class="section-head">
           <div>
-            <p class="eyebrow">{String(i + 1).padStart(2, "0")} — {t(lang, "nav.equipment")}</p>
+            <p class="eyebrow">{String(i + 1).padStart(2, "0")} · {t(lang, "nav.equipment")}</p>
             <h2 id={`h-${g}`}>{GROUPS[g].name[lang]}</h2>
           </div>
           <p class="lead" style="max-width:52ch">{GROUPS[g].intro[lang]}</p>

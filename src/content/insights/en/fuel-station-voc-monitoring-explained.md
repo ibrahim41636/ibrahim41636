@@ -64,7 +64,7 @@ Check that certification covers the complete installation, including barriers, c
 
 | Feature | What it does | What to check |
 |---|---|---|
-| 4–20 mA output | Analogue signal to a controller or PLC | Scaling, loop powering and compatibility with existing systems |
+| 4 to 20 mA output | Analogue signal to a controller or PLC | Scaling, loop powering and compatibility with existing systems |
 | Modbus (RTU or TCP) | Digital data, including status and diagnostics | Register map, addressing, cable runs and network security |
 | Alarm relays | Trigger alarms, shut-offs or ventilation at set points | Number of relays, configurable set points, latching and fail-safe behaviour |
 | Data logging | Stores time-stamped readings | Storage interval, capacity, time synchronisation and tamper resistance |
@@ -100,7 +100,7 @@ Placement determines whether the system detects what matters. General principles
 - [ ] Current requirements confirmed with the competent authority
 - [ ] Hazardous-area classification confirmed and equipment certified accordingly
 - [ ] PID measurement range and resolution suited to the objective
-- [ ] Outputs (4–20 mA, Modbus) compatible with existing control systems
+- [ ] Outputs (4 to 20 mA, Modbus) compatible with existing control systems
 - [ ] Alarm relays with configurable set points and defined responses
 - [ ] Data logging with adequate interval, capacity and tamper resistance
 - [ ] Calibration procedure with traceable gas, and local support for maintenance

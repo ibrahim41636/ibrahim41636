@@ -12,7 +12,7 @@
     "challenge": "[CONTENT REQUIRED: the client's situation and constraint]",
     "approach": ["[CONTENT REQUIRED: step]", "[CONTENT REQUIRED: step]", "[CONTENT REQUIRED: step]"],
     "deliverables": ["[CONTENT REQUIRED: deliverable]", "[CONTENT REQUIRED: deliverable]"],
-    "outcome": "[CONTENT REQUIRED: verified outcome — only facts the client has approved]"
+    "outcome": "[CONTENT REQUIRED: verified outcome, using only facts the client has approved]"
   },
   "ar": {
     "title": "[CONTENT REQUIRED: عنوان دراسة الحالة]",

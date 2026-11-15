@@ -30,13 +30,14 @@ Positioning: Selorin turns regulatory requirements and environmental data into c
 - Use precise verbs: assess, document, measure, monitor, prepare, submit, verify, report.
 - Name deliverables concretely (e.g. "Monitoring plan with sampling locations, parameters and frequency").
 - English: British/International spelling is fine; be consistent within a file. Sentence case for titles.
+- No em dashes (—) or en dashes (–) anywhere in site copy, in either language. Use a comma, colon, full stop or brackets, and write ranges as "7 to 22 kW" / «من 7 إلى 22 كيلوواط». `tests/no-dashes.test.ts` enforces this.
 
 ## 3. Arabic
 
 - Write native, formal Modern Standard Arabic as used by Saudi government and corporate documents — **not** a literal translation of the English. Restructure sentences naturally.
 - Standard terms: التصريح البيئي، الامتثال البيئي، تقييم الأثر البيئي، خطة الإدارة البيئية، التدقيق البيئي، الفحص البيئي النافي للجهالة، الرصد البيئي، جودة الهواء المحيط، الانبعاثات، الضوضاء، جودة المياه ومياه الصرف، إدارة النفايات، الاقتصاد الدائري، الحوكمة البيئية والاجتماعية والمؤسسية (ESG)، حصر انبعاثات غازات الاحتباس الحراري، الحياد الصفري، تقييم دورة الحياة، المباني الخضراء.
 - Give the English acronym in parentheses at first use only, e.g. تقييم الأثر البيئي (EIA).
-- Keep numbers, units and standards in Latin characters: PM2.5، 4–20 mA، ISO 14064-1.
+- Keep numbers, units and standards in Latin characters: PM2.5، 4 إلى 20 mA، ISO 14064-1.
 - Arabic SEO title ≤ 60 characters where possible, meta description ≤ 160.
 
 ## 4. IDs used for cross-references

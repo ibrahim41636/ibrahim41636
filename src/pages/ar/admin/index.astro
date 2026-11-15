@@ -96,7 +96,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]))
           box.append(sel, note, lab, save); upd.append(box);
           tr.append(
             cell(l.lead_id, "ltr"), cell(date(l.submitted_at)),
-            cell(`${l.contact_name || ""}${l.company ? " — " + l.company : ""}${l.location ? " · " + l.location : ""}`),
+            cell(`${l.contact_name || ""}${l.company ? "، " + l.company : ""}${l.location ? " · " + l.location : ""}`),
             contact, cell(l.service || l.kind), cell(`${labels[l.status] || l.status}${l.urgent ? " · عاجل" : ""}`, l.urgent ? "urgent" : ""), upd,
           );
           return tr;

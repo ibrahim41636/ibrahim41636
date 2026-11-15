@@ -27,13 +27,13 @@ const clusters = categories.map((c) => ({
 const used = Object.keys(insightCategories).filter((c) => all.some((p) => p.data.category === c));
 ---
 <Base lang={lang} path={path} breadcrumbs={crumbs}
-  title={catName ? `${catName} | ${t(lang, "nav.insights")}` : (ar ? "المعرفة | إرشادات بيئية وتنظيمية — سيلورين" : "Insights | Environmental & Regulatory Guidance")}
+  title={catName ? `${catName} | ${t(lang, "nav.insights")}` : (ar ? "مركز المعرفة: إرشادات بيئية وتنظيمية" : "Insights | Environmental & Regulatory Guidance")}
   description={ar ? "مقالات وأدلة عملية من سيلورين حول التصاريح البيئية والامتثال والرصد والحوكمة البيئية والاجتماعية والاستدامة في المملكة." : "Practical guides and technical articles from Selorin on environmental permits, compliance, monitoring, ESG and sustainability in Saudi Arabia."}
   schema={[collectionSchema(lang, path, catName ?? t(lang, "nav.insights"), posts.map((p) => ({ name: p.data.title, path: `/insights/${insightSlug(p)}/` })))]}
   analytics={{ page_type: "insights", insight_category: category ?? "all" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("insights")} eyebrow={t(lang, "nav.insights")}
     title={catName ?? (ar ? "إرشادات عملية للمتطلبات البيئية" : "Practical guidance on environmental requirements")}
-    lead={ar ? "شروحات واضحة للمتطلبات التنظيمية وممارسات الرصد والإفصاح، مكتوبة لمديري البيئة والمشاريع وصناع القرار." : "Clear explanations of regulatory requirements, monitoring practice and disclosure — written for environmental, HSE and project leaders."} />
+    lead={ar ? "شروحات واضحة للمتطلبات التنظيمية وممارسات الرصد والإفصاح، مكتوبة لمديري البيئة والمشاريع وصناع القرار." : "Clear explanations of regulatory requirements, monitoring practice and disclosure, written for environmental, HSE and project leaders."} />
   <section class="section">
     <div class="container">
       <nav aria-label={ar ? "فئات المقالات" : "Insight categories"} style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px">

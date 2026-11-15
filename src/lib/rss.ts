@@ -21,7 +21,7 @@ export async function insightsFeed(lang: Lang) {
       <pubDate>${p.data.date.toUTCString()}</pubDate>
     </item>`;
   });
-  const title = lang === "ar" ? "مركز المعرفة — سيلورين" : "Selorin Knowledge Centre";
+  const title = lang === "ar" ? "مركز المعرفة من سيلورين" : "Selorin Knowledge Centre";
   const desc = lang === "ar" ? "أدلة ومقالات عملية حول التصاريح البيئية والامتثال والرصد والاستدامة في المملكة العربية السعودية." : "Practical guides and articles on environmental permits, compliance, monitoring and sustainability in Saudi Arabia.";
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">

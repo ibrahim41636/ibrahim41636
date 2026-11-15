@@ -36,10 +36,10 @@ async function loadQueue() {
   const data = await api(`/api/admin/social${f ? `?status=${f}` : ""}`);
   channels = data.channels;
   // The website is always on: articles and campaign posts are published with every site build.
-  const site = document.createElement("li"); site.className = "on"; site.textContent = "الموقع الإلكتروني — تلقائي";
+  const site = document.createElement("li"); site.className = "on"; site.textContent = "الموقع الإلكتروني (تلقائي)";
   $("[data-channels]").replaceChildren(site, ...channels.map((c) => {
     const li = document.createElement("li"); li.className = c.configured ? "on" : "";
-    li.textContent = `${c.name} — ${c.configured ? "مربوط" : "غير مربوط"}`; return li;
+    li.textContent = `${c.name}: ${c.configured ? "مربوط" : "غير مربوط"}`; return li;
   }));
   const pick = $("[data-pick]");
   if (!pick.childElementCount) pick.replaceChildren(...channels.map((c) => {
@@ -68,7 +68,7 @@ async function loadQueue() {
     }
     act.append(box);
     const variant = VARIANT_INFO[p.variant as Variant]?.ar ?? p.variant;
-    tr.append(td(riyadh(p.published_at || p.scheduled_at)), td(`${CHANNEL_INFO[p.channel as Channel]?.ar ?? p.channel}${p.lang === "en" ? " (EN)" : ""}`), td(`${variant}${p.title ? ` — ${p.title}` : ""}`), text, status, act);
+    tr.append(td(riyadh(p.published_at || p.scheduled_at)), td(`${CHANNEL_INFO[p.channel as Channel]?.ar ?? p.channel}${p.lang === "en" ? " (EN)" : ""}`), td(`${variant}${p.title ? `: ${p.title}` : ""}`), text, status, act);
     return tr;
   });
   $("[data-rows]").replaceChildren(...rows);
@@ -90,7 +90,7 @@ async function loadFunnel() {
   Object.values(CHANNEL_INFO).forEach((c) => { names[c.utmSource] = c.ar; });
   $("[data-sources]").replaceChildren(...sources.map((s) => {
     const tr = document.createElement("tr");
-    tr.append(td(names[s.source] ?? s.source), td(s.medium, "ltr"), td(s.leads), td(s.quoted), td(s.won), td(s.leads ? `${Math.round((s.quoted / s.leads) * 100)}%` : "—"));
+    tr.append(td(names[s.source] ?? s.source), td(s.medium, "ltr"), td(s.leads), td(s.quoted), td(s.won), td(s.leads ? `${Math.round((s.quoted / s.leads) * 100)}%` : "0%"));
     return tr;
   }));
 }

@@ -86,7 +86,7 @@ const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير")
         {d.measures.length > 0 && (
           <section class="block" id="measures" aria-labelledby="h-measures">
             <h2 id="h-measures">{L("Measurement specifications", "مواصفات القياس")}</h2>
-            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("Measurement specifications", "مواصفات القياس")} — ${d.name}`}>
+            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("Measurement specifications", "مواصفات القياس")}: ${d.name}`}>
               <table class="table">
                 <thead><tr>
                   <th scope="col">{L("Parameter", "المؤشر")}</th><th scope="col">{L("Principle", "مبدأ القياس")}</th><th scope="col">{L("Range", "المدى")}</th>
@@ -101,7 +101,7 @@ const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير")
         {d.specs.length > 0 && (
           <section class="block" id="specs" aria-labelledby="h-specs">
             <h2 id="h-specs">{L("System specifications", "مواصفات النظام")}</h2>
-            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("System specifications", "مواصفات النظام")} — ${d.name}`}>
+            <div class="table-wrap" tabindex="0" role="region" aria-label={`${L("System specifications", "مواصفات النظام")}: ${d.name}`}>
               <table class="table">
                 <tbody>{d.specs.map((s) => <tr><th scope="row">{s.label}</th><td>{s.value}</td></tr>)}</tbody>
               </table>

@@ -12,6 +12,7 @@ import { getServices, getIndustries, getInsights } from "@/lib/content";
 import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
 import { collectionSchema } from "@/lib/schema";
 import OrgMarquee from "@/components/OrgMarquee.astro";
+import CoverageMap from "@/components/CoverageMap.astro";
 import { COMPANY, TEAM } from "@/data/team";
 import { IMAGES } from "@/data/imagery";
 
@@ -30,7 +31,7 @@ const copy = ar
       description: "مكتب استشارات بيئية في السعودية يخدم الرياض وجدة والدمام وجميع المناطق: استخراج التصريح البيئي، ودراسات تقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والطاقة الشمسية.",
       eyebrow: "مكتب استشارات بيئية · المملكة العربية السعودية",
       h1: "وضوح بيئي للمشاريع المعقّدة.",
-      lead: "تساعد سيلورين المنشآت في المملكة العربية السعودية ودول الخليج على استخراج التصاريح البيئية، والوفاء بالمتطلبات التنظيمية، وقياس الأداء البيئي، وبناء برامج استدامة موثوقة — بدقة فنية في كل مرحلة.",
+      lead: "تساعد سيلورين المنشآت في المملكة العربية السعودية ودول الخليج على استخراج التصاريح البيئية، والوفاء بالمتطلبات التنظيمية، وقياس الأداء البيئي، وبناء برامج استدامة موثوقة، مع الحرص على الدقة الفنية في كل مرحلة.",
       example: "مثال توضيحي لبيانات الرصد",
     }
   : {
@@ -38,19 +39,19 @@ const copy = ar
       description: "Environmental consultants in Saudi Arabia serving Riyadh, Jeddah, Dammam and every region: environmental permits, EIA, monitoring, waste management and solar energy.",
       eyebrow: "Environmental advisory & services · Saudi Arabia",
       h1: "Environmental clarity for complex projects.",
-      lead: "Selorin helps organizations across Saudi Arabia secure permits, meet regulatory requirements, measure environmental performance and build credible sustainability programmes — with technical accuracy at every stage.",
+      lead: "Selorin helps organizations across Saudi Arabia secure permits, meet regulatory requirements, measure environmental performance and build credible sustainability programmes. We get the technical detail right at every stage.",
       example: "Illustrative monitoring data",
     };
 
 const pillars = ar
   ? [
-      ["ما نقدّمه", "التصاريح والامتثال، والدراسات البيئية، والرصد الميداني، وإدارة النفايات، واستشارات الاستدامة — ضمن فريق واحد مسؤول عن النتيجة."],
+      ["ما نقدّمه", "التصاريح والامتثال، والدراسات البيئية، والرصد الميداني، وإدارة النفايات، واستشارات الاستدامة، يقدّمها فريق واحد مسؤول عن النتيجة."],
       ["من نخدم", "المنشآت الصناعية، والمقاولون، والمطوّرون العقاريون، ومشاريع البنية التحتية والطاقة، والجهات الحكومية، والمنشآت التجارية."],
       ["أين نعمل", "في مختلف مناطق المملكة العربية السعودية، وفق المتطلبات التنظيمية الوطنية واشتراطات المدن الصناعية والهيئات المختصة."],
       ["لماذا يختارنا العملاء", "فهم دقيق للمتطلبات المحلية، ومخرجات واضحة يمكن الدفاع عنها، وربط مباشر بين البيانات الميدانية والقرار."],
     ]
   : [
-      ["What we do", "Permitting and compliance, environmental studies, field monitoring, waste management and sustainability advisory — delivered by one accountable team."],
+      ["What we do", "Permitting and compliance, environmental studies, field monitoring, waste management and sustainability advisory, all delivered by one accountable team."],
       ["Who we serve", "Industrial facilities, contractors, real estate developers, infrastructure and energy projects, government entities and commercial operators."],
       ["Where we operate", "Across Saudi Arabia, working to national environmental requirements and the conditions of industrial cities and competent authorities."],
       ["Why clients choose us", "Precise understanding of local requirements, clear and defensible deliverables, and a direct line from field data to decisions."],
@@ -73,10 +74,6 @@ const sectors = [
 const how = ar
   ? [["نفهم", "نراجع أنشطتك واشتراطات تصريحك والمخاطر الفعلية في موقعك."], ["نقيّم", "نحدد المتطلبات المنطبقة والفجوات والبيانات اللازمة."], ["ننفّذ", "نُعدّ الدراسات والخطط ونجري القياسات الميدانية."], ["نقدّم", "نجهّز المستندات ونتابع ملاحظات الجهات المختصة."], ["ندعم", "نتابع الامتثال والرصد والتقارير طوال عمر المشروع."]]
   : [["Understand", "We review your activities, permit conditions and the real risks on site."], ["Assess", "We identify applicable requirements, gaps and the data needed."], ["Deliver", "We prepare studies and plans and carry out field measurements."], ["Submit", "We prepare documentation and follow up on authority comments."], ["Support", "We sustain compliance, monitoring and reporting over the project life."]];
-const CITIES: [string, string][] = [
-  ["Riyadh", "الرياض"], ["Jeddah", "جدة"], ["Makkah", "مكة المكرمة"], ["Madinah", "المدينة المنورة"], ["Dammam & Khobar", "الدمام والخبر"],
-  ["Jubail", "الجبيل"], ["Yanbu", "ينبع"], ["Tabuk & NEOM", "تبوك ونيوم"], ["Abha", "أبها"], ["Qassim", "القصيم"], ["Hail", "حائل"], ["Jazan", "جازان"],
-];
 ---
 <Base lang={lang} path="/" title={copy.title} description={copy.description} image="/images/og-default.jpg"
   schema={[collectionSchema(lang, "/services/", ar ? "خدمات سيلورين" : "Selorin services", services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
@@ -122,7 +119,7 @@ const CITIES: [string, string][] = [
           <p class="eyebrow">{t(lang, "nav.services")}</p>
           <h2>{ar ? "سبعة مجالات تغطي دورة الالتزام البيئي والطاقة النظيفة" : "Seven practice areas covering the environmental lifecycle and clean energy"}</h2>
         </div>
-        <p class="lead">{ar ? "من أول تقييم للموقع إلى الامتثال المستمر — اختر المجال الأقرب لاحتياجك." : "From the first site assessment to ongoing compliance — start with the area closest to your need."}</p>
+        <p class="lead">{ar ? "من أول تقييم للموقع إلى الامتثال المستمر. اختر المجال الأقرب لاحتياجك." : "From the first site assessment to ongoing compliance. Start with the area closest to your need."}</p>
       </div>
       <div class="grid grid-3">
         {categories.map((c) => {
@@ -194,7 +191,7 @@ const CITIES: [string, string][] = [
       <div class="reveal">
         <p class="eyebrow">{ar ? "الرصد والقياس" : "Monitoring & measurement"}</p>
         <h2>{ar ? "أدلة مقاسة لما تشدّد عليه الجهات الرقابية" : "Measured evidence for what regulators focus on"}</h2>
-        <p class="lead">{ar ? "نصمم برامج رصد للغبار والمركبات العضوية المتطايرة وجودة الهواء والضوضاء، وننفذها ميدانياً، ونقدّم بيانات جاهزة للتقارير التنظيمية." : "We design and run monitoring for dust, VOCs, air quality and noise — and deliver data that is ready for regulatory reporting."}</p>
+        <p class="lead">{ar ? "نصمم برامج رصد للغبار والمركبات العضوية المتطايرة وجودة الهواء والضوضاء، وننفذها ميدانياً، ونقدّم بيانات جاهزة للتقارير التنظيمية." : "We design and run monitoring for dust, VOCs, air quality and noise, and deliver data that is ready for regulatory reporting."}</p>
         <a class="link" href={href(lang, "/services/monitoring-measurement/")} data-cta="home_monitoring">{ar ? "خدمات الرصد والقياس" : "Monitoring services"} <Icon name="arrow" /></a>
       </div>
       <div class="grid grid-2">
@@ -270,7 +267,7 @@ const CITIES: [string, string][] = [
           <p class="eyebrow">{ar ? "المشهد التنظيمي في المملكة" : "Saudi regulatory landscape"}</p>
           <h2>{ar ? "نعمل وفق المتطلبات الوطنية والجهات المختصة" : "Working to national requirements and competent authorities"}</h2>
         </div>
-        <p class="lead">{ar ? "قائمة تعريفية بالجهات والأطر التي تحكم العمل البيئي عادةً، ولا تمثل شراكة أو اعتماداً." : "An informational overview of bodies and frameworks that typically govern environmental work — not a statement of partnership or accreditation."}</p>
+        <p class="lead">{ar ? "قائمة تعريفية بالجهات والأطر التي تحكم العمل البيئي عادةً، ولا تمثل شراكة أو اعتماداً." : "An informational overview of bodies and frameworks that typically govern environmental work. It is not a statement of partnership or accreditation."}</p>
       </div>
       <ul class="reg-list" style="padding:0">
         {regulators.map((r) => <li><b>{r.name[lang]}</b><span>{r.role[lang]}</span></li>)}
@@ -285,9 +282,9 @@ const CITIES: [string, string][] = [
           <p class="eyebrow">{ar ? "مناطق الخدمة" : "Service coverage"}</p>
           <h2 id="h-coverage">{ar ? "مكتب استشارات بيئية يخدم جميع مناطق المملكة" : "Environmental consultants serving every region of Saudi Arabia"}</h2>
         </div>
-        <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى، ونخدم دول الخليج." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects, and support clients across the GCC."}</p>
+        <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى في المملكة، ونخدم عملاءنا أيضًا في الإمارات وقطر وعُمان والعراق ومصر." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects across the Kingdom, and we also serve clients in the UAE, Qatar, Oman, Iraq and Egypt."}</p>
       </div>
-      <ul class="city-list">{CITIES.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
+      <CoverageMap lang={lang} />
     </div>
   </section>
 

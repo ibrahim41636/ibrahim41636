@@ -104,7 +104,7 @@ Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI
 7. ~~إدارة نفايات المصانع وتراخيص موان: دليل للمنشآت الصناعية~~ ✅ 2026-11-01
 8. ~~رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير~~ (covered by existing `dust-monitoring-pm10-pm25-construction`)
 9. ~~خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف~~ ✅ 2026-11-08
-10. خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب (target `/ar/services/environmental-management-plans/`)
+10. ~~خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب~~ ✅ 2026-11-15
 11. قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير (target `/ar/services/noise-monitoring/`)
 
 12. Regulation deep-dives, one per executive regulation, each linking back to the NCEC guide (`ncec-environmental-regulations-guide`): air quality (stationary sources and monitoring licences), noise, aquatic media, soil, ozone-depleting substances, environmental service providers.
@@ -166,3 +166,13 @@ month's focus, re-order this list to match it.
   permits guide, EIA guide, inspection guide and factory waste article. Home hero eyebrow now reads «مكتب استشارات
   بيئية · المملكة العربية السعودية» to support the home page's primary keyword. Google Ads: permits campaign moved to
   Target Impression Share (absolute top, 70%, 15 SAR cap), budgets rebalanced, exact-match core keywords added.
+- 2026-11-15 (weekly run): published backlog item 10 as `insights/{ar,en}/construction-environmental-management-plan-cemp`
+  targeting «خطة الإدارة البيئية للإنشاء» / "construction environmental management plan (CEMP)", timed for
+  Cityscape Global week as the monthly brief planned. It supports `/ar/services/environmental-management-plans/`
+  and links to the permitting pillar, the EIA guide, dust and noise monitoring, the dust and C&D waste guides,
+  environmental audits and the EMP request form. Regulatory context kept general (approval conditions, owner,
+  zone operator and lender requirements); no invented thresholds or frequencies.
+  Audit: AR title 57 chars, EN title 65; descriptions 145/159 chars with the primary keyword.
+  Site-wide: em and en dashes removed from all copy (rewritten as natural sentences, ranges as "to" / «إلى»),
+  guarded by `tests/no-dashes.test.ts`; home coverage chips replaced by a Middle East map with pins for 12 Saudi
+  cities plus the UAE, Qatar, Oman, Iraq and Cairo; schema `areaServed` adds Iraq and Egypt.

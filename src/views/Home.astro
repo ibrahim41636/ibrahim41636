@@ -12,7 +12,6 @@ import { getServices, getIndustries, getInsights } from "@/lib/content";
 import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
 import { collectionSchema } from "@/lib/schema";
 import OrgMarquee from "@/components/OrgMarquee.astro";
-import CoverageMap from "@/components/CoverageMap.astro";
 import { COMPANY, TEAM } from "@/data/team";
 import { IMAGES } from "@/data/imagery";
 
@@ -74,6 +73,11 @@ const sectors = [
 const how = ar
   ? [["نفهم", "نراجع أنشطتك واشتراطات تصريحك والمخاطر الفعلية في موقعك."], ["نقيّم", "نحدد المتطلبات المنطبقة والفجوات والبيانات اللازمة."], ["ننفّذ", "نُعدّ الدراسات والخطط ونجري القياسات الميدانية."], ["نقدّم", "نجهّز المستندات ونتابع ملاحظات الجهات المختصة."], ["ندعم", "نتابع الامتثال والرصد والتقارير طوال عمر المشروع."]]
   : [["Understand", "We review your activities, permit conditions and the real risks on site."], ["Assess", "We identify applicable requirements, gaps and the data needed."], ["Deliver", "We prepare studies and plans and carry out field measurements."], ["Submit", "We prepare documentation and follow up on authority comments."], ["Support", "We sustain compliance, monitoring and reporting over the project life."]];
+const CITIES: [string, string][] = [
+  ["Riyadh", "الرياض"], ["Jeddah", "جدة"], ["Makkah", "مكة المكرمة"], ["Madinah", "المدينة المنورة"], ["Dammam & Khobar", "الدمام والخبر"],
+  ["Jubail", "الجبيل"], ["Yanbu", "ينبع"], ["Tabuk & NEOM", "تبوك ونيوم"], ["Abha", "أبها"], ["Qassim", "القصيم"], ["Hail", "حائل"], ["Jazan", "جازان"],
+];
+const REGION: [string, string][] = [["UAE", "الإمارات"], ["Qatar", "قطر"], ["Oman", "عُمان"], ["Iraq", "العراق"], ["Cairo", "القاهرة"]];
 ---
 <Base lang={lang} path="/" title={copy.title} description={copy.description} image="/images/og-default.jpg"
   schema={[collectionSchema(lang, "/services/", ar ? "خدمات سيلورين" : "Selorin services", services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
@@ -284,7 +288,16 @@ const how = ar
         </div>
         <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى في المملكة، ونخدم عملاءنا أيضًا في الإمارات وقطر وعُمان والعراق ومصر." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects across the Kingdom, and we also serve clients in the UAE, Qatar, Oman, Iraq and Egypt."}</p>
       </div>
-      <CoverageMap lang={lang} />
+      <div class="coverage-groups">
+        <div>
+          <p class="coverage-label">{ar ? "داخل المملكة" : "In Saudi Arabia"}</p>
+          <ul class="city-list">{CITIES.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
+        </div>
+        <div>
+          <p class="coverage-label">{ar ? "في المنطقة" : "In the region"}</p>
+          <ul class="city-list city-list--region">{REGION.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
+        </div>
+      </div>
     </div>
   </section>
 

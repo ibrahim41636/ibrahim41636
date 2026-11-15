@@ -174,5 +174,6 @@ month's focus, re-order this list to match it.
   zone operator and lender requirements); no invented thresholds or frequencies.
   Audit: AR title 57 chars, EN title 65; descriptions 145/159 chars with the primary keyword.
   Site-wide: em and en dashes removed from all copy (rewritten as natural sentences, ranges as "to" / «إلى»),
-  guarded by `tests/no-dashes.test.ts`; home coverage chips replaced by a Middle East map with pins for 12 Saudi
-  cities plus the UAE, Qatar, Oman, Iraq and Cairo; schema `areaServed` adds Iraq and Egypt.
+  guarded by `tests/no-dashes.test.ts`; schema `areaServed` adds Iraq and Egypt. The home coverage section lists
+  the 12 Saudi cities and, in a second group, the UAE, Qatar, Oman, Iraq and Cairo (a map was tried and removed
+  at the owner's request).

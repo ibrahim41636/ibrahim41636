@@ -15,7 +15,6 @@ const FILES = [
   ...walk("src/views").filter((f) => f.endsWith(".astro")),
   "src/i18n/ui.ts",
   "src/data/taxonomy.ts",
-  "src/components/CoverageMap.astro",
   "public/manifest-ar.webmanifest",
   "public/manifest-en.webmanifest",
 ];

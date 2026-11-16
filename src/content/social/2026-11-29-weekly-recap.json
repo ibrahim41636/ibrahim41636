@@ -16,8 +16,9 @@
     "link": "/ar/services/environmental-management-plans/",
     "image": {
       "template": "stat",
-      "stat": "44,000+",
-      "context": "جولة رقابية بيئية من المركز الوطني في 2025"
+      "value": "44,000+",
+      "label": "جولة رقابية بيئية من المركز الوطني في 2025",
+      "context": "بزيادة قياسية 32% عن السنة السابقة"
     }
   },
   "en": {
@@ -27,8 +28,9 @@
     "link": "/services/environmental-management-plans/",
     "image": {
       "template": "stat",
-      "stat": "44K+",
-      "context": "environmental inspection tours by NCEC in 2025"
+      "value": "44K+",
+      "label": "environmental inspection tours by NCEC in 2025",
+      "context": "32% increase from the prior year"
     }
   }
 }

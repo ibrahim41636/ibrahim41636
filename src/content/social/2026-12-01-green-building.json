@@ -1,0 +1,34 @@
+{
+  "date": "2026-12-01",
+  "slot": 0,
+  "pillar": "استشارات المباني الخضراء",
+  "stage": "consideration",
+  "sources": [
+    "https://cityscapeglobal.com/",
+    "https://rega.gov.sa/en/media-center/events/city-scape-2026/",
+    "https://www.usgbc.org/leed",
+    "https://selorin.co/ar/services/green-building-advisory/"
+  ],
+  "ar": {
+    "title": "شهادة المباني الخضراء: لماذا تبدأ قبل انتهاء التصميم",
+    "text": "**معرض سيتي سكيب جلوبال في الرياض الآن.** المطورون ومديرو المشاريع الذين يحضرون الحدث (16–19 نوفمبر) يواجهون سؤالًا واحدًا: كيف تُموضع مبنى لدى المشترين والمستأجرين في سوق مزدحمة؟\n\n**الإجابة هي الاعتمادات المعترف بها.** شهادات LEED أو مستدام أو ما يعادلها ترسل إشارات واضحة: تكاليف تشغيل أقل، وطلب مستأجر أعلى ودوام أطول، وشروط تمويل أفضل، وأقل مشاكل مع التنظيم الحكومي.\n\n**ما يفحصه المدققون:** الكفاءة الطاقية (HVAC والعزل والإضاءة)، الأنظمة المائية والصرف، جودة الهواء الداخلي والعطل الطاقي، إدارة النفايات أثناء البناء والتشغيل، المواد والتصريحات.\n\n**الجدول الزمني يهم:** استشارات المباني الخضراء تبدأ 6–9 أشهر قبل تنهية التصميم الهندسي. الدمج المبكر للاستدامة يقلل تكاليف إعادة البناء والتصميم مقابل محاولات إصلاح الأمور بعد 80% من المشروع.\n\n**الأرقام تتحدث:** المباني المعتمدة تطلب إيجارات أعلى 5–15% عن النظائر، ودورات إشغال أسرع 10–20%، حسب تقارير المطورين في السوق الخليجية.",
+    "x": "شهادة مستدام أو LEED توفر 5–15% إيجار أعلى و10–20% إشغال أسرع. ابدأ الاستشارات في التصميم، لا في النهاية. #المباني_الخضراء",
+    "link": "/ar/services/green-building-advisory/",
+    "image": {
+      "template": "faq",
+      "q": "هل تستحق شهادات المباني الخضراء الاستثمار؟",
+      "a": "نعم: المباني المعتمدة تطلب إيجارات أعلى 5–15% وتُشغّل 10–20% أسرع. التمويل أسهل. التكاليف الإضافية تحقق عائدًا في 2–3 سنوات."
+    }
+  },
+  "en": {
+    "title": "Green building certification: the financial case (and timing matters)",
+    "text": "**Cityscape Global Saudi Arabia is live right now.** Developers and facility managers at the Riyadh show (Nov 16–19) face one central question: how do you position a new building to buyers and tenants in a competitive market?\n\n**The answer is credentials that matter.** LEED, Mostadam, or equivalent certifications send clear signals: lower operating costs, stronger tenant demand and lease renewal rates, better financing terms, and fewer regulatory friction points.\n\n**What auditors check:** Energy efficiency (HVAC, insulation, smart controls), water systems and treatment, indoor air quality and ventilation, waste and recycling infrastructure during construction and operations, material sourcing and certifications.\n\n**Timing is critical:** Green building consulting begins 6–9 months before design finalization. Early integration of sustainability reduces rework costs vs. retrofit-scrambling in the final phases.\n\n**Market impact:** Certified buildings command 5–15% higher rents and 10–20% faster leasing cycles in Gulf markets, according to developer surveys. Lenders also offer more favorable terms for certified assets.",
+    "x": "Certified green buildings: +5–15% rent premium, 10–20% faster leasing. Start consulting at design phase, not finish. #GreenBuilding #RealEstate",
+    "link": "/services/green-building-advisory/",
+    "image": {
+      "template": "faq",
+      "q": "Is green building certification worth the investment?",
+      "a": "Yes: certified buildings command 5–15% higher rents and lease 10–20% faster. Financing is easier. Incremental costs break even in 2–3 years."
+    }
+  }
+}

@@ -77,7 +77,6 @@ const CITIES: [string, string][] = [
   ["Riyadh", "الرياض"], ["Jeddah", "جدة"], ["Makkah", "مكة المكرمة"], ["Madinah", "المدينة المنورة"], ["Dammam & Khobar", "الدمام والخبر"],
   ["Jubail", "الجبيل"], ["Yanbu", "ينبع"], ["Tabuk & NEOM", "تبوك ونيوم"], ["Abha", "أبها"], ["Qassim", "القصيم"], ["Hail", "حائل"], ["Jazan", "جازان"],
 ];
-const REGION: [string, string][] = [["UAE", "الإمارات"], ["Qatar", "قطر"], ["Oman", "عُمان"], ["Iraq", "العراق"], ["Cairo", "القاهرة"]];
 ---
 <Base lang={lang} path="/" title={copy.title} description={copy.description} image="/images/og-default.jpg"
   schema={[collectionSchema(lang, "/services/", ar ? "خدمات سيلورين" : "Selorin services", services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
@@ -286,18 +285,9 @@ const REGION: [string, string][] = [["UAE", "الإمارات"], ["Qatar", "قط
           <p class="eyebrow">{ar ? "مناطق الخدمة" : "Service coverage"}</p>
           <h2 id="h-coverage">{ar ? "مكتب استشارات بيئية يخدم جميع مناطق المملكة" : "Environmental consultants serving every region of Saudi Arabia"}</h2>
         </div>
-        <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى في المملكة، ونخدم عملاءنا أيضًا في الإمارات وقطر وعُمان والعراق ومصر." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects across the Kingdom, and we also serve clients in the UAE, Qatar, Oman, Iraq and Egypt."}</p>
+        <p class="lead">{ar ? "ننفذ الزيارات الميدانية والرصد البيئي والدراسات في المدن الرئيسة والمدن الصناعية والمشاريع الكبرى في جميع مناطق المملكة." : "We carry out site visits, environmental monitoring and studies in major cities, industrial cities and giga-projects in every region of the Kingdom."}</p>
       </div>
-      <div class="coverage-groups">
-        <div>
-          <p class="coverage-label">{ar ? "داخل المملكة" : "In Saudi Arabia"}</p>
-          <ul class="city-list">{CITIES.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
-        </div>
-        <div>
-          <p class="coverage-label">{ar ? "في المنطقة" : "In the region"}</p>
-          <ul class="city-list city-list--region">{REGION.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
-        </div>
-      </div>
+      <ul class="city-list">{CITIES.map(([en, a]) => <li><Icon name="pin" />{ar ? a : en}</li>)}</ul>
     </div>
   </section>
 

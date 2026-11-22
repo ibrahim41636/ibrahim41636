@@ -682,19 +682,16 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .branded-photo { aspect-ratio: 4 / 3; }
 }
 
-/* Home: service coverage */
-.coverage-groups { display: grid; gap: var(--space-5); }
-.coverage-label { margin: 0 0 var(--space-3); font-size: var(--fs-14); font-weight: 600; color: var(--c-muted); }
+/* Home: service coverage cities */
 .city-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .city-list li { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; background: var(--c-white); border: 1px solid var(--c-line); font-weight: 600; font-size: var(--fs-14); }
 .city-list svg { width: 16px; height: 16px; color: var(--c-forest); }
-.city-list--region li { background: var(--c-mint); border-color: var(--c-mint-2); color: var(--c-forest); }
 
 /* Small phones: keep the header to one social icon; all of them stay in the footer */
-@media (max-width: 520px) { .header-social--instagram, .header-social--tiktok { display: none; } }
+@media (max-width: 520px) { .header-social--instagram, .header-social--tiktok, .header-social--xlogo, .header-social--youtube { display: none; } }
 
-/* Mid-width desktops: keep the full navigation on one line. Other social links stay in the footer. */
-@media (min-width: 1181px) and (max-width: 1679px) {
+/* Desktops: keep the full navigation on one line. Other social links stay in the footer. */
+@media (min-width: 1181px) {
   .header-social:not(.header-social--linkedin) { display: none; }
   .nav-link { padding-inline: 9px; }
 }

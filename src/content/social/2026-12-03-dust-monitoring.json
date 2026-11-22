@@ -4,30 +4,30 @@
   "pillar": "رصد الغبار",
   "stage": "awareness",
   "sources": [
-    "https://www.mewa.gov.sa/en/InformationCenter/DocsCenter/RulesLibrary/Docs/Executive Regulations for the Protection of Air Quality.pdf",
-    "https://ncec.gov.sa/",
-    "https://selorin.co/ar/services/dust-monitoring/"
+    "https://www.ncec.gov.sa/ar/MediaCenter/News/Pages/19022026.aspx",
+    "https://www.rcrc.gov.sa/wp-content/uploads/2026/02/%D8%A7%D9%95%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%BA%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%A7%D8%AC%D9%85-%D8%B9%D9%86-%D8%A7%D9%84%D8%A7%D9%94%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%A7%D9%95%D9%86%D8%B4%D8%A7%D9%8A%D9%94%D9%8A%D8%A9-%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.pdf",
+    "https://selorin.co/ar/equipment/dust-monitoring-station/"
   ],
   "ar": {
-    "title": "رصد الغبار: من الخيار إلى الضرورة",
-    "text": "**TSP و PM10 و PM2.5: هذه هي كسور الغبار التي ينظر إليها المنظمون.** إن لم تكن موقعك أو مصنعك أو مشروع الإنشاء يقيسها بشكل موثق، فأنت تخمّن بشأن الامتثال.\n\n**لماذا القياس المستمر أفضل من التخمين:** أولًا، يثبت الامتثال لمفتشي المركز الوطني، فلا مفاجآت عند التدقيق أو الرقابة. ثانيًا، يظهر للمستأجرين والجيران والسلطات أنك تدير الانبعاثات بجدية (حماية صورتك التجارية والعلاقات). ثالثًا، يحدد معدات المشاكل مبكرًا، فتأتي الصيانة الوقائية قبل الغرامات والإيقافات. رابعًا، يدعم متطلبات التأمين والمُقرضين والهيئات الحكومية.\n\n**كيف يعمل الرصد:** العينات المستمرة أو الأسبوعية تقيس تركيزات الجسيمات بالوحدات المعترف بها. البيانات تذهب إلى التقارير الشهرية والسنوية التي يقبلها المركز دليلًا على التحكم والالتزام.\n\n**التكلفة مقابل العقوبة:** إيجار محطة رصد الغبار (2K إلى 4K ريال/شهر) هو تأمين رخيص جدًا مقابل توقف التشغيل والغرامات (من 50K إلى أكثر من 500K ريال).\n\n**ملاحظة موسمية:** موسم الغبار بالسعودية يشتد من نوفمبر إلى مارس. إنشاء أو تشغيل شتاء؟ بيانات الرصد تصبح خط الحياة.",
-    "x": "رصد الغبار: 2K إلى 4K ريال شهريًا بالإيجار. عدم الرصد: غرامات من 50K إلى أكثر من 500K. الرياضيات واضحة. #الالتزام_البيئي",
-    "link": "/ar/services/dust-monitoring/",
+    "title": "رصد الغبار في مشاريع الرياض: اشتراط وليس خيارًا",
+    "text": "مشروعك الإنشائي في الرياض مساحته 2000 متر مربع أو أكثر؟ إذن يخصك هذا.\n\nأعلن المركز الوطني للرقابة على الالتزام البيئي مع الهيئة الملكية لمدينة الرياض اشتراطات خاصة للتحكم في الغبار، منها تركيب أجهزة قياس جودة الهواء في الموقع وربطها بالمنصة الموحدة لرصد الغبار، ورفع تقارير دورية عن الأداء البيئي. والغرامة تصل إلى 50 ألف ريال عن كل اشتراط غير مستوفى.\n\nما تحتاجه عمليًا:\n• محطة عند حدود الموقع بين مصادر الغبار وأقرب المساكن أو المدارس.\n• ربط البيانات بالمنصة والتأكد من تغطية الشبكة.\n• سجلات للرش وتغطية الحمولات وغسل إطارات الشاحنات.\n\nتؤجّر سيلورين محطة لرصد الغبار والضوضاء والطقس تعمل بالطاقة الشمسية، مع التركيب والربط والتقارير. التفاصيل في الرابط.\n\n#رصد_الغبار #الالتزام_البيئي #مشاريع_البناء #الرياض",
+    "x": "مشاريع الإنشاء في الرياض من 2000 م² فأكثر: أجهزة قياس جودة الهواء مربوطة بالمنصة الموحدة، والغرامة تصل إلى 50 ألف ريال عن كل اشتراط. #رصد_الغبار",
+    "link": "/ar/equipment/dust-monitoring-station/",
     "image": {
       "template": "faq",
-      "q": "هل رصد الغبار المستمر ضروري؟",
-      "a": "نعم: الإيجار 2K إلى 4K ريال/شهر يتجنب غرامات من 50K إلى أكثر من 500K. وإثبات الامتثال يحمي موقعك من التوقف والتحقيقات."
+      "q": "هل يلزم رصد الغبار في مشاريع الرياض؟",
+      "a": "نعم للمشاريع الإنشائية من 2000 متر مربع فأكثر: أجهزة قياس جودة الهواء في الموقع مربوطة بالمنصة الموحدة لرصد الغبار، والغرامة تصل إلى 50 ألف ريال عن كل اشتراط غير مستوفى."
     }
   },
   "en": {
-    "title": "Dust monitoring: from optional to essential for compliance",
-    "text": "**TSP, PM10, PM2.5: these are the dust fractions regulators care about.** If your construction site, factory, or logistics hub does not measure them with documented proof, you are guessing about compliance.\n\n**Why continuous measurement beats guessing:** First, it proves compliance to NCEC inspectors, so there are no audit surprises. Second, it demonstrates to tenants, neighbors, and authorities that you manage emissions seriously (brand protection and relationship stability). Third, it flags problem equipment early, so maintenance comes before fines and shutdowns. Fourth, it meets insurance, lender, and government requirements.\n\n**How monitoring works:** Continuous or weekly air samples measure particle concentrations in recognized units (µg/m³). Data flows into monthly and annual reports that NCEC accepts as evidence of control and compliance.\n\n**Cost vs. penalty math:** Dust monitor rental (2K to 4K SAR/month) is cheap insurance against operational shutdowns and fines (50K to over 500K SAR).\n\n**Seasonal timing matters:** Dust season in Saudi Arabia peaks November to March. Winter construction or operations? Monitoring data becomes your compliance lifeline.",
-    "x": "Dust monitoring: 2K to 4K SAR/month rental. Non-compliance fines: 50K to over 500K SAR. The math is simple. #Compliance",
-    "link": "/services/dust-monitoring/",
+    "title": "Dust monitoring on Riyadh projects is now a condition, not an option",
+    "text": "Is your construction project in Riyadh 2,000 square metres or larger? Then this applies to you.\n\nThe National Center for Environmental Compliance and the Royal Commission for Riyadh City have announced special dust control conditions. They include installing air quality measuring devices on site, linking them to the unified dust monitoring platform, and submitting periodic environmental performance reports. Fines can reach 50,000 riyals for each condition that is not met.\n\nWhat you need in practice:\n• A station at the site boundary, between the dust sources and the nearest homes or schools.\n• Data linked to the platform, with network coverage checked.\n• Records of watering, load covering and truck tyre washing.\n\nSelorin rents a solar-powered dust, noise and weather monitoring station with installation, connection and reporting. Details at the link.\n\n#DustMonitoring #Compliance #Construction #Riyadh",
+    "x": "Riyadh construction projects of 2,000 m² or more: air quality monitors linked to the unified dust platform, with fines of up to 50,000 riyals per unmet condition. #DustMonitoring",
+    "link": "/equipment/dust-monitoring-station/",
     "image": {
       "template": "faq",
-      "q": "Is continuous dust monitoring worth the cost?",
-      "a": "Yes: 2K to 4K SAR/month rental avoids fines that can exceed 500K SAR. Documented compliance protects your site from shutdowns and enforcement actions."
+      "q": "Do Riyadh projects have to monitor dust?",
+      "a": "Yes, construction projects of 2,000 m² or more: air quality monitors on site linked to the unified dust monitoring platform, with fines of up to 50,000 riyals for each unmet condition."
     }
   }
 }

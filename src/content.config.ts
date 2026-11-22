@@ -167,6 +167,9 @@ const equipmentLocale = z.object({
   types: z.array(z.object({ title: z.string(), description: z.string(), sectors: z.string() })).default([]),
   useCases: z.array(z.string()).min(3),
   regulatory: z.array(z.string()).min(1),
+  // Optional: a sourced compliance alert (why the equipment matters now) and installation controls.
+  alert: z.object({ title: z.string(), text: z.string(), points: z.array(z.string()).min(1), note: z.string() }).optional(),
+  install: z.array(z.object({ title: z.string(), text: z.string() })).default([]),
   faqs: z.array(faq).min(3),
 });
 

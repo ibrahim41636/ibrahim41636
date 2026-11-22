@@ -1,5 +1,6 @@
 ---
-import { equipmentImage } from "@/data/imagery";
+import { equipmentImage, equipmentGallery } from "@/data/imagery";
+import Picture from "@/components/Picture.astro";
 import Base from "@/layouts/Base.astro";
 import PageHero from "@/components/PageHero.astro";
 import Icon from "@/components/Icon.astro";
@@ -23,6 +24,7 @@ const services = await getEntries([item.data.service, ...item.data.services.filt
 const industries = await getEntries(item.data.industries);
 const related = (await getEquipment()).filter((e) => item.data.related.includes(e.id));
 const photo = equipmentImage(item.id);
+const gallery = equipmentGallery(item.id);
 const path = `/equipment/${item.id}/`;
 const requestHref = href(lang, `/request/${service!.id}/`);
 const leaseOut = item.data.modes.includes("rental");
@@ -34,11 +36,13 @@ const crumbs = [
 ];
 const toc = [
   ["overview", L("Overview", "نظرة عامة")],
+  ...(d.alert ? [["compliance", d.alert.title]] : []),
   ["includes", leaseOut ? L("What the rental includes", "ماذا يشمل التأجير") : L("What we provide", "ماذا نقدّم")],
   ...(d.measures.length ? [["measures", L("Measurement specifications", "مواصفات القياس")]] : []),
   ...(d.specs.length ? [["specs", L("System specifications", "مواصفات النظام")]] : []),
   ...(d.types.length ? [["types", L("Equipment in this range", "الأجهزة ضمن هذه الفئة")]] : []),
   ["uses", L("Where it is used", "أين يُستخدم")],
+  ...(d.install.length ? [["install", L("Installation controls", "ضوابط التركيب")]] : []),
   ["regulatory", t(lang, "service.regulatory")],
   ["faq", t(lang, "service.faq")],
 ];
@@ -72,7 +76,23 @@ const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير")
           <h2 id="h-overview">{L("Overview", "نظرة عامة")}</h2>
           <p class="definition">{d.definition}</p>
           <div class="prose">{d.overview.map((p) => <p>{p}</p>)}</div>
+          {gallery.length > 0 && (
+            <div class="equip-gallery mt-6">
+              {gallery.map((g) => <figure><Picture src={g.src} alt={g.alt[lang]} width={g.width} height={g.height} sizes="(max-width: 900px) 100vw, 420px" /><figcaption>{g.alt[lang]}</figcaption></figure>)}
+            </div>
+          )}
         </section>
+
+        {d.alert && (
+          <section class="block" id="compliance" aria-labelledby="h-compliance">
+            <div class="equip-alert">
+              <h2 id="h-compliance">{d.alert.title}</h2>
+              <p>{d.alert.text}</p>
+              <ul class="checklist">{d.alert.points.map((x) => <li>{x}</li>)}</ul>
+              <p class="muted" style="font-size:var(--fs-14)">{d.alert.note}</p>
+            </div>
+          </section>
+        )}
 
         <section class="block" id="includes" aria-labelledby="h-includes">
           <h2 id="h-includes">{leaseOut ? L("What the rental includes", "ماذا يشمل التأجير") : L("What we provide", "ماذا نقدّم")}</h2>
@@ -106,7 +126,7 @@ const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير")
                 <tbody>{d.specs.map((s) => <tr><th scope="row">{s.label}</th><td>{s.value}</td></tr>)}</tbody>
               </table>
             </div>
-            <p class="muted mt-4" style="font-size:var(--fs-14)">{L("Specifications are the manufacturer's and may change without notice. We confirm the configuration for your site in the quotation.", "المواصفات من بيانات الشركة المصنّعة وقد تتغير دون إشعار، ونؤكد التهيئة المناسبة لموقعك في عرض السعر.")}</p>
+            <p class="muted mt-4" style="font-size:var(--fs-14)">{L("Specifications may change without notice. We confirm the configuration for your site in the quotation.", "قد تتغير المواصفات دون إشعار، ونؤكد التهيئة المناسبة لموقعك في عرض السعر.")}</p>
           </section>
         )}
 
@@ -130,6 +150,15 @@ const cta = leaseOut ? L("Request a rental quote", "اطلب عرض تأجير")
             </div>
           )}
         </section>
+
+        {d.install.length > 0 && (
+          <section class="block" id="install" aria-labelledby="h-install">
+            <h2 id="h-install">{L("Installation controls", "ضوابط التركيب")}</h2>
+            <div class="grid grid-2">
+              {d.install.map((x, i) => <div class="card"><span class="card-num">{String(i + 1).padStart(2, "0")}</span><h3>{x.title}</h3><p>{x.text}</p></div>)}
+            </div>
+          </section>
+        )}
 
         <section class="block" id="regulatory" aria-labelledby="h-regulatory">
           <h2 id="h-regulatory">{t(lang, "service.regulatory")}</h2>

@@ -699,3 +699,13 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .brand-text small { display: none; }
   .header-tools { gap: var(--space-2); }
 }
+
+/* Equipment pages: image gallery and compliance alert */
+.equip-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.equip-gallery figure { margin: 0; }
+.equip-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius-lg); border: 1px solid var(--c-line); }
+.equip-gallery figcaption { margin-top: var(--space-2); font-size: var(--fs-14); color: var(--c-muted); }
+@media (max-width: 640px) { .equip-gallery { grid-template-columns: 1fr; } }
+.equip-alert { padding: var(--space-6); border-radius: var(--radius-lg); background: #fdf3f1; border: 1px solid #f1cdc6; border-inline-start: 4px solid var(--c-alert); }
+.equip-alert h2 { margin-top: 0; }
+

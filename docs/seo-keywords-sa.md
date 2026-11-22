@@ -105,7 +105,7 @@ Search volumes are Google Keyword Planner averages for Saudi Arabia (via Ryze AI
 8. ~~رصد الغبار في مواقع الإنشاء: الحدود والطرق والتقارير~~ (covered by existing `dust-monitoring-pm10-pm25-construction`)
 9. ~~خطة الحياد الصفري للشركات في السعودية: من جرد الانبعاثات إلى الأهداف~~ ✅ 2026-11-08
 10. ~~خطة الإدارة البيئية للإنشاء (CEMP): ماذا تتضمن ومتى تُطلب~~ ✅ 2026-11-15
-11. قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير (target `/ar/services/noise-monitoring/`)
+11. ~~قياس الضوضاء في مواقع الإنشاء والمنشآت: الطرق والتقارير~~ ✅ 2026-11-22
 
 12. Regulation deep-dives, one per executive regulation, each linking back to the NCEC guide (`ncec-environmental-regulations-guide`): air quality (stationary sources and monitoring licences), noise, aquatic media, soil, ozone-depleting substances, environmental service providers.
 
@@ -177,3 +177,10 @@ month's focus, re-order this list to match it.
   guarded by `tests/no-dashes.test.ts`; schema `areaServed` adds Iraq and Egypt. The home coverage section lists
   the 12 Saudi cities and, in a second group, the UAE, Qatar, Oman, Iraq and Cairo (a map was tried and removed
   at the owner's request).
+- 2026-11-22 (weekly run): published backlog item 11 as `insights/{ar,en}/noise-measurement-construction-sites-facilities`
+  targeting «قياس الضوضاء» / "noise measurement Saudi Arabia", as the monthly brief planned for this week. It supports
+  `/ar/services/noise-monitoring/` and links to the permitting pillar, EIA, the new CEMP guide, the NCEC guide and the
+  dust, noise and weather station rental page. The only regulatory specific is the construction hours window
+  (7 am to 6 pm) from the Executive Regulation for Noise, cited to UQN and MEWA as in the NCEC guide; no noise limits
+  or frequencies invented. Audit: AR title 51 chars, EN title 69; descriptions include the primary keyword.
+  Next: backlog item 12 (regulation deep-dives), starting with air quality.

@@ -184,3 +184,6 @@ month's focus, re-order this list to match it.
   (7 am to 6 pm) from the Executive Regulation for Noise, cited to UQN and MEWA as in the NCEC guide; no noise limits
   or frequencies invented. Audit: AR title 51 chars, EN title 69; descriptions include the primary keyword.
   Next: backlog item 12 (regulation deep-dives), starting with air quality.
+- 2026-11-22: at the owner's request the home coverage section lists only the 12 Saudi cities again; the regional
+  group (UAE, Qatar, Oman, Iraq, Cairo) and the Iraq and Egypt entries added to schema `areaServed` on 15 Nov are
+  removed. `areaServed` is back to Saudi Arabia and the GCC states, as before.

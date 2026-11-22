@@ -10,6 +10,9 @@ const img = (src: string, width: number, height: number, en: string, ar: string)
 export const IMAGES = {
   windFarm: img("wind-farm.jpg", 735, 490, "Wind turbines across farmland at sunrise", "توربينات رياح فوق أراضٍ زراعية عند شروق الشمس"),
   windHills: img("wind-hills.jpg", 736, 414, "Wind turbines on green hills beside a road", "توربينات رياح على تلال خضراء بجانب طريق"),
+  dustStationSite: img("dust-station-site.jpg", 960, 1200, "Illustration of the Selorin dust, noise and weather monitoring station at a construction site boundary", "رسم توضيحي لمحطة سيلورين لرصد الغبار والضوضاء والطقس عند حدود موقع إنشاء"),
+  dustStationStudio: img("dust-station-studio.jpg", 1200, 900, "Illustration of the Selorin dust monitoring station with its solar panel", "رسم توضيحي لمحطة سيلورين لرصد الغبار مع لوحها الشمسي"),
+  dustStationFront: img("dust-station-front.jpg", 1200, 900, "Illustration of the station front: particulate inlet, noise microphone and wind sensors", "رسم توضيحي لواجهة المحطة: مدخل الجسيمات وميكروفون الضوضاء وحساسات الرياح"),
   monitoringStation: img("monitoring-station.jpg", 736, 736, "Solar-powered environmental monitoring station with weather and air sensors", "محطة رصد بيئي تعمل بالطاقة الشمسية مزوّدة بحساسات للطقس وجودة الهواء"),
   openPitMine: img("open-pit-mine.jpg", 736, 1301, "Open-pit mine with haul trucks and drilling rigs", "منجم مفتوح تعمل فيه شاحنات النقل ومعدات الحفر"),
   refinery: img("refinery.jpg", 720, 1100, "Process columns of an industrial plant at dusk", "أبراج المعالجة في منشأة صناعية عند الغروب"),
@@ -105,7 +108,7 @@ const PAGE: Record<string, Key> = {
 
 // Equipment pages: replace with licensed product photography as it is added to /public/images.
 const EQUIPMENT: Record<string, Key> = {
-  "dust-monitoring-station": "monitoringStation",
+  "dust-monitoring-station": "dustStationSite",
   "air-quality-monitoring-station": "monitoringStation",
   "continuous-emissions-monitoring": "powerPlant",
   "voc-sampling-analysis": "refinery",
@@ -117,6 +120,11 @@ const EQUIPMENT: Record<string, Key> = {
 };
 
 export const equipmentImage = (id: string) => IMAGES[EQUIPMENT[id] ?? "monitoringStation"];
+// Extra views shown in the overview of an equipment page.
+const EQUIPMENT_GALLERY: Record<string, Key[]> = {
+  "dust-monitoring-station": ["dustStationStudio", "dustStationFront"],
+};
+export const equipmentGallery = (id: string) => (EQUIPMENT_GALLERY[id] ?? []).map((k) => IMAGES[k]);
 export const categoryImage = (id: string) => IMAGES[CATEGORY[id] ?? "landscape"];
 export const serviceImage = (id: string, category: string) => IMAGES[SERVICE[id] ?? CATEGORY[category] ?? "landscape"];
 export const industryImage = (id: string) => IMAGES[INDUSTRY[id] ?? "landscape"];

@@ -24,6 +24,9 @@
     "voc-sampling-analysis"
   ],
   "sources": [
+    "https://www.ncec.gov.sa/ar/MediaCenter/News/Pages/19022026.aspx",
+    "https://www.rcrc.gov.sa/wp-content/uploads/2026/02/%D8%A7%D9%95%D8%AC%D8%B1%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D9%88%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%BA%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D8%A7%D8%AC%D9%85-%D8%B9%D9%86-%D8%A7%D9%84%D8%A7%D9%94%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%A7%D9%95%D9%86%D8%B4%D8%A7%D9%8A%D9%94%D9%8A%D8%A9-%D8%A8%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6.pdf",
+    "https://sabq.org/article/umxqg2e",
     "https://www.uqn.gov.sa/details?p=17812",
     "https://www.uqn.gov.sa/details?p=17835",
     "https://www.mewa.gov.sa/en/Ministry/AboutMinistry/RulesAndConditions/RulesLibrary/Docs/Executive%20Regulation%20for%20Noise.pdf"
@@ -178,15 +181,57 @@
       "Responding to complaints with data that shows the levels and the wind direction at the time"
     ],
     "regulatory": [
+      "In Riyadh, the dust control conditions announced by the National Center for Environmental Compliance and the Royal Commission for Riyadh City (February 2026) require construction projects of 2,000 square metres or more to install air quality measuring devices and link them to the unified dust monitoring platform, with fines of up to 50,000 riyals for each condition not met.",
       "The Executive Regulation for Air Quality under the Environmental Law sets the national ambient air standards, including for PM10 and PM2.5, and gives the National Center for Environmental Compliance (NCEC) responsibility for monitoring and enforcement.",
       "The same regulation treats installing and operating ambient air monitoring networks without a licence, or using an unlicensed service provider, as a violation. Monitoring for regulatory submission is therefore run through a provider licensed by NCEC for that activity.",
       "The Executive Regulation for Noise sets noise standards and permits exceedances at construction sites between 7:00 am and 6:00 pm, so work outside these hours needs to be planned with noise data.",
       "Environmental permit conditions and construction environmental management plans often set dust and noise monitoring, alert thresholds and reporting frequency for the site."
     ],
+    "alert": {
+      "title": "Why it matters: dust conditions on Riyadh projects",
+      "text": "In February 2026 the National Center for Environmental Compliance and the Royal Commission for Riyadh City announced special conditions to control dust from construction work in Riyadh. Among the main ones: install air quality measuring devices on site, link them to the unified dust monitoring platform for construction projects, and submit periodic environmental performance reports.",
+      "points": [
+        "The conditions apply to construction projects of 2,000 square metres or more in Riyadh.",
+        "Fines can reach 50,000 riyals for each condition that is not met.",
+        "NCEC has issued 557 violations of the dust control procedure's requirements in Riyadh, worth more than 16 million riyals.",
+        "The conditions also cover watering roads and site entrances, dust suppressants, washing truck tyres before they leave and covering their loads, and stopping dusty work when the wind picks up."
+      ],
+      "note": "Source: NCEC news item \"Special conditions for construction projects, with a 50,000 riyal fine for violators\" (19 February 2026) and the dust control procedure published by the Royal Commission for Riyadh City. Check the official text for the full conditions and what applies to your project."
+    },
+    "install": [
+      {
+        "title": "Station location",
+        "text": "At the project boundary between the main dust sources and the nearest sensitive receptors, such as schools, hospitals, mosques and homes, taking the prevailing wind into account. Large projects usually need one station upwind and another downwind."
+      },
+      {
+        "title": "Air inlet",
+        "text": "In open air, away from walls and obstructions, and not right next to a single dust source such as an unpaved track or a stockpile, so the reading represents the site rather than one source."
+      },
+      {
+        "title": "Mounting and power",
+        "text": "On a fixed pole, wall or bracket that can take the wind, with the solar panel facing south and unshaded, and the battery charged before start-up."
+      },
+      {
+        "title": "Platform connection",
+        "text": "Check 4G coverage at the installation point, connect the data to the dashboard, and to the unified dust monitoring platform for Riyadh projects where it applies."
+      },
+      {
+        "title": "Commissioning and records",
+        "text": "A functional test after installation and a commissioning report with the station coordinates, installation photos, test results and calibration certificates."
+      },
+      {
+        "title": "Routine maintenance",
+        "text": "Regular visits to clean the inlet and sampling head, check the sensors, calibration, solar panel, battery and data transmission, with a record of every visit."
+      }
+    ],
     "faqs": [
       {
         "q": "How much does it cost to rent a dust monitoring station?",
         "a": "The rental depends on the number of stations, the parameters, the rental period and the reporting you need. Send the site location and the period through the request form and we will reply with a configuration and a quotation."
+      },
+      {
+        "q": "Do Riyadh projects have to install a dust monitor?",
+        "a": "Under the conditions announced by the National Center for Environmental Compliance and the Royal Commission for Riyadh City in February 2026, construction projects of 2,000 square metres or more in Riyadh must install air quality measuring devices and link them to the unified dust monitoring platform, with fines of up to 50,000 riyals for each condition not met. In other cities it depends on the permit conditions and the project's environmental management plan."
       },
       {
         "q": "What does the station measure?",
@@ -360,15 +405,57 @@
       "الرد على الشكاوى ببيانات توضح المستويات واتجاه الرياح وقت الشكوى"
     ],
     "regulatory": [
+      "في مدينة الرياض، تُلزم اشتراطات التحكم في الغبار التي أعلنها المركز الوطني للرقابة على الالتزام البيئي مع الهيئة الملكية لمدينة الرياض (فبراير 2026) المشاريع الإنشائية التي تبلغ مساحتها 2000 متر مربع فأكثر بتركيب أجهزة قياس جودة الهواء وربطها بالمنصة الموحدة لرصد الغبار، مع غرامة تصل إلى 50 ألف ريال عن كل اشتراط غير مستوفى.",
       "تحدد اللائحة التنفيذية لجودة الهواء لنظام البيئة المقاييس الوطنية للهواء المحيط، ومنها PM10 وPM2.5، وتسند إلى المركز الوطني للرقابة على الالتزام البيئي مهام الرصد والرقابة.",
       "وتعدّ اللائحة نفسها تركيب شبكات رصد الهواء المحيط وتشغيلها دون ترخيص، أو الاستعانة بمقدم خدمات غير مرخص، مخالفةً. لذلك يُنفَّذ الرصد المخصص للرفع إلى الجهة الرقابية عبر مقدم خدمة مرخّص من المركز لهذا النشاط.",
       "تحدد اللائحة التنفيذية للضوضاء مقاييس الضوضاء، وتسمح بتجاوزها في مواقع الإنشاء من السابعة صباحًا حتى السادسة مساءً، فيلزم تخطيط العمل خارج هذه الساعات ببيانات ضوضاء.",
       "كثيرًا ما تحدد اشتراطات التصريح البيئي وخطط الإدارة البيئية لأعمال الإنشاء رصد الغبار والضوضاء وحدود التنبيه وتكرار التقارير في الموقع."
     ],
+    "alert": {
+      "title": "خطورة المخالفات: اشتراطات الغبار في مشاريع الرياض",
+      "text": "أعلن المركز الوطني للرقابة على الالتزام البيئي مع الهيئة الملكية لمدينة الرياض في فبراير 2026 اشتراطات خاصة للتحكم في الغبار الناتج عن الأعمال الإنشائية في مدينة الرياض. ومن أبرزها تركيب أجهزة قياس جودة الهواء في الموقع وربطها بالمنصة الموحدة لرصد الغبار في المشاريع الإنشائية، ورفع تقارير دورية عن الأداء البيئي.",
+      "points": [
+        "تنطبق الاشتراطات على المشاريع الإنشائية التي تبلغ مساحتها 2000 متر مربع فأكثر في مدينة الرياض.",
+        "تصل الغرامة إلى 50 ألف ريال عن كل اشتراط غير مستوفى.",
+        "أصدر المركز 557 مخالفة لاشتراطات الدليل الإجرائي للتحكم في الغبار في الرياض، بقيمة تتجاوز 16 مليون ريال.",
+        "تشمل الاشتراطات أيضًا رش الطرق ومداخل الموقع، واستخدام مثبتات الغبار، وغسل إطارات الشاحنات قبل خروجها وتغطية حمولاتها، وإيقاف الأعمال المثيرة للغبار عند اشتداد الرياح."
+      ],
+      "note": "المرجع: خبر المركز الوطني للرقابة على الالتزام البيئي «اشتراطات خاصة للمشاريع الإنشائية والغرامة 50 ألف ريال للمخالفين» (19 فبراير 2026)، والدليل الإجرائي للتحكم في الغبار الصادر عن الهيئة الملكية لمدينة الرياض. راجع النص الرسمي لمعرفة الاشتراطات كاملة وما ينطبق على مشروعك."
+    },
+    "install": [
+      {
+        "title": "موقع المحطة",
+        "text": "عند حدود المشروع بين مصادر الغبار الرئيسة وأقرب المستقبلات الحساسة، مثل المدارس والمستشفيات والمساجد والأحياء السكنية، مع مراعاة اتجاه الرياح السائد. وتحتاج المشاريع الكبيرة عادةً محطة قبل اتجاه الرياح وأخرى بعده."
+      },
+      {
+        "title": "مدخل الهواء",
+        "text": "في هواء مفتوح بعيدًا عن الجدران والعوائق، ولا يلاصق مصدر غبار مباشرًا كطريق ترابي أو كومة مواد، حتى تمثل القراءة هواء الموقع لا مصدرًا واحدًا."
+      },
+      {
+        "title": "التثبيت والطاقة",
+        "text": "على عمود أو جدار أو حامل ثابت يتحمل الرياح، مع توجيه اللوح الشمسي نحو الجنوب دون تظليل، والتأكد من شحن البطارية قبل التشغيل."
+      },
+      {
+        "title": "الربط بالمنصة",
+        "text": "التحقق من تغطية شبكة الجيل الرابع في نقطة التركيب، وربط البيانات بلوحة البيانات، وبالمنصة الموحدة لرصد الغبار في مشاريع الرياض حيث ينطبق ذلك."
+      },
+      {
+        "title": "التشغيل والتوثيق",
+        "text": "اختبار وظيفي بعد التركيب، وتقرير تشغيل يتضمن إحداثيات المحطة وصور التركيب ونتائج الاختبار وشهادات المعايرة."
+      },
+      {
+        "title": "الصيانة الدورية",
+        "text": "زيارات منتظمة لتنظيف المدخل ورأس السحب، وفحص الحساسات والمعايرة والطاقة الشمسية والبطارية وإرسال البيانات، مع سجل لكل زيارة."
+      }
+    ],
     "faqs": [
       {
         "q": "كم تكلفة استئجار محطة رصد الغبار؟",
         "a": "تعتمد قيمة التأجير على عدد المحطات والمؤشرات المطلوبة ومدة التأجير ونوع التقارير. أرسل موقع المشروع والمدة عبر نموذج الطلب، ونرد عليك بالتهيئة المناسبة وعرض السعر."
+      },
+      {
+        "q": "هل يلزم تركيب جهاز رصد الغبار في مشاريع الرياض؟",
+        "a": "وفق الاشتراطات التي أعلنها المركز الوطني للرقابة على الالتزام البيئي مع الهيئة الملكية لمدينة الرياض في فبراير 2026، تلتزم المشاريع الإنشائية التي تبلغ مساحتها 2000 متر مربع فأكثر في الرياض بتركيب أجهزة قياس جودة الهواء وربطها بالمنصة الموحدة لرصد الغبار، وتصل الغرامة إلى 50 ألف ريال عن كل اشتراط غير مستوفى. وفي المدن الأخرى يتحدد ذلك من شروط التصريح وخطة الإدارة البيئية للمشروع."
       },
       {
         "q": "ماذا تقيس المحطة؟",

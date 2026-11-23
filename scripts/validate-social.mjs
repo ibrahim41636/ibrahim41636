@@ -53,6 +53,7 @@ for (const f of files) {
       if (!v.text || v.text.length < 20) errs.push(`${lang}.text too short`);
       if ((v.text ?? "").length > 2900) errs.push(`${lang}.text over 2900 characters`);
       if (BANNED.test(v.text ?? "") || BANNED.test(v.x ?? "") || BANNED.test(JSON.stringify(v.image ?? {}))) errs.push(`${lang}: banned hype wording or exclamation mark`);
+      if (/[\u2013\u2014]|\S - \S/.test(JSON.stringify(v))) errs.push(`${lang}: contains a dash (—, – or a spaced hyphen); use a comma, colon or full stop, and write ranges as "9 to 20" / «من 9 إلى 20»`);
       if (AGENT_BRANDS.test(JSON.stringify(v))) errs.push(`${lang}: names an equipment manufacturer or agent (or the acronym CEMS); write the device type in full`);
       if (v.x && xLength(v.x) > 255) errs.push(`${lang}.x is ${xLength(v.x)} characters (max 255 before the link)`);
       if (v.link && (!/^\/[^\s]*$/.test(v.link) || !pageExists(v.link))) errs.push(`${lang}.link "${v.link}" is not an existing site path`);

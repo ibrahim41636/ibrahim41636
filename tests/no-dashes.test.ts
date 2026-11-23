@@ -26,4 +26,12 @@ describe("site copy", () => {
     );
     expect(hits).toEqual([]);
   });
+
+  it("does not use a spaced hyphen as a dash in content", () => {
+    const content = FILES.filter((f) => f.startsWith("src/content/"));
+    const hits = content.flatMap((f) =>
+      readFileSync(f, "utf8").split("\n").flatMap((line, i) => (/\S - \S/.test(line) ? [`${f}:${i + 1}`] : [])),
+    );
+    expect(hits).toEqual([]);
+  });
 });

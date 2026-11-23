@@ -15,6 +15,7 @@ Rules for every piece of content:
 - No statistic, date, regulation, authority name or deadline unless an official or reputable source states it; cite the link.
 - No claims of accreditation, licences, clients, projects, years of experience, team size, prices or guaranteed timelines.
 - No hype words (leading, best, number one, world-class / الرائدة، الأفضل) and no exclamation marks or emojis in official copy.
+- No dashes in any copy: no em dash (—), no en dash (–) and no spaced hyphen ( - ) used as a dash. Use a comma, colon or full stop. `validate-social` and `tests/no-dashes.test.ts` reject them, and CI fails on main if one slips through.
 - No manufacturer or agent brand names for equipment, and never the acronym "CEMS" (it is the name of an exclusive agent in Saudi Arabia); write "continuous emissions monitoring" / «الرصد المستمر للانبعاثات» in full, and never bid on it in ads.
 - Every post links to one service page or article; every article links to the related service pages.
 

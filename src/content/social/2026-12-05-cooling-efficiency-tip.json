@@ -1,0 +1,35 @@
+{
+  "date": "2026-12-05",
+  "slot": 0,
+  "pillar": "نصيحة كفاءة الطاقة",
+  "stage": "awareness",
+  "sources": [
+    "https://www.energy.gov/energysaver/",
+    "https://selorin.co/ar/services/renewable-energy/",
+    "https://selorin.co/ar/services/green-building-advisory/"
+  ],
+  "ar": {
+    "title": "نصيحة سريعة: تنظيف مكيف الهواء يوفّر 15% من الفاتورة",
+    "text": "**الخرافة:** «التكييف يعمل بكفاءة، لا تلمسه.»\n\n**الحقيقة:** فلاتر التكييف تتراكم عليها الأتربة والغبار كل 2–4 أسابيع في السعودية (خصوصًا في الصيف والمناطق الحارة). مكيف مسدود يعمل بكفاءة 60% فقط — أي أنك تدفع أكثر لبرودة أقل.\n\n**ما افعله:** \n1. أوقف المكيف\n2. تنظيف الفلتر بفرشاة ناعمة (أو استبدله إن كان متسخًا جدًا: 10–20 ريال)\n3. تنظيف زعانف المكثف الخارجي إن كان متسخًا (أو استدعِ فني)\n4. تشغيل المكيف مجددًا\n\n**التوفير:** تنظيف واحد منتظم يوفر 10–15% من فاتورة التكييف شهريًا. في منزل فاتورته 300 ريال، هذا توفير 30–45 ريال شهريًا بدون تكلفة (أو تكلفة أقل من 50 ريال لاستبدال الفلتر).\n\n**الفترة المثالية:** كل 2–4 أسابيع في فصل الصيف، وكل 3 أشهر في الفصول الأخرى.",
+    "x": "نصيحة: فلتر التكييف المتسخ يقلل الكفاءة 40%، وتنظيفه يوفر 10–15% من الفاتورة. افعله كل 2–4 أسابيع في الصيف. #توفير_الكهرباء #التكييف",
+    "link": "/ar/services/green-building-advisory/",
+    "image": {
+      "template": "stat",
+      "value": "10–15%",
+      "label": "توفير في فاتورة التكييف بتنظيف منتظم",
+      "context": "بدون تكلفة أو بتكلفة قليلة جدًا"
+    }
+  },
+  "en": {
+    "title": "Quick tip: regular AC filter cleaning saves 10–15% on cooling costs",
+    "text": "**The myth:** «Your AC is running fine; don't touch it.»\n\n**The truth:** Air filters accumulate dust and dirt every 2–4 weeks in Saudi Arabia, especially in summer and hot regions. A clogged filter means your AC operates at 60% efficiency—so you pay more for less cool air.\n\n**What to do:**\n1. Turn off your AC\n2. Clean the filter with a soft brush (or replace it: 10–20 SAR)\n3. Clean the condenser fins outside if visibly dirty (or call a technician)\n4. Turn the AC back on\n\n**Savings:** One cleaning saves 10–15% of your monthly AC bill. For a 300 SAR bill, that's 30–45 SAR saved per month—with zero or minimal cost.\n\n**Best timing:** Every 2–4 weeks during summer; every 3 months in other seasons.",
+    "x": "Tip: dirty AC filter = 40% efficiency loss. Regular cleaning saves 10–15% on cooling. Do it every 2–4 weeks in summer. #EnergyEfficiency #AC",
+    "link": "/services/green-building-advisory/",
+    "image": {
+      "template": "stat",
+      "value": "10–15%",
+      "label": "cost savings from regular AC filter cleaning",
+      "context": "with minimal or no cost"
+    }
+  }
+}

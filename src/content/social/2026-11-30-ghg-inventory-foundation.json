@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-30",
+  "slot": 0,
+  "pillar": "حصر الانبعاثات والمحاسبة الكربونية",
+  "stage": "consideration",
+  "sources": [
+    "https://www.unfccc.int/cop31",
+    "https://www.ghgprotocol.org/",
+    "https://selorin.co/ar/services/ghg-carbon-accounting/",
+    "https://selorin.co/ar/services/net-zero-advisory/"
+  ],
+  "ar": {
+    "title": "حصر الانبعاثات: أين تبدأ خطة الحياد الصفري",
+    "text": "**خطط الحياد الصفري تبدأ برقم واحد.** مؤتمر المناخ كوب31 في أنطاليا (انتهى 20 نوفمبر) ركّز على أن أي التزام بـ «صفري نت» يجب أن يبدأ من حصر دقيق للانبعاثات الحالية — الخط الأساس.\n\n**لماذا الدقة تهم:** الانبعاثات تُصنّف إلى ثلاث فئات: النطاق الأول (الوقود والغاز في الموقع)، والنطاق الثاني (الكهرباء المشتراة)، والنطاق الثالث (سلسلة القيمة كاملة). منشأة تقول «سننخفض 50%» بلا حصر أساسي تخاطر بـ وعود فارغة والغرامات الحكومية.\n\n**الخطوات الثلاث:** أولاً حصر الانبعاثات من جميع المصادر (الملخص التنفيذي والتفاصيل). ثانيًا مقارنتها بمعايير الصناعة والقطاع. ثالثًا رسم أهداف مرحلية منطقية (2030 و2040 و2050) مع إجراءات ملموسة.\n\n**من يُطلب منه؟** الشركات الكبرى والمشاريع العقارية الكبرى والمصانع والمرافق الحكومية — كل من يخضع للعقود الحكومية أو تمويل المؤسسات أو البورصة أو القوانين المناخية الإقليمية.\n\n**الميزة المبكرة:** الشركات التي وثّقت انبعاثاتها وخططت الحياد الصفري الآن تتمتع بأولوية في العطاءات الحكومية والاستثمارات الخاصة. التأخير يعني إعادة عمل الحصر والتأخر عن المنافسين.",
+    "x": "خطة الحياد الصفري تبدأ بحصر دقيق للانبعاثات (النطاق 1، 2، 3). من لا يملك بيانات أساس واضحة لا يستطيع وعد انخفاض حقيقي. ابدأ الآن، قبل أن يطلبها العميل. #الكربون #الحياد_الصفري",
+    "link": "/ar/services/ghg-carbon-accounting/",
+    "image": {
+      "template": "faq",
+      "q": "ما الفرق بين النطاقات الثلاثة للانبعاثات؟",
+      "a": "النطاق 1: الوقود والغاز في الموقع. النطاق 2: الكهرباء المشتراة. النطاق 3: سلسلة القيمة (النقل، المنتجات، الموردون). الحياد الصفري تتطلب حصر جميعها."
+    }
+  },
+  "en": {
+    "title": "GHG inventory: where every net-zero roadmap starts",
+    "text": "**Net-zero commitments rest on one foundation: an accurate emissions baseline.** COP31 in Antalya (concluded Nov 20) reaffirmed that any corporate net-zero pledge must be built on precise GHG accounting — not estimates or sector averages.\n\n**Why accuracy matters:** Emissions fall into three categories defined by the GHG Protocol: Scope 1 (fuel and gas burned on-site), Scope 2 (purchased electricity), and Scope 3 (entire value chain—suppliers, transportation, products). A facility that says «we will cut 50%» without a documented baseline risks regulatory fines and loss of credibility with lenders and partners.\n\n**The three-step process:** First, inventory all emission sources (executive summary and detailed tables). Second, benchmark against industry and sector standards. Third, set phased targets (2030, 2040, 2050) backed by concrete actions.\n\n**Who needs this:** Large corporations, major real estate projects, factories, and government facilities—anyone subject to government contracts, institutional financing, public markets, or regional climate laws.\n\n**First-mover advantage:** Organizations with documented baselines and net-zero roadmaps already in place gain priority in government bids and attract investors. Delay means rework and competitive disadvantage.",
+    "x": "Net-zero roadmaps start with accurate Scope 1, 2, and 3 inventory. No baseline = no credible reduction target. Document yours now, before it's a contract requirement. #Carbon #NetZero #ESG",
+    "link": "/services/ghg-carbon-accounting/",
+    "image": {
+      "template": "faq",
+      "q": "What are the three scopes of emissions?",
+      "a": "Scope 1: fuel and gas burned on-site. Scope 2: purchased electricity. Scope 3: value chain (suppliers, transport, products). Net-zero requires inventory of all three."
+    }
+  }
+}

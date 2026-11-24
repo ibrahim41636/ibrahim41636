@@ -4,8 +4,10 @@
 //   GET  /api/admin/leads?status=&limit=  → recent requests
 //   POST /api/admin/status {leadId, status, note?, notify?} → update status, optionally e-mail the client
 //   /api/admin/social…, /api/admin/funnel → social publishing hub and funnel report (social.ts)
+//   /api/admin/quotes…, /api/admin/milestone → proposals and payment schedules (payments.ts)
 import { json, sendEmail, type Env } from "./request";
 import { handleSocialAdmin, type SocialEnv } from "./social";
+import { handlePaymentsAdmin, type PayEnv } from "./payments";
 import { LEAD_ID, isStatus, safeEqual, statusEmail } from "../../src/lib/tracking";
 
 function authorized(request: Request, env: Env) {
@@ -13,11 +15,12 @@ function authorized(request: Request, env: Env) {
   return !!env.ADMIN_TOKEN && safeEqual(token, env.ADMIN_TOKEN);
 }
 
-export async function handleAdmin(request: Request, env: SocialEnv, path: string): Promise<Response> {
+export async function handleAdmin(request: Request, env: SocialEnv & PayEnv, path: string): Promise<Response> {
   if (!env.ADMIN_TOKEN) return json(503, { ok: false, error: "admin_not_configured" });
   if (!authorized(request, env)) return json(401, { ok: false, error: "unauthorized" });
   if (!env.DB) return json(503, { ok: false, error: "tracking_unavailable" });
   if (path.startsWith("/api/admin/social") || path === "/api/admin/funnel") return handleSocialAdmin(request, env, path);
+  if (path.startsWith("/api/admin/quotes") || path === "/api/admin/milestone") return handlePaymentsAdmin(request, env, path);
 
   if (path === "/api/admin/leads" && request.method === "GET") {
     const url = new URL(request.url);

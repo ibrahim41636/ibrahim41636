@@ -1,0 +1,251 @@
+---
+// The client's proposal page, opened from the link in the proposal e-mail (/quote/?t=TOKEN).
+// Shows the total with VAT and the payment schedule, lets the client approve, and sends them to
+// Moyasar's secure page to pay each instalment that is due (mada, Apple Pay or card).
+// Data: GET /api/quote, POST /api/quote/accept and /api/quote/pay (functions/api/payments.ts).
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import { site, type Lang } from "@/i18n/ui";
+import { MILESTONE_STATUS_LABELS, QUOTE_STATUS_LABELS, TRIGGER_LABELS } from "@/lib/payments";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const T = {
+  title: ar ? "العرض الفني والمالي" : "Technical and financial proposal",
+  desc: ar ? "راجع العرض ووافق عليه وسدّد دفعاته بأمان." : "Review, approve and pay your proposal securely.",
+  loading: ar ? "جارٍ تحميل العرض…" : "Loading your proposal…",
+  request: ar ? "رقم الطلب" : "Request ID",
+  client: ar ? "العميل" : "Client",
+  validUntil: ar ? "ساري حتى" : "Valid until",
+  status: ar ? "الحالة" : "Status",
+  subtotal: ar ? "قيمة الخدمات" : "Services",
+  vat: ar ? "ضريبة القيمة المضافة 15%" : "VAT 15%",
+  total: ar ? "الإجمالي" : "Total",
+  paid: ar ? "المدفوع" : "Paid",
+  remaining: ar ? "المتبقي" : "Remaining",
+  schedule: ar ? "جدول الدفعات" : "Payment schedule",
+  docs: ar ? "مستندات العرض (مرفقة في رسالة البريد)" : "Proposal documents (attached to the e-mail)",
+  approve: ar ? "أوافق على العرض" : "I approve the proposal",
+  approvePay: ar ? "الموافقة والدفع" : "Approve and pay",
+  pay: ar ? "سداد الدفعة" : "Pay now",
+  terms: ar ? "بالموافقة تقر بأنك اطلعت على العرض الفني والمالي المرفق وتوافق على نطاق العمل وجدول الدفعات." : "By approving you confirm that you have read the attached technical and financial proposal and agree to its scope and payment schedule.",
+  methods: ar ? "الدفع عبر صفحة ميسّر الآمنة بمدى أو Apple Pay أو البطاقة الائتمانية. لا نطّلع على بيانات بطاقتك." : "Payment is made on Moyasar's secure page by mada, Apple Pay or credit card. We never see your card details.",
+  later: ar ? "تصلك رسالة عند استحقاق كل دفعة بعد إنجاز مرحلتها." : "You will receive an e-mail when each payment falls due, once its stage is complete.",
+  tax: ar ? "تصلك الفاتورة الضريبية من فريقنا بعد كل دفعة." : "Our team sends you the tax invoice after each payment.",
+  approved: ar ? "شكراً، تمت الموافقة على العرض. سنبدأ التنفيذ ونتواصل معك." : "Thank you, the proposal is approved. We will start the work and keep you updated.",
+  thanks: ar ? "شكراً لك، جارٍ تأكيد دفعتك. قد يستغرق التأكيد دقيقة." : "Thank you. We are confirming your payment, which can take a minute.",
+  confirmed: ar ? "تم استلام دفعتك، وتصلك رسالة تأكيد بالبريد." : "Your payment is received. A confirmation is on its way by e-mail.",
+  redirecting: ar ? "جارٍ تحويلك إلى صفحة الدفع…" : "Taking you to the payment page…",
+  notFound: ar ? "لم نجد هذا العرض. تأكد من فتح الرابط كما وصلك في البريد، أو تواصل معنا." : "We could not find this proposal. Open the link exactly as it appears in the e-mail, or contact us.",
+  expired: ar ? "انتهت صلاحية هذا العرض. تواصل معنا وسنرسل لك عرضاً محدّثاً." : "This proposal has expired. Contact us and we will send you an updated one.",
+  cancelled: ar ? "أُلغي هذا العرض. تواصل معنا لأي استفسار." : "This proposal has been cancelled. Contact us with any questions.",
+  unavailable: ar ? "الدفع الإلكتروني غير متاح حالياً. تواصل معنا وسنرسل لك طريقة السداد." : "Online payment is not available right now. Contact us and we will send you payment details.",
+  error: ar ? "تعذّر الاتصال. حاول مرة أخرى." : "Connection failed. Please try again.",
+  help: ar ? "لديك سؤال عن العرض؟" : "Questions about the proposal?",
+};
+const qLabels = Object.fromEntries(Object.entries(QUOTE_STATUS_LABELS).map(([k, v]) => [k, v[lang]]));
+const mLabels = Object.fromEntries(Object.entries(MILESTONE_STATUS_LABELS).map(([k, v]) => [k, v[lang]]));
+const tLabels = Object.fromEntries(Object.entries(TRIGGER_LABELS).map(([k, v]) => [k, v[lang]]));
+qLabels.expired = ar ? "منتهي الصلاحية" : "Expired";
+---
+<Base lang={lang} path="/quote/" noindex focused title={T.title} description={T.desc} analytics={{ page_type: "quote" }}>
+  <Fragment slot="head">
+    <!-- The link token is private: move it out of the URL before analytics reads the page address.
+         It stays in this tab (sessionStorage) so a reload still works. -->
+    <script is:inline>
+      (function () {
+        var p = new URLSearchParams(location.search), t = p.get("t");
+        if (t) { window.__quoteToken = t; try { sessionStorage.setItem("selorin_quote_token", t); } catch (e) {} }
+        if (p.has("t") || p.has("id") || p.has("status") || p.has("message")) {
+          history.replaceState(null, "", location.pathname + (p.get("paid") === "1" ? "?paid=1" : ""));
+        }
+      })();
+    </script>
+  </Fragment>
+  <section class="section">
+    <div class="container-narrow">
+      <span class="icon" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-mint);color:var(--c-forest)"><Icon name="doc" size={28} /></span>
+      <h1 class="mt-5" style="font-size:var(--fs-h2)" data-q-title>{T.title}</h1>
+      <p class="lead" data-q-loading>{T.loading}</p>
+      <p class="q-alert" data-alert role="alert" hidden></p>
+      <p class="q-ok" data-ok role="status" hidden></p>
+
+      <div data-q hidden>
+        <dl class="q-meta">
+          <div><dt>{T.request}</dt><dd class="ltr" data-q-lead></dd></div>
+          <div><dt>{T.client}</dt><dd data-q-client></dd></div>
+          <div><dt>{T.validUntil}</dt><dd data-q-valid></dd></div>
+          <div><dt>{T.status}</dt><dd><span class="status-pill" data-q-status></span></dd></div>
+        </dl>
+
+        <div class="card q-sum">
+          <table>
+            <tbody>
+              <tr><th>{T.subtotal}</th><td data-q-subtotal></td></tr>
+              <tr><th>{T.vat}</th><td data-q-vat></td></tr>
+              <tr class="q-total"><th>{T.total}</th><td data-q-total></td></tr>
+              <tr data-q-paid-row hidden><th>{T.paid}</th><td data-q-paid></td></tr>
+              <tr data-q-rem-row hidden><th>{T.remaining}</th><td data-q-rem></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="q-h2">{T.schedule}</h2>
+        <ol class="q-steps" data-q-steps></ol>
+
+        <div class="q-docs" data-q-docs-wrap hidden>
+          <h2 class="q-h2">{T.docs}</h2>
+          <ul data-q-docs></ul>
+        </div>
+
+        <div class="card q-approve" data-q-approve hidden>
+          <p>{T.terms}</p>
+          <button class="btn" type="button" data-approve></button>
+        </div>
+
+        <p class="muted q-note">{T.methods}<br />{T.tax}</p>
+      </div>
+
+      <p class="muted mt-6" style="font-size:var(--fs-14)">{T.help} <a href={`mailto:${site.email}`}>{site.email}</a> · <span class="ltr q-phone">{site.phone}</span></p>
+    </div>
+  </section>
+
+  <style is:global>
+    .q-alert { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: #fdecea; color: #8a1c12; }
+    .q-ok { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: var(--c-mint); color: var(--c-forest); }
+    .q-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-4); margin: var(--space-6) 0; }
+    .q-meta dt { font-size: var(--fs-12); color: var(--c-muted); }
+    .q-meta dd { margin: 4px 0 0; font-weight: 600; }
+    .status-pill { display: inline-block; padding: 4px 12px; border-radius: 999px; background: var(--c-mint); color: var(--c-forest); font-size: var(--fs-14); }
+    .q-sum table { width: 100%; border-collapse: collapse; }
+    .q-sum th, .q-sum td { padding: 10px 0; border-bottom: 1px solid var(--c-line); text-align: start; font-weight: 400; }
+    .q-sum td { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .q-sum tr:last-child th, .q-sum tr:last-child td { border-bottom: 0; }
+    .q-sum .q-total th, .q-sum .q-total td { font-weight: 700; font-size: var(--fs-18); color: var(--c-forest); }
+    .q-h2 { font-size: var(--fs-h4); margin: var(--space-7) 0 var(--space-4); }
+    .q-steps { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+    .q-steps li { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; padding: 16px 18px; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+    .q-steps li.is-due { border-color: var(--c-forest-2); box-shadow: 0 0 0 1px var(--c-forest-2); }
+    .q-steps b { display: block; }
+    .q-steps small { color: var(--c-muted); }
+    .q-steps .q-amt { font-weight: 700; font-variant-numeric: tabular-nums; text-align: end; white-space: nowrap; }
+    .q-steps .q-st { font-size: var(--fs-12); padding: 2px 10px; border-radius: 999px; background: var(--c-paper-2); }
+    .q-steps .is-paid .q-st, .q-steps li.is-paid .q-st { background: var(--c-mint); color: var(--c-forest); }
+    .q-steps .btn { grid-column: 1 / -1; justify-self: start; }
+    .q-docs ul { margin: 0; padding-inline-start: 20px; }
+    .q-approve { margin-top: var(--space-6); }
+    .q-approve[hidden], [data-q][hidden], .q-docs[hidden] { display: none; }
+    .q-phone { white-space: nowrap; }
+    .q-approve p { color: var(--c-ink-2); }
+    .q-approve .btn { justify-self: start; align-self: flex-start; }
+    .q-note { margin-top: var(--space-5); font-size: var(--fs-14); }
+  </style>
+
+  <script is:inline define:vars={{ T, lang, qLabels, mLabels, tLabels }}>
+    const $ = (s) => document.querySelector(s);
+    const params = new URLSearchParams(location.search);
+    let token = window.__quoteToken || "";
+    try { token = token || sessionStorage.getItem("selorin_quote_token") || ""; } catch {}
+    const sar = (h) => { const n = (h / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); return lang === "ar" ? `${n} ريال` : `SAR ${n}`; };
+    const day = (s) => { const d = new Date(s.length === 10 ? s + "T12:00:00Z" : s.replace(" ", "T") + "Z"); return isNaN(d) ? s : d.toLocaleDateString(lang === "ar" ? "ar-SA-u-ca-gregory" : "en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Riyadh" }); };
+    const alertMsg = (m) => { const a = $("[data-alert]"); a.textContent = m || ""; a.hidden = !m; };
+    const okMsg = (m) => { const a = $("[data-ok]"); a.textContent = m || ""; a.hidden = !m; };
+    let busy = false;
+
+    async function post(path, body, btn) {
+      if (busy) return;
+      busy = true; alertMsg("");
+      const label = btn.textContent; btn.disabled = true;
+      try {
+        const res = await fetch(path, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(body) });
+        const r = await res.json().catch(() => ({}));
+        if (res.status === 503 || r.error === "gateway_error") throw new Error(T.unavailable);
+        if (res.status === 410) throw new Error(T.expired);
+        if (res.status === 409 && r.error === "cancelled") throw new Error(T.cancelled);
+        if (!res.ok || !r.ok) throw new Error(T.error);
+        if (r.url) { btn.textContent = T.redirecting; window.dataLayer && window.dataLayer.push({ event: "quote_pay_start" }); location.href = r.url; return; }
+        await load();
+        if (path.endsWith("/accept")) { okMsg(T.approved); window.dataLayer && window.dataLayer.push({ event: "quote_approved" }); }
+      } catch (e) { alertMsg(e.message); btn.disabled = false; btn.textContent = label; }
+      finally { busy = false; }
+    }
+
+    function render(q) {
+      $("[data-q-loading]").hidden = true;
+      $("[data-q-title]").textContent = q.title;
+      $("[data-q-lead]").textContent = q.leadId;
+      $("[data-q-client]").textContent = [q.name, q.company].filter(Boolean).join(lang === "ar" ? "، " : ", ");
+      $("[data-q-valid]").textContent = day(q.validUntil);
+      $("[data-q-status]").textContent = qLabels[q.status] || q.status;
+      $("[data-q-subtotal]").textContent = sar(q.subtotal);
+      $("[data-q-vat]").textContent = sar(q.vat);
+      $("[data-q-total]").textContent = sar(q.total);
+      $("[data-q-paid-row]").hidden = !q.paid; $("[data-q-paid]").textContent = sar(q.paid);
+      $("[data-q-rem-row]").hidden = !q.paid || !q.remaining; $("[data-q-rem]").textContent = sar(q.remaining);
+
+      const open = q.status === "accepted" || q.status === "paid";
+      $("[data-q-steps]").replaceChildren(...q.milestones.map((m) => {
+        const li = document.createElement("li");
+        li.className = m.status === "due" ? "is-due" : m.status === "paid" ? "is-paid" : "";
+        const left = document.createElement("div");
+        const b = document.createElement("b"); b.textContent = `${m.seq}. ${m.label}`;
+        const sm = document.createElement("small"); sm.textContent = `${Number(m.percent)}% · ${tLabels[m.trigger] || ""}${m.paidAt ? ` · ${day(m.paidAt)}` : ""}`;
+        left.append(b, sm);
+        const right = document.createElement("div"); right.className = "q-amt";
+        const st = document.createElement("span"); st.className = "q-st"; st.textContent = mLabels[m.status] || m.status;
+        right.append(sar(m.amount), document.createElement("br"), st);
+        li.append(left, right);
+        if (open && m.status === "due") {
+          const btn = document.createElement("button"); btn.type = "button"; btn.className = "btn"; btn.textContent = `${T.pay} ${sar(m.amount)}`;
+          btn.onclick = () => post("/api/quote/pay", { t: token, ms: m.id }, btn);
+          li.append(btn);
+        }
+        return li;
+      }));
+
+      const docs = q.documents || [];
+      $("[data-q-docs-wrap]").hidden = !docs.length;
+      $("[data-q-docs]").replaceChildren(...docs.map((d) => { const li = document.createElement("li"); li.textContent = d; li.dir = "auto"; return li; }));
+
+      const approve = $("[data-q-approve]");
+      approve.hidden = q.status !== "sent";
+      if (q.status === "sent") {
+        const first = q.milestones[0];
+        const btn = $("[data-approve]");
+        btn.textContent = first && first.trigger === "acceptance" ? `${T.approvePay} ${sar(first.amount)}` : T.approve;
+        btn.onclick = () => post("/api/quote/accept", { t: token }, btn);
+        if (!(first && first.trigger === "acceptance")) approve.querySelector("p").textContent = `${T.terms} ${T.later}`;
+      }
+      if (q.status === "expired") alertMsg(T.expired);
+      if (q.status === "cancelled") alertMsg(T.cancelled);
+      $("[data-q]").hidden = false;
+    }
+
+    async function load() {
+      const res = await fetch(`/api/quote?t=${encodeURIComponent(token)}`, { headers: { Accept: "application/json" } });
+      const body = await res.json().catch(() => ({}));
+      if (res.status === 404) throw new Error(T.notFound);
+      if (!res.ok || !body.ok) throw new Error(T.error);
+      render(body.quote);
+      return body.quote;
+    }
+
+    (async () => {
+      if (!/^[A-Za-z0-9_-]{24,64}$/.test(token)) { $("[data-q-loading]").hidden = true; return alertMsg(T.notFound); }
+      try {
+        let q = await load();
+        // Back from Moyasar: the payment is confirmed by the server, so check a few times.
+        if (params.get("paid") === "1") {
+          const before = q.paid;
+          okMsg(T.thanks);
+          for (let i = 0; i < 5 && q.paid === before && q.milestones.some((m) => m.status === "due"); i++) {
+            await new Promise((r) => setTimeout(r, 3000));
+            q = await load();
+          }
+          if (q.paid > before || !q.milestones.some((m) => m.status === "due")) { okMsg(T.confirmed); window.dataLayer && window.dataLayer.push({ event: "quote_paid" }); }
+          history.replaceState(null, "", location.pathname);
+        }
+      } catch (e) { $("[data-q-loading]").hidden = true; alertMsg(e.message); }
+    })();
+  </script>
+</Base>

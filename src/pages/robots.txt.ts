@@ -9,6 +9,8 @@ Disallow: /ar/admin/
 Disallow: /social-feed.json
 Disallow: /track/
 Disallow: /ar/track/
+Disallow: /quote/
+Disallow: /ar/quote/
 
 # AI search crawlers are welcome to read public content.
 User-agent: GPTBot

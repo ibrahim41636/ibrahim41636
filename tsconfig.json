@@ -12,7 +12,8 @@
     "app",
     ".wrangler",
     "tests/tracking.test.ts",
-    "tests/social.test.ts"
+    "tests/social.test.ts",
+    "tests/payments.test.ts"
   ],
   "compilerOptions": {
     "baseUrl": ".",

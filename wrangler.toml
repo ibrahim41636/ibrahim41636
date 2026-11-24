@@ -32,6 +32,9 @@ MAIL_FROM = "Selorin Website <website@selorin.co>"
 ALLOWED_ORIGINS = "https://selorin.co,https://www.selorin.co"
 SEND_CONFIRMATION = "false"
 EMAIL_DRY_RUN = "true"
+# Previews can only use Moyasar test keys, and payment links point back at the preview itself.
+MOYASAR_ALLOW_LIVE = "false"
+SITE_URL = ""
 
 # Social publishing hub (functions/api/social.ts): every 15 minutes queue posts for new articles
 # and publish due posts to the connected accounts. Does nothing until D1 and a channel are set up.
@@ -43,6 +46,10 @@ SALES_EMAIL = "sales@selorin.co"
 MAIL_FROM = "Selorin Website <website@selorin.co>"
 ALLOWED_ORIGINS = "https://selorin.co,https://www.selorin.co"
 SEND_CONFIRMATION = "true"
+# Payments (functions/api/payments.ts): live Moyasar keys (sk_live_) work only where this is "true",
+# so it is set here for production and never under [previews.vars]. Links in e-mails use SITE_URL.
+MOYASAR_ALLOW_LIVE = "true"
+SITE_URL = "https://selorin.co"
 
 # Secrets (dashboard → Worker → Settings → Variables and Secrets, type "Secret", or
 # `npx wrangler secret put NAME`): RESEND_API_KEY, ADMIN_TOKEN (staff dashboard /ar/admin/), TURNSTILE_SECRET,
@@ -53,10 +60,12 @@ SEND_CONFIRMATION = "true"
 #   Google Business Profile: GBP_CLIENT_ID, GBP_CLIENT_SECRET, GBP_REFRESH_TOKEN, GBP_ACCOUNT_ID, GBP_LOCATION_ID
 #   TikTok: TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN · YouTube: YOUTUBE_CLIENT_ID, YOUTUBE_CLIENT_SECRET, YOUTUBE_REFRESH_TOKEN
 #   Others via Make or Zapier: SOCIAL_WEBHOOK_URL, SOCIAL_WEBHOOK_SECRET · Search engines: INDEXNOW_KEY
+# Payments (see docs/payments-ar.md): MOYASAR_SECRET_KEY (sk_test_ to try, sk_live_ to take real payments),
+#   optional MOYASAR_WEBHOOK_SECRET (the secret token of the dashboard webhook).
 
 # Lead log + sequential request IDs + rate limiting + request tracking (/track/). Create with:
 #   npx wrangler d1 create selorin-leads   → paste the database_id below
-#   npx wrangler d1 migrations apply selorin-leads --remote   (applies 0001–0004)
+#   npx wrangler d1 migrations apply selorin-leads --remote   (applies every file in migrations/)
 [[d1_databases]]
 binding = "DB"
 database_name = "selorin-leads"

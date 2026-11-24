@@ -21,6 +21,8 @@
     "../src/lib/tracking.ts",
     "../tests/tracking.test.ts",
     "../tests/social.test.ts",
-    "../src/lib/uploads.ts"
+    "../src/lib/uploads.ts",
+    "../src/lib/payments.ts",
+    "../tests/payments.test.ts"
   ]
 }

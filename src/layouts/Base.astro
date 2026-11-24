@@ -73,6 +73,8 @@ const pageContext = { page_language: lang, page_path: path, ...analytics };
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <script type="application/ld+json" set:html={JSON.stringify({ "@context": "https://schema.org", "@graph": graph })} />
+  <!-- Runs before analytics, e.g. to take a private token out of the address bar (quote page). -->
+  <slot name="head" />
   <!-- Consent defaults must reach the dataLayer before any event, or Google tags read consent too early. -->
   <script is:inline src="/js/consent.js"></script>
   <script is:inline define:vars={{ pageContext }}>

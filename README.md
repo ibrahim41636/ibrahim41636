@@ -52,4 +52,6 @@ Every page is generated from the files in `src/content/`. To change a service, e
 
 Social publishing hub and marketing funnel: one queue that publishes to the website (`/updates/`, Knowledge Centre), LinkedIn, X, Instagram, TikTok, YouTube Shorts, Facebook and Google Business Profile, with Selorin-branded images and short videos (`npm run social:images`, `npm run social:videos`), UTM attribution and a funnel report at `/ar/admin/social/`: **`docs/social-funnel-ar.md`**.
 
+Proposals and payments: the team sends the technical and financial proposal from `/ar/admin/quotes/`, the client approves and pays from the e-mailed link through Moyasar (mada, Apple Pay, card), and each scheduled instalment falls due when its stage is marked complete: **`docs/payments-ar.md`**.
+
 See **`docs/architecture.md`** for the sitemap, CMS plan, form/email pipeline, security, SEO, analytics events and the launch checklist.

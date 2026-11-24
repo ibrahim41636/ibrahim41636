@@ -6,8 +6,9 @@ import { handleRequestPost, methodNotAllowed, type Env } from "../functions/api/
 import { handleTrack } from "../functions/api/track";
 import { handleAdmin } from "../functions/api/admin";
 import { runSocialCron, type SocialEnv } from "../functions/api/social";
+import { handlePayments, runPaymentCron, type PayEnv } from "../functions/api/payments";
 
-interface WorkerEnv extends Env, SocialEnv {
+interface WorkerEnv extends Env, SocialEnv, PayEnv {
   ASSETS: Fetcher;
 }
 
@@ -28,12 +29,19 @@ export default {
       return handleTrack(request, env);
     }
     if (pathname.startsWith("/api/admin/")) return handleAdmin(request, env, pathname.replace(/\/$/, ""));
+    // Proposals and payments (functions/api/payments.ts): the client's quote page and Moyasar callbacks.
+    if (pathname === "/api/quote" || pathname.startsWith("/api/quote/") || pathname.startsWith("/api/pay/")) {
+      return handlePayments(request, env, pathname.replace(/\/$/, ""));
+    }
     // IndexNow ownership file (only when the INDEXNOW_KEY secret is set).
     if (env.INDEXNOW_KEY && pathname === `/${env.INDEXNOW_KEY}.txt`) return new Response(env.INDEXNOW_KEY, { headers: { "content-type": "text/plain" } });
     return env.ASSETS.fetch(request);
   },
-  // Cron (wrangler.toml [triggers]): queue posts for new articles and publish due posts to every connected account.
+  // Cron (wrangler.toml [triggers]): queue posts for new articles and publish due posts to every connected account,
+  // then remind clients about instalments that are still unpaid.
   async scheduled(controller, env, ctx) {
-    ctx.waitUntil(runSocialCron(env, new Date(controller.scheduledTime)).then((r) => console.log("social cron", JSON.stringify(r))));
+    const now = new Date(controller.scheduledTime);
+    ctx.waitUntil(runSocialCron(env, now).then((r) => console.log("social cron", JSON.stringify(r))));
+    ctx.waitUntil(runPaymentCron(env, now).then((r) => console.log("payment cron", JSON.stringify(r))).catch((e) => console.error("payment cron", e)));
   },
 } satisfies ExportedHandler<WorkerEnv>;

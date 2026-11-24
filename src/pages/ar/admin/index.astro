@@ -9,7 +9,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]))
   <section class="section">
     <div class="container">
       <h1 style="font-size:var(--fs-h2)">لوحة الطلبات</h1>
-      <p><a href="/ar/admin/social/">مركز النشر والقمع التسويقي ←</a></p>
+      <p><a href="/ar/admin/quotes/">العروض والمدفوعات ←</a> · <a href="/ar/admin/social/">مركز النشر والقمع التسويقي ←</a></p>
 
       <form class="adm-login" data-login>
         <label for="adm-token">رمز الدخول</label>
@@ -93,7 +93,8 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s].ar]))
               load();
             } catch (err) { msg(err.message, true); } finally { save.disabled = false; }
           };
-          box.append(sel, note, lab, save); upd.append(box);
+          const quote = document.createElement("a"); quote.href = `/ar/admin/quotes/?lead=${encodeURIComponent(l.lead_id)}`; quote.textContent = "إرسال عرض أو متابعة الدفعات";
+          box.append(sel, note, lab, save, quote); upd.append(box);
           tr.append(
             cell(l.lead_id, "ltr"), cell(date(l.submitted_at)),
             cell(`${l.contact_name || ""}${l.company ? "، " + l.company : ""}${l.location ? " · " + l.location : ""}`),

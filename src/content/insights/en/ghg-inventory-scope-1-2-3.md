@@ -1,5 +1,6 @@
 ---
 title: "Building your first GHG inventory: Scope 1, 2 and 3 explained"
+seoTitle: "GHG Inventory: Scope 1, 2 and 3 Explained"
 description: "A practical guide to a first corporate GHG inventory under the GHG Protocol and ISO 14064-1: boundaries, scopes, data, emission factors and verification."
 category: esg
 date: 2026-09-01

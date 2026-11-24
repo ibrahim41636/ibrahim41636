@@ -1,5 +1,6 @@
 ---
 title: "How environmental impact assessment works in Saudi Arabia"
+seoTitle: "How Environmental Impact Assessment Works in KSA"
 description: "The stages of an environmental impact assessment in Saudi Arabia explained, from screening and scoping to baseline, mitigation, EMP and regulatory review."
 category: regulatory-updates
 date: 2026-09-08

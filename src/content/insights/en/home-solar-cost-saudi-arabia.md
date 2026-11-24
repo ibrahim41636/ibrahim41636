@@ -1,5 +1,6 @@
 ---
 title: "Home Solar Installation Cost in Saudi Arabia: What Drives the Price?"
+seoTitle: "Home Solar Installation Cost in Saudi Arabia"
 description: "What drives the cost of home solar in Saudi Arabia: system size, roof conditions, batteries and grid connection, plus how to compare quotes fairly."
 category: industry-guides
 date: 2026-10-11

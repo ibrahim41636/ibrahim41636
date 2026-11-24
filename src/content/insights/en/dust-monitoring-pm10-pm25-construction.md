@@ -1,5 +1,6 @@
 ---
 title: "Dust monitoring on construction sites: PM10, PM2.5 and beyond"
+seoTitle: "Dust Monitoring on Construction Sites: PM10, PM2.5"
 description: "How to design dust monitoring for construction: PM1, PM2.5, PM10 and TSP explained, optical versus reference methods, network design, alerts and reporting."
 category: technical-articles
 date: 2026-09-29

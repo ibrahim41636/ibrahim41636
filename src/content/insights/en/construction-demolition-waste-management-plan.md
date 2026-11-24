@@ -1,5 +1,6 @@
 ---
 title: "Construction and demolition waste management plan in KSA"
+seoTitle: "Construction & Demolition Waste Management Plan KSA"
 description: "How to prepare a construction and demolition waste management plan in Saudi Arabia: waste estimates, segregation, licensed transport, records and roles."
 category: environmental-compliance
 date: 2026-10-20

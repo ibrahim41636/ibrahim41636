@@ -1,6 +1,7 @@
 ---
 title: "NCEC Regulations: A Facility Guide to the Executive Regulations of the Saudi Environmental Law"
-description: "The executive regulations of the Environmental Law that Saudi Arabia's NCEC enforces: what each one requires from your facility, and the service that helps you comply."
+seoTitle: "NCEC Regulations Guide for Facilities in Saudi Arabia"
+description: "NCEC regulations explained: the executive regulations of Saudi Arabia's Environmental Law, what each requires from your facility, and how to comply."
 category: regulatory-updates
 date: 2026-10-28
 author: selorin-editorial

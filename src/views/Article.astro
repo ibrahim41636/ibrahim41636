@@ -29,7 +29,7 @@ const firstService = services[0]?.id;
 // Branded 1200×630 link-preview card when it has been rendered (scripts/social-images), else the hero photo.
 const ogImage = socialAsset(`/social/og/${lang}/${slug}.jpg`) ?? d.heroImage;
 ---
-<Base lang={lang} path={path} title={d.title} description={d.description} type="article" image={ogImage} imageAlt={d.heroAlt} breadcrumbs={crumbs}
+<Base lang={lang} path={path} title={d.seoTitle ?? d.title} description={d.description} type="article" image={ogImage} imageAlt={d.heroAlt} breadcrumbs={crumbs}
   schema={[articleSchema(lang, { slug, title: d.title, description: d.description, date: d.date, updated: d.updated, image: d.heroImage, author: { name: author?.data[lang].name ?? "Selorin", type: author?.data.type ?? "Organization" }, about: services.map((s) => s.data[lang].name) }), ...(d.faqs.length ? [faqSchema(d.faqs)] : [])]}
   analytics={{ page_type: "article", insight_category: d.category, service_slug: firstService ?? "" }}>
   <PageHero lang={lang} crumbs={crumbs} eyebrow={insightCategories[d.category][lang]} title={d.title} lead={d.description}>

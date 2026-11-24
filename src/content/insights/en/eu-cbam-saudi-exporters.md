@@ -1,5 +1,6 @@
 ---
 title: "CBAM for Saudi exporters: emissions data and verification"
+seoTitle: "CBAM for Saudi Exporters: Data and Verification"
 description: "CBAM for Saudi exporters: the installation emissions data EU importers will request, how to monitor and verify it, and a practical readiness plan."
 category: regulatory-updates
 date: 2026-10-20

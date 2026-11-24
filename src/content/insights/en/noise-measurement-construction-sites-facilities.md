@@ -1,5 +1,6 @@
 ---
 title: "Noise Measurement at Construction Sites and Facilities in Saudi Arabia"
+seoTitle: "Noise Measurement at Construction Sites in KSA"
 description: "A practical guide to noise measurement at construction sites and facilities in Saudi Arabia: the noise regulation, indicators, locations, monitoring and reports."
 category: technical-articles
 date: 2026-11-22

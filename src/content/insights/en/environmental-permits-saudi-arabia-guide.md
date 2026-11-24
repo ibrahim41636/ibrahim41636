@@ -1,5 +1,6 @@
 ---
 title: "Environmental permits in Saudi Arabia: a practical guide"
+seoTitle: "Environmental Permits in Saudi Arabia: Practical Guide"
 description: "What environmental permits are, which activities need them, how construction and operation permits differ, and what typically delays applications."
 category: industry-guides
 date: 2026-10-05

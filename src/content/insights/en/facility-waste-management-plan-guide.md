@@ -1,5 +1,6 @@
 ---
 title: "Facility waste management plans: a practical guide for operators"
+seoTitle: "Facility Waste Management Plans: Operator Guide"
 description: "What a facility waste management plan should cover: inventory, classification, segregation, storage, licensed transport and disposal, records and recycling."
 category: industry-guides
 date: 2026-10-06

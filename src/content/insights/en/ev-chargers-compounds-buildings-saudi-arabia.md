@@ -1,5 +1,6 @@
 ---
 title: "EV Charger Requirements for Compounds and Buildings in Saudi Arabia"
+seoTitle: "EV Charger Requirements for Compounds in Saudi Arabia"
 description: "EV charger requirements for Saudi compounds and buildings: electrical capacity, AC vs DC chargers, safety, parking and approvals to check before installing."
 category: industry-guides
 date: 2026-10-18

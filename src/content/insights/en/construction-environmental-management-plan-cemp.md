@@ -1,5 +1,6 @@
 ---
 title: "Construction Environmental Management Plan (CEMP): What It Covers"
+seoTitle: "Construction Environmental Management Plan (CEMP)"
 description: "A practical guide to the construction environmental management plan (CEMP) in Saudi Arabia: when it is required, what it covers, who writes it and who runs it."
 category: environmental-compliance
 date: 2026-11-15

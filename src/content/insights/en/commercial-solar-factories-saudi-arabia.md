@@ -1,5 +1,6 @@
 ---
 title: "Solar for factories in Saudi Arabia: a feasibility guide"
+seoTitle: "Solar for Factories in Saudi Arabia: Feasibility Guide"
 description: "How to assess solar for factories in Saudi Arabia, warehouses and commercial buildings: load profile, roof, grid connection, batteries and comparing offers."
 category: industry-guides
 date: 2026-10-20

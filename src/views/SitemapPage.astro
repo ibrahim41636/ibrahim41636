@@ -12,7 +12,7 @@ const insights = await getInsights(lang);
 const equipment = await getEquipment();
 const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "footer.sitemap"), path: "/sitemap/" }];
 ---
-<Base lang={lang} path="/sitemap/" title={t(lang, "footer.sitemap")} description={lang === "ar" ? "جميع صفحات موقع سيلورين." : "All pages on the Selorin website."} breadcrumbs={crumbs} analytics={{ page_type: "sitemap" }}>
+<Base lang={lang} path="/sitemap/" title={t(lang, "footer.sitemap")} description={lang === "ar" ? "قائمة كاملة بصفحات موقع سيلورين: الخدمات والأجهزة والقطاعات ومركز المعرفة والتواصل." : "A complete list of the pages on the Selorin website: services, equipment, industries, insights and contact."} breadcrumbs={crumbs} analytics={{ page_type: "sitemap" }}>
   <PageHero lang={lang} crumbs={crumbs} title={t(lang, "footer.sitemap")} light />
   <section class="section"><div class="container grid grid-3 prose" style="max-width:none">
     <div><h2>{t(lang, "footer.company")}</h2><ul>

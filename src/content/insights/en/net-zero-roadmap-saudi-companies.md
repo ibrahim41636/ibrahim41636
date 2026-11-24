@@ -1,5 +1,6 @@
 ---
 title: "Net Zero Roadmap for Companies in Saudi Arabia: From Inventory to Targets"
+seoTitle: "Net Zero Roadmap for Companies in Saudi Arabia"
 description: "How a company builds a net zero roadmap in Saudi Arabia: emissions inventory, base year and targets, reduction pathways, offsets, disclosure and tracking."
 category: sustainability
 date: 2026-11-08

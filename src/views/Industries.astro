@@ -16,7 +16,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.i
 ---
 <Base lang={lang} path="/industries/" breadcrumbs={crumbs}
   title={ar ? "القطاعات: المتطلبات البيئية حسب القطاع" : "Industries | Environmental Requirements by Sector"}
-  description={ar ? "كيف تدعم سيلورين القطاعات الصناعية والإنشائية والعقارية والطاقة والنفط والغاز والرعاية الصحية وغيرها في الامتثال البيئي والرصد والاستدامة." : "How Selorin supports industrial, construction, real estate, energy, oil and gas, healthcare and other sectors with environmental compliance, monitoring and sustainability."}
+  description={ar ? "كيف تدعم سيلورين القطاعات الصناعية والإنشائية والعقارية والطاقة والنفط والغاز والرعاية الصحية وغيرها في الامتثال البيئي والرصد والاستدامة." : "How Selorin supports industrial, construction, real estate, energy, oil and gas and healthcare sectors with compliance, monitoring and sustainability."}
   schema={[collectionSchema(lang, "/industries/", t(lang, "nav.industries"), industries.map((i) => ({ name: i.data[lang].name, path: `/industries/${i.id}/` })))]}
   analytics={{ page_type: "industries_hub" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("industries")} eyebrow={t(lang, "nav.industries")}

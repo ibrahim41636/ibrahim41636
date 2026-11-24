@@ -1,5 +1,6 @@
 ---
 title: "Self-Monitoring Reports in Saudi Arabia: What to Submit and When"
+seoTitle: "Self-Monitoring Reports in Saudi Arabia: Guide"
 description: "Self-monitoring report requirements for Saudi facilities: what to monitor, where the requirements come from, when to report and how to avoid common findings."
 category: environmental-compliance
 date: 2026-10-25

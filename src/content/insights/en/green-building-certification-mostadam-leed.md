@@ -1,5 +1,6 @@
 ---
 title: "Mostadam vs LEED in Saudi Arabia: Which Certification Fits?"
+seoTitle: "Mostadam vs LEED in Saudi Arabia: Which Fits?"
 description: "Mostadam vs LEED for Saudi projects: how each green building rating works, where the Saudi Building Code fits, the steps to certification and common mistakes."
 category: sustainability
 date: 2026-10-20

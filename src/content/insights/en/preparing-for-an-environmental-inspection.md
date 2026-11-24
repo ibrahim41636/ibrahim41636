@@ -1,5 +1,6 @@
 ---
 title: "Preparing for an environmental inspection: a readiness checklist"
+seoTitle: "Environmental Inspection Readiness Checklist"
 description: "How to prepare a facility for an environmental inspection in Saudi Arabia: records, monitoring data, waste documents, permits, corrective actions and staff."
 category: environmental-compliance
 date: 2026-09-22

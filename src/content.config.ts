@@ -98,6 +98,7 @@ const insights = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/insights" }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().max(56).optional(),
     description: z.string().max(170),
     category: z.enum(INSIGHT_CATEGORIES),
     date: z.coerce.date(),

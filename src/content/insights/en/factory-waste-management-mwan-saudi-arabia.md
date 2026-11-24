@@ -1,5 +1,6 @@
 ---
 title: "Factory Waste Management and MWAN Licences: A Guide for Industry"
+seoTitle: "Factory Waste Management and MWAN Licences Guide"
 description: "Factory waste management in Saudi Arabia: MWAN's role, classifying industrial and hazardous waste, using licensed providers, and records that prove compliance."
 category: industry-guides
 date: 2026-11-01

@@ -1,5 +1,6 @@
 ---
 title: "Environmental studies for solar and wind projects: what to plan for"
+seoTitle: "Environmental Studies for Solar and Wind Projects"
 description: "What solar and wind projects must plan for environmentally: site screening, baseline surveys, construction impacts, wildlife, waste and decommissioning."
 category: sustainability
 date: 2026-10-06

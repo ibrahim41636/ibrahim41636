@@ -1,0 +1,766 @@
+---
+// The client's request portal (/portal/?t=TOKEN), linked from the confirmation e-mail and every
+// later e-mail about the request. One page for the whole request: where it stands (eight stages)
+// and what happens next, the proposal with a meeting request and the one discount round, approval,
+// the contract details and electronic acceptance, payments on Moyasar's page, the issued contract
+// and the client's signed copy, the technical stages with their payment gates, documents and the
+// timeline. Data: /api/portal… (functions/api/portal.ts).
+import Base from "@/layouts/Base.astro";
+import Icon from "@/components/Icon.astro";
+import StageSteps from "@/components/StageSteps.astro";
+import { site, type Lang } from "@/i18n/ui";
+import { MILESTONE_STATUS_LABELS, QUOTE_STATUS_LABELS, TRIGGER_LABELS } from "@/lib/payments";
+import { MEETING_MODES, MEETING_MODE_LABELS } from "@/lib/portal";
+import { STATUSES, STATUS_LABELS } from "@/lib/tracking";
+import { UPLOAD } from "@/lib/forms";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const ar = lang === "ar";
+const T = ar ? {
+  title: "بوابة طلبك", desc: "تابع مراحل طلبك من التقديم حتى التسليم.", loading: "جارٍ تحميل طلبك…",
+  request: "رقم الطلب", service: "الخدمة", submitted: "تاريخ التقديم", client: "العميل",
+  stage: "مرحلة طلبك الآن", next: "الخطوة التالية", expected: "الموعد المتوقع", riyadh: "بتوقيت الرياض",
+  left: "متبقٍ نحو {t}", hours: "ساعة", minutes: "دقيقة",
+  late: "يستغرق الأمر وقتاً أطول قليلاً من المخطط، وقد نُبّه الفريق المختص.",
+  nx: {
+    wait_proposal: "يعمل فريق تطوير الأعمال على إعداد العرض الفني والمالي بناءً على الخدمة ونطاق العمل الذي أرسلته.",
+    wait_revision: "نعمل على العرض المحدّث، وسيظهر هنا ويصلك بالبريد.",
+    review: "وصلك العرض الفني والمالي. راجعه، ثم وافق عليه، أو اطلب اجتماعاً لمناقشته، أو اطلب خصماً أو تقسيم دفعات مختلف مرة واحدة.",
+    review_final: "هذا العرض المحدّث نهائي، والخيار المتاح عليه هو الموافقة ثم السداد.",
+    meeting_requested: "استلمنا طلب الاجتماع، وسنؤكد لك الموعد. يمكنك الموافقة على العرض في أي وقت.",
+    meeting_scheduled: "حُدد موعد اجتماع مناقشة العرض:",
+    expired: "انتهت صلاحية هذا العرض. تواصل معنا وسنرسل لك عرضاً محدّثاً.",
+    contract_details: "وافقتَ على العرض. أدخل بيانات التعاقد والمخوّل بالتوقيع ليُعد العقد إلكترونياً.",
+    pay_advance: "سدّد الدفعة الأولى، ويصدر العقد بعدها موقعاً ومختوماً من سيلورين.",
+    contract_issuing: "نُصدر عقدك الآن، وتصلك رسالة عند جاهزيته.",
+    sign_contract: "صدر العقد موقعاً ومختوماً من سيلورين. حمّله ووقّعه واختمه، ثم ارفع النسخة الموقعة لنبدأ التنفيذ الفني.",
+    pay_due: "اكتملت مرحلة من الأعمال. سدّد الدفعة المستحقة لتبدأ المرحلة التالية.",
+    in_progress: "التنفيذ الفني جارٍ حسب العرض الفني ومنهجية العمل.",
+    done: "اكتمل المشروع وسُددت جميع الدفعات. شكراً لثقتكم بسيلورين.",
+    cancelled: "أُلغي العرض. تواصل معنا لأي استفسار.",
+    closed: "أُغلق هذا الطلب. تواصل معنا إن احتجت أي شيء.",
+  },
+  proposal: "العرض الفني والمالي", version: "الإصدار", validUntil: "ساري حتى", status: "الحالة", finalBadge: "عرض نهائي",
+  changes: "التعديلات في هذا الإصدار", subtotal: "قيمة الخدمات", vat: "ضريبة القيمة المضافة 15%", total: "الإجمالي", paid: "المدفوع", remaining: "المتبقي",
+  schedule: "جدول الدفعات", onStage: "عند إنجاز مرحلة «{t}»", docs: "مستندات العرض (مرفقة في رسالة البريد)",
+  approve: "أوافق على العرض",
+  terms: "بالموافقة تقر بأنك اطلعت على العرض الفني والمالي ونطاق العمل وجدول الدفعات. بعدها تُدخل بيانات التعاقد، ثم تسدد الدفعة الأولى ليصدر العقد.",
+  termsNoAdvance: "بالموافقة تقر بأنك اطلعت على العرض الفني والمالي ونطاق العمل وجدول الدفعات. بعدها تُدخل بيانات التعاقد ويصدر العقد.",
+  meet: "طلب اجتماع لمناقشة العرض", discount: "طلب خصم أو تقسيم دفعات",
+  discountNote: "يمكنك طلب ذلك مرة واحدة فقط، ونرسل لك بعدها عرضاً محدّثاً نهائياً للموافقة والسداد.",
+  wantDiscount: "أطلب خصماً على قيمة العرض", wantSchedule: "أطلب تقسيم دفعات يناسبنا",
+  changeNote: "اكتب طلبك (مثلاً الخصم المقترح أو الدفعات المناسبة لكم)", sendChange: "إرسال الطلب", back: "رجوع",
+  pickOne: "اختر الخصم أو تقسيم الدفعات أو كليهما.", changeSent: "استلمنا طلبك، وسنرسل لك العرض المحدّث وهو نهائي.",
+  meetTitle: "طلب اجتماع", meetNote: "يُسجَّل طلبك كما كتبته. بعد الاجتماع يمكن لفريقنا تعديل العرض، ويُوثَّق التعديل في الإصدار الجديد.",
+  mode: "طريقة الاجتماع", preferred: "الأوقات المناسبة لك", preferredPh: "مثال: الأحد أو الإثنين بعد الساعة 10 صباحاً",
+  topics: "ما تريد مناقشته في العرض أو نطاق العمل (اختياري)", sendMeet: "إرسال طلب الاجتماع",
+  meetSent: "استلمنا طلب الاجتماع، وسنؤكد لك الموعد قريباً.", meetPreferred: "اكتب الأوقات المناسبة لك.",
+  meetings: "الاجتماعات", meetSt: { requested: "بانتظار تحديد الموعد", scheduled: "محدد", held: "عُقد", cancelled: "ملغى" },
+  contractTitle: "بيانات التعاقد", contractIntro: "تُعبّأ هذه البيانات في العقد آلياً مع بيانات طلبك والعرض المعتمد.",
+  f: {
+    legalName: "الاسم القانوني للجهة (كما في السجل التجاري)", crNumber: "رقم السجل التجاري (اختياري)", address: "عنوان الجهة (اختياري)",
+    signatoryName: "اسم المخوّل بتوقيع العقد", signatoryTitle: "المنصب", signatoryPhone: "رقم التواصل", signatoryEmail: "البريد الإلكتروني",
+  },
+  agree: "أقر بأنني مخوّل بالتوقيع عن الجهة، وأوافق على العقد إلكترونياً وفق نظام التعاملات الإلكترونية.",
+  preview: "معاينة العقد", toPay: "اعتماد البيانات والانتقال للسداد", toIssue: "اعتماد البيانات وإصدار العقد",
+  fe: { required: "هذا الحقل مطلوب", invalid: "تأكد من صحة هذا الحقل", agree: "يلزم الإقرار للمتابعة" },
+  contract: "العقد", contractNo: "رقم العقد", cSt: { details: "بانتظار السداد لإصدار العقد", issued: "صادر وموقع من سيلورين", countersigned: "موقع من الطرفين" },
+  signatory: "المخوّل بالتوقيع", acceptedAt: "الموافقة الإلكترونية", issuedAt: "تاريخ الإصدار",
+  download: "تحميل العقد", downloadHint: "يفتح العقد في صفحة جديدة، ويمكنك طباعته أو حفظه بصيغة PDF.",
+  editDetails: "تعديل البيانات", uploadSigned: "رفع النسخة الموقعة والمختومة", uploadHint: "ملف PDF أو صورة واضحة، حتى 10 ميجابايت.",
+  upload: "رفع", signedReceived: "استلمنا النسخة الموقعة في", started: "بدأ التنفيذ قبل استلام النسخة الموقعة بموافقة فريقنا.",
+  pay: "سداد", payFirst: "سداد الدفعة الأولى", dueTitle: "دفعة مستحقة", payOff: "الدفع الإلكتروني غير متاح حالياً، وسيتواصل معك فريقنا بطريقة السداد.",
+  methods: "الدفع عبر صفحة ميسّر الآمنة بمدى أو Apple Pay أو البطاقة الائتمانية. لا نطّلع على بيانات بطاقتك.",
+  tax: "تصلك الفاتورة الضريبية من فريقنا بعد كل دفعة.",
+  thanks: "شكراً لك، جارٍ تأكيد دفعتك. قد يستغرق التأكيد دقيقة.", confirmed: "تم استلام دفعتك، وتصلك رسالة تأكيد بالبريد.",
+  redirecting: "جارٍ تحويلك إلى صفحة الدفع…",
+  unavailable: "الدفع الإلكتروني غير متاح حالياً. تواصل معنا وسنرسل لك طريقة السداد.",
+  work: "مراحل التنفيذ الفني",
+  workIntro: "المراحل مبنية على العرض الفني ومنهجية العمل. ترتبط كل دفعة بمرحلتها، ولا تبدأ المرحلة التالية حتى تُسدد دفعة المرحلة السابقة.",
+  ws: { done: "مكتملة", active: "جارية", ready: "تبدأ قريباً", locked: "مقفلة حتى سداد «{t}»", waiting: "تبدأ بعد توقيع العقد وسداد الدفعة الأولى", upcoming: "قادمة" },
+  docsTitle: "إضافة مستندات للطلب", docsHint: "مثل المخططات أو التقارير السابقة أو التصاريح، حتى 5 ملفات و10 ميجابايت.",
+  docsNote: "ملاحظة (اختياري)", docsSend: "إرسال المستندات", docsSent: "استلمنا المستندات وأُضيفت إلى ملف طلبك.",
+  yourRequest: "تفاصيل طلبك", message: "وصف الطلب", attachments: "المرفقات",
+  versions: "إصدارات العرض", yourChange: "طلبك", history: "سجل الطلب",
+  notFound: "لم نجد هذا الطلب. افتح الرابط كما وصلك في البريد، أو اطلب رابطاً جديداً من صفحة تتبع الطلب.",
+  error: "تعذّر الاتصال. حاول مرة أخرى.", fileType: "نوع الملف غير مسموح.", fileLarge: "حجم الملفات أكبر من المسموح.", fileMany: "الحد الأقصى 5 ملفات.",
+  fileEmpty: "اختر ملفاً أولاً.", notOpen: "لم يعد هذا الإجراء متاحاً. حدّث الصفحة.", help: "لديك سؤال؟", trackLink: "صفحة تتبع الطلب",
+  sep: "، ", and: " و",
+} : {
+  title: "Your request portal", desc: "Follow your request from submission to delivery.", loading: "Loading your request…",
+  request: "Request ID", service: "Service", submitted: "Submitted", client: "Client",
+  stage: "Where your request stands", next: "Next step", expected: "Expected by", riyadh: "Riyadh time",
+  left: "about {t} left", hours: "h", minutes: "min",
+  late: "This is taking a little longer than planned, and the team has been alerted.",
+  nx: {
+    wait_proposal: "Our business development team is preparing your technical and financial proposal from the service and scope you sent.",
+    wait_revision: "We are preparing the revised proposal. It will appear here and in your e-mail.",
+    review: "Your technical and financial proposal is ready. Review it, then approve it, ask for a meeting to discuss it, or ask once for a discount or a different payment schedule.",
+    review_final: "This revised proposal is final: the option available is to approve it and pay.",
+    meeting_requested: "We received your meeting request and will confirm a time. You can approve the proposal at any point.",
+    meeting_scheduled: "Your proposal meeting is set for",
+    expired: "This proposal has expired. Contact us and we will send you an updated one.",
+    contract_details: "You approved the proposal. Enter the contract details and the authorised signatory so the contract can be prepared electronically.",
+    pay_advance: "Pay the first instalment and the contract is then issued, signed and stamped by Selorin.",
+    contract_issuing: "We are issuing your contract and will e-mail you when it is ready.",
+    sign_contract: "Your contract is issued, signed and stamped by Selorin. Download it, sign and stamp it, then upload the signed copy so the technical work can start.",
+    pay_due: "A stage of the work is complete. Pay the instalment now due to open the next stage.",
+    in_progress: "The technical work is under way, following the technical proposal and methodology.",
+    done: "The project is complete and all payments are settled. Thank you for working with Selorin.",
+    cancelled: "The proposal was cancelled. Contact us with any questions.",
+    closed: "This request is closed. Contact us if you need anything.",
+  },
+  proposal: "Technical and financial proposal", version: "Version", validUntil: "Valid until", status: "Status", finalBadge: "Final proposal",
+  changes: "Changes in this version", subtotal: "Services", vat: "VAT 15%", total: "Total", paid: "Paid", remaining: "Remaining",
+  schedule: "Payment schedule", onStage: "On completion of \"{t}\"", docs: "Proposal documents (attached to the e-mail)",
+  approve: "I approve the proposal",
+  terms: "By approving you confirm you have read the technical and financial proposal, its scope and payment schedule. Next you enter the contract details, then pay the first instalment and the contract is issued.",
+  termsNoAdvance: "By approving you confirm you have read the technical and financial proposal, its scope and payment schedule. Next you enter the contract details and the contract is issued.",
+  meet: "Ask for a meeting to discuss it", discount: "Ask for a discount or another schedule",
+  discountNote: "You can ask for this once. We will then send you a final revised proposal to approve and pay.",
+  wantDiscount: "I would like a discount", wantSchedule: "I would like a different payment schedule",
+  changeNote: "Your request (for example the discount you propose or the schedule that suits you)", sendChange: "Send request", back: "Back",
+  pickOne: "Choose a discount, a different schedule or both.", changeSent: "We received your request and will send you the revised proposal, which will be final.",
+  meetTitle: "Meeting request", meetNote: "Your request is recorded as you wrote it. After the meeting our team can revise the proposal, and the changes are recorded in the new version.",
+  mode: "Meeting type", preferred: "Times that suit you", preferredPh: "For example: Sunday or Monday after 10 am",
+  topics: "What you would like to discuss in the proposal or scope (optional)", sendMeet: "Send meeting request",
+  meetSent: "We received your meeting request and will confirm a time shortly.", meetPreferred: "Tell us the times that suit you.",
+  meetings: "Meetings", meetSt: { requested: "Awaiting a time", scheduled: "Scheduled", held: "Held", cancelled: "Cancelled" },
+  contractTitle: "Contract details", contractIntro: "These details go into the contract automatically, together with your request and the approved proposal.",
+  f: {
+    legalName: "Legal name of the organisation (as on the commercial registration)", crNumber: "Commercial registration number (optional)", address: "Organisation address (optional)",
+    signatoryName: "Name of the authorised signatory", signatoryTitle: "Position", signatoryPhone: "Phone number", signatoryEmail: "E-mail",
+  },
+  agree: "I confirm I am authorised to sign for the organisation and I accept the contract electronically under the Electronic Transactions Law.",
+  preview: "Preview the contract", toPay: "Confirm and continue to payment", toIssue: "Confirm and issue the contract",
+  fe: { required: "This field is required", invalid: "Please check this field", agree: "Please confirm to continue" },
+  contract: "Contract", contractNo: "Contract no.", cSt: { details: "Awaiting payment to issue", issued: "Issued and signed by Selorin", countersigned: "Signed by both parties" },
+  signatory: "Authorised signatory", acceptedAt: "Electronic acceptance", issuedAt: "Issued",
+  download: "Download the contract", downloadHint: "The contract opens in a new page where you can print it or save it as PDF.",
+  editDetails: "Edit details", uploadSigned: "Upload the signed and stamped copy", uploadHint: "A PDF or a clear image, up to 10 MB.",
+  upload: "Upload", signedReceived: "Signed copy received on", started: "The work started before the signed copy arrived, with our team's approval.",
+  pay: "Pay", payFirst: "Pay the first instalment", dueTitle: "Payment due", payOff: "Online payment is not available right now. Our team will contact you with payment details.",
+  methods: "Payment is made on Moyasar's secure page by mada, Apple Pay or credit card. We never see your card details.",
+  tax: "Our team sends you the tax invoice after each payment.",
+  thanks: "Thank you. We are confirming your payment, which can take a minute.", confirmed: "Your payment is received. A confirmation is on its way by e-mail.",
+  redirecting: "Taking you to the payment page…",
+  unavailable: "Online payment is not available right now. Contact us and we will send you payment details.",
+  work: "Technical work stages",
+  workIntro: "The stages follow the technical proposal and methodology. Each instalment is tied to its stage, and the next stage starts only after the previous stage's instalment is paid.",
+  ws: { done: "Complete", active: "In progress", ready: "Starting soon", locked: "Locked until \"{t}\" is paid", waiting: "Starts once the contract is signed and the first instalment is paid", upcoming: "Upcoming" },
+  docsTitle: "Add documents to your request", docsHint: "Such as drawings, earlier reports or permits: up to 5 files and 10 MB.",
+  docsNote: "Note (optional)", docsSend: "Send documents", docsSent: "We received the documents and added them to your request file.",
+  yourRequest: "Your request details", message: "Description", attachments: "Attachments",
+  versions: "Proposal versions", yourChange: "Your request", history: "Timeline",
+  notFound: "We could not find this request. Open the link exactly as it appears in the e-mail, or ask for a new link on the track request page.",
+  error: "Connection failed. Please try again.", fileType: "That file type is not allowed.", fileLarge: "The files are larger than allowed.", fileMany: "Up to 5 files.",
+  fileEmpty: "Choose a file first.", notOpen: "This step is no longer available. Refresh the page.", help: "Questions?", trackLink: "track request page",
+  sep: ", ", and: " and ",
+};
+const L = {
+  q: { ...Object.fromEntries(Object.entries(QUOTE_STATUS_LABELS).map(([k, v]) => [k, v[lang]])), expired: ar ? "منتهي الصلاحية" : "Expired" },
+  m: Object.fromEntries(Object.entries(MILESTONE_STATUS_LABELS).map(([k, v]) => [k, v[lang]])),
+  tr: Object.fromEntries(Object.entries(TRIGGER_LABELS).map(([k, v]) => [k, v[lang]])),
+  s: Object.fromEntries(STATUSES.map((st) => [st, STATUS_LABELS[st][lang]])),
+  modes: MEETING_MODES.map((m) => [m, MEETING_MODE_LABELS[m][lang]]),
+};
+const trackHref = `${ar ? "/ar" : ""}/track/`;
+const accept = UPLOAD.accept;
+---
+<Base lang={lang} path="/portal/" noindex focused title={T.title} description={T.desc} analytics={{ page_type: "portal" }}>
+  <Fragment slot="head">
+    <!-- The link token is private: move it out of the URL before analytics reads the page address.
+         It stays in this tab (sessionStorage) so a reload still works. -->
+    <script is:inline>
+      (function () {
+        var p = new URLSearchParams(location.search), t = p.get("t");
+        if (t) { window.__portalToken = t; try { sessionStorage.setItem("selorin_portal_token", t); } catch (e) {} }
+        if (p.has("t") || p.has("id") || p.has("status") || p.has("message") || p.has("invoice_id")) {
+          history.replaceState(null, "", location.pathname + (p.get("paid") === "1" ? "?paid=1" : ""));
+        }
+      })();
+    </script>
+  </Fragment>
+  <section class="section">
+    <div class="container-narrow">
+      <span class="icon" style="width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:var(--c-mint);color:var(--c-forest)"><Icon name="doc" size={28} /></span>
+      <h1 class="mt-5" style="font-size:var(--fs-h2)">{T.title}</h1>
+      <p class="lead" data-p-loading>{T.loading}</p>
+      <p class="p-alert" data-alert role="alert" hidden></p>
+      <p class="p-ok" data-ok role="status" hidden></p>
+
+      <div data-p hidden>
+        <dl class="p-meta">
+          <div><dt>{T.request}</dt><dd class="ltr" data-p-id></dd></div>
+          <div><dt>{T.service}</dt><dd data-p-service></dd></div>
+          <div><dt>{T.submitted}</dt><dd data-p-date></dd></div>
+          <div><dt>{T.client}</dt><dd data-p-client></dd></div>
+        </dl>
+
+        <div class="card p-stage">
+          <h2 class="p-h2" style="margin:0">{T.stage}</h2>
+          <StageSteps lang={lang} />
+          <div class="p-next" data-p-next></div>
+        </div>
+
+        <div data-p-due></div>
+        <div data-p-contract></div>
+        <div data-p-work></div>
+        <div data-p-proposal></div>
+        <div data-p-meetings></div>
+        <div data-p-docs></div>
+        <div data-p-request></div>
+        <div data-p-versions></div>
+        <div data-p-history></div>
+      </div>
+
+      <p class="muted mt-6" style="font-size:var(--fs-14)">{T.help} <a href={`mailto:${site.email}`}>{site.email}</a> · <span class="ltr p-nowrap">{site.phone}</span></p>
+    </div>
+  </section>
+
+  <style is:global>
+    [data-p][hidden], .p-alert[hidden], .p-ok[hidden], .p-form[hidden], .p-hide[hidden] { display: none; }
+    .p-alert { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: #fdecea; color: #8a1c12; }
+    .p-ok { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: var(--c-mint); color: var(--c-forest); }
+    .p-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: var(--space-4); margin: var(--space-6) 0; }
+    .p-meta dt { font-size: var(--fs-12); color: var(--c-muted); }
+    .p-meta dd { margin: 4px 0 0; font-weight: 600; overflow-wrap: anywhere; }
+    .p-h2 { font-size: var(--fs-h4); margin: var(--space-7) 0 var(--space-4); }
+    .p-h3 { font-size: var(--fs-18); margin: 0 0 var(--space-3); }
+    .p-nowrap { white-space: nowrap; }
+    .p-stage { margin-bottom: var(--space-2); }
+    .p-next { margin-top: var(--space-5); padding: 14px 16px; border-radius: var(--radius-sm); background: var(--c-paper-2); border-inline-start: 4px solid var(--c-forest-2); }
+    .p-next b { display: block; font-size: var(--fs-14); color: var(--c-forest); margin-bottom: 4px; }
+    .p-next p { margin: 0; }
+    .p-timer { margin-top: 8px !important; font-size: var(--fs-14); color: var(--c-ink-2); }
+    .p-timer.is-late { color: #7a5200; }
+    .p-pill { display: inline-block; padding: 3px 12px; border-radius: 999px; background: var(--c-mint); color: var(--c-forest); font-size: var(--fs-14); }
+    .p-pill.final, .p-pill.due { background: #fff4d6; color: #7a5200; }
+    .p-pill.muted { background: var(--c-paper-2); color: var(--c-muted); }
+    .p-card { margin-top: var(--space-5); }
+    .p-card > p { color: var(--c-ink-2); }
+    .p-head { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between; margin-bottom: var(--space-3); }
+    .p-head .p-h3 { margin: 0; }
+    .p-sum { width: 100%; border-collapse: collapse; margin-top: var(--space-3); }
+    .p-sum th, .p-sum td { padding: 10px 0; border-bottom: 1px solid var(--c-line); text-align: start; font-weight: 400; }
+    .p-sum td { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .p-sum tr:last-child th, .p-sum tr:last-child td { border-bottom: 0; }
+    .p-sum .p-total th, .p-sum .p-total td { font-weight: 700; font-size: var(--fs-18); color: var(--c-forest); }
+    .p-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+    .p-list > li { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: center; padding: 14px 16px; border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; }
+    .p-list > li.is-due, .p-list > li.is-active { border-color: var(--c-forest-2); box-shadow: 0 0 0 1px var(--c-forest-2); }
+    .p-list > li.is-locked { background: var(--c-paper-2); }
+    .p-list b { display: block; }
+    .p-list small { color: var(--c-muted); }
+    .p-list .p-amt { font-weight: 700; font-variant-numeric: tabular-nums; text-align: end; white-space: nowrap; }
+    .p-list .p-full { grid-column: 1 / -1; }
+    .p-list .btn { grid-column: 1 / -1; justify-self: start; }
+    .p-chip { display: inline-block; font-size: var(--fs-12); padding: 2px 10px; border-radius: 999px; background: var(--c-paper-2); color: var(--c-ink-2); white-space: nowrap; }
+    .p-chip.ok { background: var(--c-mint); color: var(--c-forest); }
+    .p-chip.warn { background: #fff4d6; color: #7a5200; }
+    .p-stages > li { grid-template-columns: 32px 1fr auto; }
+    .p-stages .p-num { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; border: 2px solid var(--c-line); color: var(--c-muted); background: #fff; font-variant-numeric: tabular-nums; }
+    .p-stages .is-done .p-num { background: var(--c-forest-2); border-color: var(--c-forest-2); color: #fff; }
+    .p-stages .is-active .p-num { border-color: var(--c-forest-2); color: var(--c-forest); box-shadow: 0 0 0 4px var(--c-mint); }
+    .p-stages .p-full { grid-column: 2 / -1; }
+    .p-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: var(--space-4); }
+    .p-form { display: grid; gap: 12px; border-top: 1px solid var(--c-line); padding-top: var(--space-4); margin-top: var(--space-4); }
+    .p-form label { display: grid; gap: 6px; font-size: var(--fs-15); font-weight: 600; }
+    .p-form label.p-check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; }
+    .p-form label.p-check input { margin-top: 4px; flex: none; }
+    .p-form input:not([type="checkbox"]):not([type="radio"]), .p-form select, .p-form textarea { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; font-weight: 400; background: #fff; }
+    .p-form .p-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; }
+    .p-form .p-err { color: #8a1c12; font-size: var(--fs-14); font-weight: 400; }
+    .p-form [aria-invalid="true"] { border-color: #c0392b !important; }
+    .p-form .muted { margin: 0; font-size: var(--fs-14); }
+    .p-dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px var(--space-4); margin: var(--space-3) 0 0; }
+    .p-dl dt { font-size: var(--fs-12); color: var(--c-muted); }
+    .p-dl dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+    .p-note { margin-top: var(--space-4); font-size: var(--fs-14); }
+    .p-change { margin: var(--space-3) 0 0; padding: 12px 14px; border-radius: var(--radius-sm); background: #fff4d6; color: #5c3d00; font-size: var(--fs-14); white-space: pre-line; }
+    .p-details { margin-top: var(--space-6); border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; padding: 0 var(--space-4); }
+    .p-details summary { cursor: pointer; padding: var(--space-4) 0; font-weight: 700; }
+    .p-details[open] summary { border-bottom: 1px solid var(--c-line); margin-bottom: var(--space-3); }
+    .p-details > :last-child { padding-bottom: var(--space-4); }
+    .p-timeline { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-4); }
+    .p-timeline li { position: relative; padding-inline-start: 28px; }
+    .p-timeline li::before { content: ""; position: absolute; inset-inline-start: 6px; top: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--c-forest-2); }
+    .p-timeline li.is-step::before { width: 8px; height: 8px; inset-inline-start: 7px; background: #fff; border: 2px solid var(--c-forest-2); }
+    .p-timeline li.is-step small { display: block; }
+    .p-timeline b { display: block; }
+    .p-timeline small { color: var(--c-muted); }
+    .p-timeline p { margin: 4px 0 0; color: var(--c-ink-2); font-size: var(--fs-15); }
+    @media (max-width: 560px) { .p-list > li { grid-template-columns: 1fr; } .p-list .p-amt { text-align: start; } .p-stages > li { grid-template-columns: 32px 1fr; } .p-stages .p-chip { grid-column: 2; justify-self: start; } }
+  </style>
+
+  <script is:inline define:vars={{ T, L, lang, trackHref, accept }}>
+    const $ = (s, r = document) => r.querySelector(s);
+    const ar = lang === "ar";
+    const params = new URLSearchParams(location.search);
+    let token = window.__portalToken || "";
+    try { token = token || sessionStorage.getItem("selorin_portal_token") || ""; } catch {}
+    const push = (event) => { try { (window.dataLayer = window.dataLayer || []).push({ event }); } catch {} };
+
+    // Small DOM helper: h("p", { class: "x", text: "y" }, child…). Text always goes in as text, never HTML.
+    function h(tag, props, ...kids) {
+      const e = document.createElement(tag);
+      for (const [k, v] of Object.entries(props || {})) {
+        if (v === null || v === undefined || v === false) continue;
+        if (k === "class") e.className = v;
+        else if (k === "text") e.textContent = v;
+        else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+        else if (k in e && typeof v !== "string") e[k] = v;
+        else e.setAttribute(k, v === true ? "" : v);
+      }
+      for (const kid of kids.flat()) if (kid !== null && kid !== undefined && kid !== false) e.append(kid);
+      return e;
+    }
+    const sar = (x) => { const n = (x / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); return ar ? `${n} ريال` : `SAR ${n}`; };
+    const asDate = (s) => new Date(s.length === 10 ? s + "T12:00:00Z" : s.replace(" ", "T") + (s.includes("T") ? "" : "Z"));
+    const day = (s) => { if (!s) return ""; const d = asDate(s); return isNaN(d) ? s : d.toLocaleDateString(ar ? "ar-SA-u-ca-gregory" : "en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Riyadh" }); };
+    const when = (s) => { if (!s) return ""; const d = asDate(s); return isNaN(d) ? s : d.toLocaleString(ar ? "ar-SA-u-ca-gregory" : "en-GB", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Riyadh" }); };
+    const fill = (tpl, t) => tpl.replace("{t}", t);
+    const alertMsg = (m) => { const a = $("[data-alert]"); a.textContent = m || ""; a.hidden = !m; if (m) a.scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+    const okMsg = (m) => { const a = $("[data-ok]"); a.textContent = m || ""; a.hidden = !m; };
+
+    const ERR = {
+      not_found: T.notFound, expired: T.nx.expired, closed: T.nx.closed, cancelled: T.nx.cancelled,
+      payments_not_configured: T.unavailable, gateway_error: T.unavailable, payments_unavailable: T.unavailable,
+      change_empty: T.pickOne, meeting_preferred: T.meetPreferred,
+      file_type: T.fileType, file_too_large: T.fileLarge, files_type: T.fileType, files_too_large: T.fileLarge, files_too_many: T.fileMany,
+      file_empty: T.fileEmpty, files_empty: T.fileEmpty,
+    };
+
+    async function call(path, body) {
+      const isForm = body instanceof FormData;
+      if (isForm) body.set("t", token);
+      const res = await fetch(path, {
+        method: "POST",
+        headers: isForm ? { Accept: "application/json" } : { "Content-Type": "application/json", Accept: "application/json" },
+        body: isForm ? body : JSON.stringify({ t: token, ...body }),
+      });
+      const r = await res.json().catch(() => ({}));
+      if (res.ok && r.ok) return r;
+      const err = new Error(ERR[r.error] || (res.status === 409 ? T.notOpen : T.error));
+      err.code = r.error; err.errors = r.errors;
+      throw err;
+    }
+
+    let busy = false;
+    async function run(btn, fn) {
+      if (busy) return;
+      busy = true; alertMsg("");
+      const label = btn.textContent; btn.disabled = true;
+      try { await fn(); }
+      catch (e) { alertMsg(e.message); btn.disabled = false; btn.textContent = label; return e; }
+      finally { busy = false; }
+      btn.disabled = false; btn.textContent = label;
+    }
+    async function payNow(btn, ms) {
+      await run(btn, async () => {
+        const r = await call("/api/portal/pay", { ms });
+        if (r.url) { btn.textContent = T.redirecting; push("portal_pay_start"); location.href = r.url; await new Promise(() => {}); }
+        await load();
+      });
+    }
+
+    // ------------------------------------------------ the next step and its timer
+    let timer = null;
+    function timerText() {
+      if (!timer) return null;
+      const due = asDate(timer.dueAt);
+      const ms = due.getTime() - Date.now();
+      if (ms <= 0) return { late: true, text: T.late };
+      const mins = Math.max(1, Math.round(ms / 60000));
+      const num = (n) => n.toLocaleString(ar ? "ar-SA" : "en-GB");
+      const hrs = Math.floor(mins / 60), rest = mins % 60;
+      const left = [hrs ? `${num(hrs)} ${T.hours}` : "", rest ? `${num(rest)} ${T.minutes}` : ""].filter(Boolean).join(ar ? " و" : " ");
+      const time = due.toLocaleTimeString(ar ? "ar-SA-u-ca-gregory" : "en-GB", { hour: "numeric", minute: "2-digit", timeZone: "Asia/Riyadh" });
+      return { late: false, text: `${T.expected}: ${time} ${T.riyadh} · ${fill(T.left, left)}` };
+    }
+    function paintTimer() {
+      const el = $("[data-p-timer]"); const t = timerText();
+      if (!el) return;
+      el.hidden = !t; if (!t) return;
+      el.textContent = t.text; el.classList.toggle("is-late", t.late);
+    }
+    setInterval(paintTimer, 30000);
+
+    function nextBox(p) {
+      const q = p.quote;
+      let text = T.nx[p.next] || T.nx.in_progress;
+      if (p.next === "review" && q && q.final) text = T.nx.review_final;
+      const kids = [h("b", { text: T.next }), h("p", { text })];
+      if (p.next === "meeting_scheduled") {
+        const m = p.meetings.find((x) => x.status === "scheduled");
+        if (m) kids.push(h("p", { text: `${when(m.scheduledAt.replace(" ", "T") + ":00+03:00")} · ${(L.modes.find((x) => x[0] === m.mode) || [, m.mode])[1]}${m.location ? ` · ${m.location}` : ""}` }));
+      }
+      if (p.next === "in_progress") {
+        const active = p.work.find((s) => s.state === "active");
+        if (active) kids.push(h("p", { text: `${T.ws.active}: ${active.title}` }));
+      }
+      kids.push(h("p", { class: "p-timer", "data-p-timer": "", hidden: true }));
+      $("[data-p-next]").replaceChildren(...kids);
+      timer = ["wait_proposal", "wait_revision", "meeting_requested"].includes(p.next) ? p.timer : null;
+      paintTimer();
+    }
+
+    // ------------------------------------------------ proposal: approve, meeting, discount
+    function payButton(p, m, label) {
+      if (p.payments === "off") return h("p", { class: "p-full muted", style: "margin:0;font-size:var(--fs-14)", text: T.payOff });
+      return h("button", { type: "button", class: "btn", text: label, onclick: (e) => payNow(e.currentTarget, m.id) });
+    }
+    function payRow(m, stages, p) {
+      const stage = stages.find((s) => s.seq === m.stageSeq);
+      const whenText = m.trigger === "acceptance" ? L.tr.acceptance : fill(T.onStage, stage ? stage.title : m.label);
+      const li = h("li", { class: m.status === "due" ? "is-due" : "" },
+        h("div", {}, h("b", { text: `${m.seq}. ${m.label}` }), h("small", { text: `${Number(m.percent)}% · ${whenText}${m.paidAt ? ` · ${day(m.paidAt)}` : ""}` })),
+        h("div", { class: "p-amt" }, sar(m.amount), h("br"), h("span", { class: "p-chip" + (m.status === "paid" ? " ok" : m.status === "due" ? " warn" : ""), text: L.m[m.status] || m.status })),
+      );
+      if (p && m.status === "due") li.append(payButton(p, m, `${T.pay} ${sar(m.amount)}`));
+      return li;
+    }
+
+    function proposalCard(p) {
+      const q = p.quote;
+      if (!q) return [];
+      const open = q.status === "sent";
+      const head = h("div", { class: "p-head" },
+        h("h2", { class: "p-h3", text: `${T.proposal}: ${q.title}` }),
+        h("span", {}, h("span", { class: "p-pill" + (q.status === "expired" || q.status === "cancelled" ? " muted" : ""), text: L.q[q.status] || q.status }), q.final ? " " : null, q.final ? h("span", { class: "p-pill final", text: T.finalBadge }) : null),
+      );
+      const meta = h("dl", { class: "p-dl" },
+        h("div", {}, h("dt", { text: T.version }), h("dd", { class: "ltr", text: `${q.quoteId}` })),
+        h("div", {}, h("dt", { text: T.validUntil }), h("dd", { text: day(q.validUntil) })),
+      );
+      const remaining = q.total - q.paid;
+      const sum = h("table", { class: "p-sum" }, h("tbody", {},
+        h("tr", {}, h("th", { text: T.subtotal }), h("td", { text: sar(q.subtotal) })),
+        h("tr", {}, h("th", { text: T.vat }), h("td", { text: sar(q.vat) })),
+        h("tr", { class: "p-total" }, h("th", { text: T.total }), h("td", { text: sar(q.total) })),
+        q.paid ? h("tr", {}, h("th", { text: T.paid }), h("td", { text: sar(q.paid) })) : null,
+        q.paid && remaining ? h("tr", {}, h("th", { text: T.remaining }), h("td", { text: sar(remaining) })) : null,
+      ));
+      const schedule = [h("h3", { class: "p-h3", style: "margin-top:var(--space-5)", text: T.schedule }), h("ol", { class: "p-list" }, q.milestones.map((m) => payRow(m, p.work, null)))];
+      const docs = q.documents.length ? [h("h3", { class: "p-h3", style: "margin-top:var(--space-5)", text: T.docs }), h("ul", {}, q.documents.map((d) => h("li", { dir: "auto", text: d })))] : [];
+      const note = q.revisionNote ? h("p", { class: "p-change", text: `${T.changes}: ${q.revisionNote}` }) : null;
+
+      const actions = [];
+      if (open) {
+        const hasAdvance = q.milestones.some((m) => m.trigger === "acceptance");
+        actions.push(h("p", { class: "p-note", text: hasAdvance ? T.terms : T.termsNoAdvance }));
+        const row = h("div", { class: "p-actions" });
+        const approve = h("button", { type: "button", class: "btn", text: T.approve, onclick: (e) => run(e.currentTarget, async () => {
+          await call("/api/portal/accept", {}); push("portal_approved"); await load();
+          const f = $("[data-contract-form]"); if (f) f.scrollIntoView({ behavior: "smooth", block: "start" });
+        }) });
+        row.append(approve);
+        const forms = [];
+        if (p.canMeet) {
+          const form = meetingForm();
+          row.append(h("button", { type: "button", class: "btn btn--ghost", text: T.meet, onclick: () => { forms.forEach((f) => (f.hidden = f !== form)); form.hidden = false; form.querySelector("select").focus(); } }));
+          forms.push(form);
+        }
+        if (q.negotiable) {
+          const form = discountForm();
+          row.append(h("button", { type: "button", class: "btn btn--ghost", text: T.discount, onclick: () => { forms.forEach((f) => (f.hidden = f !== form)); form.hidden = false; form.querySelector("input").focus(); } }));
+          forms.push(form);
+        }
+        actions.push(row, ...forms);
+      }
+      return [h("section", { class: "card p-card", "data-proposal": "" }, head, meta, note, sum, ...schedule, ...docs, ...actions, h("p", { class: "muted p-note", text: p.payments === "off" ? T.tax : `${T.methods} ${T.tax}` }))];
+    }
+
+    function meetingForm() {
+      const form = h("form", { class: "p-form", hidden: true, novalidate: true },
+        h("h3", { class: "p-h3", text: T.meetTitle }), h("p", { class: "muted", text: T.meetNote }),
+        h("label", {}, T.mode, h("select", { name: "mode" }, L.modes.map(([v, t]) => h("option", { value: v, text: t })))),
+        h("label", {}, T.preferred, h("input", { name: "preferred", maxLength: 300, placeholder: T.preferredPh, required: true })),
+        h("label", {}, T.topics, h("textarea", { name: "topics", rows: 3, maxLength: 1000 })),
+        h("div", { class: "p-actions" }, h("button", { type: "submit", class: "btn", text: T.sendMeet }), h("button", { type: "button", class: "btn btn--ghost", text: T.back, onclick: () => (form.hidden = true) })),
+      );
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const f = form.elements;
+        if (f.preferred.value.trim().length < 3) { f.preferred.focus(); return alertMsg(T.meetPreferred); }
+        run(form.querySelector("[type=submit]"), async () => {
+          await call("/api/portal/meeting", { mode: f.mode.value, preferred: f.preferred.value, topics: f.topics.value });
+          push("portal_meeting_requested"); await load(); okMsg(T.meetSent);
+        });
+      });
+      return form;
+    }
+
+    function discountForm() {
+      const form = h("form", { class: "p-form", hidden: true, novalidate: true },
+        h("p", { class: "muted", text: T.discountNote }),
+        h("label", { class: "p-check" }, h("input", { type: "checkbox", name: "discount" }), T.wantDiscount),
+        h("label", { class: "p-check" }, h("input", { type: "checkbox", name: "schedule" }), T.wantSchedule),
+        h("label", {}, T.changeNote, h("textarea", { name: "note", rows: 4, maxLength: 1000 })),
+        h("div", { class: "p-actions" }, h("button", { type: "submit", class: "btn", text: T.sendChange }), h("button", { type: "button", class: "btn btn--ghost", text: T.back, onclick: () => (form.hidden = true) })),
+      );
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const f = form.elements;
+        if (!f.discount.checked && !f.schedule.checked) return alertMsg(T.pickOne);
+        run(form.querySelector("[type=submit]"), async () => {
+          await call("/api/portal/discount", { discount: f.discount.checked, schedule: f.schedule.checked, note: f.note.value });
+          push("portal_discount_requested"); await load(); okMsg(T.changeSent);
+        });
+      });
+      return form;
+    }
+
+    // ------------------------------------------------ contract: details, payment, download, signed copy
+    const FIELDS = ["legalName", "crNumber", "address", "signatoryName", "signatoryTitle", "signatoryPhone", "signatoryEmail"];
+    function contractForm(p, values) {
+      const q = p.quote;
+      const advance = q.milestones.find((m) => m.trigger === "acceptance" && m.status !== "paid" && m.status !== "cancelled");
+      const input = (k) => {
+        const attrs = { name: k, value: values[k] || "", maxLength: k === "address" ? 300 : 160, autocomplete: { signatoryName: "name", signatoryTitle: "organization-title", signatoryPhone: "tel", signatoryEmail: "email", legalName: "organization" }[k] || "off" };
+        if (k === "signatoryPhone") Object.assign(attrs, { type: "tel", class: "ltr", inputmode: "tel" });
+        if (k === "signatoryEmail") Object.assign(attrs, { type: "email", class: "ltr" });
+        if (k === "crNumber") Object.assign(attrs, { class: "ltr", inputmode: "numeric" });
+        return h("label", { class: k === "legalName" || k === "address" ? "p-wide" : "" }, T.f[k], h("input", attrs), h("span", { class: "p-err", "data-err": k, hidden: true }));
+      };
+      const form = h("form", { class: "card p-card", "data-contract-form": "", novalidate: true },
+        h("h2", { class: "p-h3", text: T.contractTitle }), h("p", { text: T.contractIntro }),
+        h("div", { class: "p-form", style: "border:0;padding:0;margin:0" },
+          input("legalName"), h("div", { class: "p-grid" }, input("crNumber"), input("address")),
+          h("div", { class: "p-grid" }, input("signatoryName"), input("signatoryTitle")),
+          h("div", { class: "p-grid" }, input("signatoryPhone"), input("signatoryEmail")),
+          h("label", { class: "p-check" }, h("input", { type: "checkbox", name: "agree" }), h("span", {}, T.agree, " ", h("a", { href: p.contractUrl, target: "_blank", rel: "noopener", text: T.preview }))),
+          h("span", { class: "p-err", "data-err": "agree", hidden: true }),
+          h("div", { class: "p-actions" }, h("button", { type: "submit", class: "btn", text: advance ? `${T.toPay} (${sar(advance.amount)})` : T.toIssue })),
+        ),
+      );
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const f = form.elements;
+        form.querySelectorAll("[data-err]").forEach((x) => { x.hidden = true; });
+        form.querySelectorAll("[aria-invalid]").forEach((x) => x.removeAttribute("aria-invalid"));
+        const body = Object.fromEntries(FIELDS.map((k) => [k, f[k].value.trim()]));
+        body.agree = f.agree.checked;
+        const btn = form.querySelector("[type=submit]");
+        run(btn, async () => {
+          try {
+            const r = await call("/api/portal/contract", body);
+            push("portal_contract_details");
+            if (r.url) { btn.textContent = T.redirecting; push("portal_pay_start"); location.href = r.url; await new Promise(() => {}); }
+            await load();
+            if (r.url === null && advance) alertMsg(T.unavailable);
+          } catch (err) {
+            if (err.errors) {
+              let first = null;
+              for (const [k, v] of Object.entries(err.errors)) {
+                const msg = form.querySelector(`[data-err="${k}"]`);
+                if (msg) { msg.textContent = k === "agree" ? T.fe.agree : T.fe[v] || T.fe.invalid; msg.hidden = false; }
+                if (f[k]) { f[k].setAttribute("aria-invalid", "true"); first = first || f[k]; }
+              }
+              if (first) first.focus();
+              throw new Error(ar ? "راجع الحقول المحددة." : "Please check the highlighted fields.");
+            }
+            throw err;
+          }
+        });
+      });
+      return form;
+    }
+
+    function contractCard(p) {
+      const q = p.quote;
+      if (!q || (q.status !== "accepted" && q.status !== "paid")) return [];
+      const c = p.contract;
+      if (!c) return [contractForm(p, p.prefill)];
+      const kids = [
+        h("div", { class: "p-head" }, h("h2", { class: "p-h3", text: T.contract }), h("span", { class: "p-pill" + (c.status === "details" ? " due" : ""), text: T.cSt[c.status] || c.status })),
+        h("dl", { class: "p-dl" },
+          h("div", {}, h("dt", { text: T.contractNo }), h("dd", { class: "ltr", text: c.contractNo })),
+          h("div", {}, h("dt", { text: T.f.legalName.split(" (")[0] }), h("dd", { text: c.legalName + (c.crNumber ? ` (${c.crNumber})` : "") })),
+          h("div", {}, h("dt", { text: T.signatory }), h("dd", { text: `${c.signatoryName}${T.sep}${c.signatoryTitle}` })),
+          h("div", {}, h("dt", { text: T.acceptedAt }), h("dd", { text: when(c.acceptedAt) })),
+          c.issuedAt ? h("div", {}, h("dt", { text: T.issuedAt }), h("dd", { text: when(c.issuedAt) })) : null,
+        ),
+      ];
+      const row = h("div", { class: "p-actions" });
+      if (c.status === "details") {
+        const advance = q.milestones.find((m) => m.trigger === "acceptance" && m.status === "due");
+        if (advance) row.append(payButton(p, advance, `${T.payFirst} ${sar(advance.amount)}`));
+        const edit = contractForm(p, { legalName: c.legalName, crNumber: c.crNumber, address: c.address, signatoryName: c.signatoryName, signatoryTitle: c.signatoryTitle, signatoryPhone: c.signatoryPhone, signatoryEmail: c.signatoryEmail });
+        edit.hidden = true; edit.classList.remove("card");
+        row.append(h("a", { class: "btn btn--ghost", href: p.contractUrl, target: "_blank", rel: "noopener", text: T.preview }));
+        row.append(h("button", { type: "button", class: "btn btn--ghost", text: T.editDetails, onclick: () => { edit.hidden = !edit.hidden; } }));
+        kids.push(row, p.payments === "off" ? null : h("p", { class: "muted p-note", text: T.methods }), edit);
+      } else {
+        row.append(h("a", { class: "btn", href: p.contractUrl, target: "_blank", rel: "noopener", text: T.download }));
+        kids.push(row, h("p", { class: "muted p-note", text: T.downloadHint }));
+        if (c.countersignedAt) kids.push(h("p", { class: "p-note", text: `${T.signedReceived} ${when(c.countersignedAt)}.` }));
+        else if (c.started) kids.push(h("p", { class: "p-note", text: T.started }));
+        if (c.status === "issued" || c.status === "countersigned") {
+          const file = h("input", { type: "file", name: "file", accept: ".pdf,.png,.jpg,.jpeg", required: true });
+          const form = h("form", { class: "p-form", novalidate: true },
+            h("label", {}, T.uploadSigned, file, h("span", { class: "muted", style: "font-weight:400", text: T.uploadHint })),
+            h("div", { class: "p-actions" }, h("button", { type: "submit", class: c.countersignedAt ? "btn btn--ghost" : "btn", text: T.upload })),
+          );
+          form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            if (!file.files.length) return alertMsg(T.fileEmpty);
+            const data = new FormData(); data.set("file", file.files[0]);
+            run(form.querySelector("[type=submit]"), async () => { await call("/api/portal/countersign", data); push("portal_countersigned"); await load(); });
+          });
+          kids.push(form);
+        }
+      }
+      return [h("section", { class: "card p-card", "data-contract": "" }, ...kids)];
+    }
+
+    function dueCard(p) {
+      const q = p.quote;
+      const due = q && (q.status === "accepted" || q.status === "paid") ? q.milestones.filter((m) => m.status === "due" && m.trigger !== "acceptance") : [];
+      if (!due.length) return [];
+      return [h("section", { class: "card p-card", "data-due": "" }, h("h2", { class: "p-h3", text: T.dueTitle }), h("ol", { class: "p-list" }, due.map((m) => payRow(m, p.work, p))), h("p", { class: "muted p-note", text: p.payments === "off" ? T.tax : `${T.methods} ${T.tax}` }))];
+    }
+
+    // ------------------------------------------------ technical stages and their payment gates
+    function workCard(p) {
+      if (!p.work.length || !p.quote || (p.quote.status !== "accepted" && p.quote.status !== "paid")) return [];
+      const items = p.work.map((s) => {
+        const state = s.state;
+        const label = state === "locked" && s.blockedBy ? fill(T.ws.locked, s.blockedBy.label) : T.ws[state] || state;
+        const li = h("li", { class: `is-${state}` },
+          h("span", { class: "p-num", "aria-hidden": "true", text: state === "done" ? "✓" : String(s.seq) }),
+          h("div", {}, h("b", { text: s.title }), (s.completedAt || s.startedAt) ? h("small", { text: day(s.completedAt || s.startedAt) }) : null),
+          h("span", { class: "p-chip" + (state === "done" ? " ok" : state === "locked" ? " warn" : ""), text: label }),
+        );
+        if (s.note && state === "done") li.append(h("p", { class: "p-full muted", style: "margin:0;font-size:var(--fs-14)", text: s.note }));
+        return li;
+      });
+      return [h("section", { class: "card p-card" }, h("h2", { class: "p-h3", text: T.work }), h("p", { text: T.workIntro }), h("ol", { class: "p-list p-stages" }, items))];
+    }
+
+    function meetingsCard(p) {
+      if (!p.meetings.length) return [];
+      return [h("section", { class: "card p-card" }, h("h2", { class: "p-h3", text: T.meetings }), h("ul", { class: "p-list" }, p.meetings.map((m) => h("li", {},
+        h("div", {},
+          h("b", { text: (L.modes.find((x) => x[0] === m.mode) || [, m.mode])[1] }),
+          h("small", { text: m.scheduledAt ? when(m.scheduledAt.replace(" ", "T") + ":00+03:00") + (m.location ? ` · ${m.location}` : "") : `${T.preferred}: ${m.preferred}` }),
+          m.outcome ? h("p", { style: "margin:6px 0 0;font-size:var(--fs-14)", text: m.outcome }) : null,
+        ),
+        h("span", { class: "p-chip" + (m.status === "held" ? " ok" : m.status === "requested" ? " warn" : ""), text: T.meetSt[m.status] || m.status }),
+      ))))];
+    }
+
+    function docsCard(p) {
+      if (p.lead.status === "completed" || p.lead.status === "closed") return [];
+      const files = h("input", { type: "file", name: "files", multiple: true, accept });
+      const form = h("form", { class: "p-form", style: "border:0;padding:0;margin:0", novalidate: true },
+        h("label", {}, T.docsTitle, files, h("span", { class: "muted", style: "font-weight:400", text: T.docsHint })),
+        h("label", {}, T.docsNote, h("textarea", { name: "note", rows: 2, maxLength: 500 })),
+        h("div", { class: "p-actions" }, h("button", { type: "submit", class: "btn btn--ghost", text: T.docsSend })),
+      );
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (!files.files.length) return alertMsg(T.fileEmpty);
+        const data = new FormData();
+        for (const f of files.files) data.append("files", f);
+        data.set("note", form.elements.note.value);
+        run(form.querySelector("[type=submit]"), async () => { await call("/api/portal/upload", data); push("portal_documents"); await load(); okMsg(T.docsSent); });
+      });
+      return [h("details", { class: "p-details" }, h("summary", { text: T.docsTitle }), form)];
+    }
+
+    function requestCard(p) {
+      const r = p.lead;
+      const rows = [...r.details.map((d) => [d.label, d.value]), ...(r.message ? [[T.message, r.message]] : []), ...(r.attachments.length ? [[T.attachments, r.attachments.join(T.sep)]] : [])];
+      if (!rows.length) return [];
+      return [h("details", { class: "p-details" }, h("summary", { text: T.yourRequest }), h("dl", { class: "p-dl" }, rows.map(([k, v]) => h("div", {}, h("dt", { text: k }), h("dd", { dir: "auto", style: "white-space:pre-line", text: v })))))];
+    }
+
+    function versionsCard(p) {
+      if (p.versions.length < 2 && !p.versions.some((v) => v.changeRequest)) return [];
+      return [h("details", { class: "p-details" }, h("summary", { text: T.versions }), h("ul", { class: "p-list" }, p.versions.map((v) => {
+        const c = v.changeRequest;
+        const what = c ? [c.discount ? (ar ? "خصم" : "a discount") : "", c.schedule ? (ar ? "تقسيم دفعات مختلف" : "a different schedule") : ""].filter(Boolean).join(T.and) : "";
+        return h("li", {},
+          h("div", {}, h("b", { class: "ltr", style: "display:inline", text: v.quoteId }), h("small", { text: ` · ${day(v.createdAt)}${v.final ? ` · ${T.finalBadge}` : ""}` }),
+            v.revisionNote ? h("p", { style: "margin:6px 0 0;font-size:var(--fs-14)", text: `${T.changes}: ${v.revisionNote}` }) : null,
+            c ? h("p", { style: "margin:6px 0 0;font-size:var(--fs-14)", text: `${T.yourChange}: ${what}${c.note ? ` («${c.note}»)` : ""}` }) : null),
+          h("div", { class: "p-amt" }, sar(v.total), h("br"), h("span", { class: "p-chip", text: L.q[v.status] || v.status })),
+        );
+      })))];
+    }
+
+    function historyCard(p) {
+      if (!p.history.length) return [];
+      // The status is named where it changes; the steps in between show their own note.
+      const items = p.history.map((ev, i) => ({ ev, changed: i === 0 || ev.status !== p.history[i - 1].status }));
+      return [h("h2", { class: "p-h2", text: T.history }), h("ol", { class: "p-timeline" }, items.reverse().map(({ ev, changed }) => h("li", { class: changed ? "" : "is-step" },
+        changed ? h("b", { text: L.s[ev.status] || ev.status }) : null, h("small", { text: when(ev.at) }), ev.note ? h("p", { text: ev.note }) : null,
+      )))];
+    }
+
+    function render(p) {
+      $("[data-p-loading]").hidden = true;
+      $("[data-p-id]").textContent = p.lead.id;
+      $("[data-p-service]").replaceChildren(h("bdi", { text: p.lead.service || "" }));
+      $("[data-p-date]").textContent = day(p.lead.submittedAt);
+      $("[data-p-client]").replaceChildren(...[p.lead.name, p.lead.company].filter(Boolean).flatMap((x, i) => [i ? T.sep : "", h("bdi", { text: x })]));
+      document.querySelectorAll("[data-stage-steps] li").forEach((li, i) => {
+        li.classList.toggle("is-done", i < p.stage || (p.next === "done" && i === p.stage));
+        li.classList.toggle("is-current", i === p.stage && p.next !== "done");
+        if (i === p.stage) li.setAttribute("aria-current", "step"); else li.removeAttribute("aria-current");
+      });
+      nextBox(p);
+      $("[data-p-due]").replaceChildren(...dueCard(p));
+      $("[data-p-proposal]").replaceChildren(...proposalCard(p));
+      $("[data-p-contract]").replaceChildren(...contractCard(p));
+      $("[data-p-work]").replaceChildren(...workCard(p));
+      $("[data-p-meetings]").replaceChildren(...meetingsCard(p));
+      $("[data-p-docs]").replaceChildren(...docsCard(p));
+      $("[data-p-request]").replaceChildren(...requestCard(p));
+      $("[data-p-versions]").replaceChildren(...versionsCard(p));
+      $("[data-p-history]").replaceChildren(...historyCard(p));
+      // Once the work runs, its stages matter more than the contract card.
+      const box = $("[data-p]");
+      const running = p.contract && (p.contract.status === "countersigned" || p.contract.started);
+      if (running) box.insertBefore($("[data-p-work]"), $("[data-p-contract]"));
+      else box.insertBefore($("[data-p-contract]"), $("[data-p-work]"));
+      box.hidden = false;
+    }
+
+    let state = null;
+    async function load() {
+      const res = await fetch(`/api/portal?t=${encodeURIComponent(token)}`, { headers: { Accept: "application/json" } });
+      const body = await res.json().catch(() => ({}));
+      if (res.status === 404) throw new Error(T.notFound);
+      if (!res.ok || !body.ok) throw new Error(T.error);
+      state = body.portal;
+      render(state);
+      return state;
+    }
+    const owed = (p) => (p.quote ? p.quote.milestones.filter((m) => m.status === "due").length : 0);
+
+    (async () => {
+      if (!/^[A-Za-z0-9_-]{24,64}$/.test(token)) {
+        $("[data-p-loading]").hidden = true;
+        alertMsg(T.notFound);
+        $("[data-alert]").append(" ", Object.assign(document.createElement("a"), { href: trackHref, textContent: T.trackLink }));
+        return;
+      }
+      try {
+        let p = await load();
+        // Back from Moyasar: the server confirms the payment with Moyasar, so check a few times.
+        if (params.get("paid") === "1") {
+          const before = p.quote ? p.quote.paid : 0;
+          okMsg(T.thanks);
+          for (let i = 0; i < 5 && p.quote && p.quote.paid === before && owed(p); i++) {
+            await new Promise((r) => setTimeout(r, 3000));
+            p = await load();
+          }
+          if (p.quote && (p.quote.paid > before || !owed(p))) { okMsg(T.confirmed); push("portal_paid"); }
+          history.replaceState(null, "", location.pathname);
+        }
+      } catch (e) { $("[data-p-loading]").hidden = true; alertMsg(e.message); }
+    })();
+  </script>
+</Base>

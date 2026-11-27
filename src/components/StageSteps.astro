@@ -1,6 +1,6 @@
 ---
-// The five stages of a request (STAGES in src/lib/tracking.ts). Rendered empty; the page's script
-// marks progress by setting data-current on the list to the stage index from the API.
+// The eight stages of a request (STAGES in src/lib/tracking.ts): a row on wide screens, a vertical
+// list on phones. The page's script marks progress with is-done and is-current from the API's stage index.
 import { STAGES } from "@/lib/tracking";
 import type { Lang } from "@/i18n/ui";
 interface Props { lang: Lang }

@@ -15,22 +15,24 @@ export const STATUS_LABELS: Record<Status, { en: string; ar: string }> = {
 
 export const isStatus = (v: unknown): v is Status => typeof v === "string" && (STATUSES as readonly string[]).includes(v);
 
-/** The five stages a client sees on the tracking and proposal pages. */
+/** The stages a client sees for a request, from submission to completion (portal and tracking pages). */
 export const STAGES = [
-  { id: "received", en: "Request received", ar: "استلام الطلب" },
-  { id: "proposal", en: "Proposal", ar: "العرض الفني والمالي" },
-  { id: "approval", en: "Approval and payment", ar: "الموافقة والدفع" },
-  { id: "work", en: "Work in progress", ar: "التنفيذ" },
-  { id: "done", en: "Completed", ar: "الإنجاز" },
+  { id: "received", en: "Request and data", ar: "استلام الطلب وجمع البيانات" },
+  { id: "proposal", en: "Proposal preparation", ar: "إعداد العرض الفني والمالي" },
+  { id: "review", en: "Discussion and negotiation", ar: "مناقشة العرض والتفاوض" },
+  { id: "contract", en: "Contract details", ar: "بيانات التعاقد" },
+  { id: "payment", en: "Payment", ar: "السداد" },
+  { id: "signing", en: "Contract signing", ar: "توقيع العقد وختمه" },
+  { id: "work", en: "Technical work", ar: "التنفيذ الفني" },
+  { id: "done", en: "Completion", ar: "الإنجاز" },
 ] as const;
 
-/** Index into STAGES for a request status, refined by the proposal status when there is one. */
-export function stageOf(leadStatus: string, quoteStatus?: string): number {
-  if (leadStatus === "completed" || leadStatus === "closed") return 4;
-  if (leadStatus === "in_progress") return 3;
-  if (quoteStatus === "accepted" || quoteStatus === "paid") return 2;
-  if (leadStatus === "quoted" || quoteStatus) return 1;
-  return 0;
+/** Coarse stage from the request status alone (public tracking page). The portal computes the exact one. */
+export function stageOf(leadStatus: string): number {
+  if (leadStatus === "completed" || leadStatus === "closed") return 7;
+  if (leadStatus === "in_progress") return 6;
+  if (leadStatus === "quoted") return 2;
+  return 1;
 }
 
 export const LEAD_ID = /^SEL-\d{4}-\d{6}$/;

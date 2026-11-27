@@ -1,14 +1,14 @@
 /// <reference types="node" />
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { readFileSync, readdirSync } from "node:fs";
 import { DatabaseSync } from "node:sqlite";
 import {
-  buildSchedule, dueEmail, formatSar, invoicePayload, isPaidInvoice, keyAllowed, newToken, parseChangeRequest, quoteEmail, quoteUrl, receiptEmail,
+  buildSchedule, dueEmail, formatSar, invoicePayload, isPaidInvoice, keyAllowed, newToken, parseChangeRequest, portalUrl, quoteEmail, receiptEmail,
   sarToHalalas, staffEmail, TOKEN, vatOf,
 } from "../src/lib/payments";
-import { handlePayments, runPaymentCron, type PayEnv } from "../functions/api/payments";
+import { handlePayCallbacks, runPaymentCron } from "../functions/api/payments";
+import { handlePortal } from "../functions/api/portal";
 import { handleAdmin } from "../functions/api/admin";
-import { stageOf } from "../src/lib/tracking";
+import { d1, freshDb, PDF } from "./d1";
 
 describe("amounts", () => {
   it("parses SAR into halalas", () => {
@@ -88,28 +88,30 @@ describe("Moyasar helpers", () => {
     expect(p.description).toHaveLength(255);
   });
 
-  it("makes unguessable link tokens", () => {
+  it("makes unguessable portal links", () => {
     const a = newToken();
     expect(a).toMatch(TOKEN);
     expect(a).not.toBe(newToken());
-    expect(quoteUrl("https://selorin.co", "ar", a)).toBe(`https://selorin.co/ar/quote/?t=${a}`);
-    expect(quoteUrl("https://selorin.co", "en", a)).toBe(`https://selorin.co/quote/?t=${a}`);
+    expect(portalUrl("https://selorin.co", "ar", a)).toBe(`https://selorin.co/ar/portal/?t=${a}`);
+    expect(portalUrl("https://selorin.co", "en", a)).toBe(`https://selorin.co/portal/?t=${a}`);
   });
 });
 
 describe("client e-mails", () => {
-  const base = { name: "Sara", leadId: "SEL-2026-000123", title: "Environmental permit", url: "https://selorin.co/ar/quote/?t=x" };
+  const base = { name: "Sara", leadId: "SEL-2026-000123", title: "Environmental permit", url: "https://selorin.co/ar/portal/?t=x" };
   const ms = [{ label: "Advance", amount: 345000, trigger: "acceptance" as const }, { label: "Final", amount: 805000, trigger: "milestone" as const }];
   const all = (["ar", "en"] as const).flatMap((lang) => [
     quoteEmail({ ...base, lang, total: 1150000, milestones: ms, validUntil: "2026-12-24", files: ["offer.pdf"] }),
     quoteEmail({ ...base, lang, total: 1150000, milestones: ms.slice(1), validUntil: "2026-12-24", files: [] }),
-    dueEmail({ ...base, lang, label: "Final", amount: 805000 }),
+    dueEmail({ ...base, lang, label: "Final", amount: 805000, stage: "Reporting" }),
     dueEmail({ ...base, lang, label: "Final", amount: 805000, reminder: true }),
     receiptEmail({ ...base, lang, label: "Advance", amount: 345000, paymentId: "pay_1", remaining: 805000 }),
     receiptEmail({ ...base, lang, label: "Final", amount: 805000, paymentId: "pay_2", remaining: 0 }),
+    dueEmail({ ...base, lang, label: "Advance", amount: 345000, advance: true }),
+    dueEmail({ ...base, lang, label: "Extra", amount: 1000 }),
   ]);
 
-  it("carry the link and the amounts, with no dashes", () => {
+  it("carry the portal link and the amounts, with no dashes", () => {
     for (const m of all) {
       expect(m.text).toContain(base.url);
       expect(m.html).toContain(base.url);
@@ -118,7 +120,16 @@ describe("client e-mails", () => {
     expect(all[0].text).toContain("11,500.00 ريال");
     expect(all[0].text).toContain("offer.pdf");
     expect(all[3].subject.startsWith("تذكير")).toBe(true);
-    expect(all[6].text).toContain("SAR 11,500.00");
+    expect(all[8].text).toContain("SAR 11,500.00");
+  });
+
+  it("say why a payment is due: the advance, a completed stage, or a plain request", () => {
+    expect(all[2].text).toContain("أنجزنا مرحلة «Reporting»");
+    expect(all[2].text).toContain("دفعة «Final» مستحقة");
+    expect(all[6].text).toContain("الدفعة الأولى «Advance» مستحقة الآن، ويصدر العقد");
+    expect(all[6].text).not.toContain("أنجزنا مرحلة");
+    expect(all[7].text).toContain("أصبحت دفعة «Extra»");
+    expect(all[14].text).toContain("the contract is issued, signed and stamped by Selorin, once it is paid");
   });
 
   it("escapes names in the HTML", () => {
@@ -133,7 +144,7 @@ describe("client e-mails", () => {
   });
 });
 
-describe("negotiation and stages", () => {
+describe("negotiation", () => {
   it("accepts a discount or schedule request with a short note", () => {
     expect(parseChangeRequest({ discount: true, note: "  10% please " })).toEqual({ ok: true, request: { discount: true, schedule: false, note: "10% please" } });
     expect(parseChangeRequest({ schedule: true })).toEqual({ ok: true, request: { discount: false, schedule: true, note: "" } });
@@ -145,63 +156,34 @@ describe("negotiation and stages", () => {
   it("tells the client whether they can still negotiate", () => {
     const base = { name: "Sara", leadId: "SEL-2026-000123", title: "t", url: "https://s/q", total: 100, milestones: [{ label: "All", amount: 100, trigger: "acceptance" as const }], validUntil: "2026-12-24", files: [] };
     expect(quoteEmail({ ...base, lang: "ar" }).text).toContain("مرة واحدة");
+    expect(quoteEmail({ ...base, lang: "ar" }).text).toContain("طلب اجتماع");
     const fin = quoteEmail({ ...base, lang: "ar", negotiable: false, revised: true });
     expect(fin.subject).toBe("العرض المحدّث لطلبك SEL-2026-000123");
     expect(fin.text).toContain("هذا العرض نهائي");
     expect(quoteEmail({ ...base, lang: "en", negotiable: false }).text).toContain("This proposal is final");
-    for (const m of [fin, quoteEmail({ ...base, lang: "en" })]) expect(`${m.subject}\n${m.text}`).not.toMatch(/[\u2013\u2014]|\S - \S/);
-  });
-
-  it("maps a request to one of five stages", () => {
-    expect(stageOf("received")).toBe(0);
-    expect(stageOf("reviewing")).toBe(0);
-    expect(stageOf("quoted")).toBe(1);
-    expect(stageOf("quoted", "change_requested")).toBe(1);
-    expect(stageOf("quoted", "accepted")).toBe(2);
-    expect(stageOf("in_progress", "accepted")).toBe(3);
-    expect(stageOf("completed", "paid")).toBe(4);
+    for (const m of [fin, quoteEmail({ ...base, lang: "en" })]) expect(`${m.subject}\n${m.text}`).not.toMatch(/[–—]|\S - \S/);
   });
 });
 
-// ---------------------------------------------------------------- end to end with a real SQLite database
+// ---------------------------------------------------------------- payments through Moyasar, on a real SQLite database
 
-/** D1 on top of node:sqlite, enough for the statements the Worker runs. */
-function d1(db: DatabaseSync) {
-  const stmt = (sql: string, args: unknown[] = []) => {
-    const run = () => db.prepare(sql);
-    const vals = () => args.map((a) => (a === undefined ? null : a)) as (string | number | null)[];
-    return {
-      bind: (...a: unknown[]) => stmt(sql, a),
-      first: async () => (run().get(...vals()) as Record<string, unknown> | undefined) ?? null,
-      all: async () => ({ results: run().all(...vals()) }),
-      run: async () => { run().run(...vals()); return { success: true }; },
-      _exec: () => run().run(...vals()),
-    };
-  };
-  return {
-    prepare: (sql: string) => stmt(sql),
-    batch: async (list: ReturnType<typeof stmt>[]) => {
-      db.exec("BEGIN");
-      try { for (const s of list) s._exec(); db.exec("COMMIT"); } catch (e) { db.exec("ROLLBACK"); throw e; }
-      return [];
-    },
-  } as unknown as D1Database;
-}
-
-describe("quotes and payments", () => {
+describe("payments", () => {
   let db: DatabaseSync;
-  let env: PayEnv;
+  let env: Parameters<typeof handleAdmin>[1];
   let invoices: Map<string, { id: string; status: string; amount: number; currency: string; url: string; payments: { id: string; status: string }[] }>;
   let created: Record<string, unknown>[];
   let mails: string[];
 
-  const pdf = new Uint8Array([0x25, 0x50, 0x44, 0x46, 0x2d, 0x31, 0x2e, 0x37]);
   const admin = (path: string, init: RequestInit = {}) =>
     handleAdmin(new Request(`https://selorin.co${path}`, { ...init, headers: { authorization: "Bearer admintoken", ...(init.headers ?? {}) } }), env, path.split("?")[0]);
-  const pub = (path: string, body?: unknown) =>
-    handlePayments(new Request(`https://selorin.co${path}`, body === undefined ? {} : { method: "POST", body: JSON.stringify(body), headers: { "content-type": "application/json" } }), env, path.split("?")[0]);
-  const milestones = () => db.prepare("SELECT * FROM quote_milestones ORDER BY seq").all() as Record<string, any>[];
+  const post = (path: string, body: unknown) => new Request(`https://selorin.co${path}`, { method: "POST", body: JSON.stringify(body), headers: { "content-type": "application/json" } });
+  const portal = (path: string, body?: unknown) =>
+    handlePortal(body === undefined ? new Request(`https://selorin.co${path}`) : post(path, body), env, path.split("?")[0]);
+  const callback = (path: string, body: unknown = {}) => handlePayCallbacks(post(path, body), env, path.split("?")[0]);
+  const milestones = () => db.prepare("SELECT * FROM quote_milestones ORDER BY quote_id, seq").all() as Record<string, any>[];
   const leadStatus = () => (db.prepare("SELECT status FROM leads").get() as { status: string }).status;
+  const view = async (t: string) => ((await (await portal(`/api/portal?t=${t}`)).json()) as any).portal;
+  const details = { legalName: "Acme Industrial Co.", crNumber: "2050012345", signatoryName: "Sara Al Harbi", signatoryTitle: "CEO", signatoryPhone: "+966 55 123 4567", signatoryEmail: "sara@acme.sa", agree: true };
 
   async function createQuote(plan: unknown, extra: Record<string, string> = {}) {
     const form = new FormData();
@@ -210,18 +192,22 @@ describe("quotes and payments", () => {
     form.set("subtotal", "10,000");
     form.set("plan", JSON.stringify(plan));
     for (const [k, v] of Object.entries(extra)) form.set(k, v);
-    form.append("files", new File([pdf], "Technical offer.pdf", { type: "application/pdf" }));
+    form.append("files", new File([PDF], "Technical offer.pdf", { type: "application/pdf" }));
     const res = await admin("/api/admin/quotes", { method: "POST", body: form });
     const body = await res.json() as { ok: boolean; link: string; quoteId: string; error?: string; negotiable?: boolean; replaces?: string | null };
     return { res, body, token: body.link ? new URL(body.link).searchParams.get("t")! : "" };
   }
+  /** Approve and send the contract details: returns Moyasar's page for the first instalment, if there is one. */
+  async function approve(token: string) {
+    expect((await portal("/api/portal/accept", { t: token })).status).toBe(200);
+    return (await (await portal("/api/portal/contract", { t: token, ...details })).json()) as { ok: boolean; url?: string | null; issued?: boolean };
+  }
 
   beforeEach(() => {
-    db = new DatabaseSync(":memory:");
-    for (const f of readdirSync("migrations").sort()) db.exec(readFileSync(`migrations/${f}`, "utf8"));
-    db.prepare(`INSERT INTO leads (lead_id, kind, submitted_at, company, contact_name, email, payload) VALUES ('SEL-2026-000123', 'request', '2026-11-20 09:00:00', 'Acme', 'Sara', 'sara@acme.sa', ?1)`)
+    db = freshDb();
+    db.prepare(`INSERT INTO leads (lead_id, kind, submitted_at, service, company, contact_name, email, payload) VALUES ('SEL-2026-000123', 'request', '2026-11-20 09:00:00', 'environmental-permitting', 'Acme', 'Sara', 'sara@acme.sa', ?1)`)
       .run(JSON.stringify({ lang: "ar" }));
-    env = { DB: d1(db), ADMIN_TOKEN: "admintoken", EMAIL_DRY_RUN: "true", MOYASAR_SECRET_KEY: "sk_test_x", SITE_URL: "https://selorin.co" };
+    env = { DB: d1(db), ADMIN_TOKEN: "admintoken", EMAIL_DRY_RUN: "true", MOYASAR_SECRET_KEY: "sk_test_x", MOYASAR_WEBHOOK_SECRET: "whsec", SITE_URL: "https://selorin.co" };
     invoices = new Map();
     created = [];
     mails = [];
@@ -254,172 +240,181 @@ describe("quotes and payments", () => {
     inv.payments = [{ id: `pay_${id}`, status: "paid" }];
   };
 
-  it("sends a proposal, takes the advance on approval and the rest when each stage is done", async () => {
+  it("takes the first instalment after the contract details, issues the contract, and collects each stage payment", async () => {
     const { res, body, token } = await createQuote([
       { label: "دفعة مقدمة", percent: 30, trigger: "acceptance" },
-      { label: "تسليم التقرير النهائي", percent: 70, trigger: "milestone" },
-    ]);
+      { label: "تسليم التقرير النهائي", percent: 70, trigger: "milestone", stage: 1 },
+    ], { stages: JSON.stringify(["إعداد الدراسة والتقرير النهائي"]) });
     expect(res.status).toBe(200);
     expect(body.quoteId).toBe("SEL-2026-000123-Q1");
     expect(token).toMatch(TOKEN);
+    expect(body.link).toBe(`https://selorin.co/ar/portal/?t=${token}`);
     expect(mails[0]).toContain("to=sara@acme.sa");
     expect(mails[0]).toContain("attachments=Technical_offer.pdf");
     expect(mails[0]).toContain("11,500.00 ريال");
     expect(leadStatus()).toBe("quoted");
 
-    // The client opens the link and sees the proposal.
-    let q = await (await pub(`/api/quote?t=${token}`)).json() as any;
-    expect(q.quote).toMatchObject({ status: "sent", subtotal: 1000000, vat: 150000, total: 1150000, paid: 0, documents: ["Technical_offer.pdf"] });
-    expect(q.quote.milestones.map((m: any) => [m.amount, m.status])).toEqual([[345000, "scheduled"], [805000, "scheduled"]]);
-    expect(JSON.stringify(q)).not.toContain("sara@acme.sa");
+    // The client sees the proposal in the portal, without staff-only data.
+    let p = await view(token);
+    expect(p.quote).toMatchObject({ status: "sent", subtotal: 1000000, vat: 150000, total: 1150000, paid: 0, documents: ["Technical_offer.pdf"] });
+    expect(p.quote.milestones.map((m: any) => [m.amount, m.status, m.stageSeq])).toEqual([[345000, "scheduled", null], [805000, "scheduled", 1]]);
+    expect(JSON.stringify(p)).not.toContain(db.prepare("SELECT token FROM quotes").get()!.token as string);
 
-    // Approval returns Moyasar's payment page for the advance.
-    const acc = await (await pub("/api/quote/accept", { t: token })).json() as any;
-    expect(acc.url).toBe("https://checkout.moyasar.com/invoices/inv_1");
-    expect(created[0]).toMatchObject({ amount: 345000, currency: "SAR", callback_url: `https://selorin.co/api/pay/callback?ms=${milestones()[0].id}`, success_url: `https://selorin.co/ar/quote/?t=${token}&paid=1` });
+    // The first instalment cannot be paid before the contract details.
+    expect((await portal("/api/portal/accept", { t: token })).status).toBe(200);
+    expect((await portal("/api/portal/pay", { t: token, ms: milestones()[0].id })).status).toBe(409);
+    const c = await (await portal("/api/portal/contract", { t: token, ...details })).json() as any;
+    expect(c.url).toBe("https://checkout.moyasar.com/invoices/inv_1");
+    expect(created[0]).toMatchObject({ amount: 345000, currency: "SAR", callback_url: `https://selorin.co/api/pay/callback?ms=${milestones()[0].id}`, success_url: `https://selorin.co/ar/portal/?t=${token}&paid=1`, back_url: `https://selorin.co/ar/portal/?t=${token}` });
     expect(milestones()[0].status).toBe("due");
+    expect(mails.some((m) => m.includes("الدفعة الأولى «دفعة مقدمة» مستحقة الآن"))).toBe(true);
+    expect((await view(token)).next).toBe("pay_advance");
 
-    // Paying again from the page reuses the same invoice.
-    const again = await (await pub("/api/quote/pay", { t: token, ms: milestones()[0].id })).json() as any;
-    expect(again.url).toBe(acc.url);
+    // Paying again from the page reuses the same invoice; a callback before payment changes nothing.
+    const again = await (await portal("/api/portal/pay", { t: token, ms: milestones()[0].id })).json() as any;
+    expect(again.url).toBe(c.url);
     expect(created).toHaveLength(1);
-
-    // A callback before payment changes nothing.
-    await pub(`/api/pay/callback?ms=${milestones()[0].id}`, {});
+    await callback(`/api/pay/callback?ms=${milestones()[0].id}`);
     expect(milestones()[0].status).toBe("due");
 
-    // Moyasar reports it paid: recorded once, client and staff told, work starts.
+    // Moyasar reports it paid: recorded once, client and staff told, contract issued.
     pay("inv_1");
-    const sent = mails.length;
-    await pub(`/api/pay/callback?ms=${milestones()[0].id}`, { status: "paid" });
-    await pub(`/api/pay/callback?ms=${milestones()[0].id}`, { status: "paid" });
+    await callback(`/api/pay/callback?ms=${milestones()[0].id}`, { status: "paid" });
+    await callback(`/api/pay/callback?ms=${milestones()[0].id}`, { status: "paid" });
     expect(milestones()[0]).toMatchObject({ status: "paid", payment_id: "pay_inv_1", paid_by: "moyasar" });
-    expect(mails.length - sent).toBe(2);
-    expect(mails.at(-2)).toContain("تم استلام دفعتك");
-    expect(mails.at(-1)).toContain("[Payment received] SEL-2026-000123 | SAR 3,450.00");
-    expect(leadStatus()).toBe("in_progress");
+    expect(mails.filter((m) => m.includes("[Payment received] SEL-2026-000123 | SAR 3,450.00"))).toHaveLength(1);
+    expect(mails.some((m) => m.includes("تم استلام دفعتك"))).toBe(true);
+    expect(db.prepare("SELECT status FROM contracts").get()).toEqual({ status: "issued" });
+    p = await view(token);
+    expect(p.next).toBe("sign_contract");
+    expect(p.work[0].state).toBe("waiting");
 
-    // The final payment cannot be paid before the team marks the stage complete.
-    expect((await pub("/api/quote/pay", { t: token, ms: milestones()[1].id })).status).toBe(409);
-    const due = await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: milestones()[1].id, action: "due" }) });
-    expect(due.status).toBe(200);
-    expect(mails.at(-1)).toContain("دفعة مستحقة على طلبك SEL-2026-000123");
-    const fin = await (await pub("/api/quote/pay", { t: token, ms: milestones()[1].id })).json() as any;
+    // Signed copy uploaded: the stage starts. Completing it makes the stage payment due.
+    const form = new FormData();
+    form.set("t", token);
+    form.append("file", new File([PDF], "signed.pdf", { type: "application/pdf" }));
+    expect((await handlePortal(new Request("https://selorin.co/api/portal/countersign", { method: "POST", body: form }), env, "/api/portal/countersign")).status).toBe(200);
+    expect(leadStatus()).toBe("in_progress");
+    const stage = db.prepare("SELECT id, status FROM work_stages").get() as { id: number; status: string };
+    expect(stage.status).toBe("active");
+    expect((await portal("/api/portal/pay", { t: token, ms: milestones()[1].id })).status).toBe(409);
+    expect((await admin("/api/admin/stage", { method: "POST", body: JSON.stringify({ id: stage.id, note: "Delivered" }) })).status).toBe(200);
+    expect(mails.at(-1)).toContain("أنجزنا مرحلة «إعداد الدراسة والتقرير النهائي»");
+    const fin = await (await portal("/api/portal/pay", { t: token, ms: milestones()[1].id })).json() as any;
     expect(fin.url).toBe("https://checkout.moyasar.com/invoices/inv_2");
 
-    // Paid while the callback was lost: opening the page picks it up.
+    // Paid while the callback was lost: opening the portal picks it up and closes the request.
     pay("inv_2");
-    q = await (await pub(`/api/quote?t=${token}`)).json() as any;
-    expect(q.quote).toMatchObject({ status: "paid", paid: 1150000, remaining: 0 });
-    const events = db.prepare("SELECT note FROM lead_events WHERE note IS NOT NULL").all().map((e: any) => e.note);
-    expect(events.some((n: string) => n.includes("تسليم التقرير النهائي"))).toBe(true);
+    p = await view(token);
+    expect(p.quote).toMatchObject({ status: "paid", paid: 1150000 });
+    expect(p.next).toBe("done");
+    expect(leadStatus()).toBe("completed");
   });
 
   it("keeps one invoice when the client clicks pay twice at once, and closes it when paid by transfer", async () => {
     const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }]);
-    const [a, b] = await Promise.all([pub("/api/quote/accept", { t: token }), pub("/api/quote/accept", { t: token })]);
+    const first = await approve(token);
+    const ms = milestones()[0];
+    db.prepare("UPDATE quote_milestones SET invoice_id = NULL, invoice_url = NULL").run();
+    invoices.clear();
+    const [a, b] = await Promise.all([portal("/api/portal/pay", { t: token, ms: ms.id }), portal("/api/portal/pay", { t: token, ms: ms.id })]);
     const urls = [(await a.json() as any).url, (await b.json() as any).url];
+    expect(first.url).toBeTruthy();
     expect(urls[0]).toBe(urls[1]);
-    expect(mails.filter((m) => m.includes("[Quote approved]"))).toHaveLength(1);
     const live = [...invoices.values()].filter((i) => i.status === "initiated");
     expect(live).toHaveLength(1);
     expect(milestones()[0].invoice_id).toBe(live[0].id);
-    await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: milestones()[0].id, action: "paid", reference: "Transfer 9" }) });
+    expect(mails.filter((m) => m.includes("[Quote approved]"))).toHaveLength(1);
+    await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: ms.id, action: "paid", reference: "Transfer 9" }) });
     expect(invoices.get(live[0].id)!.status).toBe("canceled");
-  });
-
-  it("lets the client ask once for a discount, then sends a final proposal that replaces the first", async () => {
-    const first = await createQuote([{ label: "Advance", percent: 50, trigger: "acceptance" }, { label: "Report", percent: 50, trigger: "milestone" }]);
-    let q = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
-    expect(q.quote).toMatchObject({ negotiable: true, final: false, revised: false, stage: 1 });
-    expect(q.quote.history.map((h: any) => h.status)).toEqual(["quoted"]);
-
-    // Nothing to ask for: refused. A real request: recorded once, staff told, timeline updated.
-    expect((await pub("/api/quote/request-change", { t: first.token, note: "cheaper" })).status).toBe(422);
-    const res = await pub("/api/quote/request-change", { t: first.token, discount: true, schedule: true, note: "We can do 40/60" });
-    expect(res.status).toBe(200);
-    expect(mails.at(-1)).toContain("[Proposal revision requested] SEL-2026-000123 | discount and payment schedule");
-    expect(mails.at(-1)).toContain("We can do 40/60");
-    expect((await pub("/api/quote/request-change", { t: first.token, discount: true })).status).toBe(409);
-    expect((await pub("/api/quote/accept", { t: first.token })).status).toBe(409);
-    q = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
-    expect(q.quote).toMatchObject({ status: "change_requested", negotiable: false, changeRequest: { discount: true, schedule: true, note: "We can do 40/60" } });
-    expect(q.quote.history.at(-1).note).toContain("استلمنا طلبك لمراجعة العرض (خصم وتعديل جدول الدفعات)");
-
-    // The revised proposal is final automatically and replaces the first one.
-    const second = await createQuote([{ label: "Advance", percent: 40, trigger: "acceptance" }, { label: "Report", percent: 60, trigger: "milestone" }]);
-    expect(second.body).toMatchObject({ quoteId: "SEL-2026-000123-Q2", negotiable: false, replaces: "SEL-2026-000123-Q1" });
-    expect(mails.at(-1)).toContain("العرض المحدّث لطلبك SEL-2026-000123");
-    expect(mails.at(-1)).toContain("هذا العرض نهائي");
-    const old = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
-    expect(old.quote.status).toBe("superseded");
-    expect((await pub("/api/quote/accept", { t: first.token })).status).toBe(409);
-    q = await (await pub(`/api/quote?t=${second.token}`)).json() as any;
-    expect(q.quote).toMatchObject({ status: "sent", negotiable: false, final: true, revised: true });
-    expect((await pub("/api/quote/request-change", { t: second.token, discount: true })).status).toBe(409);
-
-    // Only approve and pay remains.
-    const acc = await (await pub("/api/quote/accept", { t: second.token })).json() as any;
-    expect(acc.url).toBe("https://checkout.moyasar.com/invoices/inv_1");
-    q = await (await pub(`/api/quote?t=${second.token}`)).json() as any;
-    expect(q.quote.stage).toBe(2);
-  });
-
-  it("lets staff send a first proposal as final", async () => {
-    const { body, token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }], { final: "1" });
-    expect(body.negotiable).toBe(false);
-    expect((await pub("/api/quote/request-change", { t: token, discount: true })).status).toBe(409);
   });
 
   it("never records a payment for the wrong amount", async () => {
     const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }]);
-    await pub("/api/quote/accept", { t: token });
+    await approve(token);
     pay("inv_1", 100);
-    await pub(`/api/pay/callback?ms=${milestones()[0].id}`, {});
+    await callback(`/api/pay/callback?ms=${milestones()[0].id}`);
     expect(milestones()[0].status).toBe("due");
+    expect(db.prepare("SELECT status FROM contracts").get()).toEqual({ status: "details" });
+  });
+
+  it("accepts webhook events only with the secret", async () => {
+    const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }]);
+    await approve(token);
+    pay("inv_1");
+    expect((await callback("/api/pay/webhook", { secret_token: "nope", data: { invoice_id: "inv_1" } })).status).toBe(401);
+    expect(milestones()[0].status).toBe("due");
+    expect((await callback("/api/pay/webhook", { secret_token: "whsec", data: { invoice_id: "inv_1" } })).status).toBe(200);
+    expect(milestones()[0].status).toBe("paid");
   });
 
   it("refuses unknown tokens, expired proposals and invalid plans", async () => {
-    expect((await pub("/api/quote?t=short")).status).toBe(404);
-    expect((await pub(`/api/quote?t=${newToken()}`)).status).toBe(404);
+    expect((await portal("/api/portal?t=short")).status).toBe(404);
+    expect((await portal(`/api/portal?t=${newToken()}`)).status).toBe(404);
     const bad = await createQuote([{ label: "a", percent: 50, trigger: "milestone" }]);
     expect(bad.res.status).toBe(422);
     expect(bad.body.error).toBe("plan_sum");
+    const unlinked = await createQuote([{ label: "a", percent: 100, trigger: "milestone", stage: 3 }], { stages: JSON.stringify(["One"]) });
+    expect(unlinked.body.error).toBe("plan_stage_link");
     const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }]);
     db.prepare("UPDATE quotes SET valid_until = '2020-01-01'").run();
-    expect((await pub("/api/quote/accept", { t: token })).status).toBe(410);
-    expect((await (await pub(`/api/quote?t=${token}`)).json() as any).quote.status).toBe("expired");
+    expect((await portal("/api/portal/accept", { t: token })).status).toBe(410);
+    expect((await view(token)).quote.status).toBe("expired");
+    expect((await view(token)).next).toBe("expired");
   });
 
   it("needs the admin token for staff actions", async () => {
-    const res = await handleAdmin(new Request("https://selorin.co/api/admin/quotes"), env, "/api/admin/quotes");
-    expect(res.status).toBe(401);
+    for (const path of ["/api/admin/quotes", "/api/admin/tasks", "/api/admin/settings"]) {
+      const res = await handleAdmin(new Request(`https://selorin.co${path}`), env, path);
+      expect(res.status).toBe(401);
+    }
   });
 
-  it("records bank transfers by hand and lists quotes for staff", async () => {
-    const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }]);
-    await pub("/api/quote/accept", { t: token });
-    expect(leadStatus()).toBe("in_progress");
-    const res = await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: milestones()[0].id, action: "paid", reference: "Bank transfer 4471" }) });
+  it("records bank transfers by hand, lists projects for staff, and leaves replaced proposals alone", async () => {
+    const old = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }]);
+    const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }], { final: "1" });
+    const oldMs = milestones().find((m) => m.quote_id.endsWith("Q1"))!;
+    const res0 = await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: oldMs.id, action: "paid", reference: "x" }) });
+    expect(res0.status).toBe(409);
+    expect(((await res0.json()) as any).error).toBe("quote_closed");
+    expect(old.token).toBe(token); // one portal link per request
+
+    expect((await approve(token)).issued).toBe(true); // nothing due on approval: the contract is issued at once
+    const ms = milestones().find((m) => m.quote_id.endsWith("Q2"))!;
+    const res = await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: ms.id, action: "paid", reference: "Bank transfer 4471" }) });
     expect(res.status).toBe(200);
-    expect(milestones()[0]).toMatchObject({ status: "paid", paid_by: "manual", payment_id: "Bank transfer 4471" });
+    expect(milestones().find((m) => m.id === ms.id)).toMatchObject({ status: "paid", paid_by: "manual", payment_id: "Bank transfer 4471" });
     const list = await (await admin("/api/admin/quotes?lead=SEL-2026-000123")).json() as any;
     expect(list.payments).toBe("test");
-    expect(list.quotes[0]).toMatchObject({ quote_id: "SEL-2026-000123-Q1", status: "paid" });
+    expect(list.quotes.map((q: any) => [q.quote_id, q.status])).toEqual([["SEL-2026-000123-Q2", "paid"], ["SEL-2026-000123-Q1", "superseded"]]);
     expect(list.quotes[0].token).toBeUndefined();
+    expect(list.quotes[0].contract.document).toBeUndefined();
+    expect(list.quotes[0].lead.portal).toBe(`https://selorin.co/ar/portal/?t=${token}`);
+  });
+
+  it("keeps an approved proposal: a new one needs the old one cancelled first", async () => {
+    const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }]);
+    await portal("/api/portal/accept", { t: token });
+    const again = await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }]);
+    expect(again.res.status).toBe(409);
+    expect(again.body.error).toBe("has_accepted");
+    expect((await admin("/api/admin/quotes/cancel", { method: "POST", body: JSON.stringify({ quoteId: "SEL-2026-000123-Q1" }) })).status).toBe(200);
+    expect((await createQuote([{ label: "Full", percent: 100, trigger: "milestone" }])).res.status).toBe(200);
   });
 
   it("does not take live payments outside production", async () => {
     env.MOYASAR_SECRET_KEY = "sk_live_x";
     const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }]);
-    const res = await pub("/api/quote/accept", { t: token });
-    expect(res.status).toBe(503);
+    const c = await approve(token);
+    expect(c).toMatchObject({ ok: true, url: null });
+    expect((await portal("/api/portal/pay", { t: token, ms: milestones()[0].id })).status).toBe(503);
+    expect((await view(token)).payments).toBe("off");
     expect(fetch).not.toHaveBeenCalled();
   });
 
   it("reminds twice at most, four days apart, and stops once paid", async () => {
     const { token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }]);
-    await pub("/api/quote/accept", { t: token });
+    await approve(token);
     db.prepare("UPDATE quote_milestones SET due_at = '2026-11-01 08:00:00'").run();
     const count = () => mails.filter((m) => m.includes("تذكير: دفعة مستحقة")).length;
     expect(await runPaymentCron(env, new Date("2026-11-02T08:00:00Z"))).toMatchObject({ reminded: 0 });
@@ -430,6 +425,7 @@ describe("quotes and payments", () => {
     db.prepare("UPDATE quote_milestones SET last_reminder_at = '2026-11-05 08:00:00'").run();
     expect(await runPaymentCron(env, new Date())).toMatchObject({ checked: 0 });
     expect(count()).toBe(2);
+    expect(mails.filter((m) => m.includes("تذكير")).every((m) => m.includes("/ar/portal/?t="))).toBe(true);
 
     db.prepare("UPDATE quote_milestones SET reminders = 0").run();
     pay("inv_1");

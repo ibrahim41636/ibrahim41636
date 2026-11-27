@@ -121,10 +121,11 @@ export const TRIGGER_LABELS: Record<Trigger, Record<Lang, string>> = {
   milestone: { en: "When the stage is complete", ar: "عند إنجاز المرحلة" },
 };
 
-export const quoteUrl = (origin: string, lang: Lang, token: string) => `${origin}${lang === "ar" ? "/ar" : ""}/quote/?t=${encodeURIComponent(token)}`;
+/** The client's private portal for a request: proposal, contract, payments and work stages in one place. */
+export const portalUrl = (origin: string, lang: Lang, token: string) => `${origin}${lang === "ar" ? "/ar" : ""}/portal/?t=${encodeURIComponent(token)}`;
 
-const SIGN_AR = "سيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887";
-const SIGN_EN = "Selorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887";
+export const SIGN_AR = "سيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887";
+export const SIGN_EN = "Selorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887";
 
 const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
@@ -154,13 +155,13 @@ export function quoteEmail(i: MailInput & { total: number; milestones: { label: 
         : `يسعدنا أن نرسل لك العرض الفني والمالي لطلبك رقم ${i.leadId}: ${i.title}.${i.files.length ? ` تجد المستندات مرفقة بهذه الرسالة (${i.files.join("، ")}).` : ""}`,
       `الإجمالي شامل ضريبة القيمة المضافة: ${formatSar(i.total, "ar")}\nجدول الدفعات:\n${lines}`,
       first.trigger === "acceptance"
-        ? `للموافقة على العرض وسداد الدفعة الأولى (${formatSar(first.amount, "ar")}) بمدى أو Apple Pay أو البطاقة الائتمانية، اضغط الزر أدناه. العرض ساري حتى ${i.validUntil}.`
-        : `للموافقة على العرض اضغط الزر أدناه. العرض ساري حتى ${i.validUntil}، وتصلك رسالة بكل دفعة عند استحقاقها.`,
+        ? `العرض ساري حتى ${i.validUntil}. بعد الموافقة تُدخل بيانات المخوّل بالتوقيع ليصدر العقد إلكترونياً، ثم تسدد الدفعة الأولى (${formatSar(first.amount, "ar")}) بمدى أو Apple Pay أو البطاقة الائتمانية.`
+        : `العرض ساري حتى ${i.validUntil}. بعد الموافقة تُدخل بيانات المخوّل بالتوقيع ليصدر العقد إلكترونياً، وتصلك رسالة بكل دفعة عند استحقاقها.`,
       negotiable
-        ? "إن احتجت خصماً أو تقسيماً للدفعات يناسبكم، يمكنك طلب ذلك مرة واحدة من صفحة العرض، ونرسل لك بعدها عرضاً محدّثاً نهائياً."
+        ? "من بوابة طلبك يمكنك طلب اجتماع لمناقشة العرض ونطاق العمل، أو طلب خصم أو تقسيم دفعات يناسبكم مرة واحدة، ونرسل لك بعدها عرضاً محدّثاً نهائياً."
         : "هذا العرض نهائي، والخيار المتاح عليه هو الموافقة والدفع.",
     ];
-    return { subject: `${i.revised ? "العرض المحدّث" : "العرض الفني والمالي"} لطلبك ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_AR}`, html: mailHtml("ar", p, { label: first.trigger === "acceptance" ? "الموافقة والدفع" : "مراجعة العرض والموافقة", url: i.url }) };
+    return { subject: `${i.revised ? "العرض المحدّث" : "العرض الفني والمالي"} لطلبك ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_AR}`, html: mailHtml("ar", p, { label: "فتح العرض في بوابة الطلب", url: i.url }) };
   }
   const p = [
     `Dear ${i.name},`,
@@ -169,13 +170,13 @@ export function quoteEmail(i: MailInput & { total: number; milestones: { label: 
       : `Please find our technical and financial proposal for your request ${i.leadId}: ${i.title}.${i.files.length ? ` The documents are attached to this e-mail (${i.files.join(", ")}).` : ""}`,
     `Total including VAT: ${formatSar(i.total, "en")}\nPayment schedule:\n${lines}`,
     first.trigger === "acceptance"
-      ? `To approve the proposal and pay the first instalment (${formatSar(first.amount, "en")}) by mada, Apple Pay or credit card, use the button below. The proposal is valid until ${i.validUntil}.`
-      : `To approve the proposal, use the button below. It is valid until ${i.validUntil}, and you will receive an e-mail for each payment when it falls due.`,
+      ? `The proposal is valid until ${i.validUntil}. After approving, you enter the authorised signatory's details so the contract is issued electronically, then pay the first instalment (${formatSar(first.amount, "en")}) by mada, Apple Pay or credit card.`
+      : `The proposal is valid until ${i.validUntil}. After approving, you enter the authorised signatory's details so the contract is issued electronically, and you will receive an e-mail for each payment when it falls due.`,
     negotiable
-      ? "If you need a discount or a payment schedule that suits you better, you can ask once from the proposal page, and we will send you a final revised proposal."
+      ? "From your request portal you can ask for a meeting to discuss the proposal and scope, or ask once for a discount or a payment schedule that suits you better, after which we send a final revised proposal."
       : "This proposal is final: the option available is to approve and pay.",
   ];
-  return { subject: `${i.revised ? "Revised proposal" : "Proposal"} for your request ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_EN}`, html: mailHtml("en", p, { label: first.trigger === "acceptance" ? "Approve and pay" : "Review and approve", url: i.url }) };
+  return { subject: `${i.revised ? "Revised proposal" : "Proposal"} for your request ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_EN}`, html: mailHtml("en", p, { label: "Open the proposal in your portal", url: i.url }) };
 }
 
 export interface ChangeRequest { discount: boolean; schedule: boolean; note: string }
@@ -191,13 +192,18 @@ export function parseChangeRequest(body: unknown): { ok: true; request: ChangeRe
   return { ok: true, request: { discount, schedule, note } };
 }
 
-export function dueEmail(i: MailInput & { label: string; amount: number; reminder?: boolean }) {
+/** A payment falling due: the first instalment (the contract is issued once it is paid), the one tied to a completed stage, or a reminder. */
+export function dueEmail(i: MailInput & { label: string; amount: number; reminder?: boolean; advance?: boolean; stage?: string | null }) {
   if (i.lang === "ar") {
     const p = [
       `مرحباً ${i.name}،`,
       i.reminder
         ? `نذكّرك بأن دفعة «${i.label}» على طلبك رقم ${i.leadId} (${i.title}) ما زالت مستحقة.`
-        : `أنجزنا مرحلة «${i.label}» في طلبك رقم ${i.leadId} (${i.title})، وأصبحت دفعتها مستحقة.`,
+        : i.advance
+          ? `استلمنا بيانات التعاقد لطلبك رقم ${i.leadId} (${i.title}). الدفعة الأولى «${i.label}» مستحقة الآن، ويصدر العقد موقعاً ومختوماً من سيلورين بعد سدادها.`
+          : i.stage
+            ? `أنجزنا مرحلة «${i.stage}» في طلبك رقم ${i.leadId} (${i.title})، وأصبحت دفعة «${i.label}» مستحقة. تبدأ المرحلة التالية بعد سدادها.`
+            : `أصبحت دفعة «${i.label}» على طلبك رقم ${i.leadId} (${i.title}) مستحقة.`,
       `المبلغ شامل ضريبة القيمة المضافة: ${formatSar(i.amount, "ar")}. يمكنك السداد بمدى أو Apple Pay أو البطاقة الائتمانية من الزر أدناه.`,
     ];
     return { subject: `${i.reminder ? "تذكير: " : ""}دفعة مستحقة على طلبك ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_AR}`, html: mailHtml("ar", p, { label: "سداد الدفعة", url: i.url }) };
@@ -206,7 +212,11 @@ export function dueEmail(i: MailInput & { label: string; amount: number; reminde
     `Dear ${i.name},`,
     i.reminder
       ? `This is a reminder that the "${i.label}" payment on your request ${i.leadId} (${i.title}) is still due.`
-      : `We have completed the "${i.label}" stage of your request ${i.leadId} (${i.title}), and its payment is now due.`,
+      : i.advance
+        ? `We have received the contract details for your request ${i.leadId} (${i.title}). The first instalment, "${i.label}", is now due, and the contract is issued, signed and stamped by Selorin, once it is paid.`
+        : i.stage
+          ? `We have completed the "${i.stage}" stage of your request ${i.leadId} (${i.title}), and the "${i.label}" payment is now due. The next stage starts once it is paid.`
+          : `The "${i.label}" payment on your request ${i.leadId} (${i.title}) is now due.`,
     `Amount including VAT: ${formatSar(i.amount, "en")}. You can pay by mada, Apple Pay or credit card using the button below.`,
   ];
   return { subject: `${i.reminder ? "Reminder: " : ""}Payment due on your request ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_EN}`, html: mailHtml("en", p, { label: "Pay now", url: i.url }) };

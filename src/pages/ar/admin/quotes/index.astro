@@ -1,13 +1,14 @@
 ---
-// Staff page for proposals and payments: send the technical and financial proposal with its files
-// and payment schedule, follow approvals and payments, and mark a stage complete so its payment
-// falls due (the client is e-mailed a payment link). API: functions/api/payments.ts.
+// Staff project centre: the team's open steps with their timers (first proposal, revised
+// proposal, meeting time), sending a proposal with its payment schedule and the methodology's work
+// stages, following each project (meetings, contract, stages, payments), and the contract settings
+// (company details, signature and stamp). API: functions/api/payments.ts and functions/api/portal.ts.
 import Base from "@/layouts/Base.astro";
 ---
-<Base lang="ar" path="/admin/quotes/" noindex focused title="العروض والمدفوعات" description="إرسال العروض الفنية والمالية ومتابعة الدفعات.">
+<Base lang="ar" path="/admin/quotes/" noindex focused title="العروض والمشاريع" description="مهام الفريق والعروض والعقود ومراحل التنفيذ والمدفوعات.">
   <section class="section">
     <div class="container">
-      <h1 style="font-size:var(--fs-h2)">العروض والمدفوعات</h1>
+      <h1 style="font-size:var(--fs-h2)">العروض والمشاريع</h1>
       <p><a href="/ar/admin/">→ لوحة الطلبات</a></p>
 
       <form class="adm-login" data-login>
@@ -18,122 +19,243 @@ import Base from "@/layouts/Base.astro";
 
       <div data-panel hidden>
         <p class="adm-msg" data-msg hidden></p>
-        <p class="q-mode" data-mode></p>
+        <nav class="adm-tabs" role="tablist">
+          <button type="button" role="tab" data-tab="tasks" aria-selected="true">المهام والمؤقتات <span class="count" data-task-count hidden></span></button>
+          <button type="button" role="tab" data-tab="new" aria-selected="false">عرض جديد</button>
+          <button type="button" role="tab" data-tab="projects" aria-selected="false">المشاريع</button>
+          <button type="button" role="tab" data-tab="settings" aria-selected="false">الإعدادات</button>
+          <button type="button" class="adm-logout" data-logout>خروج</button>
+        </nav>
 
-        <form class="card q-form" data-create>
-          <h2>عرض جديد</h2>
-          <div class="q-grid">
-            <label>رقم الطلب<input name="leadId" class="ltr" required placeholder="SEL-2026-000123" pattern="SEL-\d{4}-\d{6}" /></label>
-            <label>عنوان العرض<input name="title" required maxlength="160" placeholder="مثال: التصريح البيئي لمصنع الجبيل" /></label>
-            <label>قيمة الخدمات بالريال قبل الضريبة<input name="subtotal" class="ltr" required inputmode="decimal" placeholder="25000" /></label>
-            <label>صلاحية العرض بالأيام<input name="validDays" class="ltr" type="number" min="1" max="180" value="30" /></label>
-          </div>
+        <!-- ------------------------------------------------ tasks -->
+        <section data-pane="tasks">
+          <p class="muted adm-hint" data-sla></p>
+          <div data-tasks></div>
+        </section>
 
-          <fieldset class="q-plan">
-            <legend>جدول الدفعات</legend>
+        <!-- ------------------------------------------------ new proposal -->
+        <section data-pane="new" hidden>
+          <form class="card q-form" data-create>
+            <h2>عرض فني ومالي جديد</h2>
+            <div class="q-grid">
+              <label>رقم الطلب<input name="leadId" class="ltr" required placeholder="SEL-2026-000123" pattern="SEL-\d{4}-\d{6}" /></label>
+              <label>عنوان العرض<input name="title" required maxlength="160" placeholder="مثال: التصريح البيئي لمصنع الجبيل" /></label>
+              <label>قيمة الخدمات بالريال قبل الضريبة<input name="subtotal" class="ltr" required inputmode="decimal" placeholder="25000" /></label>
+              <label>صلاحية العرض بالأيام<input name="validDays" class="ltr" type="number" min="1" max="180" value="30" /></label>
+            </div>
+
             <div class="q-presets">
+              <span>قوالب سريعة:</span>
               <button type="button" class="btn btn--ghost" data-preset="full">كامل المبلغ عند الموافقة</button>
               <button type="button" class="btn btn--ghost" data-preset="half">50% مقدماً و50% عند التسليم</button>
               <button type="button" class="btn btn--ghost" data-preset="three">30% / 40% / 30%</button>
               <button type="button" class="btn btn--ghost" data-preset="after">كامل المبلغ عند التسليم</button>
             </div>
-            <table class="adm-table">
-              <thead><tr><th>الدفعة (تظهر للعميل بلغته)</th><th>النسبة %</th><th>تستحق</th><th>المبلغ شامل الضريبة</th><th></th></tr></thead>
-              <tbody data-plan></tbody>
-            </table>
-            <p><button type="button" class="btn btn--ghost" data-add>إضافة دفعة</button></p>
-            <p class="q-totals" data-totals></p>
-          </fieldset>
 
-          <label>ملفات العرض الفني والمالي (PDF أو Word أو Excel، حتى 5 ملفات و10 ميجابايت)
-            <input name="files" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg,.zip" />
-          </label>
-          <p class="muted" style="font-size:var(--fs-14)">تُرسل الملفات للعميل مرفقة بالبريد مع رابط الموافقة والدفع، ولا تُحفظ في الموقع. الدفعة الأولى «عند الموافقة» يدفعها العميل مباشرة بعد الموافقة، وبقية الدفعات تستحق عندما تضغط «إنجاز المرحلة» أدناه.</p>
-          <label class="q-check"><input type="checkbox" name="final" value="1" /> عرض نهائي: يظهر للعميل خيار الموافقة والدفع فقط، بدون طلب خصم أو تعديل الدفعات</label>
-          <p class="muted" style="font-size:var(--fs-14)">العرض الأول يتيح للعميل طلب خصم أو تقسيم دفعات مختلف مرة واحدة. بعد أن يستخدمها، يكون أي عرض جديد لنفس الطلب نهائياً تلقائياً، ويحل محل العرض السابق.</p>
-          <button class="btn" type="submit" data-send>إرسال العرض للعميل</button>
-        </form>
+            <fieldset class="q-plan">
+              <legend>مراحل التنفيذ الفني (حسب العرض الفني ومنهجية العمل)</legend>
+              <ol class="q-stages" data-stages></ol>
+              <p><button type="button" class="btn btn--ghost" data-add-stage>إضافة مرحلة</button></p>
+              <p class="muted adm-hint">يرى العميل هذه المراحل في بوابته. تبدأ الأولى بعد توقيع العقد وسداد الدفعة المقدمة، ولا تبدأ أي مرحلة حتى تُسدد الدفعة المرتبطة بالمرحلة السابقة.</p>
+            </fieldset>
 
-        <div class="adm-bar">
-          <label>عروض طلب <input data-filter class="ltr" placeholder="SEL-2026-000123" /></label>
-          <button class="btn btn--ghost" type="button" data-refresh>تحديث</button>
-          <button class="btn btn--ghost" type="button" data-logout>خروج</button>
-        </div>
-        <div data-list></div>
+            <fieldset class="q-plan">
+              <legend>جدول الدفعات</legend>
+              <div class="wrap">
+                <table class="adm-table">
+                  <thead><tr><th>الدفعة (تظهر للعميل)</th><th>النسبة %</th><th>تستحق</th><th>المرحلة</th><th>المبلغ شامل الضريبة</th><th></th></tr></thead>
+                  <tbody data-plan></tbody>
+                </table>
+              </div>
+              <p><button type="button" class="btn btn--ghost" data-add>إضافة دفعة</button></p>
+              <p class="q-totals" data-totals></p>
+            </fieldset>
+
+            <label>ملفات العرض الفني والمالي (PDF أو Word أو Excel، حتى 5 ملفات و10 ميجابايت)
+              <input name="files" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg,.zip" />
+            </label>
+            <label>التعديلات في هذا الإصدار (للعرض المحدّث، تظهر للعميل في البوابة)
+              <textarea name="revisionNote" rows="3" maxlength="1000" placeholder="مثال: خصم 5% وتقسيم الدفعة الثانية على مرحلتين بناءً على الاجتماع"></textarea>
+            </label>
+            <label class="q-check"><input type="checkbox" name="final" value="1" /> عرض نهائي: يظهر للعميل خيار الموافقة والسداد فقط، بدون اجتماع أو طلب خصم</label>
+            <p class="muted adm-hint">تُرسل الملفات للعميل مرفقة بالبريد مع رابط بوابته، وتُحفظ نسخة في مجلد الطلب على Google Drive إن كان مفعلاً. يمكن للعميل طلب خصم أو تقسيم دفعات مرة واحدة فقط، وبعدها يكون أي عرض جديد للطلب نهائياً تلقائياً ويحل محل السابق.</p>
+            <button class="btn" type="submit" data-send>إرسال العرض للعميل</button>
+          </form>
+        </section>
+
+        <!-- ------------------------------------------------ projects -->
+        <section data-pane="projects" hidden>
+          <div class="adm-bar">
+            <label>طلب <input data-filter class="ltr" placeholder="SEL-2026-000123" /></label>
+            <button class="btn btn--ghost" type="button" data-refresh>تحديث</button>
+            <span class="q-mode" data-mode></span>
+          </div>
+          <div data-list></div>
+        </section>
+
+        <!-- ------------------------------------------------ settings -->
+        <section data-pane="settings" hidden>
+          <form class="card q-form" data-settings>
+            <h2>بيانات سيلورين في العقد</h2>
+            <div class="q-grid">
+              <label>الاسم القانوني<input name="legalName" maxlength="200" placeholder="سيلورين للاستشارات والخدمات البيئية" /></label>
+              <label>رقم السجل التجاري<input name="crNumber" class="ltr" maxlength="30" /></label>
+              <label>الرقم الضريبي<input name="vatNumber" class="ltr" maxlength="30" /></label>
+              <label>العنوان<input name="address" maxlength="200" /></label>
+              <label>اسم المفوّض بالتوقيع<input name="signatoryName" maxlength="120" /></label>
+              <label>المنصب<input name="signatoryTitle" maxlength="120" /></label>
+              <label>الهاتف<input name="phone" class="ltr" maxlength="30" placeholder="+966 55 015 6887" /></label>
+              <label>البريد<input name="email" class="ltr" maxlength="120" placeholder="sales@selorin.co" /></label>
+            </div>
+            <div class="q-grid">
+              <div class="q-img">
+                <label>صورة التوقيع (PNG بخلفية شفافة، حتى 400 كيلوبايت)<input name="signature" type="file" accept=".png,.jpg,.jpeg" /></label>
+                <img data-sig alt="التوقيع الحالي" hidden />
+              </div>
+              <div class="q-img">
+                <label>صورة الختم (PNG بخلفية شفافة، حتى 400 كيلوبايت)<input name="stamp" type="file" accept=".png,.jpg,.jpeg" /></label>
+                <img data-stamp alt="الختم الحالي" hidden />
+              </div>
+            </div>
+            <p class="muted adm-hint">تُحفظ صورتا التوقيع والختم في قاعدة البيانات فقط (لا في المستودع)، وتظهران في العقد عند إصداره بعد سداد الدفعة المقدمة. يُنصح بمراجعة نص العقد مع مستشار قانوني قبل التشغيل.</p>
+            <button class="btn" type="submit">حفظ الإعدادات</button>
+          </form>
+          <div class="card q-form" style="margin-top:var(--space-5)">
+            <h2>حالة الربط</h2>
+            <ul class="adm-status" data-status></ul>
+          </div>
+        </section>
       </div>
     </div>
   </section>
 
   <style is:global>
+    [data-panel][hidden], [data-pane][hidden], .adm-login[hidden], .count[hidden] { display: none; }
     .adm-login { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: var(--space-6); }
-    .adm-login[hidden] { display: none; }
-    .adm-login input, .q-form input, .q-form select, .adm-bar input { padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; background: #fff; }
-    .adm-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: var(--space-7) 0 var(--space-4); }
-    .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); margin-top: var(--space-5); }
+    .adm-login input, .q-form input, .q-form select, .q-form textarea, .adm-bar input, .q-card input, .q-card select, .q-card textarea { padding: 10px 12px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; background: #fff; }
+    .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); margin-top: var(--space-5); white-space: pre-line; }
     .adm-msg.err { background: #fdecea; color: #8a1c12; }
+    .adm-hint { font-size: var(--fs-14); margin: 0; }
+    .adm-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: var(--space-6) 0 var(--space-5); border-bottom: 1px solid var(--c-line); }
+    .adm-tabs button { font: inherit; font-weight: 600; padding: 10px 16px; border: 0; background: none; border-bottom: 3px solid transparent; cursor: pointer; color: var(--c-muted); }
+    .adm-tabs button[aria-selected="true"] { color: var(--c-forest); border-bottom-color: var(--c-forest-2); }
+    .adm-tabs .adm-logout { margin-inline-start: auto; font-weight: 400; }
+    .adm-tabs .count { display: inline-grid; place-items: center; min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; background: #c0392b; color: #fff; font-size: 12px; }
+    .adm-bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 var(--space-4); }
     .q-mode { font-size: var(--fs-14); color: var(--c-muted); }
-    .q-form label.q-check { display: flex; gap: 8px; align-items: center; font-weight: 600; }
-    .q-form label.q-check input { width: auto; }
-    .q-req { margin: var(--space-3) 0 0; padding: 12px 14px; border-radius: var(--radius-sm); background: #fff4d6; color: #5c3d00; font-size: var(--fs-14); white-space: pre-line; }
     .q-mode b.off { color: #8a1c12; }
-    .q-form { margin-top: var(--space-5); gap: var(--space-4); }
+    .q-form { gap: var(--space-4); }
     .q-form h2 { font-size: var(--fs-h4); margin: 0; }
     .q-form label { display: grid; gap: 6px; font-size: var(--fs-14); font-weight: 600; }
+    .q-form label.q-check { display: flex; gap: 8px; align-items: center; }
+    .q-form label.q-check input { width: auto; }
     .q-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4); }
-    .q-grid input, .q-form > label input { width: 100%; min-width: 0; box-sizing: border-box; }
-    .q-plan { border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: var(--space-4); margin: 0; min-width: 0; }
+    .q-grid input, .q-form > label input, .q-form > label textarea { width: 100%; min-width: 0; box-sizing: border-box; }
+    .q-plan { border: 1px solid var(--c-line); border-radius: var(--radius-sm); padding: var(--space-4); margin: 0; min-width: 0; display: grid; gap: var(--space-3); }
     .q-plan legend { font-weight: 600; padding: 0 6px; }
-    .q-presets { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--space-4); }
-    .q-presets .btn { padding: 8px 12px; font-size: var(--fs-14); }
+    .q-plan p { margin: 0; }
+    .q-presets { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: var(--fs-14); }
+    .q-presets .btn, .q-plan .btn, .q-card .btn { min-height: 36px; padding: 0 12px; font-size: var(--fs-14); }
+    .q-stages { margin: 0; padding-inline-start: 24px; display: grid; gap: 8px; }
+    .q-stages li { display: flex; gap: 8px; align-items: center; }
+    .q-stages input { flex: 1; min-width: 0; }
+    .wrap { overflow-x: auto; }
     .adm-table { width: 100%; border-collapse: collapse; font-size: var(--fs-14); background: #fff; }
     .adm-table th, .adm-table td { padding: 8px 10px; border-bottom: 1px solid var(--c-line); text-align: start; vertical-align: middle; }
     .adm-table th { background: var(--c-paper-2); white-space: nowrap; }
     .adm-table input[type="number"] { width: 90px; }
     .adm-table input[type="text"] { width: 100%; min-width: 180px; }
-    .q-plan .adm-table { display: block; overflow-x: auto; }
     .q-totals { font-weight: 600; }
-    .q-totals.err { color: #8a1c12; }
-    .q-card { border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; padding: var(--space-4); margin-bottom: var(--space-4); }
+    .q-totals.err, .err-text { color: #8a1c12; }
+    .q-img { display: grid; gap: 8px; align-content: start; }
+    .q-img img { max-width: 220px; max-height: 120px; object-fit: contain; border: 1px dashed var(--c-line); border-radius: var(--radius-sm); padding: 8px; background: #fff; }
+    .q-img img[hidden] { display: none; }
+    .adm-status { margin: 0; padding-inline-start: 20px; display: grid; gap: 6px; font-size: var(--fs-15); }
+    .task { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: start; padding: 14px 16px; border: 1px solid var(--c-line); border-inline-start: 5px solid var(--c-forest-2); border-radius: var(--radius); background: #fff; margin-bottom: 10px; }
+    .task.soon { border-inline-start-color: #e0a100; }
+    .task.late { border-inline-start-color: #c0392b; background: #fffafa; }
+    .task h3 { font-size: var(--fs-16); margin: 0; }
+    .task .meta { font-size: var(--fs-14); color: var(--c-muted); margin: 4px 0 0; }
+    .task .detail { font-size: var(--fs-14); margin: 6px 0 0; white-space: pre-line; }
+    .task .clock { font-weight: 700; font-variant-numeric: tabular-nums; text-align: end; white-space: nowrap; }
+    .task.late .clock { color: #c0392b; }
+    .task.soon .clock { color: #9a6b00; }
+    .task .clock small { display: block; font-weight: 400; color: var(--c-muted); font-size: var(--fs-12); }
+    .task .row { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .task .row .btn { min-height: 36px; padding: 0 12px; font-size: var(--fs-14); }
+    .task .row input { padding: 7px 10px; border: 1px solid var(--c-line); border-radius: var(--radius-sm); font: inherit; }
+    .q-card { border: 1px solid var(--c-line); border-radius: var(--radius); background: #fff; padding: var(--space-4); margin-bottom: var(--space-4); display: grid; gap: var(--space-3); }
+    .q-old { background: var(--c-paper-2); }
+    .q-old summary { cursor: pointer; list-style: none; }
+    .q-old summary::-webkit-details-marker { display: none; }
+    .q-old[open] summary { margin-bottom: var(--space-2); }
     .q-card header { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: baseline; justify-content: space-between; }
     .q-card h3 { font-size: var(--fs-18); margin: 0; }
-    .q-card .meta { font-size: var(--fs-14); color: var(--c-muted); }
-    .q-card .adm-table { margin-top: var(--space-3); }
-    .q-card .wrap { overflow-x: auto; }
-    .q-actions { display: flex; flex-wrap: wrap; gap: 6px; }
-    .q-actions .btn { padding: 6px 10px; font-size: var(--fs-12); }
+    .q-card h4 { font-size: var(--fs-15); margin: var(--space-2) 0 0; }
+    .q-card .meta { font-size: var(--fs-14); color: var(--c-muted); margin: 0; }
+    .q-card .links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .q-req { margin: 0; padding: 12px 14px; border-radius: var(--radius-sm); background: #fff4d6; color: #5c3d00; font-size: var(--fs-14); white-space: pre-line; }
+    .q-box { padding: 12px 14px; border-radius: var(--radius-sm); background: var(--c-paper-2); font-size: var(--fs-14); display: grid; gap: 8px; }
+    .q-box p { margin: 0; }
+    .q-actions { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+    .q-actions .btn { min-height: 32px; padding: 0 10px; font-size: var(--fs-12); }
     .pill { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--c-paper-2); font-size: var(--fs-12); white-space: nowrap; }
-    .pill.due { background: #fff4d6; color: #7a5200; }
-    .pill.paid { background: var(--c-mint); color: var(--c-forest); }
+    .pill.due, .pill.locked, .pill.requested, .pill.details { background: #fff4d6; color: #7a5200; }
+    .pill.paid, .pill.done, .pill.held, .pill.countersigned, .pill.active { background: var(--c-mint); color: var(--c-forest); }
     .pill.cancelled { background: #eee; color: #666; }
   </style>
 
   <script is:inline>
     const KEY = "selorin_admin_token";
-    const $ = (s, el = document) => el.querySelector(s);
+    const $ = (s, root = document) => root.querySelector(s);
     let token = sessionStorage.getItem(KEY) || "";
     const ERR = {
-      validation: "تأكد من رقم الطلب وعنوان العرض", lead_not_found: "لا يوجد طلب بهذا الرقم", email_failed: "تعذّر إرسال البريد للعميل، لم يُحفظ العرض",
+      validation: "تأكد من البيانات المدخلة", lead_not_found: "لا يوجد طلب بهذا الرقم", email_failed: "تعذّر إرسال البريد للعميل، لم يُحفظ العرض",
       plan_amount: "تأكد من قيمة الخدمات (رقم بالريال)", plan_empty: "أضف دفعة واحدة على الأقل", plan_too_many: "الحد الأقصى 6 دفعات",
       plan_label: "اكتب اسماً لكل دفعة", plan_percent: "كل نسبة بين 0 و100", plan_sum: "مجموع النسب يجب أن يساوي 100%",
-      plan_acceptance_order: "الدفعة «عند الموافقة» تكون الأولى فقط", files_too_many: "الحد الأقصى 5 ملفات", files_too_large: "حجم الملفات أكبر من 10 ميجابايت",
-      files_type: "نوع ملف غير مسموح", not_scheduled: "الدفعة ليست مجدولة", quote_not_accepted: "لم يوافق العميل على العرض بعد",
-      closed: "الدفعة مدفوعة أو ملغاة", payments_not_configured: "لم يُضبط مفتاح ميسّر في Cloudflare بعد", gateway_error: "تعذّر الاتصال بميسّر",
+      plan_acceptance_order: "الدفعة «عند الموافقة» تكون الأولى فقط", plan_stage_title: "اسم المرحلة أطول من 160 حرفاً",
+      plan_stage_link: "اربط كل دفعة «عند إنجاز المرحلة» بمرحلة من القائمة", plan_too_many_stages: "الحد الأقصى 12 مرحلة",
+      files_too_many: "الحد الأقصى 5 ملفات", files_too_large: "حجم الملفات أكبر من 10 ميجابايت", files_type: "نوع ملف غير مسموح",
+      has_accepted: "للطلب عرض معتمد. ألغِه أولاً إن أردت إرسال عرض بديل", not_scheduled: "الدفعة ليست مجدولة", quote_not_accepted: "لم يوافق العميل على العرض بعد",
+      stage_linked: "هذه الدفعة مرتبطة بمرحلة، وتستحق تلقائياً عند إنجاز المرحلة", closed: "الدفعة مدفوعة أو ملغاة",
+      payments_not_configured: "لم يُضبط مفتاح ميسّر في Cloudflare بعد", gateway_error: "تعذّر الاتصال بميسّر", not_active: "المرحلة ليست جارية الآن",
+      not_issued: "العقد لم يصدر بعد", not_found: "غير موجود، حدّث الصفحة", signature_file: "التوقيع: PNG أو JPG حتى 400 كيلوبايت",
+      stamp_file: "الختم: PNG أو JPG حتى 400 كيلوبايت", quote_closed: "هذا العرض استُبدل أو أُلغي، والعمل على العرض الحالي", server_error: "خطأ في الخادم، حاول مرة أخرى", tracking_unavailable: "قاعدة البيانات غير مربوطة",
     };
-    const QS = { sent: "بانتظار موافقة العميل", change_requested: "العميل طلب مراجعة", superseded: "استُبدل بعرض محدّث", accepted: "تمت الموافقة", paid: "مدفوع بالكامل", cancelled: "ملغى" };
-    ERR.final = "هذا العرض نهائي"; ERR.not_open = "العرض لم يعد مفتوحاً";
+    const QS = { sent: "بانتظار العميل", change_requested: "العميل طلب خصماً أو تقسيماً", superseded: "استُبدل بعرض محدّث", accepted: "تمت الموافقة", paid: "مدفوع بالكامل", cancelled: "ملغى" };
     const MS = { scheduled: "مجدولة", due: "مستحقة", paid: "مدفوعة", cancelled: "ملغاة" };
     const TR = { acceptance: "عند الموافقة", milestone: "عند إنجاز المرحلة" };
+    const WS = { done: "مكتملة", active: "جارية", ready: "جاهزة", locked: "مقفلة بانتظار سداد", waiting: "بانتظار العقد والدفعة المقدمة", upcoming: "لاحقة" };
+    const CS = { details: "بانتظار الدفعة المقدمة", issued: "صادر، بانتظار نسخة العميل الموقعة", countersigned: "موقع من الطرفين" };
+    const MT = { requested: "بانتظار تحديد الموعد", scheduled: "محدد", held: "عُقد", cancelled: "ملغى" };
+    const MODES = { online: "مرئي عن بعد", office: "في المكتب", site: "في الموقع", phone: "مكالمة" };
+    const LS = { received: "مستلم", reviewing: "قيد المراجعة", quoted: "أُرسل العرض", in_progress: "قيد التنفيذ", completed: "مكتمل", closed: "مغلق" };
+    const TASK = { proposal: "إعداد العرض الأول", discount: "عرض محدّث نهائي بعد طلب خصم أو تقسيم", meeting: "تحديد موعد الاجتماع", meeting_revision: "عرض معدّل بعد الاجتماع" };
     const PRESETS = {
-      full: [["سداد قيمة العرض", 100, "acceptance"]],
-      half: [["دفعة مقدمة", 50, "acceptance"], ["عند تسليم التقرير النهائي", 50, "milestone"]],
-      three: [["دفعة مقدمة", 30, "acceptance"], ["بعد الأعمال الميدانية", 40, "milestone"], ["عند تسليم التقرير النهائي", 30, "milestone"]],
-      after: [["عند تسليم الأعمال", 100, "milestone"]],
+      full: { stages: ["تنفيذ الأعمال وتسليم المخرجات"], rows: [["سداد قيمة العرض", 100, "acceptance"]] },
+      half: { stages: ["تنفيذ الأعمال وتسليم التقرير النهائي"], rows: [["دفعة مقدمة", 50, "acceptance"], ["عند تسليم التقرير النهائي", 50, "milestone", 1]] },
+      three: { stages: ["الأعمال الميدانية وجمع البيانات", "التحليل وإعداد التقرير النهائي"], rows: [["دفعة مقدمة", 30, "acceptance"], ["بعد الأعمال الميدانية", 40, "milestone", 1], ["عند تسليم التقرير النهائي", 30, "milestone", 2]] },
+      after: { stages: ["تنفيذ الأعمال وتسليم المخرجات"], rows: [["عند تسليم الأعمال", 100, "milestone", 1]] },
     };
-    const sar = (h) => (h / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " ريال";
+    const sar = (x) => (x / 100).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " ريال";
     const toHalalas = (v) => { const s = String(v).replace(/[,\s٬]/g, "").replace(/[٠-٩]/g, (d) => d.charCodeAt(0) - 0x0660); return /^\d{1,9}(\.\d{1,2})?$/.test(s) ? Math.round(Number(s) * 100) : NaN; };
-    const date = (s) => s ? new Date(s.replace(" ", "T") + "Z").toLocaleString("ar-SA-u-ca-gregory", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Riyadh" }) : "";
-    const msg = (text, err) => { const m = $("[data-msg]"); m.textContent = text; m.className = "adm-msg" + (err ? " err" : ""); m.hidden = !text; if (text) m.scrollIntoView({ block: "nearest" }); };
-    const el = (tag, props = {}, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+    const utc = (s) => new Date(s.includes("T") ? s : s.replace(" ", "T") + "Z");
+    const date = (s) => s ? utc(s).toLocaleString("ar-SA-u-ca-gregory", { dateStyle: "medium", timeStyle: "short", timeZone: "Asia/Riyadh" }) : "";
+    const msg = (text, err) => { const m = $("[data-msg]"); m.textContent = text; m.className = "adm-msg" + (err ? " err" : ""); m.hidden = !text; if (text) m.scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+    function el(tag, props = {}, ...kids) {
+      const e = document.createElement(tag);
+      for (const [k, v] of Object.entries(props)) {
+        if (v === null || v === undefined || v === false) continue;
+        if (k === "class") e.className = v; else if (k === "text") e.textContent = v;
+        else if (k.startsWith("on")) e.addEventListener(k.slice(2), v);
+        else if (k in e && typeof v !== "string") e[k] = v; else e.setAttribute(k, v === true ? "" : v);
+      }
+      for (const kid of kids.flat()) if (kid !== null && kid !== undefined && kid !== false) e.append(kid);
+      return e;
+    }
+    const btn = (text, onclick, ghost = true) => el("button", { type: "button", class: ghost ? "btn btn--ghost" : "btn", text, onclick });
+    /** "a · b · c" where each part keeps its own direction (company names, e-mails and dates mix scripts). */
+    const dotted = (parts) => parts.filter(Boolean).flatMap((x, i) => [i ? " · " : "", el("bdi", { text: String(x) })]);
 
     async function api(path, init = {}) {
       const headers = { Authorization: `Bearer ${token}`, ...(init.body && !(init.body instanceof FormData) ? { "Content-Type": "application/json" } : {}) };
@@ -141,42 +263,150 @@ import Base from "@/layouts/Base.astro";
       const body = await res.json().catch(() => ({}));
       if (res.status === 401) { logout(); throw new Error("رمز الدخول غير صحيح"); }
       if (body.error === "admin_not_configured") throw new Error("لم يُضبط ADMIN_TOKEN في Cloudflare بعد");
-      if (!res.ok || !body.ok) throw new Error(ERR[body.error] || "تعذّر تنفيذ الطلب");
+      if (!res.ok || !body.ok) throw new Error(ERR[body.error] || `تعذّر تنفيذ الطلب (${body.error || res.status})`);
       return body;
     }
+    const post = (path, data) => api(path, { method: "POST", body: data instanceof FormData ? data : JSON.stringify(data) });
+    async function act(path, data, confirmText, done = "تم.") {
+      if (confirmText && !confirm(confirmText)) return false;
+      try { await post(path, data); msg(done); await Promise.all([loadProjects(), loadTasks()]); return true; } catch (err) { msg(err.message, true); return false; }
+    }
 
-    // ------------------------------------------------ payment plan editor
+    // ------------------------------------------------ tabs
+    function tab(name) {
+      document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
+      document.querySelectorAll("[data-pane]").forEach((p) => (p.hidden = p.dataset.pane !== name));
+      if (name === "projects") loadProjects();
+      if (name === "tasks") loadTasks();
+      if (name === "settings") loadSettings();
+    }
+    document.querySelectorAll("[data-tab]").forEach((b) => (b.onclick = () => tab(b.dataset.tab)));
+
+    // ------------------------------------------------ tasks and timers
+    let tasks = [];
+    function clock(t) {
+      const ms = utc(t.dueAt).getTime() - Date.now();
+      const mins = Math.round(Math.abs(ms) / 60000);
+      const hm = mins >= 60 ? `${Math.floor(mins / 60)}س ${mins % 60}د` : `${mins}د`;
+      return { cls: ms <= 0 ? "late" : ms <= 30 * 60000 ? "soon" : "", text: ms <= 0 ? `متأخر ${hm}` : `متبقٍ ${hm}` };
+    }
+    function prefill(t, final, note) {
+      const f = $("[data-create]").elements;
+      f.leadId.value = t.leadId; f.final.checked = !!final;
+      if (note !== undefined) f.revisionNote.value = note;
+      tab("new");
+      f.title.focus();
+      msg(final ? `اكتب العرض المحدّث للطلب ${t.leadId} بعد طلب العميل، وسيكون نهائياً ويحل محل العرض ${t.quoteId}.` : `جهّز العرض للطلب ${t.leadId}${t.company ? ` (${t.company})` : ""}.`);
+    }
+    function taskCard(t) {
+      const c = clock(t);
+      const row = el("div", { class: "row" });
+      if (t.kind === "proposal") row.append(btn("إعداد العرض", () => prefill(t, false, ""), false));
+      if (t.kind === "discount") row.append(btn("إعداد العرض المحدّث (نهائي)", () => prefill(t, true, ""), false));
+      if (t.kind === "meeting_revision") row.append(btn("إعداد العرض المعدّل", () => prefill(t, false, t.detail ? `بناءً على الاجتماع: ${t.detail}` : ""), false));
+      if (t.kind === "meeting") {
+        const when = el("input", { type: "datetime-local", class: "ltr", "aria-label": "الموعد بتوقيت الرياض" });
+        const where = el("input", { type: "text", placeholder: "رابط الاجتماع أو المكان", maxLength: 300 });
+        row.append(when, where,
+          btn("تحديد الموعد", () => { if (!when.value) return msg("اختر الموعد", true); act("/api/admin/meeting", { id: t.meetingId, action: "schedule", when: when.value, location: where.value }, null, "حُدد الموعد وأُبلغ العميل بالبريد."); }, false),
+          btn("إلغاء الطلب", () => act("/api/admin/meeting", { id: t.meetingId, action: "cancel" }, "إلغاء طلب الاجتماع؟")));
+      }
+      row.append(btn("فتح المشروع", () => { $("[data-filter]").value = t.leadId; tab("projects"); }));
+      return el("article", { class: `task ${c.cls}`, "data-key": t.key },
+        el("div", {}, el("h3", { text: `${TASK[t.kind] || t.kind} · ${t.leadId}` }),
+          el("p", { class: "meta" }, dotted([t.company, t.service, `منذ ${date(t.since)}`])),
+          t.detail ? el("p", { class: "detail", text: t.detail }) : null),
+        el("div", { class: "clock", "data-clock": t.key }, c.text, el("small", { text: `الموعد ${date(t.dueAt)}` })),
+        row);
+    }
+    function tick() {
+      for (const t of tasks) {
+        const card = document.querySelector(`[data-key="${CSS.escape(t.key)}"]`);
+        if (!card) continue;
+        const c = clock(t);
+        card.className = `task ${c.cls}`;
+        card.querySelector("[data-clock]").firstChild.textContent = c.text;
+      }
+    }
+    async function loadTasks() {
+      try {
+        const r = await api("/api/admin/tasks");
+        tasks = r.tasks;
+        $("[data-sla]").textContent = `مدة كل خطوة للفريق ${r.slaHours} ساعات من خطوة العميل: العرض الأول من تقديم الطلب، والعرض المحدّث من طلب الخصم، وموعد الاجتماع من طلبه، والعرض المعدّل من انعقاد الاجتماع. يصل تنبيه بالبريد قبل الموعد بنصف ساعة وعند التأخر.`;
+        const late = tasks.filter((t) => utc(t.dueAt).getTime() <= Date.now() + 30 * 60000).length;
+        const count = $("[data-task-count]"); count.textContent = String(tasks.length); count.hidden = !tasks.length; count.style.background = late ? "#c0392b" : "var(--c-forest-2)";
+        const list = $("[data-tasks]");
+        list.replaceChildren(...tasks.map(taskCard));
+        if (!tasks.length) list.append(el("p", { class: "muted", text: "لا توجد مهام مفتوحة. كل الطلبات في انتظار العملاء أو قيد التنفيذ." }));
+      } catch (err) { msg(err.message, true); }
+    }
+    setInterval(tick, 15000);
+    setInterval(() => { if (token && !$("[data-pane=tasks]").hidden) loadTasks(); }, 120000);
+
+    // ------------------------------------------------ new proposal: stages and payment plan
+    const stageList = $("[data-stages]");
     const planBody = $("[data-plan]");
-    function addRow(label = "", percent = "", trigger = "milestone") {
+    const stageTitles = () => [...stageList.querySelectorAll("input")].map((i) => i.value.trim());
+    function addStage(title = "") {
+      const input = el("input", { type: "text", value: title, maxLength: 160, placeholder: "مثال: الزيارة الميدانية وأخذ العينات", required: true });
+      input.addEventListener("input", syncStageSelects);
+      const li = el("li", {}, input, btn("حذف", () => { li.remove(); syncStageSelects(); }));
+      stageList.append(li);
+      syncStageSelects();
+    }
+    function syncStageSelects() {
+      const titles = stageTitles();
+      for (const tr of planBody.children) {
+        const sel = tr._stage; const cur = Number(sel.value) || Number(sel.dataset.want) || titles.length;
+        if (tr._trig.value !== "milestone" || !titles.length) {
+          sel.replaceChildren(el("option", { value: "", text: tr._trig.value === "milestone" ? "أضف مرحلة أولاً" : "بدون مرحلة" }));
+          sel.disabled = true;
+          if (cur) sel.dataset.want = String(cur);
+          continue;
+        }
+        sel.replaceChildren(...titles.map((t, i) => el("option", { value: String(i + 1), text: `${i + 1}. ${t || "(بدون اسم)"}` })));
+        sel.value = String(Math.min(Math.max(cur, 1), titles.length));
+        sel.disabled = false;
+      }
+    }
+    function addRow(label = "", percent = "", trigger = "milestone", stage = null) {
       const tr = el("tr");
       const name = el("input", { type: "text", value: label, maxLength: 120, required: true });
-      const pct = el("input", { type: "number", value: percent, min: "0.01", max: "100", step: "0.01", required: true, className: "ltr" });
-      const trig = el("select");
-      for (const [v, t] of Object.entries(TR)) trig.append(el("option", { value: v, textContent: t, selected: v === trigger }));
-      const amt = el("td", { className: "ltr" });
-      const del = el("button", { type: "button", className: "btn btn--ghost", textContent: "حذف", onclick: () => { tr.remove(); totals(); } });
-      [name, pct, trig].forEach((i) => i.addEventListener("input", totals));
-      tr.append(el("td", {}, name), el("td", {}, pct), el("td", {}, trig), amt, el("td", {}, del));
-      tr._get = () => ({ label: name.value.trim(), percent: Number(pct.value), trigger: trig.value });
-      tr._amt = amt;
+      const pct = el("input", { type: "number", value: String(percent), min: "0.01", max: "100", step: "0.01", required: true, class: "ltr" });
+      const trig = el("select", {}, Object.entries(TR).map(([v, t]) => el("option", { value: v, text: t, selected: v === trigger })));
+      const st = el("select", { "data-want": stage ? String(stage) : "" });
+      const amt = el("td", { class: "ltr" });
+      [name, pct].forEach((i) => i.addEventListener("input", totals));
+      trig.addEventListener("change", () => { syncStageSelects(); totals(); });
+      tr.append(el("td", {}, name), el("td", {}, pct), el("td", {}, trig), el("td", {}, st), amt, el("td", {}, btn("حذف", () => { tr.remove(); totals(); })));
+      tr._trig = trig; tr._stage = st; tr._amt = amt;
+      tr._get = () => ({ label: name.value.trim(), percent: Number(pct.value), trigger: trig.value, stage: trig.value === "milestone" ? Number(st.value) || null : null });
       planBody.append(tr);
+      syncStageSelects();
     }
-    function preset(key) { planBody.replaceChildren(); PRESETS[key].forEach((r) => addRow(...r)); totals(); }
-    function rows() { return [...planBody.children].map((tr) => tr._get()); }
+    function preset(key) {
+      const p = PRESETS[key];
+      stageList.replaceChildren(); planBody.replaceChildren();
+      p.stages.forEach((s) => addStage(s));
+      p.rows.forEach((r) => addRow(...r));
+      totals();
+    }
+    const rows = () => [...planBody.children].map((tr) => tr._get());
     function totals() {
       const sub = toHalalas($("[name=subtotal]").value);
       const list = [...planBody.children];
       const sum = rows().reduce((n, r) => n + (r.percent || 0), 0);
       const out = $("[data-totals]");
-      if (!Number.isFinite(sub)) { out.textContent = `مجموع النسب ${sum}%`; out.className = "q-totals" + (Math.abs(sum - 100) > 0.001 ? " err" : ""); list.forEach((tr) => (tr._amt.textContent = "")); return; }
+      out.className = "q-totals" + (Math.abs(sum - 100) > 0.001 ? " err" : "");
+      if (!Number.isFinite(sub)) { out.textContent = `مجموع النسب ${Math.round(sum * 100) / 100}%`; list.forEach((tr) => (tr._amt.textContent = "")); return; }
       const vat = Math.round(sub * 0.15), total = sub + vat;
       let used = 0;
       list.forEach((tr, i) => { const a = i === list.length - 1 ? total - used : Math.round(total * (tr._get().percent || 0) / 100); used += a; tr._amt.textContent = sar(a); });
       out.textContent = `قبل الضريبة ${sar(sub)} · الضريبة 15% ${sar(vat)} · الإجمالي ${sar(total)} · مجموع النسب ${Math.round(sum * 100) / 100}%`;
-      out.className = "q-totals" + (Math.abs(sum - 100) > 0.001 ? " err" : "");
     }
     document.querySelectorAll("[data-preset]").forEach((b) => (b.onclick = () => preset(b.dataset.preset)));
-    $("[data-add]").onclick = () => { addRow(); totals(); };
+    $("[data-add]").onclick = () => { addRow("", "", "milestone", stageTitles().length); totals(); };
+    $("[data-add-stage]").onclick = () => addStage();
     $("[name=subtotal]").addEventListener("input", totals);
     preset("half");
 
@@ -184,105 +414,199 @@ import Base from "@/layouts/Base.astro";
       e.preventDefault();
       const f = e.currentTarget.elements; // form.title is the form's own attribute, so read inputs from .elements
       const plan = rows();
-      const total = (() => { const s = toHalalas(f.subtotal.value); return Number.isFinite(s) ? s + Math.round(s * 0.15) : NaN; })();
-      if (!Number.isFinite(total)) return msg(ERR.plan_amount, true);
-      if (!confirm(`سيُرسل العرض إلى بريد العميل بإجمالي ${sar(total)} شامل الضريبة. متابعة؟`)) return;
+      const stages = stageTitles();
+      const sub = toHalalas(f.subtotal.value);
+      if (!Number.isFinite(sub)) return msg(ERR.plan_amount, true);
+      if (stages.some((s) => !s)) return msg("اكتب اسماً لكل مرحلة أو احذفها", true);
+      if (plan.some((r) => r.trigger === "milestone" && !r.stage)) return msg(ERR.plan_stage_link, true);
+      const total = sub + Math.round(sub * 0.15);
+      if (!confirm(`سيُرسل العرض إلى بريد العميل وبوابته بإجمالي ${sar(total)} شامل الضريبة، في ${stages.length} مراحل تنفيذ. متابعة؟`)) return;
       const data = new FormData();
-      for (const k of ["leadId", "title", "subtotal", "validDays"]) data.set(k, f[k].value.trim());
+      for (const k of ["title", "subtotal", "validDays", "revisionNote"]) data.set(k, f[k].value.trim());
       data.set("leadId", f.leadId.value.trim().toUpperCase());
       data.set("plan", JSON.stringify(plan));
+      data.set("stages", JSON.stringify(stages));
       if (f.final.checked) data.set("final", "1");
       for (const file of f.files.files) data.append("files", file);
-      const btn = $("[data-send]"); btn.disabled = true;
+      const send = $("[data-send]"); send.disabled = true;
       try {
-        const r = await api("/api/admin/quotes", { method: "POST", body: data });
-        msg(`أُرسل العرض ${r.quoteId} للعميل بإجمالي ${sar(r.total)}${r.negotiable ? "، ويمكنه طلب مراجعة مرة واحدة" : "، وهو عرض نهائي"}${r.replaces ? `، وحل محل العرض ${r.replaces}` : ""}. رابط العميل محفوظ في القائمة أدناه.`);
-        f.final.checked = false;
+        const r = await post("/api/admin/quotes", data);
+        msg(`أُرسل العرض ${r.quoteId} للعميل بإجمالي ${sar(r.total)}${r.negotiable ? "، ويمكنه طلب اجتماع أو طلب خصم مرة واحدة" : "، وهو عرض نهائي"}${r.replaces ? `، وحل محل العرض ${r.replaces}` : ""}.`);
         $("[data-filter]").value = data.get("leadId");
-        f.title.value = ""; f.subtotal.value = ""; f.files.value = ""; totals();
-        load();
-      } catch (err) { msg(err.message, true); } finally { btn.disabled = false; }
+        f.final.checked = false; f.title.value = ""; f.subtotal.value = ""; f.files.value = ""; f.revisionNote.value = ""; totals();
+        loadTasks();
+        tab("projects");
+      } catch (err) { msg(err.message, true); } finally { send.disabled = false; }
     });
 
-    // ------------------------------------------------ quotes and milestones
-    async function act(id, action, confirmText, extra = {}) {
-      if (confirmText && !confirm(confirmText)) return;
-      try { await api("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id, action, ...extra }) }); msg("تم."); load(); }
-      catch (err) { msg(err.message, true); }
+    // ------------------------------------------------ projects
+    async function openContract(quoteId) {
+      try {
+        const res = await fetch(`/api/admin/contract-doc?quote=${encodeURIComponent(quoteId)}`, { headers: { Authorization: `Bearer ${token}` } });
+        if (!res.ok) throw new Error(ERR.not_found);
+        const url = URL.createObjectURL(new Blob([await res.text()], { type: "text/html" }));
+        window.open(url, "_blank", "noopener");
+        setTimeout(() => URL.revokeObjectURL(url), 60000);
+      } catch (err) { msg(err.message, true); }
+    }
+    async function copy(text, done) { try { await navigator.clipboard.writeText(text); msg(done); } catch { prompt("انسخ الرابط:", text); } }
+
+    function meetingBox(m) {
+      const box = el("div", { class: "q-box" },
+        el("p", {}, el("b", { text: `اجتماع ${MODES[m.mode] || m.mode} ` }), el("span", { class: `pill ${m.status}`, text: MT[m.status] || m.status })),
+        el("p", { text: `طُلب ${date(m.requested_at)} · الأوقات المناسبة: ${m.preferred}${m.topics ? `\nالمواضيع: ${m.topics}` : ""}` }),
+        m.scheduled_at ? el("p", { text: `الموعد: ${m.scheduled_at} بتوقيت الرياض${m.location ? ` · ${m.location}` : ""}` }) : null,
+        m.outcome ? el("p", { text: `الخلاصة: ${m.outcome}${m.needs_revision ? " · يحتاج عرضاً معدّلاً" : ""}` }) : null,
+      );
+      if (m.status === "requested" || m.status === "scheduled") {
+        const when = el("input", { type: "datetime-local", class: "ltr", value: m.scheduled_at ? m.scheduled_at.replace(" ", "T") : "" });
+        const where = el("input", { type: "text", placeholder: "رابط الاجتماع أو المكان", value: m.location || "", maxLength: 300 });
+        const outcome = el("textarea", { rows: 2, maxLength: 1500, placeholder: "خلاصة الاجتماع (تظهر للعميل في سجل الطلب)" });
+        const needs = el("input", { type: "checkbox" });
+        box.append(
+          el("div", { class: "q-actions" }, when, where, btn(m.status === "scheduled" ? "تعديل الموعد" : "تحديد الموعد", () => { if (!when.value) return msg("اختر الموعد", true); act("/api/admin/meeting", { id: m.id, action: "schedule", when: when.value, location: where.value }, null, "حُدد الموعد وأُبلغ العميل."); }, false)),
+          el("div", { class: "q-actions" }, outcome, el("label", { class: "q-actions" }, needs, "يحتاج عرضاً معدّلاً"),
+            btn("تسجيل انعقاد الاجتماع", () => act("/api/admin/meeting", { id: m.id, action: "held", outcome: outcome.value, needsRevision: needs.checked }, "تسجيل الاجتماع منعقداً؟", needs.checked ? "سُجل الاجتماع، وبدأ مؤقت العرض المعدّل." : "سُجل الاجتماع.")),
+            btn("إلغاء", () => act("/api/admin/meeting", { id: m.id, action: "cancel" }, "إلغاء الاجتماع؟"))),
+        );
+      }
+      return box;
+    }
+
+    function contractBox(q) {
+      const c = q.contract;
+      if (!c) return q.status === "accepted" || q.status === "paid" ? el("div", { class: "q-box" }, el("p", { text: "العقد: بانتظار إدخال العميل بيانات التعاقد والمخوّل بالتوقيع." })) : null;
+      const box = el("div", { class: "q-box" },
+        el("p", {}, el("b", { text: `العقد ${c.contract_no} ` }), el("span", { class: `pill ${c.status}`, text: CS[c.status] || c.status }), c.start_override ? el("span", { class: "pill", text: " بدأ التنفيذ باستثناء" }) : null),
+        el("p", {}, dotted([c.legal_name, c.cr_number ? `سجل ${c.cr_number}` : "", c.address])),
+        el("p", {}, "المخوّل بالتوقيع: ", dotted([`${c.signatory_name}، ${c.signatory_title}`, c.signatory_phone, c.signatory_email])),
+        el("p", {}, dotted([`الموافقة الإلكترونية ${date(c.accepted_at)}`, c.issued_at ? `الإصدار ${date(c.issued_at)}` : "", c.countersigned_at ? `نسخة العميل ${date(c.countersigned_at)}` : "", c.countersigned_file])),
+      );
+      const row = el("div", { class: "q-actions" }, btn(c.status === "details" ? "معاينة العقد" : "عرض العقد الصادر", () => openContract(q.quote_id)));
+      if (c.status === "issued" && !c.start_override) row.append(btn("بدء التنفيذ قبل استلام النسخة الموقعة", () => act("/api/admin/contract", { quoteId: q.quote_id }, "بدء المرحلة الأولى قبل أن يرفع العميل النسخة الموقعة؟ (الدفعة المقدمة مسددة)", "بدأ التنفيذ.")));
+      box.append(row);
+      return box;
+    }
+
+    function stagesTable(q) {
+      if (!q.stages.length) return null;
+      const tbody = el("tbody");
+      for (const s of q.stages) {
+        const linked = q.milestones.filter((m) => m.stage_seq === s.seq).map((m) => `${m.label} (${sar(m.amount)}، ${MS[m.status] || m.status})`).join("، ");
+        const actions = el("div", { class: "q-actions" });
+        if (s.status === "active") actions.append(btn("إنجاز المرحلة", () => {
+          const note = prompt(`ملاحظة الإنجاز لمرحلة «${s.title}» (تظهر للعميل، اختياري):`, "");
+          if (note === null) return;
+          act("/api/admin/stage", { id: s.id, note }, null, linked ? "أُنجزت المرحلة وأُرسل للعميل طلب سداد دفعتها. تبدأ المرحلة التالية بعد السداد." : "أُنجزت المرحلة.");
+        }, false));
+        tbody.append(el("tr", {},
+          el("td", { text: String(s.seq) }), el("td", { text: s.title }),
+          el("td", {}, el("span", { class: `pill ${s.state}`, text: (WS[s.state] || s.state) + (s.state === "locked" && s.blockedBy ? ` «${s.blockedBy}»` : "") })),
+          el("td", { text: linked || "لا دفعة" }),
+          el("td", { text: s.completed_at ? `اكتملت ${date(s.completed_at)}` : s.started_at ? `بدأت ${date(s.started_at)}` : "" }),
+          el("td", {}, actions)));
+      }
+      return el("div", {}, el("h4", { text: "مراحل التنفيذ" }), el("div", { class: "wrap" }, el("table", { class: "adm-table" }, el("thead", {}, el("tr", {}, ...["#", "المرحلة", "الحالة", "الدفعة المرتبطة", "التاريخ", ""].map((t) => el("th", { text: t })))), tbody)));
+    }
+
+    function paymentsTable(q) {
+      const tbody = el("tbody");
+      const open = !["superseded", "cancelled"].includes(q.status);
+      const stageName = (seq) => (q.stages.find((s) => s.seq === seq) || {}).title || "";
+      for (const m of q.milestones) {
+        const actions = el("div", { class: "q-actions" });
+        if (m.status === "scheduled" && m.trigger === "milestone" && m.stage_seq === null && q.status === "accepted") actions.append(btn("طلب الدفعة", () => act("/api/admin/milestone", { id: m.id, action: "due" }, `طلب سداد «${m.label}» من العميل؟`), false));
+        if (open && (m.status === "scheduled" || m.status === "due")) {
+          actions.append(btn("تسجيل دفع يدوي", () => {
+            const ref = prompt("مرجع التحويل البنكي أو الدفع (يظهر في الإيصال):", "تحويل بنكي");
+            if (ref !== null) act("/api/admin/milestone", { id: m.id, action: "paid", reference: ref }, `تسجيل «${m.label}» مدفوعة بمبلغ ${sar(m.amount)}؟ يصل العميل إيصال بالبريد.`);
+          }));
+          actions.append(btn("إلغاء الدفعة", () => act("/api/admin/milestone", { id: m.id, action: "cancel" }, `إلغاء دفعة «${m.label}»؟`)));
+        }
+        tbody.append(el("tr", {},
+          el("td", { text: String(m.seq) }), el("td", { text: m.label }),
+          el("td", { text: `${Number(m.percent)}% · ${m.trigger === "milestone" && m.stage_seq ? `عند إنجاز «${stageName(m.stage_seq)}»` : TR[m.trigger]}` }),
+          el("td", { class: "ltr", text: sar(m.amount) }),
+          el("td", {}, el("span", { class: `pill ${m.status}`, text: MS[m.status] || m.status })),
+          el("td", { text: m.paid_at ? `${date(m.paid_at)}${m.payment_id ? " · " + m.payment_id : ""}` : m.due_at ? `مستحقة منذ ${date(m.due_at)}${m.reminders ? ` · تذكيرات ${m.reminders}` : ""}` : "" }),
+          el("td", {}, actions)));
+      }
+      return el("div", {}, el("h4", { text: "الدفعات" }), el("div", { class: "wrap" }, el("table", { class: "adm-table" }, el("thead", {}, el("tr", {}, ...["#", "الدفعة", "تستحق", "المبلغ", "الحالة", "التاريخ", ""].map((t) => el("th", { text: t })))), tbody)));
     }
 
     function quoteCard(q) {
       const paid = q.milestones.filter((m) => m.status === "paid").reduce((n, m) => n + m.amount, 0);
-      const copy = el("button", { type: "button", className: "btn btn--ghost", textContent: "نسخ رابط العميل", onclick: async () => { try { await navigator.clipboard.writeText(q.link); msg("نُسخ الرابط."); } catch { prompt("رابط العميل:", q.link); } } });
-      const cancel = el("button", { type: "button", className: "btn btn--ghost", textContent: "إلغاء العرض", onclick: async () => {
-        if (!confirm(`إلغاء العرض ${q.quote_id}؟ تُلغى الدفعات غير المدفوعة وروابطها.`)) return;
-        try { await api("/api/admin/quotes/cancel", { method: "POST", body: JSON.stringify({ quoteId: q.quote_id }) }); msg("أُلغي العرض."); load(); } catch (err) { msg(err.message, true); }
-      } });
+      const lead = q.lead || {};
       const head = el("header", {},
-        el("h3", { textContent: `${q.quote_id} · ${q.title}` }),
-        el("span", { className: "pill " + (q.status === "paid" ? "paid" : q.status === "cancelled" || q.status === "superseded" ? "cancelled" : q.status === "accepted" || q.status === "change_requested" ? "due" : ""), textContent: (QS[q.status] || q.status) + (q.negotiable ? "" : " · نهائي") }),
-      );
-      // The client's one revision request, and a shortcut to answer it with the revised (final) proposal.
+        el("h3", { text: `${q.quote_id} · ${q.title}` }),
+        el("span", { class: "pill " + (q.status === "paid" ? "paid" : q.status === "cancelled" || q.status === "superseded" ? "cancelled" : q.status === "accepted" || q.status === "change_requested" ? "due" : ""), text: (QS[q.status] || q.status) + (q.negotiable ? "" : " · نهائي") }));
+      const who = el("p", { class: "meta" }, dotted([lead.company, lead.contact, lead.email, lead.service, lead.status ? `حالة الطلب: ${LS[lead.status] || lead.status}` : ""]));
+      const meta = el("p", { class: "meta", text: `الإجمالي ${sar(q.total)} (قبل الضريبة ${sar(q.subtotal)}) · المدفوع ${sar(paid)} · أُرسل ${date(q.created_at)} · ساري حتى ${q.valid_until}${q.accepted_at ? " · وافق " + date(q.accepted_at) : ""}` });
+      const links = el("div", { class: "links" });
+      if (lead.portal) links.append(btn("نسخ رابط بوابة العميل", () => copy(lead.portal, "نُسخ رابط البوابة.")));
+      if (lead.drive) links.append(el("a", { class: "btn btn--ghost", href: lead.drive, target: "_blank", rel: "noopener", text: "مجلد الطلب على Drive" }));
+      if (!["paid", "cancelled", "superseded"].includes(q.status)) links.append(btn("إلغاء العرض", () => act("/api/admin/quotes/cancel", { quoteId: q.quote_id }, `إلغاء العرض ${q.quote_id}؟ تُلغى الدفعات غير المدفوعة وروابطها.`, "أُلغي العرض.")));
+
       let req = null;
       if (q.change_requested_at) {
         let c = {}; try { c = JSON.parse(q.change_request || "{}"); } catch {}
         const what = [c.discount ? "خصم" : "", c.schedule ? "تقسيم دفعات مختلف" : ""].filter(Boolean).join(" و");
-        req = el("div", { className: "q-req", textContent: `طلب العميل ${what} بتاريخ ${date(q.change_requested_at)}${c.note ? `:\n«${c.note}»` : "."}` });
-        if (q.status === "change_requested") {
-          req.append(el("br"), el("button", { type: "button", className: "btn", style: "margin-top:10px", textContent: "إعداد العرض المحدّث (نهائي)", onclick: () => {
-            const f = $("[data-create]").elements;
-            f.leadId.value = q.lead_id; f.title.value = q.title; f.final.checked = true;
-            $("[data-create]").scrollIntoView({ behavior: "smooth", block: "start" });
-            msg(`عدّل القيمة أو الدفعات حسب طلب العميل ثم أرسل. سيحل العرض الجديد محل ${q.quote_id} ويكون نهائياً.`);
-          } }));
-        }
+        req = el("div", { class: "q-req" }, `طلب العميل ${what} بتاريخ ${date(q.change_requested_at)}${c.note ? `:\n«${c.note}»` : "."}`);
+        if (q.status === "change_requested") req.append(el("br"), btn("إعداد العرض المحدّث (نهائي)", () => { const f = $("[data-create]").elements; f.leadId.value = q.lead_id; f.title.value = q.title; f.final.checked = true; tab("new"); msg(`عدّل القيمة أو الدفعات حسب طلب العميل ثم أرسل. سيحل العرض الجديد محل ${q.quote_id} ويكون نهائياً.`); }, false));
       }
-      const meta = el("p", { className: "meta", textContent: `الإجمالي ${sar(q.total)} (قبل الضريبة ${sar(q.subtotal)}) · المدفوع ${sar(paid)} · أُرسل ${date(q.created_at)} · ساري حتى ${q.valid_until}${q.accepted_at ? " · وافق " + date(q.accepted_at) : ""}` });
-      const tbody = el("tbody");
-      for (const m of q.milestones) {
-        const actions = el("div", { className: "q-actions" });
-        if (m.status === "scheduled" && m.trigger === "milestone" && q.status === "accepted") {
-          actions.append(el("button", { type: "button", className: "btn", textContent: "إنجاز المرحلة وطلب الدفعة", onclick: () => act(m.id, "due", `تأكيد إنجاز «${m.label}»؟ يصل العميل بريد بطلب سداد ${sar(m.amount)}.`) }));
-        }
-        if (m.status === "scheduled" || m.status === "due") {
-          actions.append(el("button", { type: "button", className: "btn btn--ghost", textContent: "تسجيل دفع يدوي", onclick: () => {
-            const ref = prompt("مرجع التحويل البنكي أو الدفع (يظهر في الإيصال):", "تحويل بنكي");
-            if (ref !== null) act(m.id, "paid", `تسجيل «${m.label}» مدفوعة بمبلغ ${sar(m.amount)}؟ يصل العميل إيصال بالبريد.`, { reference: ref });
-          } }));
-          actions.append(el("button", { type: "button", className: "btn btn--ghost", textContent: "إلغاء الدفعة", onclick: () => act(m.id, "cancel", `إلغاء دفعة «${m.label}»؟`) }));
-        }
-        tbody.append(el("tr", {},
-          el("td", { textContent: m.seq }), el("td", { textContent: m.label }), el("td", { textContent: `${Number(m.percent)}% · ${TR[m.trigger]}` }),
-          el("td", { className: "ltr", textContent: sar(m.amount) }),
-          el("td", {}, el("span", { className: "pill " + m.status, textContent: MS[m.status] || m.status })),
-          el("td", { textContent: m.paid_at ? `${date(m.paid_at)}${m.payment_id ? " · " + m.payment_id : ""}` : m.due_at ? `مستحقة منذ ${date(m.due_at)}${m.reminders ? ` · تذكيرات ${m.reminders}` : ""}` : "" }),
-          el("td", {}, actions),
-        ));
+      const note = q.revision_note ? el("p", { class: "meta", text: `التعديلات في هذا الإصدار: ${q.revision_note}` }) : null;
+      if (q.status === "superseded" || q.status === "cancelled") {
+        return el("details", { class: "q-card q-old" }, el("summary", {}, head), who, meta, note, req, ...q.meetings.map(meetingBox), paymentsTable(q), links);
       }
-      const table = el("table", { className: "adm-table" }, el("thead", {}, el("tr", {}, ...["#", "الدفعة", "تستحق", "المبلغ", "الحالة", "التاريخ", ""].map((t) => el("th", { textContent: t })))), tbody);
-      const foot = el("div", { className: "q-actions", style: "margin-top:12px" }, copy, ...(["paid", "cancelled", "superseded"].includes(q.status) ? [] : [cancel]));
-      return el("article", { className: "q-card" }, head, meta, ...(req ? [req] : []), el("div", { className: "wrap" }, table), foot);
+      return el("article", { class: "q-card" }, head, who, meta, note, req, ...q.meetings.map(meetingBox), contractBox(q), stagesTable(q), paymentsTable(q), links);
     }
 
-    async function load() {
+    async function loadProjects() {
       try {
         const lead = $("[data-filter]").value.trim().toUpperCase();
         const r = await api(`/api/admin/quotes${lead ? `?lead=${encodeURIComponent(lead)}` : ""}`);
-        const mode = $("[data-mode]");
-        mode.replaceChildren("الدفع الإلكتروني عبر ميسّر: ", el("b", { className: r.payments === "off" ? "off" : "", textContent: r.payments === "live" ? "مفعّل (حقيقي)" : r.payments === "test" ? "وضع التجربة (مفتاح sk_test)" : "غير مفعّل، أضف MOYASAR_SECRET_KEY في Cloudflare" }));
+        $("[data-mode]").replaceChildren("الدفع عبر ميسّر: ", el("b", { class: r.payments === "off" ? "off" : "", text: r.payments === "live" ? "مفعّل (حقيقي)" : r.payments === "test" ? "وضع التجربة" : "غير مفعّل" }));
         const list = $("[data-list]");
         list.replaceChildren(...r.quotes.map(quoteCard));
-        if (!r.quotes.length) list.append(el("p", { className: "muted", textContent: "لا توجد عروض بعد." }));
+        if (!r.quotes.length) list.append(el("p", { class: "muted", text: lead ? "لا توجد عروض لهذا الطلب بعد." : "لا توجد عروض بعد." }));
       } catch (err) { msg(err.message, true); }
     }
 
+    // ------------------------------------------------ settings
+    async function loadSettings() {
+      try {
+        const r = await api("/api/admin/settings");
+        const f = $("[data-settings]").elements;
+        for (const k of ["legalName", "crNumber", "vatNumber", "address", "signatoryName", "signatoryTitle", "phone", "email"]) f[k].value = r.profile[k] || "";
+        const sig = $("[data-sig]"), stamp = $("[data-stamp]");
+        sig.hidden = !r.signature; if (r.signature) sig.src = r.signature;
+        stamp.hidden = !r.stamp; if (r.stamp) stamp.src = r.stamp;
+        const st = $("[data-status]");
+        st.replaceChildren(
+          el("li", { text: `Google Drive: ${r.drive.configured ? "مربوط" : "غير مربوط (أضف DRIVE_CLIENT_ID وDRIVE_CLIENT_SECRET وDRIVE_REFRESH_TOKEN في Cloudflare)"}` }, r.drive.root ? el("span", {}, " · ", el("a", { href: r.drive.root, target: "_blank", rel: "noopener", text: "المجلد الرئيسي" })) : null),
+          el("li", { text: `الدفع عبر ميسّر: ${r.payments === "live" ? "مفعّل (حقيقي)" : r.payments === "test" ? "وضع التجربة" : "غير مفعّل (أضف MOYASAR_SECRET_KEY)"}` }),
+          el("li", { text: `مدة خطوات الفريق: ${r.slaHours} ساعات (QUOTE_SLA_HOURS)` }),
+          el("li", { text: `التوقيع: ${r.signature ? "مرفوع" : "غير مرفوع"} · الختم: ${r.stamp ? "مرفوع" : "غير مرفوع"}` }),
+        );
+      } catch (err) { msg(err.message, true); }
+    }
+    $("[data-settings]").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.currentTarget;
+      try { await post("/api/admin/settings", new FormData(form)); msg("حُفظت الإعدادات."); form.elements.signature.value = ""; form.elements.stamp.value = ""; loadSettings(); }
+      catch (err) { msg(err.message, true); }
+    });
+
+    // ------------------------------------------------ session
     function logout() { token = ""; sessionStorage.removeItem(KEY); $("[data-panel]").hidden = true; $("[data-login]").hidden = false; }
-    function start() { $("[data-login]").hidden = true; $("[data-panel]").hidden = false; load(); }
-    const qp = new URLSearchParams(location.search).get("lead");
-    if (qp) { $("[name=leadId]").value = qp; $("[data-filter]").value = qp; }
+    function start() {
+      $("[data-login]").hidden = true; $("[data-panel]").hidden = false;
+      const qp = new URLSearchParams(location.search).get("lead");
+      if (qp) { $("[name=leadId]").value = qp; $("[data-filter]").value = qp; tab("projects"); loadTasks(); } else tab("tasks");
+    }
     $("[data-login]").addEventListener("submit", (e) => { e.preventDefault(); token = $("#adm-token").value.trim(); sessionStorage.setItem(KEY, token); start(); });
-    $("[data-refresh]").onclick = load;
-    $("[data-filter]").addEventListener("change", load);
+    $("[data-refresh]").onclick = loadProjects;
+    $("[data-filter]").addEventListener("change", loadProjects);
     $("[data-logout]").onclick = logout;
     if (token) start();
   </script>

@@ -38,18 +38,20 @@ const headerSocials = [
               {t(lang, "nav.services")} <Icon name="chev" class="chev" />
             </button>
             <div class="mega" id="mega-services" hidden>
-              <div class="container mega-inner">
-                {categories.map((c) => (
-                  <div>
-                    <h3><a href={href(lang, `/services/${c.id}/`)}>{c.name[lang]}</a></h3>
-                    <ul>
-                      {services.filter((s) => s.data.category === c.id).map((s) => (
-                        <li><a href={href(lang, `/services/${s.id}/`)}>{s.data[lang].name}</a></li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-                <aside class="mega-aside" style="grid-column: 5; grid-row: 1 / span 2">
+              <div class="container mega-inner mega-inner--services">
+                <div class="mega-cols">
+                  {categories.map((c) => (
+                    <div>
+                      <h3><a href={href(lang, `/services/${c.id}/`)}>{c.name[lang]}</a></h3>
+                      <ul>
+                        {services.filter((s) => s.data.category === c.id).map((s) => (
+                          <li><a href={href(lang, `/services/${s.id}/`)}>{s.data[lang].name}</a></li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+                <aside class="mega-aside">
                   <h3>{t(lang, "nav.notSure")}</h3>
                   <p>{t(lang, "nav.notSureBody")}</p>
                   <a class="link" href={href(lang, "/#lifecycle")}>{t(lang, "nav.findSupport")} <Icon name="arrow" /></a>

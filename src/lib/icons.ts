@@ -2,6 +2,16 @@
 // Rendered inline by <Icon name="…"/> — no icon font, no extra requests.
 export const ICONS: Record<string, string> = {
   arrow: '<path d="M5 12h14M13 6l6 6-6 6"/>',
+  wave: '<path d="M3 8c2 0 2-2 4.5-2S10 8 12 8s2.5-2 4.5-2S19 8 21 8M3 13c2 0 2-2 4.5-2S10 13 12 13s2.5-2 4.5-2 2.5 2 4.5 2M3 18c2 0 2-2 4.5-2S10 18 12 18s2.5-2 4.5-2 2.5 2 4.5 2"/>',
+  soil: '<path d="M3 14h18M3 18h18M3 22h18"/><path d="M12 14V8"/><path d="M12 10c0-2.8 2-4.5 5-4.5 0 2.8-2 4.5-5 4.5zM12 11c0-2.2-1.7-3.8-4.5-3.8 0 2.2 1.7 3.8 4.5 3.8z"/>',
+  stack: '<path d="M4 21V12l4 2v-3l4 2V6h3v15z"/><path d="M2 21h20"/><path d="M15.5 4c.4-1.4 1.6-2 3-1.8M17 6.2c.6-1 1.7-1.3 2.8-.9"/>',
+  indoor: '<path d="M3 11l9-7 9 7v10H3z"/><path d="M7 14h7a2 2 0 1 0-2-2M7 17.5h9a2 2 0 1 1-2 2"/>',
+  climate: '<path d="M10 14.5V5a2 2 0 1 1 4 0v9.5a4 4 0 1 1-4 0z"/><path d="M12 9v7"/><path d="M18 4l1.5-1.5M19 8h2M18 12l1.5 1.5"/>',
+  leaf: '<path d="M5 19c0-8 6-14 15-14 0 9-6 15-14 15H5z"/><path d="M5 19l9-9"/>',
+  signal: '<path d="M12 21v-9"/><circle cx="12" cy="10" r="2"/><path d="M8.5 6.5a5 5 0 0 0 0 7M15.5 6.5a5 5 0 0 1 0 7M5.8 3.8a8.8 8.8 0 0 0 0 12.4M18.2 3.8a8.8 8.8 0 0 1 0 12.4"/>',
+  outfall: '<path d="M2 6h9v4H2z"/><path d="M11 8h3"/><path d="M15 6.5c1.6 1.4 1.6 3.6 0 5"/><path d="M3 17c2 0 2-2 4.5-2S10 17 12 17s2.5-2 4.5-2 2.5 2 4.5 2"/>',
+  mangrove: '<path d="M12 3C9 3 7 5 7 7.5S9 11 12 11s5-1 5-3.5S15 3 12 3z"/><path d="M12 11v4M12 15l-3 4M12 15l3 4M12 15v4"/><path d="M3 21c2 0 2-1.5 4.5-1.5S10 21 12 21s2.5-1.5 4.5-1.5S19 21 21 21"/>',
+  dig: '<path d="M14 3l7 7M17.5 6.5L9 15"/><path d="M9 15l-3.5 3.5a1.8 1.8 0 0 0 2.5 2.5L11.5 17.5"/><path d="M3 21h7"/>',
   chev: '<path d="M6 9l6 6 6-6"/>',
   menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
   close: '<path d="M6 6l12 12M18 6L6 18"/>',
@@ -77,7 +87,10 @@ export const SERVICE_ICON: Record<string, string> = {
   "net-zero-advisory": "netzero", "sustainability-advisory": "strategy", "life-cycle-assessment": "lca",
   "sustainable-buildings": "building", "green-building-advisory": "greenbuilding",
   "solar-energy-systems": "solar", "ev-charging-stations": "ev", "battery-energy-storage": "battery",
-  "renewable-operations-maintenance": "wrench", "renewable-energy-feasibility": "study",
+  "renewable-operations-maintenance": "wrench", "renewable-energy-feasibility": "study", "solar-pv-recycling": "recycle",
+  "marine-monitoring": "wave", "desalination-brine-discharge": "outfall", "coastal-habitat-restoration": "mangrove",
+  "contaminated-site-assessment": "soil", "environmental-remediation": "dig", "stack-emission-monitoring": "stack",
+  "indoor-air-quality": "indoor", "monitoring-as-a-service": "signal", "climate-risk": "climate", "biodiversity-nature": "leaf",
 };
 
 export const INDUSTRY_ICON: Record<string, string> = {

@@ -1,0 +1,125 @@
+{
+  "category": "sustainability-climate",
+  "order": 6,
+  "formFamily": "sustainability",
+  "industries": ["real-estate", "infrastructure", "energy", "industrial-manufacturing", "logistics-warehousing", "hospitality", "government-public-sector", "healthcare", "food-beverage"],
+  "related": ["esg-advisory", "net-zero-advisory", "sustainability-advisory", "ghg-carbon-accounting"],
+  "en": {
+    "name": "Climate Risk & Adaptation",
+    "seoTitle": "Climate Risk Assessment in Saudi Arabia | Selorin",
+    "metaDescription": "Climate risk assessment and adaptation in Saudi Arabia: extreme heat, flash floods, dust storms, water stress and coastal risks, scenarios and IFRS S2 disclosure.",
+    "valueProp": "We show how heat, floods, dust storms and water stress could affect your assets and operations, and what to do about it, in terms investors understand.",
+    "cardDescription": "Physical and transition climate risk assessment for assets and portfolios, scenario analysis, adaptation plans and disclosure support aligned with IFRS S2.",
+    "keyBenefit": "Climate risks priced into decisions, not discovered later",
+    "definition": "Climate risk assessment identifies and evaluates how climate change could affect an organisation's assets, operations, supply chains and finances. It covers physical risks such as extreme heat, flash floods, dust storms, water stress and sea level rise, and transition risks from changes in policy, technology and markets, using scenarios to estimate exposure and to guide adaptation measures and disclosures.",
+    "overview": [
+      "Assets in Saudi Arabia already operate in harsh conditions: very high summer temperatures, intense rainfall that causes flash floods, frequent dust storms and scarce water. Climate change can make some of these hazards more frequent or more severe, affecting equipment performance, worker safety, cooling and energy costs, water supply, insurance and the value of real estate and infrastructure. Investors, lenders and regulators increasingly ask companies to show that they understand and manage these risks.",
+      "Disclosure frameworks such as IFRS S2 and the Saudi Exchange ESG Disclosure Guidelines ask companies to describe climate risks and opportunities, the scenarios they considered and how the risks are managed. Beyond disclosure, a good assessment is a practical tool: it shows which sites are most exposed, what an event could cost and which adaptation measures are worth funding, from cooling and shading to drainage, water storage and supply chain changes.",
+      "We assess climate risk at asset, portfolio and company level. We screen hazards for each location using climate projections and local data, examine vulnerability with your engineering and operations teams, estimate potential impacts under different scenarios and prioritise adaptation measures. Results are written for both management decisions and disclosures, and connect with your greenhouse gas inventory and net zero plans for transition risks."
+    ],
+    "whenYouNeed": [
+      "Investors, lenders or the board ask how climate change affects your business.",
+      "You are preparing climate disclosures under IFRS S2 or the Saudi Exchange guidelines.",
+      "You plan new assets or acquisitions in locations exposed to heat, floods or coastal hazards.",
+      "Heat, dust or flooding already disrupts operations and you need a structured response.",
+      "Insurers or project lenders request a climate risk assessment.",
+      "Your net zero plan needs an assessment of transition risks and opportunities."
+    ],
+    "deliver": [
+      { "title": "Hazard screening", "description": "Screening of each site for extreme heat, flash flooding, dust storms, water stress and coastal hazards, using climate projections and local records." },
+      { "title": "Vulnerability assessment", "description": "Review with your teams of how buildings, equipment, workers, utilities and supply chains respond to each hazard, and where critical thresholds are crossed." },
+      { "title": "Scenario analysis", "description": "Assessment of physical and transition risks under different climate and policy scenarios, with time horizons matched to asset lives and business plans." },
+      { "title": "Financial impact estimates", "description": "Indicative estimates of losses, downtime, cost increases or opportunities, so risks can be prioritised and compared with the cost of adaptation." },
+      { "title": "Adaptation plan", "description": "Prioritised measures such as cooling, shading, drainage, water storage, design standards and operating procedures, with owners and timelines." },
+      { "title": "Disclosure support", "description": "Drafting of climate risk disclosures aligned with IFRS S2 and the Saudi Exchange ESG Disclosure Guidelines, consistent with the underlying analysis." }
+    ],
+    "approach": [
+      { "title": "Scope", "description": "We agree the assets, value chain, scenarios, time horizons and the decisions or disclosures the work supports." },
+      { "title": "Screening", "description": "Hazards are screened for each location to focus detailed work on the most exposed assets." },
+      { "title": "Assessment", "description": "Vulnerability and impacts are assessed with your teams, using site data and climate projections." },
+      { "title": "Prioritisation", "description": "Risks are ranked and adaptation options are compared on cost, benefit and timing." },
+      { "title": "Integration", "description": "Findings are linked to risk management, capital planning and net zero work." },
+      { "title": "Disclosure", "description": "Results are documented for management and for external reporting." }
+    ],
+    "deliverables": [
+      { "item": "Hazard screening results", "format": "Site by hazard matrix with maps (PDF + Excel)", "timing": "Early in the assessment" },
+      { "item": "Climate risk register", "format": "Risks, ratings, owners and controls (Excel)", "timing": "After assessment" },
+      { "item": "Scenario analysis report", "format": "Methods, scenarios, impacts and uncertainties (PDF)", "timing": "After assessment" },
+      { "item": "Adaptation plan", "format": "Prioritised measures with costs, owners and timing (PDF + Excel)", "timing": "After prioritisation" },
+      { "item": "Disclosure draft", "format": "Climate risk sections for annual or sustainability reports (Word)", "timing": "Reporting cycle" },
+      { "item": "Board briefing", "format": "Summary presentation for directors and management (PDF)", "timing": "At completion" }
+    ],
+    "regulatoryContext": [
+      "IFRS S2 Climate-related Disclosures, issued by the International Sustainability Standards Board (ISSB), covering climate risks, opportunities and scenario analysis.",
+      "Saudi Exchange ESG Disclosure Guidelines, which encourage listed companies to report on climate and environmental matters.",
+      "Saudi Arabia's net zero target for 2060 and the Saudi Green Initiative, which shape transition risks and opportunities for Saudi companies.",
+      "Lender and insurer expectations, as climate risk screening becomes part of project finance and insurance underwriting."
+    ],
+    "faqs": [
+      { "q": "What is the difference between physical and transition risk?", "a": "Physical risks come from climate hazards themselves, such as extreme heat, floods, dust storms, water stress or sea level rise, damaging assets or disrupting operations. Transition risks come from the shift to a low carbon economy, such as new regulations, carbon pricing, and changes in technology or customer demand. Most companies face both, in different proportions." },
+      { "q": "Do we need climate risk analysis if we are not listed?", "a": "Not always for disclosure, but often for decisions. Lenders, insurers, investors and large customers increasingly ask about climate exposure, and assets built today will operate through decades of changing conditions. A proportionate assessment helps avoid costly surprises and strengthens discussions with funders and insurers." },
+      { "q": "Which climate hazards matter most in Saudi Arabia?", "a": "It depends on location and activity, but extreme heat, water stress, dust storms and flash flooding are common concerns, and coastal sites must also consider sea level rise and storm surge. Heat affects worker safety, cooling loads and equipment performance, while flash floods can damage infrastructure and cut access. Screening identifies which hazards matter for each site." },
+      { "q": "Which climate scenarios do you use?", "a": "We use recognised scenario families, typically including a lower emissions pathway and a higher emissions pathway for physical risks, and policy scenarios for transition risks. The choice depends on the purpose and on any framework requirements. We explain the assumptions and limitations so the results are used appropriately." },
+      { "q": "How does this connect with our net zero plan?", "a": "Transition risks and opportunities depend on your emissions profile and decarbonisation plans. We use your greenhouse gas inventory and net zero pathway to assess exposure to carbon costs, technology change and market shifts, so that climate risk, emissions and strategy are reported consistently." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم المخاطر المناخية والتكيّف",
+    "seoTitle": "تقييم المخاطر المناخية في السعودية | سيلورين",
+    "metaDescription": "تقييم المخاطر المناخية والتكيّف في المملكة: الحرارة الشديدة والسيول والعواصف الترابية وشح المياه والمخاطر الساحلية، والسيناريوهات والإفصاح وفق IFRS S2.",
+    "valueProp": "نوضح كيف قد تؤثر الحرارة والسيول والعواصف الترابية وشح المياه في أصولكم وعملياتكم، وماذا تفعلون حيالها، بلغة يفهمها المستثمرون.",
+    "cardDescription": "تقييم المخاطر المناخية المادية والانتقالية للأصول والمحافظ، وتحليل السيناريوهات، وخطط التكيّف، ودعم الإفصاح المتوافق مع IFRS S2.",
+    "keyBenefit": "مخاطر مناخية محسوبة في القرار لا مكتشفة لاحقاً",
+    "definition": "تقييم المخاطر المناخية يحدد كيف قد يؤثر تغير المناخ في أصول المنشأة وعملياتها وسلاسل إمدادها ووضعها المالي ويقيّم ذلك. ويشمل المخاطر المادية كالحرارة الشديدة والسيول والعواصف الترابية وشح المياه وارتفاع مستوى سطح البحر، والمخاطر الانتقالية الناتجة عن تغير السياسات والتقنيات والأسواق، باستخدام السيناريوهات لتقدير التعرض وتوجيه إجراءات التكيّف والإفصاح.",
+    "overview": [
+      "تعمل الأصول في المملكة أصلاً في ظروف قاسية: حرارة صيفية مرتفعة جداً، وأمطار غزيرة تسبب سيولاً مفاجئة، وعواصف ترابية متكررة، ومياه شحيحة. وقد يزيد تغير المناخ تكرار بعض هذه المخاطر أو شدتها، فيؤثر في أداء المعدات وسلامة العاملين وتكاليف التبريد والطاقة وإمدادات المياه والتأمين وقيمة العقارات والبنية التحتية. ويطلب المستثمرون والممولون والجهات التنظيمية بشكل متزايد أن تثبت الشركات فهمها لهذه المخاطر وإدارتها.",
+      "تطلب أطر الإفصاح مثل IFRS S2 وإرشادات الإفصاح البيئي والاجتماعي والحوكمة الصادرة عن تداول السعودية من الشركات وصف المخاطر والفرص المناخية والسيناريوهات التي درستها وكيف تدير المخاطر. لكن التقييم الجيد يتجاوز الإفصاح ليكون أداة عملية، فهو يبين أي المواقع أكثر تعرضاً، وكم قد يكلف الحدث، وأي إجراءات التكيّف تستحق التمويل، من التبريد والتظليل إلى تصريف السيول وتخزين المياه وتعديل سلاسل الإمداد.",
+      "نقيّم المخاطر المناخية على مستوى الأصل والمحفظة والشركة. نفرز المخاطر لكل موقع باستخدام الإسقاطات المناخية والبيانات المحلية، ونفحص قابلية التأثر مع فرق الهندسة والتشغيل لديكم، ونقدّر الآثار المحتملة في سيناريوهات مختلفة، ونرتب إجراءات التكيّف حسب الأولوية. وتُكتب النتائج لقرارات الإدارة وللإفصاح معاً، وترتبط بحصر غازات الاحتباس الحراري وخطط الحياد الصفري فيما يخص المخاطر الانتقالية."
+    ],
+    "whenYouNeed": [
+      "يسأل المستثمرون أو الممولون أو مجلس الإدارة عن أثر تغير المناخ في أعمالكم.",
+      "تعدّون إفصاحات مناخية وفق IFRS S2 أو إرشادات تداول السعودية.",
+      "تخططون لأصول أو استحواذات جديدة في مواقع معرضة للحرارة أو السيول أو المخاطر الساحلية.",
+      "تعطّل الحرارة أو الغبار أو السيول العمليات فعلاً وتحتاجون إلى استجابة منهجية.",
+      "تطلب شركات التأمين أو ممولو المشاريع تقييماً للمخاطر المناخية.",
+      "تحتاج خطة الحياد الصفري إلى تقييم المخاطر والفرص الانتقالية."
+    ],
+    "deliver": [
+      { "title": "فرز المخاطر", "description": "فرز كل موقع لمخاطر الحرارة الشديدة والسيول المفاجئة والعواصف الترابية وشح المياه والمخاطر الساحلية، باستخدام الإسقاطات المناخية والسجلات المحلية." },
+      { "title": "تقييم قابلية التأثر", "description": "مراجعة مع فرقكم لكيفية تأثر المباني والمعدات والعاملين والمرافق وسلاسل الإمداد بكل خطر، وأين تُتجاوز العتبات الحرجة." },
+      { "title": "تحليل السيناريوهات", "description": "تقييم المخاطر المادية والانتقالية في سيناريوهات مناخية وسياسية مختلفة، بآفاق زمنية تناسب أعمار الأصول وخطط الأعمال." },
+      { "title": "تقديرات الأثر المالي", "description": "تقديرات مبدئية للخسائر والتوقف وزيادة التكاليف أو الفرص، لترتيب المخاطر ومقارنتها بتكلفة التكيّف." },
+      { "title": "خطة التكيّف", "description": "إجراءات مرتبة حسب الأولوية كالتبريد والتظليل وتصريف السيول وتخزين المياه ومعايير التصميم وإجراءات التشغيل، مع المسؤولين والجداول الزمنية." },
+      { "title": "دعم الإفصاح", "description": "صياغة إفصاحات المخاطر المناخية بما يتوافق مع IFRS S2 وإرشادات الإفصاح الصادرة عن تداول السعودية، متسقة مع التحليل الأساسي." }
+    ],
+    "approach": [
+      { "title": "النطاق", "description": "نتفق على الأصول وسلسلة القيمة والسيناريوهات والآفاق الزمنية والقرارات أو الإفصاحات التي يخدمها العمل." },
+      { "title": "الفرز", "description": "نفرز المخاطر لكل موقع لتركيز العمل التفصيلي على الأصول الأكثر تعرضاً." },
+      { "title": "التقييم", "description": "نقيّم قابلية التأثر والآثار مع فرقكم باستخدام بيانات المواقع والإسقاطات المناخية." },
+      { "title": "الترتيب", "description": "نرتب المخاطر ونقارن بدائل التكيّف من حيث التكلفة والفائدة والتوقيت." },
+      { "title": "الدمج", "description": "نربط النتائج بإدارة المخاطر وتخطيط الإنفاق الرأسمالي وأعمال الحياد الصفري." },
+      { "title": "الإفصاح", "description": "نوثق النتائج للإدارة وللتقارير الخارجية." }
+    ],
+    "deliverables": [
+      { "item": "نتائج فرز المخاطر", "format": "مصفوفة المواقع والمخاطر مع الخرائط (PDF + Excel)", "timing": "في بداية التقييم" },
+      { "item": "سجل المخاطر المناخية", "format": "المخاطر وتقديراتها والمسؤولون عنها والضوابط (Excel)", "timing": "بعد التقييم" },
+      { "item": "تقرير تحليل السيناريوهات", "format": "الطرق والسيناريوهات والآثار وعدم اليقين (PDF)", "timing": "بعد التقييم" },
+      { "item": "خطة التكيّف", "format": "إجراءات مرتبة بالتكاليف والمسؤولين والتوقيت (PDF + Excel)", "timing": "بعد الترتيب" },
+      { "item": "مسودة الإفصاح", "format": "أقسام المخاطر المناخية للتقارير السنوية أو تقارير الاستدامة (Word)", "timing": "دورة التقارير" },
+      { "item": "إحاطة مجلس الإدارة", "format": "عرض موجز للمجلس والإدارة (PDF)", "timing": "عند الانتهاء" }
+    ],
+    "regulatoryContext": [
+      "معيار IFRS S2 للإفصاحات المتعلقة بالمناخ الصادر عن مجلس معايير الاستدامة الدولية (ISSB)، الذي يغطي المخاطر والفرص المناخية وتحليل السيناريوهات.",
+      "إرشادات الإفصاح البيئي والاجتماعي والحوكمة الصادرة عن تداول السعودية، التي تشجع الشركات المدرجة على الإفصاح عن المسائل المناخية والبيئية.",
+      "مستهدف المملكة للوصول إلى الحياد الصفري بحلول 2060 ومبادرة السعودية الخضراء، اللذان يشكّلان المخاطر والفرص الانتقالية للشركات السعودية.",
+      "توقعات الممولين وشركات التأمين، مع دخول فرز المخاطر المناخية في تمويل المشاريع واكتتاب التأمين."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين المخاطر المادية والانتقالية؟", "a": "المخاطر المادية تأتي من الظواهر المناخية نفسها، كالحرارة الشديدة والسيول والعواصف الترابية وشح المياه وارتفاع مستوى سطح البحر، حين تتلف الأصول أو تعطل العمليات. أما المخاطر الانتقالية فتأتي من التحول إلى اقتصاد منخفض الكربون، كالأنظمة الجديدة وتسعير الكربون وتغير التقنيات أو طلب العملاء. وتواجه معظم الشركات النوعين بنسب مختلفة." },
+      { "q": "هل نحتاج إلى تحليل المخاطر المناخية إن لم نكن شركة مدرجة؟", "a": "ليس دائماً لأجل الإفصاح، لكن كثيراً لأجل القرار. فالممولون وشركات التأمين والمستثمرون وكبار العملاء يسألون بشكل متزايد عن التعرض المناخي، والأصول التي تُبنى اليوم ستعمل عقوداً في ظروف متغيرة. والتقييم المتناسب يساعد على تجنب مفاجآت مكلفة ويقوّي النقاش مع الممولين وشركات التأمين." },
+      { "q": "ما أهم المخاطر المناخية في المملكة؟", "a": "يعتمد ذلك على الموقع والنشاط، لكن الحرارة الشديدة وشح المياه والعواصف الترابية والسيول المفاجئة مخاوف شائعة، وعلى المواقع الساحلية أن تراعي أيضاً ارتفاع مستوى سطح البحر وعرام العواصف. فالحرارة تؤثر في سلامة العاملين وأحمال التبريد وأداء المعدات، والسيول قد تتلف البنية التحتية وتقطع الوصول. ويحدد الفرز أي المخاطر تهم كل موقع." },
+      { "q": "ما السيناريوهات المناخية التي تستخدمونها؟", "a": "نستخدم عائلات سيناريوهات معترفاً بها، تشمل عادةً مساراً منخفض الانبعاثات وآخر مرتفع الانبعاثات للمخاطر المادية، وسيناريوهات سياسات للمخاطر الانتقالية. ويعتمد الاختيار على الغرض وأي متطلبات للأطر، ونوضح الافتراضات والقيود لتُستخدم النتائج بشكل مناسب." },
+      { "q": "كيف يرتبط ذلك بخطة الحياد الصفري؟", "a": "تعتمد المخاطر والفرص الانتقالية على ملف انبعاثاتكم وخطط خفضها. ونستخدم حصر غازات الاحتباس الحراري ومسار الحياد الصفري لديكم لتقييم التعرض لتكاليف الكربون وتغير التقنيات وتحولات السوق، لتُعرض المخاطر المناخية والانبعاثات والاستراتيجية بشكل متسق." }
+    ]
+  }
+}

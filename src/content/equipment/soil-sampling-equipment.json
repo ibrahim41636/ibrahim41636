@@ -9,7 +9,9 @@
   "services": [
     "environmental-due-diligence",
     "environmental-impact-assessment",
-    "fuel-station-voc-monitoring"
+    "fuel-station-voc-monitoring",
+    "contaminated-site-assessment",
+    "environmental-remediation"
   ],
   "industries": [
     "oil-gas",

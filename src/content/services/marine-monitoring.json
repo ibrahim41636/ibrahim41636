@@ -1,0 +1,127 @@
+{
+  "category": "marine-coastal",
+  "order": 1,
+  "formFamily": "monitoring",
+  "industries": ["infrastructure", "energy", "oil-gas", "real-estate", "hospitality", "construction", "government-public-sector"],
+  "related": ["desalination-brine-discharge", "coastal-habitat-restoration", "environmental-impact-assessment", "water-quality-monitoring"],
+  "en": {
+    "name": "Marine Environmental Surveys & Monitoring",
+    "seoTitle": "Marine Environmental Monitoring in Saudi Arabia | Selorin",
+    "metaDescription": "Marine surveys and monitoring in Saudi Arabia: seawater and sediment quality, coral, seagrass and mangrove surveys, and turbidity monitoring during dredging.",
+    "valueProp": "Marine baseline surveys and monitoring for Red Sea and Arabian Gulf projects, with data that approvals and lenders can rely on.",
+    "cardDescription": "Seawater and sediment quality, coral, seagrass and mangrove surveys, and turbidity monitoring for dredging, reclamation, ports, outfalls and coastal resorts.",
+    "keyBenefit": "Marine works that stay within their approval conditions",
+    "definition": "Marine environmental monitoring is the planned measurement of seawater, sediment and marine habitat conditions before, during and after coastal or offshore activities. It combines baseline surveys of water quality, sediments, coral reefs, seagrass beds and mangroves with monitoring of turbidity, sediment plumes and habitat health during construction and operation, so impacts are detected early and compared with approval conditions.",
+    "overview": [
+      "Saudi Arabia's coastlines on the Red Sea and the Arabian Gulf host ports, desalination and power plants, industrial cities and a growing number of tourism and residential developments. They also hold coral reefs, seagrass meadows and mangroves that are sensitive to changes in sediment, temperature and salinity. Environmental approvals for coastal and offshore projects therefore usually ask for credible baseline data, monitoring during marine works and evidence that agreed limits are respected.",
+      "Marine data is expensive to collect and hard to repeat, so programme design matters. Survey locations, parameters and frequency need to answer the questions in the environmental impact assessment and the approval conditions, include reference sites away from the works, and account for seasonal changes in temperature, wind and currents. A baseline collected in one season only, or without reference stations, is difficult to defend later.",
+      "We plan and run marine survey and monitoring programmes for dredging and reclamation, port and marina construction, outfalls and intakes, subsea pipelines and cables, and coastal resorts. We combine water sampling and continuous turbidity loggers with sediment sampling and habitat surveys, check data quality, and report in a format that supports permit conditions, contractor management and decisions on site."
+    ],
+    "whenYouNeed": [
+      "Your coastal or offshore project needs a marine baseline for its environmental impact assessment.",
+      "Dredging, reclamation or piling will create sediment plumes near coral, seagrass or mangroves.",
+      "Your environmental approval sets turbidity or water quality limits during marine works.",
+      "You operate an intake, outfall or port and need periodic marine monitoring.",
+      "A lender or investor asks for evidence of marine habitat condition before financing.",
+      "A coastal incident, spill or complaint needs a fast, documented field response."
+    ],
+    "deliver": [
+      { "title": "Marine baseline surveys", "description": "Water column profiles, sediment sampling and habitat mapping at project and reference sites, planned to support the environmental impact assessment and later comparison." },
+      { "title": "Coral reef and seagrass surveys", "description": "Transect and photo quadrat surveys of coral cover and condition and of seagrass extent, repeatable at the same stations before, during and after works." },
+      { "title": "Mangrove and shoreline surveys", "description": "Mapping of mangrove stands, intertidal habitats and shoreline condition, combining field surveys with drone and satellite imagery where suitable." },
+      { "title": "Turbidity and plume monitoring", "description": "Continuous turbidity loggers with telemetry at sensitive receptors and reference stations, with trigger levels and an escalation procedure agreed with the contractor." },
+      { "title": "Water and sediment sampling", "description": "Sampling of seawater and sediments for laboratory analysis of nutrients, metals, hydrocarbons and other parameters required by the approval or dredging plan." },
+      { "title": "Monitoring reports and dashboard", "description": "Periodic reports and a live data view comparing results with the baseline, reference sites and approval conditions, with clear actions when limits are approached." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We review the project, approval conditions and sensitive habitats, and agree the questions the programme must answer and who will use the data." },
+      { "title": "Programme design", "description": "Stations, parameters, frequency, reference sites and trigger levels are set in a monitoring plan that reflects the seasons and the marine works schedule." },
+      { "title": "Field surveys", "description": "Our team carries out boat based sampling, logger deployment and habitat surveys with documented procedures, recorded positions and chain of custody." },
+      { "title": "Data quality", "description": "Instruments are calibrated and checked, logger data is cleaned of fouling and drift, and laboratory results are checked against field records." },
+      { "title": "Reporting", "description": "Results are compared with the baseline, reference sites and limits, and reported with maps, trends and recommended actions." },
+      { "title": "Adaptive management", "description": "When trigger levels are reached we help the contractor adjust work methods, timing or controls, and we record the outcome." }
+    ],
+    "deliverables": [
+      { "item": "Marine monitoring plan", "format": "Plan with station map, parameters, frequency and trigger levels (PDF)", "timing": "Before surveys" },
+      { "item": "Baseline survey report", "format": "Report with maps, photos and laboratory results (PDF + data files)", "timing": "After baseline surveys" },
+      { "item": "Turbidity alerts", "format": "Automatic alerts by e-mail or message when trigger levels are reached", "timing": "During marine works" },
+      { "item": "Periodic monitoring reports", "format": "Weekly or monthly reports with trends and compliance status (PDF)", "timing": "Throughout works and operation" },
+      { "item": "Habitat condition comparison", "format": "Before and after comparison of coral, seagrass and mangrove stations (PDF)", "timing": "After works" },
+      { "item": "Data package", "format": "Validated field and laboratory data (Excel or CSV) with metadata", "timing": "Each reporting period" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set requirements for activities that may affect the marine and coastal environment.",
+      "National Center for Environmental Compliance (NCEC), which reviews environmental impact assessments and issues the permits whose conditions a monitoring programme must demonstrate.",
+      "National Center for Wildlife (NCW), for activities near protected areas and sensitive marine species and habitats.",
+      "Royal Commission for Jubail and Yanbu (RCJY) environmental requirements for projects in the coastal industrial cities of Jubail and Yanbu.",
+      "Saudi Green Initiative (SGI) goals for protecting and restoring natural ecosystems, including coastal habitats."
+    ],
+    "faqs": [
+      { "q": "When should a marine baseline survey start?", "a": "As early as possible, ideally before the environmental impact assessment is finalised and long enough before marine works to capture seasonal variation. Water temperature, turbidity and habitat condition change through the year, and a baseline from a single short visit is difficult to compare with later results. Starting early also leaves time for laboratory analysis and for any additional survey the reviewing authority requests." },
+      { "q": "How is turbidity from dredging monitored?", "a": "Continuous turbidity loggers are installed at sensitive receptors such as reefs and seagrass beds, and at reference stations outside the influence of the works. Data is sent automatically and compared with agreed trigger levels. When a level is reached, the contractor is alerted and follows an escalation procedure, such as reducing the dredging rate, using silt curtains or pausing work, and the response is documented." },
+      { "q": "Do you survey coral reefs and seagrass?", "a": "Yes. We survey coral cover and condition and seagrass extent using transects and photo quadrats at fixed stations, so the same locations can be compared before, during and after works. Where visibility or depth limits diver surveys, we combine drop cameras or drone imagery with ground truthing. Survey methods are fixed in the monitoring plan so results remain comparable over time." },
+      { "q": "Which laboratory analyses are included?", "a": "Parameters depend on the project and approval conditions. Typical analyses include nutrients, suspended solids and hydrocarbons in seawater, and metals, hydrocarbons and particle size in sediments. We prepare the sampling plan, collect and preserve samples with chain of custody, send them to a qualified laboratory agreed with you, and check results against field records before reporting." },
+      { "q": "Can monitoring continue after construction?", "a": "Yes. Many coastal facilities such as ports, intakes, outfalls and resorts need periodic monitoring during operation. We can convert the construction programme into an operational one with fewer stations and a lower frequency, keeping the same methods and reference sites so the long term record stays consistent and comparable with the baseline." }
+    ]
+  },
+  "ar": {
+    "name": "المسوحات والرصد البيئي البحري",
+    "seoTitle": "الرصد البيئي البحري في السعودية | سيلورين",
+    "metaDescription": "مسوحات ورصد بيئي بحري في المملكة: جودة مياه البحر والرواسب، ومسوحات الشعاب المرجانية والأعشاب البحرية والمانجروف، ورصد العكارة أثناء التجريف.",
+    "valueProp": "مسوحات مرجعية ورصد بيئي بحري لمشاريع البحر الأحمر والخليج العربي، ببيانات يُعتمد عليها في الموافقات البيئية والتمويل.",
+    "cardDescription": "جودة مياه البحر والرواسب، ومسوحات الشعاب المرجانية والأعشاب البحرية والمانجروف، ورصد العكارة لأعمال التجريف والردم والموانئ والمصبات والمنتجعات الساحلية.",
+    "keyBenefit": "أعمال بحرية تبقى ضمن اشتراطات موافقتها",
+    "definition": "الرصد البيئي البحري هو القياس المخطط لحالة مياه البحر والرواسب والموائل البحرية قبل الأنشطة الساحلية والبحرية وأثناءها وبعدها. ويجمع بين المسوحات المرجعية لجودة المياه والرواسب والشعاب المرجانية ومروج الأعشاب البحرية وأشجار المانجروف، ورصد العكارة وأعمدة الرواسب وصحة الموائل أثناء الإنشاء والتشغيل، لاكتشاف الآثار مبكراً ومقارنتها باشتراطات الموافقة البيئية.",
+    "overview": [
+      "تحتضن سواحل المملكة على البحر الأحمر والخليج العربي موانئ ومحطات تحلية وتوليد ومدناً صناعية وعدداً متزايداً من المشاريع السياحية والسكنية، وتضم في الوقت نفسه شعاباً مرجانية ومروجاً للأعشاب البحرية وغابات مانجروف حساسة لتغيّر الرواسب والحرارة والملوحة. لذلك تطلب الموافقات البيئية للمشاريع الساحلية والبحرية عادةً بيانات مرجعية موثوقة، ورصداً أثناء الأعمال البحرية، وأدلة على الالتزام بالحدود المتفق عليها.",
+      "جمع البيانات البحرية مكلف ويصعب تكراره، ولهذا يصنع تصميم البرنامج الفرق. يجب أن تجيب مواقع المسح ومعاييره وتكراره عن أسئلة دراسة تقييم الأثر البيئي واشتراطات الموافقة، وأن تشمل مواقع مرجعية بعيدة عن الأعمال، وأن تراعي التغيرات الموسمية في الحرارة والرياح والتيارات. فخط الأساس المأخوذ في موسم واحد أو دون محطات مرجعية يصعب الدفاع عنه لاحقاً.",
+      "نخطط وننفذ برامج المسح والرصد البحري لأعمال التجريف والردم، وإنشاء الموانئ والمراسي، والمصبات ومآخذ المياه، وخطوط الأنابيب والكابلات البحرية، والمنتجعات الساحلية. ونجمع بين أخذ عينات المياه وأجهزة تسجيل العكارة المستمرة وعينات الرواسب ومسوحات الموائل، ونتحقق من جودة البيانات، ونقدّم تقارير تخدم اشتراطات التصاريح وإدارة المقاولين واتخاذ القرار في الموقع."
+    ],
+    "whenYouNeed": [
+      "يحتاج مشروعك الساحلي أو البحري إلى خط أساس بحري لدراسة تقييم الأثر البيئي.",
+      "ستُحدث أعمال التجريف أو الردم أو دق الركائز أعمدة رواسب قرب الشعاب أو الأعشاب البحرية أو المانجروف.",
+      "تحدد موافقتك البيئية حدوداً للعكارة أو جودة المياه أثناء الأعمال البحرية.",
+      "تشغّل مأخذاً أو مصباً أو ميناءً وتحتاج إلى رصد بحري دوري.",
+      "يطلب ممول أو مستثمر أدلة على حالة الموائل البحرية قبل التمويل.",
+      "تحتاج حادثة ساحلية أو تسرب أو شكوى إلى استجابة ميدانية سريعة وموثقة."
+    ],
+    "deliver": [
+      { "title": "المسوحات البحرية المرجعية", "description": "قياس خصائص عمود المياه وأخذ عينات الرواسب ورسم خرائط الموائل في مواقع المشروع والمواقع المرجعية، بتخطيط يخدم دراسة تقييم الأثر البيئي والمقارنة اللاحقة." },
+      { "title": "مسوحات الشعاب المرجانية والأعشاب البحرية", "description": "مسوحات بالمقاطع الخطية والمربعات المصورة لغطاء المرجان وحالته وامتداد الأعشاب البحرية، قابلة للتكرار في المحطات نفسها قبل الأعمال وأثناءها وبعدها." },
+      { "title": "مسوحات المانجروف والشواطئ", "description": "رسم خرائط لأشجار المانجروف والموائل المدّية وحالة الشاطئ، بالمسح الميداني مع صور الطائرات دون طيار والأقمار الصناعية عند الحاجة." },
+      { "title": "رصد العكارة وأعمدة الرواسب", "description": "أجهزة تسجيل عكارة مستمرة متصلة لاسلكياً عند المستقبلات الحساسة والمحطات المرجعية، مع حدود إنذار وإجراء تصعيد متفق عليه مع المقاول." },
+      { "title": "عينات المياه والرواسب", "description": "أخذ عينات من مياه البحر والرواسب لتحليل المغذيات والمعادن والهيدروكربونات وغيرها من المعايير التي تطلبها الموافقة أو خطة التجريف." },
+      { "title": "تقارير الرصد ولوحة البيانات", "description": "تقارير دورية وعرض حي للبيانات يقارن النتائج بخط الأساس والمواقع المرجعية واشتراطات الموافقة، مع إجراءات واضحة عند الاقتراب من الحدود." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نراجع المشروع واشتراطات الموافقة والموائل الحساسة، ونتفق على الأسئلة التي يجب أن يجيب عنها البرنامج ومن سيستخدم البيانات." },
+      { "title": "تصميم البرنامج", "description": "نحدد المحطات والمعايير والتكرار والمواقع المرجعية وحدود الإنذار في خطة رصد تراعي المواسم وجدول الأعمال البحرية." },
+      { "title": "المسوحات الميدانية", "description": "ينفذ فريقنا أخذ العينات من القوارب وتركيب أجهزة التسجيل ومسوحات الموائل وفق إجراءات موثقة، مع تسجيل المواقع وسلسلة حفظ العينات." },
+      { "title": "جودة البيانات", "description": "نعاير الأجهزة ونتحقق منها، وننقّي بيانات أجهزة التسجيل من أثر الترسبات الحيوية والانحراف، ونطابق نتائج المختبر مع السجلات الميدانية." },
+      { "title": "التقارير", "description": "نقارن النتائج بخط الأساس والمواقع المرجعية والحدود، ونعرضها بالخرائط والاتجاهات والإجراءات الموصى بها." },
+      { "title": "الإدارة التكيفية", "description": "عند بلوغ حدود الإنذار ندعم المقاول في تعديل طرق العمل أو توقيته أو وسائل التحكم، ونوثّق النتيجة." }
+    ],
+    "deliverables": [
+      { "item": "خطة الرصد البحري", "format": "خطة بخريطة المحطات والمعايير والتكرار وحدود الإنذار (PDF)", "timing": "قبل المسوحات" },
+      { "item": "تقرير المسح المرجعي", "format": "تقرير بالخرائط والصور ونتائج المختبر (PDF + ملفات بيانات)", "timing": "بعد المسوحات المرجعية" },
+      { "item": "إنذارات العكارة", "format": "تنبيهات آلية بالبريد أو الرسائل عند بلوغ حدود الإنذار", "timing": "أثناء الأعمال البحرية" },
+      { "item": "تقارير الرصد الدورية", "format": "تقارير أسبوعية أو شهرية بالاتجاهات وحالة الامتثال (PDF)", "timing": "طوال الأعمال والتشغيل" },
+      { "item": "مقارنة حالة الموائل", "format": "مقارنة قبل الأعمال وبعدها لمحطات المرجان والأعشاب البحرية والمانجروف (PDF)", "timing": "بعد الأعمال" },
+      { "item": "حزمة البيانات", "format": "بيانات ميدانية ومخبرية مدققة (Excel أو CSV) مع وصفها", "timing": "كل فترة تقرير" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد اشتراطات الأنشطة التي قد تؤثر في البيئة البحرية والساحلية.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يراجع دراسات تقييم الأثر البيئي ويصدر التصاريح التي يُثبت برنامج الرصد الالتزام باشتراطاتها.",
+      "المركز الوطني لتنمية الحياة الفطرية، للأنشطة القريبة من المناطق المحمية والأنواع والموائل البحرية الحساسة.",
+      "الاشتراطات البيئية للهيئة الملكية للجبيل وينبع للمشاريع الواقعة في المدينتين الصناعيتين الساحليتين.",
+      "مستهدفات مبادرة السعودية الخضراء لحماية النظم البيئية الطبيعية واستعادتها، ومنها الموائل الساحلية."
+    ],
+    "faqs": [
+      { "q": "متى يجب أن يبدأ المسح البحري المرجعي؟", "a": "في أقرب وقت ممكن، ويفضّل قبل اعتماد دراسة تقييم الأثر البيئي وبمدة كافية قبل الأعمال البحرية لالتقاط التغيرات الموسمية. فحرارة المياه والعكارة وحالة الموائل تتغير خلال العام، وخط الأساس المأخوذ في زيارة قصيرة واحدة يصعب مقارنته بالنتائج اللاحقة. كما يترك البدء المبكر وقتاً للتحاليل المخبرية ولأي مسح إضافي تطلبه الجهة المراجِعة." },
+      { "q": "كيف تُرصد العكارة الناتجة عن التجريف؟", "a": "تُركَّب أجهزة تسجيل عكارة مستمرة عند المستقبلات الحساسة كالشعاب ومروج الأعشاب البحرية، وفي محطات مرجعية خارج نطاق تأثير الأعمال، وتُرسل البيانات آلياً وتُقارن بحدود إنذار متفق عليها. وعند بلوغ أحدها يُنبَّه المقاول ويتبع إجراء التصعيد، كخفض معدل التجريف أو استخدام الستائر العازلة للطمي أو إيقاف العمل مؤقتاً، مع توثيق الاستجابة." },
+      { "q": "هل تُجرون مسوحات للشعاب المرجانية والأعشاب البحرية؟", "a": "نعم. نمسح غطاء المرجان وحالته وامتداد الأعشاب البحرية بالمقاطع الخطية والمربعات المصورة في محطات ثابتة، لتُقارن المواقع نفسها قبل الأعمال وأثناءها وبعدها. وحين تحدّ الرؤية أو العمق من مسوحات الغوص نجمع بين الكاميرات المُنزلة أو صور الطائرات دون طيار والتحقق الميداني. وتُثبّت طرق المسح في خطة الرصد لتبقى النتائج قابلة للمقارنة." },
+      { "q": "ما التحاليل المخبرية المشمولة؟", "a": "تعتمد المعايير على المشروع واشتراطات الموافقة، ومن المعتاد تحليل المغذيات والمواد العالقة والهيدروكربونات في مياه البحر، والمعادن والهيدروكربونات وحجم الحبيبات في الرواسب. نعدّ خطة أخذ العينات ونجمعها ونحفظها بسلسلة حفظ موثقة، ونرسلها إلى مختبر مؤهل يُتفق عليه معكم، ثم نطابق النتائج مع السجلات الميدانية قبل إعداد التقرير." },
+      { "q": "هل يمكن أن يستمر الرصد بعد الإنشاء؟", "a": "نعم. تحتاج كثير من المرافق الساحلية كالموانئ والمآخذ والمصبات والمنتجعات إلى رصد دوري أثناء التشغيل. ويمكننا تحويل برنامج الإنشاء إلى برنامج تشغيلي بمحطات أقل وتكرار أدنى، مع الإبقاء على الطرق والمواقع المرجعية نفسها ليبقى السجل طويل المدى متسقاً وقابلاً للمقارنة بخط الأساس." }
+    ]
+  }
+}

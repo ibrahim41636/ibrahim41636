@@ -7,7 +7,11 @@ import Contours from "@/components/Contours.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import InsightCard from "@/components/InsightCard.astro";
 import { href, site, t, type Lang } from "@/i18n/ui";
+import Differentiators from "@/components/Differentiators.astro";
 import { categories, lifecycle, regulators } from "@/data/taxonomy";
+// Spelled-out counts for the practice-area heading, so it stays right as areas are added.
+const AREAS_EN: Record<number, string> = { 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten" };
+const AREAS_AR: Record<number, string> = { 7: "سبعة", 8: "ثمانية", 9: "تسعة", 10: "عشرة" };
 import { getServices, getIndustries, getInsights } from "@/lib/content";
 import { SERVICE_ICON, INDUSTRY_ICON } from "@/lib/icons";
 import { collectionSchema } from "@/lib/schema";
@@ -120,7 +124,7 @@ const CITIES: [string, string][] = [
       <div class="section-head">
         <div>
           <p class="eyebrow">{t(lang, "nav.services")}</p>
-          <h2>{ar ? "سبعة مجالات تغطي دورة الالتزام البيئي والطاقة النظيفة" : "Seven practice areas covering the environmental lifecycle and clean energy"}</h2>
+          <h2>{ar ? `${AREAS_AR[categories.length] ?? categories.length} مجالات تغطي البيئة في البر والبحر والطاقة النظيفة` : `${AREAS_EN[categories.length] ?? categories.length} practice areas covering the environment on land and at sea, and clean energy`}</h2>
         </div>
         <p class="lead">{ar ? "من أول تقييم للموقع إلى الامتثال المستمر. اختر المجال الأقرب لاحتياجك." : "From the first site assessment to ongoing compliance. Start with the area closest to your need."}</p>
       </div>
@@ -128,7 +132,7 @@ const CITIES: [string, string][] = [
         {categories.map((c) => {
           const items = services.filter((s) => s.data.category === c.id);
           return (
-            <article class:list={["card reveal", c.id === "renewable-energy" && "card--span"]}>
+            <article class:list={["card reveal", c.id === "renewable-energy" && categories.length % 3 === 1 && "card--span"]}>
               <span class="icon"><Icon name={c.icon} /></span>
               <h3><a class="card-link" href={href(lang, `/services/${c.id}/`)} style="text-decoration:none" data-cta="home_practice_area">{c.name[lang]}</a></h3>
               <p>{c.summary[lang]}</p>
@@ -141,6 +145,8 @@ const CITIES: [string, string][] = [
       </div>
     </div>
   </section>
+
+  <Differentiators lang={lang} tone="white" />
 
   <section class="section-tight" aria-labelledby="h-sectors-visual">
     <div class="container">

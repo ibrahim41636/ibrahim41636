@@ -6,9 +6,11 @@ import { handleRequestPost, methodNotAllowed, type Env } from "../functions/api/
 import { handleTrack } from "../functions/api/track";
 import { handleAdmin } from "../functions/api/admin";
 import { runSocialCron, type SocialEnv } from "../functions/api/social";
-import { handlePayments, runPaymentCron, type PayEnv } from "../functions/api/payments";
+import { handlePayCallbacks, runPaymentCron } from "../functions/api/payments";
+import { handlePortal, runSlaCron } from "../functions/api/portal";
+import type { ProjectEnv } from "../functions/api/projects";
 
-interface WorkerEnv extends Env, SocialEnv, PayEnv {
+interface WorkerEnv extends Env, SocialEnv, ProjectEnv {
   ASSETS: Fetcher;
 }
 
@@ -29,19 +31,19 @@ export default {
       return handleTrack(request, env);
     }
     if (pathname.startsWith("/api/admin/")) return handleAdmin(request, env, pathname.replace(/\/$/, ""));
-    // Proposals and payments (functions/api/payments.ts): the client's quote page and Moyasar callbacks.
-    if (pathname === "/api/quote" || pathname.startsWith("/api/quote/") || pathname.startsWith("/api/pay/")) {
-      return handlePayments(request, env, pathname.replace(/\/$/, ""));
-    }
+    // The client's request portal (functions/api/portal.ts) and Moyasar callbacks (functions/api/payments.ts).
+    if (pathname === "/api/portal" || pathname.startsWith("/api/portal/")) return handlePortal(request, env, pathname.replace(/\/$/, ""));
+    if (pathname.startsWith("/api/pay/")) return handlePayCallbacks(request, env, pathname.replace(/\/$/, ""));
     // IndexNow ownership file (only when the INDEXNOW_KEY secret is set).
     if (env.INDEXNOW_KEY && pathname === `/${env.INDEXNOW_KEY}.txt`) return new Response(env.INDEXNOW_KEY, { headers: { "content-type": "text/plain" } });
     return env.ASSETS.fetch(request);
   },
   // Cron (wrangler.toml [triggers]): queue posts for new articles and publish due posts to every connected account,
-  // then remind clients about instalments that are still unpaid.
+  // remind clients about instalments that are still unpaid, and alert the team before a proposal step runs late.
   async scheduled(controller, env, ctx) {
     const now = new Date(controller.scheduledTime);
     ctx.waitUntil(runSocialCron(env, now).then((r) => console.log("social cron", JSON.stringify(r))));
     ctx.waitUntil(runPaymentCron(env, now).then((r) => console.log("payment cron", JSON.stringify(r))).catch((e) => console.error("payment cron", e)));
+    ctx.waitUntil(runSlaCron(env, now).then((r) => console.log("sla cron", JSON.stringify(r))).catch((e) => console.error("sla cron", e)));
   },
 } satisfies ExportedHandler<WorkerEnv>;

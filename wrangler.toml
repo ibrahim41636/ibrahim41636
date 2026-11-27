@@ -35,6 +35,7 @@ EMAIL_DRY_RUN = "true"
 # Previews can only use Moyasar test keys, and payment links point back at the preview itself.
 MOYASAR_ALLOW_LIVE = "false"
 SITE_URL = ""
+QUOTE_SLA_HOURS = "3"
 
 # Social publishing hub (functions/api/social.ts): every 15 minutes queue posts for new articles
 # and publish due posts to the connected accounts. Does nothing until D1 and a channel are set up.
@@ -50,6 +51,10 @@ SEND_CONFIRMATION = "true"
 # so it is set here for production and never under [previews.vars]. Links in e-mails use SITE_URL.
 MOYASAR_ALLOW_LIVE = "true"
 SITE_URL = "https://selorin.co"
+# Client portal (functions/api/portal.ts): hours the team has to send a proposal, a revised proposal or a
+# meeting time after the client's step (elapsed hours, 1 to 72). Alerts go to SALES_EMAIL 30 minutes before
+# and when overdue; set ESCALATION_EMAIL (dashboard variable) to copy a manager.
+QUOTE_SLA_HOURS = "3"
 
 # Secrets (dashboard → Worker → Settings → Variables and Secrets, type "Secret", or
 # `npx wrangler secret put NAME`): RESEND_API_KEY, ADMIN_TOKEN (staff dashboard /ar/admin/), TURNSTILE_SECRET,
@@ -62,6 +67,9 @@ SITE_URL = "https://selorin.co"
 #   Others via Make or Zapier: SOCIAL_WEBHOOK_URL, SOCIAL_WEBHOOK_SECRET · Search engines: INDEXNOW_KEY
 # Payments (see docs/payments-ar.md): MOYASAR_SECRET_KEY (sk_test_ to try, sk_live_ to take real payments),
 #   optional MOYASAR_WEBHOOK_SECRET (the secret token of the dashboard webhook).
+# Google Drive archive of each request (functions/api/drive.ts, optional): DRIVE_CLIENT_ID, DRIVE_CLIENT_SECRET,
+#   DRIVE_REFRESH_TOKEN (OAuth with the drive.file scope; steps in docs/payments-ar.md). The contract's
+#   signature and stamp images are uploaded in the staff page and kept in D1, never in this public repo.
 
 # Lead log + sequential request IDs + rate limiting + request tracking (/track/). Create with:
 #   npx wrangler d1 create selorin-leads   → paste the database_id below

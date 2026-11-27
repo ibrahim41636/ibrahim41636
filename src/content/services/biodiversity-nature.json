@@ -1,0 +1,127 @@
+{
+  "category": "sustainability-climate",
+  "order": 7,
+  "formFamily": "studies",
+  "industries": ["energy", "real-estate", "hospitality", "mining-quarrying", "infrastructure", "oil-gas", "government-public-sector"],
+  "related": ["environmental-impact-assessment", "renewable-energy-feasibility", "coastal-habitat-restoration", "esg-advisory"],
+  "en": {
+    "name": "Biodiversity & Nature Assessment",
+    "seoTitle": "Biodiversity Assessment in Saudi Arabia | Selorin",
+    "metaDescription": "Biodiversity assessments in Saudi Arabia: habitat and species surveys, bird and bat studies for wind and solar, biodiversity plans and nature-related disclosure.",
+    "valueProp": "We survey the habitats and species around your project and turn the findings into practical measures, plans and disclosures that protect nature and your approvals.",
+    "cardDescription": "Ecological baseline surveys, bird and bat studies for wind and solar projects, biodiversity management plans, native landscaping advice and nature-related disclosure support.",
+    "keyBenefit": "Projects that protect nature and keep approvals on track",
+    "definition": "A biodiversity assessment identifies the habitats, plants and animals present at and around a site, evaluates how a project or operation could affect them, and recommends measures to avoid, reduce, restore or offset impacts. It supports environmental impact assessments, approval conditions and biodiversity management plans, and provides the evidence needed for the nature-related disclosures that investors increasingly request.",
+    "overview": [
+      "Saudi Arabia's deserts, mountains, wadis, oases, coasts and islands support specialised wildlife, including resident birds and migratory birds that cross major flyways. Large developments, mining, renewable energy and infrastructure projects increasingly take place in remote and sensitive landscapes. Authorities, lenders and investors expect projects to understand their effects on habitats and species and to manage them responsibly.",
+      "Wind farms raise specific questions about bird and bat collisions, large solar plants change land cover and can affect ground dwelling species, and linear projects such as roads and pipelines can fragment habitats. Surveys need to cover the right seasons, especially migration periods, and their methods must be robust enough to stand up to review. The results then shape layout, the timing of works and operational controls.",
+      "We plan and carry out ecological surveys and assessments for developers, operators and investors. We design surveys around the project and the season, use recognised methods, map habitats and record species, assess impacts, and set out mitigation and monitoring in a biodiversity management plan. For companies, we help measure and disclose nature-related dependencies and impacts in line with emerging frameworks such as the TNFD recommendations."
+    ],
+    "whenYouNeed": [
+      "Your environmental impact assessment needs an ecological baseline.",
+      "You are developing a wind or solar project and need bird and bat studies.",
+      "Your site is near a protected area, a wadi, the coast or an important bird area.",
+      "Approval conditions require a biodiversity management or monitoring plan.",
+      "Investors ask about nature-related risks, dependencies and impacts.",
+      "You want landscaping that uses native plants and supports local wildlife."
+    ],
+    "deliver": [
+      { "title": "Ecological baseline surveys", "description": "Field surveys of habitats, plants, birds, mammals and reptiles across appropriate seasons, with maps of sensitive areas and species of concern." },
+      { "title": "Bird and bat studies for renewables", "description": "Vantage point surveys, migration monitoring and collision risk assessment for wind farms, and ground surveys for solar plants, informing layout and operation." },
+      { "title": "Impact assessment", "description": "Assessment of habitat loss, disturbance, fragmentation and mortality risks, applying the mitigation hierarchy to avoid, reduce, restore and offset." },
+      { "title": "Biodiversity management plan", "description": "Practical measures, responsibilities, monitoring and reporting for construction and operation, aligned with approval conditions and lender expectations." },
+      { "title": "Native landscaping guidance", "description": "Advice on native, drought tolerant plants and habitat features that reduce irrigation and support local wildlife in developments." },
+      { "title": "Nature-related disclosure", "description": "Assessment of dependencies and impacts on nature, and support for disclosures in line with the TNFD recommendations." }
+    ],
+    "approach": [
+      { "title": "Desk study", "description": "Records, maps and imagery identify habitats, protected areas and species likely to be present." },
+      { "title": "Survey design", "description": "Methods, locations and seasons are selected to answer the assessment questions robustly." },
+      { "title": "Field surveys", "description": "Field teams record habitats and species with documented methods and geo-referenced data." },
+      { "title": "Assessment", "description": "Impacts are evaluated and mitigation is developed with your design and operations teams." },
+      { "title": "Planning", "description": "Measures and monitoring are set out in a biodiversity management plan." },
+      { "title": "Monitoring", "description": "Post-construction and operational monitoring checks that measures work and adjusts them where needed." }
+    ],
+    "deliverables": [
+      { "item": "Desk study and survey plan", "format": "Sensitivity maps and survey methodology (PDF)", "timing": "Before fieldwork" },
+      { "item": "Ecological baseline report", "format": "Habitat maps, species records and photos (PDF + GIS files)", "timing": "After surveys" },
+      { "item": "Bird and bat study report", "format": "Survey results and collision risk assessment (PDF)", "timing": "After seasonal surveys" },
+      { "item": "Biodiversity management plan", "format": "Measures, responsibilities and monitoring programme (PDF)", "timing": "Before construction" },
+      { "item": "Monitoring reports", "format": "Results against plan targets with recommendations (PDF)", "timing": "During construction and operation" },
+      { "item": "Nature disclosure inputs", "format": "Dependencies, impacts and metrics for reporting (PDF + Excel)", "timing": "Reporting cycle" }
+    ],
+    "regulatoryContext": [
+      "National Center for Wildlife (NCW), responsible for wildlife conservation and protected areas, relevant to projects near sensitive habitats and species.",
+      "National Center for Vegetation Cover Development and Combating Desertification (NCVC), relevant to vegetation clearance and rehabilitation.",
+      "Environmental Law (2020) and its Implementing Regulations, including environmental impact assessment requirements that cover ecological effects.",
+      "Saudi Green Initiative (SGI) goals for protecting land and sea areas and restoring ecosystems.",
+      "TNFD recommendations for nature-related financial disclosures, increasingly referenced by investors."
+    ],
+    "faqs": [
+      { "q": "When should ecological surveys be done?", "a": "Early, and in the right seasons. Many species are only present or detectable at certain times, and migratory birds pass during spring and autumn migration. Surveys started late can delay the environmental impact assessment or force design changes after layouts are fixed. We plan surveys around the project schedule and the seasons that matter." },
+      { "q": "Why do wind farms need bird and bat studies?", "a": "Turbines can cause collisions and disturbance, particularly for large soaring birds and for bats. Studies identify flight activity, heights and routes, especially during migration, and estimate collision risk. The results inform turbine layout and, during operation, can support measures such as carcass monitoring or shutting down turbines when risk is high." },
+      { "q": "What is the mitigation hierarchy?", "a": "It is the order in which impacts on biodiversity are managed: first avoid impacts, for example through layout or timing; then minimise those that cannot be avoided; then restore affected areas; and only as a last step offset residual impacts elsewhere. Applying it in this order usually gives better outcomes at lower cost than relying on offsets." },
+      { "q": "What is TNFD?", "a": "The Taskforce on Nature-related Financial Disclosures (TNFD) provides recommendations for companies to assess and report their dependencies and impacts on nature and the related risks and opportunities, with a structure similar to climate disclosures. We help companies apply it proportionately, starting with their most significant locations and activities." },
+      { "q": "Can landscaping really support biodiversity?", "a": "Yes, when it uses native, drought tolerant plants, provides varied structure such as shrubs, trees and open ground, and avoids invasive species. Such landscaping usually needs less irrigation and maintenance and gives local birds and insects food and shelter, which supports both sustainability goals and green building credits." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم التنوع الأحيائي والطبيعة",
+    "seoTitle": "تقييم التنوع الأحيائي في السعودية | سيلورين",
+    "metaDescription": "تقييم التنوع الأحيائي في المملكة: مسوحات الموائل والأنواع، ودراسات الطيور والخفافيش لمشاريع الرياح والطاقة الشمسية، وخطط الإدارة والإفصاح عن الطبيعة.",
+    "valueProp": "نمسح الموائل والأنواع حول مشروعكم، ونحوّل النتائج إلى إجراءات وخطط وإفصاحات عملية تحمي الطبيعة وموافقاتكم.",
+    "cardDescription": "مسوحات بيئية مرجعية، ودراسات الطيور والخفافيش لمشاريع الرياح والطاقة الشمسية، وخطط إدارة التنوع الأحيائي، وإرشادات التشجير المحلي، ودعم الإفصاح عن الطبيعة.",
+    "keyBenefit": "مشاريع تحمي الطبيعة وتحافظ على مسار موافقاتها",
+    "definition": "تقييم التنوع الأحيائي يحدد الموائل والنباتات والحيوانات الموجودة في الموقع وما حوله، ويقيّم كيف قد يؤثر فيها مشروع أو نشاط، ويوصي بإجراءات لتجنب الآثار أو تقليلها أو إصلاحها أو تعويضها. ويدعم دراسات تقييم الأثر البيئي واشتراطات الموافقة وخطط إدارة التنوع الأحيائي، ويوفر الأدلة اللازمة للإفصاحات المتعلقة بالطبيعة التي يطلبها المستثمرون بشكل متزايد.",
+    "overview": [
+      "تحتضن صحاري المملكة وجبالها وأوديتها وواحاتها وسواحلها وجزرها حياة فطرية متكيفة، منها طيور مقيمة وأخرى مهاجرة تعبر مسارات هجرة رئيسية. وتُقام المشاريع التطويرية الكبرى والتعدين والطاقة المتجددة والبنية التحتية بشكل متزايد في مناطق نائية وحساسة، وتتوقع الجهات المختصة والممولون والمستثمرون أن تفهم المشاريع آثارها على الموائل والأنواع وأن تديرها بمسؤولية.",
+      "تثير مزارع الرياح أسئلة خاصة عن اصطدام الطيور والخفافيش، وتغيّر محطات الطاقة الشمسية الكبيرة الغطاء الأرضي وقد تؤثر في الأنواع الأرضية، وقد تجزّئ المشاريع الخطية كالطرق وخطوط الأنابيب الموائل. ويجب أن تغطي المسوحات المواسم الصحيحة، خاصة فترات الهجرة، وأن تكون طرقها متينة بما يكفي للمراجعة، ثم تُشكّل النتائج التخطيط وتوقيت الأعمال وضوابط التشغيل.",
+      "نخطط وننفذ المسوحات والتقييمات البيئية للمطورين والمشغلين والمستثمرين. نصمم المسوحات حول المشروع والموسم، ونستخدم طرقاً معترفاً بها، ونرسم خرائط الموائل ونسجل الأنواع، ونقيّم الآثار، ونحدد التخفيف والرصد في خطة لإدارة التنوع الأحيائي. وللشركات نساعد على قياس الاعتماد على الطبيعة والأثر فيها والإفصاح عنهما بما يتوافق مع الأطر الناشئة مثل توصيات TNFD."
+    ],
+    "whenYouNeed": [
+      "تحتاج دراسة تقييم الأثر البيئي إلى خط أساس للتنوع الأحيائي.",
+      "تطوّر مشروع رياح أو طاقة شمسية وتحتاج إلى دراسات للطيور والخفافيش.",
+      "يقع موقعك قرب منطقة محمية أو وادٍ أو ساحل أو منطقة مهمة للطيور.",
+      "تشترط الموافقة خطة لإدارة التنوع الأحيائي أو رصده.",
+      "يسأل المستثمرون عن المخاطر المتعلقة بالطبيعة والاعتماد عليها والأثر فيها.",
+      "تريد تشجيراً يستخدم نباتات محلية ويدعم الحياة الفطرية المحلية."
+    ],
+    "deliver": [
+      { "title": "المسوحات البيئية المرجعية", "description": "مسوحات ميدانية للموائل والنباتات والطيور والثدييات والزواحف عبر المواسم المناسبة، مع خرائط للمناطق الحساسة والأنواع المهمة." },
+      { "title": "دراسات الطيور والخفافيش للطاقة المتجددة", "description": "مسوحات من نقاط مراقبة ورصد للهجرة وتقييم لخطر الاصطدام في مزارع الرياح، ومسوحات أرضية لمحطات الطاقة الشمسية، توجّه التخطيط والتشغيل." },
+      { "title": "تقييم الآثار", "description": "تقييم فقد الموائل والإزعاج والتجزئة ومخاطر النفوق، بتطبيق تسلسل التخفيف: التجنب ثم التقليل ثم الإصلاح ثم التعويض." },
+      { "title": "خطة إدارة التنوع الأحيائي", "description": "إجراءات عملية ومسؤوليات ورصد وتقارير لمرحلتي الإنشاء والتشغيل، متوافقة مع اشتراطات الموافقة وتوقعات الممولين." },
+      { "title": "إرشادات التشجير بالنباتات المحلية", "description": "توصيات بنباتات محلية متحملة للجفاف وعناصر موائل تقلل الري وتدعم الحياة الفطرية المحلية في المشاريع التطويرية." },
+      { "title": "الإفصاح المتعلق بالطبيعة", "description": "تقييم الاعتماد على الطبيعة والأثر فيها، ودعم الإفصاحات بما يتوافق مع توصيات TNFD." }
+    ],
+    "approach": [
+      { "title": "الدراسة المكتبية", "description": "تحدد السجلات والخرائط والصور الموائل والمناطق المحمية والأنواع المرجح وجودها." },
+      { "title": "تصميم المسوحات", "description": "تُختار الطرق والمواقع والمواسم للإجابة عن أسئلة التقييم بشكل متين." },
+      { "title": "المسوحات الميدانية", "description": "تسجل الفرق الميدانية الموائل والأنواع بطرق موثقة وبيانات بإحداثيات." },
+      { "title": "التقييم", "description": "تُقيَّم الآثار ويُطوَّر التخفيف مع فرق التصميم والتشغيل لديكم." },
+      { "title": "التخطيط", "description": "تُحدد الإجراءات والرصد في خطة لإدارة التنوع الأحيائي." },
+      { "title": "الرصد", "description": "يتحقق الرصد بعد الإنشاء وأثناء التشغيل من نجاح الإجراءات ويعدّلها عند الحاجة." }
+    ],
+    "deliverables": [
+      { "item": "الدراسة المكتبية وخطة المسوحات", "format": "خرائط الحساسية ومنهجية المسوحات (PDF)", "timing": "قبل العمل الميداني" },
+      { "item": "تقرير خط الأساس البيئي", "format": "خرائط الموائل وسجلات الأنواع والصور (PDF + ملفات GIS)", "timing": "بعد المسوحات" },
+      { "item": "تقرير دراسة الطيور والخفافيش", "format": "نتائج المسوحات وتقييم خطر الاصطدام (PDF)", "timing": "بعد المسوحات الموسمية" },
+      { "item": "خطة إدارة التنوع الأحيائي", "format": "الإجراءات والمسؤوليات وبرنامج الرصد (PDF)", "timing": "قبل الإنشاء" },
+      { "item": "تقارير الرصد", "format": "النتائج مقابل أهداف الخطة مع التوصيات (PDF)", "timing": "أثناء الإنشاء والتشغيل" },
+      { "item": "مدخلات الإفصاح عن الطبيعة", "format": "الاعتماد والأثر والمؤشرات للتقارير (PDF + Excel)", "timing": "دورة التقارير" }
+    ],
+    "regulatoryContext": [
+      "المركز الوطني لتنمية الحياة الفطرية، المسؤول عن صون الحياة الفطرية والمناطق المحمية، وهو ذو صلة بالمشاريع القريبة من الموائل والأنواع الحساسة.",
+      "المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر، ذو الصلة بإزالة الغطاء النباتي وإعادة تأهيله.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، ومنها متطلبات تقييم الأثر البيئي التي تشمل الآثار على النظم البيئية.",
+      "مستهدفات مبادرة السعودية الخضراء لحماية المناطق البرية والبحرية واستعادة النظم البيئية.",
+      "توصيات فريق عمل الإفصاحات المالية المتعلقة بالطبيعة (TNFD)، التي يستند إليها المستثمرون بشكل متزايد."
+    ],
+    "faqs": [
+      { "q": "متى يجب إجراء المسوحات البيئية؟", "a": "مبكراً وفي المواسم الصحيحة. فكثير من الأنواع لا توجد أو لا يمكن رصدها إلا في أوقات محددة، والطيور المهاجرة تعبر في مواسم الهجرة في الربيع والخريف. والمسوحات المتأخرة قد تؤخر دراسة تقييم الأثر البيئي أو تفرض تعديلات في التصميم بعد تثبيت المخططات، لذا نخطط المسوحات حول جدول المشروع والمواسم المهمة." },
+      { "q": "لماذا تحتاج مزارع الرياح إلى دراسات للطيور والخفافيش؟", "a": "قد تسبب التوربينات اصطداماً وإزعاجاً، خاصة للطيور الحوامة الكبيرة والخفافيش. وتحدد الدراسات نشاط الطيران وارتفاعاته ومساراته، خاصة أثناء الهجرة، وتقدّر خطر الاصطدام. وتوجّه النتائج مواقع التوربينات، ويمكن أن تدعم أثناء التشغيل إجراءات مثل رصد النفوق أو إيقاف التوربينات حين يرتفع الخطر." },
+      { "q": "ما تسلسل التخفيف؟", "a": "هو الترتيب الذي تُدار به الآثار على التنوع الأحيائي: أولاً تجنب الآثار عبر التخطيط أو التوقيت مثلاً، ثم تقليل ما لا يمكن تجنبه، ثم إصلاح المناطق المتأثرة، وأخيراً تعويض الآثار المتبقية في مكان آخر. وتطبيقه بهذا الترتيب يحقق عادةً نتائج أفضل بتكلفة أقل من الاعتماد على التعويض." },
+      { "q": "ما TNFD؟", "a": "فريق عمل الإفصاحات المالية المتعلقة بالطبيعة (TNFD) يقدم توصيات للشركات لتقييم اعتمادها على الطبيعة وأثرها فيها والمخاطر والفرص المرتبطة بها والإفصاح عنها، بهيكل مشابه للإفصاحات المناخية. ونساعد الشركات على تطبيقه بطريقة متناسبة، بدءاً بأهم مواقعها وأنشطتها." },
+      { "q": "هل يدعم التشجير التنوع الأحيائي فعلاً؟", "a": "نعم، حين يستخدم نباتات محلية متحملة للجفاف، ويوفر بنية متنوعة من شجيرات وأشجار ومساحات مفتوحة، ويتجنب الأنواع الغازية. ويحتاج هذا التشجير عادةً إلى ري وصيانة أقل، ويوفر للطيور والحشرات المحلية الغذاء والمأوى، بما يدعم أهداف الاستدامة ونقاط المباني الخضراء معاً." }
+    ]
+  }
+}

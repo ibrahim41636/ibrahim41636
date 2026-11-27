@@ -23,6 +23,9 @@
     "../tests/social.test.ts",
     "../src/lib/uploads.ts",
     "../src/lib/payments.ts",
-    "../tests/payments.test.ts"
+    "../src/lib/portal.ts",
+    "../tests/payments.test.ts",
+    "../tests/portal.test.ts",
+    "../tests/d1.ts"
   ]
 }

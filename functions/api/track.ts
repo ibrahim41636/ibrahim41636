@@ -2,10 +2,11 @@
 // GET /api/track?id=SEL-2026-000123&email=client@example.com
 // Lets a client see the status and timeline of their own request. Both the request ID and the
 // e-mail used on the form must match, so IDs alone cannot be used to read other requests.
-import { json, type Env } from "./request";
-import { LEAD_ID, normalizeEmail } from "../../src/lib/tracking";
+import { json } from "./request";
+import { LEAD_ID, normalizeEmail, stageOf } from "../../src/lib/tracking";
+import { stageFor, type ProjectEnv } from "./projects";
 
-export async function handleTrack(request: Request, env: Env): Promise<Response> {
+export async function handleTrack(request: Request, env: ProjectEnv): Promise<Response> {
   const url = new URL(request.url);
   const id = (url.searchParams.get("id") ?? "").trim().toUpperCase();
   const email = normalizeEmail(url.searchParams.get("email") ?? "");
@@ -20,6 +21,10 @@ export async function handleTrack(request: Request, env: Env): Promise<Response>
   const events = await env.DB.prepare(`SELECT status, note, at FROM lead_events WHERE lead_id = ?1 ORDER BY at ASC, id ASC`)
     .bind(id).all<{ status: string; note: string | null; at: string }>();
 
+  // The exact stage comes from the proposal, contract and work stages; the status alone is the fallback.
+  let stage = stageOf(lead.status);
+  try { stage = await stageFor(env, lead); } catch (e) { console.error("track stage", e); }
+
   let serviceName = "";
   try { serviceName = JSON.parse(lead.payload ?? "{}")?.service?.name ?? ""; } catch { /* name stays empty */ }
 
@@ -31,6 +36,8 @@ export async function handleTrack(request: Request, env: Env): Promise<Response>
       service: serviceName || lead.service,
       submittedAt: lead.submitted_at,
       status: lead.status,
+      portal: lead.kind === "request",
+      stage,
       updatedAt: lead.status_updated_at ?? lead.submitted_at,
       history: events.results ?? [],
     },

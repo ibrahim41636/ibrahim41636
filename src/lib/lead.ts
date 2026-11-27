@@ -144,7 +144,8 @@ export function emailHtml(lead: Lead) {
 }
 
 /** Short confirmation sent to the client (no internal data, no attachments). */
-export function confirmationEmail(lead: Lead) {
+/** Client confirmation. With a portal link, the client can follow every stage of the request there. */
+export function confirmationEmail(lead: Lead, portal?: string) {
   const ar = lead.lang === "ar";
   if (lead.kind === "careers") {
     return {
@@ -155,8 +156,11 @@ export function confirmationEmail(lead: Lead) {
     };
   }
   const subject = ar ? `استلمنا طلبك رقم ${lead.leadId}` : `We have received your request (${lead.leadId})`;
+  const follow = portal
+    ? (ar ? `\n\nتابع مراحل طلبك من بوابتك الخاصة، وفيها يصلك العرض الفني والمالي وتُكمل التعاقد والسداد:\n${portal}` : `\n\nFollow every stage of your request in your private portal, where you will also receive the proposal and complete the contract and payment:\n${portal}`)
+    : "";
   const text = ar
-    ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887`
-    : `Dear ${lead.contactName},\n\nThank you for contacting Selorin. We have received your request regarding "${lead.service.name}". Our team will review your requirements and contact you shortly.\n\nRequest ID: ${lead.leadId}\n\nSelorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887`;
+    ? `مرحباً ${lead.contactName}،\n\nشكراً لتواصلك مع سيلورين. استلمنا طلبك بخصوص «${lead.service.name}»، وسيراجع فريقنا متطلباتك ويتواصل معك قريباً.\n\nرقم الطلب: ${lead.leadId}${follow}\n\nسيلورين للاستشارات والخدمات البيئية\nsales@selorin.co · +966 55 015 6887`
+    : `Dear ${lead.contactName},\n\nThank you for contacting Selorin. We have received your request regarding "${lead.service.name}". Our team will review your requirements and contact you shortly.\n\nRequest ID: ${lead.leadId}${follow}\n\nSelorin Environmental Advisory & Services\nsales@selorin.co · +966 55 015 6887`;
   return { subject, text };
 }

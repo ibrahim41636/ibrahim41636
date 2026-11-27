@@ -53,6 +53,17 @@ export const SERVICES: Record<string, { en: string; ar: string; family: Family }
   "battery-energy-storage": { en: "Battery Energy Storage Systems", ar: "أنظمة تخزين الطاقة بالبطاريات", family: "energy" },
   "renewable-operations-maintenance": { en: "Renewable Energy O&M", ar: "تشغيل وصيانة مشاريع الطاقة المتجددة", family: "energy" },
   "renewable-energy-feasibility": { en: "Renewable Energy Feasibility & Environmental Studies", ar: "دراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة", family: "energy" },
+  "solar-pv-recycling": { en: "Solar Panel & Battery End-of-Life Management", ar: "إدارة نهاية عمر الألواح الشمسية والبطاريات", family: "waste" },
+  "marine-monitoring": { en: "Marine Environmental Surveys & Monitoring", ar: "المسوحات والرصد البيئي البحري", family: "monitoring" },
+  "desalination-brine-discharge": { en: "Desalination Brine & Outfall Studies", ar: "دراسات تصريف المحلول الملحي والمصبات البحرية", family: "studies" },
+  "coastal-habitat-restoration": { en: "Mangrove, Seagrass & Blue Carbon Programmes", ar: "استزراع المانجروف والأعشاب البحرية والكربون الأزرق", family: "sustainability" },
+  "contaminated-site-assessment": { en: "Contaminated Site Assessment (Phase I & II)", ar: "تقييم المواقع الملوثة (المرحلة الأولى والثانية)", family: "studies" },
+  "environmental-remediation": { en: "Soil & Groundwater Remediation", ar: "معالجة التربة والمياه الجوفية الملوثة", family: "studies" },
+  "stack-emission-monitoring": { en: "Stack Emission Testing", ar: "قياس انبعاثات المداخن", family: "monitoring" },
+  "indoor-air-quality": { en: "Indoor Air Quality Assessment", ar: "تقييم جودة الهواء الداخلي", family: "monitoring" },
+  "monitoring-as-a-service": { en: "Managed Monitoring & Live Data", ar: "الرصد المُدار والبيانات الحية", family: "monitoring" },
+  "climate-risk": { en: "Climate Risk & Adaptation", ar: "تقييم المخاطر المناخية والتكيّف", family: "sustainability" },
+  "biodiversity-nature": { en: "Biodiversity & Nature Assessment", ar: "تقييم التنوع الأحيائي والطبيعة", family: "studies" },
 };
 
 export const INDUSTRIES: Option[] = [

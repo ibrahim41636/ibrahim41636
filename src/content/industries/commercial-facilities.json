@@ -11,7 +11,10 @@
     "green-building-advisory",
     "ghg-carbon-accounting",
     "solar-energy-systems",
-    "ev-charging-stations"
+    "ev-charging-stations",
+    "indoor-air-quality",
+    "stack-emission-monitoring",
+    "solar-pv-recycling"
   ],
   "en": {
     "name": "Commercial Facilities",

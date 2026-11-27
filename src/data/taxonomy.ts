@@ -50,13 +50,41 @@ export const categories: Category[] = [
     icon: "monitoring",
     name: { en: "Monitoring & Measurement", ar: "الرصد والقياس" },
     summary: {
-      en: "Air, dust, VOC, noise and water monitoring, from programme design and field measurement to compliance reporting.",
-      ar: "رصد الهواء والغبار والمركبات العضوية المتطايرة والضوضاء والمياه، من تصميم البرنامج والقياس الميداني إلى تقارير الامتثال.",
+      en: "Air, stack, dust, VOC, noise, indoor air and water measurement, delivered as projects or as a managed service with live data and compliance reports.",
+      ar: "قياس الهواء والمداخن والغبار والمركبات العضوية المتطايرة والضوضاء والهواء الداخلي والمياه، كمشاريع أو كخدمة مُدارة ببيانات حية وتقارير امتثال.",
     },
     benefit: { en: "Measured evidence instead of assumptions.", ar: "أدلة مقاسة بدلاً من التقديرات." },
     intro: {
       en: "Monitoring turns environmental obligations into data you can act on. We design monitoring that answers the regulatory question, run it in the field, check data quality, and report results in a form decision makers and authorities can use.",
       ar: "يحوّل الرصد الالتزامات البيئية إلى بيانات يمكن العمل بها. نصمم برامج رصد تجيب عن السؤال التنظيمي، وننفذها ميدانياً، ونتحقق من جودة البيانات، ونقدّم النتائج بصيغة يستفيد منها صناع القرار والجهات المختصة.",
+    },
+  },
+  {
+    id: "marine-coastal",
+    icon: "wave",
+    name: { en: "Marine & Coastal Environment", ar: "البيئة البحرية والساحلية" },
+    summary: {
+      en: "Marine surveys and monitoring, desalination brine and outfall studies, and mangrove, seagrass and blue carbon programmes for projects on the Red Sea and the Arabian Gulf.",
+      ar: "المسوحات والرصد البحري، ودراسات تصريف المحلول الملحي والمصبات، وبرامج المانجروف والأعشاب البحرية والكربون الأزرق لمشاريع البحر الأحمر والخليج العربي.",
+    },
+    benefit: { en: "Coastal projects that protect the sea they depend on.", ar: "مشاريع ساحلية تحمي البحر الذي تعتمد عليه." },
+    intro: {
+      en: "Ports, desalination plants, industrial cities and coastal resorts all depend on a healthy sea, and their approvals increasingly depend on proving it. We combine marine surveys, discharge modelling and habitat restoration so coastal projects understand their effects, stay within their conditions and leave measurable improvements behind.",
+      ar: "تعتمد الموانئ ومحطات التحلية والمدن الصناعية والمنتجعات الساحلية على بحر سليم، وتعتمد موافقاتها بشكل متزايد على إثبات ذلك. نجمع بين المسوحات البحرية ونمذجة التصريف واستعادة الموائل، لتفهم المشاريع الساحلية آثارها وتبقى ضمن اشتراطاتها وتترك تحسناً قابلاً للقياس.",
+    },
+  },
+  {
+    id: "contaminated-land",
+    icon: "soil",
+    name: { en: "Contaminated Land & Remediation", ar: "المواقع الملوثة وإعادة التأهيل" },
+    summary: {
+      en: "Phase I and Phase II site assessments, soil and groundwater investigation, remediation design and supervision, and validated closure for industrial, fuel and redevelopment sites.",
+      ar: "تقييم المواقع بمرحلتيه الأولى والثانية، وفحص التربة والمياه الجوفية، وتصميم المعالجة والإشراف عليها، والإغلاق الموثق للمواقع الصناعية ومواقع الوقود ومشاريع إعادة التطوير.",
+    },
+    benefit: { en: "Land with a known condition, ready for its next use.", ar: "أرض معروفة الحالة وجاهزة لاستخدامها التالي." },
+    intro: {
+      en: "Soil and groundwater contamination is rarely visible, but it can stop a sale, delay a development or create a long term liability. We investigate in proportionate stages, explain what the results mean for your plans, and design and verify remediation until the site is fit for its intended use.",
+      ar: "نادراً ما يكون تلوث التربة والمياه الجوفية ظاهراً، لكنه قد يوقف صفقة بيع أو يؤخر مشروع تطوير أو يرتب التزامات طويلة المدى. نفحص على مراحل متناسبة، ونوضح ما تعنيه النتائج لخططكم، ونصمم المعالجة ونتحقق منها حتى يصبح الموقع صالحاً لاستخدامه المقصود.",
     },
   },
   {
@@ -78,8 +106,8 @@ export const categories: Category[] = [
     icon: "esg",
     name: { en: "Sustainability, ESG & Climate", ar: "الاستدامة والحوكمة والمناخ" },
     summary: {
-      en: "ESG advisory, GHG accounting, net-zero pathways, sustainability strategy and life cycle assessment.",
-      ar: "استشارات الحوكمة البيئية والاجتماعية والمؤسسية، وحصر انبعاثات غازات الاحتباس الحراري، ومسارات الحياد الصفري، واستراتيجيات الاستدامة، وتقييم دورة الحياة.",
+      en: "ESG advisory, GHG accounting, net-zero pathways, climate risk, biodiversity, sustainability strategy and life cycle assessment.",
+      ar: "استشارات الحوكمة البيئية والاجتماعية والمؤسسية، وحصر انبعاثات غازات الاحتباس الحراري، ومسارات الحياد الصفري، والمخاطر المناخية، والتنوع الأحيائي، واستراتيجيات الاستدامة، وتقييم دورة الحياة.",
     },
     benefit: { en: "Credible data behind every sustainability commitment.", ar: "بيانات موثوقة خلف كل التزام بالاستدامة." },
     intro: {
@@ -106,8 +134,8 @@ export const categories: Category[] = [
     icon: "solar",
     name: { en: "Renewable Energy", ar: "الطاقة المتجددة" },
     summary: {
-      en: "Solar energy systems, EV charging stations, battery storage, operation and maintenance, and feasibility and environmental studies for renewable projects.",
-      ar: "أنظمة الطاقة الشمسية، ومحطات شحن السيارات الكهربائية، وتخزين الطاقة، والتشغيل والصيانة، ودراسات الجدوى والدراسات البيئية لمشاريع الطاقة المتجددة.",
+      en: "Solar energy systems, EV charging stations, battery storage, operation and maintenance, feasibility and environmental studies, and end-of-life management of panels and batteries.",
+      ar: "أنظمة الطاقة الشمسية، ومحطات شحن السيارات الكهربائية، وتخزين الطاقة، والتشغيل والصيانة، ودراسات الجدوى والدراسات البيئية، وإدارة نهاية عمر الألواح والبطاريات.",
     },
     benefit: { en: "Clean energy that lowers your bills, from study to maintenance.", ar: "طاقة نظيفة تخفض فواتيرك، من الدراسة حتى الصيانة." },
     intro: {
@@ -204,7 +232,7 @@ export const lifecycle: { id: string; name: L; question: L; services: string[] }
     id: "planning",
     name: { en: "Planning", ar: "التخطيط" },
     question: { en: "Evaluating a site, investment or new project", ar: "تقييم موقع أو استثمار أو مشروع جديد" },
-    services: ["environmental-due-diligence", "environmental-impact-assessment", "environmental-permitting"],
+    services: ["environmental-due-diligence", "contaminated-site-assessment", "environmental-impact-assessment", "environmental-permitting"],
   },
   {
     id: "design",
@@ -222,7 +250,7 @@ export const lifecycle: { id: string; name: L; question: L; services: string[] }
     id: "operation",
     name: { en: "Operation", ar: "التشغيل" },
     question: { en: "Running a facility and staying compliant", ar: "تشغيل منشأة والمحافظة على الامتثال" },
-    services: ["environmental-compliance", "environmental-records", "environmental-monitoring", "environmental-audits", "fuel-station-voc-monitoring"],
+    services: ["environmental-compliance", "environmental-records", "environmental-monitoring", "monitoring-as-a-service", "environmental-audits", "fuel-station-voc-monitoring"],
   },
   {
     id: "expansion",
@@ -234,7 +262,7 @@ export const lifecycle: { id: string; name: L; question: L; services: string[] }
     id: "reporting",
     name: { en: "Reporting & strategy", ar: "الإفصاح والاستراتيجية" },
     question: { en: "Reporting ESG performance or setting climate targets", ar: "الإفصاح عن أداء الحوكمة البيئية والاجتماعية أو وضع أهداف مناخية" },
-    services: ["esg-advisory", "ghg-carbon-accounting", "net-zero-advisory", "sustainability-advisory"],
+    services: ["esg-advisory", "ghg-carbon-accounting", "net-zero-advisory", "climate-risk", "sustainability-advisory"],
   },
 ];
 

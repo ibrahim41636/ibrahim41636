@@ -5,9 +5,14 @@
 import { validate, type FormKind, type Values } from "../../src/lib/forms";
 import { buildLead, confirmationEmail, emailHtml, emailSubject, emailText, formatLeadId, type Lead } from "../../src/lib/lead";
 import { checkUploads, type CheckedFile } from "../../src/lib/uploads";
+import { newToken, portalUrl } from "../../src/lib/payments";
+import { dbTime, slaHours } from "../../src/lib/portal";
+import { archive, textFile, type DriveEnv } from "./drive";
 
-export interface Env {
+export interface Env extends DriveEnv {
   SALES_EMAIL?: string; // default sales@selorin.co
+  SITE_URL?: string; // canonical origin for links in e-mails, e.g. https://selorin.co
+  QUOTE_SLA_HOURS?: string; // hours to send a proposal after a request (default 3)
   MAIL_FROM?: string; // e.g. "Selorin Website <website@selorin.co>" — domain must be verified with the provider
   RESEND_API_KEY?: string;
   TURNSTILE_SECRET?: string;
@@ -109,6 +114,23 @@ async function logLead(env: Env, lead: Lead, ipHash: string, delivered: boolean)
   await env.DB.prepare(`INSERT INTO lead_events (lead_id, status, at) VALUES (?1, 'received', datetime('now'))`).bind(lead.leadId).run();
 }
 
+/**
+ * The client's private portal link and the proposal timer (migrations/0007_portal.sql). Kept apart
+ * from the insert above so a database without that migration still records every lead.
+ */
+async function openPortal(env: Env, lead: Lead, now: Date) {
+  if (!env.DB || lead.kind !== "request") return null;
+  const token = newToken();
+  try {
+    await env.DB.prepare(`UPDATE leads SET portal_token = ?2, quote_due_at = ?3 WHERE lead_id = ?1`)
+      .bind(lead.leadId, token, dbTime(new Date(now.getTime() + slaHours(env.QUOTE_SLA_HOURS) * 3600_000))).run();
+    return token;
+  } catch (e) {
+    console.error("portal setup failed (is migration 0007 applied?)", lead.leadId, e);
+    return null;
+  }
+}
+
 function respond(request: Request, status: number, body: Record<string, unknown>) {
   // Progressive enhancement: plain HTML form posts (no JS) get redirected instead of JSON.
   const wantsJson = request.headers.get("accept")?.includes("application/json");
@@ -174,6 +196,14 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
 
   waitUntil((async () => {
     await logLead(env, lead, ipHash, delivered).catch((e) => console.error("lead log failed", e));
+    const portalToken = await openPortal(env, lead, now);
+    // Archive folder for the request: the summary and the client's attachments.
+    if (lead.kind === "request") {
+      await archive(env, { lead_id: lead.leadId, company: lead.company, service: lead.service.name }, [
+        textFile(`${lead.leadId} | ${lead.lang === "ar" ? "ملخص الطلب" : "Request summary"}.txt`, emailText(lead)),
+        ...uploads.files.map((f) => ({ name: f.name, type: f.type, bytes: f.bytes })),
+      ]);
+    }
     if (env.LEAD_WEBHOOK_URL) {
       await fetch(env.LEAD_WEBHOOK_URL, {
         method: "POST",
@@ -182,7 +212,8 @@ export async function handleRequestPost(request: Request, env: Env, waitUntil: (
       }).catch((e) => console.error("lead webhook failed", e));
     }
     if (delivered && env.SEND_CONFIRMATION === "true") {
-      const c = confirmationEmail(lead);
+      const site = env.SITE_URL || new URL(request.url).origin;
+      const c = confirmationEmail(lead, portalToken ? portalUrl(site, lead.lang, portalToken) : undefined);
       await sendEmail(env, { to: lead.email, subject: c.subject, text: c.text, replyTo: env.SALES_EMAIL ?? "sales@selorin.co" }).catch((e) => console.error("confirmation failed", e));
     }
   })());

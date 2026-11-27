@@ -1,0 +1,123 @@
+{
+  "category": "monitoring-measurement",
+  "order": 8,
+  "formFamily": "monitoring",
+  "industries": ["industrial-manufacturing", "energy", "oil-gas", "waste-recycling", "mining-quarrying", "food-beverage", "healthcare", "commercial-facilities"],
+  "related": ["air-quality-monitoring", "environmental-permitting", "ghg-carbon-accounting", "monitoring-as-a-service"],
+  "en": {
+    "name": "Stack Emission Testing",
+    "seoTitle": "Stack Emission Testing in Saudi Arabia | Selorin",
+    "metaDescription": "Stack emission testing in Saudi Arabia for boilers, furnaces, generators, kilns and incinerators: isokinetic dust sampling, gas analysis and permit reports.",
+    "valueProp": "We measure what leaves your stacks, accurately and safely, and report it in the form your permit and the authorities expect.",
+    "cardDescription": "Periodic emission testing of boilers, furnaces, generators, kilns, dryers and incinerators: particulates, combustion gases and other pollutants, with permit compliance reports.",
+    "keyBenefit": "Emission results that hold up at inspection",
+    "definition": "Stack emission testing is the measurement of pollutants released from the chimneys, flues and vents of combustion and process units. It determines concentrations and mass emission rates of particulates, combustion gases such as nitrogen oxides, sulphur dioxide and carbon monoxide, and other pollutants under representative operating conditions, using standard sampling methods, so results can be compared with permit limits and used in emission inventories.",
+    "overview": [
+      "Facilities with boilers, furnaces, standby generators, kilns, dryers, incinerators and process vents are typically required by their environmental permits to demonstrate that emissions stay within limits. Authorities increasingly expect measured evidence rather than manufacturer data or estimates, and emission results also feed greenhouse gas inventories, dispersion modelling and decisions on abatement equipment.",
+      "Reliable stack testing depends on details: a suitable sampling location with safe access, representative operating conditions, correct isokinetic sampling for particulates, calibrated gas analysers, and measurement of flow, temperature and moisture so that concentrations can be converted to mass emissions and reference conditions. An error in any of these can produce results that fail at inspection or hide a real problem.",
+      "We plan and carry out stack testing campaigns for industrial plants, power and water facilities, hospitals with boilers or incinerators, and other sources. We check sampling ports and access in advance, coordinate operating conditions with your team, perform the measurements with documented methods, and report results against permit limits, with clear advice when results are close to or above them."
+    ],
+    "whenYouNeed": [
+      "Your environmental permit requires periodic emission testing of stacks or vents.",
+      "A new boiler, furnace, generator or incinerator needs commissioning emission tests.",
+      "An inspection or a complaint raises questions about your emissions.",
+      "You need measured data for a greenhouse gas inventory or a dispersion model.",
+      "You are selecting abatement equipment such as filters or scrubbers, or checking its performance.",
+      "Continuous emissions monitoring analysers need comparison against reference measurements."
+    ],
+    "deliver": [
+      { "title": "Pre-test site survey", "description": "Inspection of sampling locations, ports, platforms and access, with recommendations where changes are needed for safe and representative sampling." },
+      { "title": "Particulate sampling", "description": "Isokinetic sampling of particulates from the stack, with gravimetric analysis and calculation of concentration and mass emission rate." },
+      { "title": "Combustion gas measurement", "description": "Measurement of oxygen, carbon monoxide, nitrogen oxides and sulphur dioxide with calibrated analysers, with results corrected to reference conditions." },
+      { "title": "Flow and stack conditions", "description": "Measurement of velocity, flow, temperature, pressure and moisture needed to convert concentrations into emission rates." },
+      { "title": "Other pollutants", "description": "Sampling for metals, acid gases, volatile organic compounds or other pollutants named in the permit, analysed by a qualified laboratory." },
+      { "title": "Compliance report", "description": "Report comparing results with permit limits and documenting methods, operating conditions and uncertainty, with recommendations where results need action." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We confirm the sources, pollutants, permit limits and reference conditions to be reported." },
+      { "title": "Site survey", "description": "Sampling locations, access and safety arrangements are checked before the test date." },
+      { "title": "Test plan", "description": "A plan sets methods, test runs, operating conditions and responsibilities, agreed with your operations team." },
+      { "title": "Measurement", "description": "Our team performs the tests with calibrated equipment and records operating data during each run." },
+      { "title": "Analysis", "description": "Laboratory and analyser data are processed, checked and converted to the reporting basis." },
+      { "title": "Reporting", "description": "Results are reported against limits, with clear explanations and next steps." }
+    ],
+    "deliverables": [
+      { "item": "Site survey note", "format": "Sampling ports, access and required changes (PDF)", "timing": "Before testing" },
+      { "item": "Test plan", "format": "Methods, runs, operating conditions and safety arrangements (PDF)", "timing": "Before testing" },
+      { "item": "Field data", "format": "Sampling sheets, analyser logs and operating records (PDF + Excel)", "timing": "After testing" },
+      { "item": "Emission test report", "format": "Results against permit limits with methods and calculations (PDF)", "timing": "After laboratory results" },
+      { "item": "Emission data for inventories", "format": "Concentrations and mass emission rates per source (Excel)", "timing": "With the report" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set air quality and emission requirements for facilities.",
+      "National Center for Environmental Compliance (NCEC), which issues operating permits with emission limits and monitoring conditions and carries out compliance inspections.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and Saudi Authority for Industrial Cities and Technology Zones (MODON) environmental requirements for facilities in industrial cities.",
+      "Internationally recognised stack sampling methods, such as US EPA reference methods and EN standards, selected to match the pollutant and the permit."
+    ],
+    "faqs": [
+      { "q": "How often is stack testing required?", "a": "The frequency is set by your environmental permit and can differ by source and pollutant. Some sources are tested periodically, others after commissioning or major changes, and large sources may also need continuous monitoring. We review your permit conditions with you and plan testing so the required results are available before they are due." },
+      { "q": "What do we need to prepare?", "a": "Safe access to the sampling location, suitable sampling ports, a power supply and a stable, representative operating condition during the tests. We survey the site in advance and tell you if ports or platforms need to be added. Your operations team also records process data during each run so results can be interpreted correctly." },
+      { "q": "What is isokinetic sampling?", "a": "Isokinetic sampling means drawing gas into the sampling nozzle at the same velocity as the gas flowing in the stack. If the speeds differ, larger particles are over or under sampled and the particulate result is wrong. Correct isokinetic sampling, with flow measured across the stack, is essential for credible dust emission results." },
+      { "q": "Can you test generators and boilers in commercial buildings?", "a": "Yes. Standby generators, boilers and other combustion units in hospitals, malls, hotels and data centres can be subject to permit conditions too. Testing is planned around the building's operations, often during scheduled generator runs, to avoid disruption." },
+      { "q": "What if results exceed the limits?", "a": "We first check the measurement and the operating conditions to confirm the result. If the exceedance is real, we help identify the cause, such as combustion tuning, fuel quality or abatement performance, recommend corrective actions and plan a retest. Documenting the cause and the corrective action also prepares you for any questions from the authority." }
+    ]
+  },
+  "ar": {
+    "name": "قياس انبعاثات المداخن",
+    "seoTitle": "قياس انبعاثات المداخن في السعودية | سيلورين",
+    "metaDescription": "قياس انبعاثات المداخن في المملكة للغلايات والأفران والمولدات والمحارق: عينات الجسيمات متساوية السرعة، وتحليل الغازات، وتقارير الامتثال للتصريح.",
+    "valueProp": "نقيس ما يخرج من مداخنكم بدقة وأمان، ونقدّمه بالصيغة التي يتوقعها تصريحكم والجهات المختصة.",
+    "cardDescription": "قياس دوري لانبعاثات الغلايات والأفران والمولدات والأفران الدوارة والمجففات والمحارق: الجسيمات وغازات الاحتراق والملوثات الأخرى، مع تقارير امتثال للتصريح.",
+    "keyBenefit": "نتائج انبعاثات تصمد أمام التفتيش",
+    "definition": "قياس انبعاثات المداخن هو قياس الملوثات الخارجة من المداخن ومجاري العادم وفتحات التصريف في وحدات الاحتراق والعمليات الصناعية. ويحدد تراكيز الجسيمات وغازات الاحتراق كأكاسيد النيتروجين وثاني أكسيد الكبريت وأول أكسيد الكربون وغيرها من الملوثات ومعدلات انبعاثها الكتلية في ظروف تشغيل ممثلة، بطرق أخذ عينات قياسية، لمقارنة النتائج بحدود التصريح واستخدامها في قوائم حصر الانبعاثات.",
+    "overview": [
+      "تُلزم التصاريح البيئية عادةً المنشآت التي تشغّل غلايات أو أفراناً أو مولدات احتياطية أو أفراناً دوارة أو مجففات أو محارق أو فتحات تصريف عمليات بإثبات بقاء الانبعاثات ضمن الحدود. وتتوقع الجهات المختصة بشكل متزايد أدلة مقاسة لا بيانات الشركات المصنعة أو التقديرات، كما تدخل نتائج الانبعاثات في حصر غازات الاحتباس الحراري ونمذجة الانتشار وقرارات معدات المعالجة.",
+      "تعتمد موثوقية قياس المداخن على التفاصيل: موقع أخذ عينات مناسب بوصول آمن، وظروف تشغيل ممثلة، وأخذ عينات الجسيمات بسرعة متساوية بشكل صحيح، ومحللات غازات معايرة، وقياس التدفق والحرارة والرطوبة لتحويل التراكيز إلى انبعاثات كتلية وظروف مرجعية. وأي خطأ في هذه الجوانب قد ينتج نتائج تفشل عند التفتيش أو تخفي مشكلة حقيقية.",
+      "نخطط وننفذ حملات قياس المداخن للمصانع ومحطات الطاقة والمياه والمستشفيات التي تشغّل غلايات أو محارق وغيرها من المصادر. نتحقق مسبقاً من فتحات أخذ العينات والوصول، وننسق ظروف التشغيل مع فريقكم، وننفذ القياسات بطرق موثقة، ونعرض النتائج مقابل حدود التصريح، مع توصيات واضحة حين تقترب منها أو تتجاوزها."
+    ],
+    "whenYouNeed": [
+      "يشترط تصريحك البيئي قياساً دورياً لانبعاثات المداخن أو فتحات التصريف.",
+      "تحتاج غلاية أو فرن أو مولد أو محرقة جديدة إلى قياسات انبعاثات عند التشغيل الأولي.",
+      "يثير تفتيش أو شكوى تساؤلات حول انبعاثاتك.",
+      "تحتاج إلى بيانات مقاسة لحصر غازات الاحتباس الحراري أو لنموذج انتشار.",
+      "تختار معدات معالجة كالمرشحات أو أجهزة الغسل أو تتحقق من أدائها.",
+      "تحتاج محللات نظام الرصد المستمر للانبعاثات إلى مقارنة بقياسات مرجعية."
+    ],
+    "deliver": [
+      { "title": "مسح الموقع قبل القياس", "description": "معاينة مواقع أخذ العينات والفتحات والمنصات والوصول، مع توصيات عند الحاجة إلى تعديلات تضمن أخذ عينات آمناً وممثلاً." },
+      { "title": "قياس الجسيمات", "description": "أخذ عينات الجسيمات من المدخنة بسرعة متساوية، مع التحليل الوزني وحساب التركيز ومعدل الانبعاث الكتلي." },
+      { "title": "قياس غازات الاحتراق", "description": "قياس الأكسجين وأول أكسيد الكربون وأكاسيد النيتروجين وثاني أكسيد الكبريت بمحللات معايرة، مع تصحيح النتائج إلى الظروف المرجعية." },
+      { "title": "التدفق وظروف المدخنة", "description": "قياس السرعة والتدفق والحرارة والضغط والرطوبة اللازمة لتحويل التراكيز إلى معدلات انبعاث." },
+      { "title": "ملوثات أخرى", "description": "أخذ عينات للمعادن والغازات الحمضية والمركبات العضوية المتطايرة أو غيرها مما يحدده التصريح، وتحليلها في مختبر مؤهل." },
+      { "title": "تقرير الامتثال", "description": "تقرير يقارن النتائج بحدود التصريح ويوثق الطرق وظروف التشغيل وعدم اليقين، مع توصيات حين تتطلب النتائج إجراءً." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نتأكد من المصادر والملوثات وحدود التصريح والظروف المرجعية المطلوبة في التقرير." },
+      { "title": "مسح الموقع", "description": "نتحقق من مواقع أخذ العينات والوصول وترتيبات السلامة قبل موعد القياس." },
+      { "title": "خطة القياس", "description": "تحدد الخطة الطرق والجولات وظروف التشغيل والمسؤوليات، بالاتفاق مع فريق التشغيل." },
+      { "title": "القياس", "description": "ينفذ فريقنا القياسات بمعدات معايرة ويسجل بيانات التشغيل في كل جولة." },
+      { "title": "التحليل", "description": "نعالج بيانات المختبر والمحللات ونراجعها ونحوّلها إلى أساس التقرير." },
+      { "title": "التقارير", "description": "نعرض النتائج مقابل الحدود بشرح واضح وخطوات تالية." }
+    ],
+    "deliverables": [
+      { "item": "مذكرة مسح الموقع", "format": "فتحات أخذ العينات والوصول والتعديلات المطلوبة (PDF)", "timing": "قبل القياس" },
+      { "item": "خطة القياس", "format": "الطرق والجولات وظروف التشغيل وترتيبات السلامة (PDF)", "timing": "قبل القياس" },
+      { "item": "البيانات الميدانية", "format": "استمارات أخذ العينات وسجلات المحللات وسجلات التشغيل (PDF + Excel)", "timing": "بعد القياس" },
+      { "item": "تقرير قياس الانبعاثات", "format": "النتائج مقابل حدود التصريح مع الطرق والحسابات (PDF)", "timing": "بعد صدور نتائج المختبر" },
+      { "item": "بيانات الانبعاثات للحصر", "format": "التراكيز ومعدلات الانبعاث الكتلية لكل مصدر (Excel)", "timing": "مع التقرير" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد اشتراطات جودة الهواء والانبعاثات للمنشآت.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يصدر تصاريح التشغيل بحدود الانبعاثات واشتراطات الرصد وينفذ تفتيش الالتزام.",
+      "الاشتراطات البيئية للهيئة الملكية للجبيل وينبع والهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن) للمنشآت في المدن الصناعية.",
+      "طرق أخذ عينات المداخن المعترف بها دولياً، كالطرق المرجعية لوكالة حماية البيئة الأمريكية والمواصفات الأوروبية، بما يناسب الملوث والتصريح."
+    ],
+    "faqs": [
+      { "q": "كم مرة يلزم قياس انبعاثات المداخن؟", "a": "يحدد تصريحك البيئي التكرار، وقد يختلف حسب المصدر والملوث. فبعض المصادر تُقاس دورياً، وبعضها بعد التشغيل الأولي أو التغييرات الكبيرة، وقد تحتاج المصادر الكبيرة أيضاً إلى رصد مستمر. نراجع معكم اشتراطات التصريح ونخطط القياسات لتكون النتائج جاهزة قبل موعد استحقاقها." },
+      { "q": "ماذا نحتاج أن نجهّز؟", "a": "وصولاً آمناً إلى موقع أخذ العينات، وفتحات مناسبة له، ومصدر كهرباء، وحالة تشغيل مستقرة وممثلة أثناء القياس. نعاين الموقع مسبقاً ونبلغكم إن لزمت إضافة فتحات أو منصات، ويسجل فريق التشغيل لديكم بيانات العملية خلال كل جولة لتفسير النتائج بشكل صحيح." },
+      { "q": "ما أخذ العينات بسرعة متساوية؟", "a": "يعني سحب الغاز إلى فوهة أخذ العينات بالسرعة نفسها التي يتدفق بها الغاز في المدخنة. فإن اختلفت السرعة أُخذت الجسيمات الكبيرة بأكثر أو أقل من حقيقتها وأصبحت نتيجة الجسيمات خاطئة. وأخذ العينات الصحيح بسرعة متساوية، مع قياس التدفق عبر مقطع المدخنة، أساسي لنتائج غبار موثوقة." },
+      { "q": "هل تقيسون المولدات والغلايات في المباني التجارية؟", "a": "نعم. قد تخضع المولدات الاحتياطية والغلايات ووحدات الاحتراق الأخرى في المستشفيات والمراكز التجارية والفنادق ومراكز البيانات لاشتراطات التصاريح أيضاً. ونخطط القياس حول تشغيل المبنى، وغالباً أثناء التشغيل المجدول للمولدات، لتجنب أي تعطيل." },
+      { "q": "ماذا لو تجاوزت النتائج الحدود؟", "a": "نتحقق أولاً من القياس وظروف التشغيل لتأكيد النتيجة. فإن كان التجاوز حقيقياً ساعدناكم على تحديد السبب، كضبط الاحتراق أو جودة الوقود أو أداء معدات المعالجة، وأوصينا بالإجراءات التصحيحية وخططنا لإعادة القياس. كما يهيئكم توثيق السبب والإجراء التصحيحي لأي استفسار من الجهة المختصة." }
+    ]
+  }
+}

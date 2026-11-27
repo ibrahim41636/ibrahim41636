@@ -1,0 +1,125 @@
+{
+  "category": "monitoring-measurement",
+  "order": 7,
+  "formFamily": "monitoring",
+  "industries": ["construction", "industrial-manufacturing", "mining-quarrying", "oil-gas", "infrastructure", "energy", "logistics-warehousing", "real-estate", "waste-recycling"],
+  "related": ["dust-monitoring", "air-quality-monitoring", "noise-monitoring", "environmental-monitoring"],
+  "en": {
+    "name": "Managed Monitoring & Live Data",
+    "seoTitle": "Environmental Monitoring as a Service in Saudi Arabia | Selorin",
+    "metaDescription": "Environmental monitoring as a service in Saudi Arabia: stations installed, calibrated and maintained by Selorin, with a live dashboard, alerts and monthly reports.",
+    "valueProp": "We supply, install, calibrate and run your monitoring stations for a monthly fee, so you get live data, alerts and reports without buying equipment.",
+    "cardDescription": "Dust, noise, air, gas, water and weather monitoring delivered as a service: equipment, installation, calibration, maintenance, live dashboard, alerts and compliance reports in one contract.",
+    "keyBenefit": "Monitoring results without buying or maintaining equipment",
+    "definition": "Managed environmental monitoring, often called monitoring as a service, is a contract in which a provider supplies, installs, calibrates and maintains monitoring stations and sensors and delivers the validated data as a service. The client pays a periodic fee instead of buying equipment, and receives a live dashboard, alerts when limits are approached and regular reports ready for permits, contractors and management.",
+    "overview": [
+      "Many projects and facilities in Saudi Arabia must monitor dust, noise, air quality, gases, water or weather because of permit conditions, environmental management plans or neighbour concerns. Buying stations is only the start: they need installation, power and communications, calibration, cleaning and repairs, and someone to check the data and write the reports. When any of these slips, data gaps appear exactly when evidence is needed.",
+      "A managed service moves that burden to a single accountable provider. Equipment is selected for the question, installed at agreed locations, kept within calibration and maintained on a schedule, while data is validated and delivered continuously. Costs become predictable operating expenses, stations can be moved as a project progresses, and the contract can scale up or down as requirements change.",
+      "We deliver monitoring as a service for construction sites, quarries and mines, industrial plants, ports, fuel stations and waste facilities. We combine our monitoring stations and sensors with field maintenance, a live dashboard, alerts by e-mail or message, and monthly reports prepared by environmental specialists who explain the results and recommend actions, so monitoring supports compliance rather than just producing numbers."
+    ],
+    "whenYouNeed": [
+      "Your permit or environmental plan requires continuous monitoring but you do not want to buy equipment.",
+      "A construction or mining project needs monitoring for a fixed period only.",
+      "Existing stations suffer data gaps because maintenance or calibration is missed.",
+      "Neighbours or authorities need timely alerts when dust or noise rises.",
+      "You want one dashboard for several sites and types of monitoring.",
+      "You need monthly compliance reports prepared and explained by specialists."
+    ],
+    "deliver": [
+      { "title": "Monitoring design", "description": "Selection of parameters, equipment and locations to answer the regulatory and operational questions, with trigger levels and reporting needs agreed upfront." },
+      { "title": "Equipment supply and installation", "description": "Delivery and installation of stations and sensors for dust, noise, air quality, gases, water quality and weather, including power and communications." },
+      { "title": "Calibration and maintenance", "description": "Scheduled calibration, cleaning, consumables and repairs, with records kept for audits and replacement units when a station fails." },
+      { "title": "Live dashboard and alerts", "description": "Online access to live and historical data for all sites, with alerts by e-mail or message when readings approach trigger levels." },
+      { "title": "Data validation", "description": "Routine checks that remove faulty or affected data with documented reasons, so reported results are defensible." },
+      { "title": "Monthly compliance reports", "description": "Reports by environmental specialists that compare results with limits, explain exceedances and recommend actions, ready for permits, clients and contractors." }
+    ],
+    "approach": [
+      { "title": "Requirements", "description": "We review permits, plans and site conditions and agree what must be monitored, where and why." },
+      { "title": "Design and contract", "description": "Equipment, locations, service levels, reporting and fees are set out in one service agreement." },
+      { "title": "Installation", "description": "Stations are installed, connected and checked, and the dashboard and alerts are configured." },
+      { "title": "Operation", "description": "Our team maintains and calibrates the equipment and watches data quality throughout the contract." },
+      { "title": "Reporting", "description": "Monthly reports and summaries on request explain results and actions." },
+      { "title": "Adjustment", "description": "Stations are moved, added or removed as the project changes, without new purchases." }
+    ],
+    "deliverables": [
+      { "item": "Monitoring design", "format": "Locations, parameters, trigger levels and service levels (PDF)", "timing": "Before installation" },
+      { "item": "Installation record", "format": "Station details, positions, photos and calibration certificates (PDF)", "timing": "After installation" },
+      { "item": "Live dashboard and alerts", "format": "Online access for your team with configurable alerts", "timing": "Throughout the contract" },
+      { "item": "Maintenance and calibration log", "format": "Service records for audits and inspections (PDF)", "timing": "Continuously updated" },
+      { "item": "Monthly compliance report", "format": "Results, exceedances, causes and actions (PDF + data)", "timing": "Every month" },
+      { "item": "Data export", "format": "Validated data (Excel or CSV)", "timing": "On request and at contract end" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, under which permits and approvals set monitoring obligations.",
+      "National Center for Environmental Compliance (NCEC), which issues permits with monitoring conditions and reviews compliance evidence.",
+      "Construction and operational environmental management plans, which define monitoring locations, parameters and trigger levels.",
+      "Requirements of industrial city authorities such as the Royal Commission for Jubail and Yanbu (RCJY) and MODON for facilities within their areas."
+    ],
+    "faqs": [
+      { "q": "What is included in the monthly fee?", "a": "The fee covers the agreed equipment, installation, calibration, maintenance, communications, dashboard access, data validation and monthly reports. The exact scope, number of stations, parameters and service levels are set out in the proposal, so you know what is included and what would be extra, such as additional stations or special analyses." },
+      { "q": "Do we own the data?", "a": "Yes. The data collected at your sites is yours. You can view and download it at any time through the dashboard, and we provide a full validated data export at the end of the contract so your records remain complete." },
+      { "q": "Which parameters can be monitored?", "a": "Common parameters include particulate matter such as PM10 and PM2.5, noise levels, gases such as volatile organic compounds and hydrogen sulphide, weather, and water quality parameters such as turbidity, pH and conductivity. The selection follows your permit, your plan and the site risks rather than a fixed package." },
+      { "q": "What happens if a station stops working?", "a": "Stations report their status continuously, so failures are detected quickly and our team repairs or replaces the unit. The outage and its cause are recorded in the maintenance log and the monthly report, which keeps the data record transparent for audits." },
+      { "q": "Can the service move with our project?", "a": "Yes. On construction and mining projects the work front moves and monitoring needs change. Stations can be relocated, added or removed under the same agreement, and the dashboard keeps a continuous record across all locations." }
+    ]
+  },
+  "ar": {
+    "name": "الرصد المُدار والبيانات الحية",
+    "seoTitle": "الرصد البيئي كخدمة في السعودية | سيلورين",
+    "metaDescription": "الرصد البيئي كخدمة في المملكة: محطات تركّبها سيلورين وتعايرها وتصونها، مع لوحة بيانات حية وتنبيهات وتقارير امتثال شهرية دون شراء أجهزة.",
+    "valueProp": "نورّد محطات الرصد ونركّبها ونعايرها ونشغّلها مقابل رسوم شهرية، فتحصلون على بيانات حية وتنبيهات وتقارير دون شراء أجهزة.",
+    "cardDescription": "رصد الغبار والضوضاء والهواء والغازات والمياه والطقس كخدمة: الأجهزة والتركيب والمعايرة والصيانة ولوحة البيانات الحية والتنبيهات وتقارير الامتثال في عقد واحد.",
+    "keyBenefit": "نتائج رصد دون شراء الأجهزة أو صيانتها",
+    "definition": "الرصد البيئي المُدار، أو الرصد كخدمة، عقد يتولى فيه مقدم الخدمة توريد محطات الرصد وحساساته وتركيبها ومعايرتها وصيانتها، ويسلّم البيانات المدققة كخدمة. ويدفع العميل رسوماً دورية بدلاً من شراء الأجهزة، ويحصل على لوحة بيانات حية وتنبيهات عند الاقتراب من الحدود وتقارير منتظمة جاهزة للتصاريح والمقاولين والإدارة.",
+    "overview": [
+      "تحتاج كثير من المشاريع والمنشآت في المملكة إلى رصد الغبار أو الضوضاء أو جودة الهواء أو الغازات أو المياه أو الطقس بسبب اشتراطات التصاريح أو خطط الإدارة البيئية أو مخاوف الجوار. وشراء المحطات مجرد بداية، فهي تحتاج إلى تركيب وكهرباء واتصالات ومعايرة وتنظيف وإصلاح، وإلى من يراجع البيانات ويعدّ التقارير. وحين يتعثر أي من ذلك تظهر فجوات البيانات في الوقت الذي تكون فيه الأدلة مطلوبة.",
+      "تنقل الخدمة المُدارة هذا العبء إلى جهة واحدة مسؤولة. فتُختار الأجهزة بما يناسب السؤال، وتُركَّب في مواقع متفق عليها، وتبقى ضمن المعايرة وتُصان وفق جدول، بينما تُدقق البيانات وتُسلَّم باستمرار. وتصبح التكاليف مصروفات تشغيلية متوقعة، ويمكن نقل المحطات مع تقدم المشروع، وتوسيع العقد أو تقليصه مع تغير المتطلبات.",
+      "نقدّم الرصد كخدمة لمواقع الإنشاء والمحاجر والمناجم والمصانع والموانئ ومحطات الوقود ومرافق النفايات. ونجمع بين محطات الرصد والحساسات لدينا والصيانة الميدانية ولوحة بيانات حية وتنبيهات بالبريد أو الرسائل، وتقارير شهرية يعدّها مختصون بيئيون يشرحون النتائج ويوصون بالإجراءات، ليخدم الرصد الامتثال لا مجرد إنتاج أرقام."
+    ],
+    "whenYouNeed": [
+      "يشترط تصريحك أو خطتك البيئية رصداً مستمراً ولا تريد شراء أجهزة.",
+      "يحتاج مشروع إنشاء أو تعدين إلى رصد لفترة محددة فقط.",
+      "تعاني محطاتك الحالية من فجوات في البيانات بسبب إهمال الصيانة أو المعايرة.",
+      "يحتاج الجوار أو الجهات المختصة إلى تنبيهات فورية عند ارتفاع الغبار أو الضوضاء.",
+      "تريد لوحة بيانات واحدة لعدة مواقع وأنواع رصد.",
+      "تحتاج إلى تقارير امتثال شهرية يعدّها ويشرحها مختصون."
+    ],
+    "deliver": [
+      { "title": "تصميم الرصد", "description": "اختيار المعايير والأجهزة والمواقع للإجابة عن الأسئلة التنظيمية والتشغيلية، مع الاتفاق المسبق على حدود الإنذار ومتطلبات التقارير." },
+      { "title": "توريد الأجهزة وتركيبها", "description": "توريد محطات وحساسات الغبار والضوضاء وجودة الهواء والغازات وجودة المياه والطقس وتركيبها، بما في ذلك الطاقة والاتصالات." },
+      { "title": "المعايرة والصيانة", "description": "معايرة وتنظيف ومستهلكات وإصلاحات مجدولة، مع سجلات محفوظة للتدقيق، ووحدات بديلة عند تعطل محطة." },
+      { "title": "لوحة بيانات حية وتنبيهات", "description": "وصول إلكتروني إلى البيانات الحية والتاريخية لجميع المواقع، مع تنبيهات بالبريد أو الرسائل عند اقتراب القراءات من حدود الإنذار." },
+      { "title": "تدقيق البيانات", "description": "فحوص روتينية تستبعد البيانات المعيبة أو المتأثرة مع توثيق الأسباب، لتكون النتائج المعلنة قابلة للدفاع عنها." },
+      { "title": "تقارير امتثال شهرية", "description": "تقارير يعدّها مختصون بيئيون تقارن النتائج بالحدود وتشرح التجاوزات وتوصي بالإجراءات، جاهزة للتصاريح والعملاء والمقاولين." }
+    ],
+    "approach": [
+      { "title": "المتطلبات", "description": "نراجع التصاريح والخطط وظروف الموقع ونتفق على ما يجب رصده وأين ولماذا." },
+      { "title": "التصميم والعقد", "description": "تُحدد الأجهزة والمواقع ومستويات الخدمة والتقارير والرسوم في اتفاقية خدمة واحدة." },
+      { "title": "التركيب", "description": "تُركَّب المحطات وتُوصل وتُفحص، وتُهيأ لوحة البيانات والتنبيهات." },
+      { "title": "التشغيل", "description": "يصون فريقنا الأجهزة ويعايرها ويراقب جودة البيانات طوال العقد." },
+      { "title": "التقارير", "description": "تشرح التقارير الشهرية والملخصات عند الطلب النتائج والإجراءات." },
+      { "title": "التعديل", "description": "تُنقل المحطات أو تُضاف أو تُزال مع تغير المشروع دون مشتريات جديدة." }
+    ],
+    "deliverables": [
+      { "item": "تصميم الرصد", "format": "المواقع والمعايير وحدود الإنذار ومستويات الخدمة (PDF)", "timing": "قبل التركيب" },
+      { "item": "سجل التركيب", "format": "بيانات المحطات ومواقعها وصورها وشهادات المعايرة (PDF)", "timing": "بعد التركيب" },
+      { "item": "لوحة بيانات حية وتنبيهات", "format": "وصول إلكتروني لفريقكم مع تنبيهات قابلة للضبط", "timing": "طوال العقد" },
+      { "item": "سجل الصيانة والمعايرة", "format": "سجلات الخدمة للتدقيق والتفتيش (PDF)", "timing": "يُحدَّث باستمرار" },
+      { "item": "تقرير الامتثال الشهري", "format": "النتائج والتجاوزات وأسبابها والإجراءات (PDF + بيانات)", "timing": "كل شهر" },
+      { "item": "تصدير البيانات", "format": "بيانات مدققة (Excel أو CSV)", "timing": "عند الطلب وفي نهاية العقد" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد بموجبها التصاريح والموافقات التزامات الرصد.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يصدر التصاريح باشتراطات الرصد ويراجع أدلة الالتزام.",
+      "خطط الإدارة البيئية للإنشاء والتشغيل، التي تحدد مواقع الرصد ومعاييره وحدود الإنذار.",
+      "متطلبات هيئات المدن الصناعية مثل الهيئة الملكية للجبيل وينبع ومدن للمنشآت الواقعة ضمن نطاقها."
+    ],
+    "faqs": [
+      { "q": "ما الذي تشمله الرسوم الشهرية؟", "a": "تشمل الرسوم الأجهزة المتفق عليها والتركيب والمعايرة والصيانة والاتصالات والوصول إلى لوحة البيانات وتدقيق البيانات والتقارير الشهرية. ويحدد العرض النطاق بدقة، من عدد المحطات والمعايير ومستويات الخدمة، لتعرفوا ما هو مشمول وما يُعد إضافياً كالمحطات الإضافية أو التحاليل الخاصة." },
+      { "q": "هل نملك البيانات؟", "a": "نعم. البيانات المجمّعة في مواقعكم ملك لكم، ويمكنكم عرضها وتنزيلها في أي وقت عبر لوحة البيانات، ونسلّمكم في نهاية العقد تصديراً كاملاً للبيانات المدققة ليبقى سجلكم مكتملاً." },
+      { "q": "ما المعايير التي يمكن رصدها؟", "a": "من المعايير الشائعة الجسيمات مثل PM10 وPM2.5، ومستويات الضوضاء، والغازات مثل المركبات العضوية المتطايرة وكبريتيد الهيدروجين، والطقس، ومعايير جودة المياه مثل العكارة والأس الهيدروجيني والموصلية. ويتبع الاختيار تصريحكم وخطتكم ومخاطر الموقع لا باقة ثابتة." },
+      { "q": "ماذا يحدث إذا توقفت محطة عن العمل؟", "a": "ترسل المحطات حالتها باستمرار، فيُكتشف التعطل بسرعة ويصلح فريقنا الوحدة أو يستبدلها. ويُسجَّل الانقطاع وسببه في سجل الصيانة والتقرير الشهري، ليبقى سجل البيانات شفافاً عند التدقيق." },
+      { "q": "هل تنتقل الخدمة مع مشروعنا؟", "a": "نعم. ففي مشاريع الإنشاء والتعدين تتحرك جبهة العمل وتتغير احتياجات الرصد، ويمكن نقل المحطات أو إضافتها أو إزالتها ضمن الاتفاقية نفسها، وتحتفظ لوحة البيانات بسجل متصل لجميع المواقع." }
+    ]
+  }
+}

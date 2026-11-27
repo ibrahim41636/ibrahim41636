@@ -1,0 +1,11 @@
+---
+// The eight stages of a request (STAGES in src/lib/tracking.ts): a row on wide screens, a vertical
+// list on phones. The page's script marks progress with is-done and is-current from the API's stage index.
+import { STAGES } from "@/lib/tracking";
+import type { Lang } from "@/i18n/ui";
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<ol class="stage-steps" data-stage-steps aria-label={lang === "ar" ? "مراحل الطلب" : "Request stages"}>
+  {STAGES.map((s, i) => <li data-i={i}><span class="stage-dot" aria-hidden="true">{i + 1}</span><span class="stage-name">{s[lang]}</span></li>)}
+</ol>

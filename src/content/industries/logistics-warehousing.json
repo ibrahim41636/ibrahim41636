@@ -10,7 +10,10 @@
     "noise-monitoring",
     "sustainable-buildings",
     "solar-energy-systems",
-    "ev-charging-stations"
+    "ev-charging-stations",
+    "contaminated-site-assessment",
+    "indoor-air-quality",
+    "climate-risk"
   ],
   "en": {
     "name": "Logistics & Warehousing",

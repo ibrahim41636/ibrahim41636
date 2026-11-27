@@ -9,7 +9,8 @@
   "services": [
     "noise-monitoring",
     "air-quality-monitoring",
-    "environmental-management-plans"
+    "environmental-management-plans",
+    "monitoring-as-a-service"
   ],
   "industries": [
     "construction",

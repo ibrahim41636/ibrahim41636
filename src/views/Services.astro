@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero.astro";
 import ServiceCard from "@/components/ServiceCard.astro";
 import CtaBand from "@/components/CtaBand.astro";
 import Icon from "@/components/Icon.astro";
+import Differentiators from "@/components/Differentiators.astro";
 import { href, t, type Lang } from "@/i18n/ui";
 import { categories } from "@/data/taxonomy";
 import { getServices } from "@/lib/content";
@@ -17,7 +18,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
 ---
 <Base lang={lang} path="/services/" breadcrumbs={crumbs}
   title={ar ? "الخدمات البيئية في السعودية: التصاريح والدراسات والرصد" : "Environmental Services in Saudi Arabia | Selorin"}
-  description={ar ? "خدمات سيلورين البيئية: التصاريح والامتثال، وتقييم الأثر البيئي، والرصد البيئي، وإدارة النفايات، والاستدامة والحوكمة البيئية، والمباني المستدامة، والطاقة المتجددة." : "Selorin's environmental services in Saudi Arabia: permitting, compliance, EIA, monitoring, waste, ESG, sustainable buildings and renewable energy."}
+  description={ar ? "خدمات سيلورين البيئية: التصاريح والامتثال، وتقييم الأثر البيئي، والرصد والقياس، والبيئة البحرية، والمواقع الملوثة، والنفايات، والاستدامة والمناخ، والطاقة المتجددة." : "Selorin's environmental services in Saudi Arabia: permitting, EIA, monitoring, marine and coastal studies, contaminated land, waste, ESG, climate and renewable energy."}
   schema={[collectionSchema(lang, "/services/", t(lang, "nav.services"), services.map((s) => ({ name: s.data[lang].name, path: `/services/${s.id}/` })))]}
   analytics={{ page_type: "services_hub" }}>
   <PageHero lang={lang} crumbs={crumbs} photo={pageImage("services")} eyebrow={t(lang, "nav.services")}
@@ -45,6 +46,7 @@ const crumbs = [{ name: t(lang, "nav.home"), path: "/" }, { name: t(lang, "nav.s
       </div>
     </section>
   ))}
+  <Differentiators lang={lang} />
   <CtaBand title={t(lang, "nav.notSure")} body={t(lang, "nav.notSureBody")} label={t(lang, "cta.consultation")} to={href(lang, "/request/")} cta="services_final_cta"
     secondary={{ label: t(lang, "nav.findSupport"), to: href(lang, "/#lifecycle") }} />
 </Base>

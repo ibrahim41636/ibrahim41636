@@ -11,7 +11,12 @@
     "noise-monitoring",
     "solar-energy-systems",
     "ev-charging-stations",
-    "battery-energy-storage"
+    "battery-energy-storage",
+    "contaminated-site-assessment",
+    "environmental-remediation",
+    "climate-risk",
+    "coastal-habitat-restoration",
+    "indoor-air-quality"
   ],
   "en": {
     "name": "Real Estate Development",

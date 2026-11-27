@@ -9,7 +9,9 @@
     "water-quality-monitoring",
     "air-quality-monitoring",
     "sustainable-buildings",
-    "ghg-carbon-accounting"
+    "ghg-carbon-accounting",
+    "indoor-air-quality",
+    "stack-emission-monitoring"
   ],
   "en": {
     "name": "Healthcare Facilities",

@@ -9,7 +9,11 @@
     "noise-monitoring",
     "water-quality-monitoring",
     "green-building-advisory",
-    "ghg-carbon-accounting"
+    "ghg-carbon-accounting",
+    "marine-monitoring",
+    "climate-risk",
+    "biodiversity-nature",
+    "monitoring-as-a-service"
   ],
   "en": {
     "name": "Infrastructure",

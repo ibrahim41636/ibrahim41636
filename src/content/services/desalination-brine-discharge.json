@@ -1,0 +1,125 @@
+{
+  "category": "marine-coastal",
+  "order": 2,
+  "formFamily": "studies",
+  "industries": ["energy", "infrastructure", "industrial-manufacturing", "oil-gas", "government-public-sector", "hospitality", "real-estate"],
+  "related": ["marine-monitoring", "environmental-impact-assessment", "environmental-permitting", "water-quality-monitoring"],
+  "en": {
+    "name": "Desalination Brine & Outfall Studies",
+    "seoTitle": "Desalination Brine Discharge Studies in Saudi Arabia | Selorin",
+    "metaDescription": "Brine and outfall studies for desalination, power and industrial plants in Saudi Arabia: dispersion modelling, outfall siting, mixing zones and monitoring.",
+    "valueProp": "We study how brine and cooling water discharges disperse at sea, so outfalls are sited, designed and monitored to protect marine habitats.",
+    "cardDescription": "Outfall siting and dispersion modelling for brine, cooling water and treated effluent, mixing zone assessment, and monitoring programmes around intakes and outfalls.",
+    "keyBenefit": "Outfalls designed and monitored to keep plumes within limits",
+    "definition": "A brine and outfall study assesses how saline, warm or treated discharges from desalination plants, power stations and industrial facilities mix and disperse in the sea. It combines site data on currents, depth and water quality with near-field and far-field dispersion modelling to site and design the outfall, define the mixing zone and plan monitoring that shows the plume stays within approval conditions.",
+    "overview": [
+      "Saudi Arabia relies heavily on seawater desalination, and its coasts also host power plants, refineries and industrial cities that draw seawater for cooling and return it warmer or more saline. Brine is denser than seawater and tends to sink and spread along the seabed, while warm cooling water rises and spreads at the surface. Near coral reefs, seagrass beds or fishing grounds, a poorly sited or poorly designed outfall can affect habitats over a wide area and attract regulatory attention.",
+      "The behaviour of a discharge depends on its density and flow and on the receiving environment: depth, currents, tides, stratification and seasonal temperature. These factors decide whether a diffuser is needed, how far the outfall must extend and where the edge of the mixing zone lies. Studies done early avoid redesign later, and studies of existing outfalls show whether an expansion or a change in operation remains acceptable.",
+      "We support developers, operators and their engineering contractors from site selection to operation. We collect or review oceanographic and water quality data, model near-field mixing and the far-field plume, test design options such as diffuser layout and discharge depth, and turn the results into permit-ready reports and a monitoring programme that verifies the predictions once the plant is running."
+    ],
+    "whenYouNeed": [
+      "You are planning a new coastal desalination plant or expanding an existing one.",
+      "Your power or industrial plant discharges cooling water or treated effluent to the sea.",
+      "The environmental impact assessment needs outfall dispersion modelling and a defined mixing zone.",
+      "Engineers need to compare outfall locations, lengths or diffuser designs.",
+      "Your permit requires monitoring of salinity, temperature or water quality around the outfall.",
+      "Plant capacity, chemicals or operating modes are changing and the effect on the plume must be checked."
+    ],
+    "deliver": [
+      { "title": "Site and data review", "description": "Review of bathymetry, currents, tides, water quality and sensitive habitats near candidate outfall locations, identifying gaps that need field measurement." },
+      { "title": "Oceanographic measurements", "description": "Current meter deployments and conductivity, temperature and depth profiling to describe the receiving water across seasons where existing data is insufficient." },
+      { "title": "Near-field mixing modelling", "description": "Modelling of how the discharge jet dilutes close to the outfall for different diffuser designs, depths and flows, to size the mixing zone." },
+      { "title": "Far-field plume modelling", "description": "Modelling of plume spread under tides, winds and seasons to show where salinity, temperature or other parameters exceed background and which habitats are reached." },
+      { "title": "Outfall option assessment", "description": "Comparison of outfall locations, lengths and diffuser layouts on environmental performance, giving engineers clear input for design decisions." },
+      { "title": "Discharge monitoring programme", "description": "Monitoring plan for salinity, temperature, dissolved oxygen and other parameters around the outfall, with stations, frequency and reporting to verify predictions." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We agree the discharge characteristics, design options, approval requirements and sensitive receptors with your project and engineering teams." },
+      { "title": "Data collection", "description": "Existing data is reviewed and field measurements are planned to fill gaps in currents, profiles and water quality." },
+      { "title": "Modelling", "description": "Near-field and far-field models are set up, checked against measured conditions and run for design and seasonal scenarios." },
+      { "title": "Design support", "description": "Results are discussed with engineers to refine outfall location, length and diffuser layout before the design is fixed." },
+      { "title": "Reporting", "description": "Findings are written up for the environmental impact assessment and permit application, with maps and plain explanations." },
+      { "title": "Verification", "description": "Once the plant operates, monitoring checks the predicted plume, and results feed back into operation and future expansions." }
+    ],
+    "deliverables": [
+      { "item": "Data gap assessment", "format": "Technical note with data review and field measurement plan (PDF)", "timing": "Start of study" },
+      { "item": "Oceanographic survey report", "format": "Report with current, profile and water quality data (PDF + data files)", "timing": "After field measurements" },
+      { "item": "Dispersion modelling report", "format": "Model set-up, scenarios, plume maps and mixing zone (PDF)", "timing": "Design stage" },
+      { "item": "Outfall options comparison", "format": "Comparison matrix and recommendation for engineers (PDF)", "timing": "Before design freeze" },
+      { "item": "Monitoring programme", "format": "Plan with stations, parameters, frequency and reporting format (PDF)", "timing": "Before operation" },
+      { "item": "Monitoring reports", "format": "Periodic reports comparing results with predictions and limits (PDF + data)", "timing": "During operation" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which regulate discharges to the marine environment and require environmental impact assessment for significant projects.",
+      "National Center for Environmental Compliance (NCEC), which reviews environmental impact assessments and issues the construction and operation permits that set discharge and monitoring conditions.",
+      "Ministry of Environment, Water and Agriculture (MEWA), which sets water sector policy, including desalination.",
+      "Royal Commission for Jubail and Yanbu (RCJY) environmental requirements for plants located in Jubail and Yanbu."
+    ],
+    "faqs": [
+      { "q": "Why does brine need dispersion modelling?", "a": "Brine is denser than seawater, so it tends to sink and spread along the seabed rather than mix at the surface. Without good initial dilution it can raise salinity over seabed habitats some distance from the outfall. Modelling shows how far elevated salinity extends for each design and season, so the outfall can be designed to achieve the dilution needed before the plume reaches sensitive areas." },
+      { "q": "What is a mixing zone?", "a": "A mixing zone is the area around an outfall where the discharge is allowed to mix with the receiving water before it must meet ambient conditions or agreed limits. Its size and location are defined in the study and accepted through the approval process. Monitoring at and beyond its edge then shows whether the discharge performs as predicted." },
+      { "q": "Do you also cover cooling water and industrial effluent?", "a": "Yes. The same approach applies to warm cooling water from power and industrial plants and to treated effluent discharged to the sea. Each behaves differently: warm water rises and spreads at the surface, while brine sinks. We model the specific discharge, including combined outfalls where brine and cooling water are released together." },
+      { "q": "When should the study start?", "a": "During site selection or concept design, before the outfall route and diffuser are fixed. At that stage modelling can still influence location, length and depth, which costs far less than changing a built outfall. For existing plants, a study is useful before an expansion, a change in operating mode or a permit renewal." },
+      { "q": "Can you help after the plant is operating?", "a": "Yes. We design and run discharge monitoring around intakes and outfalls, compare results with model predictions and permit conditions, and investigate unexpected readings. Where results show the plume behaves differently from the predictions, we can update the model and advise on operational adjustments." }
+    ]
+  },
+  "ar": {
+    "name": "دراسات تصريف المحلول الملحي والمصبات البحرية",
+    "seoTitle": "دراسات تصريف المحلول الملحي لمحطات التحلية | سيلورين",
+    "metaDescription": "دراسات المصبات وتصريف المحلول الملحي لمحطات التحلية والتوليد والصناعة في المملكة: نمذجة الانتشار، واختيار موقع المصب، ومنطقة الخلط، وبرامج الرصد.",
+    "valueProp": "ندرس كيف ينتشر المحلول الملحي ومياه التبريد في البحر، ليُختار موقع المصب ويُصمَّم ويُرصد بما يحمي الموائل البحرية.",
+    "cardDescription": "اختيار مواقع المصبات ونمذجة انتشار المحلول الملحي ومياه التبريد والمياه المعالجة، وتقييم منطقة الخلط، وبرامج الرصد حول المآخذ والمصبات.",
+    "keyBenefit": "مصبات مصممة ومرصودة لتبقى أعمدة التصريف ضمن الحدود",
+    "definition": "دراسة تصريف المحلول الملحي والمصبات البحرية تقيّم كيف تختلط التصريفات المالحة أو الدافئة أو المعالجة من محطات التحلية والتوليد والمنشآت الصناعية بمياه البحر وتنتشر فيها. وتجمع بين بيانات الموقع عن التيارات والأعماق وجودة المياه ونمذجة الانتشار في المنطقتين القريبة والبعيدة، لاختيار موقع المصب وتصميمه وتحديد منطقة الخلط وتخطيط رصد يثبت بقاء عمود التصريف ضمن اشتراطات الموافقة.",
+    "overview": [
+      "تعتمد المملكة اعتماداً كبيراً على تحلية مياه البحر، وتضم سواحلها أيضاً محطات توليد ومصافي ومدناً صناعية تسحب مياه البحر للتبريد ثم تعيدها أكثر دفئاً أو ملوحة. والمحلول الملحي أثقل من مياه البحر فيميل إلى الهبوط والانتشار على القاع، بينما ترتفع مياه التبريد الدافئة وتنتشر على السطح. وقرب الشعاب المرجانية ومروج الأعشاب البحرية ومناطق الصيد، قد يؤثر مصب سيئ الموقع أو التصميم في موائل واسعة ويستدعي اهتمام الجهات الرقابية.",
+      "يتحدد سلوك التصريف بكثافته وتدفقه وبخصائص المياه المستقبِلة: العمق والتيارات والمد والجزر والتطبق الحراري والحرارة الموسمية. وهذه العوامل تقرر هل يلزم ناشر للتصريف، وإلى أي مدى يجب أن يمتد المصب، وأين تقع حافة منطقة الخلط. والدراسة المبكرة تجنّب إعادة التصميم لاحقاً، ودراسة المصبات القائمة تبين هل يبقى التوسع أو تغيير التشغيل مقبولاً.",
+      "ندعم المطورين والمشغلين ومقاولي التصميم من اختيار الموقع حتى التشغيل. نجمع البيانات الأوقيانوغرافية وبيانات جودة المياه أو نراجعها، وننمذج الخلط القريب وعمود التصريف البعيد، ونختبر بدائل التصميم كتوزيع فتحات الناشر وعمق التصريف، ثم نحوّل النتائج إلى تقارير جاهزة للتصاريح وبرنامج رصد يتحقق من التنبؤات بعد تشغيل المحطة."
+    ],
+    "whenYouNeed": [
+      "تخطط لإنشاء محطة تحلية ساحلية جديدة أو توسعة محطة قائمة.",
+      "تصرّف محطة التوليد أو المنشأة الصناعية مياه تبريد أو مياهاً معالجة إلى البحر.",
+      "تحتاج دراسة تقييم الأثر البيئي إلى نمذجة انتشار التصريف وتحديد منطقة الخلط.",
+      "يحتاج المهندسون إلى المقارنة بين مواقع المصب أو أطواله أو تصاميم الناشر.",
+      "يشترط تصريحك رصد الملوحة أو الحرارة أو جودة المياه حول المصب.",
+      "تتغير طاقة المحطة أو كيماوياتها أو أنماط تشغيلها ويلزم التحقق من أثر ذلك على عمود التصريف."
+    ],
+    "deliver": [
+      { "title": "مراجعة الموقع والبيانات", "description": "مراجعة الأعماق والتيارات والمد والجزر وجودة المياه والموائل الحساسة قرب المواقع المرشحة للمصب، وتحديد الفجوات التي تحتاج إلى قياس ميداني." },
+      { "title": "القياسات الأوقيانوغرافية", "description": "تركيب أجهزة قياس التيارات وقياس الموصلية والحرارة والعمق لوصف المياه المستقبِلة عبر المواسم حين لا تكفي البيانات المتاحة." },
+      { "title": "نمذجة الخلط القريب", "description": "نمذجة تخفيف نفثة التصريف قرب المصب لتصاميم وأعماق وتدفقات مختلفة للناشر، بهدف تحديد حجم منطقة الخلط." },
+      { "title": "نمذجة عمود التصريف البعيد", "description": "نمذجة انتشار عمود التصريف تحت تأثير المد والرياح والمواسم، لتوضيح أين ترتفع الملوحة أو الحرارة أو غيرها عن الخلفية وأي الموائل يصلها." },
+      { "title": "تقييم بدائل المصب", "description": "مقارنة مواقع المصب وأطواله وتوزيعات الناشر من حيث الأداء البيئي، بما يقدم للمهندسين مدخلات واضحة لقرارات التصميم." },
+      { "title": "برنامج رصد التصريف", "description": "خطة لرصد الملوحة والحرارة والأكسجين المذاب وغيرها حول المصب، بالمحطات والتكرار وصيغة التقارير، للتحقق من صحة التنبؤات." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نتفق مع فرق المشروع والتصميم على خصائص التصريف وبدائل التصميم ومتطلبات الموافقة والمستقبلات الحساسة." },
+      { "title": "جمع البيانات", "description": "نراجع البيانات المتاحة ونخطط القياسات الميدانية لسد فجوات التيارات والمقاطع الرأسية وجودة المياه." },
+      { "title": "النمذجة", "description": "نُعدّ نماذج الخلط القريب والانتشار البعيد، ونتحقق منها مقابل الظروف المقاسة، ونشغّلها لسيناريوهات التصميم والمواسم." },
+      { "title": "دعم التصميم", "description": "نناقش النتائج مع المهندسين لتحسين موقع المصب وطوله وتوزيع الناشر قبل تثبيت التصميم." },
+      { "title": "التقارير", "description": "نكتب النتائج لدراسة تقييم الأثر البيئي وطلب التصريح، بالخرائط وشرح واضح." },
+      { "title": "التحقق", "description": "بعد التشغيل يتحقق الرصد من عمود التصريف المتوقع، وتعود النتائج لتحسين التشغيل والتوسعات المستقبلية." }
+    ],
+    "deliverables": [
+      { "item": "تقييم فجوات البيانات", "format": "مذكرة فنية بمراجعة البيانات وخطة القياس الميداني (PDF)", "timing": "بداية الدراسة" },
+      { "item": "تقرير المسح الأوقيانوغرافي", "format": "تقرير ببيانات التيارات والمقاطع الرأسية وجودة المياه (PDF + ملفات بيانات)", "timing": "بعد القياسات الميدانية" },
+      { "item": "تقرير نمذجة الانتشار", "format": "إعداد النموذج والسيناريوهات وخرائط عمود التصريف ومنطقة الخلط (PDF)", "timing": "مرحلة التصميم" },
+      { "item": "مقارنة بدائل المصب", "format": "مصفوفة مقارنة وتوصية للمهندسين (PDF)", "timing": "قبل تثبيت التصميم" },
+      { "item": "برنامج الرصد", "format": "خطة بالمحطات والمعايير والتكرار وصيغة التقارير (PDF)", "timing": "قبل التشغيل" },
+      { "item": "تقارير الرصد", "format": "تقارير دورية تقارن النتائج بالتنبؤات والحدود (PDF + بيانات)", "timing": "أثناء التشغيل" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تنظم التصريف إلى البيئة البحرية وتشترط تقييم الأثر البيئي للمشاريع ذات الأثر الكبير.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يراجع دراسات تقييم الأثر البيئي ويصدر تصاريح الإنشاء والتشغيل التي تحدد اشتراطات التصريف والرصد.",
+      "وزارة البيئة والمياه والزراعة، التي تضع سياسات قطاع المياه بما فيها تحلية المياه.",
+      "الاشتراطات البيئية للهيئة الملكية للجبيل وينبع للمحطات الواقعة في الجبيل وينبع."
+    ],
+    "faqs": [
+      { "q": "لماذا يحتاج المحلول الملحي إلى نمذجة انتشار؟", "a": "لأن المحلول الملحي أثقل من مياه البحر، فيميل إلى الهبوط والانتشار على القاع بدلاً من الاختلاط عند السطح. ودون تخفيف أولي جيد قد يرفع الملوحة فوق موائل القاع على مسافة من المصب. وتبين النمذجة مدى امتداد الملوحة المرتفعة لكل تصميم وموسم، ليُصمَّم المصب بما يحقق التخفيف اللازم قبل وصول عمود التصريف إلى المناطق الحساسة." },
+      { "q": "ما منطقة الخلط؟", "a": "منطقة الخلط هي المساحة المحيطة بالمصب التي يُسمح فيها للتصريف بالاختلاط بالمياه المستقبِلة قبل أن يلزمه الوفاء بالظروف المحيطة أو الحدود المتفق عليها. ويُحدَّد حجمها وموقعها في الدراسة ويُعتمدان عبر إجراءات الموافقة، ثم يبين الرصد عند حافتها وما بعدها هل يعمل التصريف كما تنبأت الدراسة." },
+      { "q": "هل تشمل الدراسة مياه التبريد والتصريفات الصناعية؟", "a": "نعم. ينطبق النهج نفسه على مياه التبريد الدافئة من محطات التوليد والمنشآت الصناعية وعلى المياه المعالجة المصرّفة إلى البحر. ولكل منها سلوك مختلف، فالمياه الدافئة ترتفع وتنتشر على السطح والمحلول الملحي يهبط. وننمذج التصريف المحدد، بما في ذلك المصبات المشتركة التي يُصرَّف فيها المحلول الملحي ومياه التبريد معاً." },
+      { "q": "متى يجب أن تبدأ الدراسة؟", "a": "أثناء اختيار الموقع أو التصميم المبدئي، قبل تثبيت مسار المصب والناشر. ففي هذه المرحلة ما زالت النمذجة قادرة على التأثير في الموقع والطول والعمق، وهذا أقل تكلفة بكثير من تعديل مصب منفّذ. وللمحطات القائمة تفيد الدراسة قبل التوسعة أو تغيير نمط التشغيل أو تجديد التصريح." },
+      { "q": "هل تساعدوننا بعد تشغيل المحطة؟", "a": "نعم. نصمم وننفذ رصد التصريف حول المآخذ والمصبات، ونقارن النتائج بتنبؤات النموذج واشتراطات التصريح، ونتحرى أي قراءات غير متوقعة. وحين تُظهر النتائج سلوكاً مختلفاً عن التنبؤات يمكننا تحديث النموذج وتقديم توصيات لتعديل التشغيل." }
+    ]
+  }
+}

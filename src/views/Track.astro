@@ -1,8 +1,10 @@
 ---
 // Request tracking for clients: enter the Request ID and the e-mail used on the form to see the
-// current status and the timeline. Data comes from GET /api/track (functions/api/track.ts).
+// current stage and the timeline, and get the private portal link e-mailed again.
+// Data: GET /api/track (functions/api/track.ts), POST /api/portal/resend (functions/api/portal.ts).
 import Base from "@/layouts/Base.astro";
 import Icon from "@/components/Icon.astro";
+import StageSteps from "@/components/StageSteps.astro";
 import { href, site, type Lang } from "@/i18n/ui";
 import { STATUSES, STATUS_LABELS } from "@/lib/tracking";
 interface Props { lang: Lang }
@@ -25,6 +27,10 @@ const T = {
   history: ar ? "سجل الطلب" : "Timeline",
   help: ar ? "لديك سؤال عن طلبك؟" : "Questions about your request?",
   newReq: ar ? "طلب خدمة جديدة" : "Request a new service",
+  portal: ar ? "بوابة طلبك" : "Your request portal",
+  portalText: ar ? "تجد العرض والعقد والدفعات ومراحل التنفيذ في بوابة طلبك. الرابط خاص بك ويصلك بالبريد." : "Your proposal, contract, payments and work stages are in your request portal. The link is private and sent to your e-mail.",
+  resend: ar ? "أرسل لي رابط البوابة" : "E-mail me the portal link",
+  resent: ar ? "أرسلنا رابط البوابة إلى بريدك إن لم يُرسل خلال الساعة الماضية. تحقق من صندوق الوارد والرسائل غير المرغوبة." : "We e-mailed you the portal link, unless one was already sent in the past hour. Check your inbox and spam folder.",
 };
 const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]]));
 ---
@@ -56,6 +62,13 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
           <div><dt>{T.submitted}</dt><dd data-r-date></dd></div>
           <div><dt>{T.status}</dt><dd><span class="status-pill" data-r-status></span></dd></div>
         </dl>
+        <StageSteps lang={lang} />
+        <div class="track-portal" data-r-portal hidden>
+          <h2 style="font-size:var(--fs-18);margin:0">{T.portal}</h2>
+          <p>{T.portalText}</p>
+          <p><button class="btn btn--ghost btn--sm" type="button" data-resend>{T.resend}</button></p>
+          <p class="track-ok" data-resent role="status" hidden>{T.resent}</p>
+        </div>
         <h2 style="font-size:var(--fs-h4);margin:var(--space-5) 0 0">{T.history}</h2>
         <ol class="timeline" data-r-history></ol>
       </div>
@@ -71,6 +84,10 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
   <style is:global>
     .track-alert { margin-top: var(--space-5); padding: 12px 16px; border-radius: var(--radius-sm); background: #fdecea; color: #8a1c12; }
     .track-result { margin-top: var(--space-6); }
+    .track-portal { margin-top: var(--space-5); padding: 14px 16px; border-radius: var(--radius-sm); background: var(--c-paper-2); display: grid; gap: 8px; }
+    .track-portal[hidden], .track-ok[hidden] { display: none; }
+    .track-portal p { margin: 0; color: var(--c-ink-2); }
+    .track-ok { color: var(--c-forest) !important; font-size: var(--fs-14); }
     .track-meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); margin: 0; }
     .track-meta dt { font-size: var(--fs-12); color: var(--c-muted); }
     .track-meta dd { margin: 4px 0 0; font-weight: 600; }
@@ -118,6 +135,11 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
         document.querySelector("[data-r-service]").textContent = r.service || "";
         document.querySelector("[data-r-date]").textContent = fmt(r.submittedAt);
         document.querySelector("[data-r-status]").textContent = labels[r.status] || r.status;
+        const done = r.status === "completed";
+        document.querySelectorAll("[data-stage-steps] li").forEach((li, i) => { li.classList.toggle("is-done", i < r.stage || (done && i === r.stage)); li.classList.toggle("is-current", i === r.stage && !done); });
+        document.querySelector("[data-r-portal]").hidden = !r.portal;
+        document.querySelector("[data-resent]").hidden = true;
+        last = { id, email };
         const list = document.querySelector("[data-r-history]");
         list.replaceChildren(...[...r.history].reverse().map((ev) => {
           const li = document.createElement("li");
@@ -131,6 +153,18 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
         window.dataLayer && window.dataLayer.push({ event: "track_request", request_status: r.status });
       } catch { show(T.error); }
       finally { btn.disabled = false; btn.innerHTML = label; }
+    });
+    // The portal link is only ever sent to the e-mail on the request, at most once an hour.
+    let last = null;
+    document.querySelector("[data-resend]").addEventListener("click", async (e) => {
+      if (!last) return;
+      const b = e.currentTarget; b.disabled = true;
+      try {
+        await fetch("/api/portal/resend", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(last) });
+        document.querySelector("[data-resent]").hidden = false;
+        window.dataLayer && window.dataLayer.push({ event: "portal_link_resent" });
+      } catch { show(T.error); }
+      finally { setTimeout(() => (b.disabled = false), 5000); }
     });
     if (form.rid.value && form.email.value) form.requestSubmit();
   </script>

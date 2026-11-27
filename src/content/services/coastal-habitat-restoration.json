@@ -1,0 +1,127 @@
+{
+  "category": "marine-coastal",
+  "order": 3,
+  "formFamily": "sustainability",
+  "industries": ["real-estate", "hospitality", "energy", "oil-gas", "industrial-manufacturing", "infrastructure", "government-public-sector"],
+  "related": ["marine-monitoring", "biodiversity-nature", "net-zero-advisory", "esg-advisory"],
+  "en": {
+    "name": "Mangrove, Seagrass & Blue Carbon Programmes",
+    "seoTitle": "Mangrove Planting & Blue Carbon Programmes in Saudi Arabia | Selorin",
+    "metaDescription": "Mangrove and seagrass restoration programmes in Saudi Arabia: site suitability, nursery and planting plans, survival monitoring and blue carbon assessment.",
+    "valueProp": "We plan and monitor mangrove and seagrass restoration that survives and can be measured, turning coastal commitments into documented ecological and carbon outcomes.",
+    "cardDescription": "Site suitability studies, mangrove and seagrass planting plans, survival and growth monitoring, and blue carbon assessment for developers, industry and coastal authorities.",
+    "keyBenefit": "Coastal restoration you can measure and report",
+    "definition": "Coastal habitat restoration is the planned re-establishment of mangroves, seagrass meadows and other coastal habitats where they have been lost or degraded. A sound programme starts with site suitability, covering elevation, tidal flooding, salinity and sediment, then sets out nursery, planting and protection methods and monitors survival, growth and ecological recovery. Blue carbon assessment estimates the carbon these habitats store, using recognised methods.",
+    "overview": [
+      "Mangroves and seagrass meadows along the Red Sea and the Arabian Gulf shelter fish nurseries, stabilise shorelines and store carbon in their sediments. Many coastal developers, industrial companies and public bodies now include mangrove planting or habitat restoration in their sustainability plans, their environmental commitments or the Saudi Green Initiative's ecosystem goals. Planting alone is not enough: survival depends on choosing the right sites and methods, and stakeholders increasingly ask for evidence of results.",
+      "Mangroves survive only within a narrow range of elevation, tidal flooding and salinity, and seagrass needs clear water and stable sediment. Planting in the wrong place or season can fail even when the number of seedlings looks impressive. A programme that begins with site suitability, uses local seedlings, protects young plants and monitors outcomes produces restoration that can be reported with confidence and defended under scrutiny.",
+      "We help organisations design and verify coastal restoration: selecting and testing sites, planning nursery supply and planting, setting up permanent monitoring plots, and reporting survival, growth and habitat recovery. Where carbon outcomes matter, we estimate blue carbon stocks and changes with recognised methods and explain clearly what can and cannot be claimed, so restoration supports ESG reporting without overstating results."
+    ],
+    "whenYouNeed": [
+      "Your sustainability strategy or environmental approval includes mangrove planting or coastal restoration.",
+      "A coastal development must compensate for habitat loss or enhance its shoreline ecology.",
+      "You need to choose suitable planting sites before ordering seedlings.",
+      "Previous planting had low survival and you need to understand why.",
+      "Investors or management ask for measured results of restoration commitments.",
+      "You want to estimate the blue carbon stored or gained by coastal habitats."
+    ],
+    "deliver": [
+      { "title": "Site suitability assessment", "description": "Survey of elevation, tidal flooding, salinity, sediment and existing vegetation to identify where mangroves or seagrass can survive and where they will not." },
+      { "title": "Restoration plan", "description": "Plan covering species, seedling sources, nursery needs, planting density and timing, protection measures and responsibilities, aligned with permits and site constraints." },
+      { "title": "Planting supervision", "description": "Field supervision of planting by contractors or volunteers, checking that methods, spacing and locations follow the plan, with records for reporting." },
+      { "title": "Survival and growth monitoring", "description": "Permanent plots and photo points measured at agreed intervals for survival, height and cover, with causes of loss recorded and corrective actions recommended." },
+      { "title": "Ecological recovery indicators", "description": "Monitoring of habitat indicators such as sediment, juvenile fish, invertebrates and seagrass cover to show recovery beyond tree counts." },
+      { "title": "Blue carbon assessment", "description": "Estimates of carbon stocks in biomass and sediments and their change over time, using recognised methods, with transparent assumptions and uncertainty." }
+    ],
+    "approach": [
+      { "title": "Objectives", "description": "We agree what the programme must achieve: area restored, ecological outcomes, community involvement, reporting needs and any carbon goals." },
+      { "title": "Site selection", "description": "Candidate sites are surveyed and screened, and small trial plantings can test survival before scaling up." },
+      { "title": "Planning", "description": "Species, sources, methods, timing and protection are set in a restoration plan with clear roles for each party." },
+      { "title": "Implementation", "description": "We supervise planting and early care, recording locations and quantities for traceability." },
+      { "title": "Monitoring", "description": "Permanent plots are measured over time, and losses are investigated and corrected through replanting or site changes." },
+      { "title": "Reporting", "description": "Results are reported for management, sustainability disclosures and stakeholders, including carbon estimates where relevant." }
+    ],
+    "deliverables": [
+      { "item": "Site suitability report", "format": "Report with survey data, maps and suitability classes (PDF)", "timing": "Before planting" },
+      { "item": "Restoration plan", "format": "Plan with species, quantities, methods, schedule and roles (PDF)", "timing": "Before planting" },
+      { "item": "Planting records", "format": "Geo-referenced planting log and photos (Excel + map files)", "timing": "During planting" },
+      { "item": "Monitoring reports", "format": "Survival, growth and habitat indicator results with trends (PDF)", "timing": "At agreed intervals" },
+      { "item": "Blue carbon estimate", "format": "Technical note with methods, stocks, change and uncertainty (PDF)", "timing": "When carbon reporting is required" },
+      { "item": "Stakeholder summary", "format": "Short bilingual summary for management and communication (PDF)", "timing": "Each reporting cycle" }
+    ],
+    "regulatoryContext": [
+      "Saudi Green Initiative (SGI), whose goals include protecting and restoring natural ecosystems, including coastal habitats.",
+      "National Center for Vegetation Cover Development and Combating Desertification (NCVC), which oversees vegetation cover development programmes, including planting initiatives.",
+      "National Center for Wildlife (NCW), for restoration within or near protected areas and the habitats of sensitive species.",
+      "Environmental Law (2020) and its Implementing Regulations, which apply to works in the coastal zone.",
+      "Recognised blue carbon methods, such as those used under voluntary carbon standards, where carbon outcomes are estimated or reported."
+    ],
+    "faqs": [
+      { "q": "Why do some mangrove plantings fail?", "a": "The most common reason is planting at the wrong elevation, where seedlings are flooded by the tide for too long or too little. Other causes include high salinity, unstable or contaminated sediment, grazing, wave exposure, poor seedling quality and planting in the wrong season. A suitability survey and small trials before large scale planting reduce these risks and make results more predictable." },
+      { "q": "Can restoration generate carbon credits?", "a": "Possibly, but it requires more than planting. Credits under voluntary carbon standards need suitable land rights, a baseline, an approved method, long term monitoring and independent verification. Many programmes are better reported as ecological and sustainability outcomes, with carbon estimated transparently rather than sold. We help you understand which route fits your objectives before you commit." },
+      { "q": "How long should monitoring continue?", "a": "Young mangroves are most vulnerable in their first years, so monitoring is usually frequent at the start and less frequent once survival stabilises. Ecological and carbon outcomes take longer to show. We agree a monitoring schedule that matches your reporting needs and the commitments in your approval or sustainability plan." },
+      { "q": "Do you restore seagrass as well as mangroves?", "a": "Yes, although seagrass restoration is more demanding and often starts with protecting existing meadows and improving water quality. We assess whether conditions such as water clarity and sediment stability allow restoration, test methods on small areas and monitor the results before recommending larger efforts." },
+      { "q": "Who carries out the planting?", "a": "Planting can be carried out by specialised contractors, your own teams or community volunteers. Our role is to plan the work, set methods and quality checks, supervise in the field and keep records, so whoever plants follows the same standard and results can be traced to locations and batches." }
+    ]
+  },
+  "ar": {
+    "name": "استزراع المانجروف والأعشاب البحرية والكربون الأزرق",
+    "seoTitle": "استزراع المانجروف والكربون الأزرق في السعودية | سيلورين",
+    "metaDescription": "برامج استزراع المانجروف واستعادة الأعشاب البحرية في المملكة: ملاءمة المواقع، وخطط المشاتل والزراعة، ورصد البقاء والنمو، وتقدير الكربون الأزرق.",
+    "valueProp": "نخطط استعادة المانجروف والأعشاب البحرية ونرصدها لتنجح ويمكن قياسها، فتتحول الالتزامات الساحلية إلى نتائج بيئية وكربونية موثقة.",
+    "cardDescription": "دراسات ملاءمة المواقع، وخطط زراعة المانجروف والأعشاب البحرية، ورصد البقاء والنمو، وتقدير الكربون الأزرق للمطورين والصناعة والجهات المعنية بالسواحل.",
+    "keyBenefit": "استعادة ساحلية يمكن قياسها والإفصاح عنها",
+    "definition": "استعادة الموائل الساحلية هي الإعادة المخططة لأشجار المانجروف ومروج الأعشاب البحرية وغيرها من الموائل الساحلية حيث فُقدت أو تدهورت. ويبدأ البرنامج السليم بدراسة ملاءمة الموقع من حيث المنسوب والغمر المدّي والملوحة والرواسب، ثم يحدد طرق المشاتل والزراعة والحماية، ويرصد البقاء والنمو والتعافي البيئي. ويقدّر تقييم الكربون الأزرق الكربون المخزّن في هذه الموائل بطرق معترف بها.",
+    "overview": [
+      "تؤوي أشجار المانجروف ومروج الأعشاب البحرية على سواحل البحر الأحمر والخليج العربي حضانات الأسماك، وتثبّت الشواطئ، وتخزّن الكربون في رواسبها. وأصبح كثير من المطورين الساحليين والشركات الصناعية والجهات الحكومية يدرجون زراعة المانجروف أو استعادة الموائل في خطط الاستدامة أو الالتزامات البيئية أو ضمن مستهدفات مبادرة السعودية الخضراء لاستعادة النظم البيئية. لكن الزراعة وحدها لا تكفي، فالبقاء يعتمد على اختيار المواقع والطرق الصحيحة، والجهات المعنية تطلب أدلة على النتائج بشكل متزايد.",
+      "لا تعيش أشجار المانجروف إلا ضمن نطاق ضيق من المنسوب والغمر المدّي والملوحة، وتحتاج الأعشاب البحرية إلى مياه صافية ورواسب مستقرة. لذلك قد تفشل الزراعة في المكان أو الموسم الخاطئ حتى لو بدا عدد الشتلات كبيراً. والبرنامج الذي يبدأ بملاءمة الموقع، ويستخدم شتلات محلية، ويحمي النباتات الصغيرة، ويرصد النتائج، يحقق استعادة يمكن الإفصاح عنها بثقة والدفاع عنها عند المراجعة.",
+      "نساعد الجهات على تصميم الاستعادة الساحلية والتحقق منها: اختيار المواقع واختبارها، وتخطيط توريد الشتلات والزراعة، وإنشاء قطع رصد دائمة، والإفصاح عن البقاء والنمو وتعافي الموائل. وحين تهمّ النتائج الكربونية نقدّر مخزون الكربون الأزرق وتغيره بطرق معترف بها، ونوضح بجلاء ما يمكن ادعاؤه وما لا يمكن، لتدعم الاستعادة تقارير الحوكمة البيئية والاجتماعية دون مبالغة."
+    ],
+    "whenYouNeed": [
+      "تتضمن استراتيجية الاستدامة أو الموافقة البيئية زراعة المانجروف أو استعادة السواحل.",
+      "يجب على مشروع ساحلي تعويض فقد الموائل أو تحسين البيئة الشاطئية.",
+      "تحتاج إلى اختيار مواقع زراعة مناسبة قبل طلب الشتلات.",
+      "كانت نسبة بقاء زراعة سابقة منخفضة وتحتاج إلى معرفة السبب.",
+      "تطلب الإدارة أو المستثمرون نتائج مقاسة لالتزامات الاستعادة.",
+      "تريد تقدير الكربون الأزرق المخزّن أو المكتسب في الموائل الساحلية."
+    ],
+    "deliver": [
+      { "title": "تقييم ملاءمة المواقع", "description": "مسح المنسوب والغمر المدّي والملوحة والرواسب والغطاء النباتي القائم لتحديد أين يمكن أن يعيش المانجروف أو الأعشاب البحرية وأين لا يمكن." },
+      { "title": "خطة الاستعادة", "description": "خطة تشمل الأنواع ومصادر الشتلات واحتياجات المشاتل وكثافة الزراعة وتوقيتها ووسائل الحماية والمسؤوليات، متوافقة مع التصاريح وقيود الموقع." },
+      { "title": "الإشراف على الزراعة", "description": "إشراف ميداني على الزراعة التي ينفذها مقاولون أو متطوعون، للتأكد من أن الطرق والمسافات والمواقع تتبع الخطة، مع سجلات للتقارير." },
+      { "title": "رصد البقاء والنمو", "description": "قطع رصد ونقاط تصوير دائمة تُقاس في فترات متفق عليها لنسب البقاء والارتفاع والغطاء، مع تسجيل أسباب الفقد والتوصية بالإجراءات التصحيحية." },
+      { "title": "مؤشرات التعافي البيئي", "description": "رصد مؤشرات الموائل كالرواسب وصغار الأسماك واللافقاريات وغطاء الأعشاب البحرية لإظهار التعافي بما يتجاوز عدّ الأشجار." },
+      { "title": "تقييم الكربون الأزرق", "description": "تقديرات لمخزون الكربون في الكتلة الحيوية والرواسب وتغيره مع الوقت بطرق معترف بها، مع افتراضات ونطاق عدم يقين واضحين." }
+    ],
+    "approach": [
+      { "title": "الأهداف", "description": "نتفق على ما يجب أن يحققه البرنامج: المساحة المستعادة، والنتائج البيئية، ومشاركة المجتمع، ومتطلبات الإفصاح، وأي أهداف كربونية." },
+      { "title": "اختيار المواقع", "description": "نمسح المواقع المرشحة ونفرزها، ويمكن لزراعات تجريبية صغيرة أن تختبر البقاء قبل التوسع." },
+      { "title": "التخطيط", "description": "نحدد الأنواع والمصادر والطرق والتوقيت والحماية في خطة استعادة بأدوار واضحة لكل طرف." },
+      { "title": "التنفيذ", "description": "نشرف على الزراعة والرعاية المبكرة، ونسجل المواقع والكميات لضمان التتبع." },
+      { "title": "الرصد", "description": "نقيس قطع الرصد الدائمة مع الوقت، ونتحرى أسباب الفقد ونعالجها بإعادة الزراعة أو تعديل المواقع." },
+      { "title": "التقارير", "description": "نعرض النتائج للإدارة وتقارير الاستدامة والجهات المعنية، بما في ذلك التقديرات الكربونية عند الحاجة." }
+    ],
+    "deliverables": [
+      { "item": "تقرير ملاءمة المواقع", "format": "تقرير ببيانات المسح والخرائط وفئات الملاءمة (PDF)", "timing": "قبل الزراعة" },
+      { "item": "خطة الاستعادة", "format": "خطة بالأنواع والكميات والطرق والجدول الزمني والأدوار (PDF)", "timing": "قبل الزراعة" },
+      { "item": "سجلات الزراعة", "format": "سجل زراعة بالإحداثيات والصور (Excel + ملفات خرائط)", "timing": "أثناء الزراعة" },
+      { "item": "تقارير الرصد", "format": "نتائج البقاء والنمو ومؤشرات الموائل واتجاهاتها (PDF)", "timing": "في الفترات المتفق عليها" },
+      { "item": "تقدير الكربون الأزرق", "format": "مذكرة فنية بالطرق والمخزون والتغير وعدم اليقين (PDF)", "timing": "عند الحاجة إلى الإفصاح الكربوني" },
+      { "item": "ملخص للجهات المعنية", "format": "ملخص قصير بالعربية والإنجليزية للإدارة والتواصل (PDF)", "timing": "كل دورة تقرير" }
+    ],
+    "regulatoryContext": [
+      "مبادرة السعودية الخضراء، التي تشمل مستهدفاتها حماية النظم البيئية الطبيعية واستعادتها، ومنها الموائل الساحلية.",
+      "المركز الوطني لتنمية الغطاء النباتي ومكافحة التصحر، الذي يشرف على برامج تنمية الغطاء النباتي ومنها مبادرات التشجير.",
+      "المركز الوطني لتنمية الحياة الفطرية، للاستعادة داخل المناطق المحمية أو قربها وفي موائل الأنواع الحساسة.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تنطبق على الأعمال في المنطقة الساحلية.",
+      "طرق الكربون الأزرق المعترف بها، كتلك المستخدمة في معايير الكربون الطوعية، عند تقدير النتائج الكربونية أو الإفصاح عنها."
+    ],
+    "faqs": [
+      { "q": "لماذا تفشل بعض زراعات المانجروف؟", "a": "السبب الأكثر شيوعاً هو الزراعة في منسوب غير مناسب، فتُغمر الشتلات بالمد مدة أطول أو أقصر مما تحتمل. ومن الأسباب الأخرى ارتفاع الملوحة، والرواسب غير المستقرة أو الملوثة، والرعي، والتعرض للأمواج، وضعف جودة الشتلات، والزراعة في موسم غير مناسب. ويقلل مسح الملاءمة والتجارب الصغيرة قبل الزراعة الواسعة من هذه المخاطر ويجعل النتائج أوضح." },
+      { "q": "هل يمكن أن تولّد الاستعادة أرصدة كربون؟", "a": "ربما، لكن ذلك يتطلب أكثر من الزراعة. فالأرصدة وفق معايير الكربون الطوعية تحتاج إلى حقوق مناسبة في الأرض، وخط أساس، ومنهجية معتمدة، ورصد طويل المدى، وتحقق مستقل. وكثير من البرامج يناسبها الإفصاح عن نتائجها البيئية ونتائج الاستدامة مع تقدير الكربون بشفافية بدلاً من بيعه. ونساعدك على معرفة المسار الأنسب لأهدافك قبل الالتزام." },
+      { "q": "إلى متى يستمر الرصد؟", "a": "تكون أشجار المانجروف الصغيرة في أضعف حالاتها خلال سنواتها الأولى، لذا يكون الرصد متكرراً في البداية ثم يقل بعد استقرار نسب البقاء، أما النتائج البيئية والكربونية فتحتاج وقتاً أطول لتظهر. ونتفق على جدول رصد يناسب متطلبات الإفصاح لديك والتزامات الموافقة أو خطة الاستدامة." },
+      { "q": "هل تستعيدون الأعشاب البحرية إلى جانب المانجروف؟", "a": "نعم، مع أن استعادة الأعشاب البحرية أصعب، وكثيراً ما تبدأ بحماية المروج القائمة وتحسين جودة المياه. ونقيّم هل تسمح ظروف مثل صفاء المياه واستقرار الرواسب بالاستعادة، ونختبر الطرق على مساحات صغيرة، ونرصد النتائج قبل التوصية بجهود أوسع." },
+      { "q": "من ينفذ الزراعة؟", "a": "يمكن أن ينفذها مقاولون متخصصون أو فرقكم أو متطوعون من المجتمع. ودورنا تخطيط العمل، وتحديد الطرق وفحوص الجودة، والإشراف الميداني، وحفظ السجلات، ليتبع كل من يزرع المعيار نفسه وتُربط النتائج بالمواقع والدفعات." }
+    ]
+  }
+}

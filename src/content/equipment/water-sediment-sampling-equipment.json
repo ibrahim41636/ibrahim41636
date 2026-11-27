@@ -9,7 +9,9 @@
   "services": [
     "environmental-monitoring",
     "environmental-impact-assessment",
-    "environmental-due-diligence"
+    "environmental-due-diligence",
+    "marine-monitoring",
+    "contaminated-site-assessment"
   ],
   "industries": [
     "oil-gas",

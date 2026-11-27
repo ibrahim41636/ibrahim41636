@@ -47,9 +47,22 @@ const CATEGORY: Record<string, Key> = {
   "sustainability-climate": "offshoreWind",
   "sustainable-buildings": "hq",
   "renewable-energy": "windFarm",
+  "marine-coastal": "offshoreWind",
+  "contaminated-land": "fieldTeam",
 };
 
 const SERVICE: Record<string, Key> = {
+  "marine-monitoring": "water",
+  "desalination-brine-discharge": "water",
+  "coastal-habitat-restoration": "river",
+  "contaminated-site-assessment": "fields",
+  "environmental-remediation": "fieldTeam",
+  "stack-emission-monitoring": "powerPlant",
+  "indoor-air-quality": "office",
+  "monitoring-as-a-service": "dustStationSite",
+  "climate-risk": "sky",
+  "biodiversity-nature": "windHills",
+  "solar-pv-recycling": "renewVillaSolar",
   "dust-monitoring": "openPitMine",
   "fuel-station-voc-monitoring": "station",
   "air-quality-monitoring": "monitoringStation",

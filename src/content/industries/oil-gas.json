@@ -9,7 +9,11 @@
     "water-quality-monitoring",
     "waste-management",
     "ghg-carbon-accounting",
-    "esg-advisory"
+    "esg-advisory",
+    "contaminated-site-assessment",
+    "environmental-remediation",
+    "stack-emission-monitoring",
+    "marine-monitoring"
   ],
   "en": {
     "name": "Oil & Gas",

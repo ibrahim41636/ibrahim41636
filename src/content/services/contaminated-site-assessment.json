@@ -1,0 +1,125 @@
+{
+  "category": "contaminated-land",
+  "order": 1,
+  "formFamily": "studies",
+  "industries": ["industrial-manufacturing", "oil-gas", "real-estate", "logistics-warehousing", "energy", "waste-recycling", "mining-quarrying", "construction", "government-public-sector"],
+  "related": ["environmental-remediation", "environmental-due-diligence", "water-quality-monitoring", "environmental-audits"],
+  "en": {
+    "name": "Contaminated Site Assessment (Phase I & II)",
+    "seoTitle": "Contaminated Site Assessment in Saudi Arabia | Selorin",
+    "metaDescription": "Phase I and Phase II environmental site assessments in Saudi Arabia: site history, soil and groundwater investigation, laboratory analysis and risk evaluation.",
+    "valueProp": "We find out whether soil and groundwater at a site are contaminated, how far it extends and what it means for your plans.",
+    "cardDescription": "Phase I desk and site reviews and Phase II soil, groundwater and soil vapour investigations, with laboratory analysis and risk based conclusions for land, facilities and transactions.",
+    "keyBenefit": "Contamination understood before it becomes a cost or delay",
+    "definition": "A contaminated site assessment determines whether soil, groundwater or soil vapour at a site contains pollutants, where they are and whether they pose a risk. It is usually staged: a Phase I assessment reviews site history and records and inspects the site to identify potential contamination, and a Phase II assessment samples and analyses soil and groundwater to confirm and delineate it.",
+    "overview": [
+      "Fuel storage, workshops, chemical handling, buried waste and spills leave traces in soil and groundwater that are rarely visible at the surface. In Saudi Arabia, contamination questions arise when industrial land is redeveloped, when facilities close or change hands, when new projects are built on former industrial or fuel station sites, and when spills or leaks occur. Answering them early protects budgets, schedules and the people who will use the site.",
+      "A staged approach keeps the work proportionate. A Phase I assessment uses records, interviews, aerial imagery and a site walkover to decide whether contamination is likely and where. Only if it is does a Phase II investigation follow, with boreholes, trial pits, groundwater wells and laboratory analysis targeted at the suspected sources. The results are then compared with screening values and the intended land use to judge the risk.",
+      "We carry out both phases for landowners, developers, industrial operators, lenders and buyers. We plan sampling to answer specific questions, supervise drilling and sampling with documented procedures, select analyses that match the suspected contaminants, and explain the results in terms of risk, cost and next steps. Where remediation is needed, the investigation provides the data to design it."
+    ],
+    "whenYouNeed": [
+      "You are buying, leasing or financing land or a facility with an industrial or fuel history.",
+      "A site is being redeveloped from industrial or fuel use to housing or commercial use.",
+      "Your facility is closing, relocating or returning land to its owner.",
+      "A spill, leak or buried waste has been discovered on site.",
+      "An authority or lender asks for evidence of soil and groundwater condition.",
+      "Excavated soil must be classified before reuse or disposal."
+    ],
+    "deliver": [
+      { "title": "Phase I site assessment", "description": "Review of site history, permits, aerial imagery and records, interviews and a site walkover, identifying potential sources, pathways and areas of concern." },
+      { "title": "Sampling and analysis plan", "description": "Plan setting out borehole, trial pit and well locations, depths, sample numbers and laboratory analyses, focused on the questions that matter." },
+      { "title": "Soil investigation", "description": "Supervised drilling and trial pits with field screening, logging and soil sampling, including stockpiles and excavated materials where needed." },
+      { "title": "Groundwater and soil vapour investigation", "description": "Installation and sampling of monitoring wells and soil vapour points, measuring water levels and free product where present." },
+      { "title": "Risk evaluation", "description": "Comparison of results with screening values for the planned land use, and a source, pathway and receptor evaluation to judge whether action is needed." },
+      { "title": "Recommendations and cost options", "description": "Clear conclusions on whether remediation, further investigation or management is needed, with indicative options and their implications for the project." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We agree the site boundary, the decision the assessment must support, access arrangements and the reporting standard." },
+      { "title": "Desk review", "description": "Records, imagery and interviews build a conceptual site model of possible sources, pathways and receptors." },
+      { "title": "Site work", "description": "Drilling, sampling and field screening follow documented procedures with chain of custody and health and safety controls." },
+      { "title": "Laboratory analysis", "description": "Samples are analysed by a qualified laboratory for contaminants matched to the site history, and results are checked for quality." },
+      { "title": "Interpretation", "description": "Results are mapped and compared with screening values to delineate contamination and evaluate risk." },
+      { "title": "Reporting", "description": "Findings, risks and recommended next steps are reported in a form suitable for owners, lenders and authorities." }
+    ],
+    "deliverables": [
+      { "item": "Phase I report", "format": "Site history, conceptual site model and areas of concern (PDF)", "timing": "After desk review and site visit" },
+      { "item": "Sampling and analysis plan", "format": "Locations, depths and analyses (PDF + map)", "timing": "Before Phase II fieldwork" },
+      { "item": "Field records", "format": "Borehole logs, well construction records and sampling sheets (PDF)", "timing": "After fieldwork" },
+      { "item": "Phase II report", "format": "Results, maps, risk evaluation and recommendations (PDF)", "timing": "After laboratory results" },
+      { "item": "Data package", "format": "Laboratory certificates and results tables (PDF + Excel)", "timing": "With the Phase II report" },
+      { "item": "Briefing for decision makers", "format": "Short summary of risks, options and cost implications (PDF)", "timing": "With final reports" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set operator obligations, including responsibilities relating to pollution of soil and groundwater and environmental damage.",
+      "National Center for Environmental Compliance (NCEC), which oversees environmental compliance and may require assessment or remediation where contamination is found.",
+      "National Center for Waste Management (MWAN), whose requirements apply when contaminated soil or waste is excavated, transported or disposed of.",
+      "International practice such as ASTM E1527 for Phase I and ASTM E1903 for Phase II assessments, and the ISO 18400 series for soil sampling."
+    ],
+    "faqs": [
+      { "q": "What is the difference between Phase I and Phase II?", "a": "Phase I is a non-intrusive assessment based on records, interviews, imagery and a site walkover, and it identifies where contamination is likely. Phase II is intrusive: it drills, digs and samples soil and groundwater and analyses them in a laboratory to confirm whether contamination is present, which contaminants, at what concentrations and how far it extends. Phase II is targeted using the Phase I findings." },
+      { "q": "Do we always need a Phase II?", "a": "No. If the Phase I finds no credible source of contamination, a Phase II may not be needed, which saves time and cost. It is recommended when the history or inspection points to likely contamination, when a lender or authority requires data, or when the planned land use is sensitive, such as housing or schools." },
+      { "q": "Which contaminants are tested?", "a": "Analyses are chosen from the site history. Fuel and oil sites typically need petroleum hydrocarbons and related compounds, workshops and industry may need metals and solvents, and filled ground a broader suite. Testing for everything is costly and rarely necessary, while targeting analyses to likely sources gives clearer answers within the budget." },
+      { "q": "How long does an assessment take?", "a": "The duration of a Phase I depends on access to records and to the site. A Phase II depends on site size, drilling access, the number of samples and laboratory turnaround. We set out the programme in the proposal and let you know if fieldwork or results change it." },
+      { "q": "What happens if contamination is found?", "a": "The report explains whether the contamination poses a risk for the intended use and what options exist: further delineation, management in place or remediation. Because the investigation already maps the contamination, it provides the data needed to design remediation and estimate its cost, which our remediation service can take forward." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم المواقع الملوثة (المرحلة الأولى والثانية)",
+    "seoTitle": "تقييم المواقع الملوثة في السعودية | سيلورين",
+    "metaDescription": "تقييم بيئي للمواقع في المملكة بمرحلتيه الأولى والثانية: تاريخ الموقع، وفحص التربة والمياه الجوفية، والتحاليل المخبرية، وتقييم المخاطر.",
+    "valueProp": "نكشف هل التربة والمياه الجوفية في الموقع ملوثة، وإلى أي مدى يمتد التلوث، وماذا يعني ذلك لخططكم.",
+    "cardDescription": "تقييم مكتبي وميداني في المرحلة الأولى، وفحص للتربة والمياه الجوفية وأبخرة التربة في المرحلة الثانية، مع تحاليل مخبرية واستنتاجات مبنية على المخاطر للأراضي والمنشآت والصفقات.",
+    "keyBenefit": "فهم التلوث قبل أن يتحول إلى تكلفة أو تأخير",
+    "definition": "تقييم المواقع الملوثة يحدد هل تحتوي التربة أو المياه الجوفية أو أبخرة التربة في موقع ما على ملوثات، وأين توجد، وهل تشكّل خطراً. ويُنفَّذ عادةً على مراحل، فالمرحلة الأولى تراجع تاريخ الموقع وسجلاته وتعاينه لتحديد احتمالات التلوث، والمرحلة الثانية تأخذ عينات من التربة والمياه الجوفية وتحللها لتأكيد التلوث وتحديد امتداده.",
+    "overview": [
+      "تترك خزانات الوقود والورش ومناولة الكيماويات والنفايات المدفونة والانسكابات آثاراً في التربة والمياه الجوفية نادراً ما تظهر على السطح. وفي المملكة تُطرح أسئلة التلوث عند إعادة تطوير الأراضي الصناعية، وعند إغلاق المنشآت أو انتقال ملكيتها، وعند إقامة مشاريع جديدة على مواقع صناعية أو محطات وقود سابقة، وعند وقوع انسكابات أو تسربات. والإجابة عنها مبكراً تحمي الميزانيات والجداول الزمنية ومستخدمي الموقع.",
+      "يجعل النهج المرحلي العمل متناسباً مع الحاجة. فالمرحلة الأولى تستخدم السجلات والمقابلات والصور الجوية والجولة الميدانية لتقرير هل التلوث محتمل وأين، ولا تأتي المرحلة الثانية إلا إذا كان محتملاً، فتُحفر الآبار والحفر الاختبارية وآبار المياه الجوفية وتُجرى التحاليل المخبرية موجهةً إلى المصادر المشتبه بها. ثم تُقارن النتائج بقيم الفرز والاستخدام المخطط للأرض للحكم على الخطر.",
+      "ننفذ المرحلتين لملاك الأراضي والمطورين والمشغلين الصناعيين والممولين والمشترين. نخطط أخذ العينات للإجابة عن أسئلة محددة، ونشرف على الحفر وأخذ العينات وفق إجراءات موثقة، ونختار التحاليل بما يناسب الملوثات المشتبه بها، ونشرح النتائج من حيث الخطر والتكلفة والخطوات التالية. وحين تلزم المعالجة توفر نتائج الفحص البيانات اللازمة لتصميمها."
+    ],
+    "whenYouNeed": [
+      "تشتري أو تستأجر أو تموّل أرضاً أو منشأة لها تاريخ صناعي أو في الوقود.",
+      "يُعاد تطوير موقع من استخدام صناعي أو محطة وقود إلى سكني أو تجاري.",
+      "تُغلق منشأتك أو تنتقل أو تعيد الأرض إلى مالكها.",
+      "اكتُشف انسكاب أو تسرب أو نفايات مدفونة في الموقع.",
+      "تطلب جهة مختصة أو ممول أدلة على حالة التربة والمياه الجوفية.",
+      "يجب تصنيف التربة المحفورة قبل إعادة استخدامها أو التخلص منها."
+    ],
+    "deliver": [
+      { "title": "تقييم الموقع في المرحلة الأولى", "description": "مراجعة تاريخ الموقع وتصاريحه وصوره الجوية وسجلاته، ومقابلات وجولة ميدانية، لتحديد المصادر المحتملة ومسارات الانتقال والمناطق المثيرة للقلق." },
+      { "title": "خطة أخذ العينات والتحليل", "description": "خطة تحدد مواقع الآبار والحفر الاختبارية وآبار الرصد وأعماقها وعدد العينات والتحاليل المخبرية، مركّزة على الأسئلة المهمة." },
+      { "title": "فحص التربة", "description": "حفر بإشراف وحفر اختبارية مع فرز ميداني وتوصيف وأخذ عينات من التربة، بما في ذلك أكوام التربة والمواد المحفورة عند الحاجة." },
+      { "title": "فحص المياه الجوفية وأبخرة التربة", "description": "تركيب آبار الرصد ونقاط أبخرة التربة وأخذ عيناتها، وقياس مناسيب المياه والمنتج الحر الطافي إن وُجد." },
+      { "title": "تقييم المخاطر", "description": "مقارنة النتائج بقيم الفرز للاستخدام المخطط للأرض، وتقييم المصدر والمسار والمستقبِل للحكم على الحاجة إلى إجراء." },
+      { "title": "التوصيات وبدائل التكلفة", "description": "استنتاجات واضحة بشأن الحاجة إلى المعالجة أو مزيد من الفحص أو الإدارة، مع بدائل مبدئية وأثرها على المشروع." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نتفق على حدود الموقع، والقرار الذي يجب أن يدعمه التقييم، وترتيبات الوصول، ومعيار التقارير." },
+      { "title": "المراجعة المكتبية", "description": "تُبنى من السجلات والصور والمقابلات صورة مفاهيمية للموقع تشمل المصادر والمسارات والمستقبلات المحتملة." },
+      { "title": "العمل الميداني", "description": "يتبع الحفر وأخذ العينات والفرز الميداني إجراءات موثقة مع سلسلة حفظ العينات وضوابط الصحة والسلامة." },
+      { "title": "التحاليل المخبرية", "description": "تُحلل العينات في مختبر مؤهل للملوثات المرتبطة بتاريخ الموقع، وتُراجع النتائج من حيث الجودة." },
+      { "title": "التفسير", "description": "تُرسم النتائج على الخرائط وتُقارن بقيم الفرز لتحديد امتداد التلوث وتقييم الخطر." },
+      { "title": "التقارير", "description": "تُعرض النتائج والمخاطر والخطوات التالية الموصى بها بصيغة تناسب الملاك والممولين والجهات المختصة." }
+    ],
+    "deliverables": [
+      { "item": "تقرير المرحلة الأولى", "format": "تاريخ الموقع والنموذج المفاهيمي والمناطق المثيرة للقلق (PDF)", "timing": "بعد المراجعة المكتبية والزيارة الميدانية" },
+      { "item": "خطة أخذ العينات والتحليل", "format": "المواقع والأعماق والتحاليل (PDF + خريطة)", "timing": "قبل أعمال المرحلة الثانية" },
+      { "item": "السجلات الميدانية", "format": "سجلات الآبار وتفاصيل إنشاء آبار الرصد واستمارات أخذ العينات (PDF)", "timing": "بعد العمل الميداني" },
+      { "item": "تقرير المرحلة الثانية", "format": "النتائج والخرائط وتقييم المخاطر والتوصيات (PDF)", "timing": "بعد صدور نتائج المختبر" },
+      { "item": "حزمة البيانات", "format": "شهادات المختبر وجداول النتائج (PDF + Excel)", "timing": "مع تقرير المرحلة الثانية" },
+      { "item": "ملخص لصناع القرار", "format": "ملخص قصير بالمخاطر والبدائل وأثرها على التكلفة (PDF)", "timing": "مع التقارير النهائية" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد التزامات المشغّل، ومنها المسؤوليات المتعلقة بتلوث التربة والمياه الجوفية والضرر البيئي.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يشرف على الالتزام البيئي وقد يطلب التقييم أو المعالجة عند اكتشاف تلوث.",
+      "المركز الوطني لإدارة النفايات (موان)، الذي تنطبق متطلباته عند حفر التربة الملوثة أو النفايات ونقلها والتخلص منها.",
+      "الممارسات الدولية مثل ASTM E1527 للمرحلة الأولى وASTM E1903 للمرحلة الثانية، وسلسلة ISO 18400 لأخذ عينات التربة."
+    ],
+    "faqs": [
+      { "q": "ما الفرق بين المرحلة الأولى والثانية؟", "a": "المرحلة الأولى تقييم غير تدخلي يعتمد على السجلات والمقابلات والصور والجولة الميدانية، ويحدد أين يُحتمل وجود التلوث. أما المرحلة الثانية فتدخلية، إذ تحفر وتأخذ عينات من التربة والمياه الجوفية وتحللها مخبرياً لتأكيد وجود التلوث ونوع الملوثات وتراكيزها ومدى امتدادها، وتُوجَّه بنتائج المرحلة الأولى." },
+      { "q": "هل نحتاج دائماً إلى المرحلة الثانية؟", "a": "لا. إذا لم تجد المرحلة الأولى مصدراً محتملاً للتلوث فقد لا تلزم المرحلة الثانية، وهذا يوفر الوقت والتكلفة. ويُوصى بها حين يشير التاريخ أو المعاينة إلى تلوث محتمل، أو حين يطلب ممول أو جهة مختصة بيانات، أو حين يكون الاستخدام المخطط حساساً كالسكن أو المدارس." },
+      { "q": "ما الملوثات التي تُفحص؟", "a": "تُختار التحاليل بناءً على تاريخ الموقع. فمواقع الوقود والزيوت تحتاج عادةً إلى الهيدروكربونات البترولية والمركبات المرتبطة بها، والورش والصناعة قد تحتاج إلى المعادن والمذيبات، ومناطق الردم إلى مجموعة أوسع. وفحص كل شيء مكلف ونادراً ما يلزم، أما توجيه التحاليل إلى المصادر المحتملة فيعطي إجابات أوضح ضمن الميزانية." },
+      { "q": "كم يستغرق التقييم؟", "a": "تعتمد مدة المرحلة الأولى على إمكانية الوصول إلى السجلات والموقع، وتعتمد مدة المرحلة الثانية على مساحة الموقع وإمكانية الحفر وعدد العينات ومدة التحليل في المختبر. ونوضح البرنامج الزمني في العرض ونبلغكم إن غيّر العمل الميداني أو النتائج شيئاً منه." },
+      { "q": "ماذا يحدث إذا اكتُشف تلوث؟", "a": "يوضح التقرير هل يشكّل التلوث خطراً على الاستخدام المقصود، وما البدائل المتاحة: مزيد من تحديد الامتداد، أو الإدارة في الموقع، أو المعالجة. ولأن الفحص يرسم خريطة التلوث بالفعل، فهو يوفر البيانات اللازمة لتصميم المعالجة وتقدير تكلفتها، وهو ما تتولاه خدمة المعالجة لدينا." }
+    ]
+  }
+}

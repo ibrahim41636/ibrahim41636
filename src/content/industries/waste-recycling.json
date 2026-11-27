@@ -9,7 +9,11 @@
     "environmental-monitoring",
     "circular-economy",
     "ghg-carbon-accounting",
-    "environmental-management-plans"
+    "environmental-management-plans",
+    "environmental-remediation",
+    "solar-pv-recycling",
+    "stack-emission-monitoring",
+    "monitoring-as-a-service"
   ],
   "en": {
     "name": "Waste Management & Recycling",

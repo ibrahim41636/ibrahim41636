@@ -1,0 +1,125 @@
+{
+  "category": "monitoring-measurement",
+  "order": 9,
+  "formFamily": "monitoring",
+  "industries": ["commercial-facilities", "healthcare", "hospitality", "real-estate", "government-public-sector", "industrial-manufacturing", "logistics-warehousing"],
+  "related": ["air-quality-monitoring", "green-building-advisory", "sustainable-buildings", "monitoring-as-a-service"],
+  "en": {
+    "name": "Indoor Air Quality Assessment",
+    "seoTitle": "Indoor Air Quality Testing in Saudi Arabia | Selorin",
+    "metaDescription": "Indoor air quality testing in Saudi Arabia for offices, schools, hospitals, malls and hotels: CO2, fine particles, VOCs, ventilation checks and improvement plans.",
+    "valueProp": "We measure the air people breathe inside your buildings and show what to change in ventilation, filtration and materials to improve it.",
+    "cardDescription": "Indoor air surveys and continuous sensors for carbon dioxide, fine particles, volatile organic compounds, humidity and mould, with ventilation checks and practical improvement plans.",
+    "keyBenefit": "Healthier indoor air with measured proof",
+    "definition": "Indoor air quality assessment is the measurement and evaluation of air inside buildings to judge whether it is healthy and comfortable for occupants. It typically covers carbon dioxide as an indicator of ventilation, fine particles, volatile organic compounds, formaldehyde, temperature, humidity and microbial growth, and links the results to ventilation, filtration, cleaning and building materials so that problems can be corrected.",
+    "overview": [
+      "People in Saudi Arabia spend most of their day indoors, in air-conditioned offices, schools, hospitals, malls and homes. Recirculated air, outdoor dust, new furniture and finishes, cleaning products and crowded spaces can raise carbon dioxide, fine particles and chemical vapours. Poor indoor air is associated with tiredness, headaches and complaints, and indoor air quality is now part of healthy building and green building rating requirements.",
+      "Indoor air problems are rarely solved by a single measurement. Levels change with occupancy, time of day, outdoor dust events and the operation of air handling systems. A useful assessment combines short surveys across representative spaces with continuous monitoring in key areas, and checks how much outdoor air the system actually delivers and how well the filters perform.",
+      "We assess indoor air for building owners, facility managers, employers, schools and healthcare operators. We plan measurements to match the building and the complaint, use calibrated instruments, inspect ventilation and filtration, and report results against recognised guidelines. The output is a prioritised plan of practical improvements and, where useful, continuous sensors with a dashboard that shows occupants the air is being managed."
+    ],
+    "whenYouNeed": [
+      "Occupants complain of stuffiness, odours, headaches or tiredness.",
+      "A building has been newly fitted out or refurbished and materials may release chemicals.",
+      "You are pursuing a green or healthy building rating with indoor air requirements.",
+      "Dust storms or nearby works affect the air inside your building.",
+      "A school, clinic or hospital needs evidence that indoor air is managed.",
+      "You want continuous indoor air data displayed to tenants or staff."
+    ],
+    "deliver": [
+      { "title": "Walkthrough and complaint review", "description": "Inspection of spaces, air handling units and complaint records to identify likely sources and choose measurement locations." },
+      { "title": "Indoor air survey", "description": "Measurement of carbon dioxide, fine particles, volatile organic compounds, formaldehyde, temperature and humidity across representative spaces and times." },
+      { "title": "Ventilation and filtration check", "description": "Assessment of outdoor air supply, air distribution and filter performance against the design intent and recognised guidelines." },
+      { "title": "Mould and moisture assessment", "description": "Inspection for dampness, condensation and visible growth, with targeted sampling where needed to confirm conditions." },
+      { "title": "Continuous indoor sensors", "description": "Installation of networked sensors in key spaces with a live dashboard and alerts, so that changes are detected as they happen." },
+      { "title": "Improvement plan", "description": "Prioritised actions on ventilation, filtration, cleaning, materials and operating schedules, with expected benefits and simple ways to verify them." }
+    ],
+    "approach": [
+      { "title": "Scoping", "description": "We agree the spaces, concerns, occupancy patterns and any rating system requirements." },
+      { "title": "Inspection", "description": "Spaces and ventilation systems are inspected and measurement points are selected." },
+      { "title": "Measurement", "description": "Calibrated instruments record indoor and outdoor conditions over representative periods." },
+      { "title": "Analysis", "description": "Results are compared with recognised guidelines and linked to likely causes." },
+      { "title": "Recommendations", "description": "Practical improvements are prioritised by benefit, cost and ease of implementation." },
+      { "title": "Verification", "description": "Follow-up measurements or continuous sensors confirm that the changes worked." }
+    ],
+    "deliverables": [
+      { "item": "Assessment plan", "format": "Spaces, parameters and measurement periods (PDF)", "timing": "Before measurements" },
+      { "item": "Indoor air quality report", "format": "Results, comparison with guidelines and causes (PDF)", "timing": "After measurements" },
+      { "item": "Ventilation findings", "format": "Observations on outdoor air, distribution and filters (PDF)", "timing": "With the report" },
+      { "item": "Improvement plan", "format": "Prioritised actions with responsibilities (PDF + Excel)", "timing": "With the report" },
+      { "item": "Live dashboard", "format": "Online view of sensor data with alerts", "timing": "When continuous sensors are installed" },
+      { "item": "Verification summary", "format": "Before and after comparison (PDF)", "timing": "After improvements" }
+    ],
+    "regulatoryContext": [
+      "Saudi Building Code requirements for mechanical ventilation, which form the design basis for outdoor air supply in buildings.",
+      "Mostadam, LEED and WELL rating systems, which include indoor air quality and ventilation requirements.",
+      "World Health Organization guidelines for indoor air pollutants and for dampness and mould, used as reference values where no national indoor limit applies.",
+      "Occupational health and safety requirements for workplaces, where indoor exposure relates to work activities."
+    ],
+    "faqs": [
+      { "q": "What does carbon dioxide tell us about indoor air?", "a": "Carbon dioxide comes mainly from occupants' breathing, so its level shows whether enough outdoor air is reaching a space for the number of people in it. High levels usually mean ventilation is insufficient, which also lets other pollutants build up. It is a useful, low cost indicator, but it does not replace measuring particles and chemical vapours." },
+      { "q": "Are dust storms a problem indoors?", "a": "They can be. Fine dust enters through outdoor air intakes, doors and leaks, especially when filters are low grade or poorly fitted. Measuring indoor and outdoor particles together during dusty periods shows how well the building protects its occupants and whether better filtration or sealing is worthwhile." },
+      { "q": "How long do measurements take?", "a": "A survey usually covers representative working days so that occupancy and system operation are captured, rather than a single short reading. Where problems vary over time, continuous sensors over several weeks give a clearer picture. We propose the duration based on the building and the questions you need answered." },
+      { "q": "Can indoor air data be shown to tenants?", "a": "Yes. Continuous sensors can feed a dashboard or a lobby display showing carbon dioxide, particles and comfort conditions. This helps facility teams react quickly and shows tenants and staff that air quality is actively managed, which supports healthy building and green building goals." },
+      { "q": "Do you test for mould?", "a": "We inspect for moisture, condensation and visible growth, which are the main signs of mould risk, and we measure humidity. Where needed we arrange targeted sampling through a qualified laboratory to confirm conditions. The priority is fixing the moisture source, since removing mould without stopping the moisture rarely lasts." }
+    ]
+  },
+  "ar": {
+    "name": "تقييم جودة الهواء الداخلي",
+    "seoTitle": "فحص جودة الهواء الداخلي في السعودية | سيلورين",
+    "metaDescription": "فحص جودة الهواء الداخلي في المملكة للمكاتب والمدارس والمستشفيات والمراكز التجارية والفنادق: ثاني أكسيد الكربون والجسيمات والمركبات العضوية والتهوية.",
+    "valueProp": "نقيس الهواء الذي يتنفسه الناس داخل مبانيكم، ونوضح ما يجب تغييره في التهوية والترشيح والمواد لتحسينه.",
+    "cardDescription": "مسوحات للهواء الداخلي وحساسات مستمرة لثاني أكسيد الكربون والجسيمات الدقيقة والمركبات العضوية المتطايرة والرطوبة والعفن، مع فحص التهوية وخطط تحسين عملية.",
+    "keyBenefit": "هواء داخلي أصح بأدلة مقاسة",
+    "definition": "تقييم جودة الهواء الداخلي هو قياس الهواء داخل المباني وتقييمه للحكم على ملاءمته لصحة شاغليها وراحتهم. ويشمل عادةً ثاني أكسيد الكربون كمؤشر على التهوية، والجسيمات الدقيقة، والمركبات العضوية المتطايرة، والفورمالديهايد، والحرارة، والرطوبة، ونمو الكائنات الدقيقة، ويربط النتائج بالتهوية والترشيح والتنظيف ومواد البناء لتصحيح المشكلات.",
+    "overview": [
+      "يقضي الناس في المملكة معظم يومهم في أماكن مغلقة ومكيفة، في المكاتب والمدارس والمستشفيات والمراكز التجارية والمنازل. وقد يرفع الهواء المعاد تدويره والغبار الخارجي والأثاث والتشطيبات الجديدة ومواد التنظيف والأماكن المزدحمة مستويات ثاني أكسيد الكربون والجسيمات الدقيقة والأبخرة الكيميائية. ويرتبط سوء الهواء الداخلي بالإرهاق والصداع والشكاوى، وأصبحت جودته جزءاً من متطلبات أنظمة تقييم المباني الصحية والخضراء.",
+      "نادراً ما تُحل مشكلات الهواء الداخلي بقياس واحد، فالمستويات تتغير مع الإشغال ووقت اليوم وموجات الغبار الخارجية وتشغيل وحدات مناولة الهواء. والتقييم المفيد يجمع بين مسوحات قصيرة في أماكن ممثلة ورصد مستمر في المناطق الرئيسية، ويتحقق من كمية الهواء الخارجي التي يوفرها النظام فعلياً ومن أداء المرشحات.",
+      "نقيّم الهواء الداخلي لملاك المباني ومديري المرافق وأصحاب العمل والمدارس ومقدمي الرعاية الصحية. نخطط القياسات بما يناسب المبنى والشكوى، ونستخدم أجهزة معايرة، ونعاين التهوية والترشيح، ونعرض النتائج مقابل إرشادات معترف بها. والمخرج خطة تحسينات عملية مرتبة حسب الأولوية، ومعها عند الحاجة حساسات مستمرة ولوحة بيانات تُظهر للشاغلين أن جودة الهواء تُدار."
+    ],
+    "whenYouNeed": [
+      "يشكو الشاغلون من كتمة الهواء أو الروائح أو الصداع أو الإرهاق.",
+      "جُهّز مبنى حديثاً أو جُدّد وقد تطلق مواده انبعاثات كيميائية.",
+      "تسعى إلى تقييم مبنى أخضر أو صحي يتضمن متطلبات للهواء الداخلي.",
+      "تؤثر العواصف الترابية أو أعمال قريبة في الهواء داخل مبناك.",
+      "تحتاج مدرسة أو عيادة أو مستشفى إلى دليل على إدارة جودة الهواء الداخلي.",
+      "تريد عرض بيانات الهواء الداخلي المستمرة للمستأجرين أو الموظفين."
+    ],
+    "deliver": [
+      { "title": "جولة معاينة ومراجعة الشكاوى", "description": "معاينة الأماكن ووحدات مناولة الهواء وسجلات الشكاوى لتحديد المصادر المحتملة واختيار مواقع القياس." },
+      { "title": "مسح الهواء الداخلي", "description": "قياس ثاني أكسيد الكربون والجسيمات الدقيقة والمركبات العضوية المتطايرة والفورمالديهايد والحرارة والرطوبة في أماكن وأوقات ممثلة." },
+      { "title": "فحص التهوية والترشيح", "description": "تقييم إمداد الهواء الخارجي وتوزيعه وأداء المرشحات مقابل هدف التصميم والإرشادات المعترف بها." },
+      { "title": "تقييم العفن والرطوبة", "description": "معاينة للرطوبة والتكثف والنمو الظاهر، مع أخذ عينات موجهة عند الحاجة لتأكيد الحالة." },
+      { "title": "حساسات داخلية مستمرة", "description": "تركيب حساسات متصلة في الأماكن الرئيسية مع لوحة بيانات حية وتنبيهات، لاكتشاف التغيرات فور حدوثها." },
+      { "title": "خطة التحسين", "description": "إجراءات مرتبة حسب الأولوية في التهوية والترشيح والتنظيف والمواد وجداول التشغيل، مع الفوائد المتوقعة وطرق بسيطة للتحقق منها." }
+    ],
+    "approach": [
+      { "title": "تحديد النطاق", "description": "نتفق على الأماكن والمخاوف وأنماط الإشغال وأي متطلبات لأنظمة التقييم." },
+      { "title": "المعاينة", "description": "نعاين الأماكن وأنظمة التهوية ونختار نقاط القياس." },
+      { "title": "القياس", "description": "تسجل أجهزة معايرة الظروف الداخلية والخارجية خلال فترات ممثلة." },
+      { "title": "التحليل", "description": "نقارن النتائج بإرشادات معترف بها ونربطها بأسبابها المحتملة." },
+      { "title": "التوصيات", "description": "نرتب التحسينات العملية حسب الفائدة والتكلفة وسهولة التنفيذ." },
+      { "title": "التحقق", "description": "تؤكد قياسات المتابعة أو الحساسات المستمرة نجاح التغييرات." }
+    ],
+    "deliverables": [
+      { "item": "خطة التقييم", "format": "الأماكن والمعايير وفترات القياس (PDF)", "timing": "قبل القياس" },
+      { "item": "تقرير جودة الهواء الداخلي", "format": "النتائج ومقارنتها بالإرشادات وأسبابها (PDF)", "timing": "بعد القياس" },
+      { "item": "ملاحظات التهوية", "format": "ملاحظات عن الهواء الخارجي والتوزيع والمرشحات (PDF)", "timing": "مع التقرير" },
+      { "item": "خطة التحسين", "format": "إجراءات مرتبة حسب الأولوية مع المسؤوليات (PDF + Excel)", "timing": "مع التقرير" },
+      { "item": "لوحة بيانات حية", "format": "عرض إلكتروني لبيانات الحساسات مع التنبيهات", "timing": "عند تركيب الحساسات المستمرة" },
+      { "item": "ملخص التحقق", "format": "مقارنة قبل التحسينات وبعدها (PDF)", "timing": "بعد التحسينات" }
+    ],
+    "regulatoryContext": [
+      "متطلبات كود البناء السعودي للتهوية الميكانيكية، التي تشكّل أساس تصميم إمداد الهواء الخارجي في المباني.",
+      "أنظمة تقييم مستدام وLEED وWELL، التي تتضمن متطلبات لجودة الهواء الداخلي والتهوية.",
+      "إرشادات منظمة الصحة العالمية لملوثات الهواء الداخلي وللرطوبة والعفن، كقيم مرجعية حين لا يوجد حد وطني للهواء الداخلي.",
+      "متطلبات الصحة والسلامة المهنية في أماكن العمل، حين يرتبط التعرض الداخلي بأنشطة العمل."
+    ],
+    "faqs": [
+      { "q": "ماذا يخبرنا ثاني أكسيد الكربون عن الهواء الداخلي؟", "a": "يأتي ثاني أكسيد الكربون أساساً من تنفس الشاغلين، لذا يبين مستواه هل يصل إلى المكان ما يكفي من الهواء الخارجي لعدد الموجودين فيه. وارتفاعه يعني عادةً تهوية غير كافية، مما يسمح أيضاً بتراكم ملوثات أخرى. وهو مؤشر مفيد ومنخفض التكلفة، لكنه لا يغني عن قياس الجسيمات والأبخرة الكيميائية." },
+      { "q": "هل تؤثر العواصف الترابية في الهواء الداخلي؟", "a": "قد تؤثر. فالغبار الدقيق يدخل عبر مآخذ الهواء الخارجي والأبواب والتسربات، خاصة حين تكون المرشحات منخفضة الكفاءة أو سيئة التركيب. وقياس الجسيمات في الداخل والخارج معاً خلال الفترات المغبرة يبين مدى حماية المبنى لشاغليه، وهل يستحق تحسين الترشيح أو الإحكام." },
+      { "q": "كم تستغرق القياسات؟", "a": "يغطي المسح عادةً أيام عمل ممثلة لالتقاط الإشغال وتشغيل الأنظمة بدلاً من قراءة قصيرة واحدة. وحين تتغير المشكلات مع الوقت تعطي الحساسات المستمرة لعدة أسابيع صورة أوضح. ونقترح المدة بناءً على المبنى والأسئلة التي تحتاجون إلى إجابتها." },
+      { "q": "هل يمكن عرض بيانات الهواء الداخلي للمستأجرين؟", "a": "نعم. يمكن ربط الحساسات المستمرة بلوحة بيانات أو شاشة في الردهة تعرض ثاني أكسيد الكربون والجسيمات وظروف الراحة. ويساعد ذلك فرق المرافق على التصرف بسرعة، ويُظهر للمستأجرين والموظفين أن جودة الهواء تُدار فعلياً، بما يدعم أهداف المباني الصحية والخضراء." },
+      { "q": "هل تفحصون العفن؟", "a": "نعاين الرطوبة والتكثف والنمو الظاهر، وهي العلامات الرئيسية لخطر العفن، ونقيس الرطوبة. وعند الحاجة نرتب أخذ عينات موجهة عبر مختبر مؤهل لتأكيد الحالة. والأولوية لإصلاح مصدر الرطوبة، فإزالة العفن دون إيقاف الرطوبة نادراً ما تدوم." }
+    ]
+  }
+}

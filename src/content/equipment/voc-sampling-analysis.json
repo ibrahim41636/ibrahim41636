@@ -10,7 +10,8 @@
   "services": [
     "fuel-station-voc-monitoring",
     "environmental-monitoring",
-    "environmental-impact-assessment"
+    "environmental-impact-assessment",
+    "indoor-air-quality"
   ],
   "industries": [
     "oil-gas",

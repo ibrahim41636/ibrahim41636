@@ -14,7 +14,12 @@
     "battery-energy-storage",
     "renewable-operations-maintenance",
     "renewable-energy-feasibility",
-    "ev-charging-stations"
+    "ev-charging-stations",
+    "desalination-brine-discharge",
+    "biodiversity-nature",
+    "solar-pv-recycling",
+    "stack-emission-monitoring",
+    "marine-monitoring"
   ],
   "en": {
     "name": "Energy & Utilities",

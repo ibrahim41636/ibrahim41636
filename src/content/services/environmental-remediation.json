@@ -1,0 +1,125 @@
+{
+  "category": "contaminated-land",
+  "order": 2,
+  "formFamily": "studies",
+  "industries": ["oil-gas", "industrial-manufacturing", "energy", "real-estate", "logistics-warehousing", "waste-recycling", "mining-quarrying", "government-public-sector"],
+  "related": ["contaminated-site-assessment", "waste-management", "environmental-due-diligence", "environmental-permitting"],
+  "en": {
+    "name": "Soil & Groundwater Remediation",
+    "seoTitle": "Soil & Groundwater Remediation in Saudi Arabia | Selorin",
+    "metaDescription": "Remediation of contaminated soil and groundwater in Saudi Arabia: options appraisal, remediation design, contractor supervision, validation sampling and closure.",
+    "valueProp": "We design and oversee the clean-up of contaminated soil and groundwater, from choosing the method to proving the site is fit for use.",
+    "cardDescription": "Remediation options appraisal and design, oily soil and sludge treatment, contractor supervision, validation sampling and closure reports for industrial, fuel and redevelopment sites.",
+    "keyBenefit": "Contaminated land returned to use with documented proof",
+    "definition": "Soil and groundwater remediation is the process of reducing contamination to levels that are acceptable for the intended use of a site. It covers selecting a method such as excavation, bioremediation, soil vapour extraction or groundwater treatment, designing and implementing it, and validating the result through sampling, so that the site can be reused, sold or handed back with documented evidence.",
+    "overview": [
+      "Contamination from fuel, oil, chemicals and industrial waste can limit how land is used, reduce its value and create liabilities for owners and operators. In Saudi Arabia, remediation is often needed at former fuel stations and depots, industrial and oil and gas facilities, workshops, waste sites and land being redeveloped for new communities. Hot, arid conditions and deep groundwater influence which methods work and how long they take.",
+      "Good remediation starts from good data and a clear end point. The target levels depend on the intended land use and on the risks to people, groundwater and the environment, and the method depends on the contaminants, soil type and site constraints. Excavation and disposal is fast but costly and moves the problem elsewhere, while treatment on site, such as bioremediation of hydrocarbon soils, can reduce cost and waste if planned properly.",
+      "We act as the client's remediation consultant. We appraise options on cost, time and risk, prepare the remediation design and method statements, help procure and supervise specialised contractors, and carry out independent validation sampling. The closure report documents what was done and demonstrates that the agreed end point has been reached."
+    ],
+    "whenYouNeed": [
+      "An assessment has confirmed soil or groundwater contamination at your site.",
+      "A former fuel station, depot or industrial plot is being redeveloped.",
+      "You must return leased land or a closed facility in acceptable condition.",
+      "Oily soil, sludge or spill residues need treatment rather than storage.",
+      "An authority, buyer or lender requires evidence that contamination was addressed.",
+      "Ongoing groundwater contamination needs treatment or long term monitoring."
+    ],
+    "deliver": [
+      { "title": "Remediation options appraisal", "description": "Comparison of feasible methods such as excavation, bioremediation, soil washing, soil vapour extraction and groundwater treatment on effectiveness, cost, time, waste and risk." },
+      { "title": "Remediation targets", "description": "Site specific end points based on the planned land use and a source, pathway and receptor evaluation, agreed before works start." },
+      { "title": "Remediation design and specifications", "description": "Design, method statements, quantities and specifications that contractors can price and build, including controls for dust, odour, water and waste." },
+      { "title": "Oily soil and sludge treatment", "description": "Planning and oversight of on site biological or physical treatment of hydrocarbon contaminated soils and sludges, reducing volumes sent for disposal." },
+      { "title": "Contractor supervision", "description": "Site supervision of remediation contractors, checking excavation limits, treatment performance, waste tracking and health and safety controls." },
+      { "title": "Validation and closure", "description": "Independent validation sampling of excavations, treated soil and groundwater, and a closure report proving the agreed targets have been met." }
+    ],
+    "approach": [
+      { "title": "Review", "description": "We review investigation data, confirm the conceptual site model and fill critical data gaps." },
+      { "title": "Options and targets", "description": "Methods are appraised and end points are agreed with you and, where needed, the competent authority." },
+      { "title": "Design", "description": "The chosen method is designed and specified, with a remediation plan and environmental controls." },
+      { "title": "Procurement", "description": "We help prepare tender documents, evaluate contractor proposals and confirm their methods." },
+      { "title": "Supervision", "description": "Works are supervised and documented, and progress is checked against the design and targets." },
+      { "title": "Validation", "description": "Sampling demonstrates the end point, and the closure report records the evidence." }
+    ],
+    "deliverables": [
+      { "item": "Options appraisal report", "format": "Comparison of methods with costs, durations and risks (PDF)", "timing": "Before design" },
+      { "item": "Remediation plan and design", "format": "Plan, drawings, specifications and method statements (PDF)", "timing": "Before works" },
+      { "item": "Tender support", "format": "Scope of works, bill of quantities and evaluation notes (PDF + Excel)", "timing": "Procurement stage" },
+      { "item": "Supervision records", "format": "Daily logs, photos, waste tracking and progress reports (PDF)", "timing": "During works" },
+      { "item": "Validation results", "format": "Sampling results against targets with laboratory certificates (PDF + Excel)", "timing": "End of works" },
+      { "item": "Closure report", "format": "Report documenting works, evidence and residual conditions (PDF)", "timing": "After validation" }
+    ],
+    "regulatoryContext": [
+      "Environmental Law (2020) and its Implementing Regulations, which set operator obligations, including responsibilities relating to pollution and environmental damage.",
+      "National Center for Environmental Compliance (NCEC), which oversees compliance and may set requirements for remediation and its verification.",
+      "National Center for Waste Management (MWAN), whose requirements govern the classification, transport, treatment and disposal of excavated contaminated soil and waste.",
+      "Royal Commission for Jubail and Yanbu (RCJY) and Saudi Authority for Industrial Cities and Technology Zones (MODON) requirements for sites within their cities."
+    ],
+    "faqs": [
+      { "q": "Which remediation method is best?", "a": "There is no single best method. Excavation and disposal is quick but expensive and creates waste. Bioremediation can treat hydrocarbon soils on site at lower cost but needs time and space. Soil vapour extraction suits volatile contaminants in permeable soils, and groundwater may need pumping and treatment or monitored natural attenuation. The choice depends on contaminants, soil, groundwater, schedule, budget and end use." },
+      { "q": "Can oily soil be treated on site?", "a": "Often, yes. Hydrocarbon contaminated soils can frequently be treated by bioremediation in biopiles or landfarms, where moisture, nutrients and aeration are controlled to help natural microbes break down the oil. It requires space, time and monitoring, and its suitability is confirmed by trials. Treated soil may then be reused on site where results allow." },
+      { "q": "How do we prove the site is clean?", "a": "Through validation sampling designed before works start. Samples are taken from excavation floors and walls, treated soil and groundwater wells at agreed locations and frequencies, analysed by a qualified laboratory and compared with the agreed targets. The closure report presents this evidence with the record of works so owners, buyers and authorities can rely on it." },
+      { "q": "Who carries out the remediation works?", "a": "Remediation works are carried out by specialised contractors with the equipment and licences the method requires, under our design and supervision. We can manage the contractors on your behalf, and we keep validation sampling independent of the contractor so the results give you an objective check." },
+      { "q": "What about groundwater contamination?", "a": "Groundwater is assessed separately because it moves and can affect neighbouring land and wells. Depending on the contaminants and risks, options include removing the source, pumping and treating groundwater, treating it in place, or monitoring natural attenuation over time. We design the monitoring network and report trends until the agreed conditions are met." }
+    ]
+  },
+  "ar": {
+    "name": "معالجة التربة والمياه الجوفية الملوثة",
+    "seoTitle": "معالجة التربة والمياه الجوفية الملوثة في السعودية | سيلورين",
+    "metaDescription": "معالجة التربة والمياه الجوفية الملوثة في المملكة: تقييم بدائل المعالجة، والتصميم، والإشراف على المقاولين، وعينات التحقق، وتقارير الإغلاق.",
+    "valueProp": "نصمم معالجة التربة والمياه الجوفية الملوثة ونشرف عليها، من اختيار الطريقة إلى إثبات صلاحية الموقع للاستخدام.",
+    "cardDescription": "تقييم بدائل المعالجة وتصميمها، ومعالجة التربة والحمأة الزيتية، والإشراف على المقاولين، وعينات التحقق، وتقارير الإغلاق للمواقع الصناعية ومواقع الوقود ومشاريع إعادة التطوير.",
+    "keyBenefit": "أراضٍ ملوثة تعود للاستخدام بأدلة موثقة",
+    "definition": "معالجة التربة والمياه الجوفية هي خفض التلوث إلى مستويات مقبولة للاستخدام المقصود للموقع. وتشمل اختيار طريقة مثل الحفر والإزالة أو المعالجة الحيوية أو استخلاص أبخرة التربة أو معالجة المياه الجوفية، وتصميمها وتنفيذها، ثم التحقق من النتيجة بأخذ العينات، ليمكن إعادة استخدام الموقع أو بيعه أو تسليمه بأدلة موثقة.",
+    "overview": [
+      "قد يحد التلوث بالوقود والزيوت والكيماويات والنفايات الصناعية من استخدام الأرض ويخفض قيمتها ويرتب التزامات على الملاك والمشغلين. وفي المملكة كثيراً ما تلزم المعالجة في محطات الوقود والمستودعات السابقة، والمنشآت الصناعية ومنشآت النفط والغاز، والورش، ومواقع النفايات، والأراضي التي يُعاد تطويرها لمجتمعات جديدة. وتؤثر الظروف الحارة الجافة وعمق المياه الجوفية في اختيار الطرق المناسبة وفي مدتها.",
+      "تبدأ المعالجة الجيدة من بيانات جيدة ونقطة نهاية واضحة. فالمستويات المستهدفة تعتمد على الاستخدام المقصود للأرض والمخاطر على الناس والمياه الجوفية والبيئة، والطريقة تعتمد على الملوثات ونوع التربة وقيود الموقع. والحفر والتخلص سريع لكنه مكلف وينقل المشكلة إلى مكان آخر، بينما قد تخفض المعالجة في الموقع، كالمعالجة الحيوية للتربة الملوثة بالهيدروكربونات، التكلفة والنفايات إن خُطط لها جيداً.",
+      "نعمل مستشاراً للعميل في المعالجة. نقيّم البدائل من حيث التكلفة والوقت والمخاطر، ونعدّ تصميم المعالجة وبيانات طرق التنفيذ، ونساعد في طرح أعمال المقاولين المتخصصين والإشراف عليهم، وننفذ عينات تحقق مستقلة. ويوثق تقرير الإغلاق ما نُفّذ ويثبت بلوغ نقطة النهاية المتفق عليها."
+    ],
+    "whenYouNeed": [
+      "أكّد التقييم وجود تلوث في التربة أو المياه الجوفية في موقعك.",
+      "يُعاد تطوير محطة وقود أو مستودع أو أرض صناعية سابقة.",
+      "يجب أن تعيد أرضاً مستأجرة أو منشأة مغلقة في حالة مقبولة.",
+      "تحتاج التربة الزيتية أو الحمأة أو مخلفات الانسكاب إلى معالجة بدلاً من التخزين.",
+      "تطلب جهة مختصة أو مشترٍ أو ممول دليلاً على معالجة التلوث.",
+      "يحتاج تلوث مستمر في المياه الجوفية إلى معالجة أو رصد طويل المدى."
+    ],
+    "deliver": [
+      { "title": "تقييم بدائل المعالجة", "description": "مقارنة الطرق الممكنة كالحفر والمعالجة الحيوية وغسل التربة واستخلاص أبخرة التربة ومعالجة المياه الجوفية من حيث الفعالية والتكلفة والمدة والنفايات والمخاطر." },
+      { "title": "أهداف المعالجة", "description": "نقاط نهاية خاصة بالموقع مبنية على الاستخدام المخطط للأرض وتقييم المصدر والمسار والمستقبِل، يُتفق عليها قبل بدء الأعمال." },
+      { "title": "تصميم المعالجة ومواصفاتها", "description": "تصميم وبيانات طرق وكميات ومواصفات يمكن للمقاولين تسعيرها وتنفيذها، تشمل ضوابط الغبار والروائح والمياه والنفايات." },
+      { "title": "معالجة التربة والحمأة الزيتية", "description": "تخطيط المعالجة الحيوية أو الفيزيائية للتربة والحمأة الملوثة بالهيدروكربونات في الموقع والإشراف عليها، لتقليل الكميات المرسلة إلى التخلص." },
+      { "title": "الإشراف على المقاولين", "description": "إشراف ميداني على مقاولي المعالجة، والتحقق من حدود الحفر وأداء المعالجة وتتبع النفايات وضوابط الصحة والسلامة." },
+      { "title": "التحقق والإغلاق", "description": "عينات تحقق مستقلة من الحفريات والتربة المعالجة والمياه الجوفية، وتقرير إغلاق يثبت تحقيق الأهداف المتفق عليها." }
+    ],
+    "approach": [
+      { "title": "المراجعة", "description": "نراجع بيانات الفحص، ونؤكد النموذج المفاهيمي للموقع، ونسد فجوات البيانات الحرجة." },
+      { "title": "البدائل والأهداف", "description": "نقيّم الطرق ونتفق على نقاط النهاية معكم ومع الجهة المختصة عند الحاجة." },
+      { "title": "التصميم", "description": "نصمم الطريقة المختارة ونحدد مواصفاتها، مع خطة معالجة وضوابط بيئية." },
+      { "title": "الطرح", "description": "نساعد في إعداد وثائق المنافسة وتقييم عروض المقاولين والتحقق من طرقهم." },
+      { "title": "الإشراف", "description": "نشرف على الأعمال ونوثقها، ونتحقق من التقدم مقابل التصميم والأهداف." },
+      { "title": "التحقق", "description": "تثبت العينات بلوغ نقطة النهاية، ويسجل تقرير الإغلاق الأدلة." }
+    ],
+    "deliverables": [
+      { "item": "تقرير تقييم البدائل", "format": "مقارنة الطرق بالتكاليف والمدد والمخاطر (PDF)", "timing": "قبل التصميم" },
+      { "item": "خطة المعالجة وتصميمها", "format": "خطة ومخططات ومواصفات وبيانات طرق التنفيذ (PDF)", "timing": "قبل الأعمال" },
+      { "item": "دعم الطرح", "format": "نطاق الأعمال وجدول الكميات وملاحظات التقييم (PDF + Excel)", "timing": "مرحلة الطرح" },
+      { "item": "سجلات الإشراف", "format": "سجلات يومية وصور وتتبع النفايات وتقارير التقدم (PDF)", "timing": "أثناء الأعمال" },
+      { "item": "نتائج التحقق", "format": "نتائج العينات مقابل الأهداف مع شهادات المختبر (PDF + Excel)", "timing": "نهاية الأعمال" },
+      { "item": "تقرير الإغلاق", "format": "تقرير يوثق الأعمال والأدلة والحالة المتبقية (PDF)", "timing": "بعد التحقق" }
+    ],
+    "regulatoryContext": [
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تحدد التزامات المشغّل، ومنها المسؤوليات المتعلقة بالتلوث والضرر البيئي.",
+      "المركز الوطني للرقابة على الالتزام البيئي، الذي يشرف على الالتزام وقد يحدد متطلبات للمعالجة والتحقق منها.",
+      "المركز الوطني لإدارة النفايات (موان)، الذي تنظم متطلباته تصنيف التربة الملوثة المحفورة والنفايات ونقلها ومعالجتها والتخلص منها.",
+      "اشتراطات الهيئة الملكية للجبيل وينبع والهيئة السعودية للمدن الصناعية ومناطق التقنية (مدن) للمواقع الواقعة ضمن مدنهما."
+    ],
+    "faqs": [
+      { "q": "ما أفضل طريقة للمعالجة؟", "a": "لا توجد طريقة واحدة هي الأفضل دائماً. فالحفر والتخلص سريع لكنه مكلف ويولّد نفايات، والمعالجة الحيوية تعالج التربة الملوثة بالهيدروكربونات في الموقع بتكلفة أقل لكنها تحتاج وقتاً ومساحة، واستخلاص أبخرة التربة يناسب الملوثات المتطايرة في التربة النفاذة، وقد تحتاج المياه الجوفية إلى الضخ والمعالجة أو إلى رصد التخفيف الطبيعي. ويعتمد الاختيار على الملوثات والتربة والمياه الجوفية والجدول الزمني والميزانية والاستخدام النهائي." },
+      { "q": "هل يمكن معالجة التربة الزيتية في الموقع؟", "a": "في كثير من الحالات نعم. فالتربة الملوثة بالهيدروكربونات يمكن معالجتها حيوياً في أكوام معالجة أو أحواض فرد، حيث تُضبط الرطوبة والمغذيات والتهوية لمساعدة الكائنات الدقيقة الطبيعية على تفكيك الزيوت. ويتطلب ذلك مساحة ووقتاً ورصداً، وتُؤكد ملاءمته بالتجارب، وقد يُعاد استخدام التربة المعالجة في الموقع إذا سمحت النتائج." },
+      { "q": "كيف نثبت أن الموقع أصبح نظيفاً؟", "a": "بعينات تحقق تُصمَّم قبل بدء الأعمال، تؤخذ من قيعان الحفريات وجدرانها والتربة المعالجة وآبار المياه الجوفية في مواقع وبتكرار متفق عليهما، وتُحلل في مختبر مؤهل وتُقارن بالأهداف المتفق عليها. ويعرض تقرير الإغلاق هذه الأدلة مع سجل الأعمال ليعتمد عليها الملاك والمشترون والجهات المختصة." },
+      { "q": "من ينفذ أعمال المعالجة؟", "a": "ينفذها مقاولون متخصصون يملكون المعدات والتراخيص التي تتطلبها الطريقة، وفق تصميمنا وتحت إشرافنا. ويمكننا إدارة المقاولين نيابة عنكم، ونُبقي عينات التحقق مستقلة عن المقاول لتمنحكم النتائج فحصاً موضوعياً للأداء." },
+      { "q": "ماذا عن تلوث المياه الجوفية؟", "a": "تُقيَّم المياه الجوفية بشكل منفصل لأنها تتحرك وقد تؤثر في الأراضي والآبار المجاورة. وبحسب الملوثات والمخاطر تشمل البدائل إزالة المصدر، أو ضخ المياه الجوفية ومعالجتها، أو معالجتها في مكانها، أو رصد التخفيف الطبيعي مع الوقت. ونصمم شبكة الرصد ونعرض الاتجاهات حتى تتحقق الشروط المتفق عليها." }
+    ]
+  }
+}

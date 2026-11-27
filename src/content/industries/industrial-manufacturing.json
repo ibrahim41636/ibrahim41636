@@ -11,7 +11,11 @@
     "ghg-carbon-accounting",
     "environmental-impact-assessment",
     "solar-energy-systems",
-    "battery-energy-storage"
+    "battery-energy-storage",
+    "stack-emission-monitoring",
+    "contaminated-site-assessment",
+    "monitoring-as-a-service",
+    "indoor-air-quality"
   ],
   "en": {
     "name": "Industrial & Manufacturing",

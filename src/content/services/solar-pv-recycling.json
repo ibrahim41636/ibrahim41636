@@ -1,0 +1,123 @@
+{
+  "category": "renewable-energy",
+  "order": 6,
+  "formFamily": "waste",
+  "industries": ["energy", "real-estate", "industrial-manufacturing", "commercial-facilities", "government-public-sector", "waste-recycling"],
+  "related": ["renewable-operations-maintenance", "battery-energy-storage", "waste-management", "circular-economy"],
+  "en": {
+    "name": "Solar Panel & Battery End-of-Life Management",
+    "seoTitle": "Solar Panel Recycling & End-of-Life Plans in Saudi Arabia | Selorin",
+    "metaDescription": "End-of-life management for solar panels, inverters and batteries in Saudi Arabia: decommissioning plans, reuse and recycling routes, waste compliance and records.",
+    "valueProp": "We plan what happens to your solar panels and batteries when they are retired, so they are reused or recycled safely, legally and with records.",
+    "cardDescription": "Decommissioning and repowering plans, inventories, reuse and second-life options, licensed recycling routes and waste records for solar panels, inverters and battery systems.",
+    "keyBenefit": "Clean energy assets that stay clean at end of life",
+    "definition": "End-of-life management for solar and storage assets is the planning and control of what happens to panels, inverters, cables, mounting structures and batteries when they are damaged, replaced or retired. It covers inventories, decommissioning methods, testing for reuse, second-life options for batteries, licensed recycling and disposal routes, and the records that show materials were handled responsibly.",
+    "overview": [
+      "Solar capacity in Saudi Arabia is growing quickly across homes, compounds, factories and utility-scale plants, together with battery storage. Panels and batteries have long lives, but breakage, storms, repowering with more efficient modules and the ageing of early installations already generate retired equipment. Panels contain glass, aluminium, silicon and small amounts of metals, and batteries contain materials that must be handled as hazardous or special waste.",
+      "Without a plan, retired panels and batteries can end up stored on site indefinitely, mixed with general waste or sold through informal channels, creating safety, environmental and reputational risks. A plan made early, ideally at procurement, defines responsibilities, take-back options with suppliers, testing for reuse and licensed recycling routes. It also turns recovered materials into a circular economy result rather than a liability.",
+      "We help owners, developers, operation and maintenance providers and facility managers manage the end of life of solar and storage assets. We prepare decommissioning and repowering plans, build asset inventories, assess reuse and second-life options, verify licensed transport and recycling routes, and keep the waste records and certificates needed for compliance and reporting."
+    ],
+    "whenYouNeed": [
+      "You are repowering a solar plant or replacing damaged panels.",
+      "Battery systems are reaching the end of their warranty or service life.",
+      "Storm, fire or hail damage has left broken panels on site.",
+      "A lender or client asks for a decommissioning and end-of-life plan.",
+      "You want supplier take-back terms in new procurement contracts.",
+      "Your sustainability report needs data on recovered and recycled materials."
+    ],
+    "deliver": [
+      { "title": "Asset inventory", "description": "Register of panels, inverters, batteries and components by type, quantity, condition and location, as the basis for planning and reporting." },
+      { "title": "Decommissioning and repowering plan", "description": "Methods, sequencing, safety controls, storage and logistics for removing equipment, coordinated with grid disconnection and site restoration." },
+      { "title": "Reuse and second-life assessment", "description": "Testing approach and criteria for reusing panels and inverters, and options for second-life use of batteries where safe and economical." },
+      { "title": "Recycling and disposal routes", "description": "Identification and checking of licensed transporters and recyclers, with the classification of each waste stream and the documents required." },
+      { "title": "Procurement clauses", "description": "Take-back, labelling and end-of-life requirements for supplier contracts, so responsibilities are agreed before equipment is installed." },
+      { "title": "Records and reporting", "description": "Waste transfer records, recycling certificates and material recovery data for compliance, audits and sustainability reporting." }
+    ],
+    "approach": [
+      { "title": "Inventory", "description": "We record what is installed or retired and its condition." },
+      { "title": "Options", "description": "Reuse, second-life, recycling and disposal options are compared for safety, cost and environmental outcome." },
+      { "title": "Planning", "description": "A decommissioning or end-of-life plan sets methods, roles and logistics." },
+      { "title": "Route checks", "description": "Transporters and recyclers are checked for licences and capabilities." },
+      { "title": "Oversight", "description": "Removal, storage and handover are supervised and documented." },
+      { "title": "Reporting", "description": "Records and recovered material data are compiled for compliance and sustainability reports." }
+    ],
+    "deliverables": [
+      { "item": "Asset inventory", "format": "Equipment register (Excel)", "timing": "Start of engagement" },
+      { "item": "End-of-life plan", "format": "Methods, routes, roles and schedule (PDF)", "timing": "Before removal" },
+      { "item": "Route verification", "format": "Checked list of licensed transporters and recyclers (PDF)", "timing": "Before removal" },
+      { "item": "Procurement clauses", "format": "Draft contract requirements for suppliers (Word)", "timing": "Procurement stage" },
+      { "item": "Waste records pack", "format": "Transfer notes, certificates and quantities (PDF + Excel)", "timing": "After removal" },
+      { "item": "Material recovery summary", "format": "Reuse and recycling results for sustainability reporting (PDF)", "timing": "After completion" }
+    ],
+    "regulatoryContext": [
+      "Waste Management Law and the regulations of the National Center for Waste Management (MWAN), which govern the classification, transport, treatment and recycling of waste, including hazardous waste.",
+      "Environmental Law (2020) and its Implementing Regulations, which apply to the storage and handling of waste on site.",
+      "Vision 2030 and national goals for diverting waste from landfill and increasing recycling."
+    ],
+    "faqs": [
+      { "q": "Can solar panels be recycled?", "a": "Yes. Panels are mostly glass and aluminium, which are recyclable, and specialised processes can recover silicon, silver and copper. The practical question is whether licensed recycling capacity is available and what it costs compared with other routes. We check the available routes, document them and help you choose the option with the best balance of cost, compliance and environmental outcome." },
+      { "q": "Are batteries treated as hazardous waste?", "a": "Many battery types contain materials that must be handled as hazardous waste, and damaged lithium batteries also carry fire risks. Classification depends on the chemistry and condition. We identify the right classification and handling requirements and make sure storage, transport and treatment use licensed providers with suitable safety controls." },
+      { "q": "What is second-life use for batteries?", "a": "Second-life means reusing batteries that no longer meet the demands of their first application, such as high power storage, in a less demanding one, for example backup supply. It can extend their useful life before recycling. It needs testing, a safe design and clear warranties, so it is not right for every case." },
+      { "q": "When should end-of-life be planned?", "a": "Ideally at procurement, when take-back and documentation can be written into supplier contracts at little cost. For existing plants, the right time is before repowering, major replacements or the end of warranties, so that removal, storage and recycling are organised rather than improvised." },
+      { "q": "How does this help our sustainability reporting?", "a": "Documented reuse and recycling of panels and batteries provides measurable circular economy and waste data, and shows that clean energy investments are managed responsibly across their whole life. Records of quantities, routes and certificates support both compliance and sustainability disclosures." }
+    ]
+  },
+  "ar": {
+    "name": "إدارة نهاية عمر الألواح الشمسية والبطاريات",
+    "seoTitle": "إعادة تدوير الألواح الشمسية والبطاريات في السعودية | سيلورين",
+    "metaDescription": "إدارة نهاية عمر الألواح الشمسية والعواكس والبطاريات في المملكة: خطط الإزالة، وإعادة الاستخدام والتدوير، والامتثال لأنظمة النفايات، والسجلات الموثقة.",
+    "valueProp": "نخطط مصير ألواحكم الشمسية وبطارياتكم عند استبدالها أو إخراجها من الخدمة، لتُعاد إلى الاستخدام أو تُدوَّر بأمان ونظامية وبسجلات موثقة.",
+    "cardDescription": "خطط الإزالة وإعادة التأهيل، وحصر الأصول، وخيارات إعادة الاستخدام والحياة الثانية، ومسارات التدوير المرخصة، وسجلات النفايات للألواح الشمسية والعواكس وأنظمة البطاريات.",
+    "keyBenefit": "أصول طاقة نظيفة تبقى نظيفة حتى نهاية عمرها",
+    "definition": "إدارة نهاية عمر أصول الطاقة الشمسية والتخزين هي تخطيط ما يحدث للألواح والعواكس والكابلات وهياكل التثبيت والبطاريات عند تلفها أو استبدالها أو إخراجها من الخدمة وضبطه. وتشمل حصر الأصول، وطرق الإزالة، وفحص صلاحيتها لإعادة الاستخدام، وخيارات الحياة الثانية للبطاريات، ومسارات التدوير والتخلص المرخصة، والسجلات التي تثبت مناولة المواد بمسؤولية.",
+    "overview": [
+      "تنمو قدرات الطاقة الشمسية في المملكة بسرعة في المنازل والمجمعات والمصانع والمحطات الكبيرة، ومعها أنظمة تخزين البطاريات. وللألواح والبطاريات أعمار طويلة، لكن الكسر والعواصف وإعادة التأهيل بألواح أعلى كفاءة وتقادم المنشآت الأولى تولّد بالفعل معدات خارجة من الخدمة. وتحتوي الألواح على الزجاج والألمنيوم والسيليكون وكميات صغيرة من المعادن، وتحتوي البطاريات على مواد يجب مناولتها كنفايات خطرة أو خاصة.",
+      "دون خطة قد تبقى الألواح والبطاريات المستبعدة مخزنة في الموقع إلى أجل غير مسمى، أو تُخلط بالنفايات العامة، أو تُباع عبر قنوات غير نظامية، فتنشأ مخاطر على السلامة والبيئة والسمعة. والخطة المبكرة، ويفضّل أن تكون عند الشراء، تحدد المسؤوليات وخيارات الاسترجاع مع الموردين وفحص الصلاحية لإعادة الاستخدام ومسارات التدوير المرخصة، وتحوّل المواد المستردة إلى نتيجة في الاقتصاد الدائري بدلاً من عبء.",
+      "نساعد الملاك والمطورين ومقدمي خدمات التشغيل والصيانة ومديري المرافق على إدارة نهاية عمر أصول الطاقة الشمسية والتخزين. نعدّ خطط الإزالة وإعادة التأهيل، ونبني سجلات الأصول، ونقيّم خيارات إعادة الاستخدام والحياة الثانية، ونتحقق من مسارات النقل والتدوير المرخصة، ونحفظ سجلات النفايات والشهادات اللازمة للامتثال والتقارير."
+    ],
+    "whenYouNeed": [
+      "تعيد تأهيل محطة شمسية أو تستبدل ألواحاً تالفة.",
+      "تقترب أنظمة البطاريات من نهاية ضمانها أو عمرها التشغيلي.",
+      "خلّفت عاصفة أو حريق أو برد ألواحاً مكسورة في الموقع.",
+      "يطلب ممول أو عميل خطة إزالة وإدارة لنهاية العمر.",
+      "تريد تضمين شروط الاسترجاع في عقود الشراء الجديدة مع الموردين.",
+      "يحتاج تقرير الاستدامة إلى بيانات عن المواد المستردة والمعاد تدويرها."
+    ],
+    "deliver": [
+      { "title": "حصر الأصول", "description": "سجل للألواح والعواكس والبطاريات والمكونات حسب النوع والكمية والحالة والموقع، أساساً للتخطيط والتقارير." },
+      { "title": "خطة الإزالة وإعادة التأهيل", "description": "الطرق والتسلسل وضوابط السلامة والتخزين والخدمات اللوجستية لإزالة المعدات، بالتنسيق مع فصل الشبكة وإعادة تأهيل الموقع." },
+      { "title": "تقييم إعادة الاستخدام والحياة الثانية", "description": "منهجية فحص ومعايير لإعادة استخدام الألواح والعواكس، وخيارات الحياة الثانية للبطاريات حين تكون آمنة ومجدية اقتصادياً." },
+      { "title": "مسارات التدوير والتخلص", "description": "تحديد الناقلين والمدوّرين المرخصين والتحقق منهم، مع تصنيف كل تيار من النفايات والمستندات المطلوبة." },
+      { "title": "بنود الشراء", "description": "متطلبات الاسترجاع والوسم ونهاية العمر في عقود الموردين، لتُتفق المسؤوليات قبل تركيب المعدات." },
+      { "title": "السجلات والتقارير", "description": "مستندات نقل النفايات وشهادات التدوير وبيانات المواد المستردة للامتثال والتدقيق وتقارير الاستدامة." }
+    ],
+    "approach": [
+      { "title": "الحصر", "description": "نسجل ما هو مركّب أو مستبعد وحالته." },
+      { "title": "البدائل", "description": "نقارن خيارات إعادة الاستخدام والحياة الثانية والتدوير والتخلص من حيث السلامة والتكلفة والأثر البيئي." },
+      { "title": "التخطيط", "description": "تحدد خطة الإزالة أو نهاية العمر الطرق والأدوار والخدمات اللوجستية." },
+      { "title": "التحقق من المسارات", "description": "نتحقق من تراخيص الناقلين والمدوّرين وقدراتهم." },
+      { "title": "الإشراف", "description": "نشرف على الإزالة والتخزين والتسليم ونوثقها." },
+      { "title": "التقارير", "description": "نجمع السجلات وبيانات المواد المستردة لتقارير الامتثال والاستدامة." }
+    ],
+    "deliverables": [
+      { "item": "حصر الأصول", "format": "سجل المعدات (Excel)", "timing": "بداية التكليف" },
+      { "item": "خطة نهاية العمر", "format": "الطرق والمسارات والأدوار والجدول الزمني (PDF)", "timing": "قبل الإزالة" },
+      { "item": "التحقق من المسارات", "format": "قائمة موثقة بالناقلين والمدوّرين المرخصين (PDF)", "timing": "قبل الإزالة" },
+      { "item": "بنود الشراء", "format": "مسودة متطلبات تعاقدية للموردين (Word)", "timing": "مرحلة الشراء" },
+      { "item": "حزمة سجلات النفايات", "format": "مستندات النقل والشهادات والكميات (PDF + Excel)", "timing": "بعد الإزالة" },
+      { "item": "ملخص المواد المستردة", "format": "نتائج إعادة الاستخدام والتدوير لتقارير الاستدامة (PDF)", "timing": "بعد الانتهاء" }
+    ],
+    "regulatoryContext": [
+      "نظام إدارة النفايات ولوائح المركز الوطني لإدارة النفايات (موان)، التي تنظم تصنيف النفايات ونقلها ومعالجتها وتدويرها، ومنها النفايات الخطرة.",
+      "نظام البيئة (2020) ولوائحه التنفيذية، التي تنطبق على تخزين النفايات ومناولتها في الموقع.",
+      "رؤية 2030 والمستهدفات الوطنية لتحويل النفايات عن المرادم وزيادة التدوير."
+    ],
+    "faqs": [
+      { "q": "هل يمكن تدوير الألواح الشمسية؟", "a": "نعم. فالألواح مكونة في معظمها من الزجاج والألمنيوم القابلين للتدوير، ويمكن لعمليات متخصصة استرداد السيليكون والفضة والنحاس. والسؤال العملي هو مدى توفر طاقة تدوير مرخصة وتكلفتها مقارنة بالمسارات الأخرى. ونتحقق من المسارات المتاحة ونوثقها ونساعدكم على اختيار الخيار الأفضل توازناً بين التكلفة والامتثال والأثر البيئي." },
+      { "q": "هل تُعامل البطاريات كنفايات خطرة؟", "a": "تحتوي أنواع كثيرة من البطاريات على مواد تتطلب مناولتها كنفايات خطرة، كما تحمل بطاريات الليثيوم التالفة مخاطر حريق، ويعتمد التصنيف على الكيمياء والحالة. ونحدد التصنيف الصحيح ومتطلبات المناولة، ونتأكد من أن التخزين والنقل والمعالجة تتم عبر مقدمي خدمات مرخصين بضوابط سلامة مناسبة." },
+      { "q": "ما الحياة الثانية للبطاريات؟", "a": "تعني إعادة استخدام البطاريات التي لم تعد تفي بمتطلبات استخدامها الأول، كالتخزين عالي القدرة، في استخدام أقل تطلباً كالتغذية الاحتياطية، فيمتد عمرها المفيد قبل التدوير. ويتطلب ذلك فحصاً وتصميماً آمناً وضمانات واضحة، لذا لا يناسب كل حالة." },
+      { "q": "متى يجب التخطيط لنهاية العمر؟", "a": "يفضّل عند الشراء، حين يمكن تضمين الاسترجاع والتوثيق في عقود الموردين بتكلفة قليلة. أما المحطات القائمة فالوقت المناسب قبل إعادة التأهيل أو الاستبدالات الكبيرة أو انتهاء الضمانات، لتُنظَّم الإزالة والتخزين والتدوير بدلاً من ارتجالها." },
+      { "q": "كيف يساعد ذلك تقارير الاستدامة؟", "a": "توفر إعادة استخدام الألواح والبطاريات وتدويرها الموثقة بيانات قابلة للقياس عن الاقتصاد الدائري والنفايات، وتُظهر أن استثمارات الطاقة النظيفة تُدار بمسؤولية طوال عمرها. وتدعم سجلات الكميات والمسارات والشهادات الامتثال والإفصاح عن الاستدامة معاً." }
+    ]
+  }
+}

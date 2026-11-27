@@ -9,7 +9,8 @@
   "services": [
     "environmental-monitoring",
     "environmental-compliance",
-    "environmental-records"
+    "environmental-records",
+    "stack-emission-monitoring"
   ],
   "industries": [
     "energy",

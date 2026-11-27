@@ -1,0 +1,79 @@
+---
+// What sets Selorin's services apart, stated as concrete service features rather than claims
+// about the market (see docs/content-guide.md: no unverifiable comparisons or superlatives).
+import Icon from "@/components/Icon.astro";
+import { href, type Lang } from "@/i18n/ui";
+interface Props { lang: Lang; tone?: "white" | "plain" }
+const { lang, tone = "plain" } = Astro.props;
+const ar = lang === "ar";
+const items = [
+  {
+    icon: "signal", to: "/services/monitoring-as-a-service/",
+    title: { en: "Monitoring as a service", ar: "الرصد كخدمة" },
+    text: {
+      en: "Stations supplied, installed, calibrated and maintained for a monthly fee, with live data, alerts and specialist reports, and no equipment to buy.",
+      ar: "محطات نوردها ونركّبها ونعايرها ونصونها مقابل رسوم شهرية، مع بيانات حية وتنبيهات وتقارير يعدّها مختصون، دون شراء أجهزة.",
+    },
+  },
+  {
+    icon: "wave", to: "/services/marine-coastal/",
+    title: { en: "Land and sea under one team", ar: "البر والبحر بفريق واحد" },
+    text: {
+      en: "Marine surveys, brine and outfall studies and coastal restoration alongside our work on land, so coastal projects deal with one accountable adviser.",
+      ar: "مسوحات بحرية ودراسات للمحلول الملحي والمصبات واستعادة للسواحل إلى جانب أعمالنا على اليابسة، ليتعامل المشروع الساحلي مع جهة استشارية واحدة مسؤولة.",
+    },
+  },
+  {
+    icon: "soil", to: "/services/contaminated-land/",
+    title: { en: "From contaminated land to reuse", ar: "من الأرض الملوثة إلى إعادة الاستخدام" },
+    text: {
+      en: "Staged site assessment, remediation design and independent validation, ending with a closure report that owners, buyers and lenders can rely on.",
+      ar: "تقييم مرحلي للموقع وتصميم للمعالجة وتحقق مستقل، ينتهي بتقرير إغلاق يعتمد عليه الملاك والمشترون والممولون.",
+    },
+  },
+  {
+    icon: "climate", to: "/services/climate-risk/",
+    title: { en: "Compliance data that feeds disclosure", ar: "بيانات امتثال تخدم الإفصاح" },
+    text: {
+      en: "The same monitoring and emissions data supports permits, greenhouse gas inventories, and climate and nature disclosures, so you collect once and report consistently.",
+      ar: "تخدم بيانات الرصد والانبعاثات نفسها التصاريح وحصر غازات الاحتباس الحراري والإفصاح عن المخاطر المناخية والطبيعة، فتجمعها مرة وتفصح عنها باتساق.",
+    },
+  },
+  {
+    icon: "recycle", to: "/services/solar-pv-recycling/",
+    title: { en: "Clean energy across its whole life", ar: "الطاقة النظيفة طوال عمرها" },
+    text: {
+      en: "From feasibility and installation to operation and the end-of-life management of panels and batteries, with records that support sustainability reporting.",
+      ar: "من الجدوى والتركيب إلى التشغيل وإدارة نهاية عمر الألواح والبطاريات، بسجلات تدعم تقارير الاستدامة.",
+    },
+  },
+  {
+    icon: "doc", to: "/request/",
+    title: { en: "Clear proposals, payments tied to progress", ar: "عرض واضح ودفعات مرتبطة بالإنجاز" },
+    text: {
+      en: "A technical and financial proposal you review and approve online, one chance to ask for a discount or a different schedule, and payments tied to completed stages.",
+      ar: "عرض فني ومالي تراجعه وتوافق عليه إلكترونياً، وفرصة واحدة لطلب خصم أو تقسيم دفعات مختلف، ودفعات مرتبطة بالمراحل المنجزة.",
+    },
+  },
+];
+---
+<section class:list={["section", { "bg-white border-top": tone === "white" }]} aria-labelledby={`h-diff-${lang}`}>
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">{ar ? "لماذا سيلورين" : "Why Selorin"}</p>
+        <h2 id={`h-diff-${lang}`}>{ar ? "ما الذي يميز العمل مع سيلورين" : "What makes working with Selorin different"}</h2>
+      </div>
+      <p class="lead">{ar ? "خدمات مصممة حول الأسئلة التي يواجهها العملاء فعلاً، مع فريق واحد مسؤول من أول دراسة إلى آخر تقرير." : "Services designed around the questions clients actually face, with one team accountable from the first study to the last report."}</p>
+    </div>
+    <div class="grid grid-3">
+      {items.map((it) => (
+        <article class="card reveal">
+          <span class="icon"><Icon name={it.icon} /></span>
+          <h3><a class="card-link" href={href(lang, it.to)} style="text-decoration:none" data-cta="differentiator">{it.title[lang]}</a></h3>
+          <p>{it.text[lang]}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

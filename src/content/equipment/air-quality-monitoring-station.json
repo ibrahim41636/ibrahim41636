@@ -10,7 +10,8 @@
   "services": [
     "environmental-monitoring",
     "environmental-impact-assessment",
-    "environmental-permitting"
+    "environmental-permitting",
+    "monitoring-as-a-service"
   ],
   "industries": [
     "industrial-manufacturing",

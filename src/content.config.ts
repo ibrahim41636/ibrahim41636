@@ -10,6 +10,8 @@ export const SERVICE_CATEGORIES = [
   "permitting-compliance",
   "environmental-studies",
   "monitoring-measurement",
+  "marine-coastal",
+  "contaminated-land",
   "waste-circular-economy",
   "sustainability-climate",
   "sustainable-buildings",

@@ -197,6 +197,12 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 .mega[hidden] { display: none; }
 .mega-inner { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)) 260px; gap: var(--space-6) var(--space-7); padding-block: var(--space-7); }
 .mega-inner--industries { grid-template-columns: repeat(4, minmax(0, 1fr)) 280px; }
+/* Services: categories flow through balanced columns (they differ in length), and a menu taller
+   than the screen scrolls inside itself instead of running off the bottom. */
+.mega { max-height: calc(100vh - var(--header-h)); overflow-y: auto; overscroll-behavior: contain; }
+.mega-inner--services { grid-template-columns: minmax(0, 1fr) 260px; }
+.mega-cols { columns: 4; column-gap: var(--space-7); }
+.mega-cols > div { break-inside: avoid; margin-bottom: var(--space-6); }
 .mega h3 { font-size: var(--fs-14); font-weight: 600; margin: 0 0 var(--space-3); }
 .mega h3 a { text-decoration: none; display: inline-flex; gap: 8px; align-items: center; }
 .mega h3 a:hover { color: var(--c-forest); }
@@ -208,12 +214,17 @@ ul, ol { margin: 0; padding-inline-start: 1.2em; }
 
 @media (max-width: 1180px) {
   .nav { position: fixed; inset: var(--header-h) 0 0 0; background: var(--c-paper); overflow-y: auto; padding: var(--space-4) var(--gutter) 120px; visibility: hidden; opacity: 0; transition: opacity .2s, visibility .2s; }
+  /* The header's backdrop-filter makes it the containing block for this fixed panel, so "bottom: 0"
+     would end the panel at the header itself. Give it an explicit height below the header instead. */
+  .nav { bottom: auto; height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); }
   .nav.is-open { visibility: visible; opacity: 1; }
   .nav > ul { flex-direction: column; align-items: stretch; }
   .nav-link { width: 100%; height: 56px; justify-content: space-between; font-size: var(--fs-18); border-bottom: 1px solid var(--c-line); border-radius: 0; padding-inline: 0; }
   .nav-link[aria-current="page"], .nav-link.is-current { box-shadow: none; }
-  .mega { position: static; box-shadow: none; border: 0; background: transparent; }
-  .mega-inner, .mega-inner--industries { grid-template-columns: 1fr; gap: var(--space-4); padding-block: var(--space-4); width: 100%; }
+  .mega { position: static; box-shadow: none; border: 0; background: transparent; max-height: none; overflow: visible; }
+  .mega-cols { columns: 1; }
+  .mega-cols > div { margin-bottom: var(--space-4); }
+  .mega-inner, .mega-inner--industries, .mega-inner--services { grid-template-columns: 1fr; gap: var(--space-4); padding-block: var(--space-4); width: 100%; }
   .mega-aside { display: none; }
   .menu-toggle { display: inline-flex; }
   .header-tools .btn { display: none; }

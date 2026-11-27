@@ -7,6 +7,7 @@
 // Public:  GET  /api/quote?t=TOKEN            → the proposal, its schedule and what is paid
 //          POST /api/quote/accept {t}          → approve; returns the payment link if a payment is due
 //          POST /api/quote/pay {t, ms}         → payment link for a due instalment
+//          POST /api/quote/request-change {t, discount, schedule, note} → the client's one revision request
 //          POST /api/pay/callback?ms=ID        → Moyasar invoice callback
 //          POST /api/pay/webhook               → Moyasar dashboard webhook (optional)
 // Staff (ADMIN_TOKEN, via admin.ts):
@@ -23,9 +24,10 @@ import { json, sendEmail, type Env } from "./request";
 import { checkUploads, type CheckedFile } from "../../src/lib/uploads";
 import { LEAD_ID } from "../../src/lib/tracking";
 import {
-  MOYASAR_API, TOKEN, buildSchedule, dueEmail, invoicePayload, isDeadInvoice, isPaidInvoice, keyAllowed, newToken,
+  MOYASAR_API, TOKEN, buildSchedule, dueEmail, invoicePayload, isDeadInvoice, isPaidInvoice, keyAllowed, newToken, parseChangeRequest,
   quoteEmail, quoteUrl, receiptEmail, sarToHalalas, staffEmail, type Lang, type MoyasarInvoice, type PlanRow,
 } from "../../src/lib/payments";
+import { stageOf } from "../../src/lib/tracking";
 
 export interface PayEnv extends Env {
   MOYASAR_SECRET_KEY?: string;
@@ -34,7 +36,7 @@ export interface PayEnv extends Env {
   SITE_URL?: string; // canonical origin for links in e-mails, e.g. https://selorin.co
 }
 
-interface QuoteRow { quote_id: string; lead_id: string; token: string; lang: Lang; title: string; subtotal: number; vat: number; total: number; status: string; documents: string | null; valid_until: string; created_at: string; accepted_at: string | null }
+interface QuoteRow { quote_id: string; lead_id: string; token: string; lang: Lang; title: string; subtotal: number; vat: number; total: number; status: string; documents: string | null; valid_until: string; created_at: string; accepted_at: string | null; negotiable: number; change_request: string | null; change_requested_at: string | null; replaces: string | null }
 interface MilestoneRow { id: number; quote_id: string; seq: number; label: string; trigger: "acceptance" | "milestone"; percent: number; amount: number; status: string; due_at: string | null; paid_at: string | null; invoice_id: string | null; invoice_url: string | null; payment_id: string | null; paid_by: string | null; reminders: number; last_reminder_at: string | null }
 interface LeadRow { lead_id: string; email: string; contact_name: string; company: string | null; status: string; payload: string | null }
 
@@ -173,10 +175,18 @@ async function invoiceUrl(env: PayEnv, ms: MilestoneRow, quote: QuoteRow, lead: 
   return inv.url;
 }
 
-function publicView(quote: QuoteRow, ms: MilestoneRow[], lead: LeadRow) {
+async function historyOf(env: PayEnv, leadId: string) {
+  return (await env.DB!.prepare(`SELECT status, note, at FROM lead_events WHERE lead_id = ?1 ORDER BY at ASC, id ASC`).bind(leadId).all<{ status: string; note: string | null; at: string }>()).results ?? [];
+}
+
+function publicView(quote: QuoteRow, ms: MilestoneRow[], lead: LeadRow, history: { status: string; note: string | null; at: string }[]) {
   const paid = ms.filter((m) => m.status === "paid").reduce((n, m) => n + m.amount, 0);
   const expired = quote.status === "sent" && quote.valid_until < today();
+  let change: unknown = null;
+  try { change = quote.change_request ? JSON.parse(quote.change_request) : null; } catch { /* shown as requested without details */ }
   return {
+    negotiable: quote.negotiable === 1 && !quote.change_requested_at, final: quote.negotiable !== 1, revised: !!quote.replaces,
+    changeRequest: change, stage: stageOf(lead.status, quote.status), history,
     quoteId: quote.quote_id, leadId: quote.lead_id, lang: quote.lang, title: quote.title, company: lead.company ?? "", name: lead.contact_name,
     subtotal: quote.subtotal, vat: quote.vat, total: quote.total, paid, remaining: Math.max(quote.total - paid, 0),
     status: expired ? "expired" : quote.status, validUntil: quote.valid_until, createdAt: quote.created_at,
@@ -202,17 +212,41 @@ export async function handlePayments(request: Request, env: PayEnv, path: string
         ms = await milestonesOf(env, quote.quote_id);
         Object.assign(quote, await env.DB.prepare(`SELECT status FROM quotes WHERE quote_id = ?1`).bind(quote.quote_id).first());
       }
-      return json(200, { ok: true, quote: publicView(quote, ms, lead) });
+      return json(200, { ok: true, quote: publicView(quote, ms, lead, await historyOf(env, lead.lead_id)) });
     }
 
-    if ((path === "/api/quote/accept" || path === "/api/quote/pay") && request.method === "POST") {
-      const body = (await request.json().catch(() => ({}))) as { t?: string; ms?: number };
+    if ((path === "/api/quote/accept" || path === "/api/quote/pay" || path === "/api/quote/request-change") && request.method === "POST") {
+      const body = (await request.json().catch(() => ({}))) as { t?: string; ms?: number; discount?: boolean; schedule?: boolean; note?: string };
       const quote = await quoteByToken(env, String(body.t ?? ""));
       if (!quote) return json(404, { ok: false, error: "not_found" });
       const lead = await leadOf(env, quote.lead_id);
       if (!lead) return json(404, { ok: false, error: "not_found" });
-      if (quote.status === "cancelled") return json(409, { ok: false, error: "cancelled" });
+      if (quote.status === "cancelled" || quote.status === "superseded" || quote.status === "change_requested") return json(409, { ok: false, error: quote.status });
       let ms = await milestonesOf(env, quote.quote_id);
+
+      // One revision round: only on a first proposal that is still open, and only once.
+      if (path === "/api/quote/request-change") {
+        if (quote.status !== "sent") return json(409, { ok: false, error: "not_open" });
+        if (quote.valid_until < today()) return json(410, { ok: false, error: "expired" });
+        if (quote.negotiable !== 1) return json(409, { ok: false, error: "final" });
+        const parsed = parseChangeRequest(body);
+        if (!parsed.ok) return json(422, { ok: false, error: `change_${parsed.error}` });
+        const won = await env.DB.prepare(
+          `UPDATE quotes SET status = 'change_requested', change_request = ?2, change_requested_at = datetime('now') WHERE quote_id = ?1 AND status = 'sent' AND negotiable = 1 AND change_requested_at IS NULL RETURNING quote_id`,
+        ).bind(quote.quote_id, JSON.stringify(parsed.request)).first();
+        if (!won) return json(409, { ok: false, error: "not_open" });
+        const what = quote.lang === "ar"
+          ? [parsed.request.discount ? "خصم" : "", parsed.request.schedule ? "تعديل جدول الدفعات" : ""].filter(Boolean).join(" و")
+          : [parsed.request.discount ? "a discount" : "", parsed.request.schedule ? "a different payment schedule" : ""].filter(Boolean).join(" and ");
+        await addEvent(env, lead.lead_id, lead.status, quote.lang === "ar"
+          ? `استلمنا طلبك لمراجعة العرض (${what})، وسنرسل لك العرض المحدّث بالبريد.`
+          : `We received your request to revise the proposal (${what}) and will e-mail you the revised proposal.`);
+        await mail(env, env.SALES_EMAIL ?? "sales@selorin.co", staffEmail("change", {
+          leadId: lead.lead_id, quoteId: quote.quote_id, company: lead.company ?? "", title: quote.title, change: parsed.request,
+          adminUrl: `${site}/ar/admin/quotes/?lead=${encodeURIComponent(lead.lead_id)}`,
+        })).catch((e) => console.error("staff change email failed", e));
+        return json(200, { ok: true });
+      }
 
       if (path === "/api/quote/accept") {
         if (quote.status === "sent") {
@@ -299,6 +333,7 @@ export async function handlePaymentsAdmin(request: Request, env: PayEnv, path: s
       const title = String(form.get("title") ?? "").trim().slice(0, 160);
       const subtotal = sarToHalalas(String(form.get("subtotal") ?? ""));
       const validDays = Math.min(Math.max(Number(form.get("validDays")) || 30, 1), 180);
+      const markedFinal = String(form.get("final") ?? "") === "1";
       let plan: PlanRow[] = [];
       try { plan = JSON.parse(String(form.get("plan") ?? "[]")); } catch { /* validated below */ }
       if (!LEAD_ID.test(leadId) || !title) return json(422, { ok: false, error: "validation" });
@@ -318,24 +353,33 @@ export async function handlePaymentsAdmin(request: Request, env: PayEnv, path: s
       const { schedule } = built;
       const url = quoteUrl(site, lang, token);
       const names = uploads.files.map((f) => f.name);
+      // The client gets one revision round per request: once they have used it, every later proposal is final.
+      const used = await env.DB!.prepare(`SELECT quote_id FROM quotes WHERE lead_id = ?1 AND change_requested_at IS NOT NULL ORDER BY change_requested_at DESC LIMIT 1`).bind(leadId).first<{ quote_id: string }>();
+      const negotiable = !markedFinal && !used;
+      const open = (await env.DB!.prepare(`SELECT quote_id FROM quotes WHERE lead_id = ?1 AND status IN ('sent', 'change_requested') ORDER BY created_at DESC`).bind(leadId).all<{ quote_id: string }>()).results ?? [];
+      const replaces = used?.quote_id ?? open[0]?.quote_id ?? null;
 
       // E-mail first: a proposal the client never received should not exist in the system.
       try {
-        await mail(env, lead.email, quoteEmail({ lang, name: lead.contact_name, leadId, title, url, total: schedule.total, milestones: schedule.milestones, validUntil, files: names }), uploads.files);
+        await mail(env, lead.email, quoteEmail({ lang, name: lead.contact_name, leadId, title, url, total: schedule.total, milestones: schedule.milestones, validUntil, files: names, negotiable, revised: !!replaces }), uploads.files);
       } catch (e) {
         console.error("quote email failed", quoteId, e);
         return json(502, { ok: false, error: "email_failed" });
       }
       await env.DB!.batch([
-        env.DB!.prepare(`INSERT INTO quotes (quote_id, lead_id, token, lang, title, subtotal, vat, total, status, documents, valid_until, created_at) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, 'sent', ?9, ?10, datetime('now'))`)
-          .bind(quoteId, leadId, token, lang, title, schedule.subtotal, schedule.vat, schedule.total, JSON.stringify(names), validUntil),
+        // One live proposal per request: an earlier open one can no longer be approved.
+        env.DB!.prepare(`UPDATE quotes SET status = 'superseded' WHERE lead_id = ?1 AND status IN ('sent', 'change_requested')`).bind(leadId),
+        env.DB!.prepare(`INSERT INTO quotes (quote_id, lead_id, token, lang, title, subtotal, vat, total, status, documents, valid_until, created_at, negotiable, replaces) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, 'sent', ?9, ?10, datetime('now'), ?11, ?12)`)
+          .bind(quoteId, leadId, token, lang, title, schedule.subtotal, schedule.vat, schedule.total, JSON.stringify(names), validUntil, negotiable ? 1 : 0, replaces),
         ...schedule.milestones.map((m) => env.DB!.prepare(`INSERT INTO quote_milestones (quote_id, seq, label, trigger, percent, amount) VALUES (?1, ?2, ?3, ?4, ?5, ?6)`)
           .bind(quoteId, m.seq, m.label, m.trigger, m.percent, m.amount)),
         env.DB!.prepare(`UPDATE leads SET status = 'quoted', status_updated_at = datetime('now') WHERE lead_id = ?1 AND status IN ('received', 'reviewing')`).bind(leadId),
         env.DB!.prepare(`INSERT INTO lead_events (lead_id, status, note, at, notified) VALUES (?1, 'quoted', ?2, datetime('now'), 1)`)
-          .bind(leadId, lang === "ar" ? "أرسلنا لك العرض الفني والمالي بالبريد الإلكتروني." : "We have e-mailed you our technical and financial proposal."),
+          .bind(leadId, replaces
+            ? (lang === "ar" ? "أرسلنا لك العرض الفني والمالي المحدّث بالبريد الإلكتروني." : "We have e-mailed you our revised technical and financial proposal.")
+            : (lang === "ar" ? "أرسلنا لك العرض الفني والمالي بالبريد الإلكتروني." : "We have e-mailed you our technical and financial proposal.")),
       ]);
-      return json(200, { ok: true, quoteId, link: url, total: schedule.total });
+      return json(200, { ok: true, quoteId, link: url, total: schedule.total, negotiable, replaces });
     }
 
     if (path === "/api/admin/milestone" && request.method === "POST") {

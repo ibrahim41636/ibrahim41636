@@ -15,6 +15,24 @@ export const STATUS_LABELS: Record<Status, { en: string; ar: string }> = {
 
 export const isStatus = (v: unknown): v is Status => typeof v === "string" && (STATUSES as readonly string[]).includes(v);
 
+/** The five stages a client sees on the tracking and proposal pages. */
+export const STAGES = [
+  { id: "received", en: "Request received", ar: "استلام الطلب" },
+  { id: "proposal", en: "Proposal", ar: "العرض الفني والمالي" },
+  { id: "approval", en: "Approval and payment", ar: "الموافقة والدفع" },
+  { id: "work", en: "Work in progress", ar: "التنفيذ" },
+  { id: "done", en: "Completed", ar: "الإنجاز" },
+] as const;
+
+/** Index into STAGES for a request status, refined by the proposal status when there is one. */
+export function stageOf(leadStatus: string, quoteStatus?: string): number {
+  if (leadStatus === "completed" || leadStatus === "closed") return 4;
+  if (leadStatus === "in_progress") return 3;
+  if (quoteStatus === "accepted" || quoteStatus === "paid") return 2;
+  if (leadStatus === "quoted" || quoteStatus) return 1;
+  return 0;
+}
+
 export const LEAD_ID = /^SEL-\d{4}-\d{6}$/;
 
 export const normalizeEmail = (v: string) => v.trim().toLowerCase();

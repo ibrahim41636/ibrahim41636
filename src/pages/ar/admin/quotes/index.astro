@@ -49,6 +49,8 @@ import Base from "@/layouts/Base.astro";
             <input name="files" type="file" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg,.zip" />
           </label>
           <p class="muted" style="font-size:var(--fs-14)">تُرسل الملفات للعميل مرفقة بالبريد مع رابط الموافقة والدفع، ولا تُحفظ في الموقع. الدفعة الأولى «عند الموافقة» يدفعها العميل مباشرة بعد الموافقة، وبقية الدفعات تستحق عندما تضغط «إنجاز المرحلة» أدناه.</p>
+          <label class="q-check"><input type="checkbox" name="final" value="1" /> عرض نهائي: يظهر للعميل خيار الموافقة والدفع فقط، بدون طلب خصم أو تعديل الدفعات</label>
+          <p class="muted" style="font-size:var(--fs-14)">العرض الأول يتيح للعميل طلب خصم أو تقسيم دفعات مختلف مرة واحدة. بعد أن يستخدمها، يكون أي عرض جديد لنفس الطلب نهائياً تلقائياً، ويحل محل العرض السابق.</p>
           <button class="btn" type="submit" data-send>إرسال العرض للعميل</button>
         </form>
 
@@ -70,6 +72,9 @@ import Base from "@/layouts/Base.astro";
     .adm-msg { padding: 10px 14px; border-radius: var(--radius-sm); background: var(--c-mint); margin-top: var(--space-5); }
     .adm-msg.err { background: #fdecea; color: #8a1c12; }
     .q-mode { font-size: var(--fs-14); color: var(--c-muted); }
+    .q-form label.q-check { display: flex; gap: 8px; align-items: center; font-weight: 600; }
+    .q-form label.q-check input { width: auto; }
+    .q-req { margin: var(--space-3) 0 0; padding: 12px 14px; border-radius: var(--radius-sm); background: #fff4d6; color: #5c3d00; font-size: var(--fs-14); white-space: pre-line; }
     .q-mode b.off { color: #8a1c12; }
     .q-form { margin-top: var(--space-5); gap: var(--space-4); }
     .q-form h2 { font-size: var(--fs-h4); margin: 0; }
@@ -114,7 +119,8 @@ import Base from "@/layouts/Base.astro";
       files_type: "نوع ملف غير مسموح", not_scheduled: "الدفعة ليست مجدولة", quote_not_accepted: "لم يوافق العميل على العرض بعد",
       closed: "الدفعة مدفوعة أو ملغاة", payments_not_configured: "لم يُضبط مفتاح ميسّر في Cloudflare بعد", gateway_error: "تعذّر الاتصال بميسّر",
     };
-    const QS = { sent: "بانتظار موافقة العميل", accepted: "تمت الموافقة", paid: "مدفوع بالكامل", cancelled: "ملغى" };
+    const QS = { sent: "بانتظار موافقة العميل", change_requested: "العميل طلب مراجعة", superseded: "استُبدل بعرض محدّث", accepted: "تمت الموافقة", paid: "مدفوع بالكامل", cancelled: "ملغى" };
+    ERR.final = "هذا العرض نهائي"; ERR.not_open = "العرض لم يعد مفتوحاً";
     const MS = { scheduled: "مجدولة", due: "مستحقة", paid: "مدفوعة", cancelled: "ملغاة" };
     const TR = { acceptance: "عند الموافقة", milestone: "عند إنجاز المرحلة" };
     const PRESETS = {
@@ -185,11 +191,13 @@ import Base from "@/layouts/Base.astro";
       for (const k of ["leadId", "title", "subtotal", "validDays"]) data.set(k, f[k].value.trim());
       data.set("leadId", f.leadId.value.trim().toUpperCase());
       data.set("plan", JSON.stringify(plan));
+      if (f.final.checked) data.set("final", "1");
       for (const file of f.files.files) data.append("files", file);
       const btn = $("[data-send]"); btn.disabled = true;
       try {
         const r = await api("/api/admin/quotes", { method: "POST", body: data });
-        msg(`أُرسل العرض ${r.quoteId} للعميل بإجمالي ${sar(r.total)}. رابط العميل محفوظ في القائمة أدناه.`);
+        msg(`أُرسل العرض ${r.quoteId} للعميل بإجمالي ${sar(r.total)}${r.negotiable ? "، ويمكنه طلب مراجعة مرة واحدة" : "، وهو عرض نهائي"}${r.replaces ? `، وحل محل العرض ${r.replaces}` : ""}. رابط العميل محفوظ في القائمة أدناه.`);
+        f.final.checked = false;
         $("[data-filter]").value = data.get("leadId");
         f.title.value = ""; f.subtotal.value = ""; f.files.value = ""; totals();
         load();
@@ -212,8 +220,23 @@ import Base from "@/layouts/Base.astro";
       } });
       const head = el("header", {},
         el("h3", { textContent: `${q.quote_id} · ${q.title}` }),
-        el("span", { className: "pill " + (q.status === "paid" ? "paid" : q.status === "cancelled" ? "cancelled" : q.status === "accepted" ? "due" : ""), textContent: QS[q.status] || q.status }),
+        el("span", { className: "pill " + (q.status === "paid" ? "paid" : q.status === "cancelled" || q.status === "superseded" ? "cancelled" : q.status === "accepted" || q.status === "change_requested" ? "due" : ""), textContent: (QS[q.status] || q.status) + (q.negotiable ? "" : " · نهائي") }),
       );
+      // The client's one revision request, and a shortcut to answer it with the revised (final) proposal.
+      let req = null;
+      if (q.change_requested_at) {
+        let c = {}; try { c = JSON.parse(q.change_request || "{}"); } catch {}
+        const what = [c.discount ? "خصم" : "", c.schedule ? "تقسيم دفعات مختلف" : ""].filter(Boolean).join(" و");
+        req = el("div", { className: "q-req", textContent: `طلب العميل ${what} بتاريخ ${date(q.change_requested_at)}${c.note ? `:\n«${c.note}»` : "."}` });
+        if (q.status === "change_requested") {
+          req.append(el("br"), el("button", { type: "button", className: "btn", style: "margin-top:10px", textContent: "إعداد العرض المحدّث (نهائي)", onclick: () => {
+            const f = $("[data-create]").elements;
+            f.leadId.value = q.lead_id; f.title.value = q.title; f.final.checked = true;
+            $("[data-create]").scrollIntoView({ behavior: "smooth", block: "start" });
+            msg(`عدّل القيمة أو الدفعات حسب طلب العميل ثم أرسل. سيحل العرض الجديد محل ${q.quote_id} ويكون نهائياً.`);
+          } }));
+        }
+      }
       const meta = el("p", { className: "meta", textContent: `الإجمالي ${sar(q.total)} (قبل الضريبة ${sar(q.subtotal)}) · المدفوع ${sar(paid)} · أُرسل ${date(q.created_at)} · ساري حتى ${q.valid_until}${q.accepted_at ? " · وافق " + date(q.accepted_at) : ""}` });
       const tbody = el("tbody");
       for (const m of q.milestones) {
@@ -237,8 +260,8 @@ import Base from "@/layouts/Base.astro";
         ));
       }
       const table = el("table", { className: "adm-table" }, el("thead", {}, el("tr", {}, ...["#", "الدفعة", "تستحق", "المبلغ", "الحالة", "التاريخ", ""].map((t) => el("th", { textContent: t })))), tbody);
-      const foot = el("div", { className: "q-actions", style: "margin-top:12px" }, copy, ...(q.status === "paid" || q.status === "cancelled" ? [] : [cancel]));
-      return el("article", { className: "q-card" }, head, meta, el("div", { className: "wrap" }, table), foot);
+      const foot = el("div", { className: "q-actions", style: "margin-top:12px" }, copy, ...(["paid", "cancelled", "superseded"].includes(q.status) ? [] : [cancel]));
+      return el("article", { className: "q-card" }, head, meta, ...(req ? [req] : []), el("div", { className: "wrap" }, table), foot);
     }
 
     async function load() {

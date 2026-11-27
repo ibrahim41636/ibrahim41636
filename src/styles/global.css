@@ -709,3 +709,15 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .equip-alert { padding: var(--space-6); border-radius: var(--radius-lg); background: #fdf3f1; border: 1px solid #f1cdc6; border-inline-start: 4px solid var(--c-alert); }
 .equip-alert h2 { margin-top: 0; }
 
+
+/* Request stages (StageSteps.astro): done, current and upcoming steps on the tracking and proposal pages. */
+.stage-steps { list-style: none; padding: 0; margin: var(--space-5) 0 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; counter-reset: none; }
+.stage-steps li { position: relative; display: grid; justify-items: center; gap: 6px; text-align: center; font-size: var(--fs-12); color: var(--c-muted); }
+.stage-steps li::before { content: ""; position: absolute; top: 15px; inset-inline-start: calc(-50% + 18px); width: calc(100% - 36px); height: 2px; background: var(--c-line); }
+.stage-steps li:first-child::before { display: none; }
+.stage-dot { position: relative; z-index: 1; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; background: #fff; border: 2px solid var(--c-line); color: var(--c-muted); font-variant-numeric: tabular-nums; }
+.stage-steps li.is-done .stage-dot { background: var(--c-forest-2); border-color: var(--c-forest-2); color: #fff; }
+.stage-steps li.is-done::before, .stage-steps li.is-current::before { background: var(--c-forest-2); }
+.stage-steps li.is-current .stage-dot { border-color: var(--c-forest-2); color: var(--c-forest); box-shadow: 0 0 0 4px var(--c-mint); }
+.stage-steps li.is-current .stage-name { color: var(--c-forest); font-weight: 700; }
+@media (max-width: 520px) { .stage-steps .stage-name { font-size: 11px; line-height: 1.3; } .stage-dot { width: 28px; height: 28px; } .stage-steps li::before { top: 13px; } }

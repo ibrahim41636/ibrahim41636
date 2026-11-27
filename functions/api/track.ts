@@ -3,7 +3,7 @@
 // Lets a client see the status and timeline of their own request. Both the request ID and the
 // e-mail used on the form must match, so IDs alone cannot be used to read other requests.
 import { json, type Env } from "./request";
-import { LEAD_ID, normalizeEmail } from "../../src/lib/tracking";
+import { LEAD_ID, normalizeEmail, stageOf } from "../../src/lib/tracking";
 
 export async function handleTrack(request: Request, env: Env): Promise<Response> {
   const url = new URL(request.url);
@@ -31,6 +31,7 @@ export async function handleTrack(request: Request, env: Env): Promise<Response>
       service: serviceName || lead.service,
       submittedAt: lead.submitted_at,
       status: lead.status,
+      stage: stageOf(lead.status),
       updatedAt: lead.status_updated_at ?? lead.submitted_at,
       history: events.results ?? [],
     },

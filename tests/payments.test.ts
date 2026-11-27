@@ -3,11 +3,12 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { readFileSync, readdirSync } from "node:fs";
 import { DatabaseSync } from "node:sqlite";
 import {
-  buildSchedule, dueEmail, formatSar, invoicePayload, isPaidInvoice, keyAllowed, newToken, quoteEmail, quoteUrl, receiptEmail,
+  buildSchedule, dueEmail, formatSar, invoicePayload, isPaidInvoice, keyAllowed, newToken, parseChangeRequest, quoteEmail, quoteUrl, receiptEmail,
   sarToHalalas, staffEmail, TOKEN, vatOf,
 } from "../src/lib/payments";
 import { handlePayments, runPaymentCron, type PayEnv } from "../functions/api/payments";
 import { handleAdmin } from "../functions/api/admin";
+import { stageOf } from "../src/lib/tracking";
 
 describe("amounts", () => {
   it("parses SAR into halalas", () => {
@@ -132,6 +133,36 @@ describe("client e-mails", () => {
   });
 });
 
+describe("negotiation and stages", () => {
+  it("accepts a discount or schedule request with a short note", () => {
+    expect(parseChangeRequest({ discount: true, note: "  10% please " })).toEqual({ ok: true, request: { discount: true, schedule: false, note: "10% please" } });
+    expect(parseChangeRequest({ schedule: true })).toEqual({ ok: true, request: { discount: false, schedule: true, note: "" } });
+    expect(parseChangeRequest({ note: "cheaper" })).toEqual({ ok: false, error: "empty" });
+    expect(parseChangeRequest({ discount: "yes" })).toEqual({ ok: false, error: "empty" });
+    expect(parseChangeRequest({ discount: true, note: "x".repeat(1001) })).toEqual({ ok: false, error: "note" });
+  });
+
+  it("tells the client whether they can still negotiate", () => {
+    const base = { name: "Sara", leadId: "SEL-2026-000123", title: "t", url: "https://s/q", total: 100, milestones: [{ label: "All", amount: 100, trigger: "acceptance" as const }], validUntil: "2026-12-24", files: [] };
+    expect(quoteEmail({ ...base, lang: "ar" }).text).toContain("مرة واحدة");
+    const fin = quoteEmail({ ...base, lang: "ar", negotiable: false, revised: true });
+    expect(fin.subject).toBe("العرض المحدّث لطلبك SEL-2026-000123");
+    expect(fin.text).toContain("هذا العرض نهائي");
+    expect(quoteEmail({ ...base, lang: "en", negotiable: false }).text).toContain("This proposal is final");
+    for (const m of [fin, quoteEmail({ ...base, lang: "en" })]) expect(`${m.subject}\n${m.text}`).not.toMatch(/[\u2013\u2014]|\S - \S/);
+  });
+
+  it("maps a request to one of five stages", () => {
+    expect(stageOf("received")).toBe(0);
+    expect(stageOf("reviewing")).toBe(0);
+    expect(stageOf("quoted")).toBe(1);
+    expect(stageOf("quoted", "change_requested")).toBe(1);
+    expect(stageOf("quoted", "accepted")).toBe(2);
+    expect(stageOf("in_progress", "accepted")).toBe(3);
+    expect(stageOf("completed", "paid")).toBe(4);
+  });
+});
+
 // ---------------------------------------------------------------- end to end with a real SQLite database
 
 /** D1 on top of node:sqlite, enough for the statements the Worker runs. */
@@ -181,7 +212,7 @@ describe("quotes and payments", () => {
     for (const [k, v] of Object.entries(extra)) form.set(k, v);
     form.append("files", new File([pdf], "Technical offer.pdf", { type: "application/pdf" }));
     const res = await admin("/api/admin/quotes", { method: "POST", body: form });
-    const body = await res.json() as { ok: boolean; link: string; quoteId: string; error?: string };
+    const body = await res.json() as { ok: boolean; link: string; quoteId: string; error?: string; negotiable?: boolean; replaces?: string | null };
     return { res, body, token: body.link ? new URL(body.link).searchParams.get("t")! : "" };
   }
 
@@ -295,6 +326,49 @@ describe("quotes and payments", () => {
     expect(milestones()[0].invoice_id).toBe(live[0].id);
     await admin("/api/admin/milestone", { method: "POST", body: JSON.stringify({ id: milestones()[0].id, action: "paid", reference: "Transfer 9" }) });
     expect(invoices.get(live[0].id)!.status).toBe("canceled");
+  });
+
+  it("lets the client ask once for a discount, then sends a final proposal that replaces the first", async () => {
+    const first = await createQuote([{ label: "Advance", percent: 50, trigger: "acceptance" }, { label: "Report", percent: 50, trigger: "milestone" }]);
+    let q = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
+    expect(q.quote).toMatchObject({ negotiable: true, final: false, revised: false, stage: 1 });
+    expect(q.quote.history.map((h: any) => h.status)).toEqual(["quoted"]);
+
+    // Nothing to ask for: refused. A real request: recorded once, staff told, timeline updated.
+    expect((await pub("/api/quote/request-change", { t: first.token, note: "cheaper" })).status).toBe(422);
+    const res = await pub("/api/quote/request-change", { t: first.token, discount: true, schedule: true, note: "We can do 40/60" });
+    expect(res.status).toBe(200);
+    expect(mails.at(-1)).toContain("[Proposal revision requested] SEL-2026-000123 | discount and payment schedule");
+    expect(mails.at(-1)).toContain("We can do 40/60");
+    expect((await pub("/api/quote/request-change", { t: first.token, discount: true })).status).toBe(409);
+    expect((await pub("/api/quote/accept", { t: first.token })).status).toBe(409);
+    q = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
+    expect(q.quote).toMatchObject({ status: "change_requested", negotiable: false, changeRequest: { discount: true, schedule: true, note: "We can do 40/60" } });
+    expect(q.quote.history.at(-1).note).toContain("استلمنا طلبك لمراجعة العرض (خصم وتعديل جدول الدفعات)");
+
+    // The revised proposal is final automatically and replaces the first one.
+    const second = await createQuote([{ label: "Advance", percent: 40, trigger: "acceptance" }, { label: "Report", percent: 60, trigger: "milestone" }]);
+    expect(second.body).toMatchObject({ quoteId: "SEL-2026-000123-Q2", negotiable: false, replaces: "SEL-2026-000123-Q1" });
+    expect(mails.at(-1)).toContain("العرض المحدّث لطلبك SEL-2026-000123");
+    expect(mails.at(-1)).toContain("هذا العرض نهائي");
+    const old = await (await pub(`/api/quote?t=${first.token}`)).json() as any;
+    expect(old.quote.status).toBe("superseded");
+    expect((await pub("/api/quote/accept", { t: first.token })).status).toBe(409);
+    q = await (await pub(`/api/quote?t=${second.token}`)).json() as any;
+    expect(q.quote).toMatchObject({ status: "sent", negotiable: false, final: true, revised: true });
+    expect((await pub("/api/quote/request-change", { t: second.token, discount: true })).status).toBe(409);
+
+    // Only approve and pay remains.
+    const acc = await (await pub("/api/quote/accept", { t: second.token })).json() as any;
+    expect(acc.url).toBe("https://checkout.moyasar.com/invoices/inv_1");
+    q = await (await pub(`/api/quote?t=${second.token}`)).json() as any;
+    expect(q.quote.stage).toBe(2);
+  });
+
+  it("lets staff send a first proposal as final", async () => {
+    const { body, token } = await createQuote([{ label: "Full", percent: 100, trigger: "acceptance" }], { final: "1" });
+    expect(body.negotiable).toBe(false);
+    expect((await pub("/api/quote/request-change", { t: token, discount: true })).status).toBe(409);
   });
 
   it("never records a payment for the wrong amount", async () => {

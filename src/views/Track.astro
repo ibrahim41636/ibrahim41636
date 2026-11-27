@@ -3,6 +3,7 @@
 // current status and the timeline. Data comes from GET /api/track (functions/api/track.ts).
 import Base from "@/layouts/Base.astro";
 import Icon from "@/components/Icon.astro";
+import StageSteps from "@/components/StageSteps.astro";
 import { href, site, type Lang } from "@/i18n/ui";
 import { STATUSES, STATUS_LABELS } from "@/lib/tracking";
 interface Props { lang: Lang }
@@ -56,6 +57,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
           <div><dt>{T.submitted}</dt><dd data-r-date></dd></div>
           <div><dt>{T.status}</dt><dd><span class="status-pill" data-r-status></span></dd></div>
         </dl>
+        <StageSteps lang={lang} />
         <h2 style="font-size:var(--fs-h4);margin:var(--space-5) 0 0">{T.history}</h2>
         <ol class="timeline" data-r-history></ol>
       </div>
@@ -118,6 +120,7 @@ const labels = Object.fromEntries(STATUSES.map((s) => [s, STATUS_LABELS[s][lang]
         document.querySelector("[data-r-service]").textContent = r.service || "";
         document.querySelector("[data-r-date]").textContent = fmt(r.submittedAt);
         document.querySelector("[data-r-status]").textContent = labels[r.status] || r.status;
+        document.querySelectorAll("[data-stage-steps] li").forEach((li, i) => { li.classList.toggle("is-done", i < r.stage); li.classList.toggle("is-current", i === r.stage); });
         const list = document.querySelector("[data-r-history]");
         list.replaceChildren(...[...r.history].reverse().map((ev) => {
           const li = document.createElement("li");

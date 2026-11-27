@@ -7,7 +7,7 @@
 export type Lang = "en" | "ar";
 export type Trigger = "acceptance" | "milestone";
 export type MilestoneStatus = "scheduled" | "due" | "paid" | "cancelled";
-export type QuoteStatus = "sent" | "accepted" | "paid" | "cancelled";
+export type QuoteStatus = "sent" | "change_requested" | "superseded" | "accepted" | "paid" | "cancelled";
 
 export const VAT_BP = 1500; // 15% VAT in basis points
 export const MAX_MILESTONES = 6;
@@ -102,6 +102,8 @@ export function keyAllowed(key: string | undefined, allowLive: string | undefine
 
 export const QUOTE_STATUS_LABELS: Record<QuoteStatus, Record<Lang, string>> = {
   sent: { en: "Awaiting your approval", ar: "بانتظار موافقتك" },
+  change_requested: { en: "Revision requested", ar: "طلبتَ مراجعة العرض" },
+  superseded: { en: "Replaced by a revised proposal", ar: "استُبدل بعرض محدّث" },
   accepted: { en: "Approved", ar: "تمت الموافقة" },
   paid: { en: "Paid in full", ar: "مدفوع بالكامل" },
   cancelled: { en: "Cancelled", ar: "ملغى" },
@@ -140,29 +142,53 @@ export function mailHtml(lang: Lang, paragraphs: string[], cta: { label: string;
 
 export interface MailInput { lang: Lang; name: string; leadId: string; title: string; url: string }
 
-export function quoteEmail(i: MailInput & { total: number; milestones: { label: string; amount: number; trigger: Trigger }[]; validUntil: string; files: string[] }) {
+export function quoteEmail(i: MailInput & { total: number; milestones: { label: string; amount: number; trigger: Trigger }[]; validUntil: string; files: string[]; negotiable?: boolean; revised?: boolean }) {
   const lines = i.milestones.map((m, n) => `${n + 1}. ${m.label}: ${formatSar(m.amount, i.lang)} (${TRIGGER_LABELS[m.trigger][i.lang]})`).join("\n");
   const first = i.milestones[0];
+  const negotiable = i.negotiable !== false;
   if (i.lang === "ar") {
     const p = [
       `مرحباً ${i.name}،`,
-      `يسعدنا أن نرسل لك العرض الفني والمالي لطلبك رقم ${i.leadId}: ${i.title}.${i.files.length ? ` تجد المستندات مرفقة بهذه الرسالة (${i.files.join("، ")}).` : ""}`,
+      i.revised
+        ? `نرسل لك العرض الفني والمالي المحدّث لطلبك رقم ${i.leadId}: ${i.title}، بعد مراجعة طلبك.${i.files.length ? ` تجد المستندات مرفقة بهذه الرسالة (${i.files.join("، ")}).` : ""}`
+        : `يسعدنا أن نرسل لك العرض الفني والمالي لطلبك رقم ${i.leadId}: ${i.title}.${i.files.length ? ` تجد المستندات مرفقة بهذه الرسالة (${i.files.join("، ")}).` : ""}`,
       `الإجمالي شامل ضريبة القيمة المضافة: ${formatSar(i.total, "ar")}\nجدول الدفعات:\n${lines}`,
       first.trigger === "acceptance"
         ? `للموافقة على العرض وسداد الدفعة الأولى (${formatSar(first.amount, "ar")}) بمدى أو Apple Pay أو البطاقة الائتمانية، اضغط الزر أدناه. العرض ساري حتى ${i.validUntil}.`
         : `للموافقة على العرض اضغط الزر أدناه. العرض ساري حتى ${i.validUntil}، وتصلك رسالة بكل دفعة عند استحقاقها.`,
+      negotiable
+        ? "إن احتجت خصماً أو تقسيماً للدفعات يناسبكم، يمكنك طلب ذلك مرة واحدة من صفحة العرض، ونرسل لك بعدها عرضاً محدّثاً نهائياً."
+        : "هذا العرض نهائي، والخيار المتاح عليه هو الموافقة والدفع.",
     ];
-    return { subject: `العرض الفني والمالي لطلبك ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_AR}`, html: mailHtml("ar", p, { label: first.trigger === "acceptance" ? "الموافقة والدفع" : "مراجعة العرض والموافقة", url: i.url }) };
+    return { subject: `${i.revised ? "العرض المحدّث" : "العرض الفني والمالي"} لطلبك ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_AR}`, html: mailHtml("ar", p, { label: first.trigger === "acceptance" ? "الموافقة والدفع" : "مراجعة العرض والموافقة", url: i.url }) };
   }
   const p = [
     `Dear ${i.name},`,
-    `Please find our technical and financial proposal for your request ${i.leadId}: ${i.title}.${i.files.length ? ` The documents are attached to this e-mail (${i.files.join(", ")}).` : ""}`,
+    i.revised
+      ? `Following your request, please find our revised technical and financial proposal for request ${i.leadId}: ${i.title}.${i.files.length ? ` The documents are attached to this e-mail (${i.files.join(", ")}).` : ""}`
+      : `Please find our technical and financial proposal for your request ${i.leadId}: ${i.title}.${i.files.length ? ` The documents are attached to this e-mail (${i.files.join(", ")}).` : ""}`,
     `Total including VAT: ${formatSar(i.total, "en")}\nPayment schedule:\n${lines}`,
     first.trigger === "acceptance"
       ? `To approve the proposal and pay the first instalment (${formatSar(first.amount, "en")}) by mada, Apple Pay or credit card, use the button below. The proposal is valid until ${i.validUntil}.`
       : `To approve the proposal, use the button below. It is valid until ${i.validUntil}, and you will receive an e-mail for each payment when it falls due.`,
+    negotiable
+      ? "If you need a discount or a payment schedule that suits you better, you can ask once from the proposal page, and we will send you a final revised proposal."
+      : "This proposal is final: the option available is to approve and pay.",
   ];
-  return { subject: `Proposal for your request ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_EN}`, html: mailHtml("en", p, { label: first.trigger === "acceptance" ? "Approve and pay" : "Review and approve", url: i.url }) };
+  return { subject: `${i.revised ? "Revised proposal" : "Proposal"} for your request ${i.leadId}`, text: `${p.join("\n\n")}\n\n${i.url}\n\n${SIGN_EN}`, html: mailHtml("en", p, { label: first.trigger === "acceptance" ? "Approve and pay" : "Review and approve", url: i.url }) };
+}
+
+export interface ChangeRequest { discount: boolean; schedule: boolean; note: string }
+
+/** The client's one revision request: a discount, a different schedule, or both, with a short note. */
+export function parseChangeRequest(body: unknown): { ok: true; request: ChangeRequest } | { ok: false; error: "empty" | "note" } {
+  const b = (body ?? {}) as Record<string, unknown>;
+  const discount = b.discount === true;
+  const schedule = b.schedule === true;
+  const note = String(b.note ?? "").replace(/\s+\n/g, "\n").trim();
+  if (!discount && !schedule) return { ok: false, error: "empty" };
+  if (note.length > 1000) return { ok: false, error: "note" };
+  return { ok: true, request: { discount, schedule, note } };
 }
 
 export function dueEmail(i: MailInput & { label: string; amount: number; reminder?: boolean }) {
@@ -206,7 +232,14 @@ export function receiptEmail(i: MailInput & { label: string; amount: number; pay
 }
 
 /** Short note to the sales inbox when a client approves or pays. */
-export function staffEmail(event: "accepted" | "paid", i: { leadId: string; quoteId: string; company: string; title: string; label?: string; amount?: number; paymentId?: string }) {
+export function staffEmail(event: "accepted" | "paid" | "change", i: { leadId: string; quoteId: string; company: string; title: string; label?: string; amount?: number; paymentId?: string; change?: ChangeRequest; adminUrl?: string }) {
+  if (event === "change") {
+    const what = [i.change?.discount ? "discount" : "", i.change?.schedule ? "payment schedule" : ""].filter(Boolean).join(" and ");
+    return {
+      subject: `[Proposal revision requested] ${i.leadId} | ${what}`,
+      text: `The client asked to revise quote ${i.quoteId} for ${i.leadId} (${i.title}): ${what}.\n\nClient note:\n${i.change?.note || "(none)"}\n\nThis was their one revision. Send the revised proposal from ${i.adminUrl ?? "/ar/admin/quotes/"}; it will be final, with approve and pay as the only option.`,
+    };
+  }
   if (event === "accepted") {
     return { subject: `[Quote approved] ${i.leadId} | ${i.company || i.title}`, text: `The client approved quote ${i.quoteId} for ${i.leadId} (${i.title}).` };
   }
